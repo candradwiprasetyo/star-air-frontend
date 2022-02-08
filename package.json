@@ -1,0 +1,30 @@
+{
+  "name": "star-air-frontend",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt-ts",
+    "build": "nuxt-ts build",
+    "start": "nuxt-ts start",
+    "generate": "nuxt-ts generate"
+  },
+  "dependencies": {
+    "@blowstack/ckeditor-nuxt": "^0.6.0",
+    "@nuxt/typescript-runtime": "^2.0.1",
+    "@nuxtjs/axios": "^5.13.6",
+    "cookie": "^0.4.1",
+    "cookie-universal-nuxt": "^2.1.5",
+    "core-js": "^3.18.1",
+    "jquery": "^3.6.0",
+    "js-cookie": "^3.0.1",
+    "nuxt": "^2.15.8",
+    "v-calendar": "^2.3.2",
+    "vue-google-login": "^2.0.5"
+  },
+  "devDependencies": {
+    "@nuxt/types": "^2.14.12",
+    "@nuxt/typescript-build": "^2.0.4",
+    "@nuxtjs/tailwindcss": "^3.4.2",
+    "@types/jquery": "^3.5.6"
+  }
+}
