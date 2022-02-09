@@ -1,5 +1,12 @@
 [
   {
+    "name": "forgot-password",
+    "path": "/forgot-password",
+    "component": "/Users/candra/star-air-frontend/pages/forgot-password.vue",
+    "chunkName": "pages/forgot-password",
+    "_name": "_3ae0e007"
+  },
+  {
     "name": "login",
     "path": "/login",
     "component": "/Users/candra/star-air-frontend/pages/login.vue",

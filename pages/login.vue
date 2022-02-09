@@ -96,17 +96,19 @@ export default {
               />
             </div>
           </div>
-          <div
-            class="
-              mt-6
-              relative
-              font-medium
-              text-secondary-900 text-right
-              cursor-pointer
-            "
-          >
-            Forgot Password?
-          </div>
+          <a href="/forgot-password">
+            <div
+              class="
+                mt-6
+                relative
+                font-medium
+                text-secondary-900 text-right
+                cursor-pointer
+              "
+            >
+              Forgot Password?
+            </div>
+          </a>
           <div
             class="
               mt-10

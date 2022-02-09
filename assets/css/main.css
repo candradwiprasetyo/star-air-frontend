@@ -49,6 +49,12 @@ body {
   background-size: cover;
 }
 
+.bg-forgot-password {
+  background-image: url('~assets/images/bg-forgot-password.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 /* ---------------text color------------- */
 .text-grayscale-50 {
   color: #F8FAFC;
