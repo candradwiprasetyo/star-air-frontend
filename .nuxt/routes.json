@@ -1,5 +1,12 @@
 [
   {
+    "name": "login",
+    "path": "/login",
+    "component": "/Users/candra/star-air-frontend/pages/login.vue",
+    "chunkName": "pages/login",
+    "_name": "_2e42702a"
+  },
+  {
     "name": "index",
     "path": "/",
     "component": "/Users/candra/star-air-frontend/pages/index.vue",

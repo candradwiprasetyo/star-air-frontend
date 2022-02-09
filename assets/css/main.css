@@ -15,6 +15,8 @@ body {
   margin: 0;
   padding: 0;
   height: 100vh;
+  font-family: 'Roboto';
+  color: #0F172A;
 }
 
 *,
@@ -23,3 +25,48 @@ body {
   box-sizing: border-box;
   margin: 0;
 }
+
+.font-roboto {
+  font-family: 'Roboto', sans-serif;
+}
+
+.font-noto-sans {
+  font-family: 'Noto Sans', sans-serif;
+}
+
+.text-2xs {
+  font-size: 12px;
+}
+
+/* ---------------background color------------- */
+.bg-primary-600 {
+  background: #DA3934;
+}
+
+.bg-login {
+  background-image: url('~assets/images/bg-login.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* ---------------text color------------- */
+.text-grayscale-50 {
+  color: #F8FAFC;
+}
+
+.text-grayscale-400 {
+  color: #94A3B8;
+}
+
+.text-grayscale-500 {
+  color: #64748B;
+}
+
+.text-grayscale-900 {
+  color: #0F172A;
+}
+
+.text-secondary-900 {
+  color: #224CA1;
+}
+

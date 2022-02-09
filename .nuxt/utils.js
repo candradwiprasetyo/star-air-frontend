@@ -200,7 +200,7 @@ export async function setContext (app, context) {
       payload: context.payload,
       error: context.error,
       base: app.router.options.base,
-      env: {"clientId":"6","clientSecret":"my5ODeFuI7lds3RPmTred3IpX8KGHIuQdVNC34Nq"}
+      env: {}
     }
     // Only set once
 
