@@ -4,7 +4,6 @@ import Vue from "vue";
 
 export default {
   name: "Homepage",
-  middleware: "auth-user",
   data() {
     return {};
   },
