@@ -44,13 +44,13 @@ body {
 }
 
 .bg-login {
-  background-image: url('~assets/images/bg-login.svg');
+  background-image: url('~assets/images/bg-login.png');
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 .bg-forgot-password {
-  background-image: url('~assets/images/bg-forgot-password.svg');
+  background-image: url('~assets/images/bg-forgot-password.png');
   background-repeat: no-repeat;
   background-size: cover;
 }

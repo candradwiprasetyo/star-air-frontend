@@ -1,7 +1,4 @@
 <script lang="ts">
-import cookie from "js-cookie";
-import Vue from "vue";
-
 export default {
   name: "Homepage",
   data() {

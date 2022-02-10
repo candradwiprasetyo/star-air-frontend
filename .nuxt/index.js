@@ -13,10 +13,6 @@ import { setContext, getLocation, getRouteData, normalizeError } from './utils'
 /* Plugins */
 
 import nuxt_plugin_plugin_1288c998 from 'nuxt_plugin_plugin_1288c998' // Source: ./components/plugin.js (mode: 'all')
-import nuxt_plugin_cookieuniversalnuxt_d95c801c from 'nuxt_plugin_cookieuniversalnuxt_d95c801c' // Source: ./cookie-universal-nuxt.js (mode: 'all')
-import nuxt_plugin_axios_60b4176c from 'nuxt_plugin_axios_60b4176c' // Source: ./axios.js (mode: 'all')
-import nuxt_plugin_vuecalendar_027fa8fc from 'nuxt_plugin_vuecalendar_027fa8fc' // Source: ../plugins/vue-calendar (mode: 'client')
-import nuxt_plugin_axios_3566aa80 from 'nuxt_plugin_axios_3566aa80' // Source: ../plugins/axios (mode: 'all')
 
 // Component: <ClientOnly>
 Vue.component(ClientOnly.name, ClientOnly)
@@ -182,22 +178,6 @@ async function createApp(ssrContext, config = {}) {
 
   if (typeof nuxt_plugin_plugin_1288c998 === 'function') {
     await nuxt_plugin_plugin_1288c998(app.context, inject)
-  }
-
-  if (typeof nuxt_plugin_cookieuniversalnuxt_d95c801c === 'function') {
-    await nuxt_plugin_cookieuniversalnuxt_d95c801c(app.context, inject)
-  }
-
-  if (typeof nuxt_plugin_axios_60b4176c === 'function') {
-    await nuxt_plugin_axios_60b4176c(app.context, inject)
-  }
-
-  if (process.client && typeof nuxt_plugin_vuecalendar_027fa8fc === 'function') {
-    await nuxt_plugin_vuecalendar_027fa8fc(app.context, inject)
-  }
-
-  if (typeof nuxt_plugin_axios_3566aa80 === 'function') {
-    await nuxt_plugin_axios_3566aa80(app.context, inject)
   }
 
   // Lock enablePreview in context

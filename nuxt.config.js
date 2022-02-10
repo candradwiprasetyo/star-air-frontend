@@ -24,8 +24,6 @@ export default {
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [
-    { src: "~plugins/vue-calendar", ssr: false },
-    "~/plugins/axios"
   ],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
@@ -33,26 +31,14 @@ export default {
 
   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
   buildModules: [
-    // https://go.nuxtjs.dev/typescript
-    "@nuxt/typescript-build",
     // https://go.nuxtjs.dev/tailwindcss
     "@nuxtjs/tailwindcss"
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
-  modules: ["@nuxtjs/axios", "cookie-universal-nuxt"],
+  modules: [],
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {},
 
-  axios: {
-    baseURL: process.env.API_URL,
-    proxyHeaders: false,
-    credentials: false
-  },
-
-  env: {
-    clientId: process.env.CLIENT_ID,
-    clientSecret: process.env.CLIENT_SECRET
-  }
 };
