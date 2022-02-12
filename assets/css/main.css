@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 html {
   font-family: "Work Sans";
   font-size: 16px;
@@ -43,6 +47,10 @@ body {
   background: #DA3934;
 }
 
+.bg-secondary-900 {
+  background: #224CA1;
+}
+
 .bg-login {
   background-image: url('~assets/images/bg-login.png');
   background-repeat: no-repeat;
@@ -76,3 +84,15 @@ body {
   color: #224CA1;
 }
 
+/* ---------------border color------------- */
+
+.border-secondary-700 {
+  border-color: #307BD3;
+}
+.border-secondary-900 {
+  border-color: #224CA1;
+}
+
+.border-primary-600 {
+  border-color: #DA3934;
+}

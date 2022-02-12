@@ -1,4 +1,7 @@
-
+export { default as Button } from '../../components/Button.vue'
+export { default as Footer } from '../../components/Footer.vue'
+export { default as Header } from '../../components/Header.vue'
+export { default as MainMenu } from '../../components/MainMenu.vue'
 
 // nuxt/nuxt.js#8607
 function wrapFunctional(options) {

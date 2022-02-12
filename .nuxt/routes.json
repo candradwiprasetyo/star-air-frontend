@@ -14,6 +14,13 @@
     "_name": "_2e42702a"
   },
   {
+    "name": "registration",
+    "path": "/registration",
+    "component": "/Users/candra/star-air-frontend/pages/registration.vue",
+    "chunkName": "pages/registration",
+    "_name": "_3081e927"
+  },
+  {
     "name": "index",
     "path": "/",
     "component": "/Users/candra/star-air-frontend/pages/index.vue",

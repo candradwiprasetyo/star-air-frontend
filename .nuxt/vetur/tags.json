@@ -1,1 +1,14 @@
-{}
+{
+  "Button": {
+    "description": "Auto imported from components/Button.vue"
+  },
+  "Footer": {
+    "description": "Auto imported from components/Footer.vue"
+  },
+  "Header": {
+    "description": "Auto imported from components/Header.vue"
+  },
+  "MainMenu": {
+    "description": "Auto imported from components/MainMenu.vue"
+  }
+}
