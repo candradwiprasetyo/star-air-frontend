@@ -9,4 +9,6 @@ You can directly use them in pages and other components without the need to impo
 - `<Button>` | `<button>` (components/Button.vue)
 - `<Footer>` | `<footer>` (components/Footer.vue)
 - `<Header>` | `<header>` (components/Header.vue)
+- `<Input>` | `<input>` (components/Input.vue)
 - `<MainMenu>` | `<main-menu>` (components/MainMenu.vue)
+- `<Select>` | `<select>` (components/Select.vue)

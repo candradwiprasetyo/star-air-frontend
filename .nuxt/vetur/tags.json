@@ -8,7 +8,13 @@
   "Header": {
     "description": "Auto imported from components/Header.vue"
   },
+  "Input": {
+    "description": "Auto imported from components/Input.vue"
+  },
   "MainMenu": {
     "description": "Auto imported from components/MainMenu.vue"
+  },
+  "Select": {
+    "description": "Auto imported from components/Select.vue"
   }
 }

@@ -51,6 +51,10 @@ body {
   background: #224CA1;
 }
 
+.bg-light-blue {
+  background: rgba(82, 170, 246, 0.15);
+}
+
 .bg-login {
   background-image: url('~assets/images/bg-login.png');
   background-repeat: no-repeat;
