@@ -10,5 +10,6 @@ You can directly use them in pages and other components without the need to impo
 - `<Footer>` | `<footer>` (components/Footer.vue)
 - `<Header>` | `<header>` (components/Header.vue)
 - `<Input>` | `<input>` (components/Input.vue)
+- `<InputPassword>` | `<input-password>` (components/InputPassword.vue)
 - `<MainMenu>` | `<main-menu>` (components/MainMenu.vue)
 - `<Select>` | `<select>` (components/Select.vue)

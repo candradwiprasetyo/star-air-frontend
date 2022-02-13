@@ -1,5 +1,12 @@
 [
   {
+    "name": "activation",
+    "path": "/activation",
+    "component": "/Users/candra/star-air-frontend/pages/activation.vue",
+    "chunkName": "pages/activation",
+    "_name": "_dd90aef8"
+  },
+  {
     "name": "forgot-password",
     "path": "/forgot-password",
     "component": "/Users/candra/star-air-frontend/pages/forgot-password.vue",
@@ -19,6 +26,13 @@
     "component": "/Users/candra/star-air-frontend/pages/registration.vue",
     "chunkName": "pages/registration",
     "_name": "_3081e927"
+  },
+  {
+    "name": "registration-success",
+    "path": "/registration-success",
+    "component": "/Users/candra/star-air-frontend/pages/registration-success.vue",
+    "chunkName": "pages/registration-success",
+    "_name": "_34c0fb46"
   },
   {
     "name": "index",

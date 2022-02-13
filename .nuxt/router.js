@@ -4,9 +4,11 @@ import { normalizeURL, decode } from 'ufo'
 import { interopDefault } from './utils'
 import scrollBehavior from './router.scrollBehavior.js'
 
+const _dd90aef8 = () => interopDefault(import('../pages/activation.vue' /* webpackChunkName: "pages/activation" */))
 const _3ae0e007 = () => interopDefault(import('../pages/forgot-password.vue' /* webpackChunkName: "pages/forgot-password" */))
 const _2e42702a = () => interopDefault(import('../pages/login.vue' /* webpackChunkName: "pages/login" */))
 const _3081e927 = () => interopDefault(import('../pages/registration.vue' /* webpackChunkName: "pages/registration" */))
+const _34c0fb46 = () => interopDefault(import('../pages/registration-success.vue' /* webpackChunkName: "pages/registration-success" */))
 const _1f3724d4 = () => interopDefault(import('../pages/index.vue' /* webpackChunkName: "pages/index" */))
 
 const emptyFn = () => {}
@@ -21,6 +23,10 @@ export const routerOptions = {
   scrollBehavior,
 
   routes: [{
+    path: "/activation",
+    component: _dd90aef8,
+    name: "activation"
+  }, {
     path: "/forgot-password",
     component: _3ae0e007,
     name: "forgot-password"
@@ -32,6 +38,10 @@ export const routerOptions = {
     path: "/registration",
     component: _3081e927,
     name: "registration"
+  }, {
+    path: "/registration-success",
+    component: _34c0fb46,
+    name: "registration-success"
   }, {
     path: "/",
     component: _1f3724d4,

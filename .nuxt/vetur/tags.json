@@ -11,6 +11,9 @@
   "Input": {
     "description": "Auto imported from components/Input.vue"
   },
+  "InputPassword": {
+    "description": "Auto imported from components/InputPassword.vue"
+  },
   "MainMenu": {
     "description": "Auto imported from components/MainMenu.vue"
   },
