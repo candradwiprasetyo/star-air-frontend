@@ -1,7 +1,17 @@
 <template>
   <div>
-    <div class="w-full bg-white top-10 border-b fixed">
-      <div class="container mx-auto py-3 text-grayscale-500 flex items-center">
+    <div class="w-full bg-white top-10 border-b fixed z-10">
+      <div
+        class="
+          container
+          mx-auto
+          py-3
+          text-grayscale-500
+          md:flex
+          items-center
+          hidden
+        "
+      >
         <div class="flex-none">
           <img
             src="~/assets/images/logo.png"
@@ -66,8 +76,42 @@
           </div>
         </div>
       </div>
+      <div class="text-grayscale-500 flex items-center md:hidden py-4 px-6">
+        <div class="flex-1">
+          <img
+            src="~/assets/images/logo.png"
+            class="inline-block"
+            alt="Logo"
+            width="130"
+          />
+        </div>
+        <div class="flex-1 flex items-center">
+          <div class="flex-1">
+            <img
+              src="~/assets/images/english.svg"
+              class="inline-block"
+              alt="English"
+            />
+            <span class="text-xs">EN</span>
+          </div>
+          <div class="flex-1">
+            <img
+              src="~/assets/images/shopping-bag.svg"
+              class="inline-block"
+              alt="Shopping bag"
+            />
+          </div>
+          <div class="flex-1">
+            <img
+              src="~/assets/images/mobile-menu.svg"
+              class="inline-block"
+              alt="English"
+            />
+          </div>
+        </div>
+      </div>
     </div>
-    <div class="h-24"></div>
+    <div class="h-20 md:h-24"></div>
   </div>
 </template>
 

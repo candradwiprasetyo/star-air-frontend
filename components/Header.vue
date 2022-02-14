@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="w-full bg-primary-600 fixed top-0">
+    <div class="w-full bg-primary-600 fixed top-0 z-10">
       <div
         class="
           container

@@ -13,11 +13,11 @@ export default {
   <div>
     <Header />
     <MainMenu />
-    <div class="container mx-auto py-14">
+    <div class="container mx-auto py-6 md:py-14 px-6 md:px-0">
       <div class="text-grayscale-900 text-3xl font-semibold font-noto-sans">
         Create New Account
       </div>
-      <div class="text-grayscale-500 mt-3">
+      <div class="text-grayscale-500 mt-3 text-sm md:text-base">
         Enjoy hundreds of benefits when you joining Star Air loyalty program.
         earn points when you flight, stay at hotel, and buy goods at Star Air
         duty free and redeem it for your next travel. Lorem ipsum dolor sit
@@ -27,35 +27,57 @@ export default {
         semper neque lobortis. Donec sit amet eros leo. Sed lacinia vestibulum
         lorem, vel imperdiet ipsum.
       </div>
-      <div class="mt-16 flex gap-x-8 items-start">
-        <div class="w-2/3">
-          <div class="flex">
-            <div class="w-1/6">
-              <Select label="Title" border="border rounded-l-lg" />
+      <div class="mt-10 block md:hidden p-6 bg-light-blue rounded-xl">
+        <div class="text-lg text-grayscale-900 font-semibold">
+          New Member Benefits
+        </div>
+        <div class="mt-4 text-grayscale-500">
+          <ul class="list-disc pl-5 leading-loose">
+            <li>5000 Star Points</li>
+            <li>Free extra baggage 15kg</li>
+            <li>Special gift</li>
+            <li>Flight discount voucher</li>
+          </ul>
+        </div>
+      </div>
+      <div class="mt-6 md:mt-16 flex gap-x-8 items-start">
+        <div class="md:w-2/3">
+          <div class="md:flex">
+            <div class="md:w-1/6">
+              <Select
+                label="Title"
+                border="border rounded-lg md:rounded-l-lg"
+              />
             </div>
-            <div class="w-5/6 flex">
-              <div class="flex-1">
-                <Input label="First Name" border="border" />
+            <div class="md:w-5/6 md:flex">
+              <div class="flex-1 mt-6 md:mt-0">
+                <Input
+                  label="First Name"
+                  border="border rounded-lg md:rounded-none"
+                />
               </div>
-              <div class="flex-1">
-                <Input label="Last Name" border="border rounded-r-lg" />
+              <div class="flex-1 mt-6 md:mt-0">
+                <Input
+                  label="Last Name"
+                  border="border rounded-lg md:rounded-r-lg"
+                />
               </div>
             </div>
           </div>
-          <div class="mt-6 flex gap-x-6">
+          <div class="mt-6 md:flex gap-x-6">
             <div class="flex-1">
-              <Select label="Birth Date" />
+              <Select label="Birth of Date" />
             </div>
-            <div class="flex-1">
+            <div class="flex-1 mt-6 md:mt-0">
               <Select label="Gender" />
             </div>
           </div>
           <Input label="Email Address" customClass="mt-6" />
           <div class="flex mt-6">
-            <div class="flex-none w-1/12">
+            <div class="flex-none w-16">
               <Select label=" " border="border rounded-l-lg" />
             </div>
-            <div class="flex-grow w-1/6">
+            <div class="flex-grow">
               <Input label="Phone" border="border rounded-r-lg" />
             </div>
           </div>
@@ -97,11 +119,11 @@ export default {
               >
             </div>
           </div>
-          <div class="mt-10 w-64">
+          <div class="mt-10 md:w-64">
             <Button value="Create an Account" />
           </div>
         </div>
-        <div class="w-1/3 p-6 bg-light-blue rounded-xl">
+        <div class="hidden md:block w-1/3 p-6 bg-light-blue rounded-xl">
           <div class="text-lg text-grayscale-900 font-semibold">
             New Member Benefits
           </div>

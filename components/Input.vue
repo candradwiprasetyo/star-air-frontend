@@ -1,5 +1,5 @@
 <template>
-  <div class="p-3" :class="[border, customClass]">
+  <div class="p-2" :class="[border, customClass]">
     <div class="text-xs text-grayscale-400 mb-1">{{ label }}</div>
     <input
       type="text"

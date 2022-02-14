@@ -42,6 +42,12 @@ body {
   font-size: 12px;
 }
 
+/*---------------- width --------------*/
+
+.w-600 {
+  width: 600px;
+}
+
 /* ---------------background color------------- */
 .bg-primary-600 {
   background: #DA3934;

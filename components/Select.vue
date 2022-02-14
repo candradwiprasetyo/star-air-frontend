@@ -1,5 +1,5 @@
 <template>
-  <div class="h-full p-3" :class="[border, customClass]">
+  <div class="h-full p-2" :class="[border, customClass]">
     <div class="text-xs text-grayscale-400 mb-1">{{ label }}</div>
     <select class="outline-none border-none w-full"></select>
   </div>
