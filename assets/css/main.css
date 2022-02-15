@@ -86,6 +86,10 @@ body {
   color: #64748B;
 }
 
+.text-grayscale-600 {
+  color: #475569;
+}
+
 .text-grayscale-900 {
   color: #0F172A;
 }

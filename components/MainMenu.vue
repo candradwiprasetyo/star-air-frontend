@@ -13,12 +13,14 @@
         "
       >
         <div class="flex-none">
-          <img
-            src="~/assets/images/logo.png"
-            class="inline-block"
-            alt="Logo"
-            width="130"
-          />
+          <NuxtLink to="/">
+            <img
+              src="~/assets/images/logo.png"
+              class="inline-block"
+              alt="Logo"
+              width="130"
+            />
+          </NuxtLink>
         </div>
         <div class="flex-grow">
           <div class="flex justify-end gap-x-12 items-center">
@@ -58,19 +60,19 @@
             </div>
             <div class="flex-none flex">
               <div class="w-32 mr-4">
-                <a href="/login">
+                <NuxtLink to="/login">
                   <Button
                     value="Login"
                     border="border-2 border-secondary-900"
                     color="text-secondary-900"
                     background="bg-white"
                   />
-                </a>
+                </NuxtLink>
               </div>
               <div class="w-32">
-                <a href="/registration">
+                <NuxtLink to="/registration">
                   <Button value="Sign Up" />
-                </a>
+                </NuxtLink>
               </div>
             </div>
           </div>

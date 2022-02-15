@@ -1,6 +1,6 @@
 <script lang="ts">
 export default {
-  name: "Homepage",
+  name: "Registration",
   data() {
     return {};
   },
@@ -11,12 +11,84 @@ export default {
 
 <template>
   <div>
-    <div class="h-screen w-full flex flex-wrap content-center justify-center">
-      <div class="w-auto mx-auto">
-        <img src="~/assets/images/logo.svg" width="100" />
-        <div class="w-full">Star Air Frontend</div>
+    <Header />
+    <MainMenu />
+    <div class="container mx-auto py-6 md:py-14 px-6 md:px-0">
+      <div class="text-grayscale-900 text-3xl font-semibold font-noto-sans">
+        About Star Club
+      </div>
+      <div
+        class="text-grayscale-500 mt-3 text-sm md:text-base md:leading-relaxed"
+      >
+        Star Club is a Loyalty Program from Star Air which is presented as a
+        tribute to you, our loyal customer. It is our way of saying "Thank You"
+        for choosing to fly with Star Airways. Earn points every time you fly
+        with Star Air. Your accumulated points can be redeemed for Award Tickets
+        to your favourites, or Upgrade Awards from economy to business class on
+        the flight of your choice. Both of these Awards can be presented to your
+        family, friends or colleagues who are closest to your heart. With Star
+        Club, your every trip becomes a rewarding experience. As a Star Points
+        Member, you may also enjoy a wide variety of special benefits and
+        exclusive privileges suc as upgrade class, extra baggage, shopping and
+        stay at hotels with points.
+      </div>
+      <div class="mt-16 text-center">
+        <div class="text-grayscale-900 text-3xl font-semibold font-noto-sans">
+          Member Tiers & Benefits
+        </div>
+        <div class="text-grayscale-500 mt-3 text-sm md:text-base">
+          Star Club offers three membership tiers Silver, Gold, and Platinum –
+          each with their own exclusive benefits.
+        </div>
+        <div class="mt-6 flex justify-center">
+          <div
+            class="
+              w-64
+              bg-secondary-900
+              text-white
+              py-4
+              border border-secondary-900
+              rounded-l-full
+            "
+          >
+            Silver
+          </div>
+          <div class="w-64 py-4 border border-secondary-900">Gold</div>
+          <div class="w-64 py-4 border border-secondary-900 rounded-r-full">
+            Platinum
+          </div>
+        </div>
+        <div class="mt-6 flex">
+          <div class="flex-1">
+            <img
+              src="~/assets/images/membership-card.png"
+              class="inline-block"
+              alt="Membership card"
+              width="700"
+            />
+          </div>
+          <div class="flex-1 text-left flex flex-wrap content-center">
+            <div
+              class="text-grayscale-600 font-semibold text-2xl font-noto-sans"
+            >
+              As a Silver member, enjoy the following benefits:
+            </div>
+            <div class="mt-4 text-grayscale-500">
+              <ul class="list-disc pl-5 leading-loose">
+                <li>100% mileage on all flights for earning StarPoints</li>
+                <li>100% mileage on non-air partner transactions</li>
+                <li>Priority stand-by</li>
+                <li>Flexi awards</li>
+                <li>Upgrade class and extra baggage</li>
+                <li>Stay at hotel with points</li>
+                <li>Shop & pay with StarPoints at Star Air Duty Free</li>
+              </ul>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
+    <Footer />
   </div>
 </template>
 
