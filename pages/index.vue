@@ -13,6 +13,10 @@ export default {
   <div>
     <Header />
     <MainMenu />
+    <div class="">
+      <img src="~/assets/images/banner.png" class="inline-block" alt="Banner" />
+    </div>
+    <HomepageAdvancedSearch />
     <div class="container mx-auto py-6 md:py-14 px-6 md:px-0">
       <div class="text-grayscale-900 text-3xl font-semibold font-noto-sans">
         About Star Club
@@ -59,7 +63,7 @@ export default {
           </div>
         </div>
         <div class="mt-6 flex">
-          <div class="flex-1">
+          <div class="flex-none w-7/12">
             <img
               src="~/assets/images/membership-card.png"
               class="inline-block"
@@ -67,22 +71,214 @@ export default {
               width="700"
             />
           </div>
-          <div class="flex-1 text-left flex flex-wrap content-center">
-            <div
-              class="text-grayscale-600 font-semibold text-2xl font-noto-sans"
-            >
-              As a Silver member, enjoy the following benefits:
+          <div class="flex-none w-5/12 text-left flex flex-wrap content-center">
+            <div class="">
+              <div
+                class="text-grayscale-600 font-semibold text-2xl font-noto-sans"
+              >
+                As a Silver member, enjoy the <br />following benefits:
+              </div>
+              <div class="mt-4 text-grayscale-500">
+                <ul class="list-disc pl-5 leading-loose">
+                  <li>100% mileage on all flights for earning StarPoints</li>
+                  <li>100% mileage on non-air partner transactions</li>
+                  <li>Priority stand-by</li>
+                  <li>Flexi awards</li>
+                  <li>Upgrade class and extra baggage</li>
+                  <li>Stay at hotel with points</li>
+                  <li>Shop & pay with StarPoints at Star Air Duty Free</li>
+                </ul>
+              </div>
             </div>
-            <div class="mt-4 text-grayscale-500">
-              <ul class="list-disc pl-5 leading-loose">
-                <li>100% mileage on all flights for earning StarPoints</li>
-                <li>100% mileage on non-air partner transactions</li>
-                <li>Priority stand-by</li>
-                <li>Flexi awards</li>
-                <li>Upgrade class and extra baggage</li>
-                <li>Stay at hotel with points</li>
-                <li>Shop & pay with StarPoints at Star Air Duty Free</li>
-              </ul>
+          </div>
+        </div>
+        <div class="mt-20 flex px-20">
+          <div class="flex-1 w-5/12 text-left flex flex-wrap content-center">
+            <div class="pr-16">
+              <div
+                class="text-grayscale-900 text-3xl font-semibold font-noto-sans"
+              >
+                How to Earn Points
+              </div>
+              <div
+                class="
+                  text-grayscale-500
+                  mt-3
+                  text-sm
+                  md:text-base md:leading-relaxed
+                "
+              >
+                <p>
+                  StarPoints are the reward points you earn when you or your
+                  nominated family members travel with Star Air, or our airline
+                  partners. You can also earn StarPoints by using any of our
+                  more than 1.200 global partners. StarPoints are taking you
+                  further than ever before. Every time you spend or earn your
+                  StarPoints balance will be valid for a further 36 months. When
+                  you find missing points of your previous flight, you can
+                  always claim them
+                </p>
+                <br />
+                <p>
+                  You can earn points from converting partner points, booking
+                  hotels, or buy points. Find out the details of how to earn
+                  points by clicking the button belows.
+                </p>
+              </div>
+              <div class="mt-8 inline-block">
+                <Button
+                  value="Find Out More to Earn Points"
+                  border="border-2 border-secondary-900"
+                  color="text-secondary-900"
+                  background="bg-white"
+                  customClass="px-6"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="flex-1 w-7/12">
+            <img
+              src="~/assets/images/earn-point.png"
+              class="inline-block"
+              alt="Earn Point"
+            />
+          </div>
+        </div>
+        <div class="mt-16 flex">
+          <div class="flex-none w-1/3 text-left flex flex-wrap content-center">
+            <div class="pr-16">
+              <div
+                class="text-grayscale-900 text-3xl font-semibold font-noto-sans"
+              >
+                Redeem Your Star Points in Many Ways
+              </div>
+              <div
+                class="
+                  text-grayscale-500
+                  mt-3
+                  text-sm
+                  md:text-base md:leading-relaxed
+                "
+              >
+                <p>Browse over 1.200 global partners around the world.</p>
+              </div>
+              <div class="mt-8 w-40">
+                <Button
+                  value="View All Partners"
+                  border="border-2 border-secondary-900"
+                  color="text-secondary-900"
+                  background="bg-white"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="flex-none w-2/3 flex gap-x-6 text-left">
+            <div class="flex-1">
+              <img
+                src="~/assets/images/book-a-flight.png"
+                class="inline-block"
+                alt="Book a flight"
+              />
+              <div
+                class="
+                  mt-4
+                  text-grayscale-900
+                  font-noto-sans font-semibold
+                  text-lg
+                "
+              >
+                Book a Flight
+              </div>
+              <div class="mt-1 text-grayscale-500">
+                Pamper yourself by spending your Star Points for booking a
+                flight with Star Air.
+              </div>
+            </div>
+            <div class="flex-1">
+              <img
+                src="~/assets/images/stay-at-hotel.png"
+                class="inline-block"
+                alt="Book a flight"
+              />
+              <div
+                class="
+                  mt-4
+                  text-grayscale-900
+                  font-noto-sans font-semibold
+                  text-lg
+                "
+              >
+                Stay at Hotel
+              </div>
+              <div class="mt-1 text-grayscale-500">
+                Get special price for staying at your favorite hotels during
+                your vacation with family.
+              </div>
+            </div>
+            <div class="flex-1">
+              <img
+                src="~/assets/images/pay-with-star-points.png"
+                class="inline-block"
+                alt="Book a flight"
+              />
+              <div
+                class="
+                  mt-4
+                  text-grayscale-900
+                  font-noto-sans font-semibold
+                  text-lg
+                "
+              >
+                Pay with star points
+              </div>
+              <div class="mt-1 text-grayscale-500">
+                You can get 20% off shopping when paying with Star Points at
+                Star Air Duty Free.
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="mt-16 flex text-left rounded-xl overflow-hidden">
+          <div class="flex-1">
+            <img
+              src="~/assets/images/newsletter.png"
+              class="inline-block"
+              alt="Newsletter"
+            />
+          </div>
+          <div class="flex-1 bg-secondary-900 flex flex-wrap content-center">
+            <div class="px-16 w-full">
+              <div
+                class="text-3xl text-grayscale-50 font-semibold font-noto-sans"
+              >
+                Never Miss an Offer
+              </div>
+              <div class="text-grayscale-100 mt-2">
+                Subscribe and be the first to receive our exclusive offers.
+              </div>
+              <div class="mt-6">
+                <input
+                  type="text"
+                  placeholder="Email Address"
+                  class="
+                    bg-white
+                    rounded-lg
+                    border-none
+                    outline-none
+                    p-4
+                    w-full
+                  "
+                />
+              </div>
+              <div class="mt-6 inline-block">
+                <Button
+                  value="Subscribe"
+                  border="border-2 border-white"
+                  color="text-white"
+                  background="bg-transparent"
+                  customClass="px-6"
+                />
+              </div>
             </div>
           </div>
         </div>

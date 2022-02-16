@@ -5,6 +5,7 @@ export { default as Input } from '../../components/Input.vue'
 export { default as InputPassword } from '../../components/InputPassword.vue'
 export { default as MainMenu } from '../../components/MainMenu.vue'
 export { default as Select } from '../../components/Select.vue'
+export { default as HomepageAdvancedSearch } from '../../components/homepage/AdvancedSearch.vue'
 
 // nuxt/nuxt.js#8607
 function wrapFunctional(options) {

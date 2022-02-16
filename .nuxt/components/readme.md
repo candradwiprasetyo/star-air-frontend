@@ -13,3 +13,4 @@ You can directly use them in pages and other components without the need to impo
 - `<InputPassword>` | `<input-password>` (components/InputPassword.vue)
 - `<MainMenu>` | `<main-menu>` (components/MainMenu.vue)
 - `<Select>` | `<select>` (components/Select.vue)
+- `<HomepageAdvancedSearch>` | `<homepage-advanced-search>` (components/homepage/AdvancedSearch.vue)

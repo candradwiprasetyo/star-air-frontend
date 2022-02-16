@@ -1,7 +1,7 @@
 <template>
   <div
     class="w-full rounded-lg text-center py-4 cursor-pointer font-medium"
-    :class="[color, background, border]"
+    :class="[color, background, border, customClass]"
   >
     {{ value }}
   </div>
@@ -29,6 +29,11 @@ export default {
       type: String,
       required: false,
       default: "border-2 border-primary-600",
+    },
+    customClass: {
+      type: String,
+      required: false,
+      default: "",
     },
   },
 };
