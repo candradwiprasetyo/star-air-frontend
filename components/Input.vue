@@ -5,6 +5,7 @@
       type="text"
       :placeholder="placeholder"
       class="outline-none border-none w-full"
+      :value="value"
     />
   </div>
 </template>
@@ -16,6 +17,11 @@ export default {
     label: {
       type: String,
       required: true,
+    },
+    value: {
+      type: String,
+      required: false,
+      default: "",
     },
     placeholder: {
       type: String,
