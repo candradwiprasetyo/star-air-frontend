@@ -13,8 +13,15 @@ export default {
   <div>
     <Header />
     <MainMenu />
-    <div class="">
+    <div class="hidden md:inline">
       <img src="~/assets/images/banner.png" class="inline-block" alt="Banner" />
+    </div>
+    <div class="inline md:hidden">
+      <img
+        src="~/assets/images/banner-mobile.png"
+        class="inline-block"
+        alt="Banner"
+      />
     </div>
     <HomepageAdvancedSearch />
     <div class="container mx-auto py-6 md:py-14 px-6 md:px-0">

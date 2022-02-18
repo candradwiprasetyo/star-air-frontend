@@ -6,13 +6,13 @@
         mx-auto
         shadow-custom
         rounded-xl
-        p-6
+        md:p-6
         bg-white
         block
-        absolute
+        md:absolute
         left-0
         right-0
-        -mt-20
+        md:-mt-20
       "
     >
       <div
@@ -21,12 +21,13 @@
           border-b border-gray-300
           font-semibold
           text-grayscale-400
-          pt-2
+          pt-4
+          md:pt-2
         "
       >
         <div
-          class="flex-none px-6 cursor-pointer"
-          :class="activeTab == 1 ? 'border-secondary-900 border-b-6 pb-6' : ''"
+          class="flex-1 md:flex-none px-6 cursor-pointer"
+          :class="activeTab == 1 ? 'menu' : ''"
           @click="changeTab(1)"
         >
           <img src="~/assets/images/book.svg" class="inline-block" alt="Book" />
@@ -35,8 +36,10 @@
           >
         </div>
         <div
-          class="flex-none px-6 cursor-pointer"
-          :class="activeTab == 2 ? 'border-secondary-900 border-b-6 pb-6' : ''"
+          class="flex-1 md:flex-none px-6 cursor-pointer"
+          :class="
+            activeTab == 2 ? 'border-secondary-900 border-b-6 pb-3 md:pb-6' : ''
+          "
           @click="changeTab(2)"
         >
           <img
@@ -49,8 +52,10 @@
           >
         </div>
         <div
-          class="flex-none px-6 cursor-pointer"
-          :class="activeTab == 3 ? 'border-secondary-900 border-b-6 pb-6' : ''"
+          class="flex-1 md:flex-none px-6 cursor-pointer"
+          :class="
+            activeTab == 3 ? 'border-secondary-900 border-b-6 pb-3 md:pb-6' : ''
+          "
           @click="changeTab(3)"
         >
           <img
@@ -271,3 +276,9 @@ export default {
   },
 };
 </script>
+
+<style lang="scss" scoped>
+.menu {
+  @apply border-secondary-900 border-b-6 pb-3 md:pb-6;
+}
+</style>

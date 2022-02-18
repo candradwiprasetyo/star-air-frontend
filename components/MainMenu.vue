@@ -113,7 +113,7 @@
         </div>
       </div>
     </div>
-    <div class="h-20 md:h-20"></div>
+    <div class="h-16 mb-1 md:h-20"></div>
   </div>
 </template>
 
