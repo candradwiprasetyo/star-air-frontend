@@ -21,6 +21,13 @@
     "_name": "_2e42702a"
   },
   {
+    "name": "redem-points",
+    "path": "/redem-points",
+    "component": "/Users/candra/star-air-frontend/pages/redem-points.vue",
+    "chunkName": "pages/redem-points",
+    "_name": "_251119a5"
+  },
+  {
     "name": "registration",
     "path": "/registration",
     "component": "/Users/candra/star-air-frontend/pages/registration.vue",
