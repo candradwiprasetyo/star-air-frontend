@@ -14,3 +14,6 @@ You can directly use them in pages and other components without the need to impo
 - `<MainMenu>` | `<main-menu>` (components/MainMenu.vue)
 - `<Select>` | `<select>` (components/Select.vue)
 - `<HomepageAdvancedSearch>` | `<homepage-advanced-search>` (components/homepage/AdvancedSearch.vue)
+- `<HomepageTabBook>` | `<homepage-tab-book>` (components/homepage/TabBook.vue)
+- `<HomepageTabFlightInfo>` | `<homepage-tab-flight-info>` (components/homepage/TabFlightInfo.vue)
+- `<HomepageTabMyTrip>` | `<homepage-tab-my-trip>` (components/homepage/TabMyTrip.vue)

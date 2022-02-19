@@ -22,5 +22,14 @@
   },
   "HomepageAdvancedSearch": {
     "description": "Auto imported from components/homepage/AdvancedSearch.vue"
+  },
+  "HomepageTabBook": {
+    "description": "Auto imported from components/homepage/TabBook.vue"
+  },
+  "HomepageTabFlightInfo": {
+    "description": "Auto imported from components/homepage/TabFlightInfo.vue"
+  },
+  "HomepageTabMyTrip": {
+    "description": "Auto imported from components/homepage/TabMyTrip.vue"
   }
 }
