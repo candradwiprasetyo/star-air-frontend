@@ -26,17 +26,19 @@
         "
       >
         <div
-          class="flex-1 md:flex-none px-6 cursor-pointer"
-          :class="activeTab == 1 ? 'menu' : ''"
+          class="menu"
+          :class="
+            activeTab == 1 ? 'border-secondary-900 border-b-6 pb-3 md:pb-6' : ''
+          "
           @click="changeTab(1)"
         >
           <img src="~/assets/images/book.svg" class="inline-block" alt="Book" />
-          <span class="pl-2" :class="activeTab == 1 ? 'text-secondary-900' : ''"
+          <span class="pl-1" :class="activeTab == 1 ? 'text-secondary-900' : ''"
             >Book</span
           >
         </div>
         <div
-          class="flex-1 md:flex-none px-6 cursor-pointer"
+          class="menu"
           :class="
             activeTab == 2 ? 'border-secondary-900 border-b-6 pb-3 md:pb-6' : ''
           "
@@ -47,12 +49,12 @@
             class="inline-block"
             alt="My Trip"
           />
-          <span class="pl-2" :class="activeTab == 2 ? 'text-secondary-900' : ''"
+          <span class="pl-1" :class="activeTab == 2 ? 'text-secondary-900' : ''"
             >My Trip</span
           >
         </div>
         <div
-          class="flex-1 md:flex-none px-6 cursor-pointer"
+          class="menu"
           :class="
             activeTab == 3 ? 'border-secondary-900 border-b-6 pb-3 md:pb-6' : ''
           "
@@ -63,14 +65,18 @@
             class="inline-block"
             alt="Flight Info"
           />
-          <span class="pl-2" :class="activeTab == 3 ? 'text-secondary-900' : ''"
+          <span class="pl-1" :class="activeTab == 3 ? 'text-secondary-900' : ''"
             >Flight Info</span
           >
         </div>
       </div>
-      <div v-if="activeTab == 1">
+      <div v-if="activeTab == 1" class="p-6 md:p-0">
         <div
-          class="mt-8 text-2xl text-grayscale-900 font-semibold font-noto-sans"
+          class="
+            md:mt-8
+            text-2xl text-grayscale-900
+            font-semibold font-noto-sans
+          "
         >
           Where do you want to travel?
         </div>
@@ -78,10 +84,17 @@
           Redeem your Star Points with a flight ticket to your desired
           destination
         </div>
-        <div class="mt-6 flex">
-          <div class="flex-1 flex">
+        <div class="mt-6 md:flex">
+          <div class="w-full md:w-3/6 md:flex">
             <div class="flex-1">
-              <div class="rounded-l-lg border p-3">
+              <div
+                class="
+                  rounded-t-lg
+                  md:rounded-l-lg md:rounded-tr-none
+                  border
+                  p-3
+                "
+              >
                 <div class="text-grayscale-400 text-2xs">From</div>
                 <input
                   type="text"
@@ -90,15 +103,33 @@
                 />
               </div>
             </div>
-            <div class="flex-1">
-              <div class="h-10 w-10 absolute cursor-pointer">
+            <div class="flex-1 relative">
+              <div class="h-10 w-10 absolute cursor-pointer hidden md:inline">
                 <img
                   src="~/assets/images/flip-button.svg"
                   class="inline-block -ml-5 mt-4"
                   alt="Flip Button"
                 />
               </div>
-              <div class="border p-3 pl-8">
+              <div
+                class="
+                  h-10
+                  w-10
+                  absolute
+                  cursor-pointer
+                  inline
+                  md:hidden
+                  right-4
+                  -mt-5
+                "
+              >
+                <img
+                  src="~/assets/images/flip-button-mobile.svg"
+                  class="inline-block"
+                  alt="Flip Button"
+                />
+              </div>
+              <div class="border p-3 md:pl-8 rounded-b-xl md:rounded-none">
                 <div class="text-grayscale-400 text-2xs">To</div>
                 <input
                   type="text"
@@ -108,9 +139,9 @@
               </div>
             </div>
           </div>
-          <div class="flex-1 flex">
-            <div class="w-1/5">
-              <div class="border p-3">
+          <div class="w-full md:w-2/6 mt-6 md:mt-0 flex">
+            <div class="w-1/3 md:w-1/2">
+              <div class="border p-3 rounded-l-lg md:rounded-l-none">
                 <div class="text-grayscale-400 text-2xs">Trip</div>
                 <input
                   type="text"
@@ -119,8 +150,8 @@
                 />
               </div>
             </div>
-            <div class="w-2/5">
-              <div class="border p-3">
+            <div class="w-2/3 md:w-1/2">
+              <div class="border p-3 rounded-r-lg md:rounded-r-none">
                 <div class="flex">
                   <div class="flex-1">
                     <div class="text-grayscale-400 text-2xs">Depart</div>
@@ -141,8 +172,12 @@
                 </div>
               </div>
             </div>
-            <div class="w-2/5">
-              <div class="border rounded-r-lg p-3">
+          </div>
+          <div class="w-full md:w-1/6 mt-6 md:mt-0 flex">
+            <div class="w-full">
+              <div
+                class="border md:rounded-r-lg p-3 rounded-lg md:rounded-none"
+              >
                 <div class="text-grayscale-400 text-2xs">Passanger/Class</div>
                 <input
                   type="text"
@@ -153,7 +188,7 @@
             </div>
           </div>
         </div>
-        <div class="mt-8 inline-block float-right">
+        <div class="mt-8 md:inline-block md:float-right">
           <Button value="Search Flights" customClass="px-6" />
         </div>
       </div>
@@ -257,7 +292,7 @@
         </div>
       </div>
     </div>
-    <div class="h-80"></div>
+    <div class="hidden md:inline h-80"></div>
   </div>
 </template>
 
@@ -277,8 +312,11 @@ export default {
 };
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss">
 .menu {
-  @apply border-secondary-900 border-b-6 pb-3 md:pb-6;
+  @apply flex-1 md:flex-none text-center md:px-6 cursor-pointer;
 }
+// .menu-active {
+//   @apply border-secondary-900 border-b-6 pb-3 md:pb-6;
+// }
 </style>

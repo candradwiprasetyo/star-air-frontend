@@ -30,96 +30,99 @@ body {
   margin: 0;
 }
 
-.font-roboto {
-  font-family: 'Roboto', sans-serif;
-}
+@layer utilities {
 
-.font-noto-sans {
-  font-family: 'Noto Sans', sans-serif;
-}
+  .font-roboto {
+    font-family: 'Roboto', sans-serif;
+  }
 
-.text-2xs {
-  font-size: 12px;
-}
+  .font-noto-sans {
+    font-family: 'Noto Sans', sans-serif;
+  }
 
-/*---------------- width --------------*/
+  .text-2xs {
+    font-size: 12px;
+  }
 
-.w-600 {
-  width: 600px;
-}
+  /*---------------- width --------------*/
 
-/* ---------------background color------------- */
-.bg-primary-600 {
-  background: #DA3934;
-}
+  .w-600 {
+    width: 600px;
+  }
 
-.bg-secondary-900 {
-  background: #224CA1;
-}
+  /* ---------------background color------------- */
+  .bg-primary-600 {
+    background: #DA3934;
+  }
 
-.bg-light-blue {
-  background: rgba(82, 170, 246, 0.15);
-}
+  .bg-secondary-900 {
+    background: #224CA1;
+  }
 
-.bg-login {
-  background-image: url('~assets/images/bg-login.png');
-  background-repeat: no-repeat;
-  background-size: cover;
-}
+  .bg-light-blue {
+    background: rgba(82, 170, 246, 0.15);
+  }
 
-.bg-forgot-password {
-  background-image: url('~assets/images/bg-forgot-password.png');
-  background-repeat: no-repeat;
-  background-size: cover;
-}
+  .bg-login {
+    background-image: url('~assets/images/bg-login.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
 
-/* ---------------text color------------- */
-.text-grayscale-50 {
-  color: #F8FAFC;
-}
+  .bg-forgot-password {
+    background-image: url('~assets/images/bg-forgot-password.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
 
-.text-grayscale-100 {
-  color: #F1F5F9;
-}
+  /* ---------------text color------------- */
+  .text-grayscale-50 {
+    color: #F8FAFC;
+  }
 
-.text-grayscale-400 {
-  color: #94A3B8;
-}
+  .text-grayscale-100 {
+    color: #F1F5F9;
+  }
 
-.text-grayscale-500 {
-  color: #64748B;
-}
+  .text-grayscale-400 {
+    color: #94A3B8;
+  }
 
-.text-grayscale-600 {
-  color: #475569;
-}
+  .text-grayscale-500 {
+    color: #64748B;
+  }
 
-.text-grayscale-900 {
-  color: #0F172A;
-}
+  .text-grayscale-600 {
+    color: #475569;
+  }
 
-.text-secondary-900 {
-  color: #224CA1;
-}
+  .text-grayscale-900 {
+    color: #0F172A;
+  }
 
-/* ---------------border color------------- */
+  .text-secondary-900 {
+    color: #224CA1;
+  }
 
-.border-secondary-700 {
-  border-color: #307BD3;
-}
-.border-secondary-900 {
-  border-color: #224CA1;
-}
+  /* ---------------border color------------- */
 
-.border-primary-600 {
-  border-color: #DA3934;
-}
+  .border-secondary-700 {
+    border-color: #307BD3;
+  }
+  .border-secondary-900 {
+    border-color: #224CA1;
+  }
 
-.border-b-6 {
-  border-bottom-width: 6px;
-}
+  .border-primary-600 {
+    border-color: #DA3934;
+  }
 
-/*----------------- others --------------*/
-.shadow-custom {
-  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.05);
+  .border-b-6 {
+    border-bottom-width: 6px;
+  }
+
+  /*----------------- others --------------*/
+  .shadow-custom {
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.05);
+  }
 }

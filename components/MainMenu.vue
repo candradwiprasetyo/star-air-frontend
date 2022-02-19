@@ -87,8 +87,8 @@
             width="130"
           />
         </div>
-        <div class="flex-1 flex items-center">
-          <div class="flex-1">
+        <div class="flex-1 flex justify-end items-center">
+          <div class="flex-1 flex justify-end">
             <img
               src="~/assets/images/english.svg"
               class="inline-block"
@@ -96,14 +96,14 @@
             />
             <span class="text-xs">EN</span>
           </div>
-          <div class="flex-1">
+          <div class="flex-1 flex justify-end">
             <img
               src="~/assets/images/shopping-bag.svg"
               class="inline-block"
               alt="Shopping bag"
             />
           </div>
-          <div class="flex-1">
+          <div class="flex-1 flex justify-end">
             <img
               src="~/assets/images/mobile-menu.svg"
               class="inline-block"
