@@ -5,6 +5,7 @@ import { interopDefault } from './utils'
 import scrollBehavior from './router.scrollBehavior.js'
 
 const _dd90aef8 = () => interopDefault(import('../pages/activation.vue' /* webpackChunkName: "pages/activation" */))
+const _d0a9d026 = () => interopDefault(import('../pages/flight-info.vue' /* webpackChunkName: "pages/flight-info" */))
 const _3ae0e007 = () => interopDefault(import('../pages/forgot-password.vue' /* webpackChunkName: "pages/forgot-password" */))
 const _2e42702a = () => interopDefault(import('../pages/login.vue' /* webpackChunkName: "pages/login" */))
 const _251119a5 = () => interopDefault(import('../pages/redem-points.vue' /* webpackChunkName: "pages/redem-points" */))
@@ -27,6 +28,10 @@ export const routerOptions = {
     path: "/activation",
     component: _dd90aef8,
     name: "activation"
+  }, {
+    path: "/flight-info",
+    component: _d0a9d026,
+    name: "flight-info"
   }, {
     path: "/forgot-password",
     component: _3ae0e007,

@@ -7,6 +7,13 @@
     "_name": "_dd90aef8"
   },
   {
+    "name": "flight-info",
+    "path": "/flight-info",
+    "component": "/Users/candra/star-air-frontend/pages/flight-info.vue",
+    "chunkName": "pages/flight-info",
+    "_name": "_d0a9d026"
+  },
+  {
     "name": "forgot-password",
     "path": "/forgot-password",
     "component": "/Users/candra/star-air-frontend/pages/forgot-password.vue",
