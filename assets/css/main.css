@@ -164,6 +164,12 @@ body {
     box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.05);
   }
 
- 
+  .bullet-green {
+    background: #2A943A;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    display: inline-block;
+  }
 }
 

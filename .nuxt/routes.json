@@ -28,6 +28,13 @@
     "_name": "_2e42702a"
   },
   {
+    "name": "my-trip",
+    "path": "/my-trip",
+    "component": "/Users/candra/star-air-frontend/pages/my-trip.vue",
+    "chunkName": "pages/my-trip",
+    "_name": "_630db328"
+  },
+  {
     "name": "redem-points",
     "path": "/redem-points",
     "component": "/Users/candra/star-air-frontend/pages/redem-points.vue",
