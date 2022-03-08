@@ -7,6 +7,13 @@
     "_name": "_dd90aef8"
   },
   {
+    "name": "earn-points",
+    "path": "/earn-points",
+    "component": "/Users/candra/star-air-frontend/pages/earn-points.vue",
+    "chunkName": "pages/earn-points",
+    "_name": "_51a4a1fa"
+  },
+  {
     "name": "flight-info",
     "path": "/flight-info",
     "component": "/Users/candra/star-air-frontend/pages/flight-info.vue",

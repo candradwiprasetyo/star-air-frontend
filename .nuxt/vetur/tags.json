@@ -17,6 +17,9 @@
   "MainMenu": {
     "description": "Auto imported from components/MainMenu.vue"
   },
+  "Pagination": {
+    "description": "Auto imported from components/Pagination.vue"
+  },
   "Select": {
     "description": "Auto imported from components/Select.vue"
   },

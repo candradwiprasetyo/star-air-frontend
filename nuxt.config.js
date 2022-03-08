@@ -1,7 +1,7 @@
 export default {
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: "star-air-frontend",
+    title: "Stair Air",
     htmlAttrs: {
       lang: "en"
     },

@@ -12,6 +12,7 @@ You can directly use them in pages and other components without the need to impo
 - `<Input>` | `<input>` (components/Input.vue)
 - `<InputPassword>` | `<input-password>` (components/InputPassword.vue)
 - `<MainMenu>` | `<main-menu>` (components/MainMenu.vue)
+- `<Pagination>` | `<pagination>` (components/Pagination.vue)
 - `<Select>` | `<select>` (components/Select.vue)
 - `<HomepageAdvancedSearch>` | `<homepage-advanced-search>` (components/homepage/AdvancedSearch.vue)
 - `<HomepageTabBook>` | `<homepage-tab-book>` (components/homepage/TabBook.vue)
