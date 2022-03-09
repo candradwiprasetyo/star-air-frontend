@@ -14,6 +14,8 @@ You can directly use them in pages and other components without the need to impo
 - `<MainMenu>` | `<main-menu>` (components/MainMenu.vue)
 - `<Pagination>` | `<pagination>` (components/Pagination.vue)
 - `<Select>` | `<select>` (components/Select.vue)
+- `<RedemPointsBookFlight>` | `<redem-points-book-flight>` (components/redemPoints/BookFlight.vue)
+- `<RedemPointsExtraBaggage>` | `<redem-points-extra-baggage>` (components/redemPoints/ExtraBaggage.vue)
 - `<HomepageAdvancedSearch>` | `<homepage-advanced-search>` (components/homepage/AdvancedSearch.vue)
 - `<HomepageTabBook>` | `<homepage-tab-book>` (components/homepage/TabBook.vue)
 - `<HomepageTabFlightInfo>` | `<homepage-tab-flight-info>` (components/homepage/TabFlightInfo.vue)

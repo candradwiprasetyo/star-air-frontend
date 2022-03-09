@@ -11,6 +11,7 @@ const _3ae0e007 = () => interopDefault(import('../pages/forgot-password.vue' /* 
 const _2e42702a = () => interopDefault(import('../pages/login.vue' /* webpackChunkName: "pages/login" */))
 const _630db328 = () => interopDefault(import('../pages/my-trip.vue' /* webpackChunkName: "pages/my-trip" */))
 const _251119a5 = () => interopDefault(import('../pages/redem-points.vue' /* webpackChunkName: "pages/redem-points" */))
+const _08beb2ae = () => interopDefault(import('../pages/redem-points-detail.vue' /* webpackChunkName: "pages/redem-points-detail" */))
 const _3081e927 = () => interopDefault(import('../pages/registration.vue' /* webpackChunkName: "pages/registration" */))
 const _34c0fb46 = () => interopDefault(import('../pages/registration-success.vue' /* webpackChunkName: "pages/registration-success" */))
 const _1f3724d4 = () => interopDefault(import('../pages/index.vue' /* webpackChunkName: "pages/index" */))
@@ -54,6 +55,10 @@ export const routerOptions = {
     path: "/redem-points",
     component: _251119a5,
     name: "redem-points"
+  }, {
+    path: "/redem-points-detail",
+    component: _08beb2ae,
+    name: "redem-points-detail"
   }, {
     path: "/registration",
     component: _3081e927,
