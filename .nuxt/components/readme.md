@@ -18,6 +18,7 @@ You can directly use them in pages and other components without the need to impo
 - `<HomepageTabBook>` | `<homepage-tab-book>` (components/homepage/TabBook.vue)
 - `<HomepageTabFlightInfo>` | `<homepage-tab-flight-info>` (components/homepage/TabFlightInfo.vue)
 - `<HomepageTabMyTrip>` | `<homepage-tab-my-trip>` (components/homepage/TabMyTrip.vue)
+- `<AccountOverview>` | `<account-overview>` (components/account/Overview.vue)
 - `<RedemPointsBookFlight>` | `<redem-points-book-flight>` (components/redemPoints/BookFlight.vue)
 - `<RedemPointsExtraBaggage>` | `<redem-points-extra-baggage>` (components/redemPoints/ExtraBaggage.vue)
 - `<RedemPointsPartnerPoints>` | `<redem-points-partner-points>` (components/redemPoints/PartnerPoints.vue)

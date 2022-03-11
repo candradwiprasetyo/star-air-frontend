@@ -10,6 +10,7 @@ export { default as HomepageAdvancedSearch } from '../../components/homepage/Adv
 export { default as HomepageTabBook } from '../../components/homepage/TabBook.vue'
 export { default as HomepageTabFlightInfo } from '../../components/homepage/TabFlightInfo.vue'
 export { default as HomepageTabMyTrip } from '../../components/homepage/TabMyTrip.vue'
+export { default as AccountOverview } from '../../components/account/Overview.vue'
 export { default as RedemPointsBookFlight } from '../../components/redemPoints/BookFlight.vue'
 export { default as RedemPointsExtraBaggage } from '../../components/redemPoints/ExtraBaggage.vue'
 export { default as RedemPointsPartnerPoints } from '../../components/redemPoints/PartnerPoints.vue'
