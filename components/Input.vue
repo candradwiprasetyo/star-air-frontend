@@ -1,10 +1,10 @@
 <template>
-  <div class="p-2" :class="[border, customClass]">
-    <div class="text-xs text-grayscale-400 mb-1">{{ label }}</div>
+  <div class="px-3 py-2" :class="[border, customClass]">
+    <div class="mb-1 text-xs text-grayscale-400">{{ label }}</div>
     <input
       type="text"
       :placeholder="placeholder"
-      class="outline-none border-none w-full"
+      class="w-full border-none outline-none"
       :value="value"
     />
   </div>

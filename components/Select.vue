@@ -1,7 +1,7 @@
 <template>
-  <div class="h-full p-2" :class="[border, customClass]">
-    <div class="text-xs text-grayscale-400 mb-1">{{ label }}</div>
-    <select class="outline-none border-none w-full"></select>
+  <div class="h-full px-3 py-2" :class="[border, customClass]">
+    <div class="mb-1 text-xs text-grayscale-400">{{ label }}</div>
+    <select class="w-full border-none outline-none"></select>
   </div>
 </template>
 

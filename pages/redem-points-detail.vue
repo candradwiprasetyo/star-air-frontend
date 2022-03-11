@@ -53,6 +53,9 @@ export default {
           <div v-if="activeMenu==2">
             <RedemPointsExtraBaggage />
           </div>
+          <div v-if="activeMenu==3">
+            <RedemPointsPartnerPoints />
+          </div>
         </div>
       </div>
     </div>
