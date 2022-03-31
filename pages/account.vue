@@ -63,7 +63,7 @@ export default {
             <RedemPointsExtraBaggage />
           </div>
           <div v-if="activeMenu==3">
-            <RedemPointsPartnerPoints />
+            <AccountBookingHistory />
           </div>
         </div>
       </div>

@@ -23,6 +23,12 @@
   "Select": {
     "description": "Auto imported from components/Select.vue"
   },
+  "AccountBookingHistory": {
+    "description": "Auto imported from components/account/BookingHistory.vue"
+  },
+  "AccountOverview": {
+    "description": "Auto imported from components/account/Overview.vue"
+  },
   "HomepageAdvancedSearch": {
     "description": "Auto imported from components/homepage/AdvancedSearch.vue"
   },
@@ -34,9 +40,6 @@
   },
   "HomepageTabMyTrip": {
     "description": "Auto imported from components/homepage/TabMyTrip.vue"
-  },
-  "AccountOverview": {
-    "description": "Auto imported from components/account/Overview.vue"
   },
   "RedemPointsBookFlight": {
     "description": "Auto imported from components/redemPoints/BookFlight.vue"
