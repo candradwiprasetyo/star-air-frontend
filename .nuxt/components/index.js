@@ -6,8 +6,6 @@ export { default as InputPassword } from '../../components/InputPassword.vue'
 export { default as MainMenu } from '../../components/MainMenu.vue'
 export { default as Pagination } from '../../components/Pagination.vue'
 export { default as Select } from '../../components/Select.vue'
-export { default as AccountBookingHistory } from '../../components/account/BookingHistory.vue'
-export { default as AccountOverview } from '../../components/account/Overview.vue'
 export { default as HomepageAdvancedSearch } from '../../components/homepage/AdvancedSearch.vue'
 export { default as HomepageTabBook } from '../../components/homepage/TabBook.vue'
 export { default as HomepageTabFlightInfo } from '../../components/homepage/TabFlightInfo.vue'
@@ -15,6 +13,9 @@ export { default as HomepageTabMyTrip } from '../../components/homepage/TabMyTri
 export { default as RedemPointsBookFlight } from '../../components/redemPoints/BookFlight.vue'
 export { default as RedemPointsExtraBaggage } from '../../components/redemPoints/ExtraBaggage.vue'
 export { default as RedemPointsPartnerPoints } from '../../components/redemPoints/PartnerPoints.vue'
+export { default as AccountBookingHistory } from '../../components/account/BookingHistory.vue'
+export { default as AccountOverview } from '../../components/account/Overview.vue'
+export { default as AccountStarPoints } from '../../components/account/StarPoints.vue'
 
 // nuxt/nuxt.js#8607
 function wrapFunctional(options) {

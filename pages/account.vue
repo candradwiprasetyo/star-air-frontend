@@ -65,6 +65,9 @@ export default {
           <div v-if="activeMenu==3">
             <AccountBookingHistory />
           </div>
+          <div v-if="activeMenu==4">
+            <AccountStarPoints />
+          </div>
         </div>
       </div>
     </div>
