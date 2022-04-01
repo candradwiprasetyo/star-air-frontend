@@ -22,5 +22,7 @@ You can directly use them in pages and other components without the need to impo
 - `<RedemPointsExtraBaggage>` | `<redem-points-extra-baggage>` (components/redemPoints/ExtraBaggage.vue)
 - `<RedemPointsPartnerPoints>` | `<redem-points-partner-points>` (components/redemPoints/PartnerPoints.vue)
 - `<AccountBookingHistory>` | `<account-booking-history>` (components/account/BookingHistory.vue)
+- `<AccountBookingHistoryDetail>` | `<account-booking-history-detail>` (components/account/BookingHistoryDetail.vue)
+- `<AccountChangePassword>` | `<account-change-password>` (components/account/ChangePassword.vue)
 - `<AccountOverview>` | `<account-overview>` (components/account/Overview.vue)
 - `<AccountStarPoints>` | `<account-star-points>` (components/account/StarPoints.vue)

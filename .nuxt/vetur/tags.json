@@ -47,6 +47,12 @@
   "AccountBookingHistory": {
     "description": "Auto imported from components/account/BookingHistory.vue"
   },
+  "AccountBookingHistoryDetail": {
+    "description": "Auto imported from components/account/BookingHistoryDetail.vue"
+  },
+  "AccountChangePassword": {
+    "description": "Auto imported from components/account/ChangePassword.vue"
+  },
   "AccountOverview": {
     "description": "Auto imported from components/account/Overview.vue"
   },

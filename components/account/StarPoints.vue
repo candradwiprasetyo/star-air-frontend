@@ -80,6 +80,6 @@
 
 <script>
 export default {
-  name: "AccountOverview",
+  name: "AccountStarPoints",
 };
 </script>

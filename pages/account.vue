@@ -63,10 +63,13 @@ export default {
             <RedemPointsExtraBaggage />
           </div>
           <div v-if="activeMenu==3">
-            <AccountBookingHistory />
+            <AccountBookingHistoryDetail />
           </div>
           <div v-if="activeMenu==4">
             <AccountStarPoints />
+          </div>
+          <div v-if="activeMenu==6">
+            <AccountChangePassword />
           </div>
         </div>
       </div>

@@ -14,6 +14,8 @@ export { default as RedemPointsBookFlight } from '../../components/redemPoints/B
 export { default as RedemPointsExtraBaggage } from '../../components/redemPoints/ExtraBaggage.vue'
 export { default as RedemPointsPartnerPoints } from '../../components/redemPoints/PartnerPoints.vue'
 export { default as AccountBookingHistory } from '../../components/account/BookingHistory.vue'
+export { default as AccountBookingHistoryDetail } from '../../components/account/BookingHistoryDetail.vue'
+export { default as AccountChangePassword } from '../../components/account/ChangePassword.vue'
 export { default as AccountOverview } from '../../components/account/Overview.vue'
 export { default as AccountStarPoints } from '../../components/account/StarPoints.vue'
 

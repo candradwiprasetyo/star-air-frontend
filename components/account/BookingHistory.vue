@@ -82,6 +82,6 @@
 
 <script>
 export default {
-  name: "AccountOverview",
+  name: "AccountBookingHistory",
 };
 </script>
