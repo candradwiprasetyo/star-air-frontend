@@ -81,6 +81,11 @@ body {
   }
 
   /* ---------------text color------------- */
+
+  .text-primary-600 {
+    color: #DA3934;
+  }
+  
   .text-grayscale-50 {
     color: #F8FAFC;
   }
@@ -129,7 +134,7 @@ body {
   /*-------------- table --------------*/
 
   .custom-table {
-    @apply rounded-lg overflow-hidden;
+    @apply overflow-hidden rounded-lg;
   }
 
   .custom-table thead tr {
@@ -155,7 +160,7 @@ body {
   }
 
   .custom-table tfoot tr th {
-    @apply p-2 text-sm font-normal text-left px-6; 
+    @apply p-2 px-6 text-sm font-normal text-left; 
     color: #64748B;
   }
 

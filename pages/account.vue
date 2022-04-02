@@ -68,6 +68,9 @@ export default {
           <div v-if="activeMenu==4">
             <AccountStarPoints />
           </div>
+          <div v-if="activeMenu==5">
+            <AccountExtendMembership />
+          </div>
           <div v-if="activeMenu==6">
             <AccountChangePassword />
           </div>
