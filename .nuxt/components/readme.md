@@ -20,6 +20,7 @@ You can directly use them in pages and other components without the need to impo
 - `<AccountExtendMembership>` | `<account-extend-membership>` (components/account/ExtendMembership.vue)
 - `<AccountOverview>` | `<account-overview>` (components/account/Overview.vue)
 - `<AccountStarPoints>` | `<account-star-points>` (components/account/StarPoints.vue)
+- `<AccountUserProfile>` | `<account-user-profile>` (components/account/UserProfile.vue)
 - `<HomepageAdvancedSearch>` | `<homepage-advanced-search>` (components/homepage/AdvancedSearch.vue)
 - `<HomepageTabBook>` | `<homepage-tab-book>` (components/homepage/TabBook.vue)
 - `<HomepageTabFlightInfo>` | `<homepage-tab-flight-info>` (components/homepage/TabFlightInfo.vue)

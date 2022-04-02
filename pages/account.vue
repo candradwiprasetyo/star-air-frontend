@@ -60,7 +60,7 @@ export default {
             <AccountOverview />
           </div>
           <div v-if="activeMenu==2">
-            <RedemPointsExtraBaggage />
+            <AccountUserProfile />
           </div>
           <div v-if="activeMenu==3">
             <AccountBookingHistoryDetail />

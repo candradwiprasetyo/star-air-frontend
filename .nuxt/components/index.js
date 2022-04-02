@@ -12,6 +12,7 @@ export { default as AccountChangePassword } from '../../components/account/Chang
 export { default as AccountExtendMembership } from '../../components/account/ExtendMembership.vue'
 export { default as AccountOverview } from '../../components/account/Overview.vue'
 export { default as AccountStarPoints } from '../../components/account/StarPoints.vue'
+export { default as AccountUserProfile } from '../../components/account/UserProfile.vue'
 export { default as HomepageAdvancedSearch } from '../../components/homepage/AdvancedSearch.vue'
 export { default as HomepageTabBook } from '../../components/homepage/TabBook.vue'
 export { default as HomepageTabFlightInfo } from '../../components/homepage/TabFlightInfo.vue'

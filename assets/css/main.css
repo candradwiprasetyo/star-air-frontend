@@ -52,6 +52,10 @@ body {
 
   /* ---------------background color------------- */
 
+  .bg-grayscale-50 {
+    background: #F8FAFC;
+  }
+
   .bg-grayscale-100 {
     background: #F1F5F9;
   }

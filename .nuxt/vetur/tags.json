@@ -41,6 +41,9 @@
   "AccountStarPoints": {
     "description": "Auto imported from components/account/StarPoints.vue"
   },
+  "AccountUserProfile": {
+    "description": "Auto imported from components/account/UserProfile.vue"
+  },
   "HomepageAdvancedSearch": {
     "description": "Auto imported from components/homepage/AdvancedSearch.vue"
   },
