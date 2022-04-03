@@ -32,6 +32,9 @@
   "AccountChangePassword": {
     "description": "Auto imported from components/account/ChangePassword.vue"
   },
+  "AccountEditProfile": {
+    "description": "Auto imported from components/account/EditProfile.vue"
+  },
   "AccountExtendMembership": {
     "description": "Auto imported from components/account/ExtendMembership.vue"
   },

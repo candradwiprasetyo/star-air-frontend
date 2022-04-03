@@ -17,6 +17,7 @@ You can directly use them in pages and other components without the need to impo
 - `<AccountBookingHistory>` | `<account-booking-history>` (components/account/BookingHistory.vue)
 - `<AccountBookingHistoryDetail>` | `<account-booking-history-detail>` (components/account/BookingHistoryDetail.vue)
 - `<AccountChangePassword>` | `<account-change-password>` (components/account/ChangePassword.vue)
+- `<AccountEditProfile>` | `<account-edit-profile>` (components/account/EditProfile.vue)
 - `<AccountExtendMembership>` | `<account-extend-membership>` (components/account/ExtendMembership.vue)
 - `<AccountOverview>` | `<account-overview>` (components/account/Overview.vue)
 - `<AccountStarPoints>` | `<account-star-points>` (components/account/StarPoints.vue)
