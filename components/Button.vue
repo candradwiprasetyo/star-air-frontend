@@ -1,6 +1,6 @@
 <template>
   <div
-    class="w-full py-4 font-medium text-center rounded-lg cursor-pointer"
+    class="px-6 py-4 font-medium text-center rounded-lg cursor-pointer"
     :class="[color, background, border, customClass]"
   >
     {{ value }}
@@ -33,7 +33,7 @@ export default {
     customClass: {
       type: String,
       required: false,
-      default: "px-6",
+      default: "w-full",
     },
   },
 };

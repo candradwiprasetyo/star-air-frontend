@@ -48,7 +48,6 @@
 <script>
 export default {
   name: "AccountEditProfile",
-  data() {},
   methods: {}
 };
 </script>

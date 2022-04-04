@@ -23,30 +23,6 @@
   "Select": {
     "description": "Auto imported from components/Select.vue"
   },
-  "AccountBookingHistory": {
-    "description": "Auto imported from components/account/BookingHistory.vue"
-  },
-  "AccountBookingHistoryDetail": {
-    "description": "Auto imported from components/account/BookingHistoryDetail.vue"
-  },
-  "AccountChangePassword": {
-    "description": "Auto imported from components/account/ChangePassword.vue"
-  },
-  "AccountEditProfile": {
-    "description": "Auto imported from components/account/EditProfile.vue"
-  },
-  "AccountExtendMembership": {
-    "description": "Auto imported from components/account/ExtendMembership.vue"
-  },
-  "AccountOverview": {
-    "description": "Auto imported from components/account/Overview.vue"
-  },
-  "AccountStarPoints": {
-    "description": "Auto imported from components/account/StarPoints.vue"
-  },
-  "AccountUserProfile": {
-    "description": "Auto imported from components/account/UserProfile.vue"
-  },
   "HomepageAdvancedSearch": {
     "description": "Auto imported from components/homepage/AdvancedSearch.vue"
   },
@@ -67,5 +43,38 @@
   },
   "RedemPointsPartnerPoints": {
     "description": "Auto imported from components/redemPoints/PartnerPoints.vue"
+  },
+  "AccountBookingHistory": {
+    "description": "Auto imported from components/account/BookingHistory.vue"
+  },
+  "AccountBookingHistoryDetail": {
+    "description": "Auto imported from components/account/BookingHistoryDetail.vue"
+  },
+  "AccountChangePassword": {
+    "description": "Auto imported from components/account/ChangePassword.vue"
+  },
+  "AccountEditEmail": {
+    "description": "Auto imported from components/account/EditEmail.vue"
+  },
+  "AccountEditProfile": {
+    "description": "Auto imported from components/account/EditProfile.vue"
+  },
+  "AccountEditTravelDocument": {
+    "description": "Auto imported from components/account/EditTravelDocument.vue"
+  },
+  "AccountExtendMembership": {
+    "description": "Auto imported from components/account/ExtendMembership.vue"
+  },
+  "AccountOverview": {
+    "description": "Auto imported from components/account/Overview.vue"
+  },
+  "AccountStarPoints": {
+    "description": "Auto imported from components/account/StarPoints.vue"
+  },
+  "AccountUpgradeMembership": {
+    "description": "Auto imported from components/account/UpgradeMembership.vue"
+  },
+  "AccountUserProfile": {
+    "description": "Auto imported from components/account/UserProfile.vue"
   }
 }

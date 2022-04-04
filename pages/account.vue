@@ -3,7 +3,7 @@ export default {
   name: "Account",
   data() {
     return {
-      activeMenu: 7,
+      activeMenu: 10,
       dataMenu: [
         { id: 1, name: 'Overview' },
         { id: 2, name: 'User Profile' },
@@ -76,6 +76,15 @@ export default {
           </div>
           <div v-if="activeMenu==7">
             <AccountEditProfile />
+          </div>
+          <div v-if="activeMenu==8">
+            <AccountEditEmail />
+          </div>
+          <div v-if="activeMenu==9">
+            <AccountEditTravelDocument />
+          </div>
+          <div v-if="activeMenu==10">
+            <AccountUpgradeMembership />
           </div>
         </div>
       </div>
