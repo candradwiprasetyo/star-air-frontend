@@ -52,7 +52,7 @@ export default {
               Forgot Password?
             </div>
           </a>
-          <NuxtLink to="/?logged=true">
+          <NuxtLink to="/?logged=1">
             <div
               class="py-4 mt-10 font-medium text-center text-white rounded-lg cursor-pointer bg-primary-600"
             >

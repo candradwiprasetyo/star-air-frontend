@@ -2,9 +2,15 @@
 export default {
   name: "Homepage",
   data() {
-    return {};
+    return {
+      activeMember: 1,
+    };
   },
-  methods: {},
+  methods: {
+    changeActiveMember(id) {
+      this.activeMember = id;
+    }
+  },
   mounted() {},
 };
 </script>
@@ -14,14 +20,18 @@ export default {
     <Header />
     <MainMenu />
     <div class="hidden md:inline">
-      <img src="~/assets/images/banner.png" class="inline-block" alt="Banner" />
+      <NuxtLink to="registration">
+        <img src="~/assets/images/banner.png" class="w-full" alt="Banner" />
+      </NuxtLink>
     </div>
     <div class="inline md:hidden">
-      <img
-        src="~/assets/images/banner-mobile.png"
-        class="w-full"
-        alt="Banner"
-      />
+      <NuxtLink to="registration">
+        <img
+          src="~/assets/images/banner-mobile.png"
+          class="w-full"
+          alt="Banner"
+        />
+      </NuxtLink>
     </div>
     <HomepageAdvancedSearch />
     <div class="container px-6 py-6 mx-auto md:py-14 md:px-0">
@@ -51,19 +61,22 @@ export default {
           Star Club offers three membership tiers Silver, Gold, and Platinum –
           each with their own exclusive benefits.
         </div>
-        <div class="flex justify-center mt-6">
+        <div class="flex justify-center mt-6 cursor-pointer">
           <div
-            class="w-64 py-2 text-white border rounded-l-full bg-secondary-900 md:py-4 border-secondary-900"
+            class="w-64 py-2 border rounded-l-full md:py-4 border-secondary-900" :class="(activeMember==1) ? 'bg-secondary-900 text-white' : 'text-secondary-900'"
+            @click="changeActiveMember(1)"
           >
             Silver
           </div>
           <div
-            class="w-64 py-2 border md:py-4 border-secondary-900 text-secondary-900"
+            class="w-64 py-2 border md:py-4 border-secondary-900" :class="(activeMember==2) ? 'bg-secondary-900 text-white' : 'text-secondary-900'"
+            @click="changeActiveMember(2)"
           >
             Gold
           </div>
           <div
-            class="w-64 py-2 border rounded-r-full md:py-4 border-secondary-900 text-secondary-900"
+            class="w-64 py-2 border rounded-r-full md:py-4 border-secondary-900" :class="(activeMember==3) ? 'bg-secondary-900 text-white' : 'text-secondary-900'" 
+            @click="changeActiveMember(3)"
           >
             Platinum
           </div>
@@ -84,7 +97,11 @@ export default {
               <div
                 class="text-2xl font-semibold text-grayscale-600 font-noto-sans"
               >
-                As a Silver member, enjoy the following benefits:
+                As a 
+                <span v-if="activeMember==1">Silver</span> 
+                <span v-else-if="activeMember==2">Gold</span> 
+                <span v-else>Platinum</span> 
+                member, enjoy the following benefits:
               </div>
               <div class="mt-4 text-grayscale-500">
                 <ul class="pl-5 leading-loose list-disc">

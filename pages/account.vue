@@ -3,7 +3,7 @@ export default {
   name: "Account",
   data() {
     return {
-      activeMenu: 10,
+      activeMenu: 1,
       dataMenu: [
         { id: 1, name: 'Overview' },
         { id: 2, name: 'User Profile' },
@@ -11,7 +11,6 @@ export default {
         { id: 4, name: 'Star Points' },
         { id: 5, name: 'Extend Membership' },
         { id: 6, name: 'Change Password' },
-        { id: 7, name: 'Logout' },
       ]
     };
   },
@@ -53,6 +52,11 @@ export default {
             <div class="px-4 py-3 mb-4 rounded-full cursor-pointer" :class="menu.id == activeMenu ? 'bg-light-blue text-secondary-900 font-bold' : ''" v-for="menu in dataMenu" :key="menu.id" @click="changeMenu(menu.id)">
               {{ menu.name }}
             </div>
+            <NuxtLink to="/">
+              <div class="px-4 py-3 mb-4 rounded-full cursor-pointer">
+                Logout
+              </div>
+            </NuxtLink>
           </div>
         </div>
         <div class="md:w-2/3">

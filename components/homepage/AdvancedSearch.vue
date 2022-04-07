@@ -1,29 +1,10 @@
 <template>
   <div>
     <div
-      class="
-        container
-        mx-auto
-        shadow-custom
-        rounded-xl
-        md:p-6
-        bg-white
-        block
-        md:absolute
-        left-0
-        right-0
-        md:-mt-20
-      "
+      class="container left-0 right-0 block mx-auto bg-white shadow-custom rounded-xl md:p-6 md:absolute md:-mt-20"
     >
       <div
-        class="
-          flex
-          border-b border-gray-300
-          font-semibold
-          text-grayscale-400
-          pt-4
-          md:pt-2
-        "
+        class="flex pt-4 font-semibold border-b border-gray-300 text-grayscale-400 md:pt-2"
       >
         <div
           class="menu"
@@ -80,7 +61,7 @@
         <HomepageTabFlightInfo />
       </div>
     </div>
-    <div class="hidden md:inline h-80"></div>
+    <div class="hidden md:block h-80"></div>
   </div>
 </template>
 

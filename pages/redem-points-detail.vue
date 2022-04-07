@@ -9,7 +9,7 @@ export default {
         { id: 2, name: 'Extra Baggage' },
         { id: 3, name: 'Convert Points to Partner Points' },
         { id: 4, name: 'Shop & Pay' },
-      ]
+      ],
     };
   },
   methods: {
@@ -17,7 +17,9 @@ export default {
       this.activeMenu = id;
     }
   },
-  mounted() {},
+  mounted() {
+    this.activeMenu = (this.$route.query.data) ? this.$route.query.data : this.activeMenu;
+  },
 };
 </script>
 

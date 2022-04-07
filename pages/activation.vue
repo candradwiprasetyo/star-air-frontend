@@ -43,7 +43,7 @@ export default {
           <InputPassword label="Password" />
           <InputPassword label="Re-type Password" customClass="mt-6" />
           <div class="mt-10 mb-6 md:w-64 md:mb-0">
-            <NuxtLink to="/?logged=true">
+            <NuxtLink to="/?logged=1">
               <Button value="Create Password" />
             </NuxtLink>
           </div>
