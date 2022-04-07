@@ -35,15 +35,6 @@
   "HomepageTabMyTrip": {
     "description": "Auto imported from components/homepage/TabMyTrip.vue"
   },
-  "RedemPointsBookFlight": {
-    "description": "Auto imported from components/redemPoints/BookFlight.vue"
-  },
-  "RedemPointsExtraBaggage": {
-    "description": "Auto imported from components/redemPoints/ExtraBaggage.vue"
-  },
-  "RedemPointsPartnerPoints": {
-    "description": "Auto imported from components/redemPoints/PartnerPoints.vue"
-  },
   "AccountBookingHistory": {
     "description": "Auto imported from components/account/BookingHistory.vue"
   },
@@ -76,5 +67,14 @@
   },
   "AccountUserProfile": {
     "description": "Auto imported from components/account/UserProfile.vue"
+  },
+  "RedemPointsBookFlight": {
+    "description": "Auto imported from components/redemPoints/BookFlight.vue"
+  },
+  "RedemPointsExtraBaggage": {
+    "description": "Auto imported from components/redemPoints/ExtraBaggage.vue"
+  },
+  "RedemPointsPartnerPoints": {
+    "description": "Auto imported from components/redemPoints/PartnerPoints.vue"
   }
 }

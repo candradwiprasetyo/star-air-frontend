@@ -14,7 +14,7 @@ export default {
     <Header />
     <MainMenu />
     <div class="container mx-auto py-14">
-      <div class="md:w-600 mx-auto p-6 text-center">
+      <div class="p-6 mx-auto text-center md:w-600">
         <img
           src="~/assets/images/email-sent-success.svg"
           class="inline-block"
@@ -27,14 +27,18 @@ export default {
           In order to complete your registration, please verifiy your email
           address. We have sent an email with a link to chanda.gauri@gmail.com.
         </div>
-        <div class="mt-8 flex gap-x-6">
-          <Button
-            value="Close"
-            background="bg-white"
-            border="border-2 border-secondary-900"
-            color="text-secondary-900"
-          />
-          <Button value="Verify" />
+        <div class="flex justify-center mt-8 gap-x-6">
+          <NuxtLink to="/">
+            <Button
+              value="Close"
+              background="bg-white"
+              border="border-2 border-secondary-900"
+              color="text-secondary-900"
+            />
+          </NuxtLink>
+          <NuxtLink to="/activation">
+            <Button value="Verify" />
+          </NuxtLink>
         </div>
       </div>
     </div>

@@ -13,11 +13,11 @@ export default {
   <div>
     <Header />
     <MainMenu />
-    <div class="container mx-auto py-6 md:py-14 px-6 md:px-0">
-      <div class="text-grayscale-900 text-3xl font-semibold font-noto-sans">
+    <div class="container px-6 py-6 mx-auto md:py-14 md:px-0">
+      <div class="text-3xl font-semibold text-grayscale-900 font-noto-sans">
         Create New Account
       </div>
-      <div class="text-grayscale-500 mt-3 text-sm md:text-base">
+      <div class="mt-3 text-sm text-grayscale-500 md:text-base">
         Enjoy hundreds of benefits when you joining Star Air loyalty program.
         earn points when you flight, stay at hotel, and buy goods at Star Air
         duty free and redeem it for your next travel. Lorem ipsum dolor sit
@@ -27,12 +27,12 @@ export default {
         semper neque lobortis. Donec sit amet eros leo. Sed lacinia vestibulum
         lorem, vel imperdiet ipsum.
       </div>
-      <div class="mt-10 block md:hidden p-6 bg-light-blue rounded-xl">
-        <div class="text-lg text-grayscale-900 font-semibold">
+      <div class="block p-6 mt-10 md:hidden bg-light-blue rounded-xl">
+        <div class="text-lg font-semibold text-grayscale-900">
           New Member Benefits
         </div>
         <div class="mt-4 text-grayscale-500">
-          <ul class="list-disc pl-5 leading-loose">
+          <ul class="pl-5 leading-loose list-disc">
             <li>5000 Star Points</li>
             <li>Free extra baggage 15kg</li>
             <li>Special gift</li>
@@ -40,7 +40,7 @@ export default {
           </ul>
         </div>
       </div>
-      <div class="mt-6 md:mt-16 flex gap-x-8 items-start">
+      <div class="flex items-start mt-6 md:mt-16 gap-x-8">
         <div class="md:w-2/3">
           <div class="md:flex">
             <div class="md:w-1/6">
@@ -85,7 +85,7 @@ export default {
           <div class="mt-6">
             <Select label="Country/Region of Residence" />
           </div>
-          <div class="mt-10 flex gap-x-4">
+          <div class="flex mt-10 gap-x-4">
             <div class="flex-none">
               <input
                 type="checkbox"
@@ -103,7 +103,7 @@ export default {
               >
             </div>
           </div>
-          <div class="mt-6 flex gap-x-4">
+          <div class="flex mt-6 gap-x-4">
             <div class="flex-none">
               <input
                 type="checkbox"
@@ -120,15 +120,17 @@ export default {
             </div>
           </div>
           <div class="mt-10 md:w-64">
-            <Button value="Create an Account" />
+            <NuxtLink to="/registration-success"> 
+              <Button value="Create an Account" />
+            </NuxtLink>
           </div>
         </div>
-        <div class="hidden md:block w-1/3 p-6 bg-light-blue rounded-xl">
-          <div class="text-lg text-grayscale-900 font-semibold">
+        <div class="hidden w-1/3 p-6 md:block bg-light-blue rounded-xl">
+          <div class="text-lg font-semibold text-grayscale-900">
             New Member Benefits
           </div>
           <div class="mt-4 text-grayscale-500">
-            <ul class="list-disc pl-5 leading-loose">
+            <ul class="pl-5 leading-loose list-disc">
               <li>5000 Star Points</li>
               <li>Free extra baggage 15kg</li>
               <li>Special gift</li>

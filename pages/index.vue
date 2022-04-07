@@ -19,23 +19,17 @@ export default {
     <div class="inline md:hidden">
       <img
         src="~/assets/images/banner-mobile.png"
-        class="inline-block"
+        class="w-full"
         alt="Banner"
       />
     </div>
     <HomepageAdvancedSearch />
-    <div class="container mx-auto py-6 md:py-14 px-6 md:px-0">
-      <div class="text-grayscale-900 text-3xl font-semibold font-noto-sans">
+    <div class="container px-6 py-6 mx-auto md:py-14 md:px-0">
+      <div class="text-3xl font-semibold text-grayscale-900 font-noto-sans">
         About Star Club
       </div>
       <div
-        class="
-          text-grayscale-500
-          mt-3
-          text-sm
-          md:text-base md:leading-relaxed
-          leading-relaxed
-        "
+        class="mt-3 text-sm leading-relaxed text-grayscale-500 md:text-base md:leading-relaxed"
       >
         Star Club is a Loyalty Program from Star Air which is presented as a
         tribute to you, our loyal customer. It is our way of saying "Thank You"
@@ -50,47 +44,26 @@ export default {
         stay at hotels with points.
       </div>
       <div class="mt-16 text-center">
-        <div class="text-grayscale-900 text-3xl font-semibold font-noto-sans">
+        <div class="text-3xl font-semibold text-grayscale-900 font-noto-sans">
           Member Tiers & Benefits
         </div>
-        <div class="text-grayscale-500 mt-3 text-sm md:text-base">
+        <div class="mt-3 text-sm text-grayscale-500 md:text-base">
           Star Club offers three membership tiers Silver, Gold, and Platinum –
           each with their own exclusive benefits.
         </div>
-        <div class="mt-6 flex justify-center">
+        <div class="flex justify-center mt-6">
           <div
-            class="
-              w-64
-              bg-secondary-900
-              text-white
-              py-2
-              md:py-4
-              border border-secondary-900
-              rounded-l-full
-            "
+            class="w-64 py-2 text-white border rounded-l-full bg-secondary-900 md:py-4 border-secondary-900"
           >
             Silver
           </div>
           <div
-            class="
-              w-64
-              py-2
-              md:py-4
-              border border-secondary-900
-              text-secondary-900
-            "
+            class="w-64 py-2 border md:py-4 border-secondary-900 text-secondary-900"
           >
             Gold
           </div>
           <div
-            class="
-              w-64
-              py-2
-              md:py-4
-              border border-secondary-900
-              rounded-r-full
-              text-secondary-900
-            "
+            class="w-64 py-2 border rounded-r-full md:py-4 border-secondary-900 text-secondary-900"
           >
             Platinum
           </div>
@@ -105,23 +78,16 @@ export default {
             />
           </div>
           <div
-            class="
-              flex-none
-              w-full
-              md:w-5/12
-              text-left
-              flex flex-wrap
-              content-center
-            "
+            class="flex flex-wrap content-center flex-none w-full text-left md:w-5/12"
           >
             <div class="mt-12 md:mt-0">
               <div
-                class="text-grayscale-600 font-semibold text-2xl font-noto-sans"
+                class="text-2xl font-semibold text-grayscale-600 font-noto-sans"
               >
                 As a Silver member, enjoy the following benefits:
               </div>
               <div class="mt-4 text-grayscale-500">
-                <ul class="list-disc pl-5 leading-loose">
+                <ul class="pl-5 leading-loose list-disc">
                   <li>100% mileage on all flights for earning StarPoints</li>
                   <li>100% mileage on non-air partner transactions</li>
                   <li>Priority stand-by</li>
@@ -135,7 +101,7 @@ export default {
           </div>
         </div>
         <div class="mt-20 md:flex md:px-20">
-          <div class="w-full inline md:hidden">
+          <div class="inline w-full md:hidden">
             <img
               src="~/assets/images/earn-point.png"
               class="inline-block"
@@ -143,29 +109,16 @@ export default {
             />
           </div>
           <div
-            class="
-              flex-1
-              w-full
-              md:w-5/12
-              text-left
-              flex flex-wrap
-              content-center
-            "
+            class="flex flex-wrap content-center flex-1 w-full text-left md:w-5/12"
           >
-            <div class="md:pr-16 mt-6 md:0">
+            <div class="mt-6 md:pr-16 md:0">
               <div
-                class="text-grayscale-900 text-3xl font-semibold font-noto-sans"
+                class="text-3xl font-semibold text-grayscale-900 font-noto-sans"
               >
                 How to Earn Points
               </div>
               <div
-                class="
-                  text-grayscale-500
-                  mt-3
-                  text-sm
-                  leading-relaxed
-                  md:text-base md:leading-relaxed
-                "
+                class="mt-3 text-sm leading-relaxed text-grayscale-500 md:text-base md:leading-relaxed"
               >
                 <p>
                   StarPoints are the reward points you earn when you or your
@@ -185,17 +138,19 @@ export default {
                 </p>
               </div>
               <div class="mt-8 md:inline-block">
-                <Button
-                  value="Find Out More to Earn Points"
-                  border="border-2 border-secondary-900"
-                  color="text-secondary-900"
-                  background="bg-white"
-                  customClass="px-6"
-                />
+                <NuxtLink to="/earn-points">
+                  <Button
+                    value="Find Out More to Earn Points"
+                    border="border-2 border-secondary-900"
+                    color="text-secondary-900"
+                    background="bg-white"
+                    customClass="px-6"
+                  />
+                </NuxtLink>
               </div>
             </div>
           </div>
-          <div class="flex-1 w-7/12 hidden md:inline">
+          <div class="flex-1 hidden w-7/12 md:inline">
             <img
               src="~/assets/images/earn-point.png"
               class="inline-block"
@@ -205,7 +160,7 @@ export default {
         </div>
 
         <div class="mt-10 md:mt-16 md:flex">
-          <div class="container-mobile gap-x-6 text-left md:hidden">
+          <div class="text-left container-mobile gap-x-6 md:hidden">
             <div class="item-frame">
               <div class="flex flex-nowrap gap-x-6">
                 <div class="w-40">
@@ -216,12 +171,7 @@ export default {
                     width="200"
                   />
                   <div
-                    class="
-                      mt-4
-                      text-grayscale-900
-                      font-noto-sans font-semibold
-                      text-lg
-                    "
+                    class="mt-4 text-lg font-semibold text-grayscale-900 font-noto-sans"
                   >
                     Book a Flight
                   </div>
@@ -238,12 +188,7 @@ export default {
                     width="200"
                   />
                   <div
-                    class="
-                      mt-4
-                      text-grayscale-900
-                      font-noto-sans font-semibold
-                      text-lg
-                    "
+                    class="mt-4 text-lg font-semibold text-grayscale-900 font-noto-sans"
                   >
                     Stay at Hotel
                   </div>
@@ -260,12 +205,7 @@ export default {
                     width="200"
                   />
                   <div
-                    class="
-                      mt-4
-                      text-grayscale-900
-                      font-noto-sans font-semibold
-                      text-lg
-                    "
+                    class="mt-4 text-lg font-semibold text-grayscale-900 font-noto-sans"
                   >
                     Pay with star points
                   </div>
@@ -278,42 +218,32 @@ export default {
             </div>
           </div>
           <div
-            class="
-              flex-none
-              w-full
-              md:w-1/3
-              text-left
-              flex flex-wrap
-              content-center
-            "
+            class="flex flex-wrap content-center flex-none w-full text-left md:w-1/3"
           >
             <div class="md:pr-16">
               <div
-                class="text-grayscale-900 text-3xl font-semibold font-noto-sans"
+                class="text-3xl font-semibold text-grayscale-900 font-noto-sans"
               >
                 Redeem Your Star Points in Many Ways
               </div>
               <div
-                class="
-                  text-grayscale-500
-                  mt-3
-                  text-sm
-                  md:text-base md:leading-relaxed
-                "
+                class="mt-3 text-sm text-grayscale-500 md:text-base md:leading-relaxed"
               >
                 <p>Browse over 1.200 global partners around the world.</p>
               </div>
-              <div class="mt-8 w-full md:w-40">
-                <Button
-                  value="View All Partners"
-                  border="border-2 border-secondary-900"
-                  color="text-secondary-900"
-                  background="bg-white"
-                />
+              <div class="w-full mt-8 md:w-60">
+                <NuxtLink to="/redem-points">
+                  <Button
+                    value="View All Partners"
+                    border="border-2 border-secondary-900"
+                    color="text-secondary-900"
+                    background="bg-white"
+                  />
+                </NuxtLink>
               </div>
             </div>
           </div>
-          <div class="flex-none w-2/3 md:flex gap-x-6 text-left hidden">
+          <div class="flex-none hidden w-2/3 text-left md:flex gap-x-6">
             <div class="flex-1">
               <img
                 src="~/assets/images/book-a-flight.png"
@@ -321,12 +251,7 @@ export default {
                 alt="Book a flight"
               />
               <div
-                class="
-                  mt-4
-                  text-grayscale-900
-                  font-noto-sans font-semibold
-                  text-lg
-                "
+                class="mt-4 text-lg font-semibold text-grayscale-900 font-noto-sans"
               >
                 Book a Flight
               </div>
@@ -342,12 +267,7 @@ export default {
                 alt="Book a flight"
               />
               <div
-                class="
-                  mt-4
-                  text-grayscale-900
-                  font-noto-sans font-semibold
-                  text-lg
-                "
+                class="mt-4 text-lg font-semibold text-grayscale-900 font-noto-sans"
               >
                 Stay at Hotel
               </div>
@@ -363,12 +283,7 @@ export default {
                 alt="Book a flight"
               />
               <div
-                class="
-                  mt-4
-                  text-grayscale-900
-                  font-noto-sans font-semibold
-                  text-lg
-                "
+                class="mt-4 text-lg font-semibold text-grayscale-900 font-noto-sans"
               >
                 Pay with star points
               </div>
@@ -379,7 +294,7 @@ export default {
             </div>
           </div>
         </div>
-        <div class="mt-16 md:flex text-left rounded-xl overflow-hidden">
+        <div class="mt-16 overflow-hidden text-left md:flex rounded-xl">
           <div class="flex-1">
             <img
               src="~/assets/images/newsletter.png"
@@ -388,46 +303,27 @@ export default {
             />
             <img
               src="~/assets/images/newsletter-mobile.png"
-              class="md:hidden inline"
+              class="inline md:hidden"
               alt="Newsletter"
             />
           </div>
           <div
-            class="
-              flex-1
-              bg-secondary-900
-              flex flex-wrap
-              content-center
-              -mt-1
-              md:mt-0
-            "
+            class="flex flex-wrap content-center flex-1 -mt-1 bg-secondary-900 md:mt-0"
           >
-            <div class="px-6 md:px-16 w-full">
+            <div class="w-full px-6 md:px-16">
               <div
-                class="
-                  text-2xl
-                  md:text-3xl
-                  text-grayscale-50
-                  font-semibold font-noto-sans
-                "
+                class="text-2xl font-semibold md:text-3xl text-grayscale-50 font-noto-sans"
               >
                 Never Miss an Offer
               </div>
-              <div class="text-grayscale-100 mt-2">
+              <div class="mt-2 text-grayscale-100">
                 Subscribe and be the first to receive our exclusive offers.
               </div>
               <div class="mt-6">
                 <input
                   type="text"
                   placeholder="Email Address"
-                  class="
-                    bg-white
-                    rounded-lg
-                    border-none
-                    outline-none
-                    p-4
-                    w-full
-                  "
+                  class="w-full p-4 bg-white border-none rounded-lg outline-none "
                 />
               </div>
               <div class="mt-6 md:inline-block">

@@ -10,9 +10,6 @@ export { default as HomepageAdvancedSearch } from '../../components/homepage/Adv
 export { default as HomepageTabBook } from '../../components/homepage/TabBook.vue'
 export { default as HomepageTabFlightInfo } from '../../components/homepage/TabFlightInfo.vue'
 export { default as HomepageTabMyTrip } from '../../components/homepage/TabMyTrip.vue'
-export { default as RedemPointsBookFlight } from '../../components/redemPoints/BookFlight.vue'
-export { default as RedemPointsExtraBaggage } from '../../components/redemPoints/ExtraBaggage.vue'
-export { default as RedemPointsPartnerPoints } from '../../components/redemPoints/PartnerPoints.vue'
 export { default as AccountBookingHistory } from '../../components/account/BookingHistory.vue'
 export { default as AccountBookingHistoryDetail } from '../../components/account/BookingHistoryDetail.vue'
 export { default as AccountChangePassword } from '../../components/account/ChangePassword.vue'
@@ -24,6 +21,9 @@ export { default as AccountOverview } from '../../components/account/Overview.vu
 export { default as AccountStarPoints } from '../../components/account/StarPoints.vue'
 export { default as AccountUpgradeMembership } from '../../components/account/UpgradeMembership.vue'
 export { default as AccountUserProfile } from '../../components/account/UserProfile.vue'
+export { default as RedemPointsBookFlight } from '../../components/redemPoints/BookFlight.vue'
+export { default as RedemPointsExtraBaggage } from '../../components/redemPoints/ExtraBaggage.vue'
+export { default as RedemPointsPartnerPoints } from '../../components/redemPoints/PartnerPoints.vue'
 
 // nuxt/nuxt.js#8607
 function wrapFunctional(options) {

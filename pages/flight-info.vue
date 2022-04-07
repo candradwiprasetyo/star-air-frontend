@@ -13,11 +13,11 @@ export default {
   <div>
     <Header />
     <MainMenu />
-    <div class="container mx-auto py-6 md:py-14 px-6 md:px-0">
-      <div class="text-grayscale-900 text-3xl font-semibold font-noto-sans">
+    <div class="container px-6 py-6 mx-auto md:py-14 md:px-0">
+      <div class="text-3xl font-semibold text-grayscale-900 font-noto-sans">
         Flight Info
       </div>
-      <div class="text-grayscale-500 mt-3 text-sm md:text-base">
+      <div class="mt-3 text-sm text-grayscale-500 md:text-base">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
         tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
         veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
@@ -26,27 +26,27 @@ export default {
         occaecat cupidatat non proident, sunt in culpa qui officia deserunt
         mollit anim id est laborum.
       </div>
-      <div class="mt-10 block p-6 bg-light-blue rounded-xl">
+      <div class="block p-6 mt-10 bg-light-blue rounded-xl">
         <div class="md:flex gap-x-6">
           <div class="flex-1">
             <div class="text-2xs text-grayscale-500">Flight From:</div>
-            <div class="text-grayscale-900 font-medium">
+            <div class="font-medium text-grayscale-900">
               Indira Gandhi International Airport
             </div>
           </div>
           <div class="flex-1 mt-4 md:mt-0">
             <div class="text-2xs text-grayscale-500">Flight To:</div>
-            <div class="text-grayscale-900 font-medium">
+            <div class="font-medium text-grayscale-900">
               Chhatrapati Shivaji International Airport
             </div>
           </div>
           <div class="flex-1 mt-4 md:mt-0">
             <div class="text-2xs text-grayscale-500">Departure Date::</div>
-            <div class="text-grayscale-900 font-medium">20 Nov 2021</div>
+            <div class="font-medium text-grayscale-900">20 Nov 2021</div>
           </div>
           <div class="flex-1 mt-4 md:mt-0">
             <div class="text-2xs text-grayscale-500">Return Date::</div>
-            <div class="text-grayscale-900 font-medium">21 Nov 2021</div>
+            <div class="font-medium text-grayscale-900">21 Nov 2021</div>
           </div>
         </div>
       </div>
@@ -75,8 +75,8 @@ export default {
             </tr>
           </thead>
           <tbody>
-            <tr v-for="index in 5" :key="index">
-              <td>1</td>
+            <tr v-for="index in 3" :key="index">
+              <td>{{ index }}</td>
               <td>Indira Gandhi International Airport</td>
               <td>Tue, Feb 08 03:40</td>
               <td>Chhatrapati Shivaji Maharaj International Airport</td>

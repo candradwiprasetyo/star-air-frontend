@@ -1,16 +1,8 @@
 <template>
   <div>
-    <div class="w-full bg-white top-10 border-b fixed z-10">
+    <div class="fixed z-10 w-full bg-white border-b top-10">
       <div
-        class="
-          container
-          mx-auto
-          py-3
-          text-grayscale-500
-          md:flex
-          items-center
-          hidden
-        "
+        class="container items-center hidden py-3 mx-auto text-grayscale-500 md:flex"
       >
         <div class="flex-none">
           <NuxtLink to="/">
@@ -23,8 +15,8 @@
           </NuxtLink>
         </div>
         <div class="flex-grow">
-          <div class="flex justify-end gap-x-12 items-center">
-            <div class="flex-none">Home</div>
+          <div class="flex items-center justify-end gap-x-12">
+            <NuxtLink to="/"><div class="flex-none">Home</div></NuxtLink>
             <div class="flex-none">
               Earn
               <img
@@ -58,7 +50,7 @@
               />
               <span class="align-middle">0 item (s)</span>
             </div>
-            <div class="flex-none flex">
+            <div class="flex flex-none">
               <div class="w-32 mr-4">
                 <NuxtLink to="/login">
                   <Button
@@ -78,17 +70,19 @@
           </div>
         </div>
       </div>
-      <div class="text-grayscale-500 flex items-center md:hidden py-4 px-6">
-        <div class="flex-1">
-          <img
-            src="~/assets/images/logo.png"
-            class="inline-block"
-            alt="Logo"
-            width="130"
-          />
-        </div>
-        <div class="flex-1 flex justify-end items-center">
-          <div class="flex-1 flex justify-end">
+      <div class="flex items-center px-6 py-4 text-grayscale-500 md:hidden">
+        <NuxtLink to="/">
+          <div class="flex-1">
+            <img
+              src="~/assets/images/logo.png"
+              class="inline-block"
+              alt="Logo"
+              width="130"
+            />
+          </div>
+        </NuxtLink>
+        <div class="flex items-center justify-end flex-1">
+          <div class="flex justify-end flex-1">
             <img
               src="~/assets/images/english.svg"
               class="inline-block"
@@ -96,14 +90,14 @@
             />
             <span class="text-xs">EN</span>
           </div>
-          <div class="flex-1 flex justify-end">
+          <div class="flex justify-end flex-1">
             <img
               src="~/assets/images/shopping-bag.svg"
               class="inline-block"
               alt="Shopping bag"
             />
           </div>
-          <div class="flex-1 flex justify-end">
+          <div class="flex justify-end flex-1">
             <img
               src="~/assets/images/mobile-menu.svg"
               class="inline-block"

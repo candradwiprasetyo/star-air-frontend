@@ -1,6 +1,6 @@
 <template>
-  <div class="px-6 md:px-0 pb-6 md:pb-0">
-    <div class="mt-8 text-2xl text-grayscale-900 font-semibold font-noto-sans">
+  <div class="px-6 pb-6 md:px-0 md:pb-0">
+    <div class="mt-8 text-2xl font-semibold text-grayscale-900 font-noto-sans">
       Manage your upcoming trip
     </div>
     <div class="mt-2 text-grayscale-500">
@@ -15,7 +15,9 @@
       </div>
     </div>
     <div class="mt-8 md:inline-block md:float-right md:mb-0">
-      <Button value="Search Flights" customClass="px-6" />
+      <NuxtLink to="/my-trip">
+        <Button value="Search Flights" customClass="px-6" />
+      </NuxtLink>
     </div>
   </div>
 </template>

@@ -1,7 +1,7 @@
 <template>
   <div class="p-6 md:p-0">
     <div
-      class="md:mt-8 text-2xl text-grayscale-900 font-semibold font-noto-sans"
+      class="text-2xl font-semibold md:mt-8 text-grayscale-900 font-noto-sans"
     >
       Check flight schedule
     </div>
@@ -10,7 +10,7 @@
       <div class="w-full md:w-3/6 md:flex">
         <div class="flex-1">
           <div
-            class="rounded-t-lg md:rounded-l-lg md:rounded-tr-none border p-3"
+            class="p-3 border rounded-t-lg md:rounded-l-lg md:rounded-tr-none"
           >
             <div class="text-grayscale-400 text-2xs">From</div>
             <input
@@ -20,25 +20,16 @@
             />
           </div>
         </div>
-        <div class="flex-1 relative">
-          <div class="h-10 w-10 absolute cursor-pointer hidden md:inline">
+        <div class="relative flex-1">
+          <div class="absolute hidden w-10 h-10 cursor-pointer md:inline">
             <img
               src="~/assets/images/flip-button.svg"
-              class="inline-block -ml-5 mt-4"
+              class="inline-block mt-4 -ml-5"
               alt="Flip Button"
             />
           </div>
           <div
-            class="
-              h-10
-              w-10
-              absolute
-              cursor-pointer
-              inline
-              md:hidden
-              right-4
-              -mt-5
-            "
+            class="absolute inline w-10 h-10 -mt-5 cursor-pointer  md:hidden right-4"
           >
             <img
               src="~/assets/images/flip-button-mobile.svg"
@@ -46,7 +37,7 @@
               alt="Flip Button"
             />
           </div>
-          <div class="border p-3 md:pl-8 rounded-b-xl md:rounded-none">
+          <div class="p-3 border md:pl-8 rounded-b-xl md:rounded-none">
             <div class="text-grayscale-400 text-2xs">To</div>
             <input
               type="text"
@@ -56,7 +47,7 @@
           </div>
         </div>
       </div>
-      <div class="w-full md:w-2/6 mt-6 md:mt-0 flex">
+      <div class="flex w-full mt-6 md:w-2/6 md:mt-0">
         <div class="w-full md:w-full">
           <div class="border rounded-lg md:rounded-none">
             <div class="flex">
@@ -68,7 +59,7 @@
                   value="20 Nov 21"
                 />
               </div>
-              <div class="flex-1 border-l pl-2 p-3">
+              <div class="flex-1 p-3 pl-2 border-l">
                 <div class="text-grayscale-400 text-2xs">Return</div>
                 <input
                   type="text"
@@ -80,9 +71,9 @@
           </div>
         </div>
       </div>
-      <div class="w-full md:w-1/6 mt-6 md:mt-0 flex">
+      <div class="flex w-full mt-6 md:w-1/6 md:mt-0">
         <div class="w-full">
-          <div class="border md:rounded-r-lg p-3 rounded-lg md:rounded-none">
+          <div class="p-3 border rounded-lg md:rounded-r-lg md:rounded-none">
             <div class="text-grayscale-400 text-2xs">Trip</div>
             <input
               type="text"
@@ -94,7 +85,9 @@
       </div>
     </div>
     <div class="mt-8 md:inline-block md:float-right">
-      <Button value="Check Schedule" customClass="px-6" />
+      <NuxtLink to="/flight-info">
+        <Button value="Check Schedule" customClass="px-6" />
+      </NuxtLink>
     </div>
   </div>
 </template>
