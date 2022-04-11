@@ -21,13 +21,13 @@ export default {
     <MainMenu />
     <div class="hidden md:inline">
       <NuxtLink to="registration">
-        <img src="~/assets/images/banner.png" class="w-full" alt="Banner" />
+        <img src="~/assets/images/banner.jpg" class="w-full" alt="Banner" />
       </NuxtLink>
     </div>
     <div class="inline md:hidden">
       <NuxtLink to="registration">
         <img
-          src="~/assets/images/banner-mobile.png"
+          src="~/assets/images/banner-mobile.jpg"
           class="w-full"
           alt="Banner"
         />

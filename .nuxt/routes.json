@@ -3,72 +3,98 @@
     "name": "account",
     "path": "/account",
     "component": "/Users/candra/star-air-frontend/pages/account.vue",
-    "chunkName": "pages/account"
+    "chunkName": "pages/account",
+    "_name": "_50826e2f"
   },
   {
     "name": "activation",
     "path": "/activation",
     "component": "/Users/candra/star-air-frontend/pages/activation.vue",
-    "chunkName": "pages/activation"
+    "chunkName": "pages/activation",
+    "_name": "_dd90aef8"
+  },
+  {
+    "name": "claim-missing-points",
+    "path": "/claim-missing-points",
+    "component": "/Users/candra/star-air-frontend/pages/claim-missing-points.vue",
+    "chunkName": "pages/claim-missing-points",
+    "_name": "_10887649"
   },
   {
     "name": "earn-points",
     "path": "/earn-points",
     "component": "/Users/candra/star-air-frontend/pages/earn-points.vue",
-    "chunkName": "pages/earn-points"
+    "chunkName": "pages/earn-points",
+    "_name": "_51a4a1fa"
   },
   {
     "name": "flight-info",
     "path": "/flight-info",
     "component": "/Users/candra/star-air-frontend/pages/flight-info.vue",
-    "chunkName": "pages/flight-info"
+    "chunkName": "pages/flight-info",
+    "_name": "_d0a9d026"
   },
   {
     "name": "forgot-password",
     "path": "/forgot-password",
     "component": "/Users/candra/star-air-frontend/pages/forgot-password.vue",
-    "chunkName": "pages/forgot-password"
+    "chunkName": "pages/forgot-password",
+    "_name": "_3ae0e007"
   },
   {
     "name": "login",
     "path": "/login",
     "component": "/Users/candra/star-air-frontend/pages/login.vue",
-    "chunkName": "pages/login"
+    "chunkName": "pages/login",
+    "_name": "_2e42702a"
   },
   {
     "name": "my-trip",
     "path": "/my-trip",
     "component": "/Users/candra/star-air-frontend/pages/my-trip.vue",
-    "chunkName": "pages/my-trip"
+    "chunkName": "pages/my-trip",
+    "_name": "_630db328"
   },
   {
     "name": "redem-points",
     "path": "/redem-points",
     "component": "/Users/candra/star-air-frontend/pages/redem-points.vue",
-    "chunkName": "pages/redem-points"
+    "chunkName": "pages/redem-points",
+    "_name": "_251119a5"
   },
   {
     "name": "redem-points-detail",
     "path": "/redem-points-detail",
     "component": "/Users/candra/star-air-frontend/pages/redem-points-detail.vue",
-    "chunkName": "pages/redem-points-detail"
+    "chunkName": "pages/redem-points-detail",
+    "_name": "_08beb2ae"
   },
   {
     "name": "registration",
     "path": "/registration",
     "component": "/Users/candra/star-air-frontend/pages/registration.vue",
-    "chunkName": "pages/registration"
+    "chunkName": "pages/registration",
+    "_name": "_3081e927"
   },
   {
     "name": "registration-success",
     "path": "/registration-success",
     "component": "/Users/candra/star-air-frontend/pages/registration-success.vue",
-    "chunkName": "pages/registration-success"
+    "chunkName": "pages/registration-success",
+    "_name": "_34c0fb46"
+  },
+  {
+    "name": "transfer-points-for-plus",
+    "path": "/transfer-points-for-plus",
+    "component": "/Users/candra/star-air-frontend/pages/transfer-points-for-plus.vue",
+    "chunkName": "pages/transfer-points-for-plus",
+    "_name": "_234ffe58"
   },
   {
     "name": "index",
     "path": "/",
     "component": "/Users/candra/star-air-frontend/pages/index.vue",
-    "chunkName": "pages/index"
+    "chunkName": "pages/index",
+    "_name": "_1f3724d4"
   }
 ]

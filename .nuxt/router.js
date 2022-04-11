@@ -6,6 +6,7 @@ import scrollBehavior from './router.scrollBehavior.js'
 
 const _50826e2f = () => interopDefault(import('../pages/account.vue' /* webpackChunkName: "pages/account" */))
 const _dd90aef8 = () => interopDefault(import('../pages/activation.vue' /* webpackChunkName: "pages/activation" */))
+const _10887649 = () => interopDefault(import('../pages/claim-missing-points.vue' /* webpackChunkName: "pages/claim-missing-points" */))
 const _51a4a1fa = () => interopDefault(import('../pages/earn-points.vue' /* webpackChunkName: "pages/earn-points" */))
 const _d0a9d026 = () => interopDefault(import('../pages/flight-info.vue' /* webpackChunkName: "pages/flight-info" */))
 const _3ae0e007 = () => interopDefault(import('../pages/forgot-password.vue' /* webpackChunkName: "pages/forgot-password" */))
@@ -15,6 +16,7 @@ const _251119a5 = () => interopDefault(import('../pages/redem-points.vue' /* web
 const _08beb2ae = () => interopDefault(import('../pages/redem-points-detail.vue' /* webpackChunkName: "pages/redem-points-detail" */))
 const _3081e927 = () => interopDefault(import('../pages/registration.vue' /* webpackChunkName: "pages/registration" */))
 const _34c0fb46 = () => interopDefault(import('../pages/registration-success.vue' /* webpackChunkName: "pages/registration-success" */))
+const _234ffe58 = () => interopDefault(import('../pages/transfer-points-for-plus.vue' /* webpackChunkName: "pages/transfer-points-for-plus" */))
 const _1f3724d4 = () => interopDefault(import('../pages/index.vue' /* webpackChunkName: "pages/index" */))
 
 const emptyFn = () => {}
@@ -36,6 +38,10 @@ export const routerOptions = {
     path: "/activation",
     component: _dd90aef8,
     name: "activation"
+  }, {
+    path: "/claim-missing-points",
+    component: _10887649,
+    name: "claim-missing-points"
   }, {
     path: "/earn-points",
     component: _51a4a1fa,
@@ -72,6 +78,10 @@ export const routerOptions = {
     path: "/registration-success",
     component: _34c0fb46,
     name: "registration-success"
+  }, {
+    path: "/transfer-points-for-plus",
+    component: _234ffe58,
+    name: "transfer-points-for-plus"
   }, {
     path: "/",
     component: _1f3724d4,

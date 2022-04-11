@@ -26,7 +26,6 @@
           <div class="text-sm text-grayscale-900">10500</div>
         </div>
       </div>
-      
     </div>
     <div class="mt-6">
       <Input
