@@ -42,34 +42,18 @@ export default {
       </div>
       <div class="flex items-start mt-6 md:mt-16 gap-x-8">
         <div class="md:w-2/3">
-          <div class="md:flex">
-            <div class="md:w-1/6">
-              <Select
-                label="Title"
-                border="border rounded-lg md:rounded-l-lg"
+          <div class="flex">
+            <div class="flex-1 mt-6 md:mt-0">
+              <Input
+                label="First Name"
+                border="border md:rounded-l-lg"
               />
             </div>
-            <div class="md:w-5/6 md:flex">
-              <div class="flex-1 mt-6 md:mt-0">
-                <Input
-                  label="First Name"
-                  border="border rounded-lg md:rounded-none"
-                />
-              </div>
-              <div class="flex-1 mt-6 md:mt-0">
-                <Input
-                  label="Last Name"
-                  border="border rounded-lg md:rounded-r-lg"
-                />
-              </div>
-            </div>
-          </div>
-          <div class="mt-6 md:flex gap-x-6">
-            <div class="flex-1">
-              <Select label="Birth of Date" />
-            </div>
             <div class="flex-1 mt-6 md:mt-0">
-              <Select label="Gender" />
+              <Input
+                label="Last Name"
+                border="border md:rounded-r-lg"
+              />
             </div>
           </div>
           <Input label="Email Address" customClass="mt-6" />
@@ -80,10 +64,6 @@ export default {
             <div class="flex-grow">
               <Input label="Phone" border="border rounded-r-lg" />
             </div>
-          </div>
-          <Input label="Address" customClass="mt-6" />
-          <div class="mt-6">
-            <Select label="Country/Region of Residence" />
           </div>
           <div class="flex mt-10 gap-x-4">
             <div class="flex-none">

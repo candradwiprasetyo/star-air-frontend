@@ -113,7 +113,7 @@
               class="inline-block"
               alt="English"
             />
-            <span class="text-xs">EN</span>
+            <span class="pl-2 text-xs">EN</span>
           </div>
           <div class="flex justify-end flex-1">
             <img
@@ -122,7 +122,7 @@
               alt="Shopping bag"
             />
           </div>
-          <div class="flex justify-end flex-1">
+          <div class="flex justify-end flex-1" @click="openMenu()">
             <img
               src="~/assets/images/mobile-menu.svg"
               class="inline-block"
@@ -133,6 +133,99 @@
       </div>
     </div>
     <div class="h-16 mb-1 md:h-20"></div>
+    <div class="fixed inset-0 z-20 bg-white" v-if="isMenuOpen">
+      <div class="flex p-6 text-grayscale-900">
+        <div class="flex-1">Menu</div>
+        <div class="flex-1">
+          <img
+            src="~/assets/images/close.svg"
+            class="float-right"
+            alt="Close"
+            @click="closeMenu()"
+          />
+        </div>
+      </div>
+      <div class="flex px-6 py-4 text-white bg-secondary-900">
+        <NuxtLink to="/account">
+          <div class="flex items-center flex-1 pt-2">
+            <div class="flex-none">
+              <img
+                src="~/assets/images/profile-white.svg"
+                alt="Profile"
+                class="pr-4"
+              />
+            </div>
+            <div class="flex-grow">
+              <div class="font-semibold font-noto-sans">Account</div>
+              <div class="text-xs text-grayscale-200">0 Star Points</div>
+            </div>
+          </div>
+        </NuxtLink>
+        <div class="flex justify-end flex-1 gap-x-4">
+          <div class="inline-block">
+            <NuxtLink to="/login">
+              <Button
+                value="Login"
+                border="border-2 border-secondary-900"
+                color="text-secondary-900"
+                background="bg-white"
+                padding="py-4 px-3"
+              />
+            </NuxtLink>
+          </div>
+          <div class="inline-block">
+            <NuxtLink to="/registration">
+              <Button value="Sign Up" padding="py-4 px-3" />
+            </NuxtLink>
+          </div>
+        </div>
+      </div>
+      <div class="p-6 text-grayscale-500">
+        <div class="pb-4 font-medium border-b text-secondary-900">
+          <NuxtLink to="/">Home</NuxtLink>
+        </div>
+        <div class="py-4 font-medium border-b">
+          <div class="flex">
+            <div class="flex-1">Earn</div>
+            <div class="flex-1">
+              <img
+                src="~/assets/images/arrow-up-gray.svg"
+                alt="Arrow up"
+                class="float-right"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="py-4 text-sm">
+          <NuxtLink to="/earn-points">How to Earn Points</NuxtLink>
+        </div>
+        <div class="py-4 text-sm">
+          <NuxtLink to="/claim-missing-points">Claim Missing Points</NuxtLink>
+        </div>
+        <div class="py-4 text-sm">
+          <NuxtLink to="/buy-points">Buy Points</NuxtLink>
+        </div>
+        <div class="py-4 text-sm">
+          <NuxtLink to="/transfer-points-for-plus">Transfer Points for Plus</NuxtLink>
+        </div>
+        <div class="py-4 font-medium border-b">
+          <NuxtLink to="/redem-points">Redeem</NuxtLink>
+        </div>
+        <div class="py-4 font-medium border-b">Shop</div>
+        <div class="py-4 font-medium border-b">
+          <div class="flex">
+            <div class="flex-1">Help</div>
+            <div class="flex-1">
+              <img
+                src="~/assets/images/arrow-bottom-gray.svg"
+                alt="Arrow up"
+                class="float-right"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 </template>
 
@@ -141,16 +234,22 @@ export default {
   name: "Header",
   data() {
     return {
-      dataLogged: null
+      dataLogged: null,
+      isMenuOpen: false,
     }
   },
   mounted() {
-    console.log(this.$route.query.logged);
     this.dataLogged = (this.$route.query.logged) ? this.$route.query.logged : null;
   },
   methods: {
     goToHome() {
       window.location.href = '/';
+    },
+    openMenu() {
+      this.isMenuOpen = true;
+    },
+    closeMenu() {
+      this.isMenuOpen = false;
     }
   }
 };

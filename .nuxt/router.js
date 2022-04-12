@@ -15,6 +15,7 @@ const _630db328 = () => interopDefault(import('../pages/my-trip.vue' /* webpackC
 const _251119a5 = () => interopDefault(import('../pages/redem-points.vue' /* webpackChunkName: "pages/redem-points" */))
 const _08beb2ae = () => interopDefault(import('../pages/redem-points-detail.vue' /* webpackChunkName: "pages/redem-points-detail" */))
 const _3081e927 = () => interopDefault(import('../pages/registration.vue' /* webpackChunkName: "pages/registration" */))
+const _590ff8b6 = () => interopDefault(import('../pages/registration-full.vue' /* webpackChunkName: "pages/registration-full" */))
 const _34c0fb46 = () => interopDefault(import('../pages/registration-success.vue' /* webpackChunkName: "pages/registration-success" */))
 const _234ffe58 = () => interopDefault(import('../pages/transfer-points-for-plus.vue' /* webpackChunkName: "pages/transfer-points-for-plus" */))
 const _1f3724d4 = () => interopDefault(import('../pages/index.vue' /* webpackChunkName: "pages/index" */))
@@ -74,6 +75,10 @@ export const routerOptions = {
     path: "/registration",
     component: _3081e927,
     name: "registration"
+  }, {
+    path: "/registration-full",
+    component: _590ff8b6,
+    name: "registration-full"
   }, {
     path: "/registration-success",
     component: _34c0fb46,

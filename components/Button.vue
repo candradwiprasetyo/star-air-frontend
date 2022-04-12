@@ -1,7 +1,7 @@
 <template>
   <div
-    class="px-6 py-4 font-medium text-center rounded-lg cursor-pointer"
-    :class="[color, background, border, customClass]"
+    class="font-medium text-center rounded-lg cursor-pointer "
+    :class="[color, background, border, padding, customClass]"
   >
     {{ value }}
   </div>
@@ -35,6 +35,11 @@ export default {
       required: false,
       default: "w-full",
     },
+    padding: {
+      type: String,
+      required: false,
+      default: "px-6 py-4",
+    }
   },
 };
 </script>
