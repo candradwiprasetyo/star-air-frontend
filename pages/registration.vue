@@ -1,12 +1,49 @@
 <script lang="ts">
-export default {
-  name: "Registration",
-  data() {
-    return {};
-  },
-  methods: {},
-  mounted() {},
-};
+  export default {
+    name: "Registration",
+    data() {
+      return {
+        isButtonEnabled: false,
+        firstName: null,
+        lastName: null,
+        emailAddress: null,
+        phoneNumber: null,
+        flagNumber: null,
+        isAgreeOffer: false,
+        isAgreeTnc: false,
+      };
+    },
+    methods: {
+      formChanged() {
+        if (
+          this.firstName &&
+          this.lastName &&
+          this.emailAddress &&
+          this.phoneNumber &&
+          this.isAgreeOffer &&
+          this.isAgreeTnc
+        ) {
+          this.isButtonEnabled = true
+        } else {
+          this.isButtonEnabled = false
+        }
+      },
+      createAccount() {
+        if (this.isButtonEnabled) {
+          console.log('sukses')
+        }
+      }
+    },
+    mounted() {},
+    watch: {
+      firstName: function(val) { this.formChanged() },
+      lastName: function(val) { this.formChanged() },
+      emailAddress: function(val) { this.formChanged() },
+      phoneNumber: function(val) { this.formChanged() },
+      isAgreeOffer: function(val) { this.formChanged() },
+      isAgreeTnc: function(val) { this.formChanged() },
+    }
+  };
 </script>
 
 <template>
@@ -47,22 +84,24 @@ export default {
               <Input
                 label="First Name"
                 border="border md:rounded-l-lg"
+                v-model="firstName"
               />
             </div>
             <div class="flex-1 mt-6 md:mt-0">
               <Input
                 label="Last Name"
                 border="border md:rounded-r-lg"
+                v-model="lastName"
               />
             </div>
           </div>
-          <Input label="Email Address" customClass="mt-6" />
+          <Input label="Email Address" customClass="mt-6" v-model="emailAddress" />
           <div class="flex mt-6">
             <div class="flex-none w-16">
-              <Select label=" " border="border rounded-l-lg" />
+              <Select label="" border="border rounded-l-lg" v-model="flagNumber" />
             </div>
             <div class="flex-grow">
-              <Input label="Phone" border="border rounded-r-lg" />
+              <Input label="Phone" border="border rounded-r-lg" v-model="phoneNumber" />
             </div>
           </div>
           <div class="flex mt-10 gap-x-4">
@@ -71,7 +110,7 @@ export default {
                 type="checkbox"
                 id="checkbox1"
                 name="checkbox1"
-                value="checkbox1"
+                v-model="isAgreeOffer"
               />
             </div>
             <div class="flex-grow">
@@ -87,22 +126,24 @@ export default {
             <div class="flex-none">
               <input
                 type="checkbox"
-                id="checkbox1"
-                name="checkbox1"
-                value="checkbox1"
+                id="checkbox2"
+                name="checkbox2"
+                v-model="isAgreeTnc"
               />
             </div>
             <div class="flex-grow">
-              <label for="checkbox1">
+              <label for="checkbox2">
                 I agree to the Terms and Conditions of the Star Club programme
                 and accept the Star Air Privacy Policy.</label
               >
             </div>
           </div>
           <div class="mt-10 md:w-64">
-            <NuxtLink to="/registration-success"> 
-              <Button value="Create an Account" />
-            </NuxtLink>
+            <Button 
+              value="Create an Account" 
+              :enabled="isButtonEnabled" 
+              @create-account="createAccount"
+            />
           </div>
         </div>
         <div class="hidden w-1/3 p-6 md:block bg-light-blue rounded-xl">

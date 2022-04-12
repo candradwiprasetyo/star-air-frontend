@@ -13,14 +13,15 @@ module.exports = "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQi
 // ESM COMPAT FLAG
 __webpack_require__.r(__webpack_exports__);
 
-// CONCATENATED MODULE: ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/@nuxt/components/dist/loader.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./components/Input.vue?vue&type=template&id=4981e6c6&
+// CONCATENATED MODULE: ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/@nuxt/components/dist/loader.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./components/Input.vue?vue&type=template&id=d5c5a85c&
 var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"relative px-3 py-2",class:[_vm.border, _vm.customClass]},[_vm._ssrNode("<div class=\"mb-1 text-xs text-grayscale-400\">"+_vm._ssrEscape(_vm._s(_vm.label))+"</div> <input type=\"text\""+(_vm._ssrAttr("placeholder",_vm.placeholder))+(_vm._ssrAttr("value",_vm.value))+" class=\"w-full border-none outline-none\"> "+((_vm.icon)?("<div class=\"absolute w-6 h-6 right-3 top-4\"><img"+(_vm._ssrAttr("src",__webpack_require__(79)("./" + _vm.icon)))+" alt=\"Search\"></div>"):"<!---->"))])}
 var staticRenderFns = []
 
 
-// CONCATENATED MODULE: ./components/Input.vue?vue&type=template&id=4981e6c6&
+// CONCATENATED MODULE: ./components/Input.vue?vue&type=template&id=d5c5a85c&
 
 // CONCATENATED MODULE: ./node_modules/babel-loader/lib??ref--2-0!./node_modules/@nuxt/components/dist/loader.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./components/Input.vue?vue&type=script&lang=js&
+//
 //
 //
 //
@@ -65,6 +66,11 @@ var staticRenderFns = []
     icon: {
       type: String,
       required: false
+    }
+  },
+  methods: {
+    updateValue: function (value) {
+      this.$emit('input', value);
     }
   }
 });

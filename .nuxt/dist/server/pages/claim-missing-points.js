@@ -13,14 +13,15 @@ module.exports = "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQi
 // ESM COMPAT FLAG
 __webpack_require__.r(__webpack_exports__);
 
-// CONCATENATED MODULE: ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/@nuxt/components/dist/loader.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./components/Input.vue?vue&type=template&id=4981e6c6&
+// CONCATENATED MODULE: ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/@nuxt/components/dist/loader.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./components/Input.vue?vue&type=template&id=d5c5a85c&
 var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"relative px-3 py-2",class:[_vm.border, _vm.customClass]},[_vm._ssrNode("<div class=\"mb-1 text-xs text-grayscale-400\">"+_vm._ssrEscape(_vm._s(_vm.label))+"</div> <input type=\"text\""+(_vm._ssrAttr("placeholder",_vm.placeholder))+(_vm._ssrAttr("value",_vm.value))+" class=\"w-full border-none outline-none\"> "+((_vm.icon)?("<div class=\"absolute w-6 h-6 right-3 top-4\"><img"+(_vm._ssrAttr("src",__webpack_require__(79)("./" + _vm.icon)))+" alt=\"Search\"></div>"):"<!---->"))])}
 var staticRenderFns = []
 
 
-// CONCATENATED MODULE: ./components/Input.vue?vue&type=template&id=4981e6c6&
+// CONCATENATED MODULE: ./components/Input.vue?vue&type=template&id=d5c5a85c&
 
 // CONCATENATED MODULE: ./node_modules/babel-loader/lib??ref--2-0!./node_modules/@nuxt/components/dist/loader.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./components/Input.vue?vue&type=script&lang=js&
+//
 //
 //
 //
@@ -65,6 +66,11 @@ var staticRenderFns = []
     icon: {
       type: String,
       required: false
+    }
+  },
+  methods: {
+    updateValue: function (value) {
+      this.$emit('input', value);
     }
   }
 });
@@ -118,14 +124,29 @@ module.exports = "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjUiIGhlaWdodD0iMjUi
 // ESM COMPAT FLAG
 __webpack_require__.r(__webpack_exports__);
 
-// CONCATENATED MODULE: ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/@nuxt/components/dist/loader.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./components/Button.vue?vue&type=template&id=73d1b75f&
-var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"font-medium text-center rounded-lg cursor-pointer ",class:[_vm.color, _vm.background, _vm.border, _vm.padding, _vm.customClass]},[_vm._ssrNode(_vm._ssrEscape("\n  "+_vm._s(_vm.value)+"\n"))])}
+// CONCATENATED MODULE: ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/@nuxt/components/dist/loader.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./components/Button.vue?vue&type=template&id=52a190ea&
+var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"font-medium text-center rounded-lg ",class:[
+    _vm.color, 
+    _vm.enabled ? _vm.border : 'border-none', 
+    _vm.padding, 
+    _vm.customClass, 
+    _vm.enabled ? _vm.background : 'bg-gray-300',
+    _vm.enabled ? 'cursor-pointer' : 'cursor-not-allowed'
+  ],on:{"click":function($event){return _vm.$emit('create-account')}}},[_vm._ssrNode(_vm._ssrEscape("\n  "+_vm._s(_vm.value)+"\n"))])}
 var staticRenderFns = []
 
 
-// CONCATENATED MODULE: ./components/Button.vue?vue&type=template&id=73d1b75f&
+// CONCATENATED MODULE: ./components/Button.vue?vue&type=template&id=52a190ea&
 
 // CONCATENATED MODULE: ./node_modules/babel-loader/lib??ref--2-0!./node_modules/@nuxt/components/dist/loader.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./components/Button.vue?vue&type=script&lang=js&
+//
+//
+//
+//
+//
+//
+//
+//
 //
 //
 //
@@ -166,6 +187,11 @@ var staticRenderFns = []
       type: String,
       required: false,
       default: "px-6 py-4"
+    },
+    enabled: {
+      type: Boolean,
+      required: false,
+      default: true
     }
   }
 });

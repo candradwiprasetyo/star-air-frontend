@@ -1,7 +1,15 @@
 <template>
   <div
-    class="font-medium text-center rounded-lg cursor-pointer "
-    :class="[color, background, border, padding, customClass]"
+    class="font-medium text-center rounded-lg "
+    :class="[
+      color, 
+      enabled ? border : 'border-none', 
+      padding, 
+      customClass, 
+      enabled ? background : 'bg-gray-300',
+      enabled ? 'cursor-pointer' : 'cursor-not-allowed'
+    ]"
+    v-on:click="$emit('create-account')"
   >
     {{ value }}
   </div>
@@ -39,7 +47,12 @@ export default {
       type: String,
       required: false,
       default: "px-6 py-4",
-    }
+    },
+    enabled: {
+      type: Boolean,
+      required: false,
+      default: true,
+    },
   },
 };
 </script>

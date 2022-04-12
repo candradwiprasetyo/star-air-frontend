@@ -6,6 +6,7 @@
       :placeholder="placeholder"
       class="w-full border-none outline-none"
       :value="value"
+      v-on:input="updateValue($event.target.value)"
     />
     <div class="absolute w-6 h-6 right-3 top-4" v-if="icon">
       <img :src="require('@/assets/images/' + icon)" alt="Search" />
@@ -45,5 +46,10 @@ export default {
       required: false,
     }
   },
+  methods: {
+    updateValue: function (value) {
+      this.$emit('input', value)
+    }
+  }
 };
 </script>
