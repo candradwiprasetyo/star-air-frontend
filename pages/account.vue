@@ -1,4 +1,5 @@
 <script lang="ts">
+import cookie from 'js-cookie'
 export default {
   name: "Account",
   data() {
@@ -17,7 +18,12 @@ export default {
   methods: {
     changeMenu(id) {
       this.activeMenu = id;
-    }
+    },
+    goLogout() {
+      cookie.remove('star_air_login')
+      this.$store.commit('SET_LOGIN', false)
+      this.$router.push('/')
+    },
   },
   mounted() {},
 };
@@ -52,11 +58,9 @@ export default {
             <div class="px-4 py-3 mb-4 rounded-full cursor-pointer" :class="menu.id == activeMenu ? 'bg-light-blue text-secondary-900 font-bold' : ''" v-for="menu in dataMenu" :key="menu.id" @click="changeMenu(menu.id)">
               {{ menu.name }}
             </div>
-            <NuxtLink to="/">
-              <div class="px-4 py-3 mb-4 rounded-full cursor-pointer">
-                Logout
-              </div>
-            </NuxtLink>
+            <div class="px-4 py-3 mb-4 rounded-full cursor-pointer" @click="goLogout()">
+              Logout
+            </div>
           </div>
         </div>
         <div class="md:w-2/3">

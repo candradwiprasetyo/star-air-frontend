@@ -37,7 +37,15 @@ export default {
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
-  modules: [],
+  modules: [
+    '@nuxtjs/axios'
+  ],
+
+  axios: {
+    baseURL: 'http://wstest-loyalty.sqiva.com',
+    proxyHeaders: false,
+    credentials: false,
+  },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {

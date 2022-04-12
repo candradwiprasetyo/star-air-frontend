@@ -30,9 +30,21 @@
       },
       createAccount() {
         if (this.isButtonEnabled) {
-          console.log('sukses')
+          let formData = new FormData();
+          formData.append('first_name', this.firstName);
+          formData.append('last_name', this.lastName);
+          formData.append('mobile', this.phoneNumber);
+          formData.append('email', this.emailAddress);
+
+          this.$axios.$post('/member/add-member ', formData)
+            .then( (response) => {
+              console.log(response)
+            })
+            .catch(function (error) {
+              console.log(error)
+            })
         }
-      }
+      },
     },
     mounted() {},
     watch: {
@@ -142,7 +154,7 @@
             <Button 
               value="Create an Account" 
               :enabled="isButtonEnabled" 
-              @create-account="createAccount"
+              @action="createAccount"
             />
           </div>
         </div>

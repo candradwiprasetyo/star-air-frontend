@@ -2,7 +2,7 @@
   <div>
     <div class="fixed z-10 w-full bg-white border-b top-10">
       <div
-        class="container items-center hidden mx-auto min-h-20 text-grayscale-500 md:flex"
+        class="container items-center hidden mx-auto min-h-40 text-grayscale-500 md:flex"
       >
         <div class="flex-none">
           <img
@@ -49,8 +49,8 @@
               />
               <span class="align-middle">0 item (s)</span>
             </div>
-            <div class="">
-              <div v-if="!dataLogged" class="flex items-center py-3 gap-x-5">
+            <div v-if="!isLoading">
+              <div v-if="userData.length == 0" class="flex items-center py-3 gap-x-5">
                 <div class="w-32 mr-4">
                   <NuxtLink to="/login">
                     <Button
@@ -69,7 +69,7 @@
               </div>
               <div v-else class="flex items-center py-6 gap-x-5">
                 <div class="flex-none">
-                  <NuxtLink to="/account?logged=1">
+                  <NuxtLink to="/account">
                     <img
                       src="~/assets/images/user.png"
                       class="w-6 h-6"
@@ -78,9 +78,9 @@
                   </NuxtLink> 
                 </div>
                 <div class="flex-grow">
-                  <NuxtLink to="/account?logged=1">
-                    <div class="font-medium text-grayscale-900">Chanda Gauri</div>
-                    <div class="text-xs text-primary-600">5000 Star Points</div>
+                  <NuxtLink to="/account">
+                    <div class="font-medium text-grayscale-900">{{ userData.name }}</div>
+                    <div class="text-xs text-primary-600">{{ userData.avb_point }} Star Points</div>
                   </NuxtLink>
                 </div>
                 <div class="flex-none">
@@ -145,38 +145,69 @@
           />
         </div>
       </div>
-      <div class="flex px-6 py-4 text-white bg-secondary-900">
-        <NuxtLink to="/account">
-          <div class="flex items-center flex-1 pt-2">
-            <div class="flex-none">
-              <img
-                src="~/assets/images/profile-white.svg"
-                alt="Profile"
-                class="pr-4"
-              />
+      <div class="px-6 py-4 text-white bg-secondary-900">
+        <div v-if="userData.length == 0" class="flex">
+          <NuxtLink to="/account">
+            <div class="flex items-center flex-1 pt-2">
+              <div class="flex-none">
+                <img
+                  src="~/assets/images/profile-white.svg"
+                  alt="Profile"
+                  class="pr-4"
+                />
+              </div>
+              <div class="flex-grow">
+                <div class="font-semibold font-noto-sans">Account</div>
+                <div class="text-xs text-grayscale-200">0 Star Points</div>
+              </div>
             </div>
-            <div class="flex-grow">
-              <div class="font-semibold font-noto-sans">Account</div>
-              <div class="text-xs text-grayscale-200">0 Star Points</div>
+          </NuxtLink>
+          <div class="flex justify-end flex-1 gap-x-4">
+            <div class="inline-block">
+              <NuxtLink to="/login">
+                <Button
+                  value="Login"
+                  border="border-2 border-white"
+                  color="text-white"
+                  background="bg-secondary-900"
+                  padding="py-4 px-3"
+                />
+              </NuxtLink>
+            </div>
+            <div class="inline-block">
+              <NuxtLink to="/registration">
+                <Button value="Sign Up" padding="py-4 px-3" />
+              </NuxtLink>
             </div>
           </div>
-        </NuxtLink>
-        <div class="flex justify-end flex-1 gap-x-4">
-          <div class="inline-block">
-            <NuxtLink to="/login">
+        </div>
+        <div v-else class="flex">
+          <NuxtLink to="/account">
+            <div class="flex items-center flex-1 pt-2">
+              <div class="flex-none">
+                <img
+                  src="~/assets/images/profile-white.svg"
+                  alt="Profile"
+                  class="pr-4"
+                />
+              </div>
+              <div class="flex-grow">
+                <div class="font-semibold font-noto-sans">{{ userData.name }}</div>
+                <div class="text-xs text-grayscale-200">{{ userData.avb_point }} Star Points</div>
+              </div>
+            </div>
+          </NuxtLink>
+          <div class="flex justify-end flex-1 gap-x-4">
+            <div class="">
               <Button
-                value="Login"
-                border="border-2 border-secondary-900"
-                color="text-secondary-900"
-                background="bg-white"
-                padding="py-4 px-3"
+                value="Logout"
+                border="border-2 border-white"
+                color="text-white"
+                background="bg-secondary-900"
+                padding="py-4 px-6"
+                @action="goLogout"
               />
-            </NuxtLink>
-          </div>
-          <div class="inline-block">
-            <NuxtLink to="/registration">
-              <Button value="Sign Up" padding="py-4 px-3" />
-            </NuxtLink>
+            </div>
           </div>
         </div>
       </div>
@@ -230,16 +261,19 @@
 </template>
 
 <script>
+import cookie from 'js-cookie'
 export default {
-  name: "Header",
+  name: "MainMenu",
   data() {
     return {
       dataLogged: null,
       isMenuOpen: false,
+      userData: [],
+      isLoading: true,
     }
   },
   mounted() {
-    this.dataLogged = (this.$route.query.logged) ? this.$route.query.logged : null;
+    this.loadUser();
   },
   methods: {
     goToHome() {
@@ -250,7 +284,18 @@ export default {
     },
     closeMenu() {
       this.isMenuOpen = false;
-    }
-  }
+    },
+    loadUser() {
+      let userData = (cookie.get('star_air_login')) ? JSON.parse(cookie.get('star_air_login')) : '';
+      this.userData = userData;
+      this.isLoading = false;
+    },
+    goLogout() {
+      cookie.remove('star_air_login')
+      this.$store.commit('SET_LOGIN', false)
+      this.$router.push('/')
+    },
+  },
+  
 };
 </script>

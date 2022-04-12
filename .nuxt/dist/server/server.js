@@ -115,7 +115,7 @@ module.exports =
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 14);
+/******/ 	return __webpack_require__(__webpack_require__.s = 18);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -238,6 +238,18 @@ function normalizeComponent (
 
 /***/ }),
 /* 3 */
+/***/ (function(module, exports) {
+
+module.exports = require("vuex");
+
+/***/ }),
+/* 4 */
+/***/ (function(module, exports) {
+
+module.exports = require("axios");
+
+/***/ }),
+/* 5 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -309,7 +321,7 @@ module.exports = function (cssWithMappingToString) {
 };
 
 /***/ }),
-/* 4 */
+/* 6 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -432,91 +444,103 @@ function renderStyles (styles) {
 
 
 /***/ }),
-/* 5 */
+/* 7 */
 /***/ (function(module, exports) {
 
 module.exports = require("vue-no-ssr");
 
 /***/ }),
-/* 6 */
+/* 8 */
 /***/ (function(module, exports) {
 
 module.exports = require("vue-client-only");
 
 /***/ }),
-/* 7 */
+/* 9 */
 /***/ (function(module, exports) {
 
 module.exports = require("vue-router");
 
 /***/ }),
-/* 8 */
+/* 10 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(19);
+var content = __webpack_require__(23);
 if(content.__esModule) content = content.default;
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add CSS to SSR context
-var add = __webpack_require__(4).default
+var add = __webpack_require__(6).default
 module.exports.__inject__ = function (context) {
   add("162ac6c2", content, true, context)
 };
 
 /***/ }),
-/* 9 */
+/* 11 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(21);
+var content = __webpack_require__(25);
 if(content.__esModule) content = content.default;
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add CSS to SSR context
-var add = __webpack_require__(4).default
+var add = __webpack_require__(6).default
 module.exports.__inject__ = function (context) {
   add("53f61d5f", content, true, context)
 };
 
 /***/ }),
-/* 10 */
+/* 12 */
 /***/ (function(module, exports) {
 
 module.exports = require("node-fetch");
 
 /***/ }),
-/* 11 */
+/* 13 */
 /***/ (function(module, exports) {
 
 module.exports = require("vue-meta");
 
 /***/ }),
-/* 12 */
+/* 14 */
+/***/ (function(module, exports) {
+
+module.exports = require("cookie");
+
+/***/ }),
+/* 15 */
+/***/ (function(module, exports) {
+
+module.exports = require("defu");
+
+/***/ }),
+/* 16 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "img/bg-login.f3b2fa8.png";
 
 /***/ }),
-/* 13 */
+/* 17 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "img/bg-forgot-password.2c2c516.png";
 
 /***/ }),
-/* 14 */
+/* 18 */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(15);
-module.exports = __webpack_require__(27);
+__webpack_require__(19);
+module.exports = __webpack_require__(32);
 
 
 /***/ }),
-/* 15 */
+/* 19 */
 /***/ (function(module, exports) {
 
 global.installComponents = function (component, components) {
@@ -560,7 +584,7 @@ function provideFunctionalComponents(component, components) {
 
 
 /***/ }),
-/* 16 */
+/* 20 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -579,7 +603,7 @@ __webpack_require__.r(__webpack_exports__);
 });
 
 /***/ }),
-/* 17 */
+/* 21 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -598,22 +622,22 @@ __webpack_require__.r(__webpack_exports__);
 });
 
 /***/ }),
-/* 18 */
+/* 22 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _node_modules_vue_style_loader_index_js_ref_3_oneOf_1_0_node_modules_nuxt_postcss8_node_modules_css_loader_dist_cjs_js_ref_3_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_nuxt_postcss8_node_modules_postcss_loader_dist_cjs_js_ref_3_oneOf_1_2_node_modules_nuxt_components_dist_loader_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_nuxt_error_vue_vue_type_style_index_0_lang_css___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(8);
+/* harmony import */ var _node_modules_vue_style_loader_index_js_ref_3_oneOf_1_0_node_modules_nuxt_postcss8_node_modules_css_loader_dist_cjs_js_ref_3_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_nuxt_postcss8_node_modules_postcss_loader_dist_cjs_js_ref_3_oneOf_1_2_node_modules_nuxt_components_dist_loader_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_nuxt_error_vue_vue_type_style_index_0_lang_css___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(10);
 /* harmony import */ var _node_modules_vue_style_loader_index_js_ref_3_oneOf_1_0_node_modules_nuxt_postcss8_node_modules_css_loader_dist_cjs_js_ref_3_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_nuxt_postcss8_node_modules_postcss_loader_dist_cjs_js_ref_3_oneOf_1_2_node_modules_nuxt_components_dist_loader_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_nuxt_error_vue_vue_type_style_index_0_lang_css___WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_vue_style_loader_index_js_ref_3_oneOf_1_0_node_modules_nuxt_postcss8_node_modules_css_loader_dist_cjs_js_ref_3_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_nuxt_postcss8_node_modules_postcss_loader_dist_cjs_js_ref_3_oneOf_1_2_node_modules_nuxt_components_dist_loader_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_nuxt_error_vue_vue_type_style_index_0_lang_css___WEBPACK_IMPORTED_MODULE_0__);
 /* harmony reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in _node_modules_vue_style_loader_index_js_ref_3_oneOf_1_0_node_modules_nuxt_postcss8_node_modules_css_loader_dist_cjs_js_ref_3_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_nuxt_postcss8_node_modules_postcss_loader_dist_cjs_js_ref_3_oneOf_1_2_node_modules_nuxt_components_dist_loader_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_nuxt_error_vue_vue_type_style_index_0_lang_css___WEBPACK_IMPORTED_MODULE_0__) if(["default"].indexOf(__WEBPACK_IMPORT_KEY__) < 0) (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return _node_modules_vue_style_loader_index_js_ref_3_oneOf_1_0_node_modules_nuxt_postcss8_node_modules_css_loader_dist_cjs_js_ref_3_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_nuxt_postcss8_node_modules_postcss_loader_dist_cjs_js_ref_3_oneOf_1_2_node_modules_nuxt_components_dist_loader_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_nuxt_error_vue_vue_type_style_index_0_lang_css___WEBPACK_IMPORTED_MODULE_0__[key]; }) }(__WEBPACK_IMPORT_KEY__));
 
 
 /***/ }),
-/* 19 */
+/* 23 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // Imports
-var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(3);
+var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(5);
 var ___CSS_LOADER_EXPORT___ = ___CSS_LOADER_API_IMPORT___(function(i){return i[1]});
 // Module
 ___CSS_LOADER_EXPORT___.push([module.i, ".__nuxt-error-page{padding:1rem;background:#f7f8fb;color:#47494e;text-align:center;display:flex;justify-content:center;align-items:center;flex-direction:column;font-family:sans-serif;font-weight:100!important;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;-webkit-font-smoothing:antialiased;position:absolute;top:0;left:0;right:0;bottom:0}.__nuxt-error-page .error{max-width:450px}.__nuxt-error-page .title{font-size:1.5rem;margin-top:15px;color:#47494e;margin-bottom:8px}.__nuxt-error-page .description{color:#7f828b;line-height:21px;margin-bottom:10px}.__nuxt-error-page a{color:#7f828b!important;text-decoration:none}.__nuxt-error-page .logo{position:fixed;left:12px;bottom:12px}", ""]);
@@ -623,22 +647,22 @@ module.exports = ___CSS_LOADER_EXPORT___;
 
 
 /***/ }),
-/* 20 */
+/* 24 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _node_modules_vue_style_loader_index_js_ref_3_oneOf_1_0_node_modules_nuxt_postcss8_node_modules_css_loader_dist_cjs_js_ref_3_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_nuxt_postcss8_node_modules_postcss_loader_dist_cjs_js_ref_3_oneOf_1_2_node_modules_nuxt_components_dist_loader_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_nuxt_loading_vue_vue_type_style_index_0_lang_css___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(9);
+/* harmony import */ var _node_modules_vue_style_loader_index_js_ref_3_oneOf_1_0_node_modules_nuxt_postcss8_node_modules_css_loader_dist_cjs_js_ref_3_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_nuxt_postcss8_node_modules_postcss_loader_dist_cjs_js_ref_3_oneOf_1_2_node_modules_nuxt_components_dist_loader_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_nuxt_loading_vue_vue_type_style_index_0_lang_css___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(11);
 /* harmony import */ var _node_modules_vue_style_loader_index_js_ref_3_oneOf_1_0_node_modules_nuxt_postcss8_node_modules_css_loader_dist_cjs_js_ref_3_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_nuxt_postcss8_node_modules_postcss_loader_dist_cjs_js_ref_3_oneOf_1_2_node_modules_nuxt_components_dist_loader_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_nuxt_loading_vue_vue_type_style_index_0_lang_css___WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_vue_style_loader_index_js_ref_3_oneOf_1_0_node_modules_nuxt_postcss8_node_modules_css_loader_dist_cjs_js_ref_3_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_nuxt_postcss8_node_modules_postcss_loader_dist_cjs_js_ref_3_oneOf_1_2_node_modules_nuxt_components_dist_loader_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_nuxt_loading_vue_vue_type_style_index_0_lang_css___WEBPACK_IMPORTED_MODULE_0__);
 /* harmony reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in _node_modules_vue_style_loader_index_js_ref_3_oneOf_1_0_node_modules_nuxt_postcss8_node_modules_css_loader_dist_cjs_js_ref_3_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_nuxt_postcss8_node_modules_postcss_loader_dist_cjs_js_ref_3_oneOf_1_2_node_modules_nuxt_components_dist_loader_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_nuxt_loading_vue_vue_type_style_index_0_lang_css___WEBPACK_IMPORTED_MODULE_0__) if(["default"].indexOf(__WEBPACK_IMPORT_KEY__) < 0) (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return _node_modules_vue_style_loader_index_js_ref_3_oneOf_1_0_node_modules_nuxt_postcss8_node_modules_css_loader_dist_cjs_js_ref_3_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_nuxt_postcss8_node_modules_postcss_loader_dist_cjs_js_ref_3_oneOf_1_2_node_modules_nuxt_components_dist_loader_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_nuxt_loading_vue_vue_type_style_index_0_lang_css___WEBPACK_IMPORTED_MODULE_0__[key]; }) }(__WEBPACK_IMPORT_KEY__));
 
 
 /***/ }),
-/* 21 */
+/* 25 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // Imports
-var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(3);
+var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(5);
 var ___CSS_LOADER_EXPORT___ = ___CSS_LOADER_API_IMPORT___(function(i){return i[1]});
 // Module
 ___CSS_LOADER_EXPORT___.push([module.i, ".nuxt-progress{position:fixed;top:0;left:0;right:0;height:2px;width:0;opacity:1;transition:width .1s,opacity .4s;background-color:#000;z-index:999999}.nuxt-progress.nuxt-progress-notransition{transition:none}.nuxt-progress-failed{background-color:red}", ""]);
@@ -648,66 +672,66 @@ module.exports = ___CSS_LOADER_EXPORT___;
 
 
 /***/ }),
-/* 22 */
+/* 26 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(23);
+var content = __webpack_require__(27);
 if(content.__esModule) content = content.default;
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
-__webpack_require__(4).default("99588748", content, true)
+__webpack_require__(6).default("99588748", content, true)
 
 /***/ }),
-/* 23 */
+/* 27 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // Imports
-var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(3);
+var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(5);
 var ___CSS_LOADER_EXPORT___ = ___CSS_LOADER_API_IMPORT___(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.i, "/*! tailwindcss v3.0.23 | MIT License | https://tailwindcss.com*//*\n1. Prevent padding and border from affecting element width. (https://github.com/mozdevs/cssremedy/issues/4)\n2. Allow adding a border to an element by just adding a border-width. (https://github.com/tailwindcss/tailwindcss/pull/116)\n*/\n\n*,\n::before,\n::after {\n  box-sizing: border-box; /* 1 */\n  border-width: 0; /* 2 */\n  border-style: solid; /* 2 */\n  border-color: #e5e7eb; /* 2 */\n}\n\n::before,\n::after {\n  --tw-content: '';\n}\n\n/*\n1. Use a consistent sensible line-height in all browsers.\n2. Prevent adjustments of font size after orientation changes in iOS.\n3. Use a more readable tab size.\n4. Use the user's configured `sans` font-family by default.\n*/\n\nhtml {\n  line-height: 1.5; /* 1 */\n  -webkit-text-size-adjust: 100%; /* 2 */\n  -moz-tab-size: 4; /* 3 */\n  -o-tab-size: 4;\n     tab-size: 4; /* 3 */\n  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, \"Noto Sans\", sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\"; /* 4 */\n}\n\n/*\n1. Remove the margin in all browsers.\n2. Inherit line-height from `html` so users can set them as a class directly on the `html` element.\n*/\n\nbody {\n  margin: 0; /* 1 */\n  line-height: inherit; /* 2 */\n}\n\n/*\n1. Add the correct height in Firefox.\n2. Correct the inheritance of border color in Firefox. (https://bugzilla.mozilla.org/show_bug.cgi?id=190655)\n3. Ensure horizontal rules are visible by default.\n*/\n\nhr {\n  height: 0; /* 1 */\n  color: inherit; /* 2 */\n  border-top-width: 1px; /* 3 */\n}\n\n/*\nAdd the correct text decoration in Chrome, Edge, and Safari.\n*/\n\nabbr:where([title]) {\n  -webkit-text-decoration: underline dotted;\n          text-decoration: underline dotted;\n}\n\n/*\nRemove the default font size and weight for headings.\n*/\n\nh1,\nh2,\nh3,\nh4,\nh5,\nh6 {\n  font-size: inherit;\n  font-weight: inherit;\n}\n\n/*\nReset links to optimize for opt-in styling instead of opt-out.\n*/\n\na {\n  color: inherit;\n  text-decoration: inherit;\n}\n\n/*\nAdd the correct font weight in Edge and Safari.\n*/\n\nb,\nstrong {\n  font-weight: bolder;\n}\n\n/*\n1. Use the user's configured `mono` font family by default.\n2. Correct the odd `em` font sizing in all browsers.\n*/\n\ncode,\nkbd,\nsamp,\npre {\n  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, \"Liberation Mono\", \"Courier New\", monospace; /* 1 */\n  font-size: 1em; /* 2 */\n}\n\n/*\nAdd the correct font size in all browsers.\n*/\n\nsmall {\n  font-size: 80%;\n}\n\n/*\nPrevent `sub` and `sup` elements from affecting the line height in all browsers.\n*/\n\nsub,\nsup {\n  font-size: 75%;\n  line-height: 0;\n  position: relative;\n  vertical-align: baseline;\n}\n\nsub {\n  bottom: -0.25em;\n}\n\nsup {\n  top: -0.5em;\n}\n\n/*\n1. Remove text indentation from table contents in Chrome and Safari. (https://bugs.chromium.org/p/chromium/issues/detail?id=999088, https://bugs.webkit.org/show_bug.cgi?id=201297)\n2. Correct table border color inheritance in all Chrome and Safari. (https://bugs.chromium.org/p/chromium/issues/detail?id=935729, https://bugs.webkit.org/show_bug.cgi?id=195016)\n3. Remove gaps between table borders by default.\n*/\n\ntable {\n  text-indent: 0; /* 1 */\n  border-color: inherit; /* 2 */\n  border-collapse: collapse; /* 3 */\n}\n\n/*\n1. Change the font styles in all browsers.\n2. Remove the margin in Firefox and Safari.\n3. Remove default padding in all browsers.\n*/\n\nbutton,\ninput,\noptgroup,\nselect,\ntextarea {\n  font-family: inherit; /* 1 */\n  font-size: 100%; /* 1 */\n  line-height: inherit; /* 1 */\n  color: inherit; /* 1 */\n  margin: 0; /* 2 */\n  padding: 0; /* 3 */\n}\n\n/*\nRemove the inheritance of text transform in Edge and Firefox.\n*/\n\nbutton,\nselect {\n  text-transform: none;\n}\n\n/*\n1. Correct the inability to style clickable types in iOS and Safari.\n2. Remove default button styles.\n*/\n\nbutton,\n[type='button'],\n[type='reset'],\n[type='submit'] {\n  -webkit-appearance: button; /* 1 */\n  background-color: transparent; /* 2 */\n  background-image: none; /* 2 */\n}\n\n/*\nUse the modern Firefox focus style for all focusable elements.\n*/\n\n:-moz-focusring {\n  outline: auto;\n}\n\n/*\nRemove the additional `:invalid` styles in Firefox. (https://github.com/mozilla/gecko-dev/blob/2f9eacd9d3d995c937b4251a5557d95d494c9be1/layout/style/res/forms.css#L728-L737)\n*/\n\n:-moz-ui-invalid {\n  box-shadow: none;\n}\n\n/*\nAdd the correct vertical alignment in Chrome and Firefox.\n*/\n\nprogress {\n  vertical-align: baseline;\n}\n\n/*\nCorrect the cursor style of increment and decrement buttons in Safari.\n*/\n\n::-webkit-inner-spin-button,\n::-webkit-outer-spin-button {\n  height: auto;\n}\n\n/*\n1. Correct the odd appearance in Chrome and Safari.\n2. Correct the outline style in Safari.\n*/\n\n[type='search'] {\n  -webkit-appearance: textfield; /* 1 */\n  outline-offset: -2px; /* 2 */\n}\n\n/*\nRemove the inner padding in Chrome and Safari on macOS.\n*/\n\n::-webkit-search-decoration {\n  -webkit-appearance: none;\n}\n\n/*\n1. Correct the inability to style clickable types in iOS and Safari.\n2. Change font properties to `inherit` in Safari.\n*/\n\n::-webkit-file-upload-button {\n  -webkit-appearance: button; /* 1 */\n  font: inherit; /* 2 */\n}\n\n/*\nAdd the correct display in Chrome and Safari.\n*/\n\nsummary {\n  display: list-item;\n}\n\n/*\nRemoves the default spacing and border for appropriate elements.\n*/\n\nblockquote,\ndl,\ndd,\nh1,\nh2,\nh3,\nh4,\nh5,\nh6,\nhr,\nfigure,\np,\npre {\n  margin: 0;\n}\n\nfieldset {\n  margin: 0;\n  padding: 0;\n}\n\nlegend {\n  padding: 0;\n}\n\nol,\nul,\nmenu {\n  list-style: none;\n  margin: 0;\n  padding: 0;\n}\n\n/*\nPrevent resizing textareas horizontally by default.\n*/\n\ntextarea {\n  resize: vertical;\n}\n\n/*\n1. Reset the default placeholder opacity in Firefox. (https://github.com/tailwindlabs/tailwindcss/issues/3300)\n2. Set the default placeholder color to the user's configured gray 400 color.\n*/\n\ninput::-moz-placeholder, textarea::-moz-placeholder {\n  opacity: 1; /* 1 */\n  color: #9ca3af; /* 2 */\n}\n\ninput:-ms-input-placeholder, textarea:-ms-input-placeholder {\n  opacity: 1; /* 1 */\n  color: #9ca3af; /* 2 */\n}\n\ninput::placeholder,\ntextarea::placeholder {\n  opacity: 1; /* 1 */\n  color: #9ca3af; /* 2 */\n}\n\n/*\nSet the default cursor for buttons.\n*/\n\nbutton,\n[role=\"button\"] {\n  cursor: pointer;\n}\n\n/*\nMake sure disabled buttons don't get the pointer cursor.\n*/\n:disabled {\n  cursor: default;\n}\n\n/*\n1. Make replaced elements `display: block` by default. (https://github.com/mozdevs/cssremedy/issues/14)\n2. Add `vertical-align: middle` to align replaced elements more sensibly by default. (https://github.com/jensimmons/cssremedy/issues/14#issuecomment-634934210)\n   This can trigger a poorly considered lint error in some tools but is included by design.\n*/\n\nimg,\nsvg,\nvideo,\ncanvas,\naudio,\niframe,\nembed,\nobject {\n  display: block; /* 1 */\n  vertical-align: middle; /* 2 */\n}\n\n/*\nConstrain images and videos to the parent width and preserve their intrinsic aspect ratio. (https://github.com/mozdevs/cssremedy/issues/14)\n*/\n\nimg,\nvideo {\n  max-width: 100%;\n  height: auto;\n}\n\n/*\nEnsure the default browser behavior of the `hidden` attribute.\n*/\n\n[hidden] {\n  display: none;\n}*, ::before, ::after{--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;}.container{width:100%;}@media (min-width: 640px){.container{max-width:640px;}}@media (min-width: 768px){.container{max-width:768px;}}@media (min-width: 1024px){.container{max-width:1024px;}}@media (min-width: 1280px){.container{max-width:1280px;}}@media (min-width: 1536px){.container{max-width:1536px;}}.fixed{position:fixed;}.absolute{position:absolute;}.relative{position:relative;}.inset-0{top:0px;right:0px;bottom:0px;left:0px;}.top-0{top:0px;}.right-3{right:0.75rem;}.top-4{top:1rem;}.right-0{right:0px;}.top-10{top:2.5rem;}.-right-2{right:-0.5rem;}.top-3{top:0.75rem;}.bottom-5{bottom:1.25rem;}.bottom-1{bottom:0.25rem;}.top-2{top:0.5rem;}.left-0{left:0px;}.right-4{right:1rem;}.z-10{z-index:10;}.z-20{z-index:20;}.float-right{float:right;}.mx-auto{margin-left:auto;margin-right:auto;}.mx-6{margin-left:1.5rem;margin-right:1.5rem;}.-mx-6{margin-left:-1.5rem;margin-right:-1.5rem;}.my-6{margin-top:1.5rem;margin-bottom:1.5rem;}.my-10{margin-top:2.5rem;margin-bottom:2.5rem;}.my-8{margin-top:2rem;margin-bottom:2rem;}.mt-4{margin-top:1rem;}.mt-6{margin-top:1.5rem;}.mb-1{margin-bottom:0.25rem;}.mt-5{margin-top:1.25rem;}.mr-2{margin-right:0.5rem;}.mr-4{margin-right:1rem;}.mb-6{margin-bottom:1.5rem;}.mb-10{margin-bottom:2.5rem;}.mt-1{margin-top:0.25rem;}.mt-8{margin-top:2rem;}.mb-4{margin-bottom:1rem;}.mt-10{margin-top:2.5rem;}.mt-2{margin-top:0.5rem;}.-ml-5{margin-left:-1.25rem;}.-mt-5{margin-top:-1.25rem;}.mt-3{margin-top:0.75rem;}.mt-16{margin-top:4rem;}.ml-2{margin-left:0.5rem;}.mr-5{margin-right:1.25rem;}.mt-12{margin-top:3rem;}.mt-20{margin-top:5rem;}.-mt-1{margin-top:-0.25rem;}.block{display:block;}.inline-block{display:inline-block;}.inline{display:inline;}.flex{display:flex;}.table{display:table;}.grid{display:grid;}.hidden{display:none;}.h-10{height:2.5rem;}.h-6{height:1.5rem;}.h-16{height:4rem;}.h-9{height:2.25rem;}.h-full{height:100%;}.h-32{height:8rem;}.h-80{height:20rem;}.h-auto{height:auto;}.h-12{height:3rem;}.w-full{width:100%;}.w-6{width:1.5rem;}.w-32{width:8rem;}.w-9{width:2.25rem;}.w-\\[100vw\\]{width:100vw;}.w-\\[1200px\\]{width:1200px;}.w-4{width:1rem;}.w-16{width:4rem;}.w-10{width:2.5rem;}.w-1\\/3{width:33.333333%;}.w-2\\/3{width:66.666667%;}.w-28{width:7rem;}.w-64{width:16rem;}.w-7\\/12{width:58.333333%;}.w-40{width:10rem;}.w-12{width:3rem;}.flex-1{flex:1 1 0%;}.flex-none{flex:none;}.flex-grow{flex-grow:1;}.table-auto{table-layout:auto;}.cursor-pointer{cursor:pointer;}.cursor-not-allowed{cursor:not-allowed;}.list-disc{list-style-type:disc;}.grid-cols-1{grid-template-columns:repeat(1, minmax(0, 1fr));}.flex-wrap{flex-wrap:wrap;}.flex-nowrap{flex-wrap:nowrap;}.content-center{align-content:center;}.items-start{align-items:flex-start;}.items-center{align-items:center;}.justify-end{justify-content:flex-end;}.justify-center{justify-content:center;}.gap-8{gap:2rem;}.gap-x-8{-moz-column-gap:2rem;column-gap:2rem;}.gap-x-2{-moz-column-gap:0.5rem;column-gap:0.5rem;}.gap-x-12{-moz-column-gap:3rem;column-gap:3rem;}.gap-x-5{-moz-column-gap:1.25rem;column-gap:1.25rem;}.gap-x-4{-moz-column-gap:1rem;column-gap:1rem;}.gap-x-10{-moz-column-gap:2.5rem;column-gap:2.5rem;}.gap-x-6{-moz-column-gap:1.5rem;column-gap:1.5rem;}.gap-x-16{-moz-column-gap:4rem;column-gap:4rem;}.gap-x-3{-moz-column-gap:0.75rem;column-gap:0.75rem;}.space-y-4 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(1rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(1rem * var(--tw-space-y-reverse));}.overflow-auto{overflow:auto;}.overflow-hidden{overflow:hidden;}.rounded-lg{border-radius:0.5rem;}.rounded-full{border-radius:9999px;}.rounded-xl{border-radius:0.75rem;}.rounded-l-lg{border-top-left-radius:0.5rem;border-bottom-left-radius:0.5rem;}.rounded-r-lg{border-top-right-radius:0.5rem;border-bottom-right-radius:0.5rem;}.rounded-t-lg{border-top-left-radius:0.5rem;border-top-right-radius:0.5rem;}.rounded-b-xl{border-bottom-right-radius:0.75rem;border-bottom-left-radius:0.75rem;}.rounded-l-full{border-top-left-radius:9999px;border-bottom-left-radius:9999px;}.rounded-r-full{border-top-right-radius:9999px;border-bottom-right-radius:9999px;}.border{border-width:1px;}.border-2{border-width:2px;}.border-b{border-bottom-width:1px;}.border-r{border-right-width:1px;}.border-t{border-top-width:1px;}.border-l{border-left-width:1px;}.border-dashed{border-style:dashed;}.border-none{border-style:none;}.border-gray-300{--tw-border-opacity:1;border-color:rgb(209 213 219 / var(--tw-border-opacity));}.border-white{--tw-border-opacity:1;border-color:rgb(255 255 255 / var(--tw-border-opacity));}.bg-gray-300{--tw-bg-opacity:1;background-color:rgb(209 213 219 / var(--tw-bg-opacity));}.bg-white{--tw-bg-opacity:1;background-color:rgb(255 255 255 / var(--tw-bg-opacity));}.bg-gray-100{--tw-bg-opacity:1;background-color:rgb(243 244 246 / var(--tw-bg-opacity));}.bg-transparent{background-color:transparent;}.bg-cover{background-size:cover;}.p-3{padding:0.75rem;}.p-6{padding:1.5rem;}.p-4{padding:1rem;}.px-6{padding-left:1.5rem;padding-right:1.5rem;}.py-4{padding-top:1rem;padding-bottom:1rem;}.py-8{padding-top:2rem;padding-bottom:2rem;}.px-5{padding-left:1.25rem;padding-right:1.25rem;}.px-3{padding-left:0.75rem;padding-right:0.75rem;}.py-2{padding-top:0.5rem;padding-bottom:0.5rem;}.py-3{padding-top:0.75rem;padding-bottom:0.75rem;}.py-6{padding-top:1.5rem;padding-bottom:1.5rem;}.py-1{padding-top:0.25rem;padding-bottom:0.25rem;}.px-4{padding-left:1rem;padding-right:1rem;}.py-5{padding-top:1.25rem;padding-bottom:1.25rem;}.py-20{padding-top:5rem;padding-bottom:5rem;}.py-14{padding-top:3.5rem;padding-bottom:3.5rem;}.pb-8{padding-bottom:2rem;}.pb-4{padding-bottom:1rem;}.pt-4{padding-top:1rem;}.pt-8{padding-top:2rem;}.pr-6{padding-right:1.5rem;}.pr-3{padding-right:0.75rem;}.pl-3{padding-left:0.75rem;}.pl-2{padding-left:0.5rem;}.pt-2{padding-top:0.5rem;}.pr-4{padding-right:1rem;}.pb-0{padding-bottom:0px;}.pt-1{padding-top:0.25rem;}.pr-2{padding-right:0.5rem;}.pl-5{padding-left:1.25rem;}.pb-6{padding-bottom:1.5rem;}.pt-6{padding-top:1.5rem;}.pb-3{padding-bottom:0.75rem;}.pl-1{padding-left:0.25rem;}.text-left{text-align:left;}.text-center{text-align:center;}.text-right{text-align:right;}.align-middle{vertical-align:middle;}.text-lg{font-size:1.125rem;line-height:1.75rem;}.text-sm{font-size:0.875rem;line-height:1.25rem;}.text-xs{font-size:0.75rem;line-height:1rem;}.text-2xl{font-size:1.5rem;line-height:2rem;}.text-3xl{font-size:1.875rem;line-height:2.25rem;}.font-medium{font-weight:500;}.font-semibold{font-weight:600;}.font-bold{font-weight:700;}.uppercase{text-transform:uppercase;}.leading-loose{line-height:2;}.leading-relaxed{line-height:1.625;}.text-white{--tw-text-opacity:1;color:rgb(255 255 255 / var(--tw-text-opacity));}.text-black{--tw-text-opacity:1;color:rgb(0 0 0 / var(--tw-text-opacity));}.outline-none{outline:2px solid transparent;outline-offset:2px;}@media (min-width: 768px){.md\\:absolute{position:absolute;}.md\\:float-right{float:right;}.md\\:-mx-0{margin-left:-0px;margin-right:-0px;}.md\\:mx-auto{margin-left:auto;margin-right:auto;}.md\\:mt-0{margin-top:0px;}.md\\:mr-4{margin-right:1rem;}.md\\:-mt-20{margin-top:-5rem;}.md\\:mt-8{margin-top:2rem;}.md\\:mb-0{margin-bottom:0px;}.md\\:mt-16{margin-top:4rem;}.md\\:block{display:block;}.md\\:inline-block{display:inline-block;}.md\\:inline{display:inline;}.md\\:flex{display:flex;}.md\\:hidden{display:none;}.md\\:h-20{height:5rem;}.md\\:h-screen{height:100vh;}.md\\:w-full{width:100%;}.md\\:w-1\\/2{width:50%;}.md\\:w-1\\/6{width:16.666667%;}.md\\:w-5\\/6{width:83.333333%;}.md\\:w-40{width:10rem;}.md\\:w-3\\/6{width:50%;}.md\\:w-2\\/6{width:33.333333%;}.md\\:w-1\\/3{width:33.333333%;}.md\\:w-2\\/3{width:66.666667%;}.md\\:w-64{width:16rem;}.md\\:w-7\\/12{width:58.333333%;}.md\\:w-5\\/12{width:41.666667%;}.md\\:w-60{width:15rem;}.md\\:w-1\\/4{width:25%;}.md\\:w-3\\/4{width:75%;}.md\\:flex-none{flex:none;}.md\\:grid-cols-3{grid-template-columns:repeat(3, minmax(0, 1fr));}.md\\:space-y-0 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(0px * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(0px * var(--tw-space-y-reverse));}.md\\:space-x-4 > :not([hidden]) ~ :not([hidden]){--tw-space-x-reverse:0;margin-right:calc(1rem * var(--tw-space-x-reverse));margin-left:calc(1rem * calc(1 - var(--tw-space-x-reverse)));}.md\\:rounded-none{border-radius:0px;}.md\\:rounded-r-none{border-top-right-radius:0px;border-bottom-right-radius:0px;}.md\\:rounded-l-lg{border-top-left-radius:0.5rem;border-bottom-left-radius:0.5rem;}.md\\:rounded-l-none{border-top-left-radius:0px;border-bottom-left-radius:0px;}.md\\:rounded-r-lg{border-top-right-radius:0.5rem;border-bottom-right-radius:0.5rem;}.md\\:rounded-r-xl{border-top-right-radius:0.75rem;border-bottom-right-radius:0.75rem;}.md\\:rounded-tr-none{border-top-right-radius:0px;}.md\\:p-6{padding:1.5rem;}.md\\:p-0{padding:0px;}.md\\:px-0{padding-left:0px;padding-right:0px;}.md\\:px-6{padding-left:1.5rem;padding-right:1.5rem;}.md\\:py-14{padding-top:3.5rem;padding-bottom:3.5rem;}.md\\:py-0{padding-top:0px;padding-bottom:0px;}.md\\:py-4{padding-top:1rem;padding-bottom:1rem;}.md\\:px-20{padding-left:5rem;padding-right:5rem;}.md\\:px-16{padding-left:4rem;padding-right:4rem;}.md\\:pl-16{padding-left:4rem;}.md\\:pt-2{padding-top:0.5rem;}.md\\:pb-6{padding-bottom:1.5rem;}.md\\:pl-8{padding-left:2rem;}.md\\:pb-0{padding-bottom:0px;}.md\\:pr-16{padding-right:4rem;}.md\\:text-base{font-size:1rem;line-height:1.5rem;}.md\\:text-3xl{font-size:1.875rem;line-height:2.25rem;}.md\\:leading-relaxed{line-height:1.625;}}", ""]);
+___CSS_LOADER_EXPORT___.push([module.i, "/*! tailwindcss v3.0.23 | MIT License | https://tailwindcss.com*//*\n1. Prevent padding and border from affecting element width. (https://github.com/mozdevs/cssremedy/issues/4)\n2. Allow adding a border to an element by just adding a border-width. (https://github.com/tailwindcss/tailwindcss/pull/116)\n*/\n\n*,\n::before,\n::after {\n  box-sizing: border-box; /* 1 */\n  border-width: 0; /* 2 */\n  border-style: solid; /* 2 */\n  border-color: #e5e7eb; /* 2 */\n}\n\n::before,\n::after {\n  --tw-content: '';\n}\n\n/*\n1. Use a consistent sensible line-height in all browsers.\n2. Prevent adjustments of font size after orientation changes in iOS.\n3. Use a more readable tab size.\n4. Use the user's configured `sans` font-family by default.\n*/\n\nhtml {\n  line-height: 1.5; /* 1 */\n  -webkit-text-size-adjust: 100%; /* 2 */\n  -moz-tab-size: 4; /* 3 */\n  -o-tab-size: 4;\n     tab-size: 4; /* 3 */\n  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, \"Noto Sans\", sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\"; /* 4 */\n}\n\n/*\n1. Remove the margin in all browsers.\n2. Inherit line-height from `html` so users can set them as a class directly on the `html` element.\n*/\n\nbody {\n  margin: 0; /* 1 */\n  line-height: inherit; /* 2 */\n}\n\n/*\n1. Add the correct height in Firefox.\n2. Correct the inheritance of border color in Firefox. (https://bugzilla.mozilla.org/show_bug.cgi?id=190655)\n3. Ensure horizontal rules are visible by default.\n*/\n\nhr {\n  height: 0; /* 1 */\n  color: inherit; /* 2 */\n  border-top-width: 1px; /* 3 */\n}\n\n/*\nAdd the correct text decoration in Chrome, Edge, and Safari.\n*/\n\nabbr:where([title]) {\n  -webkit-text-decoration: underline dotted;\n          text-decoration: underline dotted;\n}\n\n/*\nRemove the default font size and weight for headings.\n*/\n\nh1,\nh2,\nh3,\nh4,\nh5,\nh6 {\n  font-size: inherit;\n  font-weight: inherit;\n}\n\n/*\nReset links to optimize for opt-in styling instead of opt-out.\n*/\n\na {\n  color: inherit;\n  text-decoration: inherit;\n}\n\n/*\nAdd the correct font weight in Edge and Safari.\n*/\n\nb,\nstrong {\n  font-weight: bolder;\n}\n\n/*\n1. Use the user's configured `mono` font family by default.\n2. Correct the odd `em` font sizing in all browsers.\n*/\n\ncode,\nkbd,\nsamp,\npre {\n  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, \"Liberation Mono\", \"Courier New\", monospace; /* 1 */\n  font-size: 1em; /* 2 */\n}\n\n/*\nAdd the correct font size in all browsers.\n*/\n\nsmall {\n  font-size: 80%;\n}\n\n/*\nPrevent `sub` and `sup` elements from affecting the line height in all browsers.\n*/\n\nsub,\nsup {\n  font-size: 75%;\n  line-height: 0;\n  position: relative;\n  vertical-align: baseline;\n}\n\nsub {\n  bottom: -0.25em;\n}\n\nsup {\n  top: -0.5em;\n}\n\n/*\n1. Remove text indentation from table contents in Chrome and Safari. (https://bugs.chromium.org/p/chromium/issues/detail?id=999088, https://bugs.webkit.org/show_bug.cgi?id=201297)\n2. Correct table border color inheritance in all Chrome and Safari. (https://bugs.chromium.org/p/chromium/issues/detail?id=935729, https://bugs.webkit.org/show_bug.cgi?id=195016)\n3. Remove gaps between table borders by default.\n*/\n\ntable {\n  text-indent: 0; /* 1 */\n  border-color: inherit; /* 2 */\n  border-collapse: collapse; /* 3 */\n}\n\n/*\n1. Change the font styles in all browsers.\n2. Remove the margin in Firefox and Safari.\n3. Remove default padding in all browsers.\n*/\n\nbutton,\ninput,\noptgroup,\nselect,\ntextarea {\n  font-family: inherit; /* 1 */\n  font-size: 100%; /* 1 */\n  line-height: inherit; /* 1 */\n  color: inherit; /* 1 */\n  margin: 0; /* 2 */\n  padding: 0; /* 3 */\n}\n\n/*\nRemove the inheritance of text transform in Edge and Firefox.\n*/\n\nbutton,\nselect {\n  text-transform: none;\n}\n\n/*\n1. Correct the inability to style clickable types in iOS and Safari.\n2. Remove default button styles.\n*/\n\nbutton,\n[type='button'],\n[type='reset'],\n[type='submit'] {\n  -webkit-appearance: button; /* 1 */\n  background-color: transparent; /* 2 */\n  background-image: none; /* 2 */\n}\n\n/*\nUse the modern Firefox focus style for all focusable elements.\n*/\n\n:-moz-focusring {\n  outline: auto;\n}\n\n/*\nRemove the additional `:invalid` styles in Firefox. (https://github.com/mozilla/gecko-dev/blob/2f9eacd9d3d995c937b4251a5557d95d494c9be1/layout/style/res/forms.css#L728-L737)\n*/\n\n:-moz-ui-invalid {\n  box-shadow: none;\n}\n\n/*\nAdd the correct vertical alignment in Chrome and Firefox.\n*/\n\nprogress {\n  vertical-align: baseline;\n}\n\n/*\nCorrect the cursor style of increment and decrement buttons in Safari.\n*/\n\n::-webkit-inner-spin-button,\n::-webkit-outer-spin-button {\n  height: auto;\n}\n\n/*\n1. Correct the odd appearance in Chrome and Safari.\n2. Correct the outline style in Safari.\n*/\n\n[type='search'] {\n  -webkit-appearance: textfield; /* 1 */\n  outline-offset: -2px; /* 2 */\n}\n\n/*\nRemove the inner padding in Chrome and Safari on macOS.\n*/\n\n::-webkit-search-decoration {\n  -webkit-appearance: none;\n}\n\n/*\n1. Correct the inability to style clickable types in iOS and Safari.\n2. Change font properties to `inherit` in Safari.\n*/\n\n::-webkit-file-upload-button {\n  -webkit-appearance: button; /* 1 */\n  font: inherit; /* 2 */\n}\n\n/*\nAdd the correct display in Chrome and Safari.\n*/\n\nsummary {\n  display: list-item;\n}\n\n/*\nRemoves the default spacing and border for appropriate elements.\n*/\n\nblockquote,\ndl,\ndd,\nh1,\nh2,\nh3,\nh4,\nh5,\nh6,\nhr,\nfigure,\np,\npre {\n  margin: 0;\n}\n\nfieldset {\n  margin: 0;\n  padding: 0;\n}\n\nlegend {\n  padding: 0;\n}\n\nol,\nul,\nmenu {\n  list-style: none;\n  margin: 0;\n  padding: 0;\n}\n\n/*\nPrevent resizing textareas horizontally by default.\n*/\n\ntextarea {\n  resize: vertical;\n}\n\n/*\n1. Reset the default placeholder opacity in Firefox. (https://github.com/tailwindlabs/tailwindcss/issues/3300)\n2. Set the default placeholder color to the user's configured gray 400 color.\n*/\n\ninput::-moz-placeholder, textarea::-moz-placeholder {\n  opacity: 1; /* 1 */\n  color: #9ca3af; /* 2 */\n}\n\ninput:-ms-input-placeholder, textarea:-ms-input-placeholder {\n  opacity: 1; /* 1 */\n  color: #9ca3af; /* 2 */\n}\n\ninput::placeholder,\ntextarea::placeholder {\n  opacity: 1; /* 1 */\n  color: #9ca3af; /* 2 */\n}\n\n/*\nSet the default cursor for buttons.\n*/\n\nbutton,\n[role=\"button\"] {\n  cursor: pointer;\n}\n\n/*\nMake sure disabled buttons don't get the pointer cursor.\n*/\n:disabled {\n  cursor: default;\n}\n\n/*\n1. Make replaced elements `display: block` by default. (https://github.com/mozdevs/cssremedy/issues/14)\n2. Add `vertical-align: middle` to align replaced elements more sensibly by default. (https://github.com/jensimmons/cssremedy/issues/14#issuecomment-634934210)\n   This can trigger a poorly considered lint error in some tools but is included by design.\n*/\n\nimg,\nsvg,\nvideo,\ncanvas,\naudio,\niframe,\nembed,\nobject {\n  display: block; /* 1 */\n  vertical-align: middle; /* 2 */\n}\n\n/*\nConstrain images and videos to the parent width and preserve their intrinsic aspect ratio. (https://github.com/mozdevs/cssremedy/issues/14)\n*/\n\nimg,\nvideo {\n  max-width: 100%;\n  height: auto;\n}\n\n/*\nEnsure the default browser behavior of the `hidden` attribute.\n*/\n\n[hidden] {\n  display: none;\n}*, ::before, ::after{--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;}.container{width:100%;}@media (min-width: 640px){.container{max-width:640px;}}@media (min-width: 768px){.container{max-width:768px;}}@media (min-width: 1024px){.container{max-width:1024px;}}@media (min-width: 1280px){.container{max-width:1280px;}}@media (min-width: 1536px){.container{max-width:1536px;}}.fixed{position:fixed;}.absolute{position:absolute;}.relative{position:relative;}.inset-0{top:0px;right:0px;bottom:0px;left:0px;}.top-0{top:0px;}.right-3{right:0.75rem;}.top-4{top:1rem;}.right-0{right:0px;}.top-10{top:2.5rem;}.-right-2{right:-0.5rem;}.top-3{top:0.75rem;}.bottom-5{bottom:1.25rem;}.bottom-1{bottom:0.25rem;}.top-2{top:0.5rem;}.left-0{left:0px;}.right-4{right:1rem;}.z-10{z-index:10;}.z-20{z-index:20;}.float-right{float:right;}.mx-auto{margin-left:auto;margin-right:auto;}.mx-6{margin-left:1.5rem;margin-right:1.5rem;}.-mx-6{margin-left:-1.5rem;margin-right:-1.5rem;}.my-6{margin-top:1.5rem;margin-bottom:1.5rem;}.my-10{margin-top:2.5rem;margin-bottom:2.5rem;}.my-8{margin-top:2rem;margin-bottom:2rem;}.mt-4{margin-top:1rem;}.mt-6{margin-top:1.5rem;}.mb-1{margin-bottom:0.25rem;}.mt-5{margin-top:1.25rem;}.mr-2{margin-right:0.5rem;}.mr-4{margin-right:1rem;}.mb-6{margin-bottom:1.5rem;}.mb-10{margin-bottom:2.5rem;}.mt-1{margin-top:0.25rem;}.mt-8{margin-top:2rem;}.mb-4{margin-bottom:1rem;}.mt-10{margin-top:2.5rem;}.mt-2{margin-top:0.5rem;}.-ml-5{margin-left:-1.25rem;}.-mt-5{margin-top:-1.25rem;}.mt-3{margin-top:0.75rem;}.mt-16{margin-top:4rem;}.ml-2{margin-left:0.5rem;}.mr-5{margin-right:1.25rem;}.mt-12{margin-top:3rem;}.mt-20{margin-top:5rem;}.-mt-1{margin-top:-0.25rem;}.block{display:block;}.inline-block{display:inline-block;}.inline{display:inline;}.flex{display:flex;}.table{display:table;}.grid{display:grid;}.hidden{display:none;}.h-10{height:2.5rem;}.h-6{height:1.5rem;}.h-16{height:4rem;}.h-9{height:2.25rem;}.h-full{height:100%;}.h-32{height:8rem;}.h-80{height:20rem;}.h-auto{height:auto;}.h-12{height:3rem;}.w-full{width:100%;}.w-6{width:1.5rem;}.w-32{width:8rem;}.w-9{width:2.25rem;}.w-\\[100vw\\]{width:100vw;}.w-\\[1200px\\]{width:1200px;}.w-4{width:1rem;}.w-16{width:4rem;}.w-10{width:2.5rem;}.w-1\\/3{width:33.333333%;}.w-2\\/3{width:66.666667%;}.w-28{width:7rem;}.w-64{width:16rem;}.w-7\\/12{width:58.333333%;}.w-40{width:10rem;}.w-12{width:3rem;}.flex-1{flex:1 1 0%;}.flex-none{flex:none;}.flex-grow{flex-grow:1;}.table-auto{table-layout:auto;}.cursor-pointer{cursor:pointer;}.cursor-not-allowed{cursor:not-allowed;}.list-disc{list-style-type:disc;}.grid-cols-1{grid-template-columns:repeat(1, minmax(0, 1fr));}.flex-wrap{flex-wrap:wrap;}.flex-nowrap{flex-wrap:nowrap;}.content-center{align-content:center;}.items-start{align-items:flex-start;}.items-center{align-items:center;}.justify-end{justify-content:flex-end;}.justify-center{justify-content:center;}.gap-8{gap:2rem;}.gap-x-8{-moz-column-gap:2rem;column-gap:2rem;}.gap-x-2{-moz-column-gap:0.5rem;column-gap:0.5rem;}.gap-x-12{-moz-column-gap:3rem;column-gap:3rem;}.gap-x-5{-moz-column-gap:1.25rem;column-gap:1.25rem;}.gap-x-4{-moz-column-gap:1rem;column-gap:1rem;}.gap-x-10{-moz-column-gap:2.5rem;column-gap:2.5rem;}.gap-x-6{-moz-column-gap:1.5rem;column-gap:1.5rem;}.gap-x-16{-moz-column-gap:4rem;column-gap:4rem;}.gap-x-3{-moz-column-gap:0.75rem;column-gap:0.75rem;}.space-y-4 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(1rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(1rem * var(--tw-space-y-reverse));}.overflow-auto{overflow:auto;}.overflow-hidden{overflow:hidden;}.rounded-lg{border-radius:0.5rem;}.rounded-full{border-radius:9999px;}.rounded-xl{border-radius:0.75rem;}.rounded-l-lg{border-top-left-radius:0.5rem;border-bottom-left-radius:0.5rem;}.rounded-r-lg{border-top-right-radius:0.5rem;border-bottom-right-radius:0.5rem;}.rounded-t-lg{border-top-left-radius:0.5rem;border-top-right-radius:0.5rem;}.rounded-b-xl{border-bottom-right-radius:0.75rem;border-bottom-left-radius:0.75rem;}.rounded-l-full{border-top-left-radius:9999px;border-bottom-left-radius:9999px;}.rounded-r-full{border-top-right-radius:9999px;border-bottom-right-radius:9999px;}.border{border-width:1px;}.border-2{border-width:2px;}.border-b{border-bottom-width:1px;}.border-r{border-right-width:1px;}.border-t{border-top-width:1px;}.border-l{border-left-width:1px;}.border-dashed{border-style:dashed;}.border-none{border-style:none;}.border-transparent{border-color:transparent;}.border-white{--tw-border-opacity:1;border-color:rgb(255 255 255 / var(--tw-border-opacity));}.border-gray-300{--tw-border-opacity:1;border-color:rgb(209 213 219 / var(--tw-border-opacity));}.bg-gray-300{--tw-bg-opacity:1;background-color:rgb(209 213 219 / var(--tw-bg-opacity));}.bg-white{--tw-bg-opacity:1;background-color:rgb(255 255 255 / var(--tw-bg-opacity));}.bg-gray-100{--tw-bg-opacity:1;background-color:rgb(243 244 246 / var(--tw-bg-opacity));}.bg-transparent{background-color:transparent;}.bg-cover{background-size:cover;}.p-3{padding:0.75rem;}.p-6{padding:1.5rem;}.p-4{padding:1rem;}.px-6{padding-left:1.5rem;padding-right:1.5rem;}.py-4{padding-top:1rem;padding-bottom:1rem;}.py-8{padding-top:2rem;padding-bottom:2rem;}.px-5{padding-left:1.25rem;padding-right:1.25rem;}.px-3{padding-left:0.75rem;padding-right:0.75rem;}.py-2{padding-top:0.5rem;padding-bottom:0.5rem;}.py-3{padding-top:0.75rem;padding-bottom:0.75rem;}.py-6{padding-top:1.5rem;padding-bottom:1.5rem;}.py-1{padding-top:0.25rem;padding-bottom:0.25rem;}.px-4{padding-left:1rem;padding-right:1rem;}.py-5{padding-top:1.25rem;padding-bottom:1.25rem;}.py-20{padding-top:5rem;padding-bottom:5rem;}.py-14{padding-top:3.5rem;padding-bottom:3.5rem;}.pb-8{padding-bottom:2rem;}.pb-4{padding-bottom:1rem;}.pt-4{padding-top:1rem;}.pt-8{padding-top:2rem;}.pr-6{padding-right:1.5rem;}.pr-3{padding-right:0.75rem;}.pl-3{padding-left:0.75rem;}.pl-2{padding-left:0.5rem;}.pt-2{padding-top:0.5rem;}.pr-4{padding-right:1rem;}.pb-0{padding-bottom:0px;}.pt-1{padding-top:0.25rem;}.pr-2{padding-right:0.5rem;}.pl-5{padding-left:1.25rem;}.pb-6{padding-bottom:1.5rem;}.pt-6{padding-top:1.5rem;}.pb-3{padding-bottom:0.75rem;}.pl-1{padding-left:0.25rem;}.text-left{text-align:left;}.text-center{text-align:center;}.text-right{text-align:right;}.align-middle{vertical-align:middle;}.text-lg{font-size:1.125rem;line-height:1.75rem;}.text-sm{font-size:0.875rem;line-height:1.25rem;}.text-xs{font-size:0.75rem;line-height:1rem;}.text-2xl{font-size:1.5rem;line-height:2rem;}.text-3xl{font-size:1.875rem;line-height:2.25rem;}.font-medium{font-weight:500;}.font-semibold{font-weight:600;}.font-bold{font-weight:700;}.uppercase{text-transform:uppercase;}.leading-loose{line-height:2;}.leading-relaxed{line-height:1.625;}.text-white{--tw-text-opacity:1;color:rgb(255 255 255 / var(--tw-text-opacity));}.text-black{--tw-text-opacity:1;color:rgb(0 0 0 / var(--tw-text-opacity));}.opacity-50{opacity:0.5;}.opacity-100{opacity:1;}.outline-none{outline:2px solid transparent;outline-offset:2px;}@media (min-width: 768px){.md\\:absolute{position:absolute;}.md\\:float-right{float:right;}.md\\:-mx-0{margin-left:-0px;margin-right:-0px;}.md\\:mx-auto{margin-left:auto;margin-right:auto;}.md\\:mt-0{margin-top:0px;}.md\\:mr-4{margin-right:1rem;}.md\\:-mt-20{margin-top:-5rem;}.md\\:mt-8{margin-top:2rem;}.md\\:mb-0{margin-bottom:0px;}.md\\:mt-16{margin-top:4rem;}.md\\:block{display:block;}.md\\:inline-block{display:inline-block;}.md\\:inline{display:inline;}.md\\:flex{display:flex;}.md\\:hidden{display:none;}.md\\:h-20{height:5rem;}.md\\:h-screen{height:100vh;}.md\\:w-full{width:100%;}.md\\:w-1\\/2{width:50%;}.md\\:w-1\\/6{width:16.666667%;}.md\\:w-5\\/6{width:83.333333%;}.md\\:w-40{width:10rem;}.md\\:w-3\\/6{width:50%;}.md\\:w-2\\/6{width:33.333333%;}.md\\:w-1\\/3{width:33.333333%;}.md\\:w-2\\/3{width:66.666667%;}.md\\:w-64{width:16rem;}.md\\:w-7\\/12{width:58.333333%;}.md\\:w-5\\/12{width:41.666667%;}.md\\:w-60{width:15rem;}.md\\:w-1\\/4{width:25%;}.md\\:w-3\\/4{width:75%;}.md\\:flex-none{flex:none;}.md\\:grid-cols-3{grid-template-columns:repeat(3, minmax(0, 1fr));}.md\\:space-y-0 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(0px * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(0px * var(--tw-space-y-reverse));}.md\\:space-x-4 > :not([hidden]) ~ :not([hidden]){--tw-space-x-reverse:0;margin-right:calc(1rem * var(--tw-space-x-reverse));margin-left:calc(1rem * calc(1 - var(--tw-space-x-reverse)));}.md\\:rounded-none{border-radius:0px;}.md\\:rounded-r-none{border-top-right-radius:0px;border-bottom-right-radius:0px;}.md\\:rounded-l-lg{border-top-left-radius:0.5rem;border-bottom-left-radius:0.5rem;}.md\\:rounded-l-none{border-top-left-radius:0px;border-bottom-left-radius:0px;}.md\\:rounded-r-lg{border-top-right-radius:0.5rem;border-bottom-right-radius:0.5rem;}.md\\:rounded-r-xl{border-top-right-radius:0.75rem;border-bottom-right-radius:0.75rem;}.md\\:rounded-tr-none{border-top-right-radius:0px;}.md\\:p-6{padding:1.5rem;}.md\\:p-0{padding:0px;}.md\\:px-0{padding-left:0px;padding-right:0px;}.md\\:px-6{padding-left:1.5rem;padding-right:1.5rem;}.md\\:py-14{padding-top:3.5rem;padding-bottom:3.5rem;}.md\\:py-0{padding-top:0px;padding-bottom:0px;}.md\\:py-4{padding-top:1rem;padding-bottom:1rem;}.md\\:px-20{padding-left:5rem;padding-right:5rem;}.md\\:px-16{padding-left:4rem;padding-right:4rem;}.md\\:pl-16{padding-left:4rem;}.md\\:pt-2{padding-top:0.5rem;}.md\\:pb-6{padding-bottom:1.5rem;}.md\\:pl-8{padding-left:2rem;}.md\\:pb-0{padding-bottom:0px;}.md\\:pr-16{padding-right:4rem;}.md\\:text-base{font-size:1rem;line-height:1.5rem;}.md\\:text-3xl{font-size:1.875rem;line-height:2.25rem;}.md\\:leading-relaxed{line-height:1.625;}}", ""]);
 // Exports
 ___CSS_LOADER_EXPORT___.locals = {};
 module.exports = ___CSS_LOADER_EXPORT___;
 
 
 /***/ }),
-/* 24 */
+/* 28 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(25);
+var content = __webpack_require__(29);
 if(content.__esModule) content = content.default;
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
-__webpack_require__(4).default("9d54a558", content, true)
+__webpack_require__(6).default("9d54a558", content, true)
 
 /***/ }),
-/* 25 */
+/* 29 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // Imports
-var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(3);
-var ___CSS_LOADER_GET_URL_IMPORT___ = __webpack_require__(26);
-var ___CSS_LOADER_URL_IMPORT_0___ = __webpack_require__(12);
-var ___CSS_LOADER_URL_IMPORT_1___ = __webpack_require__(13);
+var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(5);
+var ___CSS_LOADER_GET_URL_IMPORT___ = __webpack_require__(30);
+var ___CSS_LOADER_URL_IMPORT_0___ = __webpack_require__(16);
+var ___CSS_LOADER_URL_IMPORT_1___ = __webpack_require__(17);
 var ___CSS_LOADER_EXPORT___ = ___CSS_LOADER_API_IMPORT___(function(i){return i[1]});
 var ___CSS_LOADER_URL_REPLACEMENT_0___ = ___CSS_LOADER_GET_URL_IMPORT___(___CSS_LOADER_URL_IMPORT_0___);
 var ___CSS_LOADER_URL_REPLACEMENT_1___ = ___CSS_LOADER_GET_URL_IMPORT___(___CSS_LOADER_URL_IMPORT_1___);
 // Module
-___CSS_LOADER_EXPORT___.push([module.i, "/*! tailwindcss v3.0.23 | MIT License | https://tailwindcss.com*//*\n1. Prevent padding and border from affecting element width. (https://github.com/mozdevs/cssremedy/issues/4)\n2. Allow adding a border to an element by just adding a border-width. (https://github.com/tailwindcss/tailwindcss/pull/116)\n*/\n\n*,\n::before,\n::after {\n  box-sizing: border-box; /* 1 */\n  border-width: 0; /* 2 */\n  border-style: solid; /* 2 */\n  border-color: #e5e7eb; /* 2 */\n}\n\n::before,\n::after {\n  --tw-content: '';\n}\n\n/*\n1. Use a consistent sensible line-height in all browsers.\n2. Prevent adjustments of font size after orientation changes in iOS.\n3. Use a more readable tab size.\n4. Use the user's configured `sans` font-family by default.\n*/\n\nhtml {\n  line-height: 1.5; /* 1 */\n  -webkit-text-size-adjust: 100%; /* 2 */\n  -moz-tab-size: 4; /* 3 */\n  -o-tab-size: 4;\n     tab-size: 4; /* 3 */\n  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, \"Noto Sans\", sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\"; /* 4 */\n}\n\n/*\n1. Remove the margin in all browsers.\n2. Inherit line-height from `html` so users can set them as a class directly on the `html` element.\n*/\n\nbody {\n  margin: 0; /* 1 */\n  line-height: inherit; /* 2 */\n}\n\n/*\n1. Add the correct height in Firefox.\n2. Correct the inheritance of border color in Firefox. (https://bugzilla.mozilla.org/show_bug.cgi?id=190655)\n3. Ensure horizontal rules are visible by default.\n*/\n\nhr {\n  height: 0; /* 1 */\n  color: inherit; /* 2 */\n  border-top-width: 1px; /* 3 */\n}\n\n/*\nAdd the correct text decoration in Chrome, Edge, and Safari.\n*/\n\nabbr:where([title]) {\n  -webkit-text-decoration: underline dotted;\n          text-decoration: underline dotted;\n}\n\n/*\nRemove the default font size and weight for headings.\n*/\n\nh1,\nh2,\nh3,\nh4,\nh5,\nh6 {\n  font-size: inherit;\n  font-weight: inherit;\n}\n\n/*\nReset links to optimize for opt-in styling instead of opt-out.\n*/\n\na {\n  color: inherit;\n  text-decoration: inherit;\n}\n\n/*\nAdd the correct font weight in Edge and Safari.\n*/\n\nb,\nstrong {\n  font-weight: bolder;\n}\n\n/*\n1. Use the user's configured `mono` font family by default.\n2. Correct the odd `em` font sizing in all browsers.\n*/\n\ncode,\nkbd,\nsamp,\npre {\n  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, \"Liberation Mono\", \"Courier New\", monospace; /* 1 */\n  font-size: 1em; /* 2 */\n}\n\n/*\nAdd the correct font size in all browsers.\n*/\n\nsmall {\n  font-size: 80%;\n}\n\n/*\nPrevent `sub` and `sup` elements from affecting the line height in all browsers.\n*/\n\nsub,\nsup {\n  font-size: 75%;\n  line-height: 0;\n  position: relative;\n  vertical-align: baseline;\n}\n\nsub {\n  bottom: -0.25em;\n}\n\nsup {\n  top: -0.5em;\n}\n\n/*\n1. Remove text indentation from table contents in Chrome and Safari. (https://bugs.chromium.org/p/chromium/issues/detail?id=999088, https://bugs.webkit.org/show_bug.cgi?id=201297)\n2. Correct table border color inheritance in all Chrome and Safari. (https://bugs.chromium.org/p/chromium/issues/detail?id=935729, https://bugs.webkit.org/show_bug.cgi?id=195016)\n3. Remove gaps between table borders by default.\n*/\n\ntable {\n  text-indent: 0; /* 1 */\n  border-color: inherit; /* 2 */\n  border-collapse: collapse; /* 3 */\n}\n\n/*\n1. Change the font styles in all browsers.\n2. Remove the margin in Firefox and Safari.\n3. Remove default padding in all browsers.\n*/\n\nbutton,\ninput,\noptgroup,\nselect,\ntextarea {\n  font-family: inherit; /* 1 */\n  font-size: 100%; /* 1 */\n  line-height: inherit; /* 1 */\n  color: inherit; /* 1 */\n  margin: 0; /* 2 */\n  padding: 0; /* 3 */\n}\n\n/*\nRemove the inheritance of text transform in Edge and Firefox.\n*/\n\nbutton,\nselect {\n  text-transform: none;\n}\n\n/*\n1. Correct the inability to style clickable types in iOS and Safari.\n2. Remove default button styles.\n*/\n\nbutton,\n[type='button'],\n[type='reset'],\n[type='submit'] {\n  -webkit-appearance: button; /* 1 */\n  background-color: transparent; /* 2 */\n  background-image: none; /* 2 */\n}\n\n/*\nUse the modern Firefox focus style for all focusable elements.\n*/\n\n:-moz-focusring {\n  outline: auto;\n}\n\n/*\nRemove the additional `:invalid` styles in Firefox. (https://github.com/mozilla/gecko-dev/blob/2f9eacd9d3d995c937b4251a5557d95d494c9be1/layout/style/res/forms.css#L728-L737)\n*/\n\n:-moz-ui-invalid {\n  box-shadow: none;\n}\n\n/*\nAdd the correct vertical alignment in Chrome and Firefox.\n*/\n\nprogress {\n  vertical-align: baseline;\n}\n\n/*\nCorrect the cursor style of increment and decrement buttons in Safari.\n*/\n\n::-webkit-inner-spin-button,\n::-webkit-outer-spin-button {\n  height: auto;\n}\n\n/*\n1. Correct the odd appearance in Chrome and Safari.\n2. Correct the outline style in Safari.\n*/\n\n[type='search'] {\n  -webkit-appearance: textfield; /* 1 */\n  outline-offset: -2px; /* 2 */\n}\n\n/*\nRemove the inner padding in Chrome and Safari on macOS.\n*/\n\n::-webkit-search-decoration {\n  -webkit-appearance: none;\n}\n\n/*\n1. Correct the inability to style clickable types in iOS and Safari.\n2. Change font properties to `inherit` in Safari.\n*/\n\n::-webkit-file-upload-button {\n  -webkit-appearance: button; /* 1 */\n  font: inherit; /* 2 */\n}\n\n/*\nAdd the correct display in Chrome and Safari.\n*/\n\nsummary {\n  display: list-item;\n}\n\n/*\nRemoves the default spacing and border for appropriate elements.\n*/\n\nblockquote,\ndl,\ndd,\nh1,\nh2,\nh3,\nh4,\nh5,\nh6,\nhr,\nfigure,\np,\npre {\n  margin: 0;\n}\n\nfieldset {\n  margin: 0;\n  padding: 0;\n}\n\nlegend {\n  padding: 0;\n}\n\nol,\nul,\nmenu {\n  list-style: none;\n  margin: 0;\n  padding: 0;\n}\n\n/*\nPrevent resizing textareas horizontally by default.\n*/\n\ntextarea {\n  resize: vertical;\n}\n\n/*\n1. Reset the default placeholder opacity in Firefox. (https://github.com/tailwindlabs/tailwindcss/issues/3300)\n2. Set the default placeholder color to the user's configured gray 400 color.\n*/\n\ninput::-moz-placeholder, textarea::-moz-placeholder {\n  opacity: 1; /* 1 */\n  color: #9ca3af; /* 2 */\n}\n\ninput:-ms-input-placeholder, textarea:-ms-input-placeholder {\n  opacity: 1; /* 1 */\n  color: #9ca3af; /* 2 */\n}\n\ninput::placeholder,\ntextarea::placeholder {\n  opacity: 1; /* 1 */\n  color: #9ca3af; /* 2 */\n}\n\n/*\nSet the default cursor for buttons.\n*/\n\nbutton,\n[role=\"button\"] {\n  cursor: pointer;\n}\n\n/*\nMake sure disabled buttons don't get the pointer cursor.\n*/\n:disabled {\n  cursor: default;\n}\n\n/*\n1. Make replaced elements `display: block` by default. (https://github.com/mozdevs/cssremedy/issues/14)\n2. Add `vertical-align: middle` to align replaced elements more sensibly by default. (https://github.com/jensimmons/cssremedy/issues/14#issuecomment-634934210)\n   This can trigger a poorly considered lint error in some tools but is included by design.\n*/\n\nimg,\nsvg,\nvideo,\ncanvas,\naudio,\niframe,\nembed,\nobject {\n  display: block; /* 1 */\n  vertical-align: middle; /* 2 */\n}\n\n/*\nConstrain images and videos to the parent width and preserve their intrinsic aspect ratio. (https://github.com/mozdevs/cssremedy/issues/14)\n*/\n\nimg,\nvideo {\n  max-width: 100%;\n  height: auto;\n}\n\n/*\nEnsure the default browser behavior of the `hidden` attribute.\n*/\n\n[hidden] {\n  display: none;\n}*, ::before, ::after{--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;}.container{width:100%;}@media (min-width: 640px){.container{max-width:640px;}}@media (min-width: 768px){.container{max-width:768px;}}@media (min-width: 1024px){.container{max-width:1024px;}}@media (min-width: 1280px){.container{max-width:1280px;}}@media (min-width: 1536px){.container{max-width:1536px;}}.fixed{position:fixed;}.absolute{position:absolute;}.relative{position:relative;}.inset-0{top:0px;right:0px;bottom:0px;left:0px;}.top-0{top:0px;}.right-3{right:0.75rem;}.top-4{top:1rem;}.right-0{right:0px;}.top-10{top:2.5rem;}.-right-2{right:-0.5rem;}.top-3{top:0.75rem;}.bottom-5{bottom:1.25rem;}.bottom-1{bottom:0.25rem;}.top-2{top:0.5rem;}.left-0{left:0px;}.right-4{right:1rem;}.z-10{z-index:10;}.z-20{z-index:20;}.float-right{float:right;}.mx-auto{margin-left:auto;margin-right:auto;}.mx-6{margin-left:1.5rem;margin-right:1.5rem;}.-mx-6{margin-left:-1.5rem;margin-right:-1.5rem;}.my-6{margin-top:1.5rem;margin-bottom:1.5rem;}.my-10{margin-top:2.5rem;margin-bottom:2.5rem;}.my-8{margin-top:2rem;margin-bottom:2rem;}.mt-4{margin-top:1rem;}.mt-6{margin-top:1.5rem;}.mb-1{margin-bottom:0.25rem;}.mt-5{margin-top:1.25rem;}.mr-2{margin-right:0.5rem;}.mr-4{margin-right:1rem;}.mb-6{margin-bottom:1.5rem;}.mb-10{margin-bottom:2.5rem;}.mt-1{margin-top:0.25rem;}.mt-8{margin-top:2rem;}.mb-4{margin-bottom:1rem;}.mt-10{margin-top:2.5rem;}.mt-2{margin-top:0.5rem;}.-ml-5{margin-left:-1.25rem;}.-mt-5{margin-top:-1.25rem;}.mt-3{margin-top:0.75rem;}.mt-16{margin-top:4rem;}.ml-2{margin-left:0.5rem;}.mr-5{margin-right:1.25rem;}.mt-12{margin-top:3rem;}.mt-20{margin-top:5rem;}.-mt-1{margin-top:-0.25rem;}.block{display:block;}.inline-block{display:inline-block;}.inline{display:inline;}.flex{display:flex;}.table{display:table;}.grid{display:grid;}.hidden{display:none;}.h-10{height:2.5rem;}.h-6{height:1.5rem;}.h-16{height:4rem;}.h-9{height:2.25rem;}.h-full{height:100%;}.h-32{height:8rem;}.h-80{height:20rem;}.h-auto{height:auto;}.h-12{height:3rem;}.w-full{width:100%;}.w-6{width:1.5rem;}.w-32{width:8rem;}.w-9{width:2.25rem;}.w-\\[100vw\\]{width:100vw;}.w-\\[1200px\\]{width:1200px;}.w-4{width:1rem;}.w-16{width:4rem;}.w-10{width:2.5rem;}.w-1\\/3{width:33.333333%;}.w-2\\/3{width:66.666667%;}.w-28{width:7rem;}.w-64{width:16rem;}.w-7\\/12{width:58.333333%;}.w-40{width:10rem;}.w-12{width:3rem;}.flex-1{flex:1 1 0%;}.flex-none{flex:none;}.flex-grow{flex-grow:1;}.table-auto{table-layout:auto;}.cursor-pointer{cursor:pointer;}.cursor-not-allowed{cursor:not-allowed;}.list-disc{list-style-type:disc;}.grid-cols-1{grid-template-columns:repeat(1, minmax(0, 1fr));}.flex-wrap{flex-wrap:wrap;}.flex-nowrap{flex-wrap:nowrap;}.content-center{align-content:center;}.items-start{align-items:flex-start;}.items-center{align-items:center;}.justify-end{justify-content:flex-end;}.justify-center{justify-content:center;}.gap-8{gap:2rem;}.gap-x-8{-moz-column-gap:2rem;column-gap:2rem;}.gap-x-2{-moz-column-gap:0.5rem;column-gap:0.5rem;}.gap-x-12{-moz-column-gap:3rem;column-gap:3rem;}.gap-x-5{-moz-column-gap:1.25rem;column-gap:1.25rem;}.gap-x-4{-moz-column-gap:1rem;column-gap:1rem;}.gap-x-10{-moz-column-gap:2.5rem;column-gap:2.5rem;}.gap-x-6{-moz-column-gap:1.5rem;column-gap:1.5rem;}.gap-x-16{-moz-column-gap:4rem;column-gap:4rem;}.gap-x-3{-moz-column-gap:0.75rem;column-gap:0.75rem;}.space-y-4 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(1rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(1rem * var(--tw-space-y-reverse));}.overflow-auto{overflow:auto;}.overflow-hidden{overflow:hidden;}.rounded-lg{border-radius:0.5rem;}.rounded-full{border-radius:9999px;}.rounded-xl{border-radius:0.75rem;}.rounded-l-lg{border-top-left-radius:0.5rem;border-bottom-left-radius:0.5rem;}.rounded-r-lg{border-top-right-radius:0.5rem;border-bottom-right-radius:0.5rem;}.rounded-t-lg{border-top-left-radius:0.5rem;border-top-right-radius:0.5rem;}.rounded-b-xl{border-bottom-right-radius:0.75rem;border-bottom-left-radius:0.75rem;}.rounded-l-full{border-top-left-radius:9999px;border-bottom-left-radius:9999px;}.rounded-r-full{border-top-right-radius:9999px;border-bottom-right-radius:9999px;}.border{border-width:1px;}.border-2{border-width:2px;}.border-b{border-bottom-width:1px;}.border-r{border-right-width:1px;}.border-t{border-top-width:1px;}.border-l{border-left-width:1px;}.border-dashed{border-style:dashed;}.border-none{border-style:none;}.border-gray-300{--tw-border-opacity:1;border-color:rgb(209 213 219 / var(--tw-border-opacity));}.border-white{--tw-border-opacity:1;border-color:rgb(255 255 255 / var(--tw-border-opacity));}.bg-gray-300{--tw-bg-opacity:1;background-color:rgb(209 213 219 / var(--tw-bg-opacity));}.bg-white{--tw-bg-opacity:1;background-color:rgb(255 255 255 / var(--tw-bg-opacity));}.bg-gray-100{--tw-bg-opacity:1;background-color:rgb(243 244 246 / var(--tw-bg-opacity));}.bg-transparent{background-color:transparent;}.bg-cover{background-size:cover;}.p-3{padding:0.75rem;}.p-6{padding:1.5rem;}.p-4{padding:1rem;}.px-6{padding-left:1.5rem;padding-right:1.5rem;}.py-4{padding-top:1rem;padding-bottom:1rem;}.py-8{padding-top:2rem;padding-bottom:2rem;}.px-5{padding-left:1.25rem;padding-right:1.25rem;}.px-3{padding-left:0.75rem;padding-right:0.75rem;}.py-2{padding-top:0.5rem;padding-bottom:0.5rem;}.py-3{padding-top:0.75rem;padding-bottom:0.75rem;}.py-6{padding-top:1.5rem;padding-bottom:1.5rem;}.py-1{padding-top:0.25rem;padding-bottom:0.25rem;}.px-4{padding-left:1rem;padding-right:1rem;}.py-5{padding-top:1.25rem;padding-bottom:1.25rem;}.py-20{padding-top:5rem;padding-bottom:5rem;}.py-14{padding-top:3.5rem;padding-bottom:3.5rem;}.pb-8{padding-bottom:2rem;}.pb-4{padding-bottom:1rem;}.pt-4{padding-top:1rem;}.pt-8{padding-top:2rem;}.pr-6{padding-right:1.5rem;}.pr-3{padding-right:0.75rem;}.pl-3{padding-left:0.75rem;}.pl-2{padding-left:0.5rem;}.pt-2{padding-top:0.5rem;}.pr-4{padding-right:1rem;}.pb-0{padding-bottom:0px;}.pt-1{padding-top:0.25rem;}.pr-2{padding-right:0.5rem;}.pl-5{padding-left:1.25rem;}.pb-6{padding-bottom:1.5rem;}.pt-6{padding-top:1.5rem;}.pb-3{padding-bottom:0.75rem;}.pl-1{padding-left:0.25rem;}.text-left{text-align:left;}.text-center{text-align:center;}.text-right{text-align:right;}.align-middle{vertical-align:middle;}.text-lg{font-size:1.125rem;line-height:1.75rem;}.text-sm{font-size:0.875rem;line-height:1.25rem;}.text-xs{font-size:0.75rem;line-height:1rem;}.text-2xl{font-size:1.5rem;line-height:2rem;}.text-3xl{font-size:1.875rem;line-height:2.25rem;}.font-medium{font-weight:500;}.font-semibold{font-weight:600;}.font-bold{font-weight:700;}.uppercase{text-transform:uppercase;}.leading-loose{line-height:2;}.leading-relaxed{line-height:1.625;}.text-white{--tw-text-opacity:1;color:rgb(255 255 255 / var(--tw-text-opacity));}.text-black{--tw-text-opacity:1;color:rgb(0 0 0 / var(--tw-text-opacity));}.outline-none{outline:2px solid transparent;outline-offset:2px;}.font-noto-sans{font-family:\"Noto Sans\",sans-serif}.text-2xs{font-size:12px}.bg-grayscale-50{background:#f8fafc}.bg-primary-600{background:#da3934}.bg-secondary-900{background:#224ca1}.bg-light-blue{background:rgba(82,170,246,.15)}.bg-login{background-image:url(" + ___CSS_LOADER_URL_REPLACEMENT_0___ + ")}.bg-forgot-password,.bg-login{background-repeat:no-repeat;background-size:cover}.bg-forgot-password{background-image:url(" + ___CSS_LOADER_URL_REPLACEMENT_1___ + ")}.text-primary-600{color:#da3934}.text-grayscale-50{color:#f8fafc}.text-grayscale-100{color:#f1f5f9}.text-grayscale-400{color:#94a3b8}.text-grayscale-500{color:#64748b}.text-grayscale-600{color:#475569}.text-grayscale-900{color:#0f172a}.text-secondary-900{color:#224ca1}.border-secondary-700{border-color:#307bd3}.border-secondary-900{border-color:#224ca1}.border-primary-600{border-color:#da3934}.border-b-6{border-bottom-width:6px}.custom-table{overflow:hidden;border-radius:0.5rem;}.custom-table thead tr{border-top-left-radius:0.5rem;border-top-right-radius:0.5rem;background:#f1f5f9;}.custom-table thead tr th{padding:0.5rem;text-align:left;}.custom-table tbody tr td{padding:0.75rem;color:#64748b;}.custom-table tbody tr:nth-child(2n) td{background:#f8fafc}.custom-table tfoot tr{border-bottom-right-radius:0.5rem;border-bottom-left-radius:0.5rem;background:#f1f5f9;}.custom-table tfoot tr th{padding:0.5rem;padding-left:1.5rem;padding-right:1.5rem;text-align:left;font-size:0.875rem;line-height:1.25rem;font-weight:400;color:#64748b;}.shadow-custom{box-shadow:0 4px 15px rgba(0,0,0,.05)}.bullet-green{background:#2a943a;width:14px;height:14px;border-radius:50%;display:inline-block}html{font-family:\"Work Sans\";font-size:16px;word-spacing:1px;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;-moz-osx-font-smoothing:grayscale;-webkit-font-smoothing:antialiased;box-sizing:border-box;color:#4a4a68}body{margin:0;padding:0;height:100vh;font-family:\"Roboto\";color:#0f172a}*,:after,:before{box-sizing:border-box;margin:0}@media (min-width: 768px){.md\\:absolute{position:absolute;}.md\\:float-right{float:right;}.md\\:-mx-0{margin-left:-0px;margin-right:-0px;}.md\\:mx-auto{margin-left:auto;margin-right:auto;}.md\\:mt-0{margin-top:0px;}.md\\:mr-4{margin-right:1rem;}.md\\:-mt-20{margin-top:-5rem;}.md\\:mt-8{margin-top:2rem;}.md\\:mb-0{margin-bottom:0px;}.md\\:mt-16{margin-top:4rem;}.md\\:block{display:block;}.md\\:inline-block{display:inline-block;}.md\\:inline{display:inline;}.md\\:flex{display:flex;}.md\\:hidden{display:none;}.md\\:h-20{height:5rem;}.md\\:h-screen{height:100vh;}.md\\:w-full{width:100%;}.md\\:w-1\\/2{width:50%;}.md\\:w-1\\/6{width:16.666667%;}.md\\:w-5\\/6{width:83.333333%;}.md\\:w-40{width:10rem;}.md\\:w-3\\/6{width:50%;}.md\\:w-2\\/6{width:33.333333%;}.md\\:w-1\\/3{width:33.333333%;}.md\\:w-2\\/3{width:66.666667%;}.md\\:w-64{width:16rem;}.md\\:w-7\\/12{width:58.333333%;}.md\\:w-5\\/12{width:41.666667%;}.md\\:w-60{width:15rem;}.md\\:w-1\\/4{width:25%;}.md\\:w-3\\/4{width:75%;}.md\\:flex-none{flex:none;}.md\\:grid-cols-3{grid-template-columns:repeat(3, minmax(0, 1fr));}.md\\:space-y-0 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(0px * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(0px * var(--tw-space-y-reverse));}.md\\:space-x-4 > :not([hidden]) ~ :not([hidden]){--tw-space-x-reverse:0;margin-right:calc(1rem * var(--tw-space-x-reverse));margin-left:calc(1rem * calc(1 - var(--tw-space-x-reverse)));}.md\\:rounded-none{border-radius:0px;}.md\\:rounded-r-none{border-top-right-radius:0px;border-bottom-right-radius:0px;}.md\\:rounded-l-lg{border-top-left-radius:0.5rem;border-bottom-left-radius:0.5rem;}.md\\:rounded-l-none{border-top-left-radius:0px;border-bottom-left-radius:0px;}.md\\:rounded-r-lg{border-top-right-radius:0.5rem;border-bottom-right-radius:0.5rem;}.md\\:rounded-r-xl{border-top-right-radius:0.75rem;border-bottom-right-radius:0.75rem;}.md\\:rounded-tr-none{border-top-right-radius:0px;}.md\\:p-6{padding:1.5rem;}.md\\:p-0{padding:0px;}.md\\:px-0{padding-left:0px;padding-right:0px;}.md\\:px-6{padding-left:1.5rem;padding-right:1.5rem;}.md\\:py-14{padding-top:3.5rem;padding-bottom:3.5rem;}.md\\:py-0{padding-top:0px;padding-bottom:0px;}.md\\:py-4{padding-top:1rem;padding-bottom:1rem;}.md\\:px-20{padding-left:5rem;padding-right:5rem;}.md\\:px-16{padding-left:4rem;padding-right:4rem;}.md\\:pl-16{padding-left:4rem;}.md\\:pt-2{padding-top:0.5rem;}.md\\:pb-6{padding-bottom:1.5rem;}.md\\:pl-8{padding-left:2rem;}.md\\:pb-0{padding-bottom:0px;}.md\\:pr-16{padding-right:4rem;}.md\\:text-base{font-size:1rem;line-height:1.5rem;}.md\\:text-3xl{font-size:1.875rem;line-height:2.25rem;}.md\\:leading-relaxed{line-height:1.625;}.md\\:w-600{width:600px}}", ""]);
+___CSS_LOADER_EXPORT___.push([module.i, "/*! tailwindcss v3.0.23 | MIT License | https://tailwindcss.com*//*\n1. Prevent padding and border from affecting element width. (https://github.com/mozdevs/cssremedy/issues/4)\n2. Allow adding a border to an element by just adding a border-width. (https://github.com/tailwindcss/tailwindcss/pull/116)\n*/\n\n*,\n::before,\n::after {\n  box-sizing: border-box; /* 1 */\n  border-width: 0; /* 2 */\n  border-style: solid; /* 2 */\n  border-color: #e5e7eb; /* 2 */\n}\n\n::before,\n::after {\n  --tw-content: '';\n}\n\n/*\n1. Use a consistent sensible line-height in all browsers.\n2. Prevent adjustments of font size after orientation changes in iOS.\n3. Use a more readable tab size.\n4. Use the user's configured `sans` font-family by default.\n*/\n\nhtml {\n  line-height: 1.5; /* 1 */\n  -webkit-text-size-adjust: 100%; /* 2 */\n  -moz-tab-size: 4; /* 3 */\n  -o-tab-size: 4;\n     tab-size: 4; /* 3 */\n  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, \"Noto Sans\", sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\"; /* 4 */\n}\n\n/*\n1. Remove the margin in all browsers.\n2. Inherit line-height from `html` so users can set them as a class directly on the `html` element.\n*/\n\nbody {\n  margin: 0; /* 1 */\n  line-height: inherit; /* 2 */\n}\n\n/*\n1. Add the correct height in Firefox.\n2. Correct the inheritance of border color in Firefox. (https://bugzilla.mozilla.org/show_bug.cgi?id=190655)\n3. Ensure horizontal rules are visible by default.\n*/\n\nhr {\n  height: 0; /* 1 */\n  color: inherit; /* 2 */\n  border-top-width: 1px; /* 3 */\n}\n\n/*\nAdd the correct text decoration in Chrome, Edge, and Safari.\n*/\n\nabbr:where([title]) {\n  -webkit-text-decoration: underline dotted;\n          text-decoration: underline dotted;\n}\n\n/*\nRemove the default font size and weight for headings.\n*/\n\nh1,\nh2,\nh3,\nh4,\nh5,\nh6 {\n  font-size: inherit;\n  font-weight: inherit;\n}\n\n/*\nReset links to optimize for opt-in styling instead of opt-out.\n*/\n\na {\n  color: inherit;\n  text-decoration: inherit;\n}\n\n/*\nAdd the correct font weight in Edge and Safari.\n*/\n\nb,\nstrong {\n  font-weight: bolder;\n}\n\n/*\n1. Use the user's configured `mono` font family by default.\n2. Correct the odd `em` font sizing in all browsers.\n*/\n\ncode,\nkbd,\nsamp,\npre {\n  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, \"Liberation Mono\", \"Courier New\", monospace; /* 1 */\n  font-size: 1em; /* 2 */\n}\n\n/*\nAdd the correct font size in all browsers.\n*/\n\nsmall {\n  font-size: 80%;\n}\n\n/*\nPrevent `sub` and `sup` elements from affecting the line height in all browsers.\n*/\n\nsub,\nsup {\n  font-size: 75%;\n  line-height: 0;\n  position: relative;\n  vertical-align: baseline;\n}\n\nsub {\n  bottom: -0.25em;\n}\n\nsup {\n  top: -0.5em;\n}\n\n/*\n1. Remove text indentation from table contents in Chrome and Safari. (https://bugs.chromium.org/p/chromium/issues/detail?id=999088, https://bugs.webkit.org/show_bug.cgi?id=201297)\n2. Correct table border color inheritance in all Chrome and Safari. (https://bugs.chromium.org/p/chromium/issues/detail?id=935729, https://bugs.webkit.org/show_bug.cgi?id=195016)\n3. Remove gaps between table borders by default.\n*/\n\ntable {\n  text-indent: 0; /* 1 */\n  border-color: inherit; /* 2 */\n  border-collapse: collapse; /* 3 */\n}\n\n/*\n1. Change the font styles in all browsers.\n2. Remove the margin in Firefox and Safari.\n3. Remove default padding in all browsers.\n*/\n\nbutton,\ninput,\noptgroup,\nselect,\ntextarea {\n  font-family: inherit; /* 1 */\n  font-size: 100%; /* 1 */\n  line-height: inherit; /* 1 */\n  color: inherit; /* 1 */\n  margin: 0; /* 2 */\n  padding: 0; /* 3 */\n}\n\n/*\nRemove the inheritance of text transform in Edge and Firefox.\n*/\n\nbutton,\nselect {\n  text-transform: none;\n}\n\n/*\n1. Correct the inability to style clickable types in iOS and Safari.\n2. Remove default button styles.\n*/\n\nbutton,\n[type='button'],\n[type='reset'],\n[type='submit'] {\n  -webkit-appearance: button; /* 1 */\n  background-color: transparent; /* 2 */\n  background-image: none; /* 2 */\n}\n\n/*\nUse the modern Firefox focus style for all focusable elements.\n*/\n\n:-moz-focusring {\n  outline: auto;\n}\n\n/*\nRemove the additional `:invalid` styles in Firefox. (https://github.com/mozilla/gecko-dev/blob/2f9eacd9d3d995c937b4251a5557d95d494c9be1/layout/style/res/forms.css#L728-L737)\n*/\n\n:-moz-ui-invalid {\n  box-shadow: none;\n}\n\n/*\nAdd the correct vertical alignment in Chrome and Firefox.\n*/\n\nprogress {\n  vertical-align: baseline;\n}\n\n/*\nCorrect the cursor style of increment and decrement buttons in Safari.\n*/\n\n::-webkit-inner-spin-button,\n::-webkit-outer-spin-button {\n  height: auto;\n}\n\n/*\n1. Correct the odd appearance in Chrome and Safari.\n2. Correct the outline style in Safari.\n*/\n\n[type='search'] {\n  -webkit-appearance: textfield; /* 1 */\n  outline-offset: -2px; /* 2 */\n}\n\n/*\nRemove the inner padding in Chrome and Safari on macOS.\n*/\n\n::-webkit-search-decoration {\n  -webkit-appearance: none;\n}\n\n/*\n1. Correct the inability to style clickable types in iOS and Safari.\n2. Change font properties to `inherit` in Safari.\n*/\n\n::-webkit-file-upload-button {\n  -webkit-appearance: button; /* 1 */\n  font: inherit; /* 2 */\n}\n\n/*\nAdd the correct display in Chrome and Safari.\n*/\n\nsummary {\n  display: list-item;\n}\n\n/*\nRemoves the default spacing and border for appropriate elements.\n*/\n\nblockquote,\ndl,\ndd,\nh1,\nh2,\nh3,\nh4,\nh5,\nh6,\nhr,\nfigure,\np,\npre {\n  margin: 0;\n}\n\nfieldset {\n  margin: 0;\n  padding: 0;\n}\n\nlegend {\n  padding: 0;\n}\n\nol,\nul,\nmenu {\n  list-style: none;\n  margin: 0;\n  padding: 0;\n}\n\n/*\nPrevent resizing textareas horizontally by default.\n*/\n\ntextarea {\n  resize: vertical;\n}\n\n/*\n1. Reset the default placeholder opacity in Firefox. (https://github.com/tailwindlabs/tailwindcss/issues/3300)\n2. Set the default placeholder color to the user's configured gray 400 color.\n*/\n\ninput::-moz-placeholder, textarea::-moz-placeholder {\n  opacity: 1; /* 1 */\n  color: #9ca3af; /* 2 */\n}\n\ninput:-ms-input-placeholder, textarea:-ms-input-placeholder {\n  opacity: 1; /* 1 */\n  color: #9ca3af; /* 2 */\n}\n\ninput::placeholder,\ntextarea::placeholder {\n  opacity: 1; /* 1 */\n  color: #9ca3af; /* 2 */\n}\n\n/*\nSet the default cursor for buttons.\n*/\n\nbutton,\n[role=\"button\"] {\n  cursor: pointer;\n}\n\n/*\nMake sure disabled buttons don't get the pointer cursor.\n*/\n:disabled {\n  cursor: default;\n}\n\n/*\n1. Make replaced elements `display: block` by default. (https://github.com/mozdevs/cssremedy/issues/14)\n2. Add `vertical-align: middle` to align replaced elements more sensibly by default. (https://github.com/jensimmons/cssremedy/issues/14#issuecomment-634934210)\n   This can trigger a poorly considered lint error in some tools but is included by design.\n*/\n\nimg,\nsvg,\nvideo,\ncanvas,\naudio,\niframe,\nembed,\nobject {\n  display: block; /* 1 */\n  vertical-align: middle; /* 2 */\n}\n\n/*\nConstrain images and videos to the parent width and preserve their intrinsic aspect ratio. (https://github.com/mozdevs/cssremedy/issues/14)\n*/\n\nimg,\nvideo {\n  max-width: 100%;\n  height: auto;\n}\n\n/*\nEnsure the default browser behavior of the `hidden` attribute.\n*/\n\n[hidden] {\n  display: none;\n}*, ::before, ::after{--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;}.container{width:100%;}@media (min-width: 640px){.container{max-width:640px;}}@media (min-width: 768px){.container{max-width:768px;}}@media (min-width: 1024px){.container{max-width:1024px;}}@media (min-width: 1280px){.container{max-width:1280px;}}@media (min-width: 1536px){.container{max-width:1536px;}}.fixed{position:fixed;}.absolute{position:absolute;}.relative{position:relative;}.inset-0{top:0px;right:0px;bottom:0px;left:0px;}.top-0{top:0px;}.right-3{right:0.75rem;}.top-4{top:1rem;}.right-0{right:0px;}.top-10{top:2.5rem;}.-right-2{right:-0.5rem;}.top-3{top:0.75rem;}.bottom-5{bottom:1.25rem;}.bottom-1{bottom:0.25rem;}.top-2{top:0.5rem;}.left-0{left:0px;}.right-4{right:1rem;}.z-10{z-index:10;}.z-20{z-index:20;}.float-right{float:right;}.mx-auto{margin-left:auto;margin-right:auto;}.mx-6{margin-left:1.5rem;margin-right:1.5rem;}.-mx-6{margin-left:-1.5rem;margin-right:-1.5rem;}.my-6{margin-top:1.5rem;margin-bottom:1.5rem;}.my-10{margin-top:2.5rem;margin-bottom:2.5rem;}.my-8{margin-top:2rem;margin-bottom:2rem;}.mt-4{margin-top:1rem;}.mt-6{margin-top:1.5rem;}.mb-1{margin-bottom:0.25rem;}.mt-5{margin-top:1.25rem;}.mr-2{margin-right:0.5rem;}.mr-4{margin-right:1rem;}.mb-6{margin-bottom:1.5rem;}.mb-10{margin-bottom:2.5rem;}.mt-1{margin-top:0.25rem;}.mt-8{margin-top:2rem;}.mb-4{margin-bottom:1rem;}.mt-10{margin-top:2.5rem;}.mt-2{margin-top:0.5rem;}.-ml-5{margin-left:-1.25rem;}.-mt-5{margin-top:-1.25rem;}.mt-3{margin-top:0.75rem;}.mt-16{margin-top:4rem;}.ml-2{margin-left:0.5rem;}.mr-5{margin-right:1.25rem;}.mt-12{margin-top:3rem;}.mt-20{margin-top:5rem;}.-mt-1{margin-top:-0.25rem;}.block{display:block;}.inline-block{display:inline-block;}.inline{display:inline;}.flex{display:flex;}.table{display:table;}.grid{display:grid;}.hidden{display:none;}.h-10{height:2.5rem;}.h-6{height:1.5rem;}.h-16{height:4rem;}.h-9{height:2.25rem;}.h-full{height:100%;}.h-32{height:8rem;}.h-80{height:20rem;}.h-auto{height:auto;}.h-12{height:3rem;}.w-full{width:100%;}.w-6{width:1.5rem;}.w-32{width:8rem;}.w-9{width:2.25rem;}.w-\\[100vw\\]{width:100vw;}.w-\\[1200px\\]{width:1200px;}.w-4{width:1rem;}.w-16{width:4rem;}.w-10{width:2.5rem;}.w-1\\/3{width:33.333333%;}.w-2\\/3{width:66.666667%;}.w-28{width:7rem;}.w-64{width:16rem;}.w-7\\/12{width:58.333333%;}.w-40{width:10rem;}.w-12{width:3rem;}.flex-1{flex:1 1 0%;}.flex-none{flex:none;}.flex-grow{flex-grow:1;}.table-auto{table-layout:auto;}.cursor-pointer{cursor:pointer;}.cursor-not-allowed{cursor:not-allowed;}.list-disc{list-style-type:disc;}.grid-cols-1{grid-template-columns:repeat(1, minmax(0, 1fr));}.flex-wrap{flex-wrap:wrap;}.flex-nowrap{flex-wrap:nowrap;}.content-center{align-content:center;}.items-start{align-items:flex-start;}.items-center{align-items:center;}.justify-end{justify-content:flex-end;}.justify-center{justify-content:center;}.gap-8{gap:2rem;}.gap-x-8{-moz-column-gap:2rem;column-gap:2rem;}.gap-x-2{-moz-column-gap:0.5rem;column-gap:0.5rem;}.gap-x-12{-moz-column-gap:3rem;column-gap:3rem;}.gap-x-5{-moz-column-gap:1.25rem;column-gap:1.25rem;}.gap-x-4{-moz-column-gap:1rem;column-gap:1rem;}.gap-x-10{-moz-column-gap:2.5rem;column-gap:2.5rem;}.gap-x-6{-moz-column-gap:1.5rem;column-gap:1.5rem;}.gap-x-16{-moz-column-gap:4rem;column-gap:4rem;}.gap-x-3{-moz-column-gap:0.75rem;column-gap:0.75rem;}.space-y-4 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(1rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(1rem * var(--tw-space-y-reverse));}.overflow-auto{overflow:auto;}.overflow-hidden{overflow:hidden;}.rounded-lg{border-radius:0.5rem;}.rounded-full{border-radius:9999px;}.rounded-xl{border-radius:0.75rem;}.rounded-l-lg{border-top-left-radius:0.5rem;border-bottom-left-radius:0.5rem;}.rounded-r-lg{border-top-right-radius:0.5rem;border-bottom-right-radius:0.5rem;}.rounded-t-lg{border-top-left-radius:0.5rem;border-top-right-radius:0.5rem;}.rounded-b-xl{border-bottom-right-radius:0.75rem;border-bottom-left-radius:0.75rem;}.rounded-l-full{border-top-left-radius:9999px;border-bottom-left-radius:9999px;}.rounded-r-full{border-top-right-radius:9999px;border-bottom-right-radius:9999px;}.border{border-width:1px;}.border-2{border-width:2px;}.border-b{border-bottom-width:1px;}.border-r{border-right-width:1px;}.border-t{border-top-width:1px;}.border-l{border-left-width:1px;}.border-dashed{border-style:dashed;}.border-none{border-style:none;}.border-transparent{border-color:transparent;}.border-white{--tw-border-opacity:1;border-color:rgb(255 255 255 / var(--tw-border-opacity));}.border-gray-300{--tw-border-opacity:1;border-color:rgb(209 213 219 / var(--tw-border-opacity));}.bg-gray-300{--tw-bg-opacity:1;background-color:rgb(209 213 219 / var(--tw-bg-opacity));}.bg-white{--tw-bg-opacity:1;background-color:rgb(255 255 255 / var(--tw-bg-opacity));}.bg-gray-100{--tw-bg-opacity:1;background-color:rgb(243 244 246 / var(--tw-bg-opacity));}.bg-transparent{background-color:transparent;}.bg-cover{background-size:cover;}.p-3{padding:0.75rem;}.p-6{padding:1.5rem;}.p-4{padding:1rem;}.px-6{padding-left:1.5rem;padding-right:1.5rem;}.py-4{padding-top:1rem;padding-bottom:1rem;}.py-8{padding-top:2rem;padding-bottom:2rem;}.px-5{padding-left:1.25rem;padding-right:1.25rem;}.px-3{padding-left:0.75rem;padding-right:0.75rem;}.py-2{padding-top:0.5rem;padding-bottom:0.5rem;}.py-3{padding-top:0.75rem;padding-bottom:0.75rem;}.py-6{padding-top:1.5rem;padding-bottom:1.5rem;}.py-1{padding-top:0.25rem;padding-bottom:0.25rem;}.px-4{padding-left:1rem;padding-right:1rem;}.py-5{padding-top:1.25rem;padding-bottom:1.25rem;}.py-20{padding-top:5rem;padding-bottom:5rem;}.py-14{padding-top:3.5rem;padding-bottom:3.5rem;}.pb-8{padding-bottom:2rem;}.pb-4{padding-bottom:1rem;}.pt-4{padding-top:1rem;}.pt-8{padding-top:2rem;}.pr-6{padding-right:1.5rem;}.pr-3{padding-right:0.75rem;}.pl-3{padding-left:0.75rem;}.pl-2{padding-left:0.5rem;}.pt-2{padding-top:0.5rem;}.pr-4{padding-right:1rem;}.pb-0{padding-bottom:0px;}.pt-1{padding-top:0.25rem;}.pr-2{padding-right:0.5rem;}.pl-5{padding-left:1.25rem;}.pb-6{padding-bottom:1.5rem;}.pt-6{padding-top:1.5rem;}.pb-3{padding-bottom:0.75rem;}.pl-1{padding-left:0.25rem;}.text-left{text-align:left;}.text-center{text-align:center;}.text-right{text-align:right;}.align-middle{vertical-align:middle;}.text-lg{font-size:1.125rem;line-height:1.75rem;}.text-sm{font-size:0.875rem;line-height:1.25rem;}.text-xs{font-size:0.75rem;line-height:1rem;}.text-2xl{font-size:1.5rem;line-height:2rem;}.text-3xl{font-size:1.875rem;line-height:2.25rem;}.font-medium{font-weight:500;}.font-semibold{font-weight:600;}.font-bold{font-weight:700;}.uppercase{text-transform:uppercase;}.leading-loose{line-height:2;}.leading-relaxed{line-height:1.625;}.text-white{--tw-text-opacity:1;color:rgb(255 255 255 / var(--tw-text-opacity));}.text-black{--tw-text-opacity:1;color:rgb(0 0 0 / var(--tw-text-opacity));}.opacity-50{opacity:0.5;}.opacity-100{opacity:1;}.outline-none{outline:2px solid transparent;outline-offset:2px;}.font-noto-sans{font-family:\"Noto Sans\",sans-serif}.text-2xs{font-size:12px}.bg-grayscale-50{background:#f8fafc}.bg-primary-600{background:#da3934}.bg-secondary-900{background:#224ca1}.bg-light-blue{background:rgba(82,170,246,.15)}.bg-login{background-image:url(" + ___CSS_LOADER_URL_REPLACEMENT_0___ + ")}.bg-forgot-password,.bg-login{background-repeat:no-repeat;background-size:cover}.bg-forgot-password{background-image:url(" + ___CSS_LOADER_URL_REPLACEMENT_1___ + ")}.text-primary-600{color:#da3934}.text-grayscale-50{color:#f8fafc}.text-grayscale-100{color:#f1f5f9}.text-grayscale-400{color:#94a3b8}.text-grayscale-500{color:#64748b}.text-grayscale-600{color:#475569}.text-grayscale-900{color:#0f172a}.text-secondary-900{color:#224ca1}.border-secondary-700{border-color:#307bd3}.border-secondary-900{border-color:#224ca1}.border-primary-600{border-color:#da3934}.border-b-6{border-bottom-width:6px}.custom-table{overflow:hidden;border-radius:0.5rem;}.custom-table thead tr{border-top-left-radius:0.5rem;border-top-right-radius:0.5rem;background:#f1f5f9;}.custom-table thead tr th{padding:0.5rem;text-align:left;}.custom-table tbody tr td{padding:0.75rem;color:#64748b;}.custom-table tbody tr:nth-child(2n) td{background:#f8fafc}.custom-table tfoot tr{border-bottom-right-radius:0.5rem;border-bottom-left-radius:0.5rem;background:#f1f5f9;}.custom-table tfoot tr th{padding:0.5rem;padding-left:1.5rem;padding-right:1.5rem;text-align:left;font-size:0.875rem;line-height:1.25rem;font-weight:400;color:#64748b;}.shadow-custom{box-shadow:0 4px 15px rgba(0,0,0,.05)}.bullet-green{background:#2a943a;width:14px;height:14px;border-radius:50%;display:inline-block}html{font-family:\"Work Sans\";font-size:16px;word-spacing:1px;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;-moz-osx-font-smoothing:grayscale;-webkit-font-smoothing:antialiased;box-sizing:border-box;color:#4a4a68}body{margin:0;padding:0;height:100vh;font-family:\"Roboto\";color:#0f172a}*,:after,:before{box-sizing:border-box;margin:0}@media (min-width: 768px){.md\\:absolute{position:absolute;}.md\\:float-right{float:right;}.md\\:-mx-0{margin-left:-0px;margin-right:-0px;}.md\\:mx-auto{margin-left:auto;margin-right:auto;}.md\\:mt-0{margin-top:0px;}.md\\:mr-4{margin-right:1rem;}.md\\:-mt-20{margin-top:-5rem;}.md\\:mt-8{margin-top:2rem;}.md\\:mb-0{margin-bottom:0px;}.md\\:mt-16{margin-top:4rem;}.md\\:block{display:block;}.md\\:inline-block{display:inline-block;}.md\\:inline{display:inline;}.md\\:flex{display:flex;}.md\\:hidden{display:none;}.md\\:h-20{height:5rem;}.md\\:h-screen{height:100vh;}.md\\:w-full{width:100%;}.md\\:w-1\\/2{width:50%;}.md\\:w-1\\/6{width:16.666667%;}.md\\:w-5\\/6{width:83.333333%;}.md\\:w-40{width:10rem;}.md\\:w-3\\/6{width:50%;}.md\\:w-2\\/6{width:33.333333%;}.md\\:w-1\\/3{width:33.333333%;}.md\\:w-2\\/3{width:66.666667%;}.md\\:w-64{width:16rem;}.md\\:w-7\\/12{width:58.333333%;}.md\\:w-5\\/12{width:41.666667%;}.md\\:w-60{width:15rem;}.md\\:w-1\\/4{width:25%;}.md\\:w-3\\/4{width:75%;}.md\\:flex-none{flex:none;}.md\\:grid-cols-3{grid-template-columns:repeat(3, minmax(0, 1fr));}.md\\:space-y-0 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(0px * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(0px * var(--tw-space-y-reverse));}.md\\:space-x-4 > :not([hidden]) ~ :not([hidden]){--tw-space-x-reverse:0;margin-right:calc(1rem * var(--tw-space-x-reverse));margin-left:calc(1rem * calc(1 - var(--tw-space-x-reverse)));}.md\\:rounded-none{border-radius:0px;}.md\\:rounded-r-none{border-top-right-radius:0px;border-bottom-right-radius:0px;}.md\\:rounded-l-lg{border-top-left-radius:0.5rem;border-bottom-left-radius:0.5rem;}.md\\:rounded-l-none{border-top-left-radius:0px;border-bottom-left-radius:0px;}.md\\:rounded-r-lg{border-top-right-radius:0.5rem;border-bottom-right-radius:0.5rem;}.md\\:rounded-r-xl{border-top-right-radius:0.75rem;border-bottom-right-radius:0.75rem;}.md\\:rounded-tr-none{border-top-right-radius:0px;}.md\\:p-6{padding:1.5rem;}.md\\:p-0{padding:0px;}.md\\:px-0{padding-left:0px;padding-right:0px;}.md\\:px-6{padding-left:1.5rem;padding-right:1.5rem;}.md\\:py-14{padding-top:3.5rem;padding-bottom:3.5rem;}.md\\:py-0{padding-top:0px;padding-bottom:0px;}.md\\:py-4{padding-top:1rem;padding-bottom:1rem;}.md\\:px-20{padding-left:5rem;padding-right:5rem;}.md\\:px-16{padding-left:4rem;padding-right:4rem;}.md\\:pl-16{padding-left:4rem;}.md\\:pt-2{padding-top:0.5rem;}.md\\:pb-6{padding-bottom:1.5rem;}.md\\:pl-8{padding-left:2rem;}.md\\:pb-0{padding-bottom:0px;}.md\\:pr-16{padding-right:4rem;}.md\\:text-base{font-size:1rem;line-height:1.5rem;}.md\\:text-3xl{font-size:1.875rem;line-height:2.25rem;}.md\\:leading-relaxed{line-height:1.625;}.md\\:w-600{width:600px}}", ""]);
 // Exports
 ___CSS_LOADER_EXPORT___.locals = {};
 module.exports = ___CSS_LOADER_EXPORT___;
 
 
 /***/ }),
-/* 26 */
+/* 30 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -747,7 +771,47 @@ module.exports = function (url, options) {
 };
 
 /***/ }),
-/* 27 */
+/* 31 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "state", function() { return state; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "mutations", function() { return mutations; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "actions", function() { return actions; });
+/* harmony import */ var cookie__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(14);
+/* harmony import */ var cookie__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(cookie__WEBPACK_IMPORTED_MODULE_0__);
+
+const state = () => ({
+  isLogin: false
+});
+const mutations = {
+  SET_LOGIN(state, data) {
+    state.isLogin = data;
+  }
+
+};
+const actions = {
+  // nuxtServerInit  dijalankan oleh Nuxt.js sebelum server-rendering setiap page
+  async nuxtServerInit({
+    commit
+  }, context) {
+    if (context.req && context.req.headers && context.req.headers.cookie) {
+      const cookies = cookie__WEBPACK_IMPORTED_MODULE_0___default.a.parse(context.req.headers.cookie || "");
+      let star_air_login = cookies.star_air_login ? cookies.star_air_login : '';
+
+      if (star_air_login) {
+        commit("SET_LOGIN", star_air_login);
+      } else {
+        commit("SET_LOGIN", false);
+      }
+    }
+  }
+
+};
+
+/***/ }),
+/* 32 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -765,10 +829,6 @@ __webpack_require__.d(components_namespaceObject, "InputPassword", function() { 
 __webpack_require__.d(components_namespaceObject, "MainMenu", function() { return MainMenu; });
 __webpack_require__.d(components_namespaceObject, "Pagination", function() { return Pagination; });
 __webpack_require__.d(components_namespaceObject, "Select", function() { return Select; });
-__webpack_require__.d(components_namespaceObject, "HomepageAdvancedSearch", function() { return HomepageAdvancedSearch; });
-__webpack_require__.d(components_namespaceObject, "HomepageTabBook", function() { return HomepageTabBook; });
-__webpack_require__.d(components_namespaceObject, "HomepageTabFlightInfo", function() { return HomepageTabFlightInfo; });
-__webpack_require__.d(components_namespaceObject, "HomepageTabMyTrip", function() { return HomepageTabMyTrip; });
 __webpack_require__.d(components_namespaceObject, "AccountBookingHistory", function() { return AccountBookingHistory; });
 __webpack_require__.d(components_namespaceObject, "AccountBookingHistoryDetail", function() { return AccountBookingHistoryDetail; });
 __webpack_require__.d(components_namespaceObject, "AccountChangePassword", function() { return AccountChangePassword; });
@@ -780,6 +840,10 @@ __webpack_require__.d(components_namespaceObject, "AccountOverview", function() 
 __webpack_require__.d(components_namespaceObject, "AccountStarPoints", function() { return AccountStarPoints; });
 __webpack_require__.d(components_namespaceObject, "AccountUpgradeMembership", function() { return AccountUpgradeMembership; });
 __webpack_require__.d(components_namespaceObject, "AccountUserProfile", function() { return AccountUserProfile; });
+__webpack_require__.d(components_namespaceObject, "HomepageAdvancedSearch", function() { return HomepageAdvancedSearch; });
+__webpack_require__.d(components_namespaceObject, "HomepageTabBook", function() { return HomepageTabBook; });
+__webpack_require__.d(components_namespaceObject, "HomepageTabFlightInfo", function() { return HomepageTabFlightInfo; });
+__webpack_require__.d(components_namespaceObject, "HomepageTabMyTrip", function() { return HomepageTabMyTrip; });
 __webpack_require__.d(components_namespaceObject, "RedemPointsBookFlight", function() { return RedemPointsBookFlight; });
 __webpack_require__.d(components_namespaceObject, "RedemPointsExtraBaggage", function() { return RedemPointsExtraBaggage; });
 __webpack_require__.d(components_namespaceObject, "RedemPointsPartnerPoints", function() { return RedemPointsPartnerPoints; });
@@ -792,14 +856,14 @@ var external_vue_default = /*#__PURE__*/__webpack_require__.n(external_vue_);
 var external_ufo_ = __webpack_require__(1);
 
 // EXTERNAL MODULE: external "node-fetch"
-var external_node_fetch_ = __webpack_require__(10);
+var external_node_fetch_ = __webpack_require__(12);
 var external_node_fetch_default = /*#__PURE__*/__webpack_require__.n(external_node_fetch_);
 
 // CONCATENATED MODULE: ./.nuxt/middleware.js
 const middleware = {};
-middleware['auth-user'] = __webpack_require__(16);
+middleware['auth-user'] = __webpack_require__(20);
 middleware['auth-user'] = middleware['auth-user'].default || middleware['auth-user'];
-middleware['auth'] = __webpack_require__(17);
+middleware['auth'] = __webpack_require__(21);
 middleware['auth'] = middleware['auth'].default || middleware['auth'];
 /* harmony default export */ var _nuxt_middleware = (middleware);
 // CONCATENATED MODULE: ./.nuxt/utils.js
@@ -994,6 +1058,7 @@ async function setContext(app, context) {
       isDev: false,
       isHMR: false,
       app,
+      store: app.store,
       payload: context.payload,
       error: context.error,
       base: app.router.options.base,
@@ -1482,20 +1547,24 @@ async function serverPrefetch() {
   }
 
 });
+// EXTERNAL MODULE: external "vuex"
+var external_vuex_ = __webpack_require__(3);
+var external_vuex_default = /*#__PURE__*/__webpack_require__.n(external_vuex_);
+
 // EXTERNAL MODULE: external "vue-meta"
-var external_vue_meta_ = __webpack_require__(11);
+var external_vue_meta_ = __webpack_require__(13);
 var external_vue_meta_default = /*#__PURE__*/__webpack_require__.n(external_vue_meta_);
 
 // EXTERNAL MODULE: external "vue-client-only"
-var external_vue_client_only_ = __webpack_require__(6);
+var external_vue_client_only_ = __webpack_require__(8);
 var external_vue_client_only_default = /*#__PURE__*/__webpack_require__.n(external_vue_client_only_);
 
 // EXTERNAL MODULE: external "vue-no-ssr"
-var external_vue_no_ssr_ = __webpack_require__(5);
+var external_vue_no_ssr_ = __webpack_require__(7);
 var external_vue_no_ssr_default = /*#__PURE__*/__webpack_require__.n(external_vue_no_ssr_);
 
 // EXTERNAL MODULE: external "vue-router"
-var external_vue_router_ = __webpack_require__(7);
+var external_vue_router_ = __webpack_require__(9);
 var external_vue_router_default = /*#__PURE__*/__webpack_require__.n(external_vue_router_);
 
 // CONCATENATED MODULE: ./.nuxt/router.scrollBehavior.js
@@ -1575,35 +1644,35 @@ function shouldScrollToTop(route) {
 
 
 
-const _50826e2f = () => interopDefault(__webpack_require__.e(/* import() | pages/account */ 27).then(__webpack_require__.bind(null, 125)));
+const _50826e2f = () => interopDefault(__webpack_require__.e(/* import() | pages/account */ 27).then(__webpack_require__.bind(null, 131)));
 
-const _dd90aef8 = () => interopDefault(__webpack_require__.e(/* import() | pages/activation */ 28).then(__webpack_require__.bind(null, 126)));
+const _dd90aef8 = () => interopDefault(__webpack_require__.e(/* import() | pages/activation */ 28).then(__webpack_require__.bind(null, 132)));
 
-const _10887649 = () => interopDefault(__webpack_require__.e(/* import() | pages/claim-missing-points */ 29).then(__webpack_require__.bind(null, 127)));
+const _10887649 = () => interopDefault(__webpack_require__.e(/* import() | pages/claim-missing-points */ 29).then(__webpack_require__.bind(null, 133)));
 
-const _51a4a1fa = () => interopDefault(__webpack_require__.e(/* import() | pages/earn-points */ 30).then(__webpack_require__.bind(null, 128)));
+const _51a4a1fa = () => interopDefault(__webpack_require__.e(/* import() | pages/earn-points */ 30).then(__webpack_require__.bind(null, 134)));
 
-const _d0a9d026 = () => interopDefault(__webpack_require__.e(/* import() | pages/flight-info */ 31).then(__webpack_require__.bind(null, 129)));
+const _d0a9d026 = () => interopDefault(__webpack_require__.e(/* import() | pages/flight-info */ 31).then(__webpack_require__.bind(null, 135)));
 
-const _3ae0e007 = () => interopDefault(__webpack_require__.e(/* import() | pages/forgot-password */ 32).then(__webpack_require__.bind(null, 130)));
+const _3ae0e007 = () => interopDefault(__webpack_require__.e(/* import() | pages/forgot-password */ 32).then(__webpack_require__.bind(null, 136)));
 
-const _2e42702a = () => interopDefault(__webpack_require__.e(/* import() | pages/login */ 34).then(__webpack_require__.bind(null, 131)));
+const _2e42702a = () => interopDefault(__webpack_require__.e(/* import() | pages/login */ 34).then(__webpack_require__.bind(null, 137)));
 
-const _630db328 = () => interopDefault(__webpack_require__.e(/* import() | pages/my-trip */ 35).then(__webpack_require__.bind(null, 132)));
+const _630db328 = () => interopDefault(__webpack_require__.e(/* import() | pages/my-trip */ 35).then(__webpack_require__.bind(null, 138)));
 
-const _251119a5 = () => interopDefault(__webpack_require__.e(/* import() | pages/redem-points */ 36).then(__webpack_require__.bind(null, 133)));
+const _251119a5 = () => interopDefault(__webpack_require__.e(/* import() | pages/redem-points */ 36).then(__webpack_require__.bind(null, 139)));
 
-const _08beb2ae = () => interopDefault(__webpack_require__.e(/* import() | pages/redem-points-detail */ 37).then(__webpack_require__.bind(null, 134)));
+const _08beb2ae = () => interopDefault(__webpack_require__.e(/* import() | pages/redem-points-detail */ 37).then(__webpack_require__.bind(null, 140)));
 
-const _3081e927 = () => interopDefault(__webpack_require__.e(/* import() | pages/registration */ 38).then(__webpack_require__.bind(null, 135)));
+const _3081e927 = () => interopDefault(__webpack_require__.e(/* import() | pages/registration */ 38).then(__webpack_require__.bind(null, 141)));
 
-const _590ff8b6 = () => interopDefault(__webpack_require__.e(/* import() | pages/registration-full */ 39).then(__webpack_require__.bind(null, 136)));
+const _590ff8b6 = () => interopDefault(__webpack_require__.e(/* import() | pages/registration-full */ 39).then(__webpack_require__.bind(null, 142)));
 
-const _34c0fb46 = () => interopDefault(__webpack_require__.e(/* import() | pages/registration-success */ 40).then(__webpack_require__.bind(null, 137)));
+const _34c0fb46 = () => interopDefault(__webpack_require__.e(/* import() | pages/registration-success */ 40).then(__webpack_require__.bind(null, 143)));
 
-const _234ffe58 = () => interopDefault(__webpack_require__.e(/* import() | pages/transfer-points-for-plus */ 41).then(__webpack_require__.bind(null, 138)));
+const _234ffe58 = () => interopDefault(__webpack_require__.e(/* import() | pages/transfer-points-for-plus */ 41).then(__webpack_require__.bind(null, 144)));
 
-const _1f3724d4 = () => interopDefault(__webpack_require__.e(/* import() | pages/index */ 33).then(__webpack_require__.bind(null, 139)));
+const _1f3724d4 = () => interopDefault(__webpack_require__.e(/* import() | pages/index */ 33).then(__webpack_require__.bind(null, 145)));
 
 const emptyFn = () => {};
 
@@ -1856,7 +1925,7 @@ var componentNormalizer = __webpack_require__(2);
 
 function injectStyles (context) {
   
-  var style0 = __webpack_require__(18)
+  var style0 = __webpack_require__(22)
 if (style0.__inject__) style0.__inject__(context)
 
 }
@@ -2160,7 +2229,7 @@ var nuxt_loading_render, nuxt_loading_staticRenderFns
 
 function nuxt_loading_injectStyles (context) {
   
-  var style0 = __webpack_require__(20)
+  var style0 = __webpack_require__(24)
 if (style0.__inject__) style0.__inject__(context)
 
 }
@@ -2180,10 +2249,10 @@ var nuxt_loading_component = Object(componentNormalizer["a" /* default */])(
 
 /* harmony default export */ var nuxt_loading = (nuxt_loading_component.exports);
 // EXTERNAL MODULE: ./node_modules/@nuxtjs/tailwindcss/lib/files/tailwind.css
-var tailwind = __webpack_require__(22);
+var tailwind = __webpack_require__(26);
 
 // EXTERNAL MODULE: ./assets/css/main.css
-var main = __webpack_require__(24);
+var main = __webpack_require__(28);
 
 // CONCATENATED MODULE: ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/@nuxt/components/dist/loader.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./layouts/default.vue?vue&type=template&id=492abdaa&
 var defaultvue_type_template_id_492abdaa_render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',[_c('Nuxt')],1)}
@@ -2397,33 +2466,80 @@ const layouts = {
     NuxtLoading: nuxt_loading
   }
 });
+// CONCATENATED MODULE: ./.nuxt/store.js
+
+
+external_vue_default.a.use(external_vuex_default.a);
+let store_store = {};
+
+(function updateModules() {
+  store_store = normalizeRoot(__webpack_require__(31), 'store/index.js'); // If store is an exported method = classic mode (deprecated)
+  // Enforce store modules
+
+  store_store.modules = store_store.modules || {}; // If the environment supports hot reloading...
+})(); // createStore
+
+
+const createStore = store_store instanceof Function ? store_store : () => {
+  return new external_vuex_default.a.Store(Object.assign({
+    strict: "production" !== 'production'
+  }, store_store));
+};
+
+function normalizeRoot(moduleData, filePath) {
+  moduleData = moduleData.default || moduleData;
+
+  if (moduleData.commit) {
+    throw new Error(`[nuxt] ${filePath} should export a method that returns a Vuex instance.`);
+  }
+
+  if (typeof moduleData !== 'function') {
+    // Avoid TypeError: setting a property that has only a getter when overwriting top level keys
+    moduleData = Object.assign({}, moduleData);
+  }
+
+  return normalizeModule(moduleData, filePath);
+}
+
+function normalizeModule(moduleData, filePath) {
+  if (moduleData.state && typeof moduleData.state !== 'function') {
+    console.warn(`'state' should be a method that returns an object in ${filePath}`);
+    const state = Object.assign({}, moduleData.state); // Avoid TypeError: setting a property that has only a getter when overwriting top level keys
+
+    moduleData = Object.assign({}, moduleData, {
+      state: () => state
+    });
+  }
+
+  return moduleData;
+}
 // CONCATENATED MODULE: ./.nuxt/components/index.js
-const Button = () => __webpack_require__.e(/* import() | components/button */ 12).then(__webpack_require__.bind(null, 32)).then(c => wrapFunctional(c.default || c));
-const Footer = () => __webpack_require__.e(/* import() | components/footer */ 13).then(__webpack_require__.bind(null, 96)).then(c => wrapFunctional(c.default || c));
-const Header = () => __webpack_require__.e(/* import() | components/header */ 14).then(__webpack_require__.bind(null, 94)).then(c => wrapFunctional(c.default || c));
-const Input = () => __webpack_require__.e(/* import() | components/input */ 19).then(__webpack_require__.bind(null, 29)).then(c => wrapFunctional(c.default || c));
-const InputPassword = () => __webpack_require__.e(/* import() | components/input-password */ 20).then(__webpack_require__.bind(null, 97)).then(c => wrapFunctional(c.default || c));
-const MainMenu = () => __webpack_require__.e(/* import() | components/main-menu */ 21).then(__webpack_require__.bind(null, 95)).then(c => wrapFunctional(c.default || c));
-const Pagination = () => __webpack_require__.e(/* import() | components/pagination */ 22).then(__webpack_require__.bind(null, 116)).then(c => wrapFunctional(c.default || c));
-const Select = () => __webpack_require__.e(/* import() | components/select */ 26).then(__webpack_require__.bind(null, 93)).then(c => wrapFunctional(c.default || c));
-const HomepageAdvancedSearch = () => __webpack_require__.e(/* import() | components/homepage-advanced-search */ 15).then(__webpack_require__.bind(null, 120)).then(c => wrapFunctional(c.default || c));
-const HomepageTabBook = () => __webpack_require__.e(/* import() | components/homepage-tab-book */ 16).then(__webpack_require__.bind(null, 99)).then(c => wrapFunctional(c.default || c));
-const HomepageTabFlightInfo = () => __webpack_require__.e(/* import() | components/homepage-tab-flight-info */ 17).then(__webpack_require__.bind(null, 101)).then(c => wrapFunctional(c.default || c));
-const HomepageTabMyTrip = () => __webpack_require__.e(/* import() | components/homepage-tab-my-trip */ 18).then(__webpack_require__.bind(null, 100)).then(c => wrapFunctional(c.default || c));
-const AccountBookingHistory = () => __webpack_require__.e(/* import() | components/account-booking-history */ 1).then(__webpack_require__.bind(null, 140)).then(c => wrapFunctional(c.default || c));
-const AccountBookingHistoryDetail = () => __webpack_require__.e(/* import() | components/account-booking-history-detail */ 2).then(__webpack_require__.bind(null, 108)).then(c => wrapFunctional(c.default || c));
-const AccountChangePassword = () => __webpack_require__.e(/* import() | components/account-change-password */ 3).then(__webpack_require__.bind(null, 111)).then(c => wrapFunctional(c.default || c));
-const AccountEditEmail = () => __webpack_require__.e(/* import() | components/account-edit-email */ 4).then(__webpack_require__.bind(null, 113)).then(c => wrapFunctional(c.default || c));
-const AccountEditProfile = () => __webpack_require__.e(/* import() | components/account-edit-profile */ 5).then(__webpack_require__.bind(null, 112)).then(c => wrapFunctional(c.default || c));
-const AccountEditTravelDocument = () => __webpack_require__.e(/* import() | components/account-edit-travel-document */ 6).then(__webpack_require__.bind(null, 114)).then(c => wrapFunctional(c.default || c));
-const AccountExtendMembership = () => __webpack_require__.e(/* import() | components/account-extend-membership */ 7).then(__webpack_require__.bind(null, 110)).then(c => wrapFunctional(c.default || c));
-const AccountOverview = () => __webpack_require__.e(/* import() | components/account-overview */ 8).then(__webpack_require__.bind(null, 106)).then(c => wrapFunctional(c.default || c));
-const AccountStarPoints = () => __webpack_require__.e(/* import() | components/account-star-points */ 9).then(__webpack_require__.bind(null, 109)).then(c => wrapFunctional(c.default || c));
-const AccountUpgradeMembership = () => __webpack_require__.e(/* import() | components/account-upgrade-membership */ 10).then(__webpack_require__.bind(null, 115)).then(c => wrapFunctional(c.default || c));
-const AccountUserProfile = () => __webpack_require__.e(/* import() | components/account-user-profile */ 11).then(__webpack_require__.bind(null, 107)).then(c => wrapFunctional(c.default || c));
-const RedemPointsBookFlight = () => __webpack_require__.e(/* import() | components/redem-points-book-flight */ 23).then(__webpack_require__.bind(null, 117)).then(c => wrapFunctional(c.default || c));
-const RedemPointsExtraBaggage = () => __webpack_require__.e(/* import() | components/redem-points-extra-baggage */ 24).then(__webpack_require__.bind(null, 118)).then(c => wrapFunctional(c.default || c));
-const RedemPointsPartnerPoints = () => __webpack_require__.e(/* import() | components/redem-points-partner-points */ 25).then(__webpack_require__.bind(null, 119)).then(c => wrapFunctional(c.default || c)); // nuxt/nuxt.js#8607
+const Button = () => __webpack_require__.e(/* import() | components/button */ 12).then(__webpack_require__.bind(null, 36)).then(c => wrapFunctional(c.default || c));
+const Footer = () => __webpack_require__.e(/* import() | components/footer */ 13).then(__webpack_require__.bind(null, 102)).then(c => wrapFunctional(c.default || c));
+const Header = () => __webpack_require__.e(/* import() | components/header */ 14).then(__webpack_require__.bind(null, 100)).then(c => wrapFunctional(c.default || c));
+const Input = () => __webpack_require__.e(/* import() | components/input */ 19).then(__webpack_require__.bind(null, 35)).then(c => wrapFunctional(c.default || c));
+const InputPassword = () => __webpack_require__.e(/* import() | components/input-password */ 20).then(__webpack_require__.bind(null, 103)).then(c => wrapFunctional(c.default || c));
+const MainMenu = () => __webpack_require__.e(/* import() | components/main-menu */ 21).then(__webpack_require__.bind(null, 101)).then(c => wrapFunctional(c.default || c));
+const Pagination = () => __webpack_require__.e(/* import() | components/pagination */ 22).then(__webpack_require__.bind(null, 122)).then(c => wrapFunctional(c.default || c));
+const Select = () => __webpack_require__.e(/* import() | components/select */ 26).then(__webpack_require__.bind(null, 99)).then(c => wrapFunctional(c.default || c));
+const AccountBookingHistory = () => __webpack_require__.e(/* import() | components/account-booking-history */ 1).then(__webpack_require__.bind(null, 146)).then(c => wrapFunctional(c.default || c));
+const AccountBookingHistoryDetail = () => __webpack_require__.e(/* import() | components/account-booking-history-detail */ 2).then(__webpack_require__.bind(null, 114)).then(c => wrapFunctional(c.default || c));
+const AccountChangePassword = () => __webpack_require__.e(/* import() | components/account-change-password */ 3).then(__webpack_require__.bind(null, 117)).then(c => wrapFunctional(c.default || c));
+const AccountEditEmail = () => __webpack_require__.e(/* import() | components/account-edit-email */ 4).then(__webpack_require__.bind(null, 119)).then(c => wrapFunctional(c.default || c));
+const AccountEditProfile = () => __webpack_require__.e(/* import() | components/account-edit-profile */ 5).then(__webpack_require__.bind(null, 118)).then(c => wrapFunctional(c.default || c));
+const AccountEditTravelDocument = () => __webpack_require__.e(/* import() | components/account-edit-travel-document */ 6).then(__webpack_require__.bind(null, 120)).then(c => wrapFunctional(c.default || c));
+const AccountExtendMembership = () => __webpack_require__.e(/* import() | components/account-extend-membership */ 7).then(__webpack_require__.bind(null, 116)).then(c => wrapFunctional(c.default || c));
+const AccountOverview = () => __webpack_require__.e(/* import() | components/account-overview */ 8).then(__webpack_require__.bind(null, 112)).then(c => wrapFunctional(c.default || c));
+const AccountStarPoints = () => __webpack_require__.e(/* import() | components/account-star-points */ 9).then(__webpack_require__.bind(null, 115)).then(c => wrapFunctional(c.default || c));
+const AccountUpgradeMembership = () => __webpack_require__.e(/* import() | components/account-upgrade-membership */ 10).then(__webpack_require__.bind(null, 121)).then(c => wrapFunctional(c.default || c));
+const AccountUserProfile = () => __webpack_require__.e(/* import() | components/account-user-profile */ 11).then(__webpack_require__.bind(null, 113)).then(c => wrapFunctional(c.default || c));
+const HomepageAdvancedSearch = () => __webpack_require__.e(/* import() | components/homepage-advanced-search */ 15).then(__webpack_require__.bind(null, 126)).then(c => wrapFunctional(c.default || c));
+const HomepageTabBook = () => __webpack_require__.e(/* import() | components/homepage-tab-book */ 16).then(__webpack_require__.bind(null, 105)).then(c => wrapFunctional(c.default || c));
+const HomepageTabFlightInfo = () => __webpack_require__.e(/* import() | components/homepage-tab-flight-info */ 17).then(__webpack_require__.bind(null, 107)).then(c => wrapFunctional(c.default || c));
+const HomepageTabMyTrip = () => __webpack_require__.e(/* import() | components/homepage-tab-my-trip */ 18).then(__webpack_require__.bind(null, 106)).then(c => wrapFunctional(c.default || c));
+const RedemPointsBookFlight = () => __webpack_require__.e(/* import() | components/redem-points-book-flight */ 23).then(__webpack_require__.bind(null, 123)).then(c => wrapFunctional(c.default || c));
+const RedemPointsExtraBaggage = () => __webpack_require__.e(/* import() | components/redem-points-extra-baggage */ 24).then(__webpack_require__.bind(null, 124)).then(c => wrapFunctional(c.default || c));
+const RedemPointsPartnerPoints = () => __webpack_require__.e(/* import() | components/redem-points-partner-points */ 25).then(__webpack_require__.bind(null, 125)).then(c => wrapFunctional(c.default || c)); // nuxt/nuxt.js#8607
 
 function wrapFunctional(options) {
   if (!options || !options.functional) {
@@ -2462,7 +2578,204 @@ for (const name in components_namespaceObject) {
   external_vue_default.a.component(name, components_namespaceObject[name]);
   external_vue_default.a.component('Lazy' + name, components_namespaceObject[name]);
 }
+// EXTERNAL MODULE: external "axios"
+var external_axios_ = __webpack_require__(4);
+var external_axios_default = /*#__PURE__*/__webpack_require__.n(external_axios_);
+
+// EXTERNAL MODULE: external "defu"
+var external_defu_ = __webpack_require__(15);
+var external_defu_default = /*#__PURE__*/__webpack_require__.n(external_defu_);
+
+// CONCATENATED MODULE: ./.nuxt/axios.js
+
+ // Axios.prototype cannot be modified
+
+const axiosExtra = {
+  setBaseURL(baseURL) {
+    this.defaults.baseURL = baseURL;
+  },
+
+  setHeader(name, value, scopes = 'common') {
+    for (const scope of Array.isArray(scopes) ? scopes : [scopes]) {
+      if (!value) {
+        delete this.defaults.headers[scope][name];
+        continue;
+      }
+
+      this.defaults.headers[scope][name] = value;
+    }
+  },
+
+  setToken(token, type, scopes = 'common') {
+    const value = !token ? null : (type ? type + ' ' : '') + token;
+    this.setHeader('Authorization', value, scopes);
+  },
+
+  onRequest(fn) {
+    this.interceptors.request.use(config => fn(config) || config);
+  },
+
+  onResponse(fn) {
+    this.interceptors.response.use(response => fn(response) || response);
+  },
+
+  onRequestError(fn) {
+    this.interceptors.request.use(undefined, error => fn(error) || Promise.reject(error));
+  },
+
+  onResponseError(fn) {
+    this.interceptors.response.use(undefined, error => fn(error) || Promise.reject(error));
+  },
+
+  onError(fn) {
+    this.onRequestError(fn);
+    this.onResponseError(fn);
+  },
+
+  create(options) {
+    return createAxiosInstance(external_defu_default()(options, this.defaults));
+  }
+
+}; // Request helpers ($get, $post, ...)
+
+for (const method of ['request', 'delete', 'get', 'head', 'options', 'post', 'put', 'patch']) {
+  axiosExtra['$' + method] = function () {
+    return this[method].apply(this, arguments).then(res => res && res.data);
+  };
+}
+
+const extendAxiosInstance = axios => {
+  for (const key in axiosExtra) {
+    axios[key] = axiosExtra[key].bind(axios);
+  }
+};
+
+const createAxiosInstance = axiosOptions => {
+  // Create new axios instance
+  const axios = external_axios_default.a.create(axiosOptions);
+  axios.CancelToken = external_axios_default.a.CancelToken;
+  axios.isCancel = external_axios_default.a.isCancel; // Extend axios proto
+
+  extendAxiosInstance(axios); // Intercept to apply default headers
+
+  axios.onRequest(config => {
+    config.headers = { ...axios.defaults.headers.common,
+      ...config.headers
+    };
+  }); // Setup interceptors
+
+  setupProgress(axios);
+  return axios;
+};
+
+const setupProgress = axios => {
+  if (true) {
+    return;
+  } // A noop loading inteterface for when $nuxt is not yet ready
+
+
+  const noopLoading = {
+    finish: () => {},
+    start: () => {},
+    fail: () => {},
+    set: () => {}
+  };
+
+  const $loading = () => {
+    const $nuxt = typeof window !== 'undefined' && window['$nuxt'];
+    return $nuxt && $nuxt.$loading && $nuxt.$loading.set ? $nuxt.$loading : noopLoading;
+  };
+
+  let currentRequests = 0;
+  axios.onRequest(config => {
+    if (config && config.progress === false) {
+      return;
+    }
+
+    currentRequests++;
+  });
+  axios.onResponse(response => {
+    if (response && response.config && response.config.progress === false) {
+      return;
+    }
+
+    currentRequests--;
+
+    if (currentRequests <= 0) {
+      currentRequests = 0;
+      $loading().finish();
+    }
+  });
+  axios.onError(error => {
+    if (error && error.config && error.config.progress === false) {
+      return;
+    }
+
+    currentRequests--;
+
+    if (external_axios_default.a.isCancel(error)) {
+      if (currentRequests <= 0) {
+        currentRequests = 0;
+        $loading().finish();
+      }
+
+      return;
+    }
+
+    $loading().fail();
+    $loading().finish();
+  });
+
+  const onProgress = e => {
+    if (!currentRequests || !e.total) {
+      return;
+    }
+
+    const progress = e.loaded * 100 / (e.total * currentRequests);
+    $loading().set(Math.min(100, progress));
+  };
+
+  axios.defaults.onUploadProgress = onProgress;
+  axios.defaults.onDownloadProgress = onProgress;
+};
+
+/* harmony default export */ var _nuxt_axios = ((ctx, inject) => {
+  // runtimeConfig
+  const runtimeConfig = ctx.$config && ctx.$config.axios || {}; // baseURL
+
+  const baseURL =  false ? undefined : runtimeConfig.baseURL || runtimeConfig.baseUrl || process.env._AXIOS_BASE_URL_ || 'http://wstest-loyalty.sqiva.com'; // Create fresh objects for all default header scopes
+  // Axios creates only one which is shared across SSR requests!
+  // https://github.com/mzabriskie/axios/blob/master/lib/defaults.js
+
+  const headers = {
+    "common": {
+      "Accept": "application/json, text/plain, */*"
+    },
+    "delete": {},
+    "get": {},
+    "head": {},
+    "post": {},
+    "put": {},
+    "patch": {}
+  };
+  const axiosOptions = {
+    baseURL,
+    headers
+  };
+
+  if (true) {
+    // Don't accept brotli encoding because Node can't parse it
+    axiosOptions.headers.common['accept-encoding'] = 'gzip, deflate';
+  }
+
+  const axios = createAxiosInstance(axiosOptions); // Inject axios to the context as $axios
+
+  ctx.$axios = axios;
+  inject('axios', axios);
+});
 // CONCATENATED MODULE: ./.nuxt/index.js
+
+
 
 
 
@@ -2476,6 +2789,8 @@ for (const name in components_namespaceObject) {
 /* Plugins */
 
  // Source: ./components/plugin.js (mode: 'all')
+
+ // Source: ./axios.js (mode: 'all')
 // Component: <ClientOnly>
 
 external_vue_default.a.component(external_vue_client_only_default.a.name, external_vue_client_only_default.a); // TODO: Remove in Nuxt 3: <NoSsr>
@@ -2520,9 +2835,23 @@ const defaultTransition = {
   "appearActiveClass": "appear-active",
   "appearToClass": "appear-to"
 };
+const originalRegisterModule = external_vuex_default.a.Store.prototype.registerModule;
+
+function registerModule(path, rawModule, options = {}) {
+  const preserveState =  false && (false);
+  return originalRegisterModule.call(this, path, rawModule, {
+    preserveState,
+    ...options
+  });
+}
 
 async function createApp(ssrContext, config = {}) {
-  const router = await createRouter(ssrContext, config); // Create Root instance
+  const router = await createRouter(ssrContext, config);
+  const store = createStore(ssrContext); // Add this.$router into store actions/mutations
+
+  store.$router = router; // Fix SSR caveat https://github.com/nuxt/nuxt.js/issues/3757#issuecomment-414689141
+
+  store.registerModule = registerModule; // Create Root instance
   // here we inject the router and store to all child components,
   // making them available everywhere as `this.$router` and `this.$store`.
 
@@ -2549,6 +2878,7 @@ async function createApp(ssrContext, config = {}) {
       "style": [],
       "script": []
     },
+    store,
     router,
     nuxt: {
       defaultTransition,
@@ -2601,7 +2931,9 @@ async function createApp(ssrContext, config = {}) {
 
     },
     ...App
-  };
+  }; // Make app available into store via this.app
+
+  store.app = app;
   const next = ssrContext ? ssrContext.next : location => app.router.push(location); // Resolve route
 
   let route;
@@ -2615,6 +2947,7 @@ async function createApp(ssrContext, config = {}) {
 
 
   await setContext(app, {
+    store,
     route,
     next,
     error: app.nuxt.error.bind(app),
@@ -2640,8 +2973,10 @@ async function createApp(ssrContext, config = {}) {
 
     if (!app.context[key]) {
       app.context[key] = value;
-    } // Check if plugin not already installed
+    } // Add into store
 
+
+    store[key] = app[key]; // Check if plugin not already installed
 
     const installKey = '__nuxt_' + key + '_installed__';
 
@@ -2664,13 +2999,20 @@ async function createApp(ssrContext, config = {}) {
   } // Inject runtime config as $config
 
 
-  inject('config', config); // Add enablePreview(previewData = {}) in context for plugins
+  inject('config', config);
+
+  if (false) {} // Add enablePreview(previewData = {}) in context for plugins
+
 
   if (false) {} // Plugin execution
 
 
   if (typeof /* Cannot get final name for export "default" in "./.nuxt/components/plugin.js" (known exports: , known reexports: ) */ undefined === 'function') {
     await /* Cannot get final name for export "default" in "./.nuxt/components/plugin.js" (known exports: , known reexports: ) */ undefined(app.context, inject);
+  }
+
+  if (typeof _nuxt_axios === 'function') {
+    await _nuxt_axios(app.context, inject);
   } // Lock enablePreview in context
 
 
@@ -2702,6 +3044,7 @@ async function createApp(ssrContext, config = {}) {
     });
   });
   return {
+    store,
     app,
     router
   };
@@ -2804,6 +3147,7 @@ const createNext = ssrContext => opts => {
     data: [],
     fetch: {},
     error: null,
+    state: null,
     serverRendered: true,
     routePath: ''
   };
@@ -2819,7 +3163,8 @@ const createNext = ssrContext => opts => {
 
   const {
     app,
-    router
+    router,
+    store
   } = await createApp(ssrContext, ssrContext.runtimeConfig.private);
 
   const _app = new external_vue_default.a(app); // Add ssr route path to nuxt context so we can account for page navigation between ssr and csr
@@ -2837,6 +3182,11 @@ const createNext = ssrContext => opts => {
       Components,
       nuxtState: ssrContext.nuxt
     })));
+
+    ssrContext.rendered = () => {
+      // Add the state from the vuex store
+      ssrContext.nuxt.state = store.state;
+    };
   };
 
   const renderErrorPage = async () => {
@@ -2869,8 +3219,30 @@ const createNext = ssrContext => opts => {
 
   const Components = getMatchedComponents(app.context.route);
   /*
+  ** Dispatch store nuxtServerInit
+  */
+
+  if (store._actions && store._actions.nuxtServerInit) {
+    try {
+      await store.dispatch('nuxtServerInit', app.context);
+    } catch (err) {
+      console.debug('Error occurred when calling nuxtServerInit: ', err.message);
+      throw err;
+    }
+  } // ...If there is a redirect or an error, stop the process
+
+
+  if (ssrContext.redirected) {
+    return noopApp();
+  }
+
+  if (ssrContext.nuxt.error) {
+    return renderErrorPage();
+  }
+  /*
   ** Call global middleware (nuxt.config.js)
   */
+
 
   let midd = [];
   midd = midd.map(name => {
@@ -3033,6 +3405,12 @@ const createNext = ssrContext => opts => {
   await beforeRender();
   return _app;
 });
+
+/***/ }),
+/* 33 */
+/***/ (function(module, exports) {
+
+module.exports = require("js-cookie");
 
 /***/ })
 /******/ ]);

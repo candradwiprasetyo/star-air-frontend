@@ -3,13 +3,13 @@
     class="font-medium text-center rounded-lg "
     :class="[
       color, 
-      enabled ? border : 'border-none', 
+      enabled ? border : 'border-2 border-transparent', 
       padding, 
       customClass, 
       enabled ? background : 'bg-gray-300',
       enabled ? 'cursor-pointer' : 'cursor-not-allowed'
     ]"
-    v-on:click="$emit('create-account')"
+    v-on:click="$emit('action')"
   >
     {{ value }}
   </div>

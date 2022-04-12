@@ -9,9 +9,10 @@ export default {
   methods: {
     changeActiveMember(id) {
       this.activeMember = id;
-    }
+    },
   },
-  mounted() {},
+  mounted() {
+  },
 };
 </script>
 
