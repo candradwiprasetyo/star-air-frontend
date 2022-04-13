@@ -84,6 +84,11 @@ body {
     background-size: cover;
   }
 
+  .bg-alert {
+    background: rgba(240, 157, 157, 0.5);
+    border: 1px solid #B92622;
+  }
+
   /* ---------------text color------------- */
 
   .text-primary-600 {

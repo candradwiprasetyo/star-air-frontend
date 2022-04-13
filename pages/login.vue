@@ -7,35 +7,48 @@
         emailAddress: null,
         password: null,
         isButtonEnabled: false,
+        errorMessage: null,
       };
     },
     methods: {
       goLogin() {
         if (this.isButtonEnabled) {
-          let data = {
-            "member_id": "SQV001",
-            "member_level": "PLATINUM",
-            "name": "Michael Budi",
-            "email": "michael.budi@sqiva.com",
-            "mobile": "081701288229",
-            "address": "Jalan kelapa puan timur blok BI/2",
-            "birthdate": "03/02/1990",
-            "gender": "Male",
-            "salutation": "MR",
-            "title": "Head",
-            "nationality": "Indonesia",
-            "passport_no": "B0X1234567",
-            "passport_expire_date": "01/11/2024",
-            "join_date": "01/01/2021",
-            "expire_date": "23/01/2023",
-            "avb_point": "300",
-            "credit_account": "0",
-            "renewal_fee": "600",
-            "status": "ACTIVE"
-          }
-          this.$store.commit('SET_LOGIN', JSON.stringify(data));
-          cookie.set('star_air_login', JSON.stringify(data));
-          this.$router.push('/');
+          let formData = new FormData();
+          formData.append('username', this.emailAddress);
+          formData.append('token', this.$config.myToken);
+          formData.append('password', this.password);
+
+          this.$axios.$post('/member/login ', formData)
+            .then( (response) => {
+              if (response.err_num == '0') {
+                
+                let formDataDetail = new FormData();
+                formDataDetail.append('member_email', this.emailAddress);
+                formDataDetail.append('token', this.$config.myToken);
+
+                this.$axios.$post('/member/get-member-detail', formDataDetail)
+                  .then( (responseDetail) => {
+                    if (response.err_num == '0') {
+                      this.$store.commit('SET_LOGIN', JSON.stringify(responseDetail.result));
+                      cookie.set('star_air_login', JSON.stringify(responseDetail.result));
+                      this.$router.push('/');
+                    }
+                  })
+                  .catch(function (error) {
+                    console.log(error)
+                  })
+
+              } else {
+                if (response.err_str.username) {
+                  this.errorMessage = response.err_str.username[0]
+                } else {
+                  this.errorMessage = response.err_str;
+                }
+              }
+            })
+            .catch(function (error) {
+              console.log(error)
+            })
         }
       },
       formChanged() {
@@ -87,6 +100,14 @@
               Forgot Password?
             </div>
           </a>
+          <div class="p-3 my-6 rounded bg-alert text-alert-900" v-if="errorMessage">
+            <img
+              src="~/assets/images/alert-info.svg"
+              class="inline-block align-middle"
+              alt="alert"
+            />
+            <span class="inline-block align-middle">{{ errorMessage }}</span>
+          </div>
           <Button 
             value="Login" 
             customClass="mt-10"

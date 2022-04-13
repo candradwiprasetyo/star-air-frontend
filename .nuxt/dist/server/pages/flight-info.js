@@ -1,7 +1,7 @@
 exports.ids = [32,12,13,14,21];
 exports.modules = {
 
-/***/ 100:
+/***/ 101:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -105,7 +105,7 @@ var component = Object(componentNormalizer["a" /* default */])(
 
 /***/ }),
 
-/***/ 101:
+/***/ 102:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -462,7 +462,7 @@ installComponents(component, {Button: __webpack_require__(35).default})
 
 /***/ }),
 
-/***/ 102:
+/***/ 103:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -629,7 +629,7 @@ var component = Object(componentNormalizer["a" /* default */])(
 
 /***/ }),
 
-/***/ 136:
+/***/ 137:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -684,7 +684,7 @@ var component = Object(componentNormalizer["a" /* default */])(
 /* harmony default export */ var flight_info = __webpack_exports__["default"] = (component.exports);
 
 /* nuxt-component-imports */
-installComponents(component, {Header: __webpack_require__(100).default,MainMenu: __webpack_require__(101).default,Footer: __webpack_require__(102).default})
+installComponents(component, {Header: __webpack_require__(101).default,MainMenu: __webpack_require__(102).default,Footer: __webpack_require__(103).default})
 
 
 /***/ }),

@@ -355,84 +355,91 @@ module.exports = __webpack_require__.p + "img/stay-at-hotel.588dd9d.png";
 /* 77 */
 /***/ (function(module, exports) {
 
-module.exports = "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjUiIHZpZXdCb3g9IjAgMCAyNCAyNSIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTE0LjEzMDUgMjAuNDMzN0MxNC40ODQ2IDIwLjg1NzUgMTUuMTE1MiAyMC45MTQxIDE1LjUzOSAyMC41NkMxNS45NjI5IDIwLjIwNTkgMTYuMDE5NCAxOS41NzUyIDE1LjY2NTMgMTkuMTUxNEwxNC4xMzA1IDIwLjQzMzdaTTkuMTAyMDkgMTIuODU1NUw4LjMzNzU1IDEyLjIxMUM4LjAyNDY5IDEyLjU4MjEgOC4wMjM0OSAxMy4xMjQyIDguMzM0NjkgMTMuNDk2N0w5LjEwMjA5IDEyLjg1NTVaTTE1LjY2MjQgNi42MjU1MkMxNi4wMTg0IDYuMjAzMjcgMTUuOTY0NyA1LjU3MjM5IDE1LjU0MjQgNS4yMTY0QzE1LjEyMDIgNC44NjA0MiAxNC40ODkzIDQuOTE0MTMgMTQuMTMzMyA1LjMzNjM4TDE1LjY2MjQgNi42MjU1MlpNMTUuNjY1MyAxOS4xNTE0TDkuODY5NSAxMi4yMTQ0TDguMzM0NjkgMTMuNDk2N0wxNC4xMzA1IDIwLjQzMzdMMTUuNjY1MyAxOS4xNTE0Wk05Ljg2NjY0IDEzLjUwMDFMMTUuNjYyNCA2LjYyNTUyTDE0LjEzMzMgNS4zMzYzOEw4LjMzNzU1IDEyLjIxMUw5Ljg2NjY0IDEzLjUwMDFaIiBmaWxsPSIjNjQ3NDhCIi8+Cjwvc3ZnPgo="
+module.exports = "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjUiIGhlaWdodD0iMjUiIHZpZXdCb3g9IjAgMCAyNSAyNSIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0xMi4xNTE2IDIwLjgyNDJDMTYuNTg4NiAyMC44MjQyIDIwLjE4NTUgMTcuMjI3MyAyMC4xODU1IDEyLjc5MDNDMjAuMTg1NSA4LjM1MzMxIDE2LjU4ODYgNC43NTY0MSAxMi4xNTE2IDQuNzU2NDFDNy43MTQ1OCA0Ljc1NjQxIDQuMTE3NjggOC4zNTMzMSA0LjExNzY4IDEyLjc5MDNDNC4xMTc2OCAxNy4yMjczIDcuNzE0NTggMjAuODI0MiAxMi4xNTE2IDIwLjgyNDJaTTEyLjE1MTYgNy40NjA4MkMxMS4xNzQ0IDcuNDYwODIgMTAuNDE1OCA4LjMxMzAxIDEwLjUyOSA5LjI4MzYyTDExLjExOTcgMTQuMzQ4MkMxMS4xODA4IDE0Ljg3MTkgMTEuNjI0NCAxNS4yNjY3IDEyLjE1MTYgMTUuMjY2N0MxMi42Nzg4IDE1LjI2NjcgMTMuMTIyNCAxNC44NzE5IDEzLjE4MzUgMTQuMzQ4MkwxMy43NzQyIDkuMjgzNjJDMTMuODg3NCA4LjMxMzAxIDEzLjEyODggNy40NjA4MiAxMi4xNTE2IDcuNDYwODJaTTEyLjE1MTYgMTguMTE5OEMxMi43MTA4IDE4LjExOTggMTMuMTY0MSAxNy42NjY1IDEzLjE2NDEgMTcuMTA3M0MxMy4xNjQxIDE2LjU0OCAxMi43MTA4IDE2LjA5NDcgMTIuMTUxNiAxNi4wOTQ3QzExLjU5MjQgMTYuMDk0NyAxMS4xMzkgMTYuNTQ4IDExLjEzOSAxNy4xMDczQzExLjEzOSAxNy42NjY1IDExLjU5MjQgMTguMTE5OCAxMi4xNTE2IDE4LjExOThaIiBmaWxsPSIjQjkyNjIyIi8+Cjwvc3ZnPgo="
 
 /***/ }),
 /* 78 */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ (function(module, exports) {
 
-module.exports = __webpack_require__.p + "img/banner-mobile.c1b20c7.jpg";
+module.exports = "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjUiIHZpZXdCb3g9IjAgMCAyNCAyNSIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTE0LjEzMDUgMjAuNDMzN0MxNC40ODQ2IDIwLjg1NzUgMTUuMTE1MiAyMC45MTQxIDE1LjUzOSAyMC41NkMxNS45NjI5IDIwLjIwNTkgMTYuMDE5NCAxOS41NzUyIDE1LjY2NTMgMTkuMTUxNEwxNC4xMzA1IDIwLjQzMzdaTTkuMTAyMDkgMTIuODU1NUw4LjMzNzU1IDEyLjIxMUM4LjAyNDY5IDEyLjU4MjEgOC4wMjM0OSAxMy4xMjQyIDguMzM0NjkgMTMuNDk2N0w5LjEwMjA5IDEyLjg1NTVaTTE1LjY2MjQgNi42MjU1MkMxNi4wMTg0IDYuMjAzMjcgMTUuOTY0NyA1LjU3MjM5IDE1LjU0MjQgNS4yMTY0QzE1LjEyMDIgNC44NjA0MiAxNC40ODkzIDQuOTE0MTMgMTQuMTMzMyA1LjMzNjM4TDE1LjY2MjQgNi42MjU1MlpNMTUuNjY1MyAxOS4xNTE0TDkuODY5NSAxMi4yMTQ0TDguMzM0NjkgMTMuNDk2N0wxNC4xMzA1IDIwLjQzMzdMMTUuNjY1MyAxOS4xNTE0Wk05Ljg2NjY0IDEzLjUwMDFMMTUuNjYyNCA2LjYyNTUyTDE0LjEzMzMgNS4zMzYzOEw4LjMzNzU1IDEyLjIxMUw5Ljg2NjY0IDEzLjUwMDFaIiBmaWxsPSIjNjQ3NDhCIi8+Cjwvc3ZnPgo="
 
 /***/ }),
 /* 79 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "img/banner.8ec9fec.jpg";
+module.exports = __webpack_require__.p + "img/banner-mobile.c1b20c7.jpg";
 
 /***/ }),
 /* 80 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "img/banner.8ec9fec.jpg";
+
+/***/ }),
+/* 81 */
 /***/ (function(module, exports) {
 
 module.exports = "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDkiIGhlaWdodD0iNDkiIHZpZXdCb3g9IjAgMCA0OSA0OSIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPGNpcmNsZSBjeD0iMjQuMTg1NSIgY3k9IjI0LjQxOCIgcj0iMjQiIGZpbGw9IiM0MjY3QjIiLz4KPHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0yNi4xMTQyIDM3LjYxMjhDMjUuNDg0NSAzNy43MDQxIDI0Ljg0MDQgMzcuNzUxMyAyNC4xODU0IDM3Ljc1MTNDMjMuOTQzNyAzNy43NTEzIDIzLjcwMzYgMzcuNzQ0OSAyMy40NjUxIDM3LjczMjJDMjMuNzAzNiAzNy43NDQ4IDIzLjk0MzcgMzcuNzUxMSAyNC4xODU0IDM3Ljc1MTFDMjQuODQwNSAzNy43NTExIDI1LjQ4NDUgMzcuNzAzIDI2LjExNDIgMzcuNjEyOFpNMjYuMjY4NiAzNy41ODk1VjI4LjI3MjhIMjkuMzc1NUwyOS45NjYxIDI0LjQxNzdIMjYuMjY4NlYyMS45MTY0QzI2LjI2ODYgMjAuODYyNyAyNi43ODQyIDE5LjgzMzMgMjguNDQxNyAxOS44MzMzSDMwLjEyMzZWMTYuNTUyQzMwLjEyMzYgMTYuNTUyIDI4LjU5NzQgMTYuMjkxNCAyNy4xMzg2IDE2LjI5MTRDMjQuMDkzNSAxNi4yOTE0IDIyLjEwMjMgMTguMTM2NCAyMi4xMDIzIDIxLjQ3OTZWMjQuNDE3N0gxOC43MTU5VjI4LjI3MjhIMjIuMTAyM1YzNy41ODk1QzE1LjcyNzkgMzYuNTg5NCAxMC44NTIxIDMxLjA3MzEgMTAuODUyMSAyNC40MThDMTAuODUyMSAxNy4wNTQyIDE2LjgyMTYgMTEuMDg0NyAyNC4xODU0IDExLjA4NDdDMzEuNTQ5MiAxMS4wODQ3IDM3LjUxODcgMTcuMDU0MiAzNy41MTg3IDI0LjQxOEMzNy41MTg3IDMxLjA3MzEgMzIuNjQyOSAzNi41ODk0IDI2LjI2ODYgMzcuNTg5NVoiIGZpbGw9IndoaXRlIi8+Cjwvc3ZnPgo="
 
 /***/ }),
-/* 81 */
+/* 82 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "img/google.27f3ea6.svg";
 
 /***/ }),
-/* 82 */
+/* 83 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "img/newsletter-mobile.3eb81db.png";
 
 /***/ }),
-/* 83 */
+/* 84 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "img/newsletter.eb73f33.png";
 
 /***/ }),
-/* 84 */
+/* 85 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "img/twitter.cca7832.svg";
 
 /***/ }),
-/* 85 */
+/* 86 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var map = {
+	"./alert-info.svg": 77,
 	"./arrow-bottom-gray.svg": 34,
 	"./arrow-bottom.svg": 44,
-	"./arrow-left.svg": 77,
+	"./arrow-left.svg": 78,
 	"./arrow-right.svg": 42,
 	"./arrow-up-gray.svg": 41,
-	"./banner-mobile.jpg": 78,
-	"./banner-mobile.png": 86,
-	"./banner.jpg": 79,
-	"./banner.png": 87,
+	"./banner-mobile.jpg": 79,
+	"./banner-mobile.png": 87,
+	"./banner.jpg": 80,
+	"./banner.png": 88,
 	"./bg-forgot-password.png": 17,
 	"./bg-login.png": 16,
 	"./book-a-flight.png": 66,
 	"./book.svg": 67,
 	"./close.svg": 46,
 	"./current-tier.png": 63,
-	"./earn-point-1.jpg": 88,
-	"./earn-point-2.jpg": 89,
-	"./earn-point-3.jpg": 90,
-	"./earn-point-4.jpg": 91,
-	"./earn-point-5.jpg": 92,
-	"./earn-point-6.jpg": 93,
-	"./earn-point-7.jpg": 94,
-	"./earn-point-8.jpg": 95,
-	"./earn-point-9.jpg": 96,
+	"./earn-point-1.jpg": 89,
+	"./earn-point-2.jpg": 90,
+	"./earn-point-3.jpg": 91,
+	"./earn-point-4.jpg": 92,
+	"./earn-point-5.jpg": 93,
+	"./earn-point-6.jpg": 94,
+	"./earn-point-7.jpg": 95,
+	"./earn-point-8.jpg": 96,
+	"./earn-point-9.jpg": 97,
 	"./earn-point.png": 68,
 	"./email-sent-success.svg": 57,
 	"./english.svg": 47,
 	"./eye.svg": 58,
-	"./facebook.svg": 80,
+	"./facebook.svg": 81,
 	"./flight-info.svg": 69,
 	"./flip-button-mobile.svg": 54,
 	"./flip-button.svg": 55,
@@ -442,29 +449,29 @@ var map = {
 	"./footer-twitter.svg": 52,
 	"./footer-whatsapp.svg": 53,
 	"./globe.svg": 43,
-	"./google.svg": 81,
+	"./google.svg": 82,
 	"./info.svg": 45,
 	"./logo-star-air.png": 56,
 	"./logo.png": 37,
-	"./logo.svg": 97,
+	"./logo.svg": 98,
 	"./membership-card-gold.png": 59,
 	"./membership-card-silver.png": 60,
 	"./membership-card.png": 61,
 	"./mobile-menu.svg": 48,
 	"./my-trip.svg": 70,
-	"./newsletter-mobile.png": 82,
-	"./newsletter.png": 83,
+	"./newsletter-mobile.png": 83,
+	"./newsletter.png": 84,
 	"./pay-with-star-points.png": 71,
 	"./profile-white.svg": 39,
 	"./redeem-2.png": 72,
 	"./redeem-3.png": 73,
 	"./redeem-4.png": 74,
 	"./redem-1.png": 75,
-	"./search.svg": 98,
+	"./search.svg": 99,
 	"./shopping-bag.svg": 38,
 	"./stay-at-hotel.png": 76,
 	"./three-dots.svg": 62,
-	"./twitter.svg": 84,
+	"./twitter.svg": 85,
 	"./upgrade-right.svg": 64,
 	"./upgrade-up.svg": 65,
 	"./user.png": 40
@@ -488,89 +495,89 @@ webpackContext.keys = function webpackContextKeys() {
 };
 webpackContext.resolve = webpackContextResolve;
 module.exports = webpackContext;
-webpackContext.id = 85;
-
-/***/ }),
-/* 86 */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "img/banner-mobile.6c0987f.png";
+webpackContext.id = 86;
 
 /***/ }),
 /* 87 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "img/banner.7f09f8c.png";
+module.exports = __webpack_require__.p + "img/banner-mobile.6c0987f.png";
 
 /***/ }),
 /* 88 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "img/earn-point-1.f8daffa.jpg";
+module.exports = __webpack_require__.p + "img/banner.7f09f8c.png";
 
 /***/ }),
 /* 89 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "img/earn-point-2.b16c478.jpg";
+module.exports = __webpack_require__.p + "img/earn-point-1.f8daffa.jpg";
 
 /***/ }),
 /* 90 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "img/earn-point-3.35285cb.jpg";
+module.exports = __webpack_require__.p + "img/earn-point-2.b16c478.jpg";
 
 /***/ }),
 /* 91 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "img/earn-point-4.d15ffc0.jpg";
+module.exports = __webpack_require__.p + "img/earn-point-3.35285cb.jpg";
 
 /***/ }),
 /* 92 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "img/earn-point-5.38270c5.jpg";
+module.exports = __webpack_require__.p + "img/earn-point-4.d15ffc0.jpg";
 
 /***/ }),
 /* 93 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "img/earn-point-6.2c669bf.jpg";
+module.exports = __webpack_require__.p + "img/earn-point-5.38270c5.jpg";
 
 /***/ }),
 /* 94 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "img/earn-point-7.66b5a16.jpg";
+module.exports = __webpack_require__.p + "img/earn-point-6.2c669bf.jpg";
 
 /***/ }),
 /* 95 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "img/earn-point-8.69c3ff7.jpg";
+module.exports = __webpack_require__.p + "img/earn-point-7.66b5a16.jpg";
 
 /***/ }),
 /* 96 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "img/earn-point-9.6fd8643.jpg";
+module.exports = __webpack_require__.p + "img/earn-point-8.69c3ff7.jpg";
 
 /***/ }),
 /* 97 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "img/logo.f96665f.svg";
+module.exports = __webpack_require__.p + "img/earn-point-9.6fd8643.jpg";
 
 /***/ }),
 /* 98 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "img/logo.f96665f.svg";
+
+/***/ }),
+/* 99 */
 /***/ (function(module, exports) {
 
 module.exports = "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjUiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNSAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0xNS4wODA2IDE2LjIyOTdDMTQuMTAxNSAxNi44MzU5IDEyLjk0NyAxNy4xODU3IDExLjcxMDggMTcuMTg1N0M4LjE2OTk3IDE3LjE4NTcgNS4yOTk1NiAxNC4zMTUzIDUuMjk5NTYgMTAuNzc0NUM1LjI5OTU2IDcuMjMzNjkgOC4xNjk5NyA0LjM2MzI4IDExLjcxMDggNC4zNjMyOEMxNS4yNTE2IDQuMzYzMjggMTguMTIyIDcuMjMzNjkgMTguMTIyIDEwLjc3NDVDMTguMTIyIDEyLjM3MzQgMTcuNTM2OCAxMy44MzU1IDE2LjU2ODggMTQuOTU4NEwxOS4yMjY0IDE4LjAxNzhDMTkuNTgwOCAxOC40MjU5IDE5LjUzNzMgMTkuMDQ0IDE5LjEyOTMgMTkuMzk4NEMxOC43MjEzIDE5Ljc1MjggMTguMTAzMiAxOS43MDk0IDE3Ljc0ODcgMTkuMzAxM0wxNS4wODA2IDE2LjIyOTdaTTE2LjIzMzIgMTAuNzc0NUMxNi4yMzMyIDEzLjI3MjIgMTQuMjA4NSAxNS4yOTcgMTEuNzEwOCAxNS4yOTdDOS4yMTMxMSAxNS4yOTcgNy4xODgzNCAxMy4yNzIyIDcuMTg4MzQgMTAuNzc0NUM3LjE4ODM0IDguMjc2ODMgOS4yMTMxMSA2LjI1MjA2IDExLjcxMDggNi4yNTIwNkMxNC4yMDg1IDYuMjUyMDYgMTYuMjMzMiA4LjI3NjgzIDE2LjIzMzIgMTAuNzc0NVoiIGZpbGw9IiM2NDc0OEIiLz4KPC9zdmc+Cg=="
 
 /***/ }),
-/* 99 */,
-/* 100 */
+/* 100 */,
+/* 101 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -673,7 +680,7 @@ var component = Object(componentNormalizer["a" /* default */])(
 /* harmony default export */ var Header = __webpack_exports__["default"] = (component.exports);
 
 /***/ }),
-/* 101 */
+/* 102 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1029,7 +1036,7 @@ installComponents(component, {Button: __webpack_require__(35).default})
 
 
 /***/ }),
-/* 102 */
+/* 103 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1195,20 +1202,20 @@ var component = Object(componentNormalizer["a" /* default */])(
 /* harmony default export */ var Footer = __webpack_exports__["default"] = (component.exports);
 
 /***/ }),
-/* 103 */,
 /* 104 */,
 /* 105 */,
 /* 106 */,
 /* 107 */,
 /* 108 */,
 /* 109 */,
-/* 110 */
+/* 110 */,
+/* 111 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(129);
+var content = __webpack_require__(130);
 if(content.__esModule) content = content.default;
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
@@ -1219,7 +1226,6 @@ module.exports.__inject__ = function (context) {
 };
 
 /***/ }),
-/* 111 */,
 /* 112 */,
 /* 113 */,
 /* 114 */,
@@ -1230,7 +1236,8 @@ module.exports.__inject__ = function (context) {
 /* 119 */,
 /* 120 */,
 /* 121 */,
-/* 122 */
+/* 122 */,
+/* 123 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1285,23 +1292,23 @@ var component = Object(componentNormalizer["a" /* default */])(
 /* harmony default export */ var Pagination = __webpack_exports__["default"] = (component.exports);
 
 /***/ }),
-/* 123 */,
 /* 124 */,
 /* 125 */,
 /* 126 */,
 /* 127 */,
-/* 128 */
+/* 128 */,
+/* 129 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _node_modules_vue_style_loader_index_js_ref_7_oneOf_1_0_node_modules_nuxt_postcss8_node_modules_css_loader_dist_cjs_js_ref_7_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_nuxt_postcss8_node_modules_postcss_loader_dist_cjs_js_ref_7_oneOf_1_2_node_modules_sass_loader_dist_cjs_js_ref_7_oneOf_1_3_node_modules_nuxt_components_dist_loader_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_earn_points_vue_vue_type_style_index_0_lang_scss___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(110);
+/* harmony import */ var _node_modules_vue_style_loader_index_js_ref_7_oneOf_1_0_node_modules_nuxt_postcss8_node_modules_css_loader_dist_cjs_js_ref_7_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_nuxt_postcss8_node_modules_postcss_loader_dist_cjs_js_ref_7_oneOf_1_2_node_modules_sass_loader_dist_cjs_js_ref_7_oneOf_1_3_node_modules_nuxt_components_dist_loader_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_earn_points_vue_vue_type_style_index_0_lang_scss___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(111);
 /* harmony import */ var _node_modules_vue_style_loader_index_js_ref_7_oneOf_1_0_node_modules_nuxt_postcss8_node_modules_css_loader_dist_cjs_js_ref_7_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_nuxt_postcss8_node_modules_postcss_loader_dist_cjs_js_ref_7_oneOf_1_2_node_modules_sass_loader_dist_cjs_js_ref_7_oneOf_1_3_node_modules_nuxt_components_dist_loader_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_earn_points_vue_vue_type_style_index_0_lang_scss___WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_vue_style_loader_index_js_ref_7_oneOf_1_0_node_modules_nuxt_postcss8_node_modules_css_loader_dist_cjs_js_ref_7_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_nuxt_postcss8_node_modules_postcss_loader_dist_cjs_js_ref_7_oneOf_1_2_node_modules_sass_loader_dist_cjs_js_ref_7_oneOf_1_3_node_modules_nuxt_components_dist_loader_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_earn_points_vue_vue_type_style_index_0_lang_scss___WEBPACK_IMPORTED_MODULE_0__);
 /* harmony reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in _node_modules_vue_style_loader_index_js_ref_7_oneOf_1_0_node_modules_nuxt_postcss8_node_modules_css_loader_dist_cjs_js_ref_7_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_nuxt_postcss8_node_modules_postcss_loader_dist_cjs_js_ref_7_oneOf_1_2_node_modules_sass_loader_dist_cjs_js_ref_7_oneOf_1_3_node_modules_nuxt_components_dist_loader_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_earn_points_vue_vue_type_style_index_0_lang_scss___WEBPACK_IMPORTED_MODULE_0__) if(["default"].indexOf(__WEBPACK_IMPORT_KEY__) < 0) (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return _node_modules_vue_style_loader_index_js_ref_7_oneOf_1_0_node_modules_nuxt_postcss8_node_modules_css_loader_dist_cjs_js_ref_7_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_nuxt_postcss8_node_modules_postcss_loader_dist_cjs_js_ref_7_oneOf_1_2_node_modules_sass_loader_dist_cjs_js_ref_7_oneOf_1_3_node_modules_nuxt_components_dist_loader_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_earn_points_vue_vue_type_style_index_0_lang_scss___WEBPACK_IMPORTED_MODULE_0__[key]; }) }(__WEBPACK_IMPORT_KEY__));
 
 
 /***/ }),
-/* 129 */
+/* 130 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // Imports
@@ -1315,12 +1322,12 @@ module.exports = ___CSS_LOADER_EXPORT___;
 
 
 /***/ }),
-/* 130 */,
 /* 131 */,
 /* 132 */,
 /* 133 */,
 /* 134 */,
-/* 135 */
+/* 135 */,
+/* 136 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1328,7 +1335,7 @@ module.exports = ___CSS_LOADER_EXPORT___;
 __webpack_require__.r(__webpack_exports__);
 
 // CONCATENATED MODULE: ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/@nuxt/components/dist/loader.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./pages/earn-points.vue?vue&type=template&id=66bbcb30&
-var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',[_c('Header'),_vm._ssrNode(" "),_c('MainMenu'),_vm._ssrNode(" "),_vm._ssrNode("<div class=\"container px-6 py-6 mx-auto md:py-14 md:px-0\">","</div>",[_vm._ssrNode("<div class=\"text-3xl font-semibold text-grayscale-900 font-noto-sans\">\n      How to Earn Points\n    </div> <div class=\"mt-3 text-sm text-grayscale-500 md:text-base\">\n      Star Points are the reward points you earn when you travel with Star Air or our airline partners. You can also earn Star Points by using any of our more than 1.200 global partners. Star Points are taking you further than ever before. Every time you spend or earn your Star Points balance will be valid for a further 36 months. Keeping your balance active has never been easier, with all the ways you can earn and redeem Qpoints in the air, and on the ground. Check out your Star Points balance now and see how long you have to keep them active.\n    </div> <div class=\"hidden mt-10 md:block\"><div class=\"flex hidden pt-4 font-medium border-b border-gray-300 text-grayscale-400 md:pt-2\">"+(_vm._ssrList((_vm.tabData),function(tab){return ("<div"+(_vm._ssrClass("menu",_vm.activeTab == tab.id ? 'border-secondary-900 border-b-6 pb-3 md:pb-6' : ''))+"><span"+(_vm._ssrClass("pl-1",_vm.activeTab == tab.id ? 'text-secondary-900' : ''))+">"+_vm._ssrEscape(_vm._s(tab.name))+"</span></div>")}))+"</div></div> <div class=\"grid grid-cols-1 gap-8 mt-8 md:grid-cols-3\">"+(_vm._ssrList((_vm.dataPoint),function(data){return ("<div class=\"p-6 border rounded-xl\"><img"+(_vm._ssrAttr("src",__webpack_require__(85)("./" + data.cover)))+" alt=\"Earn Point\" class=\"w-full\"> <div class=\"mt-6 text-2xl font-semibold font-noto-sans text-grayscale-900\">"+_vm._ssrEscape(_vm._s(data.title))+"</div> <div class=\"mt-2 text-sm text-grayscale-500\">"+_vm._ssrEscape(_vm._s(data.description))+"</div></div>")}))+"</div> "),_vm._ssrNode("<div class=\"my-8\">","</div>",[_c('Pagination')],1)],2),_vm._ssrNode(" "),_c('Footer')],2)}
+var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',[_c('Header'),_vm._ssrNode(" "),_c('MainMenu'),_vm._ssrNode(" "),_vm._ssrNode("<div class=\"container px-6 py-6 mx-auto md:py-14 md:px-0\">","</div>",[_vm._ssrNode("<div class=\"text-3xl font-semibold text-grayscale-900 font-noto-sans\">\n      How to Earn Points\n    </div> <div class=\"mt-3 text-sm text-grayscale-500 md:text-base\">\n      Star Points are the reward points you earn when you travel with Star Air or our airline partners. You can also earn Star Points by using any of our more than 1.200 global partners. Star Points are taking you further than ever before. Every time you spend or earn your Star Points balance will be valid for a further 36 months. Keeping your balance active has never been easier, with all the ways you can earn and redeem Qpoints in the air, and on the ground. Check out your Star Points balance now and see how long you have to keep them active.\n    </div> <div class=\"hidden mt-10 md:block\"><div class=\"flex hidden pt-4 font-medium border-b border-gray-300 text-grayscale-400 md:pt-2\">"+(_vm._ssrList((_vm.tabData),function(tab){return ("<div"+(_vm._ssrClass("menu",_vm.activeTab == tab.id ? 'border-secondary-900 border-b-6 pb-3 md:pb-6' : ''))+"><span"+(_vm._ssrClass("pl-1",_vm.activeTab == tab.id ? 'text-secondary-900' : ''))+">"+_vm._ssrEscape(_vm._s(tab.name))+"</span></div>")}))+"</div></div> <div class=\"grid grid-cols-1 gap-8 mt-8 md:grid-cols-3\">"+(_vm._ssrList((_vm.dataPoint),function(data){return ("<div class=\"p-6 border rounded-xl\"><img"+(_vm._ssrAttr("src",__webpack_require__(86)("./" + data.cover)))+" alt=\"Earn Point\" class=\"w-full\"> <div class=\"mt-6 text-2xl font-semibold font-noto-sans text-grayscale-900\">"+_vm._ssrEscape(_vm._s(data.title))+"</div> <div class=\"mt-2 text-sm text-grayscale-500\">"+_vm._ssrEscape(_vm._s(data.description))+"</div></div>")}))+"</div> "),_vm._ssrNode("<div class=\"my-8\">","</div>",[_c('Pagination')],1)],2),_vm._ssrNode(" "),_c('Footer')],2)}
 var staticRenderFns = []
 
 
@@ -1384,7 +1391,7 @@ var componentNormalizer = __webpack_require__(2);
 
 function injectStyles (context) {
   
-  var style0 = __webpack_require__(128)
+  var style0 = __webpack_require__(129)
 if (style0.__inject__) style0.__inject__(context)
 
 }
@@ -1405,7 +1412,7 @@ var component = Object(componentNormalizer["a" /* default */])(
 /* harmony default export */ var earn_points = __webpack_exports__["default"] = (component.exports);
 
 /* nuxt-component-imports */
-installComponents(component, {Header: __webpack_require__(100).default,MainMenu: __webpack_require__(101).default,Pagination: __webpack_require__(122).default,Footer: __webpack_require__(102).default})
+installComponents(component, {Header: __webpack_require__(101).default,MainMenu: __webpack_require__(102).default,Pagination: __webpack_require__(123).default,Footer: __webpack_require__(103).default})
 
 
 /***/ })

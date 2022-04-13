@@ -7,6 +7,10 @@ export const MainMenu = () => import('../../components/MainMenu.vue' /* webpackC
 export const Pagination = () => import('../../components/Pagination.vue' /* webpackChunkName: "components/pagination" */).then(c => wrapFunctional(c.default || c))
 export const PopupRegisterSuccess = () => import('../../components/PopupRegisterSuccess.vue' /* webpackChunkName: "components/popup-register-success" */).then(c => wrapFunctional(c.default || c))
 export const Select = () => import('../../components/Select.vue' /* webpackChunkName: "components/select" */).then(c => wrapFunctional(c.default || c))
+export const HomepageAdvancedSearch = () => import('../../components/homepage/AdvancedSearch.vue' /* webpackChunkName: "components/homepage-advanced-search" */).then(c => wrapFunctional(c.default || c))
+export const HomepageTabBook = () => import('../../components/homepage/TabBook.vue' /* webpackChunkName: "components/homepage-tab-book" */).then(c => wrapFunctional(c.default || c))
+export const HomepageTabFlightInfo = () => import('../../components/homepage/TabFlightInfo.vue' /* webpackChunkName: "components/homepage-tab-flight-info" */).then(c => wrapFunctional(c.default || c))
+export const HomepageTabMyTrip = () => import('../../components/homepage/TabMyTrip.vue' /* webpackChunkName: "components/homepage-tab-my-trip" */).then(c => wrapFunctional(c.default || c))
 export const AccountBookingHistory = () => import('../../components/account/BookingHistory.vue' /* webpackChunkName: "components/account-booking-history" */).then(c => wrapFunctional(c.default || c))
 export const AccountBookingHistoryDetail = () => import('../../components/account/BookingHistoryDetail.vue' /* webpackChunkName: "components/account-booking-history-detail" */).then(c => wrapFunctional(c.default || c))
 export const AccountChangePassword = () => import('../../components/account/ChangePassword.vue' /* webpackChunkName: "components/account-change-password" */).then(c => wrapFunctional(c.default || c))
@@ -21,10 +25,6 @@ export const AccountUserProfile = () => import('../../components/account/UserPro
 export const RedemPointsBookFlight = () => import('../../components/redemPoints/BookFlight.vue' /* webpackChunkName: "components/redem-points-book-flight" */).then(c => wrapFunctional(c.default || c))
 export const RedemPointsExtraBaggage = () => import('../../components/redemPoints/ExtraBaggage.vue' /* webpackChunkName: "components/redem-points-extra-baggage" */).then(c => wrapFunctional(c.default || c))
 export const RedemPointsPartnerPoints = () => import('../../components/redemPoints/PartnerPoints.vue' /* webpackChunkName: "components/redem-points-partner-points" */).then(c => wrapFunctional(c.default || c))
-export const HomepageAdvancedSearch = () => import('../../components/homepage/AdvancedSearch.vue' /* webpackChunkName: "components/homepage-advanced-search" */).then(c => wrapFunctional(c.default || c))
-export const HomepageTabBook = () => import('../../components/homepage/TabBook.vue' /* webpackChunkName: "components/homepage-tab-book" */).then(c => wrapFunctional(c.default || c))
-export const HomepageTabFlightInfo = () => import('../../components/homepage/TabFlightInfo.vue' /* webpackChunkName: "components/homepage-tab-flight-info" */).then(c => wrapFunctional(c.default || c))
-export const HomepageTabMyTrip = () => import('../../components/homepage/TabMyTrip.vue' /* webpackChunkName: "components/homepage-tab-my-trip" */).then(c => wrapFunctional(c.default || c))
 
 // nuxt/nuxt.js#8607
 function wrapFunctional(options) {

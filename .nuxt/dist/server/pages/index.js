@@ -119,7 +119,7 @@ var component = Object(componentNormalizer["a" /* default */])(
 __webpack_require__.r(__webpack_exports__);
 
 // CONCATENATED MODULE: ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/@nuxt/components/dist/loader.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./components/Input.vue?vue&type=template&id=d5c5a85c&
-var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"relative px-3 py-2",class:[_vm.border, _vm.customClass]},[_vm._ssrNode("<div class=\"mb-1 text-xs text-grayscale-400\">"+_vm._ssrEscape(_vm._s(_vm.label))+"</div> <input type=\"text\""+(_vm._ssrAttr("placeholder",_vm.placeholder))+(_vm._ssrAttr("value",_vm.value))+" class=\"w-full border-none outline-none\"> "+((_vm.icon)?("<div class=\"absolute w-6 h-6 right-3 top-4\"><img"+(_vm._ssrAttr("src",__webpack_require__(85)("./" + _vm.icon)))+" alt=\"Search\"></div>"):"<!---->"))])}
+var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"relative px-3 py-2",class:[_vm.border, _vm.customClass]},[_vm._ssrNode("<div class=\"mb-1 text-xs text-grayscale-400\">"+_vm._ssrEscape(_vm._s(_vm.label))+"</div> <input type=\"text\""+(_vm._ssrAttr("placeholder",_vm.placeholder))+(_vm._ssrAttr("value",_vm.value))+" class=\"w-full border-none outline-none\"> "+((_vm.icon)?("<div class=\"absolute w-6 h-6 right-3 top-4\"><img"+(_vm._ssrAttr("src",__webpack_require__(86)("./" + _vm.icon)))+" alt=\"Search\"></div>"):"<!---->"))])}
 var staticRenderFns = []
 
 
@@ -453,84 +453,91 @@ module.exports = __webpack_require__.p + "img/stay-at-hotel.588dd9d.png";
 /* 77 */
 /***/ (function(module, exports) {
 
-module.exports = "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjUiIHZpZXdCb3g9IjAgMCAyNCAyNSIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTE0LjEzMDUgMjAuNDMzN0MxNC40ODQ2IDIwLjg1NzUgMTUuMTE1MiAyMC45MTQxIDE1LjUzOSAyMC41NkMxNS45NjI5IDIwLjIwNTkgMTYuMDE5NCAxOS41NzUyIDE1LjY2NTMgMTkuMTUxNEwxNC4xMzA1IDIwLjQzMzdaTTkuMTAyMDkgMTIuODU1NUw4LjMzNzU1IDEyLjIxMUM4LjAyNDY5IDEyLjU4MjEgOC4wMjM0OSAxMy4xMjQyIDguMzM0NjkgMTMuNDk2N0w5LjEwMjA5IDEyLjg1NTVaTTE1LjY2MjQgNi42MjU1MkMxNi4wMTg0IDYuMjAzMjcgMTUuOTY0NyA1LjU3MjM5IDE1LjU0MjQgNS4yMTY0QzE1LjEyMDIgNC44NjA0MiAxNC40ODkzIDQuOTE0MTMgMTQuMTMzMyA1LjMzNjM4TDE1LjY2MjQgNi42MjU1MlpNMTUuNjY1MyAxOS4xNTE0TDkuODY5NSAxMi4yMTQ0TDguMzM0NjkgMTMuNDk2N0wxNC4xMzA1IDIwLjQzMzdMMTUuNjY1MyAxOS4xNTE0Wk05Ljg2NjY0IDEzLjUwMDFMMTUuNjYyNCA2LjYyNTUyTDE0LjEzMzMgNS4zMzYzOEw4LjMzNzU1IDEyLjIxMUw5Ljg2NjY0IDEzLjUwMDFaIiBmaWxsPSIjNjQ3NDhCIi8+Cjwvc3ZnPgo="
+module.exports = "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjUiIGhlaWdodD0iMjUiIHZpZXdCb3g9IjAgMCAyNSAyNSIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0xMi4xNTE2IDIwLjgyNDJDMTYuNTg4NiAyMC44MjQyIDIwLjE4NTUgMTcuMjI3MyAyMC4xODU1IDEyLjc5MDNDMjAuMTg1NSA4LjM1MzMxIDE2LjU4ODYgNC43NTY0MSAxMi4xNTE2IDQuNzU2NDFDNy43MTQ1OCA0Ljc1NjQxIDQuMTE3NjggOC4zNTMzMSA0LjExNzY4IDEyLjc5MDNDNC4xMTc2OCAxNy4yMjczIDcuNzE0NTggMjAuODI0MiAxMi4xNTE2IDIwLjgyNDJaTTEyLjE1MTYgNy40NjA4MkMxMS4xNzQ0IDcuNDYwODIgMTAuNDE1OCA4LjMxMzAxIDEwLjUyOSA5LjI4MzYyTDExLjExOTcgMTQuMzQ4MkMxMS4xODA4IDE0Ljg3MTkgMTEuNjI0NCAxNS4yNjY3IDEyLjE1MTYgMTUuMjY2N0MxMi42Nzg4IDE1LjI2NjcgMTMuMTIyNCAxNC44NzE5IDEzLjE4MzUgMTQuMzQ4MkwxMy43NzQyIDkuMjgzNjJDMTMuODg3NCA4LjMxMzAxIDEzLjEyODggNy40NjA4MiAxMi4xNTE2IDcuNDYwODJaTTEyLjE1MTYgMTguMTE5OEMxMi43MTA4IDE4LjExOTggMTMuMTY0MSAxNy42NjY1IDEzLjE2NDEgMTcuMTA3M0MxMy4xNjQxIDE2LjU0OCAxMi43MTA4IDE2LjA5NDcgMTIuMTUxNiAxNi4wOTQ3QzExLjU5MjQgMTYuMDk0NyAxMS4xMzkgMTYuNTQ4IDExLjEzOSAxNy4xMDczQzExLjEzOSAxNy42NjY1IDExLjU5MjQgMTguMTE5OCAxMi4xNTE2IDE4LjExOThaIiBmaWxsPSIjQjkyNjIyIi8+Cjwvc3ZnPgo="
 
 /***/ }),
 /* 78 */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ (function(module, exports) {
 
-module.exports = __webpack_require__.p + "img/banner-mobile.c1b20c7.jpg";
+module.exports = "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjUiIHZpZXdCb3g9IjAgMCAyNCAyNSIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTE0LjEzMDUgMjAuNDMzN0MxNC40ODQ2IDIwLjg1NzUgMTUuMTE1MiAyMC45MTQxIDE1LjUzOSAyMC41NkMxNS45NjI5IDIwLjIwNTkgMTYuMDE5NCAxOS41NzUyIDE1LjY2NTMgMTkuMTUxNEwxNC4xMzA1IDIwLjQzMzdaTTkuMTAyMDkgMTIuODU1NUw4LjMzNzU1IDEyLjIxMUM4LjAyNDY5IDEyLjU4MjEgOC4wMjM0OSAxMy4xMjQyIDguMzM0NjkgMTMuNDk2N0w5LjEwMjA5IDEyLjg1NTVaTTE1LjY2MjQgNi42MjU1MkMxNi4wMTg0IDYuMjAzMjcgMTUuOTY0NyA1LjU3MjM5IDE1LjU0MjQgNS4yMTY0QzE1LjEyMDIgNC44NjA0MiAxNC40ODkzIDQuOTE0MTMgMTQuMTMzMyA1LjMzNjM4TDE1LjY2MjQgNi42MjU1MlpNMTUuNjY1MyAxOS4xNTE0TDkuODY5NSAxMi4yMTQ0TDguMzM0NjkgMTMuNDk2N0wxNC4xMzA1IDIwLjQzMzdMMTUuNjY1MyAxOS4xNTE0Wk05Ljg2NjY0IDEzLjUwMDFMMTUuNjYyNCA2LjYyNTUyTDE0LjEzMzMgNS4zMzYzOEw4LjMzNzU1IDEyLjIxMUw5Ljg2NjY0IDEzLjUwMDFaIiBmaWxsPSIjNjQ3NDhCIi8+Cjwvc3ZnPgo="
 
 /***/ }),
 /* 79 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "img/banner.8ec9fec.jpg";
+module.exports = __webpack_require__.p + "img/banner-mobile.c1b20c7.jpg";
 
 /***/ }),
 /* 80 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "img/banner.8ec9fec.jpg";
+
+/***/ }),
+/* 81 */
 /***/ (function(module, exports) {
 
 module.exports = "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDkiIGhlaWdodD0iNDkiIHZpZXdCb3g9IjAgMCA0OSA0OSIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPGNpcmNsZSBjeD0iMjQuMTg1NSIgY3k9IjI0LjQxOCIgcj0iMjQiIGZpbGw9IiM0MjY3QjIiLz4KPHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0yNi4xMTQyIDM3LjYxMjhDMjUuNDg0NSAzNy43MDQxIDI0Ljg0MDQgMzcuNzUxMyAyNC4xODU0IDM3Ljc1MTNDMjMuOTQzNyAzNy43NTEzIDIzLjcwMzYgMzcuNzQ0OSAyMy40NjUxIDM3LjczMjJDMjMuNzAzNiAzNy43NDQ4IDIzLjk0MzcgMzcuNzUxMSAyNC4xODU0IDM3Ljc1MTFDMjQuODQwNSAzNy43NTExIDI1LjQ4NDUgMzcuNzAzIDI2LjExNDIgMzcuNjEyOFpNMjYuMjY4NiAzNy41ODk1VjI4LjI3MjhIMjkuMzc1NUwyOS45NjYxIDI0LjQxNzdIMjYuMjY4NlYyMS45MTY0QzI2LjI2ODYgMjAuODYyNyAyNi43ODQyIDE5LjgzMzMgMjguNDQxNyAxOS44MzMzSDMwLjEyMzZWMTYuNTUyQzMwLjEyMzYgMTYuNTUyIDI4LjU5NzQgMTYuMjkxNCAyNy4xMzg2IDE2LjI5MTRDMjQuMDkzNSAxNi4yOTE0IDIyLjEwMjMgMTguMTM2NCAyMi4xMDIzIDIxLjQ3OTZWMjQuNDE3N0gxOC43MTU5VjI4LjI3MjhIMjIuMTAyM1YzNy41ODk1QzE1LjcyNzkgMzYuNTg5NCAxMC44NTIxIDMxLjA3MzEgMTAuODUyMSAyNC40MThDMTAuODUyMSAxNy4wNTQyIDE2LjgyMTYgMTEuMDg0NyAyNC4xODU0IDExLjA4NDdDMzEuNTQ5MiAxMS4wODQ3IDM3LjUxODcgMTcuMDU0MiAzNy41MTg3IDI0LjQxOEMzNy41MTg3IDMxLjA3MzEgMzIuNjQyOSAzNi41ODk0IDI2LjI2ODYgMzcuNTg5NVoiIGZpbGw9IndoaXRlIi8+Cjwvc3ZnPgo="
 
 /***/ }),
-/* 81 */
+/* 82 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "img/google.27f3ea6.svg";
 
 /***/ }),
-/* 82 */
+/* 83 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "img/newsletter-mobile.3eb81db.png";
 
 /***/ }),
-/* 83 */
+/* 84 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "img/newsletter.eb73f33.png";
 
 /***/ }),
-/* 84 */
+/* 85 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "img/twitter.cca7832.svg";
 
 /***/ }),
-/* 85 */
+/* 86 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var map = {
+	"./alert-info.svg": 77,
 	"./arrow-bottom-gray.svg": 34,
 	"./arrow-bottom.svg": 44,
-	"./arrow-left.svg": 77,
+	"./arrow-left.svg": 78,
 	"./arrow-right.svg": 42,
 	"./arrow-up-gray.svg": 41,
-	"./banner-mobile.jpg": 78,
-	"./banner-mobile.png": 86,
-	"./banner.jpg": 79,
-	"./banner.png": 87,
+	"./banner-mobile.jpg": 79,
+	"./banner-mobile.png": 87,
+	"./banner.jpg": 80,
+	"./banner.png": 88,
 	"./bg-forgot-password.png": 17,
 	"./bg-login.png": 16,
 	"./book-a-flight.png": 66,
 	"./book.svg": 67,
 	"./close.svg": 46,
 	"./current-tier.png": 63,
-	"./earn-point-1.jpg": 88,
-	"./earn-point-2.jpg": 89,
-	"./earn-point-3.jpg": 90,
-	"./earn-point-4.jpg": 91,
-	"./earn-point-5.jpg": 92,
-	"./earn-point-6.jpg": 93,
-	"./earn-point-7.jpg": 94,
-	"./earn-point-8.jpg": 95,
-	"./earn-point-9.jpg": 96,
+	"./earn-point-1.jpg": 89,
+	"./earn-point-2.jpg": 90,
+	"./earn-point-3.jpg": 91,
+	"./earn-point-4.jpg": 92,
+	"./earn-point-5.jpg": 93,
+	"./earn-point-6.jpg": 94,
+	"./earn-point-7.jpg": 95,
+	"./earn-point-8.jpg": 96,
+	"./earn-point-9.jpg": 97,
 	"./earn-point.png": 68,
 	"./email-sent-success.svg": 57,
 	"./english.svg": 47,
 	"./eye.svg": 58,
-	"./facebook.svg": 80,
+	"./facebook.svg": 81,
 	"./flight-info.svg": 69,
 	"./flip-button-mobile.svg": 54,
 	"./flip-button.svg": 55,
@@ -540,29 +547,29 @@ var map = {
 	"./footer-twitter.svg": 52,
 	"./footer-whatsapp.svg": 53,
 	"./globe.svg": 43,
-	"./google.svg": 81,
+	"./google.svg": 82,
 	"./info.svg": 45,
 	"./logo-star-air.png": 56,
 	"./logo.png": 37,
-	"./logo.svg": 97,
+	"./logo.svg": 98,
 	"./membership-card-gold.png": 59,
 	"./membership-card-silver.png": 60,
 	"./membership-card.png": 61,
 	"./mobile-menu.svg": 48,
 	"./my-trip.svg": 70,
-	"./newsletter-mobile.png": 82,
-	"./newsletter.png": 83,
+	"./newsletter-mobile.png": 83,
+	"./newsletter.png": 84,
 	"./pay-with-star-points.png": 71,
 	"./profile-white.svg": 39,
 	"./redeem-2.png": 72,
 	"./redeem-3.png": 73,
 	"./redeem-4.png": 74,
 	"./redem-1.png": 75,
-	"./search.svg": 98,
+	"./search.svg": 99,
 	"./shopping-bag.svg": 38,
 	"./stay-at-hotel.png": 76,
 	"./three-dots.svg": 62,
-	"./twitter.svg": 84,
+	"./twitter.svg": 85,
 	"./upgrade-right.svg": 64,
 	"./upgrade-up.svg": 65,
 	"./user.png": 40
@@ -586,89 +593,89 @@ webpackContext.keys = function webpackContextKeys() {
 };
 webpackContext.resolve = webpackContextResolve;
 module.exports = webpackContext;
-webpackContext.id = 85;
-
-/***/ }),
-/* 86 */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "img/banner-mobile.6c0987f.png";
+webpackContext.id = 86;
 
 /***/ }),
 /* 87 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "img/banner.7f09f8c.png";
+module.exports = __webpack_require__.p + "img/banner-mobile.6c0987f.png";
 
 /***/ }),
 /* 88 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "img/earn-point-1.f8daffa.jpg";
+module.exports = __webpack_require__.p + "img/banner.7f09f8c.png";
 
 /***/ }),
 /* 89 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "img/earn-point-2.b16c478.jpg";
+module.exports = __webpack_require__.p + "img/earn-point-1.f8daffa.jpg";
 
 /***/ }),
 /* 90 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "img/earn-point-3.35285cb.jpg";
+module.exports = __webpack_require__.p + "img/earn-point-2.b16c478.jpg";
 
 /***/ }),
 /* 91 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "img/earn-point-4.d15ffc0.jpg";
+module.exports = __webpack_require__.p + "img/earn-point-3.35285cb.jpg";
 
 /***/ }),
 /* 92 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "img/earn-point-5.38270c5.jpg";
+module.exports = __webpack_require__.p + "img/earn-point-4.d15ffc0.jpg";
 
 /***/ }),
 /* 93 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "img/earn-point-6.2c669bf.jpg";
+module.exports = __webpack_require__.p + "img/earn-point-5.38270c5.jpg";
 
 /***/ }),
 /* 94 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "img/earn-point-7.66b5a16.jpg";
+module.exports = __webpack_require__.p + "img/earn-point-6.2c669bf.jpg";
 
 /***/ }),
 /* 95 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "img/earn-point-8.69c3ff7.jpg";
+module.exports = __webpack_require__.p + "img/earn-point-7.66b5a16.jpg";
 
 /***/ }),
 /* 96 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "img/earn-point-9.6fd8643.jpg";
+module.exports = __webpack_require__.p + "img/earn-point-8.69c3ff7.jpg";
 
 /***/ }),
 /* 97 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "img/logo.f96665f.svg";
+module.exports = __webpack_require__.p + "img/earn-point-9.6fd8643.jpg";
 
 /***/ }),
 /* 98 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "img/logo.f96665f.svg";
+
+/***/ }),
+/* 99 */
 /***/ (function(module, exports) {
 
 module.exports = "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjUiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNSAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0xNS4wODA2IDE2LjIyOTdDMTQuMTAxNSAxNi44MzU5IDEyLjk0NyAxNy4xODU3IDExLjcxMDggMTcuMTg1N0M4LjE2OTk3IDE3LjE4NTcgNS4yOTk1NiAxNC4zMTUzIDUuMjk5NTYgMTAuNzc0NUM1LjI5OTU2IDcuMjMzNjkgOC4xNjk5NyA0LjM2MzI4IDExLjcxMDggNC4zNjMyOEMxNS4yNTE2IDQuMzYzMjggMTguMTIyIDcuMjMzNjkgMTguMTIyIDEwLjc3NDVDMTguMTIyIDEyLjM3MzQgMTcuNTM2OCAxMy44MzU1IDE2LjU2ODggMTQuOTU4NEwxOS4yMjY0IDE4LjAxNzhDMTkuNTgwOCAxOC40MjU5IDE5LjUzNzMgMTkuMDQ0IDE5LjEyOTMgMTkuMzk4NEMxOC43MjEzIDE5Ljc1MjggMTguMTAzMiAxOS43MDk0IDE3Ljc0ODcgMTkuMzAxM0wxNS4wODA2IDE2LjIyOTdaTTE2LjIzMzIgMTAuNzc0NUMxNi4yMzMyIDEzLjI3MjIgMTQuMjA4NSAxNS4yOTcgMTEuNzEwOCAxNS4yOTdDOS4yMTMxMSAxNS4yOTcgNy4xODgzNCAxMy4yNzIyIDcuMTg4MzQgMTAuNzc0NUM3LjE4ODM0IDguMjc2ODMgOS4yMTMxMSA2LjI1MjA2IDExLjcxMDggNi4yNTIwNkMxNC4yMDg1IDYuMjUyMDYgMTYuMjMzMiA4LjI3NjgzIDE2LjIzMzIgMTAuNzc0NVoiIGZpbGw9IiM2NDc0OEIiLz4KPC9zdmc+Cg=="
 
 /***/ }),
-/* 99 */,
-/* 100 */
+/* 100 */,
+/* 101 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -771,7 +778,7 @@ var component = Object(componentNormalizer["a" /* default */])(
 /* harmony default export */ var Header = __webpack_exports__["default"] = (component.exports);
 
 /***/ }),
-/* 101 */
+/* 102 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1127,7 +1134,7 @@ installComponents(component, {Button: __webpack_require__(35).default})
 
 
 /***/ }),
-/* 102 */
+/* 103 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1293,14 +1300,14 @@ var component = Object(componentNormalizer["a" /* default */])(
 /* harmony default export */ var Footer = __webpack_exports__["default"] = (component.exports);
 
 /***/ }),
-/* 103 */,
-/* 104 */
+/* 104 */,
+/* 105 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(109);
+var content = __webpack_require__(110);
 if(content.__esModule) content = content.default;
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
@@ -1311,7 +1318,7 @@ module.exports.__inject__ = function (context) {
 };
 
 /***/ }),
-/* 105 */
+/* 106 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1473,7 +1480,7 @@ installComponents(component, {Input: __webpack_require__(36).default,Button: __w
 
 
 /***/ }),
-/* 106 */
+/* 107 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1546,7 +1553,7 @@ installComponents(component, {Input: __webpack_require__(36).default,Button: __w
 
 
 /***/ }),
-/* 107 */
+/* 108 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1689,18 +1696,18 @@ installComponents(component, {Input: __webpack_require__(36).default,Button: __w
 
 
 /***/ }),
-/* 108 */
+/* 109 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _node_modules_vue_style_loader_index_js_ref_7_oneOf_1_0_node_modules_nuxt_postcss8_node_modules_css_loader_dist_cjs_js_ref_7_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_nuxt_postcss8_node_modules_postcss_loader_dist_cjs_js_ref_7_oneOf_1_2_node_modules_sass_loader_dist_cjs_js_ref_7_oneOf_1_3_node_modules_nuxt_components_dist_loader_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_AdvancedSearch_vue_vue_type_style_index_0_lang_scss___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(104);
+/* harmony import */ var _node_modules_vue_style_loader_index_js_ref_7_oneOf_1_0_node_modules_nuxt_postcss8_node_modules_css_loader_dist_cjs_js_ref_7_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_nuxt_postcss8_node_modules_postcss_loader_dist_cjs_js_ref_7_oneOf_1_2_node_modules_sass_loader_dist_cjs_js_ref_7_oneOf_1_3_node_modules_nuxt_components_dist_loader_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_AdvancedSearch_vue_vue_type_style_index_0_lang_scss___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(105);
 /* harmony import */ var _node_modules_vue_style_loader_index_js_ref_7_oneOf_1_0_node_modules_nuxt_postcss8_node_modules_css_loader_dist_cjs_js_ref_7_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_nuxt_postcss8_node_modules_postcss_loader_dist_cjs_js_ref_7_oneOf_1_2_node_modules_sass_loader_dist_cjs_js_ref_7_oneOf_1_3_node_modules_nuxt_components_dist_loader_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_AdvancedSearch_vue_vue_type_style_index_0_lang_scss___WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_vue_style_loader_index_js_ref_7_oneOf_1_0_node_modules_nuxt_postcss8_node_modules_css_loader_dist_cjs_js_ref_7_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_nuxt_postcss8_node_modules_postcss_loader_dist_cjs_js_ref_7_oneOf_1_2_node_modules_sass_loader_dist_cjs_js_ref_7_oneOf_1_3_node_modules_nuxt_components_dist_loader_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_AdvancedSearch_vue_vue_type_style_index_0_lang_scss___WEBPACK_IMPORTED_MODULE_0__);
 /* harmony reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in _node_modules_vue_style_loader_index_js_ref_7_oneOf_1_0_node_modules_nuxt_postcss8_node_modules_css_loader_dist_cjs_js_ref_7_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_nuxt_postcss8_node_modules_postcss_loader_dist_cjs_js_ref_7_oneOf_1_2_node_modules_sass_loader_dist_cjs_js_ref_7_oneOf_1_3_node_modules_nuxt_components_dist_loader_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_AdvancedSearch_vue_vue_type_style_index_0_lang_scss___WEBPACK_IMPORTED_MODULE_0__) if(["default"].indexOf(__WEBPACK_IMPORT_KEY__) < 0) (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return _node_modules_vue_style_loader_index_js_ref_7_oneOf_1_0_node_modules_nuxt_postcss8_node_modules_css_loader_dist_cjs_js_ref_7_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_nuxt_postcss8_node_modules_postcss_loader_dist_cjs_js_ref_7_oneOf_1_2_node_modules_sass_loader_dist_cjs_js_ref_7_oneOf_1_3_node_modules_nuxt_components_dist_loader_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_AdvancedSearch_vue_vue_type_style_index_0_lang_scss___WEBPACK_IMPORTED_MODULE_0__[key]; }) }(__WEBPACK_IMPORT_KEY__));
 
 
 /***/ }),
-/* 109 */
+/* 110 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // Imports
@@ -1714,14 +1721,14 @@ module.exports = ___CSS_LOADER_EXPORT___;
 
 
 /***/ }),
-/* 110 */,
-/* 111 */
+/* 111 */,
+/* 112 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(131);
+var content = __webpack_require__(132);
 if(content.__esModule) content = content.default;
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
@@ -1732,7 +1739,6 @@ module.exports.__inject__ = function (context) {
 };
 
 /***/ }),
-/* 112 */,
 /* 113 */,
 /* 114 */,
 /* 115 */,
@@ -1747,7 +1753,8 @@ module.exports.__inject__ = function (context) {
 /* 124 */,
 /* 125 */,
 /* 126 */,
-/* 127 */
+/* 127 */,
+/* 128 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1856,7 +1863,7 @@ var componentNormalizer = __webpack_require__(2);
 
 function injectStyles (context) {
   
-  var style0 = __webpack_require__(108)
+  var style0 = __webpack_require__(109)
 if (style0.__inject__) style0.__inject__(context)
 
 }
@@ -1877,24 +1884,24 @@ var component = Object(componentNormalizer["a" /* default */])(
 /* harmony default export */ var AdvancedSearch = __webpack_exports__["default"] = (component.exports);
 
 /* nuxt-component-imports */
-installComponents(component, {HomepageTabBook: __webpack_require__(105).default,HomepageTabMyTrip: __webpack_require__(106).default,HomepageTabFlightInfo: __webpack_require__(107).default})
+installComponents(component, {HomepageTabBook: __webpack_require__(106).default,HomepageTabMyTrip: __webpack_require__(107).default,HomepageTabFlightInfo: __webpack_require__(108).default})
 
 
 /***/ }),
-/* 128 */,
 /* 129 */,
-/* 130 */
+/* 130 */,
+/* 131 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _node_modules_vue_style_loader_index_js_ref_7_oneOf_1_0_node_modules_nuxt_postcss8_node_modules_css_loader_dist_cjs_js_ref_7_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_nuxt_postcss8_node_modules_postcss_loader_dist_cjs_js_ref_7_oneOf_1_2_node_modules_sass_loader_dist_cjs_js_ref_7_oneOf_1_3_node_modules_nuxt_components_dist_loader_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_index_vue_vue_type_style_index_0_lang_scss___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(111);
+/* harmony import */ var _node_modules_vue_style_loader_index_js_ref_7_oneOf_1_0_node_modules_nuxt_postcss8_node_modules_css_loader_dist_cjs_js_ref_7_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_nuxt_postcss8_node_modules_postcss_loader_dist_cjs_js_ref_7_oneOf_1_2_node_modules_sass_loader_dist_cjs_js_ref_7_oneOf_1_3_node_modules_nuxt_components_dist_loader_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_index_vue_vue_type_style_index_0_lang_scss___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(112);
 /* harmony import */ var _node_modules_vue_style_loader_index_js_ref_7_oneOf_1_0_node_modules_nuxt_postcss8_node_modules_css_loader_dist_cjs_js_ref_7_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_nuxt_postcss8_node_modules_postcss_loader_dist_cjs_js_ref_7_oneOf_1_2_node_modules_sass_loader_dist_cjs_js_ref_7_oneOf_1_3_node_modules_nuxt_components_dist_loader_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_index_vue_vue_type_style_index_0_lang_scss___WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_vue_style_loader_index_js_ref_7_oneOf_1_0_node_modules_nuxt_postcss8_node_modules_css_loader_dist_cjs_js_ref_7_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_nuxt_postcss8_node_modules_postcss_loader_dist_cjs_js_ref_7_oneOf_1_2_node_modules_sass_loader_dist_cjs_js_ref_7_oneOf_1_3_node_modules_nuxt_components_dist_loader_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_index_vue_vue_type_style_index_0_lang_scss___WEBPACK_IMPORTED_MODULE_0__);
 /* harmony reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in _node_modules_vue_style_loader_index_js_ref_7_oneOf_1_0_node_modules_nuxt_postcss8_node_modules_css_loader_dist_cjs_js_ref_7_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_nuxt_postcss8_node_modules_postcss_loader_dist_cjs_js_ref_7_oneOf_1_2_node_modules_sass_loader_dist_cjs_js_ref_7_oneOf_1_3_node_modules_nuxt_components_dist_loader_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_index_vue_vue_type_style_index_0_lang_scss___WEBPACK_IMPORTED_MODULE_0__) if(["default"].indexOf(__WEBPACK_IMPORT_KEY__) < 0) (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return _node_modules_vue_style_loader_index_js_ref_7_oneOf_1_0_node_modules_nuxt_postcss8_node_modules_css_loader_dist_cjs_js_ref_7_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_nuxt_postcss8_node_modules_postcss_loader_dist_cjs_js_ref_7_oneOf_1_2_node_modules_sass_loader_dist_cjs_js_ref_7_oneOf_1_3_node_modules_nuxt_components_dist_loader_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_index_vue_vue_type_style_index_0_lang_scss___WEBPACK_IMPORTED_MODULE_0__[key]; }) }(__WEBPACK_IMPORT_KEY__));
 
 
 /***/ }),
-/* 131 */
+/* 132 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // Imports
@@ -1908,7 +1915,6 @@ module.exports = ___CSS_LOADER_EXPORT___;
 
 
 /***/ }),
-/* 132 */,
 /* 133 */,
 /* 134 */,
 /* 135 */,
@@ -1922,7 +1928,8 @@ module.exports = ___CSS_LOADER_EXPORT___;
 /* 143 */,
 /* 144 */,
 /* 145 */,
-/* 146 */
+/* 146 */,
+/* 147 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1930,7 +1937,7 @@ module.exports = ___CSS_LOADER_EXPORT___;
 __webpack_require__.r(__webpack_exports__);
 
 // CONCATENATED MODULE: ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/@nuxt/components/dist/loader.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./pages/index.vue?vue&type=template&id=7c61fbd7&
-var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',[_c('Header'),_vm._ssrNode(" "),_c('MainMenu'),_vm._ssrNode(" "),_vm._ssrNode("<div class=\"hidden md:inline\">","</div>",[_c('NuxtLink',{attrs:{"to":"registration"}},[_c('img',{staticClass:"w-full",attrs:{"src":__webpack_require__(79),"alt":"Banner"}})])],1),_vm._ssrNode(" "),_vm._ssrNode("<div class=\"inline md:hidden\">","</div>",[_c('NuxtLink',{attrs:{"to":"registration"}},[_c('img',{staticClass:"w-full",attrs:{"src":__webpack_require__(78),"alt":"Banner"}})])],1),_vm._ssrNode(" "),_c('HomepageAdvancedSearch'),_vm._ssrNode(" "),_vm._ssrNode("<div class=\"container px-6 py-6 mx-auto md:py-14 md:px-0\">","</div>",[_vm._ssrNode("<div class=\"text-3xl font-semibold text-grayscale-900 font-noto-sans\">\n      About Star Club\n    </div> <div class=\"mt-3 text-sm leading-relaxed text-grayscale-500 md:text-base md:leading-relaxed\">\n      Star Club is a Loyalty Program from Star Air which is presented as a\n      tribute to you, our loyal customer. It is our way of saying &quot;Thank You&quot;\n      for choosing to fly with Star Airways. Earn points every time you fly\n      with Star Air. Your accumulated points can be redeemed for Award Tickets\n      to your favourites, or Upgrade Awards from economy to business class on\n      the flight of your choice. Both of these Awards can be presented to your\n      family, friends or colleagues who are closest to your heart. With Star\n      Club, your every trip becomes a rewarding experience. As a Star Points\n      Member, you may also enjoy a wide variety of special benefits and\n      exclusive privileges suc as upgrade class, extra baggage, shopping and\n      stay at hotels with points.\n    </div> "),_vm._ssrNode("<div class=\"mt-16 text-center\">","</div>",[_vm._ssrNode("<div class=\"text-3xl font-semibold text-grayscale-900 font-noto-sans\">\n        Member Tiers &amp; Benefits\n      </div> <div class=\"mt-3 text-sm text-grayscale-500 md:text-base\">\n        Star Club offers three membership tiers Silver, Gold, and Platinum –\n        each with their own exclusive benefits.\n      </div> <div class=\"flex justify-center mt-6 cursor-pointer\"><div"+(_vm._ssrClass("w-64 py-2 border rounded-l-full md:py-4 border-secondary-900",(_vm.activeMember==1) ? 'bg-secondary-900 text-white' : 'text-secondary-900'))+">\n          Silver\n        </div> <div"+(_vm._ssrClass("w-64 py-2 border md:py-4 border-secondary-900",(_vm.activeMember==2) ? 'bg-secondary-900 text-white' : 'text-secondary-900'))+">\n          Gold\n        </div> <div"+(_vm._ssrClass("w-64 py-2 border rounded-r-full md:py-4 border-secondary-900",(_vm.activeMember==3) ? 'bg-secondary-900 text-white' : 'text-secondary-900'))+">\n          Platinum\n        </div></div> <div class=\"mt-6 md:flex\"><div class=\"flex-none w-full md:w-7/12\"><img"+(_vm._ssrAttr("src",__webpack_require__(61)))+" alt=\"Membership card\" width=\"700\" class=\"inline-block\"></div> <div class=\"flex flex-wrap content-center flex-none w-full text-left md:w-5/12\"><div class=\"mt-12 md:mt-0\"><div class=\"text-2xl font-semibold text-grayscale-600 font-noto-sans\">\n              As a \n              "+((_vm.activeMember==1)?("<span>Silver</span>"):(_vm.activeMember==2)?("<span>Gold</span>"):("<span>Platinum</span>"))+" \n              member, enjoy the following benefits:\n            </div> <div class=\"mt-4 text-grayscale-500\"><ul class=\"pl-5 leading-loose list-disc\"><li>100% mileage on all flights for earning StarPoints</li> <li>100% mileage on non-air partner transactions</li> <li>Priority stand-by</li> <li>Flexi awards</li> <li>Upgrade class and extra baggage</li> <li>Stay at hotel with points</li> <li>Shop &amp; pay with StarPoints at Star Air Duty Free</li></ul></div></div></div></div> "),_vm._ssrNode("<div class=\"mt-20 md:flex md:px-20\">","</div>",[_vm._ssrNode("<div class=\"inline w-full md:hidden\"><img"+(_vm._ssrAttr("src",__webpack_require__(68)))+" alt=\"Earn Point\" class=\"inline-block\"></div> "),_vm._ssrNode("<div class=\"flex flex-wrap content-center flex-1 w-full text-left md:w-5/12\">","</div>",[_vm._ssrNode("<div class=\"mt-6 md:pr-16 md:0\">","</div>",[_vm._ssrNode("<div class=\"text-3xl font-semibold text-grayscale-900 font-noto-sans\">\n              How to Earn Points\n            </div> <div class=\"mt-3 text-sm leading-relaxed text-grayscale-500 md:text-base md:leading-relaxed\"><p>\n                StarPoints are the reward points you earn when you or your\n                nominated family members travel with Star Air, or our airline\n                partners. You can also earn StarPoints by using any of our\n                more than 1.200 global partners. StarPoints are taking you\n                further than ever before. Every time you spend or earn your\n                StarPoints balance will be valid for a further 36 months. When\n                you find missing points of your previous flight, you can\n                always claim them\n              </p> <br> <p>\n                You can earn points from converting partner points, booking\n                hotels, or buy points. Find out the details of how to earn\n                points by clicking the button belows.\n              </p></div> "),_vm._ssrNode("<div class=\"mt-8 md:inline-block\">","</div>",[_c('NuxtLink',{attrs:{"to":"/earn-points"}},[_c('Button',{attrs:{"value":"Find Out More to Earn Points","border":"border-2 border-secondary-900","color":"text-secondary-900","background":"bg-white","customClass":"px-6"}})],1)],1)],2)]),_vm._ssrNode(" <div class=\"flex-1 hidden w-7/12 md:inline\"><img"+(_vm._ssrAttr("src",__webpack_require__(68)))+" alt=\"Earn Point\" class=\"inline-block\"></div>")],2),_vm._ssrNode(" "),_vm._ssrNode("<div class=\"mt-10 md:mt-16 md:flex\">","</div>",[_vm._ssrNode("<div class=\"text-left container-mobile gap-x-6 md:hidden\"><div class=\"item-frame\"><div class=\"flex flex-nowrap gap-x-6\"><div class=\"w-40\"><img"+(_vm._ssrAttr("src",__webpack_require__(66)))+" alt=\"Book a flight\" width=\"200\" class=\"inline-block\"> <div class=\"mt-4 text-lg font-semibold text-grayscale-900 font-noto-sans\">\n                  Book a Flight\n                </div> <div class=\"mt-1 text-grayscale-500\">\n                  Pamper yourself by spending your Star Points for booking a\n                  flight with Star Air.\n                </div></div> <div class=\"w-40\"><img"+(_vm._ssrAttr("src",__webpack_require__(76)))+" alt=\"Book a flight\" width=\"200\" class=\"inline-block\"> <div class=\"mt-4 text-lg font-semibold text-grayscale-900 font-noto-sans\">\n                  Stay at Hotel\n                </div> <div class=\"mt-1 text-grayscale-500\">\n                  Get special price for staying at your favorite hotels during\n                  your vacation with family.\n                </div></div> <div class=\"w-40\"><img"+(_vm._ssrAttr("src",__webpack_require__(71)))+" alt=\"Book a flight\" width=\"200\" class=\"inline-block\"> <div class=\"mt-4 text-lg font-semibold text-grayscale-900 font-noto-sans\">\n                  Pay with star points\n                </div> <div class=\"mt-1 text-grayscale-500\">\n                  You can get 20% off shopping when paying with Star Points at\n                  Star Air Duty Free.\n                </div></div></div></div></div> "),_vm._ssrNode("<div class=\"flex flex-wrap content-center flex-none w-full text-left md:w-1/3\">","</div>",[_vm._ssrNode("<div class=\"md:pr-16\">","</div>",[_vm._ssrNode("<div class=\"text-3xl font-semibold text-grayscale-900 font-noto-sans\">\n              Redeem Your Star Points in Many Ways\n            </div> <div class=\"mt-3 text-sm text-grayscale-500 md:text-base md:leading-relaxed\"><p>Browse over 1.200 global partners around the world.</p></div> "),_vm._ssrNode("<div class=\"w-full mt-8 md:w-60\">","</div>",[_c('NuxtLink',{attrs:{"to":"/redem-points"}},[_c('Button',{attrs:{"value":"View All Partners","border":"border-2 border-secondary-900","color":"text-secondary-900","background":"bg-white"}})],1)],1)],2)]),_vm._ssrNode(" <div class=\"flex-none hidden w-2/3 text-left md:flex gap-x-6\"><div class=\"flex-1\"><img"+(_vm._ssrAttr("src",__webpack_require__(66)))+" alt=\"Book a flight\" class=\"inline-block\"> <div class=\"mt-4 text-lg font-semibold text-grayscale-900 font-noto-sans\">\n              Book a Flight\n            </div> <div class=\"mt-1 text-grayscale-500\">\n              Pamper yourself by spending your Star Points for booking a\n              flight with Star Air.\n            </div></div> <div class=\"flex-1\"><img"+(_vm._ssrAttr("src",__webpack_require__(76)))+" alt=\"Book a flight\" class=\"inline-block\"> <div class=\"mt-4 text-lg font-semibold text-grayscale-900 font-noto-sans\">\n              Stay at Hotel\n            </div> <div class=\"mt-1 text-grayscale-500\">\n              Get special price for staying at your favorite hotels during\n              your vacation with family.\n            </div></div> <div class=\"flex-1\"><img"+(_vm._ssrAttr("src",__webpack_require__(71)))+" alt=\"Book a flight\" class=\"inline-block\"> <div class=\"mt-4 text-lg font-semibold text-grayscale-900 font-noto-sans\">\n              Pay with star points\n            </div> <div class=\"mt-1 text-grayscale-500\">\n              You can get 20% off shopping when paying with Star Points at\n              Star Air Duty Free.\n            </div></div></div>")],2),_vm._ssrNode(" "),_vm._ssrNode("<div class=\"mt-16 overflow-hidden text-left md:flex rounded-xl\">","</div>",[_vm._ssrNode("<div class=\"flex-1\"><img"+(_vm._ssrAttr("src",__webpack_require__(83)))+" alt=\"Newsletter\" class=\"hidden md:inline\"> <img"+(_vm._ssrAttr("src",__webpack_require__(82)))+" alt=\"Newsletter\" class=\"inline md:hidden\"></div> "),_vm._ssrNode("<div class=\"flex flex-wrap content-center flex-1 -mt-1 bg-secondary-900 md:mt-0\">","</div>",[_vm._ssrNode("<div class=\"w-full px-6 md:px-16\">","</div>",[_vm._ssrNode("<div class=\"text-2xl font-semibold md:text-3xl text-grayscale-50 font-noto-sans\">\n              Never Miss an Offer\n            </div> <div class=\"mt-2 text-grayscale-100\">\n              Subscribe and be the first to receive our exclusive offers.\n            </div> <div class=\"mt-6\"><input type=\"text\" placeholder=\"Email Address\" class=\"w-full p-4 bg-white border-none rounded-lg outline-none \"></div> "),_vm._ssrNode("<div class=\"mt-6 md:inline-block\">","</div>",[_c('Button',{attrs:{"value":"Subscribe","border":"border-2 border-white","color":"text-white","background":"bg-transparent","customClass":"px-6 mb-6"}})],1)],2)])],2)],2)],2),_vm._ssrNode(" "),_c('Footer')],2)}
+var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',[_c('Header'),_vm._ssrNode(" "),_c('MainMenu'),_vm._ssrNode(" "),_vm._ssrNode("<div class=\"hidden md:inline\">","</div>",[_c('NuxtLink',{attrs:{"to":"registration"}},[_c('img',{staticClass:"w-full",attrs:{"src":__webpack_require__(80),"alt":"Banner"}})])],1),_vm._ssrNode(" "),_vm._ssrNode("<div class=\"inline md:hidden\">","</div>",[_c('NuxtLink',{attrs:{"to":"registration"}},[_c('img',{staticClass:"w-full",attrs:{"src":__webpack_require__(79),"alt":"Banner"}})])],1),_vm._ssrNode(" "),_c('HomepageAdvancedSearch'),_vm._ssrNode(" "),_vm._ssrNode("<div class=\"container px-6 py-6 mx-auto md:py-14 md:px-0\">","</div>",[_vm._ssrNode("<div class=\"text-3xl font-semibold text-grayscale-900 font-noto-sans\">\n      About Star Club\n    </div> <div class=\"mt-3 text-sm leading-relaxed text-grayscale-500 md:text-base md:leading-relaxed\">\n      Star Club is a Loyalty Program from Star Air which is presented as a\n      tribute to you, our loyal customer. It is our way of saying &quot;Thank You&quot;\n      for choosing to fly with Star Airways. Earn points every time you fly\n      with Star Air. Your accumulated points can be redeemed for Award Tickets\n      to your favourites, or Upgrade Awards from economy to business class on\n      the flight of your choice. Both of these Awards can be presented to your\n      family, friends or colleagues who are closest to your heart. With Star\n      Club, your every trip becomes a rewarding experience. As a Star Points\n      Member, you may also enjoy a wide variety of special benefits and\n      exclusive privileges suc as upgrade class, extra baggage, shopping and\n      stay at hotels with points.\n    </div> "),_vm._ssrNode("<div class=\"mt-16 text-center\">","</div>",[_vm._ssrNode("<div class=\"text-3xl font-semibold text-grayscale-900 font-noto-sans\">\n        Member Tiers &amp; Benefits\n      </div> <div class=\"mt-3 text-sm text-grayscale-500 md:text-base\">\n        Star Club offers three membership tiers Silver, Gold, and Platinum –\n        each with their own exclusive benefits.\n      </div> <div class=\"flex justify-center mt-6 cursor-pointer\"><div"+(_vm._ssrClass("w-64 py-2 border rounded-l-full md:py-4 border-secondary-900",(_vm.activeMember==1) ? 'bg-secondary-900 text-white' : 'text-secondary-900'))+">\n          Silver\n        </div> <div"+(_vm._ssrClass("w-64 py-2 border md:py-4 border-secondary-900",(_vm.activeMember==2) ? 'bg-secondary-900 text-white' : 'text-secondary-900'))+">\n          Gold\n        </div> <div"+(_vm._ssrClass("w-64 py-2 border rounded-r-full md:py-4 border-secondary-900",(_vm.activeMember==3) ? 'bg-secondary-900 text-white' : 'text-secondary-900'))+">\n          Platinum\n        </div></div> <div class=\"mt-6 md:flex\"><div class=\"flex-none w-full md:w-7/12\"><img"+(_vm._ssrAttr("src",__webpack_require__(61)))+" alt=\"Membership card\" width=\"700\" class=\"inline-block\"></div> <div class=\"flex flex-wrap content-center flex-none w-full text-left md:w-5/12\"><div class=\"mt-12 md:mt-0\"><div class=\"text-2xl font-semibold text-grayscale-600 font-noto-sans\">\n              As a \n              "+((_vm.activeMember==1)?("<span>Silver</span>"):(_vm.activeMember==2)?("<span>Gold</span>"):("<span>Platinum</span>"))+" \n              member, enjoy the following benefits:\n            </div> <div class=\"mt-4 text-grayscale-500\"><ul class=\"pl-5 leading-loose list-disc\"><li>100% mileage on all flights for earning StarPoints</li> <li>100% mileage on non-air partner transactions</li> <li>Priority stand-by</li> <li>Flexi awards</li> <li>Upgrade class and extra baggage</li> <li>Stay at hotel with points</li> <li>Shop &amp; pay with StarPoints at Star Air Duty Free</li></ul></div></div></div></div> "),_vm._ssrNode("<div class=\"mt-20 md:flex md:px-20\">","</div>",[_vm._ssrNode("<div class=\"inline w-full md:hidden\"><img"+(_vm._ssrAttr("src",__webpack_require__(68)))+" alt=\"Earn Point\" class=\"inline-block\"></div> "),_vm._ssrNode("<div class=\"flex flex-wrap content-center flex-1 w-full text-left md:w-5/12\">","</div>",[_vm._ssrNode("<div class=\"mt-6 md:pr-16 md:0\">","</div>",[_vm._ssrNode("<div class=\"text-3xl font-semibold text-grayscale-900 font-noto-sans\">\n              How to Earn Points\n            </div> <div class=\"mt-3 text-sm leading-relaxed text-grayscale-500 md:text-base md:leading-relaxed\"><p>\n                StarPoints are the reward points you earn when you or your\n                nominated family members travel with Star Air, or our airline\n                partners. You can also earn StarPoints by using any of our\n                more than 1.200 global partners. StarPoints are taking you\n                further than ever before. Every time you spend or earn your\n                StarPoints balance will be valid for a further 36 months. When\n                you find missing points of your previous flight, you can\n                always claim them\n              </p> <br> <p>\n                You can earn points from converting partner points, booking\n                hotels, or buy points. Find out the details of how to earn\n                points by clicking the button belows.\n              </p></div> "),_vm._ssrNode("<div class=\"mt-8 md:inline-block\">","</div>",[_c('NuxtLink',{attrs:{"to":"/earn-points"}},[_c('Button',{attrs:{"value":"Find Out More to Earn Points","border":"border-2 border-secondary-900","color":"text-secondary-900","background":"bg-white","customClass":"px-6"}})],1)],1)],2)]),_vm._ssrNode(" <div class=\"flex-1 hidden w-7/12 md:inline\"><img"+(_vm._ssrAttr("src",__webpack_require__(68)))+" alt=\"Earn Point\" class=\"inline-block\"></div>")],2),_vm._ssrNode(" "),_vm._ssrNode("<div class=\"mt-10 md:mt-16 md:flex\">","</div>",[_vm._ssrNode("<div class=\"text-left container-mobile gap-x-6 md:hidden\"><div class=\"item-frame\"><div class=\"flex flex-nowrap gap-x-6\"><div class=\"w-40\"><img"+(_vm._ssrAttr("src",__webpack_require__(66)))+" alt=\"Book a flight\" width=\"200\" class=\"inline-block\"> <div class=\"mt-4 text-lg font-semibold text-grayscale-900 font-noto-sans\">\n                  Book a Flight\n                </div> <div class=\"mt-1 text-grayscale-500\">\n                  Pamper yourself by spending your Star Points for booking a\n                  flight with Star Air.\n                </div></div> <div class=\"w-40\"><img"+(_vm._ssrAttr("src",__webpack_require__(76)))+" alt=\"Book a flight\" width=\"200\" class=\"inline-block\"> <div class=\"mt-4 text-lg font-semibold text-grayscale-900 font-noto-sans\">\n                  Stay at Hotel\n                </div> <div class=\"mt-1 text-grayscale-500\">\n                  Get special price for staying at your favorite hotels during\n                  your vacation with family.\n                </div></div> <div class=\"w-40\"><img"+(_vm._ssrAttr("src",__webpack_require__(71)))+" alt=\"Book a flight\" width=\"200\" class=\"inline-block\"> <div class=\"mt-4 text-lg font-semibold text-grayscale-900 font-noto-sans\">\n                  Pay with star points\n                </div> <div class=\"mt-1 text-grayscale-500\">\n                  You can get 20% off shopping when paying with Star Points at\n                  Star Air Duty Free.\n                </div></div></div></div></div> "),_vm._ssrNode("<div class=\"flex flex-wrap content-center flex-none w-full text-left md:w-1/3\">","</div>",[_vm._ssrNode("<div class=\"md:pr-16\">","</div>",[_vm._ssrNode("<div class=\"text-3xl font-semibold text-grayscale-900 font-noto-sans\">\n              Redeem Your Star Points in Many Ways\n            </div> <div class=\"mt-3 text-sm text-grayscale-500 md:text-base md:leading-relaxed\"><p>Browse over 1.200 global partners around the world.</p></div> "),_vm._ssrNode("<div class=\"w-full mt-8 md:w-60\">","</div>",[_c('NuxtLink',{attrs:{"to":"/redem-points"}},[_c('Button',{attrs:{"value":"View All Partners","border":"border-2 border-secondary-900","color":"text-secondary-900","background":"bg-white"}})],1)],1)],2)]),_vm._ssrNode(" <div class=\"flex-none hidden w-2/3 text-left md:flex gap-x-6\"><div class=\"flex-1\"><img"+(_vm._ssrAttr("src",__webpack_require__(66)))+" alt=\"Book a flight\" class=\"inline-block\"> <div class=\"mt-4 text-lg font-semibold text-grayscale-900 font-noto-sans\">\n              Book a Flight\n            </div> <div class=\"mt-1 text-grayscale-500\">\n              Pamper yourself by spending your Star Points for booking a\n              flight with Star Air.\n            </div></div> <div class=\"flex-1\"><img"+(_vm._ssrAttr("src",__webpack_require__(76)))+" alt=\"Book a flight\" class=\"inline-block\"> <div class=\"mt-4 text-lg font-semibold text-grayscale-900 font-noto-sans\">\n              Stay at Hotel\n            </div> <div class=\"mt-1 text-grayscale-500\">\n              Get special price for staying at your favorite hotels during\n              your vacation with family.\n            </div></div> <div class=\"flex-1\"><img"+(_vm._ssrAttr("src",__webpack_require__(71)))+" alt=\"Book a flight\" class=\"inline-block\"> <div class=\"mt-4 text-lg font-semibold text-grayscale-900 font-noto-sans\">\n              Pay with star points\n            </div> <div class=\"mt-1 text-grayscale-500\">\n              You can get 20% off shopping when paying with Star Points at\n              Star Air Duty Free.\n            </div></div></div>")],2),_vm._ssrNode(" "),_vm._ssrNode("<div class=\"mt-16 overflow-hidden text-left md:flex rounded-xl\">","</div>",[_vm._ssrNode("<div class=\"flex-1\"><img"+(_vm._ssrAttr("src",__webpack_require__(84)))+" alt=\"Newsletter\" class=\"hidden md:inline\"> <img"+(_vm._ssrAttr("src",__webpack_require__(83)))+" alt=\"Newsletter\" class=\"inline md:hidden\"></div> "),_vm._ssrNode("<div class=\"flex flex-wrap content-center flex-1 -mt-1 bg-secondary-900 md:mt-0\">","</div>",[_vm._ssrNode("<div class=\"w-full px-6 md:px-16\">","</div>",[_vm._ssrNode("<div class=\"text-2xl font-semibold md:text-3xl text-grayscale-50 font-noto-sans\">\n              Never Miss an Offer\n            </div> <div class=\"mt-2 text-grayscale-100\">\n              Subscribe and be the first to receive our exclusive offers.\n            </div> <div class=\"mt-6\"><input type=\"text\" placeholder=\"Email Address\" class=\"w-full p-4 bg-white border-none rounded-lg outline-none \"></div> "),_vm._ssrNode("<div class=\"mt-6 md:inline-block\">","</div>",[_c('Button',{attrs:{"value":"Subscribe","border":"border-2 border-white","color":"text-white","background":"bg-transparent","customClass":"px-6 mb-6"}})],1)],2)])],2)],2)],2),_vm._ssrNode(" "),_c('Footer')],2)}
 var staticRenderFns = []
 
 
@@ -1965,7 +1972,7 @@ var componentNormalizer = __webpack_require__(2);
 
 function injectStyles (context) {
   
-  var style0 = __webpack_require__(130)
+  var style0 = __webpack_require__(131)
 if (style0.__inject__) style0.__inject__(context)
 
 }
@@ -1986,7 +1993,7 @@ var component = Object(componentNormalizer["a" /* default */])(
 /* harmony default export */ var pages = __webpack_exports__["default"] = (component.exports);
 
 /* nuxt-component-imports */
-installComponents(component, {Header: __webpack_require__(100).default,MainMenu: __webpack_require__(101).default,HomepageAdvancedSearch: __webpack_require__(127).default,Button: __webpack_require__(35).default,Input: __webpack_require__(36).default,Footer: __webpack_require__(102).default})
+installComponents(component, {Header: __webpack_require__(101).default,MainMenu: __webpack_require__(102).default,HomepageAdvancedSearch: __webpack_require__(128).default,Button: __webpack_require__(35).default,Input: __webpack_require__(36).default,Footer: __webpack_require__(103).default})
 
 
 /***/ })

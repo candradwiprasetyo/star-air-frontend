@@ -41,6 +41,8 @@
         this.emailAddress = null;
         this.errorMessage.email = null;
         this.errorMessage.mobile = null;
+        this.isAgreeOffer = false;
+        this.isAgreeTnc = false;
       },
       createAccount() {
         if (this.isButtonEnabled) {
