@@ -1,4 +1,4 @@
-exports.ids = [40,12,13,14,21];
+exports.ids = [41,12,13,14,21];
 exports.modules = {
 
 /***/ 100:
@@ -457,7 +457,7 @@ var component = Object(componentNormalizer["a" /* default */])(
 /* harmony default export */ var MainMenu = __webpack_exports__["default"] = (component.exports);
 
 /* nuxt-component-imports */
-installComponents(component, {Button: __webpack_require__(36).default})
+installComponents(component, {Button: __webpack_require__(35).default})
 
 
 /***/ }),
@@ -629,7 +629,7 @@ var component = Object(componentNormalizer["a" /* default */])(
 
 /***/ }),
 
-/***/ 143:
+/***/ 144:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -637,7 +637,7 @@ var component = Object(componentNormalizer["a" /* default */])(
 __webpack_require__.r(__webpack_exports__);
 
 // CONCATENATED MODULE: ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/@nuxt/components/dist/loader.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./pages/registration-success.vue?vue&type=template&id=7359ffcd&
-var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',[_c('Header'),_vm._ssrNode(" "),_c('MainMenu'),_vm._ssrNode(" "),_vm._ssrNode("<div class=\"container mx-auto py-14\">","</div>",[_vm._ssrNode("<div class=\"p-6 mx-auto text-center md:w-600\">","</div>",[_vm._ssrNode("<img"+(_vm._ssrAttr("src",__webpack_require__(68)))+" alt=\"Email sent success\" class=\"inline-block\"> <div class=\"mt-8 text-lg font-semibold font-noto-sans\">\n        Verify Your Email Address\n      </div> <div class=\"mt-2 text-grayscale-500\">\n        In order to complete your registration, please verifiy your email\n        address. We have sent an email with a link to chanda.gauri@gmail.com.\n      </div> "),_vm._ssrNode("<div class=\"flex justify-center mt-8 gap-x-6\">","</div>",[_c('NuxtLink',{attrs:{"to":"/"}},[_c('Button',{attrs:{"value":"Close","background":"bg-white","border":"border-2 border-secondary-900","color":"text-secondary-900"}})],1),_vm._ssrNode(" "),_c('NuxtLink',{attrs:{"to":"/activation"}},[_c('Button',{attrs:{"value":"Verify"}})],1)],2)],2)]),_vm._ssrNode(" "),_c('Footer')],2)}
+var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',[_c('Header'),_vm._ssrNode(" "),_c('MainMenu'),_vm._ssrNode(" "),_vm._ssrNode("<div class=\"container mx-auto py-14\">","</div>",[_vm._ssrNode("<div class=\"p-6 mx-auto text-center md:w-600\">","</div>",[_vm._ssrNode("<img"+(_vm._ssrAttr("src",__webpack_require__(57)))+" alt=\"Email sent success\" class=\"inline-block\"> <div class=\"mt-8 text-lg font-semibold font-noto-sans\">\n        Verify Your Email Address\n      </div> <div class=\"mt-2 text-grayscale-500\">\n        In order to complete your registration, please verifiy your email\n        address. We have sent an email with a link to chanda.gauri@gmail.com.\n      </div> "),_vm._ssrNode("<div class=\"flex justify-center mt-8 gap-x-6\">","</div>",[_c('NuxtLink',{attrs:{"to":"/"}},[_c('Button',{attrs:{"value":"Close","background":"bg-white","border":"border-2 border-secondary-900","color":"text-secondary-900"}})],1),_vm._ssrNode(" "),_c('NuxtLink',{attrs:{"to":"/activation"}},[_c('Button',{attrs:{"value":"Verify"}})],1)],2)],2)]),_vm._ssrNode(" "),_c('Footer')],2)}
 var staticRenderFns = []
 
 
@@ -684,7 +684,7 @@ var component = Object(componentNormalizer["a" /* default */])(
 /* harmony default export */ var registration_success = __webpack_exports__["default"] = (component.exports);
 
 /* nuxt-component-imports */
-installComponents(component, {Header: __webpack_require__(100).default,MainMenu: __webpack_require__(101).default,Button: __webpack_require__(36).default,Footer: __webpack_require__(102).default})
+installComponents(component, {Header: __webpack_require__(100).default,MainMenu: __webpack_require__(101).default,Button: __webpack_require__(35).default,Footer: __webpack_require__(102).default})
 
 
 /***/ }),
@@ -696,7 +696,7 @@ module.exports = "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQi
 
 /***/ }),
 
-/***/ 36:
+/***/ 35:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -921,7 +921,7 @@ module.exports = __webpack_require__.p + "img/footer-whatsapp.42f1d55.svg";
 
 /***/ }),
 
-/***/ 68:
+/***/ 57:
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "img/email-sent-success.d4c26fd.svg";

@@ -1,4 +1,4 @@
-exports.ids = [38,12,13,14,19,21,26];
+exports.ids = [39,12,13,14,19,21,23,27];
 exports.modules = Array(34).concat([
 /* 34 */
 /***/ (function(module, exports) {
@@ -7,105 +7,6 @@ module.exports = "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQi
 
 /***/ }),
 /* 35 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-// ESM COMPAT FLAG
-__webpack_require__.r(__webpack_exports__);
-
-// CONCATENATED MODULE: ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/@nuxt/components/dist/loader.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./components/Input.vue?vue&type=template&id=d5c5a85c&
-var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"relative px-3 py-2",class:[_vm.border, _vm.customClass]},[_vm._ssrNode("<div class=\"mb-1 text-xs text-grayscale-400\">"+_vm._ssrEscape(_vm._s(_vm.label))+"</div> <input type=\"text\""+(_vm._ssrAttr("placeholder",_vm.placeholder))+(_vm._ssrAttr("value",_vm.value))+" class=\"w-full border-none outline-none\"> "+((_vm.icon)?("<div class=\"absolute w-6 h-6 right-3 top-4\"><img"+(_vm._ssrAttr("src",__webpack_require__(85)("./" + _vm.icon)))+" alt=\"Search\"></div>"):"<!---->"))])}
-var staticRenderFns = []
-
-
-// CONCATENATED MODULE: ./components/Input.vue?vue&type=template&id=d5c5a85c&
-
-// CONCATENATED MODULE: ./node_modules/babel-loader/lib??ref--2-0!./node_modules/@nuxt/components/dist/loader.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./components/Input.vue?vue&type=script&lang=js&
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-/* harmony default export */ var Inputvue_type_script_lang_js_ = ({
-  name: "Input",
-  props: {
-    label: {
-      type: String,
-      required: true
-    },
-    value: {
-      type: String,
-      required: false,
-      default: ""
-    },
-    placeholder: {
-      type: String,
-      required: false,
-      default: ""
-    },
-    border: {
-      type: String,
-      required: false,
-      default: "rounded-lg border"
-    },
-    customClass: {
-      type: String,
-      required: false
-    },
-    icon: {
-      type: String,
-      required: false
-    }
-  },
-  methods: {
-    updateValue: function (value) {
-      this.$emit('input', value);
-    }
-  }
-});
-// CONCATENATED MODULE: ./components/Input.vue?vue&type=script&lang=js&
- /* harmony default export */ var components_Inputvue_type_script_lang_js_ = (Inputvue_type_script_lang_js_); 
-// EXTERNAL MODULE: ./node_modules/vue-loader/lib/runtime/componentNormalizer.js
-var componentNormalizer = __webpack_require__(2);
-
-// CONCATENATED MODULE: ./components/Input.vue
-
-
-
-
-
-/* normalize component */
-
-var component = Object(componentNormalizer["a" /* default */])(
-  components_Inputvue_type_script_lang_js_,
-  render,
-  staticRenderFns,
-  false,
-  null,
-  null,
-  "21a78c26"
-  
-)
-
-/* harmony default export */ var Input = __webpack_exports__["default"] = (component.exports);
-
-/* nuxt-component-imports */
-installComponents(component, {Input: __webpack_require__(35).default})
-
-
-/***/ }),
-/* 36 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -208,6 +109,105 @@ var component = Object(componentNormalizer["a" /* default */])(
 )
 
 /* harmony default export */ var Button = __webpack_exports__["default"] = (component.exports);
+
+/***/ }),
+/* 36 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+// ESM COMPAT FLAG
+__webpack_require__.r(__webpack_exports__);
+
+// CONCATENATED MODULE: ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/@nuxt/components/dist/loader.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./components/Input.vue?vue&type=template&id=d5c5a85c&
+var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"relative px-3 py-2",class:[_vm.border, _vm.customClass]},[_vm._ssrNode("<div class=\"mb-1 text-xs text-grayscale-400\">"+_vm._ssrEscape(_vm._s(_vm.label))+"</div> <input type=\"text\""+(_vm._ssrAttr("placeholder",_vm.placeholder))+(_vm._ssrAttr("value",_vm.value))+" class=\"w-full border-none outline-none\"> "+((_vm.icon)?("<div class=\"absolute w-6 h-6 right-3 top-4\"><img"+(_vm._ssrAttr("src",__webpack_require__(85)("./" + _vm.icon)))+" alt=\"Search\"></div>"):"<!---->"))])}
+var staticRenderFns = []
+
+
+// CONCATENATED MODULE: ./components/Input.vue?vue&type=template&id=d5c5a85c&
+
+// CONCATENATED MODULE: ./node_modules/babel-loader/lib??ref--2-0!./node_modules/@nuxt/components/dist/loader.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./components/Input.vue?vue&type=script&lang=js&
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+/* harmony default export */ var Inputvue_type_script_lang_js_ = ({
+  name: "Input",
+  props: {
+    label: {
+      type: String,
+      required: true
+    },
+    value: {
+      type: String,
+      required: false,
+      default: ""
+    },
+    placeholder: {
+      type: String,
+      required: false,
+      default: ""
+    },
+    border: {
+      type: String,
+      required: false,
+      default: "rounded-lg border"
+    },
+    customClass: {
+      type: String,
+      required: false
+    },
+    icon: {
+      type: String,
+      required: false
+    }
+  },
+  methods: {
+    updateValue: function (value) {
+      this.$emit('input', value);
+    }
+  }
+});
+// CONCATENATED MODULE: ./components/Input.vue?vue&type=script&lang=js&
+ /* harmony default export */ var components_Inputvue_type_script_lang_js_ = (Inputvue_type_script_lang_js_); 
+// EXTERNAL MODULE: ./node_modules/vue-loader/lib/runtime/componentNormalizer.js
+var componentNormalizer = __webpack_require__(2);
+
+// CONCATENATED MODULE: ./components/Input.vue
+
+
+
+
+
+/* normalize component */
+
+var component = Object(componentNormalizer["a" /* default */])(
+  components_Inputvue_type_script_lang_js_,
+  render,
+  staticRenderFns,
+  false,
+  null,
+  null,
+  "21a78c26"
+  
+)
+
+/* harmony default export */ var Input = __webpack_exports__["default"] = (component.exports);
+
+/* nuxt-component-imports */
+installComponents(component, {Input: __webpack_require__(36).default})
+
 
 /***/ }),
 /* 37 */
@@ -331,75 +331,75 @@ module.exports = __webpack_require__.p + "img/logo-star-air.0033deb.png";
 
 /***/ }),
 /* 57 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "img/email-sent-success.d4c26fd.svg";
+
+/***/ }),
+/* 58 */
 /***/ (function(module, exports) {
 
 module.exports = "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjUiIGhlaWdodD0iMjUiIHZpZXdCb3g9IjAgMCAyNSAyNSIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTEyLjE4NTUgMTQuNTUwM0MxMy41MTEgMTQuNTUwMyAxNC41ODU1IDEzLjU0MjkgMTQuNTg1NSAxMi4zMDAzQzE0LjU4NTUgMTEuMDU3NiAxMy41MTEgMTAuMDUwMyAxMi4xODU1IDEwLjA1MDNDMTAuODYwMSAxMC4wNTAzIDkuNzg1NTUgMTEuMDU3NiA5Ljc4NTU1IDEyLjMwMDNDOS43ODU1NSAxMy41NDI5IDEwLjg2MDEgMTQuNTUwMyAxMi4xODU1IDE0LjU1MDNaIiBmaWxsPSIjNjQ3NDhCIi8+CjxwYXRoIGZpbGwtcnVsZT0iZXZlbm9kZCIgY2xpcC1ydWxlPSJldmVub2RkIiBkPSJNMjAuMTg1NSAxMi4zMDAzQzIwLjE4NTUgMTUuNjE0IDE2LjYwMzggMTguMzAwMyAxMi4xODU1IDE4LjMwMDNDNy43NjcyNyAxOC4zMDAzIDQuMTg1NTUgMTUuNjE0IDQuMTg1NTUgMTIuMzAwM0M0LjE4NTU1IDguOTg2NTUgNy43NjcyNyA2LjMwMDI2IDEyLjE4NTUgNi4zMDAyNkMxNi42MDM4IDYuMzAwMjYgMjAuMTg1NSA4Ljk4NjU1IDIwLjE4NTUgMTIuMzAwM1pNMTYuOTg1NSAxMi4zMDAzQzE2Ljk4NTUgMTQuNzg1NSAxNC44MzY1IDE2LjgwMDMgMTIuMTg1NSAxNi44MDAzQzkuNTM0NTggMTYuODAwMyA3LjM4NTU1IDE0Ljc4NTUgNy4zODU1NSAxMi4zMDAzQzcuMzg1NTUgOS44MTQ5OCA5LjUzNDU4IDcuODAwMjYgMTIuMTg1NSA3LjgwMDI2QzE0LjgzNjUgNy44MDAyNiAxNi45ODU1IDkuODE0OTggMTYuOTg1NSAxMi4zMDAzWiIgZmlsbD0iIzY0NzQ4QiIvPgo8L3N2Zz4K"
 
 /***/ }),
-/* 58 */
+/* 59 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "img/membership-card-gold.c1f433d.png";
 
 /***/ }),
-/* 59 */
+/* 60 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "img/membership-card-silver.0204b0c.png";
 
 /***/ }),
-/* 60 */
+/* 61 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "img/membership-card.5b2410e.png";
 
 /***/ }),
-/* 61 */
+/* 62 */
 /***/ (function(module, exports) {
 
 module.exports = "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjUiIHZpZXdCb3g9IjAgMCAyNCAyNSIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPGNpcmNsZSBjeD0iMTIiIGN5PSI2LjcxODc1IiByPSIyIiBmaWxsPSIjNjQ3NDhCIi8+CjxjaXJjbGUgY3g9IjEyIiBjeT0iMTIuNzE4OCIgcj0iMiIgZmlsbD0iIzY0NzQ4QiIvPgo8Y2lyY2xlIGN4PSIxMiIgY3k9IjE4LjcxODgiIHI9IjIiIGZpbGw9IiM2NDc0OEIiLz4KPC9zdmc+Cg=="
 
 /***/ }),
-/* 62 */
+/* 63 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "img/current-tier.8ed4ecc.png";
 
 /***/ }),
-/* 63 */
+/* 64 */
 /***/ (function(module, exports) {
 
 module.exports = "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjUiIGhlaWdodD0iNjUiIHZpZXdCb3g9IjAgMCA2NSA2NSIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTQyLjQxOTkgMTguMTcxOEM0MS40NzU3IDE3LjA0MTYgMzkuNzk0IDE2Ljg5MDkgMzguNjYzNyAxNy44MzUyQzM3LjUzMzUgMTguNzc5NCAzNy4zODI4IDIwLjQ2MTEgMzguMzI3MSAyMS41OTEzTDQ1LjI1OTIgMjkuODg4NUwxNS4zNzU3IDI5Ljg4ODVDMTMuOTAyOSAyOS44ODg1IDEyLjcwOSAzMS4wODI0IDEyLjcwOSAzMi41NTUxQzEyLjcwOSAzNC4wMjc5IDEzLjkwMjkgMzUuMjIxOCAxNS4zNzU3IDM1LjIyMThMNDQuOTkxOCAzNS4yMjE4TDM4LjMzNDcgNDMuMTE4QzM3LjM4NTQgNDQuMjQ0IDM3LjUyODcgNDUuOTI2MyAzOC42NTQ3IDQ2Ljg3NTZDMzkuNzgwNiA0Ny44MjQ5IDQxLjQ2MyA0Ny42ODE3IDQyLjQxMjMgNDYuNTU1N0w1Mi44ODQzIDM0LjEzNDRDNTMuNzE4NiAzMy4xNDQ5IDUzLjcyMTggMzEuNjk5MSA1Mi44OTE5IDMwLjcwNThMNDIuNDE5OSAxOC4xNzE4WiIgZmlsbD0iIzMwN0JEMyIvPgo8L3N2Zz4K"
 
 /***/ }),
-/* 64 */
+/* 65 */
 /***/ (function(module, exports) {
 
 module.exports = "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjUiIGhlaWdodD0iNjUiIHZpZXdCb3g9IjAgMCA2NSA2NSIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTQ2Ljc5ODkgMjMuMDU2NkM0Ny45MjkxIDI0LjAwMDkgNDguMDc5OCAyNS42ODI2IDQ3LjEzNTUgMjYuODEyOEM0Ni4xOTEzIDI3Ljk0MyA0NC41MDk2IDI4LjA5MzggNDMuMzc5NCAyNy4xNDk1TDM1LjA4MjMgMjAuMjE3NEwzNS4wODIyIDUwLjEwMDlDMzUuMDgyMiA1MS41NzM3IDMzLjg4ODMgNTIuNzY3NiAzMi40MTU2IDUyLjc2NzZDMzAuOTQyOCA1Mi43Njc2IDI5Ljc0ODkgNTEuNTczNyAyOS43NDg5IDUwLjEwMDlMMjkuNzQ4OSAyMC40ODQ4TDIxLjg1MjcgMjcuMTQxOUMyMC43MjY3IDI4LjA5MTEgMTkuMDQ0NCAyNy45NDc5IDE4LjA5NTEgMjYuODIxOUMxNy4xNDU4IDI1LjY5NTkgMTcuMjg5IDI0LjAxMzYgMTguNDE1IDIzLjA2NDNMMzAuODM2MyAxMi41OTIzQzMxLjgyNTggMTEuNzU4IDMzLjI3MTYgMTEuNzU0OCAzNC4yNjQ5IDEyLjU4NDZMNDYuNzk4OSAyMy4wNTY2WiIgZmlsbD0iIzMwN0JEMyIvPgo8L3N2Zz4K"
 
 /***/ }),
-/* 65 */
+/* 66 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "img/book-a-flight.531d0b4.png";
 
 /***/ }),
-/* 66 */
+/* 67 */
 /***/ (function(module, exports) {
 
 module.exports = "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjUiIGhlaWdodD0iMjUiIHZpZXdCb3g9IjAgMCAyNSAyNSIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTQuMzQzMjYgMTguMDA0NkM0LjM0MzI2IDE3LjQ1MjMgNC43OTA5OCAxNy4wMDQ2IDUuMzQzMjYgMTcuMDA0NkgxOS4zMTk1QzE5Ljg3MTcgMTcuMDA0NiAyMC4zMTk1IDE3LjQ1MjMgMjAuMzE5NSAxOC4wMDQ2QzIwLjMxOTUgMTguNTU2OSAxOS44NzE3IDE5LjAwNDYgMTkuMzE5NSAxOS4wMDQ2SDUuMzQzMjZDNC43OTA5OCAxOS4wMDQ2IDQuMzQzMjYgMTguNTU2OSA0LjM0MzI2IDE4LjAwNDZaIiBmaWxsPSIjMjI0Q0ExIi8+CjxwYXRoIGQ9Ik0xMS4zNjg0IDcuMDA0OTNMMTQuNTY4NyA5LjEyMjc3TDE2LjkyNDggNy42NzkxQzE3LjY5NTQgNy4yMDY5MSAxOC42OTggNy4zOTEyNSAxOS4yNTAyIDguMTA2NjdDMTkuNTgxNSA4LjUzNTgxIDE5LjQ1MjUgOS4xNTkyMyAxOC45NzgxIDkuNDIxNjNMOS4zNDA3OCAxNC43NTIyQzkuMTc5MTQgMTQuODQxNiA4Ljk5NTg5IDE0Ljg4NDUgOC44MTEzNiAxNC44NzYxTDcuMjM1MDIgMTQuODA0NUM3LjE0MTk4IDE0LjgwMDIgNy4wNTE5OCAxNC43NzAxIDYuOTc1MTUgMTQuNzE3NUw0Ljc4MjU5IDEzLjIxNTVMNS45MTcwMyAxMi41NjM1QzYuMTk4MSAxMi40MDIgNi41NDAwNCAxMi4zODY3IDYuODM0MzggMTIuNTIyNkw4LjAyMDM2IDEzLjA3TDExLjQ1ODIgMTAuOTk2M0w4LjYwMjQ0IDcuOTQwNDNMMTAuMzI1IDYuOTY4MDRDMTAuNjUyMSA2Ljc4MzM3IDExLjA1NTEgNi43OTc2MiAxMS4zNjg0IDcuMDA0OTNaIiBmaWxsPSIjMjI0Q0ExIi8+Cjwvc3ZnPgo="
 
 /***/ }),
-/* 67 */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "img/earn-point.dd9fafd.png";
-
-/***/ }),
 /* 68 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "img/email-sent-success.d4c26fd.svg";
+module.exports = __webpack_require__.p + "img/earn-point.dd9fafd.png";
 
 /***/ }),
 /* 69 */
@@ -513,10 +513,10 @@ var map = {
 	"./banner.png": 87,
 	"./bg-forgot-password.png": 17,
 	"./bg-login.png": 16,
-	"./book-a-flight.png": 65,
-	"./book.svg": 66,
+	"./book-a-flight.png": 66,
+	"./book.svg": 67,
 	"./close.svg": 46,
-	"./current-tier.png": 62,
+	"./current-tier.png": 63,
 	"./earn-point-1.jpg": 88,
 	"./earn-point-2.jpg": 89,
 	"./earn-point-3.jpg": 90,
@@ -526,10 +526,10 @@ var map = {
 	"./earn-point-7.jpg": 94,
 	"./earn-point-8.jpg": 95,
 	"./earn-point-9.jpg": 96,
-	"./earn-point.png": 67,
-	"./email-sent-success.svg": 68,
+	"./earn-point.png": 68,
+	"./email-sent-success.svg": 57,
 	"./english.svg": 47,
-	"./eye.svg": 57,
+	"./eye.svg": 58,
 	"./facebook.svg": 80,
 	"./flight-info.svg": 69,
 	"./flip-button-mobile.svg": 54,
@@ -545,9 +545,9 @@ var map = {
 	"./logo-star-air.png": 56,
 	"./logo.png": 37,
 	"./logo.svg": 97,
-	"./membership-card-gold.png": 58,
-	"./membership-card-silver.png": 59,
-	"./membership-card.png": 60,
+	"./membership-card-gold.png": 59,
+	"./membership-card-silver.png": 60,
+	"./membership-card.png": 61,
 	"./mobile-menu.svg": 48,
 	"./my-trip.svg": 70,
 	"./newsletter-mobile.png": 82,
@@ -561,10 +561,10 @@ var map = {
 	"./search.svg": 98,
 	"./shopping-bag.svg": 38,
 	"./stay-at-hotel.png": 76,
-	"./three-dots.svg": 61,
+	"./three-dots.svg": 62,
 	"./twitter.svg": 84,
-	"./upgrade-right.svg": 63,
-	"./upgrade-up.svg": 64,
+	"./upgrade-right.svg": 64,
+	"./upgrade-up.svg": 65,
 	"./user.png": 40
 };
 
@@ -1198,7 +1198,7 @@ var component = Object(componentNormalizer["a" /* default */])(
 /* harmony default export */ var MainMenu = __webpack_exports__["default"] = (component.exports);
 
 /* nuxt-component-imports */
-installComponents(component, {Button: __webpack_require__(36).default})
+installComponents(component, {Button: __webpack_require__(35).default})
 
 
 /***/ }),
@@ -1391,7 +1391,100 @@ var component = Object(componentNormalizer["a" /* default */])(
 /* 123 */,
 /* 124 */,
 /* 125 */,
-/* 126 */,
+/* 126 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+// ESM COMPAT FLAG
+__webpack_require__.r(__webpack_exports__);
+
+// CONCATENATED MODULE: ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/@nuxt/components/dist/loader.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./components/PopupRegisterSuccess.vue?vue&type=template&id=1680cdf8&
+var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',[_vm._ssrNode("<div class=\"fixed inset-0 z-30 bg-black opacity-75\"></div> "),_vm._ssrNode("<div class=\"fixed inset-0 z-30 flex items-center\">","</div>",[_vm._ssrNode("<div class=\"mx-auto bg-white w-[600px] rounded-lg\">","</div>",[_vm._ssrNode("<div class=\"p-6 mx-auto text-center md:w-600\">","</div>",[_vm._ssrNode("<img"+(_vm._ssrAttr("src",__webpack_require__(57)))+" alt=\"Email sent success\" class=\"inline-block\"> <div class=\"mt-8 text-lg font-semibold font-noto-sans\">\n          Verify Your Email Address\n        </div> <div class=\"mt-2 text-grayscale-500\">"+_vm._ssrEscape("\n          In order to complete your registration, please verifiy your email\n          address. We have sent an email with a link to "+_vm._s(_vm.email)+".\n        ")+"</div> "),_vm._ssrNode("<div class=\"inline-block mt-6 w-[200px]\">","</div>",[_c('Button',{attrs:{"value":"Close","background":"bg-white","border":"border-2 border-secondary-900","color":"text-secondary-900"},on:{"action":function($event){return _vm.closePopup()}}})],1)],2)])])],2)}
+var staticRenderFns = []
+
+
+// CONCATENATED MODULE: ./components/PopupRegisterSuccess.vue?vue&type=template&id=1680cdf8&
+
+// CONCATENATED MODULE: ./node_modules/babel-loader/lib??ref--2-0!./node_modules/@nuxt/components/dist/loader.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./components/PopupRegisterSuccess.vue?vue&type=script&lang=js&
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+/* harmony default export */ var PopupRegisterSuccessvue_type_script_lang_js_ = ({
+  name: "PopupRegisterSuccess",
+  props: {
+    email: {
+      type: String,
+      required: false
+    }
+  },
+  methods: {
+    closePopup() {
+      this.$emit('close-popup');
+    }
+
+  }
+});
+// CONCATENATED MODULE: ./components/PopupRegisterSuccess.vue?vue&type=script&lang=js&
+ /* harmony default export */ var components_PopupRegisterSuccessvue_type_script_lang_js_ = (PopupRegisterSuccessvue_type_script_lang_js_); 
+// EXTERNAL MODULE: ./node_modules/vue-loader/lib/runtime/componentNormalizer.js
+var componentNormalizer = __webpack_require__(2);
+
+// CONCATENATED MODULE: ./components/PopupRegisterSuccess.vue
+
+
+
+
+
+/* normalize component */
+
+var component = Object(componentNormalizer["a" /* default */])(
+  components_PopupRegisterSuccessvue_type_script_lang_js_,
+  render,
+  staticRenderFns,
+  false,
+  null,
+  null,
+  "fd4b1b7e"
+  
+)
+
+/* harmony default export */ var PopupRegisterSuccess = __webpack_exports__["default"] = (component.exports);
+
+/* nuxt-component-imports */
+installComponents(component, {Button: __webpack_require__(35).default})
+
+
+/***/ }),
 /* 127 */,
 /* 128 */,
 /* 129 */,
@@ -1406,19 +1499,20 @@ var component = Object(componentNormalizer["a" /* default */])(
 /* 138 */,
 /* 139 */,
 /* 140 */,
-/* 141 */
+/* 141 */,
+/* 142 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 // ESM COMPAT FLAG
 __webpack_require__.r(__webpack_exports__);
 
-// CONCATENATED MODULE: ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/@nuxt/components/dist/loader.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./pages/registration.vue?vue&type=template&id=be31c9c2&
-var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',[_c('Header'),_vm._ssrNode(" "),_c('MainMenu'),_vm._ssrNode(" "),_vm._ssrNode("<div class=\"container px-6 py-6 mx-auto md:py-14 md:px-0\">","</div>",[_vm._ssrNode("<div class=\"text-3xl font-semibold text-grayscale-900 font-noto-sans\">\n      Create New Account\n    </div> <div class=\"mt-3 text-sm text-grayscale-500 md:text-base\">\n      Enjoy hundreds of benefits when you joining Star Air loyalty program.\n      earn points when you flight, stay at hotel, and buy goods at Star Air\n      duty free and redeem it for your next travel. Lorem ipsum dolor sit\n      amet, consectetur adipiscing elit. Sed ac mauris vitae sem posuere\n      blandit. Nam pretium venenatis bibendum. Nam eget ante eu metus\n      consequat semper non ac nunc. Duis semper massa nec tellus lacinia, id\n      semper neque lobortis. Donec sit amet eros leo. Sed lacinia vestibulum\n      lorem, vel imperdiet ipsum.\n    </div> <div class=\"block p-6 mt-10 md:hidden bg-light-blue rounded-xl\"><div class=\"text-lg font-semibold text-grayscale-900\">\n        New Member Benefits\n      </div> <div class=\"mt-4 text-grayscale-500\"><ul class=\"pl-5 leading-loose list-disc\"><li>5000 Star Points</li> <li>Free extra baggage 15kg</li> <li>Special gift</li> <li>Flight discount voucher</li></ul></div></div> "),_vm._ssrNode("<div class=\"flex items-start mt-6 md:mt-16 gap-x-8\">","</div>",[_vm._ssrNode("<div class=\"md:w-2/3\">","</div>",[_vm._ssrNode("<div class=\"flex\">","</div>",[_vm._ssrNode("<div class=\"flex-1 mt-6 md:mt-0\">","</div>",[_c('Input',{attrs:{"label":"First Name","border":"border md:rounded-l-lg"},model:{value:(_vm.firstName),callback:function ($$v) {_vm.firstName=$$v},expression:"firstName"}})],1),_vm._ssrNode(" "),_vm._ssrNode("<div class=\"flex-1 mt-6 md:mt-0\">","</div>",[_c('Input',{attrs:{"label":"Last Name","border":"border md:rounded-r-lg"},model:{value:(_vm.lastName),callback:function ($$v) {_vm.lastName=$$v},expression:"lastName"}})],1)],2),_vm._ssrNode(" "),_c('Input',{attrs:{"label":"Email Address","customClass":"mt-6"},model:{value:(_vm.emailAddress),callback:function ($$v) {_vm.emailAddress=$$v},expression:"emailAddress"}}),_vm._ssrNode(" "),_vm._ssrNode("<div class=\"flex mt-6\">","</div>",[_vm._ssrNode("<div class=\"flex-none w-16\">","</div>",[_c('Select',{attrs:{"label":"","border":"border rounded-l-lg"},model:{value:(_vm.flagNumber),callback:function ($$v) {_vm.flagNumber=$$v},expression:"flagNumber"}})],1),_vm._ssrNode(" "),_vm._ssrNode("<div class=\"flex-grow\">","</div>",[_c('Input',{attrs:{"label":"Phone","border":"border rounded-r-lg"},model:{value:(_vm.phoneNumber),callback:function ($$v) {_vm.phoneNumber=$$v},expression:"phoneNumber"}})],1)],2),_vm._ssrNode(" <div class=\"flex mt-10 gap-x-4\"><div class=\"flex-none\"><input type=\"checkbox\" id=\"checkbox1\" name=\"checkbox1\""+(_vm._ssrAttr("checked",Array.isArray(_vm.isAgreeOffer)?_vm._i(_vm.isAgreeOffer,null)>-1:(_vm.isAgreeOffer)))+"></div> <div class=\"flex-grow\"><label for=\"checkbox1\">\n              I agree to receiving offers, news, marketing communications and\n              market research from time to time by electronic media and SMS\n              from Star Club. Electronic media refers to email and Social\n              Media.</label></div></div> <div class=\"flex mt-6 gap-x-4\"><div class=\"flex-none\"><input type=\"checkbox\" id=\"checkbox2\" name=\"checkbox2\""+(_vm._ssrAttr("checked",Array.isArray(_vm.isAgreeTnc)?_vm._i(_vm.isAgreeTnc,null)>-1:(_vm.isAgreeTnc)))+"></div> <div class=\"flex-grow\"><label for=\"checkbox2\">\n              I agree to the Terms and Conditions of the Star Club programme\n              and accept the Star Air Privacy Policy.</label></div></div> "),_vm._ssrNode("<div class=\"mt-10 md:w-64\">","</div>",[_c('Button',{attrs:{"value":"Create an Account","enabled":_vm.isButtonEnabled},on:{"action":_vm.createAccount}})],1)],2),_vm._ssrNode(" <div class=\"hidden w-1/3 p-6 md:block bg-light-blue rounded-xl\"><div class=\"text-lg font-semibold text-grayscale-900\">\n          New Member Benefits\n        </div> <div class=\"mt-4 text-grayscale-500\"><ul class=\"pl-5 leading-loose list-disc\"><li>5000 Star Points</li> <li>Free extra baggage 15kg</li> <li>Special gift</li> <li>Flight discount voucher</li></ul></div></div>")],2)],2),_vm._ssrNode(" "),_c('Footer')],2)}
+// CONCATENATED MODULE: ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/@nuxt/components/dist/loader.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./pages/registration.vue?vue&type=template&id=d405afd0&
+var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',[_c('Header'),_vm._ssrNode(" "),_c('MainMenu'),_vm._ssrNode(" "),_vm._ssrNode("<div class=\"container px-6 py-6 mx-auto md:py-14 md:px-0\">","</div>",[_vm._ssrNode("<div class=\"text-3xl font-semibold text-grayscale-900 font-noto-sans\">\n      Create New Account\n    </div> <div class=\"mt-3 text-sm text-grayscale-500 md:text-base\">\n      Enjoy hundreds of benefits when you joining Star Air loyalty program.\n      earn points when you flight, stay at hotel, and buy goods at Star Air\n      duty free and redeem it for your next travel. Lorem ipsum dolor sit\n      amet, consectetur adipiscing elit. Sed ac mauris vitae sem posuere\n      blandit. Nam pretium venenatis bibendum. Nam eget ante eu metus\n      consequat semper non ac nunc. Duis semper massa nec tellus lacinia, id\n      semper neque lobortis. Donec sit amet eros leo. Sed lacinia vestibulum\n      lorem, vel imperdiet ipsum.\n    </div> <div class=\"block p-6 my-10 md:hidden bg-light-blue rounded-xl\"><div class=\"text-lg font-semibold text-grayscale-900\">\n        New Member Benefits\n      </div> <div class=\"mt-4 text-grayscale-500\"><ul class=\"pl-5 leading-loose list-disc\"><li>5000 Star Points</li> <li>Free extra baggage 15kg</li> <li>Special gift</li> <li>Flight discount voucher</li></ul></div></div> "),_vm._ssrNode("<div class=\"flex items-start mt-6 md:mt-16 gap-x-8\">","</div>",[_vm._ssrNode("<div class=\"md:w-2/3\">","</div>",[_vm._ssrNode("<div class=\"flex\">","</div>",[_vm._ssrNode("<div class=\"flex-1 mt-6 md:mt-0\">","</div>",[_c('Input',{attrs:{"label":"First Name","border":"border md:rounded-l-lg"},model:{value:(_vm.firstName),callback:function ($$v) {_vm.firstName=$$v},expression:"firstName"}})],1),_vm._ssrNode(" "),_vm._ssrNode("<div class=\"flex-1 mt-6 md:mt-0\">","</div>",[_c('Input',{attrs:{"label":"Last Name","border":"border md:rounded-r-lg"},model:{value:(_vm.lastName),callback:function ($$v) {_vm.lastName=$$v},expression:"lastName"}})],1)],2),_vm._ssrNode(" "),_c('Input',{attrs:{"label":"Email Address","customClass":"mt-6"},model:{value:(_vm.emailAddress),callback:function ($$v) {_vm.emailAddress=$$v},expression:"emailAddress"}}),_vm._ssrNode(" "+((_vm.errorMessage.email)?("<span class=\"text-xs text-alert-900\">"+_vm._ssrEscape(_vm._s(_vm.errorMessage.email))+"</span>"):"<!---->")+" "),_vm._ssrNode("<div class=\"flex mt-6\">","</div>",[_vm._ssrNode("<div class=\"flex-none w-16\">","</div>",[_c('Select',{attrs:{"label":"","border":"border rounded-l-lg"},model:{value:(_vm.flagNumber),callback:function ($$v) {_vm.flagNumber=$$v},expression:"flagNumber"}})],1),_vm._ssrNode(" "),_vm._ssrNode("<div class=\"flex-grow\">","</div>",[_c('Input',{attrs:{"label":"Phone","border":"border rounded-r-lg"},model:{value:(_vm.phoneNumber),callback:function ($$v) {_vm.phoneNumber=$$v},expression:"phoneNumber"}})],1)],2),_vm._ssrNode(" "+((_vm.errorMessage.mobile)?("<span class=\"text-xs text-alert-900\">"+_vm._ssrEscape(_vm._s(_vm.errorMessage.mobile))+"</span>"):"<!---->")+" <div class=\"flex mt-10 gap-x-4\"><div class=\"flex-none\"><input type=\"checkbox\" id=\"checkbox1\" name=\"checkbox1\""+(_vm._ssrAttr("checked",Array.isArray(_vm.isAgreeOffer)?_vm._i(_vm.isAgreeOffer,null)>-1:(_vm.isAgreeOffer)))+"></div> <div class=\"flex-grow\"><label for=\"checkbox1\">\n              I agree to receiving offers, news, marketing communications and\n              market research from time to time by electronic media and SMS\n              from Star Club. Electronic media refers to email and Social\n              Media.</label></div></div> <div class=\"flex mt-6 gap-x-4\"><div class=\"flex-none\"><input type=\"checkbox\" id=\"checkbox2\" name=\"checkbox2\""+(_vm._ssrAttr("checked",Array.isArray(_vm.isAgreeTnc)?_vm._i(_vm.isAgreeTnc,null)>-1:(_vm.isAgreeTnc)))+"></div> <div class=\"flex-grow\"><label for=\"checkbox2\">\n              I agree to the Terms and Conditions of the Star Club programme\n              and accept the Star Air Privacy Policy.</label></div></div> "),_vm._ssrNode("<div class=\"mt-10 md:w-64\">","</div>",[_c('Button',{attrs:{"value":"Create an Account","enabled":_vm.isButtonEnabled},on:{"action":_vm.createAccount}})],1)],2),_vm._ssrNode(" <div class=\"hidden w-1/3 p-6 md:block bg-light-blue rounded-xl\"><div class=\"text-lg font-semibold text-grayscale-900\">\n          New Member Benefits\n        </div> <div class=\"mt-4 text-grayscale-500\"><ul class=\"pl-5 leading-loose list-disc\"><li>5000 Star Points</li> <li>Free extra baggage 15kg</li> <li>Special gift</li> <li>Flight discount voucher</li></ul></div></div>")],2)],2),_vm._ssrNode(" "),(_vm.isPopupSuccess)?_c('PopupRegisterSuccess',{attrs:{"email":_vm.popupSuccessEmail},on:{"close-popup":_vm.closePopupSuccess}}):_vm._e(),_vm._ssrNode(" "),_c('Footer')],2)}
 var staticRenderFns = []
 
 
-// CONCATENATED MODULE: ./pages/registration.vue?vue&type=template&id=be31c9c2&
+// CONCATENATED MODULE: ./pages/registration.vue?vue&type=template&id=d405afd0&
 
 // CONCATENATED MODULE: ./node_modules/@nuxt/components/dist/loader.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./pages/registration.vue?vue&type=script&lang=ts&
 
@@ -1434,6 +1528,12 @@ var staticRenderFns = []
       flagNumber: null,
       isAgreeOffer: false,
       isAgreeTnc: false,
+      errorMessage: {
+        email: null,
+        mobile: null,
+      },
+      isPopupSuccess: false,
+      popupSuccessEmail: null,
     };
   },
   methods: {
@@ -1451,23 +1551,54 @@ var staticRenderFns = []
         this.isButtonEnabled = false
       }
     },
+    clear() {
+      this.firstName = null;
+      this.lastName = null;
+      this.phoneNumber = null;
+      this.emailAddress = null;
+      this.errorMessage.email = null;
+      this.errorMessage.mobile = null;
+    },
     createAccount() {
       if (this.isButtonEnabled) {
         let formData = new FormData();
         formData.append('first_name', this.firstName);
+        formData.append('token', this.$config.myToken);
         formData.append('last_name', this.lastName);
         formData.append('mobile', this.phoneNumber);
         formData.append('email', this.emailAddress);
 
         this.$axios.$post('/member/add-member ', formData)
           .then( (response) => {
-            console.log(response)
+            if (response.err_num == '0') {
+              this.popupSuccessEmail = this.emailAddress;
+              this.clear();
+              this.isPopupSuccess = true;
+            } else {
+              if (response.err_str) {
+                if (response.err_str.email) {
+                  this.errorMessage.email = response.err_str.email[0];
+                } else {
+                  this.errorMessage.email = response.err_str;
+                }
+              } else {
+                this.errorMessage.email = null;
+              }
+              if (response.err_str.mobile) {
+                this.errorMessage.mobile = response.err_str.mobile[0];
+              } else {
+                this.errorMessage.mobile = null;
+              }
+            }
           })
           .catch(function (error) {
             console.log(error)
           })
       }
     },
+    closePopupSuccess() {
+      this.isPopupSuccess = false;
+    }
   },
   mounted() {},
   watch: {
@@ -1510,7 +1641,7 @@ var component = Object(componentNormalizer["a" /* default */])(
 /* harmony default export */ var registration = __webpack_exports__["default"] = (component.exports);
 
 /* nuxt-component-imports */
-installComponents(component, {Header: __webpack_require__(100).default,MainMenu: __webpack_require__(101).default,Input: __webpack_require__(35).default,Select: __webpack_require__(99).default,Input: __webpack_require__(35).default,Button: __webpack_require__(36).default,Footer: __webpack_require__(102).default})
+installComponents(component, {Header: __webpack_require__(100).default,MainMenu: __webpack_require__(101).default,Input: __webpack_require__(36).default,Select: __webpack_require__(99).default,Input: __webpack_require__(36).default,Button: __webpack_require__(35).default,PopupRegisterSuccess: __webpack_require__(126).default,Footer: __webpack_require__(102).default})
 
 
 /***/ })

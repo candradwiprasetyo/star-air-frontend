@@ -11,6 +11,12 @@
         flagNumber: null,
         isAgreeOffer: false,
         isAgreeTnc: false,
+        errorMessage: {
+          email: null,
+          mobile: null,
+        },
+        isPopupSuccess: false,
+        popupSuccessEmail: null,
       };
     },
     methods: {
@@ -28,23 +34,54 @@
           this.isButtonEnabled = false
         }
       },
+      clear() {
+        this.firstName = null;
+        this.lastName = null;
+        this.phoneNumber = null;
+        this.emailAddress = null;
+        this.errorMessage.email = null;
+        this.errorMessage.mobile = null;
+      },
       createAccount() {
         if (this.isButtonEnabled) {
           let formData = new FormData();
           formData.append('first_name', this.firstName);
+          formData.append('token', this.$config.myToken);
           formData.append('last_name', this.lastName);
           formData.append('mobile', this.phoneNumber);
           formData.append('email', this.emailAddress);
 
           this.$axios.$post('/member/add-member ', formData)
             .then( (response) => {
-              console.log(response)
+              if (response.err_num == '0') {
+                this.popupSuccessEmail = this.emailAddress;
+                this.clear();
+                this.isPopupSuccess = true;
+              } else {
+                if (response.err_str) {
+                  if (response.err_str.email) {
+                    this.errorMessage.email = response.err_str.email[0];
+                  } else {
+                    this.errorMessage.email = response.err_str;
+                  }
+                } else {
+                  this.errorMessage.email = null;
+                }
+                if (response.err_str.mobile) {
+                  this.errorMessage.mobile = response.err_str.mobile[0];
+                } else {
+                  this.errorMessage.mobile = null;
+                }
+              }
             })
             .catch(function (error) {
               console.log(error)
             })
         }
       },
+      closePopupSuccess() {
+        this.isPopupSuccess = false;
+      }
     },
     mounted() {},
     watch: {
@@ -76,7 +113,7 @@
         semper neque lobortis. Donec sit amet eros leo. Sed lacinia vestibulum
         lorem, vel imperdiet ipsum.
       </div>
-      <div class="block p-6 mt-10 md:hidden bg-light-blue rounded-xl">
+      <div class="block p-6 my-10 md:hidden bg-light-blue rounded-xl">
         <div class="text-lg font-semibold text-grayscale-900">
           New Member Benefits
         </div>
@@ -89,7 +126,7 @@
           </ul>
         </div>
       </div>
-      <div class="flex items-start mt-6 md:mt-16 gap-x-8">
+      <div class="flex items-start mt-6 md:mt-16 gap-x-8">   
         <div class="md:w-2/3">
           <div class="flex">
             <div class="flex-1 mt-6 md:mt-0">
@@ -108,6 +145,7 @@
             </div>
           </div>
           <Input label="Email Address" customClass="mt-6" v-model="emailAddress" />
+          <span v-if="errorMessage.email" class="text-xs text-alert-900">{{ errorMessage.email }}</span>
           <div class="flex mt-6">
             <div class="flex-none w-16">
               <Select label="" border="border rounded-l-lg" v-model="flagNumber" />
@@ -116,6 +154,7 @@
               <Input label="Phone" border="border rounded-r-lg" v-model="phoneNumber" />
             </div>
           </div>
+          <span v-if="errorMessage.mobile" class="text-xs text-alert-900">{{ errorMessage.mobile }}</span>
           <div class="flex mt-10 gap-x-4">
             <div class="flex-none">
               <input
@@ -173,6 +212,11 @@
         </div>
       </div>
     </div>
+    <PopupRegisterSuccess 
+      :email="popupSuccessEmail"
+      @close-popup="closePopupSuccess"
+      v-if="isPopupSuccess"
+    />
     <Footer />
   </div>
 </template>

@@ -353,7 +353,7 @@ var component = Object(componentNormalizer["a" /* default */])(
 /* harmony default export */ var MainMenu = __webpack_exports__["default"] = (component.exports);
 
 /* nuxt-component-imports */
-installComponents(component, {Button: __webpack_require__(36).default})
+installComponents(component, {Button: __webpack_require__(35).default})
 
 
 /***/ }),
@@ -365,7 +365,7 @@ module.exports = "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQi
 
 /***/ }),
 
-/***/ 36:
+/***/ 35:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";

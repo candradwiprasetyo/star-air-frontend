@@ -1,4 +1,4 @@
-exports.ids = [36,12,13,14,21];
+exports.ids = [37,12,13,14,21];
 exports.modules = {
 
 /***/ 100:
@@ -457,7 +457,7 @@ var component = Object(componentNormalizer["a" /* default */])(
 /* harmony default export */ var MainMenu = __webpack_exports__["default"] = (component.exports);
 
 /* nuxt-component-imports */
-installComponents(component, {Button: __webpack_require__(36).default})
+installComponents(component, {Button: __webpack_require__(35).default})
 
 
 /***/ }),
@@ -629,7 +629,7 @@ var component = Object(componentNormalizer["a" /* default */])(
 
 /***/ }),
 
-/***/ 139:
+/***/ 140:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -684,7 +684,7 @@ var component = Object(componentNormalizer["a" /* default */])(
 /* harmony default export */ var redem_points = __webpack_exports__["default"] = (component.exports);
 
 /* nuxt-component-imports */
-installComponents(component, {Header: __webpack_require__(100).default,MainMenu: __webpack_require__(101).default,Button: __webpack_require__(36).default,Footer: __webpack_require__(102).default})
+installComponents(component, {Header: __webpack_require__(100).default,MainMenu: __webpack_require__(101).default,Button: __webpack_require__(35).default,Footer: __webpack_require__(102).default})
 
 
 /***/ }),
@@ -696,7 +696,7 @@ module.exports = "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQi
 
 /***/ }),
 
-/***/ 36:
+/***/ 35:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";

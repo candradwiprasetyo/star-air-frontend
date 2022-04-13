@@ -118,6 +118,10 @@ body {
     color: #224CA1;
   }
 
+  .text-alert-900 {
+    color: #B92622;
+  }
+
   /* ---------------border color------------- */
 
   .border-secondary-700 {
