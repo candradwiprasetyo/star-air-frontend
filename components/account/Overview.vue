@@ -8,7 +8,7 @@
       </div>
       <div class="p-6 overflow-hidden">
         <div class="flex mb-4">
-          <div class="flex-1 text-lg font-semibold font-noto-sans text-grayscale-900">Overview</div>
+          <div class="flex-1 text-lg font-semibold font-noto-sans text-grayscale-900">Points Latest Activities</div>
           <div class="flex-1 font-semibold text-right font-noto-sans text-secondary-900">Read More ></div>
         </div>
         <div
@@ -31,10 +31,10 @@
               </tr>
             </thead>
             <tbody>
-              <tr v-for="index in 5" :key="index">
-                <td>19 November 2021</td>
-                <td>Transfer Points for Plus (+)</td>
-                <td>+1000</td>
+              <tr v-for="(data, index) in overviewData" :key="index">
+                <td>{{ data.entry_date }}</td>
+                <td>{{ data.action }}</td>
+                <td>{{ data.points }}</td>
               </tr>
             </tbody>
             <tfoot>
@@ -50,7 +50,37 @@
 </template>
 
 <script>
+import cookie from 'js-cookie'
 export default {
   name: "AccountOverview",
+  data() {
+    return {
+      userData: [],
+      overviewData: [],
+    }
+  },
+  methods: {
+    loadUser() {
+      let userData = (cookie.get('star_air_login')) ? JSON.parse(cookie.get('star_air_login')) : '';
+      this.userData = userData;
+      this.loadData();
+    },
+    loadData() {
+      let formDataDetail = new FormData();
+      formDataDetail.append('member_email', this.userData.email);
+      formDataDetail.append('token', this.$config.myToken);
+
+      this.$axios.$post('/member/get-member-points', formDataDetail)
+        .then( (response) => {
+          this.overviewData = response.result;
+        })
+        .catch(function (error) {
+          console.log(error)
+        })
+    },
+  },
+  mounted() {
+    this.loadUser();
+  },
 };
 </script>
