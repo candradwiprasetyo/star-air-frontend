@@ -26,27 +26,6 @@
   "Select": {
     "description": "Auto imported from components/Select.vue"
   },
-  "HomepageAdvancedSearch": {
-    "description": "Auto imported from components/homepage/AdvancedSearch.vue"
-  },
-  "HomepageTabBook": {
-    "description": "Auto imported from components/homepage/TabBook.vue"
-  },
-  "HomepageTabFlightInfo": {
-    "description": "Auto imported from components/homepage/TabFlightInfo.vue"
-  },
-  "HomepageTabMyTrip": {
-    "description": "Auto imported from components/homepage/TabMyTrip.vue"
-  },
-  "RedemPointsBookFlight": {
-    "description": "Auto imported from components/redemPoints/BookFlight.vue"
-  },
-  "RedemPointsExtraBaggage": {
-    "description": "Auto imported from components/redemPoints/ExtraBaggage.vue"
-  },
-  "RedemPointsPartnerPoints": {
-    "description": "Auto imported from components/redemPoints/PartnerPoints.vue"
-  },
   "AccountBookingHistory": {
     "description": "Auto imported from components/account/BookingHistory.vue"
   },
@@ -74,10 +53,34 @@
   "AccountStarPoints": {
     "description": "Auto imported from components/account/StarPoints.vue"
   },
+  "AccountStarPointsBackup": {
+    "description": "Auto imported from components/account/StarPointsBackup.vue"
+  },
   "AccountUpgradeMembership": {
     "description": "Auto imported from components/account/UpgradeMembership.vue"
   },
   "AccountUserProfile": {
     "description": "Auto imported from components/account/UserProfile.vue"
+  },
+  "HomepageAdvancedSearch": {
+    "description": "Auto imported from components/homepage/AdvancedSearch.vue"
+  },
+  "HomepageTabBook": {
+    "description": "Auto imported from components/homepage/TabBook.vue"
+  },
+  "HomepageTabFlightInfo": {
+    "description": "Auto imported from components/homepage/TabFlightInfo.vue"
+  },
+  "HomepageTabMyTrip": {
+    "description": "Auto imported from components/homepage/TabMyTrip.vue"
+  },
+  "RedemPointsBookFlight": {
+    "description": "Auto imported from components/redemPoints/BookFlight.vue"
+  },
+  "RedemPointsExtraBaggage": {
+    "description": "Auto imported from components/redemPoints/ExtraBaggage.vue"
+  },
+  "RedemPointsPartnerPoints": {
+    "description": "Auto imported from components/redemPoints/PartnerPoints.vue"
   }
 }

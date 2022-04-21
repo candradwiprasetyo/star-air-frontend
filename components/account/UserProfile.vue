@@ -6,8 +6,8 @@
           <div class="text-lg font-semibold font-noto-sans text-grayscale-900">User Profile</div>
         </div>
       </div>
-      <div v-for="user in dataUser" :index="user.id">
-        <div class="flex items-center p-6 overflow-hidden border-b cursor-pointer bg-grayscale-50" @click="chooseUser(user.id)">
+      <div v-for="(user, index) in profileData" :index="index">
+        <div class="flex items-center p-6 overflow-hidden border-b cursor-pointer bg-grayscale-50" @click="chooseUser(index)">
           <div class="flex-none">
             <img
               src="~/assets/images/user.png"
@@ -43,27 +43,24 @@
             />
           </div>
         </div>
-        <div class="p-6" v-if="user.id==activeUser">
+        <div class="p-6" v-if="index==activeUser">
           <div class="pb-6 border-b">
             <div class="font-semibold text-black font-noto-sans">Contact Details</div>
             <div class="flex mt-6">
               <div class="flex-1">
                 <div class="mb-1 text-xs text-grayscale-400">Address</div>
                 <div class="text-grayscale-900">
-                  Shop No 1/ee, Chhotani Bldg, <br>
-                  Proctor Road, Grant Road(e) <br>
-                  Mumbai 400004 <br>
-                  Maharashtra India
+                  {{ user.address }}
                 </div>
               </div>
               <div class="flex-1">
                 <div class="mb-1 text-xs text-grayscale-400">Email</div>
                 <div class="text-grayscale-900">
-                  chanda.gauri@website.com
+                  {{ user.email }}
                 </div>
                 <div class="mt-8 mb-1 text-xs text-grayscale-400">Phone</div>
                 <div class="text-grayscale-900">
-                  02223887986
+                  {{ user.mobile }}
                 </div>
               </div>
             </div>
@@ -74,21 +71,21 @@
               <div class="flex-1">
                 <div class="mb-1 text-xs text-grayscale-400">Member ID</div>
                 <div class="text-grayscale-900">
-                  FLY0098213
+                  {{ user.member_id }}
                 </div>
                 <div class="mt-8 mb-1 text-xs text-grayscale-400">Type of Member</div>
                 <div class="text-grayscale-900">
-                  Silver Member
+                  {{ user.member_level }} Member
                 </div>
               </div>
               <div class="flex-1">
                 <div class="mb-1 text-xs text-grayscale-400">Star Points</div>
                 <div class="text-grayscale-900">
-                  5000 Points
+                  {{ user.avb_point }} Points
                 </div>
                 <div class="mt-8 mb-1 text-xs text-grayscale-400">Credit Account</div>
                 <div class="text-grayscale-900">
-                  2300 INR
+                  {{ user.credit_account }} INR
                 </div>
               </div>
             </div>
@@ -99,29 +96,17 @@
               <div class="flex-1">
                 <div class="mb-1 text-xs text-grayscale-400">Nationality</div>
                 <div class="text-grayscale-900">
-                  India
-                </div>
-                <div class="mt-8 mb-1 text-xs text-grayscale-400">National ID Number</div>
-                <div class="text-grayscale-900">
-                  1234134353534
+                  {{ user.nationality }}
                 </div>
                 <div class="mt-8 mb-1 text-xs text-grayscale-400">Passport Number</div>
                 <div class="text-grayscale-900">
-                  R1029389
+                  {{ user.passport_no }}
                 </div>
               </div>
               <div class="flex-1">
-                <div class="mb-1 text-xs text-grayscale-400">Address Number</div>
+                <div class="mb-1 text-xs text-grayscale-400">Passport Expire Date</div>
                 <div class="text-grayscale-900">
-                  56323
-                </div>
-                <div class="mt-8 mb-1 text-xs text-grayscale-400">Expiry Date</div>
-                <div class="text-grayscale-900">
-                  20 November 2025
-                </div>
-                <div class="mt-8 mb-1 text-xs text-grayscale-400">Known Traveler Number</div>
-                <div class="text-grayscale-900">
-                  02223887123123
+                  {{ user.expire_date }}
                 </div>
               </div>
             </div>
@@ -133,23 +118,107 @@
 </template>
 
 <script>
+import cookie from 'js-cookie'
 export default {
   name: "AccountUserProfile",
   data() {
     return {
-      dataUser: [
-        { id: 1, name: 'Chanda Gauri', title: 'You' },
-        { id: 2, name: 'Mr. Javas  Raju', title: 'Family' },
-        { id: 3, name: 'Mrs. Avasa  Ganguly', title: 'Friend' },
-        { id: 4, name: 'Mr. Vishal  Memon', title: 'Family' },
-      ],
-      activeUser: 1,
+      activeUser: null,
+      userData: [],
+      profileData: [],
     }
   },
   methods: {
+    loadUser() {
+      let userData = (cookie.get('star_air_login')) ? JSON.parse(cookie.get('star_air_login')) : '';
+      this.userData = userData;
+      this.createUser();
+    },
+    createUser() {
+      let newUser = {
+        "member_id": this.userData.member_id,
+        "fnf_id": "",
+        "name": this.userData.name,
+        "birthdate": "",
+        "email": this.userData.email
+      }
+      this.profileData.push(newUser);
+      this.createUserDetail(0, this.userData);
+      this.loadData();
+    },
+    createUserDetail(index, data) {
+      this.profileData[index].member_level = data.member_level;
+      this.profileData[index].mobile = data.mobile;
+      this.profileData[index].address = data.address;
+      this.profileData[index].birthdate = data.birthdate;
+      this.profileData[index].gender = data.gender;
+      this.profileData[index].salutation = data.salutation;
+      this.profileData[index].title = data.title;
+      this.profileData[index].nationality = data.nationality;
+      this.profileData[index].passport_no = data.passport_no;
+      this.profileData[index].passport_expire_date = data.passport_expire_date;
+      this.profileData[index].join_date = data.join_date;
+      this.profileData[index].expire_date = data.expire_date;
+      this.profileData[index].avb_point = data.avb_point;
+      this.profileData[index].credit_account = data.credit_account;
+      this.profileData[index].renewal_fee = data.renewal_fee;
+      this.profileData[index].status = data.status;
+    },
+    loadData() {
+      let formDataDetail = new FormData();
+      // formDataDetail.append('member_email', this.userData.email);
+      formDataDetail.append('member_id', 'SQV091');
+      
+      formDataDetail.append('token', this.$config.myToken);
+
+      // get data family and friend
+      this.$axios.$post('/member/get-family-friend', formDataDetail)
+        .then( (response) => {
+          if (response.result.length > 0) {
+            let newUser = '';
+            response.result.forEach((element, index) => {
+              
+              newUser = {
+                "member_id": element.member_id,
+                "fnf_id": element.fnf_id,
+                "name": element.name,
+                "birthdate": element.birthdate,
+                "email": element.email
+              }
+              this.profileData.push(newUser);
+              
+              // get user detail
+              let formDataDetail = new FormData();
+              formDataDetail.append('member_email', element.email);
+              formDataDetail.append('token', this.$config.myToken);
+              index++;
+              
+              this.$axios.$post('/member/get-member-detail', formDataDetail)
+                .then( (responseDetail) => {
+                  this.createUserDetail(index, responseDetail.result);
+                })
+                .catch(function (error) {
+                  console.log(error)
+                })
+
+            });
+          }
+        })
+        .catch(function (error) {
+          console.log(error)
+        })
+    },
     chooseUser(id) {
-      this.activeUser = id;
+      if (this.activeUser != id) {
+        this.activeUser = id;
+      } else {
+        this.activeUser = null;
+      }
+      
     }
-  }
+  },
+  mounted() {
+    this.loadUser();
+  },
 };
 </script>

@@ -6,32 +6,10 @@
           <div class="text-lg font-semibold font-noto-sans text-grayscale-900">Star Points Activity</div>
         </div>
       </div>
-      <div class="mx-6 mt-6 space-y-4 md:space-y-0 md:space-x-4 md:flex">
-        <div class="flex-grow">
-          <div class="space-y-4 md:space-y-0 md:space-x-4 md:flex">
-            <div class="flex-1">
-              <Input label="Keyword" />
-            </div>
-            <div class="flex-1">
-              <Select label="Start Date" />
-            </div>
-            <div class="flex-1">
-              <Select label="End Date" />
-            </div>
-          </div>
-        </div>
-        <div class="flex-none">
-          <Button
-            value="Filter"
-            border="border-2 border-secondary-900"
-            color="text-secondary-900"
-            background="bg-white"
-          />
-        </div>
-      </div>
       <div class="p-6 overflow-hidden">
         <div
           class="
+            mt-6
             md:px-0 md:-mx-0
             px-6
             -mx-6
@@ -46,29 +24,18 @@
                 <th>Date</th>
                 <th>Type</th>
                 <th>Star Points</th>
-                <th>Action</th>
               </tr>
             </thead>
             <tbody>
-              <tr v-for="index in 5" :key="index">
-                <td>19 November 2021</td>
-                <td>Transfer Points for Plus (+)</td>
-                <td>+1000</td>
-                <td class="text-secondary-900">Detail</td>
+              <tr v-for="(data, index) in overviewData" :key="index">
+                <td>{{ data.entry_date }}</td>
+                <td>{{ data.action }}</td>
+                <td>{{ data.points }}</td>
               </tr>
             </tbody>
             <tfoot>
               <tr>
-                <th colspan="2">Show 1 to 5 of 56 entries:</th>
-                <th colspan="2" class="text-right">
-                  <div class="flex justify-end gap-x-10">
-                    <div class="flex-none">1</div>
-                    <div class="flex-none">2</div>
-                    <div class="flex-none">3</div>
-                    <div class="flex-none">4</div>
-                    <div class="flex-none">Next</div>
-                  </div>
-                </th>
+                <th colspan="3">&nbsp;</th>
               </tr>
             </tfoot>
           </table>
@@ -79,7 +46,37 @@
 </template>
 
 <script>
+import cookie from 'js-cookie'
 export default {
-  name: "AccountStarPoints",
+  name: "StarPointActivity",
+  data() {
+    return {
+      userData: [],
+      overviewData: [],
+    }
+  },
+  methods: {
+    loadUser() {
+      let userData = (cookie.get('star_air_login')) ? JSON.parse(cookie.get('star_air_login')) : '';
+      this.userData = userData;
+      this.loadData();
+    },
+    loadData() {
+      let formDataDetail = new FormData();
+      formDataDetail.append('member_email', this.userData.email);
+      formDataDetail.append('token', this.$config.myToken);
+
+      this.$axios.$post('/member/get-member-points', formDataDetail)
+        .then( (response) => {
+          this.overviewData = response.result;
+        })
+        .catch(function (error) {
+          console.log(error)
+        })
+    },
+  },
+  mounted() {
+    this.loadUser();
+  },
 };
 </script>
