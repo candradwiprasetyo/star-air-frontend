@@ -67,21 +67,17 @@
                   </NuxtLink>
                 </div>
               </div>
-              <div v-else class="flex items-center py-6 gap-x-5">
+              <div v-else class="relative flex items-center py-6 cursor-pointer gap-x-5" @click="toggleMenu()">
                 <div class="flex-none">
-                  <NuxtLink to="/account">
-                    <img
-                      src="~/assets/images/user.png"
-                      class="w-6 h-6"
-                      alt="User"
-                    /> 
-                  </NuxtLink> 
+                  <img
+                    src="~/assets/images/user.png"
+                    class="w-6 h-6"
+                    alt="User"
+                  />
                 </div>
                 <div class="flex-grow">
-                  <NuxtLink to="/account">
-                    <div class="font-medium text-grayscale-900">{{ userData.name }}</div>
-                    <div class="text-xs text-primary-600">{{ userData.avb_point }} Star Points</div>
-                  </NuxtLink>
+                  <div class="font-medium text-grayscale-900">{{ userData.name }}</div>
+                  <div class="text-xs text-primary-600">{{ userData.avb_point }} Star Points</div>
                 </div>
                 <div class="flex-none">
                   <img
@@ -89,6 +85,16 @@
                     class="inline-block"
                     alt="arrow bottom"
                   />
+                </div>
+                <div class="absolute w-48 p-6 text-sm font-medium bg-white rounded-lg shadow-xl top-20" v-if="isMenuOpen">
+                  <div class="pb-5">
+                    <NuxtLink to="/account">Overview</NuxtLink>
+                  </div>
+                  <div class="pb-5">User Profile</div>
+                  <div class="pb-5">Booking History</div>
+                  <div class="pb-5">Star Points</div>
+                  <div class="pb-5">Extend Membership</div>
+                  <div @click="goLogout()">Logout</div>
                 </div>
               </div>
             </div>
@@ -133,7 +139,7 @@
       </div>
     </div>
     <div class="h-16 mb-1 md:h-20"></div>
-    <div class="fixed inset-0 z-20 bg-white" v-if="isMenuOpen">
+    <div class="fixed inset-0 z-20 bg-white" v-if="isMenuMobileOpen">
       <div class="flex p-6 text-grayscale-900">
         <div class="flex-1">Menu</div>
         <div class="flex-1">
@@ -182,21 +188,19 @@
           </div>
         </div>
         <div v-else class="flex">
-          <NuxtLink to="/account">
-            <div class="flex items-center flex-1 pt-2">
-              <div class="flex-none">
-                <img
-                  src="~/assets/images/profile-white.svg"
-                  alt="Profile"
-                  class="pr-4"
-                />
-              </div>
-              <div class="flex-grow">
-                <div class="font-semibold font-noto-sans">{{ userData.name }}</div>
-                <div class="text-xs text-grayscale-200">{{ userData.avb_point }} Star Points</div>
-              </div>
+          <div class="flex items-center flex-1 pt-2">
+            <div class="flex-none">
+              <img
+                src="~/assets/images/profile-white.svg"
+                alt="Profile"
+                class="pr-4"
+              />
             </div>
-          </NuxtLink>
+            <div class="flex-grow">
+              <div class="font-semibold font-noto-sans">{{ userData.name }}</div>
+              <div class="text-xs text-grayscale-200">{{ userData.avb_point }} Star Points</div>
+            </div>
+          </div>
           <div class="flex justify-end flex-1 gap-x-4">
             <div class="">
               <Button
@@ -267,6 +271,7 @@ export default {
   data() {
     return {
       dataLogged: null,
+      isMenuMobileOpen: false,
       isMenuOpen: false,
       userData: [],
       isLoading: true,
@@ -280,10 +285,10 @@ export default {
       window.location.href = '/';
     },
     openMenu() {
-      this.isMenuOpen = true;
+      this.isMenuMobileOpen = true;
     },
     closeMenu() {
-      this.isMenuOpen = false;
+      this.isMenuMobileOpen = false;
     },
     loadUser() {
       let userData = (cookie.get('star_air_login')) ? JSON.parse(cookie.get('star_air_login')) : '';
@@ -295,6 +300,9 @@ export default {
       this.$store.commit('SET_LOGIN', false)
       this.$router.push('/')
     },
+    toggleMenu() {
+      this.isMenuOpen = !this.isMenuOpen;
+    }
   },
   
 };

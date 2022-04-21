@@ -80,7 +80,7 @@ export default {
             <AccountUserProfile />
           </div>
           <div v-if="activeMenu==3">
-            <AccountBookingHistoryDetail />
+            <AccountBookingHistory />
           </div>
           <div v-if="activeMenu==4">
             <AccountStarPoints />
