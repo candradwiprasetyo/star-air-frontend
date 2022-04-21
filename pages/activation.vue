@@ -10,6 +10,11 @@
         isButtonEnabled: false,
         errorMessageNotSame: null,
         errorMessage: null,
+        isPasswordMatch: false,
+        clue1: null,
+        clue2: null,
+        clue3: null,
+        clue4: null,
       };
     },
     methods: {
@@ -22,12 +27,27 @@
           this.retypePassword
         ) {
           if (this.password == this.retypePassword) {
-            this.isButtonEnabled = true;
             this.errorMessageNotSame = null;
+            this.isPasswordMatch = true;
           } else {
-            this.isButtonEnabled = false;
             this.errorMessageNotSame = 'Password missmatch';
+            this.isPasswordMatch = false;
           }
+
+          let countError = 0;
+          if (this.password.length > 7) {
+            this.clue1 = 1;
+          } else {
+            this.clue1 = 2;
+            countError++;
+          }
+
+          if (countError == 0 && isPasswordMatch) {
+            this.isButtonEnabled = false;
+          } else {
+            this.isButtonEnabled = true;
+          }
+
         } else {
           this.isButtonEnabled = false
         }
