@@ -6,7 +6,7 @@
           <div class="text-lg font-semibold font-noto-sans text-grayscale-900">Booking History</div>
         </div>
       </div>
-      <div class="mx-6 mt-6 space-y-4 md:space-y-0 md:space-x-4 md:flex">
+      <div class="mx-6 mt-6 space-y-4 md:space-y-0 md:space-x-4 md:flex" v-if="false">
         <div class="flex-grow">
           <div class="space-y-4 md:space-y-0 md:space-x-4 md:flex">
             <div class="flex-1">
@@ -46,20 +46,20 @@
                 <th>Booking Date</th>
                 <th>Origin - Destination</th>
                 <th>Flight Date</th>
-                <th>Flight</th>
+                <th>PNR</th>
                 <th>Action</th>
               </tr>
             </thead>
             <tbody>
-              <tr v-for="index in 5" :key="index">
-                <td>19 Nov 2021, 08:50 AM</td>
-                <td>Mumbai (BOM - Delhi (DEL)</td>
-                <td>19 Nov 2021, 08:50 AM</td>
-                <td>SA-1234</td>
-                <td class="text-secondary-900">Detail</td>
+              <tr v-for="(data, index) in data" :key="index">
+                <td>{{ data.booking_date }}</td>
+                <td>{{ data.route }}</td>
+                <td>{{ data.flight_date }}</td>
+                <td>{{ data.pnr }}</td>
+                <td class="cursor-pointer text-secondary-900" @click="goDetail()">Detail</td>
               </tr>
             </tbody>
-            <tfoot>
+            <!-- <tfoot>
               <tr>
                 <th colspan="2">Show 1 to 5 of 56 entries:</th>
                 <th colspan="3" class="text-right">
@@ -72,7 +72,7 @@
                   </div>
                 </th>
               </tr>
-            </tfoot>
+            </tfoot> -->
           </table>
         </div>
       </div>
@@ -81,7 +81,41 @@
 </template>
 
 <script>
+import cookie from 'js-cookie'
 export default {
-  name: "AccountBookingHistory",
+  name: "BookingHistory",
+  data() {
+    return {
+      userData: [],
+      data: [],
+    }
+  },
+  methods: {
+    loadUser() {
+      let userData = (cookie.get('star_air_login')) ? JSON.parse(cookie.get('star_air_login')) : '';
+      this.userData = userData;
+      this.loadData();
+    },
+    loadData() {
+      let formData = new FormData();
+      // formData.append('member_id', this.userData.member_id);
+      formData.append('member_id', 'SQV091');
+      formData.append('token', this.$config.myToken);
+      formData.append('start_date', '01/04/2022');
+      formData.append('end_date', '30/04/2022');
+
+      this.$axios.$post('/information/get-booking-history', formData)
+        .then( (response) => {
+          this.data = response.result;
+        })
+        .catch(function (error) {
+          console.log(error)
+        })
+    },
+  },
+  mounted() {
+    this.loadUser();
+  },
 };
 </script>
+

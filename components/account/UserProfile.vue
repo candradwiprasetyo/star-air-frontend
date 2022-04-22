@@ -1,14 +1,14 @@
 <template>
   <div>
-    <div class="w-full pb-0 mb-6 overflow-hidden border rounded-xl text-grayscale-500">
+    <div class="w-full pb-0 mb-6 border rounded-xl text-grayscale-500">
       <div class="p-6 border-b">
         <div class="flex">
           <div class="text-lg font-semibold font-noto-sans text-grayscale-900">User Profile</div>
         </div>
       </div>
       <div v-for="(user, index) in profileData" :index="index">
-        <div class="flex items-center p-6 overflow-hidden border-b cursor-pointer bg-grayscale-50" @click="chooseUser(index)">
-          <div class="flex-none">
+        <div class="flex items-center p-6 border-b cursor-pointer bg-grayscale-50" >
+          <div class="flex-none" @click="chooseUser(index)">
             <img
               src="~/assets/images/user.png"
               class="inline-block mr-4"
@@ -16,31 +16,38 @@
               width="30"
             />
           </div>
-          <div class="flex-grow">
+          <div class="flex-grow" @click="chooseUser(index)">
             <div class="mb-1 font-medium text-grayscale-900">{{ user.name }}</div>
-            <div class="text-xs text-grayscale-500">{{ user.title }}</div>
+            <div class="text-xs text-grayscale-500">{{ (index==0) ? 'You' : 'Family' }}</div>
           </div>
-          <div class="flex-none">
-            <img
-              src="~/assets/images/arrow-bottom-gray.svg"
-              class="inline-block mr-4 cursor-pointer"
-              alt="Arrow up"
-              width="24"
-              v-if="user.id==activeUser"
-            />
-            <img
-              src="~/assets/images/arrow-up-gray.svg"
-              class="inline-block mr-4 cursor-pointer"
-              alt="Arrow up"
-              width="24"
-              v-else
-            />
+          <div class="relative flex-none">
+            <span @click="chooseUser(index)">
+              <img
+                src="~/assets/images/arrow-up-gray.svg"
+                class="inline-block mr-4 cursor-pointer"
+                alt="Arrow up"
+                width="24"
+                v-if="index==activeUser"
+              />
+              <img
+                src="~/assets/images/arrow-bottom-gray.svg"
+                class="inline-block mr-4 cursor-pointer"
+                alt="Arrow bottom"
+                width="24"
+                v-else
+              />
+            </span>
             <img
               src="~/assets/images/three-dots.svg"
               class="inline-block cursor-pointer"
               alt="Config"
               width="24"
+              @click="goConfig(index)"
             />
+            <div class="absolute right-0 z-10 p-6 text-sm font-medium bg-white rounded-lg shadow-xl w-60 top-10" v-if="selectedConfig==index">
+              <div class="pb-5" @click="$emit('editProfile', 1)">Edit Profile</div>
+              <div class="">Change Email & Phone</div>
+            </div>
           </div>
         </div>
         <div class="p-6" v-if="index==activeUser">
@@ -126,6 +133,7 @@ export default {
       activeUser: null,
       userData: [],
       profileData: [],
+      selectedConfig: null,
     }
   },
   methods: {
@@ -133,6 +141,13 @@ export default {
       let userData = (cookie.get('star_air_login')) ? JSON.parse(cookie.get('star_air_login')) : '';
       this.userData = userData;
       this.createUser();
+    },
+    goConfig(index) {
+      if (this.selectedConfig == index) {
+        this.selectedConfig = null;
+      } else {
+        this.selectedConfig = index;
+      }
     },
     createUser() {
       let newUser = {
@@ -166,8 +181,8 @@ export default {
     },
     loadData() {
       let formDataDetail = new FormData();
-      // formDataDetail.append('member_email', this.userData.email);
-      formDataDetail.append('member_id', 'SQV091');
+      formDataDetail.append('member_email', this.userData.email);
+      // formDataDetail.append('member_id', 'SQV091');
       
       formDataDetail.append('token', this.$config.myToken);
 
