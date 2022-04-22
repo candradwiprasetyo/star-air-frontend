@@ -28,7 +28,7 @@
 
                 this.$axios.$post('/member/get-member-detail', formDataDetail)
                   .then( (responseDetail) => {
-                    if (response.err_num == '0') {
+                    if (responseDetail.err_num == '0') {
                       this.$store.commit('SET_LOGIN', JSON.stringify(responseDetail.result));
                       cookie.set('star_air_login', JSON.stringify(responseDetail.result));
                       this.$router.push('/');

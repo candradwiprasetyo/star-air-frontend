@@ -7,6 +7,7 @@
       class="w-full border-none outline-none"
       :value="value"
       v-on:input="updateValue($event.target.value)"
+      :readonly="readonly"
     />
     <div class="absolute w-6 h-6 right-3 top-4" v-if="icon">
       <img :src="require('@/assets/images/' + icon)" alt="Search" />
@@ -44,7 +45,11 @@ export default {
     icon: {
       type: String,
       required: false,
-    }
+    },
+    readonly: {
+      type: Boolean,
+      required: false,
+    },
   },
   methods: {
     updateValue: function (value) {

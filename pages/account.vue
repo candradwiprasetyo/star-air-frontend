@@ -20,7 +20,6 @@ export default {
   },
   methods: {
     changeMenu(id) {
-      console.log(id);
       this.activeMenu = id;
     },
     goLogout() {
@@ -105,11 +104,14 @@ export default {
           <div v-if="activeMenu==7">
             <AccountEditProfile 
               :member-id="selectedMemberId"
+              @back-button="changeMenu('2')"
             />
           </div>
           <div v-if="activeMenu==8">
             <AccountEditEmail 
               :member-id="selectedMemberId"
+              :email="userData.email"
+              @back-button="changeMenu('2')"
             />
           </div>
           <div v-if="activeMenu==9">

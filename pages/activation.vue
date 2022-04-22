@@ -28,25 +28,27 @@
         ) {
           if (this.password == this.retypePassword) {
             this.errorMessageNotSame = null;
-            this.isPasswordMatch = true;
+            // this.isPasswordMatch = true;
+            this.isButtonEnabled = true;
           } else {
             this.errorMessageNotSame = 'Password missmatch';
-            this.isPasswordMatch = false;
-          }
-
-          let countError = 0;
-          if (this.password.length > 7) {
-            this.clue1 = 1;
-          } else {
-            this.clue1 = 2;
-            countError++;
-          }
-
-          if (countError == 0 && isPasswordMatch) {
+            // this.isPasswordMatch = false; 
             this.isButtonEnabled = false;
-          } else {
-            this.isButtonEnabled = true;
           }
+
+          // let countError = 0;
+          // if (this.password.length > 7) {
+          //   this.clue1 = 1;
+          // } else {
+          //   this.clue1 = 2;
+          //   countError++;
+          // }
+
+          // if (countError == 0 && this.isPasswordMatch) {
+          //   this.isButtonEnabled = false;
+          // } else {
+          //   this.isButtonEnabled = true;
+          // }
 
         } else {
           this.isButtonEnabled = false

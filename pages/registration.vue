@@ -149,7 +149,7 @@
           <Input label="Email Address" customClass="mt-6" v-model="emailAddress" />
           <span v-if="errorMessage.email" class="text-xs text-alert-900">{{ errorMessage.email }}</span>
           <div class="flex mt-6">
-            <div class="flex-none w-16">
+            <div class="flex-none w-16" v-if="false">
               <Select label="" border="border rounded-l-lg" v-model="flagNumber" />
             </div>
             <div class="flex-grow">

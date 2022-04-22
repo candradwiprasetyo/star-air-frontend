@@ -37,8 +37,20 @@
             <Select label="Gender" />
           </div>
         </div>
-        <div class="mt-10 md:inline-block">
-          <Button value="Submit Change" />
+        <div class="mt-10">
+          <div class="md:inline-block">
+            <Button value="Submit Change" />
+          </div>
+          <div class="md:inline-block">
+            <div class="ml-5" @click="$emit('back-button', 2)">
+              <Button
+                value="Cancel"
+                border="border-2 border-secondary-900"
+                color="text-secondary-900"
+                background="bg-white"
+              />
+            </div>
+          </div>
         </div>
       </div>
     </div>
