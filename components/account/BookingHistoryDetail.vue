@@ -132,7 +132,7 @@
             </tfoot>
           </table>
         </div>
-        <div class="mt-6 text-right">
+        <div class="mt-6 text-right" v-if="false">
           <div class="mb-4 md:mr-4 md:inline-block">
             <Button
               value="Reschedule"
@@ -144,6 +144,16 @@
           <div class="md:inline-block">
             <Button
               value="Refund"
+              border="border-2 border-secondary-900"
+              color="text-secondary-900"
+              background="bg-white"
+            />
+          </div>
+        </div>
+        <div class="mt-6 text-right" >
+          <div class="mb-4 md:mr-4 md:inline-block" @click="$emit('back-to-history', 3)">
+            <Button
+              value="Back"
               border="border-2 border-secondary-900"
               color="text-secondary-900"
               background="bg-white"

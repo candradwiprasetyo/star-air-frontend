@@ -15,10 +15,12 @@ export default {
       ],
       userData: [],
       isLoading: true,
+      selectedMemberId: null,
     };
   },
   methods: {
     changeMenu(id) {
+      console.log(id);
       this.activeMenu = id;
     },
     goLogout() {
@@ -30,6 +32,10 @@ export default {
       let userData = (cookie.get('star_air_login')) ? JSON.parse(cookie.get('star_air_login')) : '';
       this.userData = userData;
       this.isLoading = false;
+    },
+    changeForm(tab, memberId) {
+      this.activeMenu = tab;
+      this.selectedMemberId = memberId;
     },
   },
   mounted() {
@@ -77,10 +83,15 @@ export default {
             <AccountOverview />
           </div>
           <div v-if="activeMenu==2">
-            <AccountUserProfile />
+            <AccountUserProfile 
+              @edit-profile="changeForm"
+              @change-email="changeForm"
+            />
           </div>
           <div v-if="activeMenu==3">
-            <AccountBookingHistory />
+            <AccountBookingHistory 
+              @view-detail-history="changeMenu('11')"
+            />
           </div>
           <div v-if="activeMenu==4">
             <AccountStarPoints />
@@ -92,16 +103,25 @@ export default {
             <AccountChangePassword />
           </div>
           <div v-if="activeMenu==7">
-            <AccountEditProfile />
+            <AccountEditProfile 
+              :member-id="selectedMemberId"
+            />
           </div>
           <div v-if="activeMenu==8">
-            <AccountEditEmail />
+            <AccountEditEmail 
+              :member-id="selectedMemberId"
+            />
           </div>
           <div v-if="activeMenu==9">
             <AccountEditTravelDocument />
           </div>
           <div v-if="activeMenu==10">
             <AccountUpgradeMembership />
+          </div>
+          <div v-if="activeMenu==11">
+            <AccountBookingHistoryDetail 
+              @back-to-history="changeMenu('3')"
+            />
           </div>
         </div>
       </div>

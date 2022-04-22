@@ -56,7 +56,7 @@
                 <td>{{ data.route }}</td>
                 <td>{{ data.flight_date }}</td>
                 <td>{{ data.pnr }}</td>
-                <td class="cursor-pointer text-secondary-900" @click="goDetail()">Detail</td>
+                <td class="cursor-pointer text-secondary-900" @click="$emit('view-detail-history', 11)">Detail</td>
               </tr>
             </tbody>
             <!-- <tfoot>

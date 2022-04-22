@@ -45,8 +45,8 @@
               @click="goConfig(index)"
             />
             <div class="absolute right-0 z-10 p-6 text-sm font-medium bg-white rounded-lg shadow-xl w-60 top-10" v-if="selectedConfig==index">
-              <div class="pb-5" @click="$emit('editProfile', 1)">Edit Profile</div>
-              <div class="">Change Email & Phone</div>
+              <div class="pb-5" @click="$emit('edit-profile', 7, user.member_id)">Edit Profile</div>
+              <div class="" @click="$emit('change-email', 8, user.member_id)">Change Email & Phone</div>
             </div>
           </div>
         </div>
@@ -149,6 +149,9 @@ export default {
         this.selectedConfig = index;
       }
     },
+    // editProfile(id) {
+    //   this.$emit("edit-profile", id);
+    // },
     createUser() {
       let newUser = {
         "member_id": this.userData.member_id,
