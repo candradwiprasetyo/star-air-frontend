@@ -7,6 +7,10 @@ export { default as MainMenu } from '../../components/MainMenu.vue'
 export { default as Pagination } from '../../components/Pagination.vue'
 export { default as PopupRegisterSuccess } from '../../components/PopupRegisterSuccess.vue'
 export { default as Select } from '../../components/Select.vue'
+export { default as HomepageAdvancedSearch } from '../../components/homepage/AdvancedSearch.vue'
+export { default as HomepageTabBook } from '../../components/homepage/TabBook.vue'
+export { default as HomepageTabFlightInfo } from '../../components/homepage/TabFlightInfo.vue'
+export { default as HomepageTabMyTrip } from '../../components/homepage/TabMyTrip.vue'
 export { default as RedemPointsBookFlight } from '../../components/redemPoints/BookFlight.vue'
 export { default as RedemPointsExtraBaggage } from '../../components/redemPoints/ExtraBaggage.vue'
 export { default as RedemPointsPartnerPoints } from '../../components/redemPoints/PartnerPoints.vue'
@@ -22,10 +26,6 @@ export { default as AccountStarPoints } from '../../components/account/StarPoint
 export { default as AccountStarPointsBackup } from '../../components/account/StarPointsBackup.vue'
 export { default as AccountUpgradeMembership } from '../../components/account/UpgradeMembership.vue'
 export { default as AccountUserProfile } from '../../components/account/UserProfile.vue'
-export { default as HomepageAdvancedSearch } from '../../components/homepage/AdvancedSearch.vue'
-export { default as HomepageTabBook } from '../../components/homepage/TabBook.vue'
-export { default as HomepageTabFlightInfo } from '../../components/homepage/TabFlightInfo.vue'
-export { default as HomepageTabMyTrip } from '../../components/homepage/TabMyTrip.vue'
 
 // nuxt/nuxt.js#8607
 function wrapFunctional(options) {

@@ -2,7 +2,7 @@
   <div>
     <div class="fixed z-10 w-full bg-white border-b top-10">
       <div
-        class="container items-center hidden mx-auto min-h-40 text-grayscale-500 md:flex"
+        class="container items-center hidden mx-auto min-h-[90px] text-grayscale-500 md:flex"
       >
         <div class="flex-none">
           <img
@@ -50,8 +50,8 @@
               <span class="align-middle">0 item (s)</span>
             </div>
             <div v-if="!isLoading">
-              <div v-if="userData.length == 0" class="flex items-center py-3 gap-x-5">
-                <div class="w-32 mr-4">
+              <div v-if="userData.length == 0" class="flex items-center py-3 gap-x-2">
+                <div class="w-32">
                   <NuxtLink to="/login">
                     <Button
                       value="Login"
@@ -67,34 +67,34 @@
                   </NuxtLink>
                 </div>
               </div>
-              <div v-else class="relative flex items-center py-6 cursor-pointer gap-x-5" @click="toggleMenu()">
-                <div class="flex-none">
-                  <img
-                    src="~/assets/images/user.png"
-                    class="w-6 h-6"
-                    alt="User"
-                  />
-                </div>
-                <div class="flex-grow">
-                  <div class="font-medium text-grayscale-900">{{ userData.name }}</div>
-                  <div class="text-xs text-primary-600">{{ userData.avb_point }} Star Points</div>
-                </div>
-                <div class="flex-none">
-                  <img
-                    src="~/assets/images/arrow-bottom-gray.svg"
-                    class="inline-block"
-                    alt="arrow bottom"
-                  />
-                </div>
-                <div class="absolute w-48 p-6 text-sm font-medium bg-white rounded-lg shadow-xl top-20" v-if="isMenuOpen">
-                  <div class="pb-5">
-                    <NuxtLink to="/account">Overview</NuxtLink>
+              <div v-else class="relative">
+                <div @click="toggleMenu()" class="flex items-center py-6 cursor-pointer gap-x-5">
+                  <div class="flex-none">
+                    <img
+                      src="~/assets/images/user.png"
+                      class="w-6 h-6"
+                      alt="User"
+                    />
                   </div>
-                  <div class="pb-5">User Profile</div>
-                  <div class="pb-5">Booking History</div>
-                  <div class="pb-5">Star Points</div>
-                  <div class="pb-5">Extend Membership</div>
-                  <div @click="goLogout()">Logout</div>
+                  <div class="flex-grow">
+                    <div class="font-medium text-grayscale-900">{{ userData.name }}</div>
+                    <div class="text-xs text-primary-600">{{ userData.avb_point }} Star Points</div>
+                  </div>
+                  <div class="flex-none">
+                    <img
+                      src="~/assets/images/arrow-bottom-gray.svg"
+                      class="inline-block"
+                      alt="arrow bottom"
+                    />
+                  </div>
+                </div>
+                <div class="absolute w-48 text-sm font-medium bg-white rounded-lg shadow-xl top-20" v-if="isMenuOpen">
+                  <div class="px-5 py-3 cursor-pointer" @click="goToUrl('overview')">Overview</div>
+                  <div class="px-5 py-3 cursor-pointer" @click="goToUrl('user-profile')">User Profile</div>
+                  <div class="px-5 py-3 cursor-pointer" @click="goToUrl('booking-history')">Booking History</div>
+                  <div class="px-5 py-3 cursor-pointer" @click="goToUrl('star-points')">Star Points</div>
+                  <div class="px-5 py-3 cursor-pointer" @click="goToUrl('extend-membership')">Extend Membership</div>
+                  <div @click="goLogout()" class="px-5 pt-3 pb-5 cursor-pointer">Logout</div>
                 </div>
               </div>
             </div>
@@ -302,7 +302,10 @@ export default {
     },
     toggleMenu() {
       this.isMenuOpen = !this.isMenuOpen;
-    }
+    },
+    goToUrl(url) {
+      window.location.href = '/account?page=' + url;
+    },
   },
   
 };

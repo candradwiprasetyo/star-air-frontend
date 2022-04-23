@@ -36,9 +36,21 @@ export default {
       this.activeMenu = tab;
       this.selectedMemberId = memberId;
     },
+    getPage() {
+      let page = (this.$route.query.page) ? this.$route.query.page : '';
+      switch(page) {
+        case 'overview': this.activeMenu = 1; break;
+        case 'user-profile': this.activeMenu = 2; break;
+        case 'booking-history': this.activeMenu = 3; break;
+        case 'star-points': this.activeMenu = 4; break;
+        case 'extend-membership': this.activeMenu = 5; break;
+        case 'change-password': this.activeMenu = 6; break;
+      }
+    }
   },
   mounted() {
     this.loadUser();
+    this.getPage();
   },
 };
 </script>

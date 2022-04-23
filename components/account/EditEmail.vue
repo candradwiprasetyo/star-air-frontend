@@ -7,6 +7,14 @@
         </div>
       </div>
       <div class="p-6 overflow-hidden">
+        <div class="p-3 my-6 rounded bg-alert text-alert-900" v-if="errorMessage">
+          <img
+            src="~/assets/images/alert-info.svg"
+            class="inline-block align-middle"
+            alt="alert"
+          />
+          <span class="inline-block align-middle">{{ errorMessage }}</span>
+        </div>
         <Input 
           label="Email Address"  
           v-model="email"
@@ -48,13 +56,11 @@ export default {
     return {
       userData: [],
       phone: null,
+      email: null,
+      errorMessage: null,
     };
   },
   props: {
-    email: {
-      type: String,
-      required: true,
-    },
     memberId: {
       type: String,
       required: true,
@@ -71,8 +77,11 @@ export default {
 
       this.$axios.$post('/member/update-member', formData)
         .then( (response) => {
-          console.log(response)
-          this.$emit('back-button', 2);
+          if (response.err_num == '0') {
+            this.$emit('back-button', 2);
+          } else {
+            this.errorMessage = 'Simpan error';
+          }
         })
         .catch(function (error) {
           console.log(error)
@@ -81,13 +90,14 @@ export default {
     loadUser() {
       let formData = new FormData();
       formData.append('token', this.$config.myToken);
-      formData.append('member_email', this.email);
+      formData.append('member_id', this.memberId);
 
       this.$axios.$post('/member/get-member-detail', formData)
         .then( (response) => {
           if (response.err_num == '0') {
             this.userData = response.result;
             this.phone = this.userData.mobile;
+            this.email = this.userData.email;
           }
         })
         .catch(function (error) {

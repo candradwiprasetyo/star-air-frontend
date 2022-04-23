@@ -2,28 +2,58 @@
 export default {
   name: "ForgotPassword",
   data() {
-    return {};
+      return {
+        emailAddress: null,
+        isButtonEnabled: false,
+        errorMessage: null,
+      };
+    },
+  methods: {
+    goForgotPassword() {
+      if (this.isButtonEnabled) {
+        let formData = new FormData();
+        formData.append('username', this.emailAddress);
+        formData.append('token', this.$config.myToken);
+        formData.append('password', this.password);
+
+        this.$axios.$post('/member/reset-password ', formData)
+          .then( (response) => {
+            if (response.err_num == '0') {
+              
+            } else {
+              
+            }
+          })
+          .catch(function (error) {
+            console.log(error)
+          })
+      }
+    },
+    formChanged() {
+      if (
+        this.emailAddress
+      ) {
+        this.isButtonEnabled = true
+      } else {
+        this.isButtonEnabled = false
+      }
+    },
   },
-  methods: {},
   mounted() {},
+  watch: {
+    emailAddress: function(val) { this.formChanged() }
+  }
 };
 </script>
 
 <template>
   <div>
-    <div class="w-full bg-primary-600 absolute top-0 hidden md:inline">
+    <div class="absolute top-0 hidden w-full bg-primary-600 md:inline">
       <div
-        class="
-          container
-          mx-auto
-          h-10
-          text-grayscale-50 text-xs
-          flex
-          items-center
-        "
+        class="container flex items-center h-10 mx-auto text-xs text-grayscale-50"
       >
-        <div class="w-full hidden md:flex">
-          <div class="flex-1 flex items-center">
+        <div class="hidden w-full md:flex">
+          <div class="flex items-center flex-1">
             <span class="pr-3 font-medium">News</span>
             <span
               ><img
@@ -36,7 +66,7 @@ export default {
               outbreak</span
             >
           </div>
-          <div class="flex-1 text-right hidden md:inline">
+          <div class="flex-1 hidden text-right md:inline">
             <span class="pr-3"
               ><img
                 src="~/assets/images/globe.svg"
@@ -54,11 +84,11 @@ export default {
         </div>
       </div>
     </div>
-    <div class="w-full py-5 md:py-0 h-auto md:h-screen flex">
-      <div class="flex-1 bg-cover hidden md:inline bg-forgot-password"></div>
-      <div class="flex-1 bg-white flex flex-wrap content-center justify-center">
-        <div class="w-full md:w-1/2 mx-6 md:mx-auto">
-          <div class="absolute inline md:hidden top-0 right-0 mt-5 mr-5">
+    <div class="flex w-full h-auto py-5 md:py-0 md:h-screen">
+      <div class="flex-1 hidden bg-cover md:inline bg-forgot-password"></div>
+      <div class="flex flex-wrap content-center justify-center flex-1 bg-white">
+        <div class="w-full mx-6 md:w-1/2 md:mx-auto">
+          <div class="absolute top-0 right-0 inline mt-5 mr-5 md:hidden">
             <img
               src="~/assets/images/close.svg"
               class="inline-block cursor-pointer"
@@ -66,7 +96,7 @@ export default {
             />
           </div>
           <a href="/login">
-            <div class="text-grayscale-900 flex items-center cursor-pointer">
+            <div class="flex items-center cursor-pointer text-grayscale-900">
               <img
                 src="~/assets/images/arrow-left.svg"
                 class="inline-block mr-2"
@@ -75,35 +105,26 @@ export default {
               Back to Login
             </div>
           </a>
-          <div class="font-semibold text-3xl mt-16">Forgot Your Password?</div>
+          <div class="mt-16 text-3xl font-semibold">Forgot Your Password?</div>
           <div class="mt-2 text-lg text-grayscale-500 font-noto-sans">
             Don’t worry, enter your registered email address to reset your
             password.
           </div>
-          <div class="mt-10 rounded-lg border p-3">
-            <div class="text-xs text-grayscale-400">Email</div>
-            <input
-              type="text"
-              placeholder="Fill your email here"
-              class="outline-none border-none w-full"
-            />
-          </div>
-          <div class="mt-1 relative text-grayscale-400 text-2xs">
+          <Input
+            placeholder="Fill your email here"
+            label="Email"
+            customClass="mt-10"
+            v-model="emailAddress"
+          />
+          <div class="relative mt-1 text-grayscale-400 text-2xs">
             We will send an email containing a link to reset your password.
           </div>
-          <div
-            class="
-              mt-10
-              bg-primary-600
-              text-white text-center
-              py-4
-              rounded-lg
-              font-medium
-              cursor-pointer
-            "
-          >
-            Submit
-          </div>
+          <Button 
+            value="Submit" 
+            customClass="mt-10"
+            :enabled="isButtonEnabled" 
+            @action="goForgotpassword"
+          />
         </div>
       </div>
     </div>

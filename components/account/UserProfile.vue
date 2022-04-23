@@ -149,9 +149,6 @@ export default {
         this.selectedConfig = index;
       }
     },
-    // editProfile(id) {
-    //   this.$emit("edit-profile", id);
-    // },
     createUser() {
       let newUser = {
         "member_id": this.userData.member_id,
@@ -184,8 +181,8 @@ export default {
     },
     loadData() {
       let formDataDetail = new FormData();
-      formDataDetail.append('member_email', this.userData.email);
-      // formDataDetail.append('member_id', 'SQV091');
+      // formDataDetail.append('member_email', this.userData.email);
+      formDataDetail.append('member_id', 'SQV091');
       
       formDataDetail.append('token', this.$config.myToken);
 
