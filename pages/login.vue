@@ -62,7 +62,11 @@
         }
       },
     },
-    mounted() {},
+    mounted() {
+      if (cookie.get('star_air_login')) {
+        this.$router.push('/')
+      }
+    },
     watch: {
       emailAddress: function(val) { this.formChanged() },
       password: function(val) { this.formChanged() },

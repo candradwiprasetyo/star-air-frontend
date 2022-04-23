@@ -1,4 +1,5 @@
 <script lang="ts">
+  import cookie from 'js-cookie'
   export default {
     name: "Registration",
     data() {
@@ -85,7 +86,11 @@
         this.isPopupSuccess = false;
       }
     },
-    mounted() {},
+    mounted() {
+      if (cookie.get('star_air_login')) {
+        this.$router.push('/')
+      }
+    },
     watch: {
       firstName: function(val) { this.formChanged() },
       lastName: function(val) { this.formChanged() },

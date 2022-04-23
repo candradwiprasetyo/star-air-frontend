@@ -1,49 +1,65 @@
 <script lang="ts">
-export default {
-  name: "ForgotPassword",
-  data() {
-      return {
-        emailAddress: null,
-        isButtonEnabled: false,
-        errorMessage: null,
-      };
-    },
-  methods: {
-    goForgotPassword() {
-      if (this.isButtonEnabled) {
-        let formData = new FormData();
-        formData.append('username', this.emailAddress);
-        formData.append('token', this.$config.myToken);
-        formData.append('password', this.password);
+  import cookie from 'js-cookie'
+  export default {
+    name: "ForgotPassword",
+    data() {
+        return {
+          emailAddress: null,
+          isButtonEnabled: false,
+          errorMessage: null,
+          successMessage: null,
+        };
+      },
+    methods: {
+      goForgotPassword() {
+        if (this.isButtonEnabled) {
+          let formData = new FormData();
+          formData.append('member_email', this.emailAddress);
+          formData.append('token', this.$config.myToken);
 
-        this.$axios.$post('/member/reset-password ', formData)
-          .then( (response) => {
-            if (response.err_num == '0') {
-              
-            } else {
-              
-            }
-          })
-          .catch(function (error) {
-            console.log(error)
-          })
+          this.$axios.$post('/member/reset-password', formData)
+            .then( (response) => {
+              if (response.err_num == '0') {
+                this.errorMessage = null;
+                this.successMessage = response.result[0];
+                this.emailAddress = null;
+              } else {
+                this.successMessage = null;
+                if (response.err_str) {
+                  if (response.err_str.member_email) {
+                    this.errorMessage = response.err_str.member_email[0];
+                  } else {
+                    this.errorMessage = response.err_str;
+                  }
+                } else {
+                  this.errorMessage = null;
+                }
+              }
+            })
+            .catch(function (error) {
+              console.log(error)
+            })
+        }
+      },
+      formChanged() {
+        if (
+          this.emailAddress
+        ) {
+          this.isButtonEnabled = true
+        } else {
+          this.isButtonEnabled = false
+        }
+      },
+    },
+    mounted() {
+      if (cookie.get('star_air_login')) {
+        this.$router.push('/')
       }
     },
-    formChanged() {
-      if (
-        this.emailAddress
-      ) {
-        this.isButtonEnabled = true
-      } else {
-        this.isButtonEnabled = false
-      }
-    },
-  },
-  mounted() {},
-  watch: {
-    emailAddress: function(val) { this.formChanged() }
-  }
-};
+    watch: {
+      emailAddress: function(val) { this.formChanged() }
+    }
+  };
 </script>
 
 <template>
@@ -106,14 +122,22 @@ export default {
             </div>
           </a>
           <div class="mt-16 text-3xl font-semibold">Forgot Your Password?</div>
-          <div class="mt-2 text-lg text-grayscale-500 font-noto-sans">
+          <div class="mt-2 mb-10 text-lg text-grayscale-500 font-noto-sans">
             Don’t worry, enter your registered email address to reset your
             password.
           </div>
+          <Alert 
+            v-if="errorMessage" 
+            :message="errorMessage"
+          />
+          <Alert 
+            v-if="successMessage" 
+            :message="successMessage"
+            :type="'success'"
+          />
           <Input
             placeholder="Fill your email here"
             label="Email"
-            customClass="mt-10"
             v-model="emailAddress"
           />
           <div class="relative mt-1 text-grayscale-400 text-2xs">
@@ -123,7 +147,7 @@ export default {
             value="Submit" 
             customClass="mt-10"
             :enabled="isButtonEnabled" 
-            @action="goForgotpassword"
+            @action="goForgotPassword"
           />
         </div>
       </div>
