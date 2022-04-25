@@ -298,7 +298,7 @@ export default {
     goLogout() {
       cookie.remove('star_air_login')
       this.$store.commit('SET_LOGIN', false)
-      this.$router.push('/')
+      window.location.href = '/';
     },
     toggleMenu() {
       this.isMenuOpen = !this.isMenuOpen;

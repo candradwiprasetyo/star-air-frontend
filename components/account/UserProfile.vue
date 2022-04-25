@@ -181,8 +181,8 @@ export default {
     },
     loadData() {
       let formDataDetail = new FormData();
-      // formDataDetail.append('member_email', this.userData.email);
-      formDataDetail.append('member_id', 'SQV091');
+      formDataDetail.append('member_email', this.userData.email);
+      // formDataDetail.append('member_id', 'SQV091');
       
       formDataDetail.append('token', this.$config.myToken);
 
