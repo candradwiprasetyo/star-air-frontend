@@ -15,6 +15,7 @@ import { createStore } from './store.js'
 
 import nuxt_plugin_plugin_1288c998 from 'nuxt_plugin_plugin_1288c998' // Source: ./components/plugin.js (mode: 'all')
 import nuxt_plugin_axios_60b4176c from 'nuxt_plugin_axios_60b4176c' // Source: ./axios.js (mode: 'all')
+import nuxt_plugin_vuecalendar_027fa8fc from 'nuxt_plugin_vuecalendar_027fa8fc' // Source: ../plugins/vue-calendar (mode: 'client')
 
 // Component: <ClientOnly>
 Vue.component(ClientOnly.name, ClientOnly)
@@ -217,6 +218,10 @@ async function createApp(ssrContext, config = {}) {
 
   if (typeof nuxt_plugin_axios_60b4176c === 'function') {
     await nuxt_plugin_axios_60b4176c(app.context, inject)
+  }
+
+  if (process.client && typeof nuxt_plugin_vuecalendar_027fa8fc === 'function') {
+    await nuxt_plugin_vuecalendar_027fa8fc(app.context, inject)
   }
 
   // Lock enablePreview in context

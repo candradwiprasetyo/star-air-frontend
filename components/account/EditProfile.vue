@@ -31,7 +31,26 @@
         </div>
         <div class="mt-6 md:flex gap-x-6">
           <div class="flex-1">
-            <Select label="Birth of Date" />
+            <div class="h-full px-3 py-2 border rounded-lg">
+              <div class="mb-1 text-xs text-grayscale-400">Passport Expiry Date</div>
+              <client-only>
+                <v-date-picker 
+                  v-model="passportExpiryDate"
+                  :popover="{ visibility: 'click' }"
+                >
+                  <template v-slot="{ inputValue, inputEvents }">
+                    <input
+                      class="w-full outline-none"
+                      :value="inputValue"
+                      v-on="inputEvents"
+                      placeholder="dd/mm/yyyy"
+                      readonly
+                    />
+                  </template>
+                </v-date-picker>
+              </client-only>
+            </div>
+            
           </div>
           <div class="flex-1 mt-6 md:mt-0">
             <Select label="Gender" />
@@ -60,6 +79,66 @@
 <script>
 export default {
   name: "AccountEditProfile",
-  methods: {}
+  data() {
+    return {
+      userData: [],
+      address: null,
+      phone: null,
+      email: null,
+      country: null,
+      passportNumber: null,
+      errorMessage: null,
+      passportExpiryDate: null,
+      countryData: [],
+    };
+  },
+  props: {
+    memberId: {
+      type: String,
+      required: true,
+    },
+  },
+  methods: {
+    editEmail() {
+      let formData = new FormData();
+      formData.append('token', this.$config.myToken);
+      formData.append('member_email', this.userData.email);
+      formData.append('mobile', this.phone);
+      formData.append('nationality', this.userData.nationality);
+      formData.append('address', this.userData.address);
+
+      this.$axios.$post('/member/update-member', formData)
+        .then( (response) => {
+          if (response.err_num == '0') {
+            this.$emit('back-button', 2);
+          } else {
+            this.errorMessage = 'Simpan error';
+          }
+        })
+        .catch(function (error) {
+          console.log(error)
+        })
+    },
+    loadUser() {
+      let formData = new FormData();
+      formData.append('token', this.$config.myToken);
+      formData.append('member_id', this.memberId);
+
+      this.$axios.$post('/member/get-member-detail', formData)
+        .then( (response) => {
+          if (response.err_num == '0') {
+            this.userData = response.result;
+            this.phone = this.userData.mobile;
+            this.email = this.userData.email;
+          }
+        })
+        .catch(function (error) {
+          console.log(error)
+        })
+    },
+  },
+  mounted() {
+    this.loadUser();
+  },
 };
 </script>
