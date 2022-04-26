@@ -220,6 +220,8 @@
       </div>
     </div>
     <PopupRegisterSuccess 
+      :title="'Verify Your Email Address'"
+      :message="'In order to complete your registration, please verifiy your email address. We have sent an email with a link to '"
       :email="popupSuccessEmail"
       @close-popup="closePopupSuccess"
       v-if="isPopupSuccess"

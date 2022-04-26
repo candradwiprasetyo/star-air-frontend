@@ -1,4 +1,4 @@
-exports.ids = [36,13,14,21];
+exports.ids = [36,13,14,21,25];
 exports.modules = Array(35).concat([
 /* 35 */
 /***/ (function(module, exports) {
@@ -693,7 +693,107 @@ module.exports = "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjUiIGhlaWdodD0iMjQi
 /* 106 */,
 /* 107 */,
 /* 108 */,
-/* 109 */,
+/* 109 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+// ESM COMPAT FLAG
+__webpack_require__.r(__webpack_exports__);
+
+// CONCATENATED MODULE: ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/@nuxt/components/dist/loader.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./components/PopupRegisterSuccess.vue?vue&type=template&id=784a7ef4&
+var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',[_vm._ssrNode("<div class=\"fixed inset-0 z-30 bg-black opacity-75\"></div> "),_vm._ssrNode("<div class=\"fixed inset-0 z-30 flex items-center\">","</div>",[_vm._ssrNode("<div class=\"mx-auto bg-white w-[600px] rounded-lg\">","</div>",[_vm._ssrNode("<div class=\"p-6 mx-auto text-center md:w-600\">","</div>",[_vm._ssrNode("<img"+(_vm._ssrAttr("src",__webpack_require__(58)))+" alt=\"Email sent success\" class=\"inline-block\"> <div class=\"mt-8 text-lg font-semibold font-noto-sans\">"+_vm._ssrEscape("\n          "+_vm._s(_vm.title)+"\n        ")+"</div> <div class=\"mt-2 text-grayscale-500\">"+_vm._ssrEscape("\n          "+_vm._s(_vm.message)+" ")+"<span class=\"font-bold ttextt-blue-500\">"+_vm._ssrEscape(_vm._s(_vm.email))+"</span>.\n        </div> "),_vm._ssrNode("<div class=\"inline-block mt-6 w-[200px]\">","</div>",[_c('Button',{attrs:{"value":"Close","background":"bg-white","border":"border-2 border-secondary-900","color":"text-secondary-900"},on:{"action":function($event){return _vm.closePopup()}}})],1)],2)])])],2)}
+var staticRenderFns = []
+
+
+// CONCATENATED MODULE: ./components/PopupRegisterSuccess.vue?vue&type=template&id=784a7ef4&
+
+// CONCATENATED MODULE: ./node_modules/babel-loader/lib??ref--2-0!./node_modules/@nuxt/components/dist/loader.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./components/PopupRegisterSuccess.vue?vue&type=script&lang=js&
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+/* harmony default export */ var PopupRegisterSuccessvue_type_script_lang_js_ = ({
+  name: "PopupRegisterSuccess",
+  props: {
+    title: {
+      type: String,
+      required: false
+    },
+    message: {
+      type: String,
+      required: false
+    },
+    email: {
+      type: String,
+      required: false
+    }
+  },
+  methods: {
+    closePopup() {
+      this.$emit('close-popup');
+    }
+
+  }
+});
+// CONCATENATED MODULE: ./components/PopupRegisterSuccess.vue?vue&type=script&lang=js&
+ /* harmony default export */ var components_PopupRegisterSuccessvue_type_script_lang_js_ = (PopupRegisterSuccessvue_type_script_lang_js_); 
+// EXTERNAL MODULE: ./node_modules/vue-loader/lib/runtime/componentNormalizer.js
+var componentNormalizer = __webpack_require__(2);
+
+// CONCATENATED MODULE: ./components/PopupRegisterSuccess.vue
+
+
+
+
+
+/* normalize component */
+
+var component = Object(componentNormalizer["a" /* default */])(
+  components_PopupRegisterSuccessvue_type_script_lang_js_,
+  render,
+  staticRenderFns,
+  false,
+  null,
+  null,
+  "fd4b1b7e"
+  
+)
+
+/* harmony default export */ var PopupRegisterSuccess = __webpack_exports__["default"] = (component.exports);
+
+/* nuxt-component-imports */
+installComponents(component, {Button: __webpack_require__(36).default})
+
+
+/***/ }),
 /* 110 */,
 /* 111 */,
 /* 112 */,
@@ -712,7 +812,8 @@ module.exports = "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjUiIGhlaWdodD0iMjQi
 /* 125 */,
 /* 126 */,
 /* 127 */,
-/* 128 */
+/* 128 */,
+/* 129 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -790,7 +891,6 @@ var component = Object(componentNormalizer["a" /* default */])(
 /* harmony default export */ var Alert = __webpack_exports__["default"] = (component.exports);
 
 /***/ }),
-/* 129 */,
 /* 130 */,
 /* 131 */,
 /* 132 */,
@@ -811,12 +911,12 @@ var component = Object(componentNormalizer["a" /* default */])(
 // ESM COMPAT FLAG
 __webpack_require__.r(__webpack_exports__);
 
-// CONCATENATED MODULE: ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/@nuxt/components/dist/loader.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./pages/forgot-password.vue?vue&type=template&id=49286d6b&
-var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',[_vm._ssrNode("<div class=\"absolute top-0 hidden w-full bg-primary-600 md:inline\"><div class=\"container flex items-center h-10 mx-auto text-xs text-grayscale-50\"><div class=\"hidden w-full md:flex\"><div class=\"flex items-center flex-1\"><span class=\"pr-3 font-medium\">News</span> <span><img"+(_vm._ssrAttr("src",__webpack_require__(43)))+" alt=\"arrow right\" class=\"inline-block\"></span> <span class=\"pl-3\">Information about travel policy due to the impact of COVID-19\n            outbreak</span></div> <div class=\"flex-1 hidden text-right md:inline\"><span class=\"pr-3\"><img"+(_vm._ssrAttr("src",__webpack_require__(44)))+" alt=\"globe\" class=\"inline-block\"></span> <span>English</span> <span class=\"pl-3\"><img"+(_vm._ssrAttr("src",__webpack_require__(45)))+" alt=\"arrow bottom\" class=\"inline-block\"></span></div></div></div></div> "),_vm._ssrNode("<div class=\"flex w-full h-auto py-5 md:py-0 md:h-screen\">","</div>",[_vm._ssrNode("<div class=\"flex-1 hidden bg-cover md:inline bg-forgot-password\"></div> "),_vm._ssrNode("<div class=\"flex flex-wrap content-center justify-center flex-1 bg-white\">","</div>",[_vm._ssrNode("<div class=\"w-full mx-6 md:w-1/2 md:mx-auto\">","</div>",[_vm._ssrNode("<div class=\"absolute top-0 right-0 inline mt-5 mr-5 md:hidden\"><img"+(_vm._ssrAttr("src",__webpack_require__(47)))+" alt=\"close\" class=\"inline-block cursor-pointer\"></div> <a href=\"/login\"><div class=\"flex items-center cursor-pointer text-grayscale-900\"><img"+(_vm._ssrAttr("src",__webpack_require__(69)))+" alt=\"arrow left\" class=\"inline-block mr-2\">\n            Back to Login\n          </div></a> <div class=\"mt-16 text-3xl font-semibold\">Forgot Your Password?</div> <div class=\"mt-2 mb-10 text-lg text-grayscale-500 font-noto-sans\">\n          Don’t worry, enter your registered email address to reset your\n          password.\n        </div> "),(_vm.errorMessage)?_c('Alert',{attrs:{"message":_vm.errorMessage}}):_vm._e(),_vm._ssrNode(" "),(_vm.successMessage)?_c('Alert',{attrs:{"message":_vm.successMessage,"type":'success'}}):_vm._e(),_vm._ssrNode(" "),_c('Input',{attrs:{"placeholder":"Fill your email here","label":"Email"},model:{value:(_vm.emailAddress),callback:function ($$v) {_vm.emailAddress=$$v},expression:"emailAddress"}}),_vm._ssrNode(" <div class=\"relative mt-1 text-grayscale-400 text-2xs\">\n          We will send an email containing a link to reset your password.\n        </div> "),_c('Button',{attrs:{"value":"Submit","customClass":"mt-10","enabled":_vm.isButtonEnabled},on:{"action":_vm.goForgotPassword}})],2)])],2)],2)}
+// CONCATENATED MODULE: ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/@nuxt/components/dist/loader.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./pages/forgot-password.vue?vue&type=template&id=5f35cb16&
+var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',[_vm._ssrNode("<div class=\"absolute top-0 hidden w-full bg-primary-600 md:inline\"><div class=\"container flex items-center h-10 mx-auto text-xs text-grayscale-50\"><div class=\"hidden w-full md:flex\"><div class=\"flex items-center flex-1\"><span class=\"pr-3 font-medium\">News</span> <span><img"+(_vm._ssrAttr("src",__webpack_require__(43)))+" alt=\"arrow right\" class=\"inline-block\"></span> <span class=\"pl-3\">Information about travel policy due to the impact of COVID-19\n            outbreak</span></div> <div class=\"flex-1 hidden text-right md:inline\"><span class=\"pr-3\"><img"+(_vm._ssrAttr("src",__webpack_require__(44)))+" alt=\"globe\" class=\"inline-block\"></span> <span>English</span> <span class=\"pl-3\"><img"+(_vm._ssrAttr("src",__webpack_require__(45)))+" alt=\"arrow bottom\" class=\"inline-block\"></span></div></div></div></div> "),_vm._ssrNode("<div class=\"flex w-full h-auto py-5 md:py-0 md:h-screen\">","</div>",[_vm._ssrNode("<div class=\"flex-1 hidden bg-cover md:inline bg-forgot-password\"></div> "),_vm._ssrNode("<div class=\"flex flex-wrap content-center justify-center flex-1 bg-white\">","</div>",[_vm._ssrNode("<div class=\"w-full mx-6 md:w-1/2 md:mx-auto\">","</div>",[_vm._ssrNode("<div class=\"absolute top-0 right-0 inline mt-5 mr-5 md:hidden\"><img"+(_vm._ssrAttr("src",__webpack_require__(47)))+" alt=\"close\" class=\"inline-block cursor-pointer\"></div> <a href=\"/login\"><div class=\"flex items-center cursor-pointer text-grayscale-900\"><img"+(_vm._ssrAttr("src",__webpack_require__(69)))+" alt=\"arrow left\" class=\"inline-block mr-2\">\n            Back to Login\n          </div></a> <div class=\"mt-16 text-3xl font-semibold\">Forgot Your Password?</div> <div class=\"mt-2 mb-10 text-lg text-grayscale-500 font-noto-sans\">\n          Don’t worry, enter your registered email address to reset your\n          password.\n        </div> "),(_vm.errorMessage)?_c('Alert',{attrs:{"message":_vm.errorMessage}}):_vm._e(),_vm._ssrNode(" "),_c('Input',{attrs:{"placeholder":"Fill your email here","label":"Email"},model:{value:(_vm.emailAddress),callback:function ($$v) {_vm.emailAddress=$$v},expression:"emailAddress"}}),_vm._ssrNode(" <div class=\"relative mt-1 text-grayscale-400 text-2xs\">\n          We will send an email containing a link to reset your password.\n        </div> "),_c('Button',{attrs:{"value":"Submit","customClass":"mt-10","enabled":_vm.isButtonEnabled},on:{"action":_vm.goForgotPassword}})],2)])],2),_vm._ssrNode(" "),(_vm.isPopupSuccess)?_c('PopupRegisterSuccess',{attrs:{"title":'Please Check Your Email',"message":'Please check your email address. We have sent an email your new password to ',"email":_vm.emailAddress},on:{"close-popup":_vm.closePopupSuccess}}):_vm._e()],2)}
 var staticRenderFns = []
 
 
-// CONCATENATED MODULE: ./pages/forgot-password.vue?vue&type=template&id=49286d6b&
+// CONCATENATED MODULE: ./pages/forgot-password.vue?vue&type=template&id=5f35cb16&
 
 // EXTERNAL MODULE: external "js-cookie"
 var external_js_cookie_ = __webpack_require__(34);
@@ -833,6 +933,7 @@ var external_js_cookie_default = /*#__PURE__*/__webpack_require__.n(external_js_
         isButtonEnabled: false,
         errorMessage: null,
         successMessage: null,
+        isPopupSuccess: false,
       };
     },
   methods: {
@@ -848,6 +949,7 @@ var external_js_cookie_default = /*#__PURE__*/__webpack_require__.n(external_js_
               this.errorMessage = null;
               this.successMessage = response.result[0];
               this.emailAddress = null;
+              this.isPopupSuccess = true;
             } else {
               this.successMessage = null;
               if (response.err_str) {
@@ -875,6 +977,9 @@ var external_js_cookie_default = /*#__PURE__*/__webpack_require__.n(external_js_
         this.isButtonEnabled = false
       }
     },
+    closePopupSuccess() {
+      this.isPopupSuccess = false;
+    }
   },
   mounted() {
     if (external_js_cookie_default.a.get('star_air_login')) {
@@ -916,7 +1021,7 @@ var component = Object(componentNormalizer["a" /* default */])(
 /* harmony default export */ var forgot_password = __webpack_exports__["default"] = (component.exports);
 
 /* nuxt-component-imports */
-installComponents(component, {Alert: __webpack_require__(128).default,Input: __webpack_require__(37).default,Button: __webpack_require__(36).default})
+installComponents(component, {Alert: __webpack_require__(129).default,Input: __webpack_require__(37).default,Button: __webpack_require__(36).default,PopupRegisterSuccess: __webpack_require__(109).default})
 
 
 /***/ })

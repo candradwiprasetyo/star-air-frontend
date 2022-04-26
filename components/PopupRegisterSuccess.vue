@@ -10,11 +10,10 @@
             alt="Email sent success"
           />
           <div class="mt-8 text-lg font-semibold font-noto-sans">
-            Verify Your Email Address
+            {{ title }}
           </div>
           <div class="mt-2 text-grayscale-500">
-            In order to complete your registration, please verifiy your email
-            address. We have sent an email with a link to {{ email }}.
+            {{ message }} <span class="font-bold ttextt-blue-500">{{ email }}</span>.
           </div>
           <div class="inline-block mt-6 w-[200px]">
             <Button
@@ -35,6 +34,14 @@
 export default {
   name: "PopupRegisterSuccess",
   props: {
+    title: {
+      type: String,
+      required: false,
+    },
+    message: {
+      type: String,
+      required: false,
+    },
     email: {
       type: String,
       required: false,

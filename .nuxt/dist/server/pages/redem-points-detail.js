@@ -1440,7 +1440,8 @@ var component = Object(componentNormalizer["a" /* default */])(
 /* 126 */,
 /* 127 */,
 /* 128 */,
-/* 129 */
+/* 129 */,
+/* 130 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1564,7 +1565,7 @@ installComponents(component, {Input: __webpack_require__(37).default,Select: __w
 
 
 /***/ }),
-/* 130 */
+/* 131 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1634,7 +1635,7 @@ installComponents(component, {Input: __webpack_require__(37).default,Button: __w
 
 
 /***/ }),
-/* 131 */
+/* 132 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1724,7 +1725,6 @@ installComponents(component, {Select: __webpack_require__(102).default,Input: __
 
 
 /***/ }),
-/* 132 */,
 /* 133 */,
 /* 134 */,
 /* 135 */,
@@ -1808,7 +1808,7 @@ var component = Object(componentNormalizer["a" /* default */])(
 /* harmony default export */ var redem_points_detail = __webpack_exports__["default"] = (component.exports);
 
 /* nuxt-component-imports */
-installComponents(component, {Header: __webpack_require__(103).default,MainMenu: __webpack_require__(104).default,RedemPointsBookFlight: __webpack_require__(129).default,RedemPointsExtraBaggage: __webpack_require__(130).default,RedemPointsPartnerPoints: __webpack_require__(131).default,Footer: __webpack_require__(105).default})
+installComponents(component, {Header: __webpack_require__(103).default,MainMenu: __webpack_require__(104).default,RedemPointsBookFlight: __webpack_require__(130).default,RedemPointsExtraBaggage: __webpack_require__(131).default,RedemPointsPartnerPoints: __webpack_require__(132).default,Footer: __webpack_require__(105).default})
 
 
 /***/ })

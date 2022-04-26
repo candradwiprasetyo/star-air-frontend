@@ -206,7 +206,8 @@
         }
       },
       closePopupSuccess() {
-        this.isPopupSuccess = false;
+        // this.isPopupSuccess = false;
+        this.$emit('back-button', 2);
       }
     },
     mounted() {

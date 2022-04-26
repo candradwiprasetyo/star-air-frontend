@@ -1,22 +1,21 @@
 exports.ids = [25,14];
 exports.modules = {
 
-/***/ 132:
+/***/ 109:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 // ESM COMPAT FLAG
 __webpack_require__.r(__webpack_exports__);
 
-// CONCATENATED MODULE: ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/@nuxt/components/dist/loader.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./components/PopupRegisterSuccess.vue?vue&type=template&id=1680cdf8&
-var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',[_vm._ssrNode("<div class=\"fixed inset-0 z-30 bg-black opacity-75\"></div> "),_vm._ssrNode("<div class=\"fixed inset-0 z-30 flex items-center\">","</div>",[_vm._ssrNode("<div class=\"mx-auto bg-white w-[600px] rounded-lg\">","</div>",[_vm._ssrNode("<div class=\"p-6 mx-auto text-center md:w-600\">","</div>",[_vm._ssrNode("<img"+(_vm._ssrAttr("src",__webpack_require__(58)))+" alt=\"Email sent success\" class=\"inline-block\"> <div class=\"mt-8 text-lg font-semibold font-noto-sans\">\n          Verify Your Email Address\n        </div> <div class=\"mt-2 text-grayscale-500\">"+_vm._ssrEscape("\n          In order to complete your registration, please verifiy your email\n          address. We have sent an email with a link to "+_vm._s(_vm.email)+".\n        ")+"</div> "),_vm._ssrNode("<div class=\"inline-block mt-6 w-[200px]\">","</div>",[_c('Button',{attrs:{"value":"Close","background":"bg-white","border":"border-2 border-secondary-900","color":"text-secondary-900"},on:{"action":function($event){return _vm.closePopup()}}})],1)],2)])])],2)}
+// CONCATENATED MODULE: ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/@nuxt/components/dist/loader.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./components/PopupRegisterSuccess.vue?vue&type=template&id=784a7ef4&
+var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',[_vm._ssrNode("<div class=\"fixed inset-0 z-30 bg-black opacity-75\"></div> "),_vm._ssrNode("<div class=\"fixed inset-0 z-30 flex items-center\">","</div>",[_vm._ssrNode("<div class=\"mx-auto bg-white w-[600px] rounded-lg\">","</div>",[_vm._ssrNode("<div class=\"p-6 mx-auto text-center md:w-600\">","</div>",[_vm._ssrNode("<img"+(_vm._ssrAttr("src",__webpack_require__(58)))+" alt=\"Email sent success\" class=\"inline-block\"> <div class=\"mt-8 text-lg font-semibold font-noto-sans\">"+_vm._ssrEscape("\n          "+_vm._s(_vm.title)+"\n        ")+"</div> <div class=\"mt-2 text-grayscale-500\">"+_vm._ssrEscape("\n          "+_vm._s(_vm.message)+" ")+"<span class=\"font-bold ttextt-blue-500\">"+_vm._ssrEscape(_vm._s(_vm.email))+"</span>.\n        </div> "),_vm._ssrNode("<div class=\"inline-block mt-6 w-[200px]\">","</div>",[_c('Button',{attrs:{"value":"Close","background":"bg-white","border":"border-2 border-secondary-900","color":"text-secondary-900"},on:{"action":function($event){return _vm.closePopup()}}})],1)],2)])])],2)}
 var staticRenderFns = []
 
 
-// CONCATENATED MODULE: ./components/PopupRegisterSuccess.vue?vue&type=template&id=1680cdf8&
+// CONCATENATED MODULE: ./components/PopupRegisterSuccess.vue?vue&type=template&id=784a7ef4&
 
 // CONCATENATED MODULE: ./node_modules/babel-loader/lib??ref--2-0!./node_modules/@nuxt/components/dist/loader.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./components/PopupRegisterSuccess.vue?vue&type=script&lang=js&
-//
 //
 //
 //
@@ -52,6 +51,14 @@ var staticRenderFns = []
 /* harmony default export */ var PopupRegisterSuccessvue_type_script_lang_js_ = ({
   name: "PopupRegisterSuccess",
   props: {
+    title: {
+      type: String,
+      required: false
+    },
+    message: {
+      type: String,
+      required: false
+    },
     email: {
       type: String,
       required: false

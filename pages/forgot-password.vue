@@ -8,6 +8,7 @@
           isButtonEnabled: false,
           errorMessage: null,
           successMessage: null,
+          isPopupSuccess: false,
         };
       },
     methods: {
@@ -23,6 +24,7 @@
                 this.errorMessage = null;
                 this.successMessage = response.result[0];
                 this.emailAddress = null;
+                this.isPopupSuccess = true;
               } else {
                 this.successMessage = null;
                 if (response.err_str) {
@@ -50,6 +52,9 @@
           this.isButtonEnabled = false
         }
       },
+      closePopupSuccess() {
+        this.isPopupSuccess = false;
+      }
     },
     mounted() {
       if (cookie.get('star_air_login')) {
@@ -130,11 +135,11 @@
             v-if="errorMessage" 
             :message="errorMessage"
           />
-          <Alert 
+          <!-- <Alert 
             v-if="successMessage" 
             :message="successMessage"
             :type="'success'"
-          />
+          /> -->
           <Input
             placeholder="Fill your email here"
             label="Email"
@@ -152,6 +157,13 @@
         </div>
       </div>
     </div>
+    <PopupRegisterSuccess 
+      :title="'Please Check Your Email'"
+      :message="'Please check your email address. We have sent an email your new password to '"
+      :email="emailAddress"
+      @close-popup="closePopupSuccess"
+      v-if="isPopupSuccess"
+    />
   </div>
 </template>
 

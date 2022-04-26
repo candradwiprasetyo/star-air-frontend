@@ -1420,45 +1420,21 @@ var component = Object(componentNormalizer["a" /* default */])(
 /* 106 */,
 /* 107 */,
 /* 108 */,
-/* 109 */,
-/* 110 */,
-/* 111 */,
-/* 112 */,
-/* 113 */,
-/* 114 */,
-/* 115 */,
-/* 116 */,
-/* 117 */,
-/* 118 */,
-/* 119 */,
-/* 120 */,
-/* 121 */,
-/* 122 */,
-/* 123 */,
-/* 124 */,
-/* 125 */,
-/* 126 */,
-/* 127 */,
-/* 128 */,
-/* 129 */,
-/* 130 */,
-/* 131 */,
-/* 132 */
+/* 109 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 // ESM COMPAT FLAG
 __webpack_require__.r(__webpack_exports__);
 
-// CONCATENATED MODULE: ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/@nuxt/components/dist/loader.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./components/PopupRegisterSuccess.vue?vue&type=template&id=1680cdf8&
-var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',[_vm._ssrNode("<div class=\"fixed inset-0 z-30 bg-black opacity-75\"></div> "),_vm._ssrNode("<div class=\"fixed inset-0 z-30 flex items-center\">","</div>",[_vm._ssrNode("<div class=\"mx-auto bg-white w-[600px] rounded-lg\">","</div>",[_vm._ssrNode("<div class=\"p-6 mx-auto text-center md:w-600\">","</div>",[_vm._ssrNode("<img"+(_vm._ssrAttr("src",__webpack_require__(58)))+" alt=\"Email sent success\" class=\"inline-block\"> <div class=\"mt-8 text-lg font-semibold font-noto-sans\">\n          Verify Your Email Address\n        </div> <div class=\"mt-2 text-grayscale-500\">"+_vm._ssrEscape("\n          In order to complete your registration, please verifiy your email\n          address. We have sent an email with a link to "+_vm._s(_vm.email)+".\n        ")+"</div> "),_vm._ssrNode("<div class=\"inline-block mt-6 w-[200px]\">","</div>",[_c('Button',{attrs:{"value":"Close","background":"bg-white","border":"border-2 border-secondary-900","color":"text-secondary-900"},on:{"action":function($event){return _vm.closePopup()}}})],1)],2)])])],2)}
+// CONCATENATED MODULE: ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/@nuxt/components/dist/loader.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./components/PopupRegisterSuccess.vue?vue&type=template&id=784a7ef4&
+var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',[_vm._ssrNode("<div class=\"fixed inset-0 z-30 bg-black opacity-75\"></div> "),_vm._ssrNode("<div class=\"fixed inset-0 z-30 flex items-center\">","</div>",[_vm._ssrNode("<div class=\"mx-auto bg-white w-[600px] rounded-lg\">","</div>",[_vm._ssrNode("<div class=\"p-6 mx-auto text-center md:w-600\">","</div>",[_vm._ssrNode("<img"+(_vm._ssrAttr("src",__webpack_require__(58)))+" alt=\"Email sent success\" class=\"inline-block\"> <div class=\"mt-8 text-lg font-semibold font-noto-sans\">"+_vm._ssrEscape("\n          "+_vm._s(_vm.title)+"\n        ")+"</div> <div class=\"mt-2 text-grayscale-500\">"+_vm._ssrEscape("\n          "+_vm._s(_vm.message)+" ")+"<span class=\"font-bold ttextt-blue-500\">"+_vm._ssrEscape(_vm._s(_vm.email))+"</span>.\n        </div> "),_vm._ssrNode("<div class=\"inline-block mt-6 w-[200px]\">","</div>",[_c('Button',{attrs:{"value":"Close","background":"bg-white","border":"border-2 border-secondary-900","color":"text-secondary-900"},on:{"action":function($event){return _vm.closePopup()}}})],1)],2)])])],2)}
 var staticRenderFns = []
 
 
-// CONCATENATED MODULE: ./components/PopupRegisterSuccess.vue?vue&type=template&id=1680cdf8&
+// CONCATENATED MODULE: ./components/PopupRegisterSuccess.vue?vue&type=template&id=784a7ef4&
 
 // CONCATENATED MODULE: ./node_modules/babel-loader/lib??ref--2-0!./node_modules/@nuxt/components/dist/loader.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./components/PopupRegisterSuccess.vue?vue&type=script&lang=js&
-//
 //
 //
 //
@@ -1494,6 +1470,14 @@ var staticRenderFns = []
 /* harmony default export */ var PopupRegisterSuccessvue_type_script_lang_js_ = ({
   name: "PopupRegisterSuccess",
   props: {
+    title: {
+      type: String,
+      required: false
+    },
+    message: {
+      type: String,
+      required: false
+    },
     email: {
       type: String,
       required: false
@@ -1537,6 +1521,29 @@ installComponents(component, {Button: __webpack_require__(36).default})
 
 
 /***/ }),
+/* 110 */,
+/* 111 */,
+/* 112 */,
+/* 113 */,
+/* 114 */,
+/* 115 */,
+/* 116 */,
+/* 117 */,
+/* 118 */,
+/* 119 */,
+/* 120 */,
+/* 121 */,
+/* 122 */,
+/* 123 */,
+/* 124 */,
+/* 125 */,
+/* 126 */,
+/* 127 */,
+/* 128 */,
+/* 129 */,
+/* 130 */,
+/* 131 */,
+/* 132 */,
 /* 133 */,
 /* 134 */,
 /* 135 */,
@@ -1559,12 +1566,12 @@ installComponents(component, {Button: __webpack_require__(36).default})
 // ESM COMPAT FLAG
 __webpack_require__.r(__webpack_exports__);
 
-// CONCATENATED MODULE: ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/@nuxt/components/dist/loader.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./pages/registration.vue?vue&type=template&id=e48abe76&
-var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',[_c('Header'),_vm._ssrNode(" "),_c('MainMenu'),_vm._ssrNode(" "),_vm._ssrNode("<div class=\"container px-6 py-6 mx-auto md:py-14 md:px-0\">","</div>",[_vm._ssrNode("<div class=\"text-3xl font-semibold text-grayscale-900 font-noto-sans\">\n      Create New Account\n    </div> <div class=\"mt-3 text-sm text-grayscale-500 md:text-base\">\n      Enjoy hundreds of benefits when you joining Star Air loyalty program.\n      earn points when you flight, stay at hotel, and buy goods at Star Air\n      duty free and redeem it for your next travel. Lorem ipsum dolor sit\n      amet, consectetur adipiscing elit. Sed ac mauris vitae sem posuere\n      blandit. Nam pretium venenatis bibendum. Nam eget ante eu metus\n      consequat semper non ac nunc. Duis semper massa nec tellus lacinia, id\n      semper neque lobortis. Donec sit amet eros leo. Sed lacinia vestibulum\n      lorem, vel imperdiet ipsum.\n    </div> <div class=\"block p-6 my-10 md:hidden bg-light-blue rounded-xl\"><div class=\"text-lg font-semibold text-grayscale-900\">\n        New Member Benefits\n      </div> <div class=\"mt-4 text-grayscale-500\"><ul class=\"pl-5 leading-loose list-disc\"><li>5000 Star Points</li> <li>Free extra baggage 15kg</li> <li>Special gift</li> <li>Flight discount voucher</li></ul></div></div> "),_vm._ssrNode("<div class=\"flex items-start mt-6 md:mt-16 gap-x-8\">","</div>",[_vm._ssrNode("<div class=\"md:w-2/3\">","</div>",[_vm._ssrNode("<div class=\"flex\">","</div>",[_vm._ssrNode("<div class=\"flex-1 mt-6 md:mt-0\">","</div>",[_c('Input',{attrs:{"label":"First Name","border":"border md:rounded-l-lg"},model:{value:(_vm.firstName),callback:function ($$v) {_vm.firstName=$$v},expression:"firstName"}})],1),_vm._ssrNode(" "),_vm._ssrNode("<div class=\"flex-1 mt-6 md:mt-0\">","</div>",[_c('Input',{attrs:{"label":"Last Name","border":"border md:rounded-r-lg"},model:{value:(_vm.lastName),callback:function ($$v) {_vm.lastName=$$v},expression:"lastName"}})],1)],2),_vm._ssrNode(" "),_c('Input',{attrs:{"label":"Email Address","customClass":"mt-6"},model:{value:(_vm.emailAddress),callback:function ($$v) {_vm.emailAddress=$$v},expression:"emailAddress"}}),_vm._ssrNode(" "+((_vm.errorMessage.email)?("<span class=\"text-xs text-alert-900\">"+_vm._ssrEscape(_vm._s(_vm.errorMessage.email))+"</span>"):"<!---->")+" "),_vm._ssrNode("<div class=\"flex mt-6\">","</div>",[(false)?undefined:_vm._e(),_vm._ssrNode(" "),_vm._ssrNode("<div class=\"flex-grow\">","</div>",[_c('Input',{attrs:{"label":"Phone","border":"border rounded-r-lg"},model:{value:(_vm.phoneNumber),callback:function ($$v) {_vm.phoneNumber=$$v},expression:"phoneNumber"}})],1)],2),_vm._ssrNode(" "+((_vm.errorMessage.mobile)?("<span class=\"text-xs text-alert-900\">"+_vm._ssrEscape(_vm._s(_vm.errorMessage.mobile))+"</span>"):"<!---->")+" <div class=\"flex mt-10 gap-x-4\"><div class=\"flex-none\"><input type=\"checkbox\" id=\"checkbox1\" name=\"checkbox1\""+(_vm._ssrAttr("checked",Array.isArray(_vm.isAgreeOffer)?_vm._i(_vm.isAgreeOffer,null)>-1:(_vm.isAgreeOffer)))+"></div> <div class=\"flex-grow\"><label for=\"checkbox1\">\n              I agree to receiving offers, news, marketing communications and\n              market research from time to time by electronic media and SMS\n              from Star Club. Electronic media refers to email and Social\n              Media.</label></div></div> <div class=\"flex mt-6 gap-x-4\"><div class=\"flex-none\"><input type=\"checkbox\" id=\"checkbox2\" name=\"checkbox2\""+(_vm._ssrAttr("checked",Array.isArray(_vm.isAgreeTnc)?_vm._i(_vm.isAgreeTnc,null)>-1:(_vm.isAgreeTnc)))+"></div> <div class=\"flex-grow\"><label for=\"checkbox2\">\n              I agree to the Terms and Conditions of the Star Club programme\n              and accept the Star Air Privacy Policy.</label></div></div> "),_vm._ssrNode("<div class=\"mt-10 md:w-64\">","</div>",[_c('Button',{attrs:{"value":"Create an Account","enabled":_vm.isButtonEnabled},on:{"action":_vm.createAccount}})],1)],2),_vm._ssrNode(" <div class=\"hidden w-1/3 p-6 md:block bg-light-blue rounded-xl\"><div class=\"text-lg font-semibold text-grayscale-900\">\n          New Member Benefits\n        </div> <div class=\"mt-4 text-grayscale-500\"><ul class=\"pl-5 leading-loose list-disc\"><li>5000 Star Points</li> <li>Free extra baggage 15kg</li> <li>Special gift</li> <li>Flight discount voucher</li></ul></div></div>")],2)],2),_vm._ssrNode(" "),(_vm.isPopupSuccess)?_c('PopupRegisterSuccess',{attrs:{"email":_vm.popupSuccessEmail},on:{"close-popup":_vm.closePopupSuccess}}):_vm._e(),_vm._ssrNode(" "),_c('Footer')],2)}
+// CONCATENATED MODULE: ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/@nuxt/components/dist/loader.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./pages/registration.vue?vue&type=template&id=1ec51af3&
+var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',[_c('Header'),_vm._ssrNode(" "),_c('MainMenu'),_vm._ssrNode(" "),_vm._ssrNode("<div class=\"container px-6 py-6 mx-auto md:py-14 md:px-0\">","</div>",[_vm._ssrNode("<div class=\"text-3xl font-semibold text-grayscale-900 font-noto-sans\">\n      Create New Account\n    </div> <div class=\"mt-3 text-sm text-grayscale-500 md:text-base\">\n      Enjoy hundreds of benefits when you joining Star Air loyalty program.\n      earn points when you flight, stay at hotel, and buy goods at Star Air\n      duty free and redeem it for your next travel. Lorem ipsum dolor sit\n      amet, consectetur adipiscing elit. Sed ac mauris vitae sem posuere\n      blandit. Nam pretium venenatis bibendum. Nam eget ante eu metus\n      consequat semper non ac nunc. Duis semper massa nec tellus lacinia, id\n      semper neque lobortis. Donec sit amet eros leo. Sed lacinia vestibulum\n      lorem, vel imperdiet ipsum.\n    </div> <div class=\"block p-6 my-10 md:hidden bg-light-blue rounded-xl\"><div class=\"text-lg font-semibold text-grayscale-900\">\n        New Member Benefits\n      </div> <div class=\"mt-4 text-grayscale-500\"><ul class=\"pl-5 leading-loose list-disc\"><li>5000 Star Points</li> <li>Free extra baggage 15kg</li> <li>Special gift</li> <li>Flight discount voucher</li></ul></div></div> "),_vm._ssrNode("<div class=\"flex items-start mt-6 md:mt-16 gap-x-8\">","</div>",[_vm._ssrNode("<div class=\"md:w-2/3\">","</div>",[_vm._ssrNode("<div class=\"flex\">","</div>",[_vm._ssrNode("<div class=\"flex-1 mt-6 md:mt-0\">","</div>",[_c('Input',{attrs:{"label":"First Name","border":"border md:rounded-l-lg"},model:{value:(_vm.firstName),callback:function ($$v) {_vm.firstName=$$v},expression:"firstName"}})],1),_vm._ssrNode(" "),_vm._ssrNode("<div class=\"flex-1 mt-6 md:mt-0\">","</div>",[_c('Input',{attrs:{"label":"Last Name","border":"border md:rounded-r-lg"},model:{value:(_vm.lastName),callback:function ($$v) {_vm.lastName=$$v},expression:"lastName"}})],1)],2),_vm._ssrNode(" "),_c('Input',{attrs:{"label":"Email Address","customClass":"mt-6"},model:{value:(_vm.emailAddress),callback:function ($$v) {_vm.emailAddress=$$v},expression:"emailAddress"}}),_vm._ssrNode(" "+((_vm.errorMessage.email)?("<span class=\"text-xs text-alert-900\">"+_vm._ssrEscape(_vm._s(_vm.errorMessage.email))+"</span>"):"<!---->")+" "),_vm._ssrNode("<div class=\"flex mt-6\">","</div>",[(false)?undefined:_vm._e(),_vm._ssrNode(" "),_vm._ssrNode("<div class=\"flex-grow\">","</div>",[_c('Input',{attrs:{"label":"Phone","border":"border rounded-r-lg"},model:{value:(_vm.phoneNumber),callback:function ($$v) {_vm.phoneNumber=$$v},expression:"phoneNumber"}})],1)],2),_vm._ssrNode(" "+((_vm.errorMessage.mobile)?("<span class=\"text-xs text-alert-900\">"+_vm._ssrEscape(_vm._s(_vm.errorMessage.mobile))+"</span>"):"<!---->")+" <div class=\"flex mt-10 gap-x-4\"><div class=\"flex-none\"><input type=\"checkbox\" id=\"checkbox1\" name=\"checkbox1\""+(_vm._ssrAttr("checked",Array.isArray(_vm.isAgreeOffer)?_vm._i(_vm.isAgreeOffer,null)>-1:(_vm.isAgreeOffer)))+"></div> <div class=\"flex-grow\"><label for=\"checkbox1\">\n              I agree to receiving offers, news, marketing communications and\n              market research from time to time by electronic media and SMS\n              from Star Club. Electronic media refers to email and Social\n              Media.</label></div></div> <div class=\"flex mt-6 gap-x-4\"><div class=\"flex-none\"><input type=\"checkbox\" id=\"checkbox2\" name=\"checkbox2\""+(_vm._ssrAttr("checked",Array.isArray(_vm.isAgreeTnc)?_vm._i(_vm.isAgreeTnc,null)>-1:(_vm.isAgreeTnc)))+"></div> <div class=\"flex-grow\"><label for=\"checkbox2\">\n              I agree to the Terms and Conditions of the Star Club programme\n              and accept the Star Air Privacy Policy.</label></div></div> "),_vm._ssrNode("<div class=\"mt-10 md:w-64\">","</div>",[_c('Button',{attrs:{"value":"Create an Account","enabled":_vm.isButtonEnabled},on:{"action":_vm.createAccount}})],1)],2),_vm._ssrNode(" <div class=\"hidden w-1/3 p-6 md:block bg-light-blue rounded-xl\"><div class=\"text-lg font-semibold text-grayscale-900\">\n          New Member Benefits\n        </div> <div class=\"mt-4 text-grayscale-500\"><ul class=\"pl-5 leading-loose list-disc\"><li>5000 Star Points</li> <li>Free extra baggage 15kg</li> <li>Special gift</li> <li>Flight discount voucher</li></ul></div></div>")],2)],2),_vm._ssrNode(" "),(_vm.isPopupSuccess)?_c('PopupRegisterSuccess',{attrs:{"title":'Verify Your Email Address',"message":'In order to complete your registration, please verifiy your email address. We have sent an email with a link to ',"email":_vm.popupSuccessEmail},on:{"close-popup":_vm.closePopupSuccess}}):_vm._e(),_vm._ssrNode(" "),_c('Footer')],2)}
 var staticRenderFns = []
 
 
-// CONCATENATED MODULE: ./pages/registration.vue?vue&type=template&id=e48abe76&
+// CONCATENATED MODULE: ./pages/registration.vue?vue&type=template&id=1ec51af3&
 
 // EXTERNAL MODULE: external "js-cookie"
 var external_js_cookie_ = __webpack_require__(34);
@@ -1704,7 +1711,7 @@ var component = Object(componentNormalizer["a" /* default */])(
 /* harmony default export */ var registration = __webpack_exports__["default"] = (component.exports);
 
 /* nuxt-component-imports */
-installComponents(component, {Header: __webpack_require__(103).default,MainMenu: __webpack_require__(104).default,Input: __webpack_require__(37).default,Select: __webpack_require__(102).default,Input: __webpack_require__(37).default,Button: __webpack_require__(36).default,PopupRegisterSuccess: __webpack_require__(132).default,Footer: __webpack_require__(105).default})
+installComponents(component, {Header: __webpack_require__(103).default,MainMenu: __webpack_require__(104).default,Input: __webpack_require__(37).default,Select: __webpack_require__(102).default,Input: __webpack_require__(37).default,Button: __webpack_require__(36).default,PopupRegisterSuccess: __webpack_require__(109).default,Footer: __webpack_require__(105).default})
 
 
 /***/ })

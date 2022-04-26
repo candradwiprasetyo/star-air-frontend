@@ -84,7 +84,7 @@ export default {
             <div class="px-4 py-3 mb-4 rounded-full cursor-pointer" :class="menu.id == activeMenu ? 'bg-light-blue text-secondary-900 font-bold' : ''" v-for="menu in dataMenu" :key="menu.id" @click="changeMenu(menu.id)">
               {{ menu.name }}
             </div>
-            <div class="px-4 py-3 mb-4 rounded-full cursor-pointer" @click="goLogout()">
+            <div class="px-4 py-3 mb-4 font-bold text-red-500 rounded-full cursor-pointer" @click="goLogout()">
               Logout
             </div>
           </div>

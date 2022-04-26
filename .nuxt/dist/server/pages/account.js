@@ -1634,7 +1634,8 @@ installComponents(component, {Button: __webpack_require__(36).default})
 /* 113 */,
 /* 114 */,
 /* 115 */,
-/* 116 */
+/* 116 */,
+/* 117 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1767,7 +1768,7 @@ var component = Object(componentNormalizer["a" /* default */])(
 /* harmony default export */ var Overview = __webpack_exports__["default"] = (component.exports);
 
 /***/ }),
-/* 117 */
+/* 118 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -2049,7 +2050,7 @@ var component = Object(componentNormalizer["a" /* default */])(
 /* harmony default export */ var UserProfile = __webpack_exports__["default"] = (component.exports);
 
 /***/ }),
-/* 118 */
+/* 119 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -2220,7 +2221,7 @@ installComponents(component, {Input: __webpack_require__(37).default,Select: __w
 
 
 /***/ }),
-/* 119 */
+/* 120 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -2349,7 +2350,7 @@ var component = Object(componentNormalizer["a" /* default */])(
 /* harmony default export */ var StarPoints = __webpack_exports__["default"] = (component.exports);
 
 /***/ }),
-/* 120 */
+/* 121 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -2451,7 +2452,7 @@ installComponents(component, {Button: __webpack_require__(36).default})
 
 
 /***/ }),
-/* 121 */
+/* 122 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -2548,14 +2549,14 @@ installComponents(component, {InputPassword: __webpack_require__(106).default,Bu
 
 
 /***/ }),
-/* 122 */
+/* 123 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 // ESM COMPAT FLAG
 __webpack_require__.r(__webpack_exports__);
 
-// CONCATENATED MODULE: ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/@nuxt/components/dist/loader.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./components/account/EditProfile.vue?vue&type=template&id=48118423&
+// CONCATENATED MODULE: ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/@nuxt/components/dist/loader.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./components/account/EditProfile.vue?vue&type=template&id=5447b0c8&
 var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',[_vm._ssrNode("<div class=\"w-full pb-0 mb-6 overflow-hidden border rounded-xl text-grayscale-500\">","</div>",[_vm._ssrNode("<div class=\"p-6 border-b\"><div class=\"flex\"><div class=\"text-lg font-semibold font-noto-sans text-grayscale-900\"><span class=\"text-secondary-900\">User Profile</span> / Edit Profile</div></div></div> "),_vm._ssrNode("<div class=\"p-6 overflow-hidden\">","</div>",[_vm._ssrNode("<div class=\"text-lg font-semibold font-noto-sans text-grayscale-900\">Contact Details</div> "),_vm._ssrNode("<div class=\"mt-6 md:flex gap-x-6\">","</div>",[_vm._ssrNode("<div class=\"flex-1\">","</div>",[_c('Input',{attrs:{"label":"Address"},model:{value:(_vm.address),callback:function ($$v) {_vm.address=$$v},expression:"address"}})],1),_vm._ssrNode(" "),_vm._ssrNode("<div class=\"flex-1 mt-6 md:mt-0\">","</div>",[_c('Input',{attrs:{"label":"Email","readonly":true},model:{value:(_vm.email),callback:function ($$v) {_vm.email=$$v},expression:"email"}})],1)],2),_vm._ssrNode(" "),_vm._ssrNode("<div class=\"mt-6 md:flex gap-x-6\">","</div>",[_vm._ssrNode("<div class=\"flex-1\">","</div>",[_c('Input',{attrs:{"label":"Phone"},model:{value:(_vm.phone),callback:function ($$v) {_vm.phone=$$v},expression:"phone"}})],1),_vm._ssrNode(" <div class=\"flex-1 mt-6 md:mt-0\"></div>")],2),_vm._ssrNode(" <div class=\"mt-10 text-lg font-semibold font-noto-sans text-grayscale-900\">Travel Documents</div> "),_vm._ssrNode("<div class=\"mt-6 md:flex gap-x-6\">","</div>",[_vm._ssrNode("<div class=\"flex-1\">","</div>",[_c('Select',{attrs:{"label":"Country/Region of Residence","data":_vm.countryData,"selected-data":_vm.country},model:{value:(_vm.country),callback:function ($$v) {_vm.country=$$v},expression:"country"}})],1),_vm._ssrNode(" "),_vm._ssrNode("<div class=\"flex-1 mt-6 md:mt-0\">","</div>",[_c('Input',{attrs:{"label":"Passport Number"},model:{value:(_vm.passportNumber),callback:function ($$v) {_vm.passportNumber=$$v},expression:"passportNumber"}})],1)],2),_vm._ssrNode(" "),_vm._ssrNode("<div class=\"mt-6 md:flex gap-x-6\">","</div>",[_vm._ssrNode("<div class=\"flex-1\">","</div>",[_vm._ssrNode("<div class=\"h-full px-3 py-2 border rounded-lg\">","</div>",[_vm._ssrNode("<div class=\"mb-1 text-xs text-grayscale-400\">Passport Expiry Date</div> "),_c('client-only',[_c('v-date-picker',{attrs:{"popover":{ visibility: 'click' }},scopedSlots:_vm._u([{key:"default",fn:function(ref){
 var inputValue = ref.inputValue;
 var inputEvents = ref.inputEvents;
@@ -2563,7 +2564,7 @@ return [_c('input',_vm._g({staticClass:"w-full outline-none",attrs:{"placeholder
 var staticRenderFns = []
 
 
-// CONCATENATED MODULE: ./components/account/EditProfile.vue?vue&type=template&id=48118423&
+// CONCATENATED MODULE: ./components/account/EditProfile.vue?vue&type=template&id=5447b0c8&
 
 // CONCATENATED MODULE: ./node_modules/babel-loader/lib??ref--2-0!./node_modules/@nuxt/components/dist/loader.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./components/account/EditProfile.vue?vue&type=script&lang=js&
 //
@@ -2765,7 +2766,8 @@ var staticRenderFns = []
     },
 
     closePopupSuccess() {
-      this.isPopupSuccess = false;
+      // this.isPopupSuccess = false;
+      this.$emit('back-button', 2);
     }
 
   },
@@ -2826,7 +2828,7 @@ installComponents(component, {Input: __webpack_require__(37).default,Select: __w
 
 
 /***/ }),
-/* 123 */
+/* 124 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -2985,7 +2987,7 @@ installComponents(component, {Input: __webpack_require__(37).default,Select: __w
 
 
 /***/ }),
-/* 124 */
+/* 125 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -3059,7 +3061,7 @@ installComponents(component, {Input: __webpack_require__(37).default,Select: __w
 
 
 /***/ }),
-/* 125 */
+/* 126 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -3164,7 +3166,7 @@ installComponents(component, {Button: __webpack_require__(36).default})
 
 
 /***/ }),
-/* 126 */
+/* 127 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -3380,7 +3382,6 @@ installComponents(component, {Button: __webpack_require__(36).default})
 
 
 /***/ }),
-/* 127 */,
 /* 128 */,
 /* 129 */,
 /* 130 */,
@@ -3398,12 +3399,12 @@ installComponents(component, {Button: __webpack_require__(36).default})
 // ESM COMPAT FLAG
 __webpack_require__.r(__webpack_exports__);
 
-// CONCATENATED MODULE: ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/@nuxt/components/dist/loader.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./pages/account.vue?vue&type=template&id=3f084900&
-var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',[_c('Header'),_vm._ssrNode(" "),_c('MainMenu'),_vm._ssrNode(" "),_vm._ssrNode("<div class=\"container px-6 py-6 mx-auto md:py-14 md:px-0\">","</div>",[_vm._ssrNode("<div class=\"text-3xl font-semibold text-grayscale-900 font-noto-sans\">"+_vm._ssrEscape("\n      Welcome, "+_vm._s(_vm.userData.name)+"\n    ")+"</div> <div class=\"mt-3 text-sm text-grayscale-500 md:text-base\">\n      Thank you for joining our loyalty program, Star Club. In this page you can manage your Star Club account such as viewing booking history, redeem, claim &amp; transfer Star Points and edit your account.\n    </div> "),_vm._ssrNode("<div class=\"mt-16 md:flex gap-x-8\">","</div>",[_vm._ssrNode("<div class=\"pb-0 mb-6 border md:w-1/3 rounded-xl text-grayscale-500\"><div class=\"p-6 border-b\"><div class=\"flex\"><div class=\"text-lg font-semibold font-noto-sans text-secondary-900\">"+_vm._ssrEscape(_vm._s(_vm.userData.name))+"</div> <div class=\"px-3 py-1 ml-2 text-xs bg-gray-100 border rounded-full border-grays-300\">"+_vm._ssrEscape(_vm._s(_vm.userData.member_level))+"</div></div> <div class=\"mt-1\"><span class=\"text-sm text-grayscale-400\">Points:</span> <span class=\"pl-1 text-sm text-grayscale-900\">"+_vm._ssrEscape(_vm._s(_vm.userData.avb_point)+" Points")+"</span> <span class=\"text-sm text-grayscale-400\">ID:</span> <span class=\"pl-1 text-sm text-grayscale-900\">"+_vm._ssrEscape(_vm._s(_vm.userData.member_id))+"</span></div></div> <div class=\"p-6\">"+(_vm._ssrList((_vm.dataMenu),function(menu){return ("<div"+(_vm._ssrClass("px-4 py-3 mb-4 rounded-full cursor-pointer",menu.id == _vm.activeMenu ? 'bg-light-blue text-secondary-900 font-bold' : ''))+">"+_vm._ssrEscape("\n            "+_vm._s(menu.name)+"\n          ")+"</div>")}))+" <div class=\"px-4 py-3 mb-4 rounded-full cursor-pointer\">\n            Logout\n          </div></div></div> "),_vm._ssrNode("<div class=\"md:w-2/3\">","</div>",[(_vm.activeMenu==1)?_vm._ssrNode("<div>","</div>",[_c('AccountOverview')],1):_vm._e(),_vm._ssrNode(" "),(_vm.activeMenu==2)?_vm._ssrNode("<div>","</div>",[_c('AccountUserProfile',{on:{"edit-profile":_vm.changeForm,"change-email":_vm.changeForm}})],1):_vm._e(),_vm._ssrNode(" "),(_vm.activeMenu==3)?_vm._ssrNode("<div>","</div>",[_c('AccountBookingHistory',{on:{"view-detail-history":function($event){return _vm.changeMenu('11')}}})],1):_vm._e(),_vm._ssrNode(" "),(_vm.activeMenu==4)?_vm._ssrNode("<div>","</div>",[_c('AccountStarPoints')],1):_vm._e(),_vm._ssrNode(" "),(_vm.activeMenu==5)?_vm._ssrNode("<div>","</div>",[_c('AccountExtendMembership')],1):_vm._e(),_vm._ssrNode(" "),(_vm.activeMenu==6)?_vm._ssrNode("<div>","</div>",[_c('AccountChangePassword')],1):_vm._e(),_vm._ssrNode(" "),(_vm.activeMenu==7)?_vm._ssrNode("<div>","</div>",[_c('AccountEditProfile',{attrs:{"member-id":_vm.selectedMemberId},on:{"back-button":function($event){return _vm.changeMenu('2')}}})],1):_vm._e(),_vm._ssrNode(" "),(_vm.activeMenu==8)?_vm._ssrNode("<div>","</div>",[_c('AccountEditEmail',{attrs:{"member-id":_vm.selectedMemberId,"email":_vm.userData.email},on:{"back-button":function($event){return _vm.changeMenu('2')}}})],1):_vm._e(),_vm._ssrNode(" "),(_vm.activeMenu==9)?_vm._ssrNode("<div>","</div>",[_c('AccountEditTravelDocument')],1):_vm._e(),_vm._ssrNode(" "),(_vm.activeMenu==10)?_vm._ssrNode("<div>","</div>",[_c('AccountUpgradeMembership')],1):_vm._e(),_vm._ssrNode(" "),(_vm.activeMenu==11)?_vm._ssrNode("<div>","</div>",[_c('AccountBookingHistoryDetail',{on:{"back-to-history":function($event){return _vm.changeMenu('3')}}})],1):_vm._e()],2)],2)],2),_vm._ssrNode(" "),_c('Footer')],2)}
+// CONCATENATED MODULE: ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/@nuxt/components/dist/loader.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./pages/account.vue?vue&type=template&id=112ab53e&
+var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',[_c('Header'),_vm._ssrNode(" "),_c('MainMenu'),_vm._ssrNode(" "),_vm._ssrNode("<div class=\"container px-6 py-6 mx-auto md:py-14 md:px-0\">","</div>",[_vm._ssrNode("<div class=\"text-3xl font-semibold text-grayscale-900 font-noto-sans\">"+_vm._ssrEscape("\n      Welcome, "+_vm._s(_vm.userData.name)+"\n    ")+"</div> <div class=\"mt-3 text-sm text-grayscale-500 md:text-base\">\n      Thank you for joining our loyalty program, Star Club. In this page you can manage your Star Club account such as viewing booking history, redeem, claim &amp; transfer Star Points and edit your account.\n    </div> "),_vm._ssrNode("<div class=\"mt-16 md:flex gap-x-8\">","</div>",[_vm._ssrNode("<div class=\"pb-0 mb-6 border md:w-1/3 rounded-xl text-grayscale-500\"><div class=\"p-6 border-b\"><div class=\"flex\"><div class=\"text-lg font-semibold font-noto-sans text-secondary-900\">"+_vm._ssrEscape(_vm._s(_vm.userData.name))+"</div> <div class=\"px-3 py-1 ml-2 text-xs bg-gray-100 border rounded-full border-grays-300\">"+_vm._ssrEscape(_vm._s(_vm.userData.member_level))+"</div></div> <div class=\"mt-1\"><span class=\"text-sm text-grayscale-400\">Points:</span> <span class=\"pl-1 text-sm text-grayscale-900\">"+_vm._ssrEscape(_vm._s(_vm.userData.avb_point)+" Points")+"</span> <span class=\"text-sm text-grayscale-400\">ID:</span> <span class=\"pl-1 text-sm text-grayscale-900\">"+_vm._ssrEscape(_vm._s(_vm.userData.member_id))+"</span></div></div> <div class=\"p-6\">"+(_vm._ssrList((_vm.dataMenu),function(menu){return ("<div"+(_vm._ssrClass("px-4 py-3 mb-4 rounded-full cursor-pointer",menu.id == _vm.activeMenu ? 'bg-light-blue text-secondary-900 font-bold' : ''))+">"+_vm._ssrEscape("\n            "+_vm._s(menu.name)+"\n          ")+"</div>")}))+" <div class=\"px-4 py-3 mb-4 font-bold text-red-500 rounded-full cursor-pointer\">\n            Logout\n          </div></div></div> "),_vm._ssrNode("<div class=\"md:w-2/3\">","</div>",[(_vm.activeMenu==1)?_vm._ssrNode("<div>","</div>",[_c('AccountOverview')],1):_vm._e(),_vm._ssrNode(" "),(_vm.activeMenu==2)?_vm._ssrNode("<div>","</div>",[_c('AccountUserProfile',{on:{"edit-profile":_vm.changeForm,"change-email":_vm.changeForm}})],1):_vm._e(),_vm._ssrNode(" "),(_vm.activeMenu==3)?_vm._ssrNode("<div>","</div>",[_c('AccountBookingHistory',{on:{"view-detail-history":function($event){return _vm.changeMenu('11')}}})],1):_vm._e(),_vm._ssrNode(" "),(_vm.activeMenu==4)?_vm._ssrNode("<div>","</div>",[_c('AccountStarPoints')],1):_vm._e(),_vm._ssrNode(" "),(_vm.activeMenu==5)?_vm._ssrNode("<div>","</div>",[_c('AccountExtendMembership')],1):_vm._e(),_vm._ssrNode(" "),(_vm.activeMenu==6)?_vm._ssrNode("<div>","</div>",[_c('AccountChangePassword')],1):_vm._e(),_vm._ssrNode(" "),(_vm.activeMenu==7)?_vm._ssrNode("<div>","</div>",[_c('AccountEditProfile',{attrs:{"member-id":_vm.selectedMemberId},on:{"back-button":function($event){return _vm.changeMenu('2')}}})],1):_vm._e(),_vm._ssrNode(" "),(_vm.activeMenu==8)?_vm._ssrNode("<div>","</div>",[_c('AccountEditEmail',{attrs:{"member-id":_vm.selectedMemberId,"email":_vm.userData.email},on:{"back-button":function($event){return _vm.changeMenu('2')}}})],1):_vm._e(),_vm._ssrNode(" "),(_vm.activeMenu==9)?_vm._ssrNode("<div>","</div>",[_c('AccountEditTravelDocument')],1):_vm._e(),_vm._ssrNode(" "),(_vm.activeMenu==10)?_vm._ssrNode("<div>","</div>",[_c('AccountUpgradeMembership')],1):_vm._e(),_vm._ssrNode(" "),(_vm.activeMenu==11)?_vm._ssrNode("<div>","</div>",[_c('AccountBookingHistoryDetail',{on:{"back-to-history":function($event){return _vm.changeMenu('3')}}})],1):_vm._e()],2)],2)],2),_vm._ssrNode(" "),_c('Footer')],2)}
 var staticRenderFns = []
 
 
-// CONCATENATED MODULE: ./pages/account.vue?vue&type=template&id=3f084900&
+// CONCATENATED MODULE: ./pages/account.vue?vue&type=template&id=112ab53e&
 
 // EXTERNAL MODULE: external "js-cookie"
 var external_js_cookie_ = __webpack_require__(34);
@@ -3496,7 +3497,7 @@ var component = Object(componentNormalizer["a" /* default */])(
 /* harmony default export */ var account = __webpack_exports__["default"] = (component.exports);
 
 /* nuxt-component-imports */
-installComponents(component, {Header: __webpack_require__(103).default,MainMenu: __webpack_require__(104).default,AccountOverview: __webpack_require__(116).default,AccountUserProfile: __webpack_require__(117).default,AccountBookingHistory: __webpack_require__(118).default,AccountStarPoints: __webpack_require__(119).default,AccountExtendMembership: __webpack_require__(120).default,AccountChangePassword: __webpack_require__(121).default,AccountEditProfile: __webpack_require__(122).default,AccountEditEmail: __webpack_require__(123).default,AccountEditTravelDocument: __webpack_require__(124).default,AccountUpgradeMembership: __webpack_require__(125).default,AccountBookingHistoryDetail: __webpack_require__(126).default,Footer: __webpack_require__(105).default})
+installComponents(component, {Header: __webpack_require__(103).default,MainMenu: __webpack_require__(104).default,AccountOverview: __webpack_require__(117).default,AccountUserProfile: __webpack_require__(118).default,AccountBookingHistory: __webpack_require__(119).default,AccountStarPoints: __webpack_require__(120).default,AccountExtendMembership: __webpack_require__(121).default,AccountChangePassword: __webpack_require__(122).default,AccountEditProfile: __webpack_require__(123).default,AccountEditEmail: __webpack_require__(124).default,AccountEditTravelDocument: __webpack_require__(125).default,AccountUpgradeMembership: __webpack_require__(126).default,AccountBookingHistoryDetail: __webpack_require__(127).default,Footer: __webpack_require__(105).default})
 
 
 /***/ })
