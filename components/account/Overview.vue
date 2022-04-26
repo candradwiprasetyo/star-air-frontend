@@ -9,7 +9,7 @@
       <div class="p-6 overflow-hidden">
         <div class="flex mb-4">
           <div class="flex-1 text-lg font-semibold font-noto-sans text-grayscale-900">Points Latest Activities</div>
-          <div class="flex-1 font-semibold text-right font-noto-sans text-secondary-900">Read More ></div>
+          <div class="flex-1 font-semibold text-right font-noto-sans text-secondary-900" v-if="false">Read More ></div>
         </div>
         <div
           class="

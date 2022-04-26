@@ -7,26 +7,41 @@
         </div>
       </div>
       <div class="p-6 overflow-hidden">
-        <div class="md:flex">
-          <div class="md:w-1/6">
-            <Select
-              label="Title"
-              border="border rounded-l-lg rounded-r-lg md:rounded-r-none md:rounded-l-lg"
+        <div class="text-lg font-semibold font-noto-sans text-grayscale-900">Contact Details</div>
+        <div class="mt-6 md:flex gap-x-6">
+          <div class="flex-1">
+            <Input label="Address" v-model="address" />
+          </div>
+          <div class="flex-1 mt-6 md:mt-0">
+            <Input 
+              label="Email" 
+              v-model="email" 
+              :readonly="true" 
             />
           </div>
-          <div class="md:w-5/6 md:flex">
-            <div class="flex-1 mt-6 md:mt-0">
-              <Input
-                label="First Name"
-                border="border rounded-lg md:rounded-none"
-              />
-            </div>
-            <div class="flex-1 mt-6 md:mt-0">
-              <Input
-                label="Last Name"
-                border="border rounded-l-lg rounded-r-lg md:rounded-l-none md:rounded-r-lg"
-              />
-            </div>
+        </div>
+        <div class="mt-6 md:flex gap-x-6">
+          <div class="flex-1">
+            <Input label="Phone" v-model="phone" />
+          </div>
+          <div class="flex-1 mt-6 md:mt-0">
+          </div>
+        </div>
+        <div class="mt-10 text-lg font-semibold font-noto-sans text-grayscale-900">Travel Documents</div>
+        <div class="mt-6 md:flex gap-x-6">
+          <div class="flex-1">
+            <Select 
+              label="Country/Region of Residence" 
+              v-model="country"
+              :data="countryData"
+              :selected-data="country"
+            />
+          </div>
+          <div class="flex-1 mt-6 md:mt-0">
+            <Input 
+              label="Passport Number" 
+              v-model="passportNumber"
+            />
           </div>
         </div>
         <div class="mt-6 md:flex gap-x-6">
@@ -43,7 +58,7 @@
                       class="w-full outline-none"
                       :value="inputValue"
                       v-on="inputEvents"
-                      placeholder="dd/mm/yyyy"
+                      placeholder="mm/dd/yyyy"
                       readonly
                     />
                   </template>
@@ -53,12 +68,16 @@
             
           </div>
           <div class="flex-1 mt-6 md:mt-0">
-            <Select label="Gender" />
+           
           </div>
         </div>
         <div class="mt-10">
           <div class="md:inline-block">
-            <Button value="Submit Change" />
+            <Button 
+              value="Submit Change" 
+              @action="editProfile" 
+              :enabled="isButtonEnabled"  
+            />
           </div>
           <div class="md:inline-block">
             <div class="ml-5" @click="$emit('back-button', 2)">
@@ -73,72 +92,133 @@
         </div>
       </div>
     </div>
+    <PopupSuccess 
+      :title="'success'"
+      :message="'Member`s data has been updated'"
+      @close-popup="closePopupSuccess"
+      v-if="isPopupSuccess"
+    />
   </div>
 </template>
 
 <script>
-export default {
-  name: "AccountEditProfile",
-  data() {
-    return {
-      userData: [],
-      address: null,
-      phone: null,
-      email: null,
-      country: null,
-      passportNumber: null,
-      errorMessage: null,
-      passportExpiryDate: null,
-      countryData: [],
-    };
-  },
-  props: {
-    memberId: {
-      type: String,
-      required: true,
+  export default {
+    name: "AccountEditProfile",
+    data() {
+      return {
+        userData: [],
+        address: null,
+        phone: null,
+        email: null,
+        country: "india",
+        passportNumber: null,
+        errorMessage: null,
+        passportExpiryDate: null,
+        countryData: [ 
+          'India',
+        ],
+        isButtonEnabled: false,
+        isPopupSuccess: false,
+      };
     },
-  },
-  methods: {
-    editEmail() {
-      let formData = new FormData();
-      formData.append('token', this.$config.myToken);
-      formData.append('member_email', this.userData.email);
-      formData.append('mobile', this.phone);
-      formData.append('nationality', this.userData.nationality);
-      formData.append('address', this.userData.address);
+    props: {
+      memberId: {
+        type: String,
+        required: true,
+      },
+    },
+    methods: {
+      editProfile() {
+        if (this.isButtonEnabled) {
+          let formData = new FormData();
+          formData.append('token', this.$config.myToken);
+          formData.append('member_email', this.userData.email);
+          formData.append('mobile', this.phone);
+          formData.append('nationality', this.country);
+          formData.append('address', this.address);
+          formData.append('passport_no', this.passportNumber);
+          formData.append('passport_expire_date', this.formatDate(this.passportExpiryDate));
 
-      this.$axios.$post('/member/update-member', formData)
-        .then( (response) => {
-          if (response.err_num == '0') {
-            this.$emit('back-button', 2);
-          } else {
-            this.errorMessage = 'Simpan error';
-          }
-        })
-        .catch(function (error) {
-          console.log(error)
-        })
-    },
-    loadUser() {
-      let formData = new FormData();
-      formData.append('token', this.$config.myToken);
-      formData.append('member_id', this.memberId);
+          this.$axios.$post('/member/update-member', formData)
+            .then( (response) => {
+              if (response.err_num == '0') {
+                this.errorMessage = null;
+                this.isPopupSuccess = true;
+              } else {
+                this.errorMessage = response.err_str;
+              }
+            })
+            .catch(function (error) {
+              console.log(error)
+            })
+        }
+      },
+      formatDate(value) {
+        value = new Date(value);
+        value.setDate(value.getDate() + 1);
+        if (value) {
+          value = value.toISOString().split('T')[0];
+          let today = value;
+          today = value.replaceAll('-', '');
+          return today;
+        }
+      },
+      formatDateLoad(value) {
+        if (value) {
+          let newDate = value.split('/');
+          let result = newDate[1] + '/' + newDate[0] + '/' + newDate[2];
+          return result;
+        }
+      },
+      loadUser() {
+        let formData = new FormData();
+        formData.append('token', this.$config.myToken);
+        formData.append('member_id', this.memberId);
 
-      this.$axios.$post('/member/get-member-detail', formData)
-        .then( (response) => {
-          if (response.err_num == '0') {
-            this.userData = response.result;
-            this.phone = this.userData.mobile;
-            this.email = this.userData.email;
-          }
-        })
-        .catch(function (error) {
-          console.log(error)
-        })
+        this.$axios.$post('/member/get-member-detail', formData)
+          .then( (response) => {
+            if (response.err_num == '0') {
+              this.userData = response.result;
+              this.phone = this.userData.mobile;
+              this.email = this.userData.email;
+              this.address = this.userData.address;
+              this.passportNumber = this.userData.passport_no;
+              this.passportExpiryDate = this.formatDateLoad(this.userData.passport_expire_date);
+              // this.country = this.userData.nationality;
+            }
+          })
+          .catch(function (error) {
+            console.log(error)
+          })
+      },
+      formChanged() {
+        if (
+          this.address &&
+          this.email &&
+          this.phone &&
+          this.country &&
+          this.passportNumber &&
+          this.passportExpiryDate
+        ) {
+          this.isButtonEnabled = true
+        } else {
+          this.isButtonEnabled = false
+        }
+      },
+      closePopupSuccess() {
+        this.isPopupSuccess = false;
+      }
     },
-  },
-  mounted() {
-    this.loadUser();
-  },
-};
+    mounted() {
+      this.loadUser();
+    },
+    watch: {
+      address: function(val) { this.formChanged() },
+      email: function(val) { this.formChanged() },
+      phone: function(val) { this.formChanged() },
+      country: function(val) { this.formChanged() },
+      passportNumber: function(val) { this.formChanged() },
+      passportExpiryDate: function(val) { this.formChanged() },
+    }
+  };
 </script>

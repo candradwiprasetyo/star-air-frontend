@@ -81,6 +81,16 @@
       <div class="flex-1 hidden bg-cover md:inline bg-login"></div>
       <div class="flex flex-wrap content-center justify-center flex-1 bg-white">
         <div class="w-full mx-6 md:w-1/2 md:mx-auto">
+          <NuxtLink to="/">
+            <div class="flex items-center mb-6 cursor-pointer text-grayscale-900">
+              <img
+                src="~/assets/images/arrow-left.svg"
+                class="inline-block mr-2"
+                alt="arrow left"
+              />
+              Back to Home
+            </div>
+          </NuxtLink>
           <div class="text-3xl font-semibold">Login to Your Account</div>
           <div class="mt-2 text-lg text-grayscale-500 font-noto-sans">
             Your amazing trips start here
@@ -96,6 +106,7 @@
             label="Password"
             customClass="mt-6"
             v-model="password"
+            @on-enter="goLogin"
           />
           <a href="/forgot-password">
             <div
@@ -104,7 +115,7 @@
               Forgot Password?
             </div>
           </a>
-          <div class="p-3 my-6 rounded bg-alert text-alert-900" v-if="errorMessage">
+          <div class="p-3 my-4 rounded bg-alert text-alert-900" v-if="errorMessage">
             <img
               src="~/assets/images/alert-info.svg"
               class="inline-block align-middle"
@@ -114,11 +125,11 @@
           </div>
           <Button 
             value="Login" 
-            customClass="mt-10"
+            customClass="mt-6"
             :enabled="isButtonEnabled" 
             @action="goLogin"
           />
-          <div class="mt-10 text-center text-grayscale-500">
+          <div class="mt-6 text-center text-grayscale-500">
             <div>Or sign in with:</div>
             <div class="flex justify-center mt-3 gap-x-3">
               <div class="flex-none">
@@ -150,7 +161,7 @@
               </div>
             </div>
           </div>
-          <div class="mt-10 text-center text-grayscale-500">
+          <div class="mt-6 text-center text-grayscale-500">
             Don’t have an account yet?
             <NuxtLink to="/registration"><span class="font-medium cursor-pointer">Create New Account</span></NuxtLink>
           </div>

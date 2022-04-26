@@ -1,19 +1,19 @@
 exports.ids = [8];
 exports.modules = {
 
-/***/ 114:
+/***/ 116:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 // ESM COMPAT FLAG
 __webpack_require__.r(__webpack_exports__);
 
-// CONCATENATED MODULE: ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/@nuxt/components/dist/loader.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./components/account/Overview.vue?vue&type=template&id=65d5e8c0&
-var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',[_vm._ssrNode("<div class=\"w-full pb-0 mb-6 border rounded-xl text-grayscale-500\"><div class=\"p-6 border-b\"><div class=\"flex\"><div class=\"text-lg font-semibold font-noto-sans text-grayscale-900\">Overview</div></div></div> <div class=\"p-6 overflow-hidden\"><div class=\"flex mb-4\"><div class=\"flex-1 text-lg font-semibold font-noto-sans text-grayscale-900\">Points Latest Activities</div> <div class=\"flex-1 font-semibold text-right font-noto-sans text-secondary-900\">Read More &gt;</div></div> <div class=\"\n          mt-6\n          md:px-0 md:-mx-0\n          px-6\n          -mx-6\n          md:w-full\n          w-[100vw]\n          overflow-auto\n        \"><table class=\"table-auto md:w-full custom-table w-[1200px]\"><thead><tr><th>Date</th> <th>Type</th> <th>Star Points</th></tr></thead> <tbody>"+(_vm._ssrList((_vm.overviewData),function(data,index){return ("<tr><td>"+_vm._ssrEscape(_vm._s(data.entry_date))+"</td> <td>"+_vm._ssrEscape(_vm._s(data.action))+"</td> <td>"+_vm._ssrEscape(_vm._s(data.points))+"</td></tr>")}))+"</tbody> <tfoot><tr><th colspan=\"3\"> </th></tr></tfoot></table></div></div></div>")])}
+// CONCATENATED MODULE: ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/@nuxt/components/dist/loader.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./components/account/Overview.vue?vue&type=template&id=4c8ee8ca&
+var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',[_vm._ssrNode("<div class=\"w-full pb-0 mb-6 border rounded-xl text-grayscale-500\"><div class=\"p-6 border-b\"><div class=\"flex\"><div class=\"text-lg font-semibold font-noto-sans text-grayscale-900\">Overview</div></div></div> <div class=\"p-6 overflow-hidden\"><div class=\"flex mb-4\"><div class=\"flex-1 text-lg font-semibold font-noto-sans text-grayscale-900\">Points Latest Activities</div> "+((false)?(undefined):"<!---->")+"</div> <div class=\"\n          mt-6\n          md:px-0 md:-mx-0\n          px-6\n          -mx-6\n          md:w-full\n          w-[100vw]\n          overflow-auto\n        \"><table class=\"table-auto md:w-full custom-table w-[1200px]\"><thead><tr><th>Date</th> <th>Type</th> <th>Star Points</th></tr></thead> <tbody>"+(_vm._ssrList((_vm.overviewData),function(data,index){return ("<tr><td>"+_vm._ssrEscape(_vm._s(data.entry_date))+"</td> <td>"+_vm._ssrEscape(_vm._s(data.action))+"</td> <td>"+_vm._ssrEscape(_vm._s(data.points))+"</td></tr>")}))+"</tbody> <tfoot><tr><th colspan=\"3\"> </th></tr></tfoot></table></div></div></div>")])}
 var staticRenderFns = []
 
 
-// CONCATENATED MODULE: ./components/account/Overview.vue?vue&type=template&id=65d5e8c0&
+// CONCATENATED MODULE: ./components/account/Overview.vue?vue&type=template&id=4c8ee8ca&
 
 // EXTERNAL MODULE: external "js-cookie"
 var external_js_cookie_ = __webpack_require__(34);

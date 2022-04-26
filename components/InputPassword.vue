@@ -7,6 +7,7 @@
       class="w-full border-none outline-none"
       :value="value"
       v-on:input="updateValue($event.target.value)"
+      @keyup.enter="$emit('on-enter')"
     />
     <div class="absolute top-0 right-0 w-6 h-6 mt-5 mr-2 cursor-pointer" @click="changeType">
       <img src="~/assets/images/eye.svg" class="inline-block" :class="(type=='text') ? 'opacity-50' : 'opacity-100'" alt="eye" />

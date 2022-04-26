@@ -1,7 +1,7 @@
-exports.ids = [43,14,15,16,23];
+exports.ids = [44,14,15,16,23];
 exports.modules = {
 
-/***/ 102:
+/***/ 103:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -105,7 +105,7 @@ var component = Object(componentNormalizer["a" /* default */])(
 
 /***/ }),
 
-/***/ 103:
+/***/ 104:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -475,7 +475,7 @@ installComponents(component, {Button: __webpack_require__(36).default})
 
 /***/ }),
 
-/***/ 104:
+/***/ 105:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -642,7 +642,7 @@ var component = Object(componentNormalizer["a" /* default */])(
 
 /***/ }),
 
-/***/ 148:
+/***/ 150:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -697,7 +697,7 @@ var component = Object(componentNormalizer["a" /* default */])(
 /* harmony default export */ var registration_success = __webpack_exports__["default"] = (component.exports);
 
 /* nuxt-component-imports */
-installComponents(component, {Header: __webpack_require__(102).default,MainMenu: __webpack_require__(103).default,Button: __webpack_require__(36).default,Footer: __webpack_require__(104).default})
+installComponents(component, {Header: __webpack_require__(103).default,MainMenu: __webpack_require__(104).default,Button: __webpack_require__(36).default,Footer: __webpack_require__(105).default})
 
 
 /***/ }),

@@ -1,4 +1,4 @@
-exports.ids = [30,1,2,3,4,5,6,7,8,9,11,12,14,15,16,21,22,23,29];
+exports.ids = [31,1,2,3,4,5,6,7,8,9,11,12,14,15,16,21,22,23,26,30];
 exports.modules = Array(35).concat([
 /* 35 */
 /***/ (function(module, exports) {
@@ -119,7 +119,7 @@ var component = Object(componentNormalizer["a" /* default */])(
 __webpack_require__.r(__webpack_exports__);
 
 // CONCATENATED MODULE: ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/@nuxt/components/dist/loader.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./components/Input.vue?vue&type=template&id=d110d27a&
-var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"relative px-3 py-2",class:[_vm.border, _vm.customClass]},[_vm._ssrNode("<div class=\"mb-1 text-xs text-grayscale-400\">"+_vm._ssrEscape(_vm._s(_vm.label))+"</div> <input type=\"text\""+(_vm._ssrAttr("placeholder",_vm.placeholder))+(_vm._ssrAttr("readonly",_vm.readonly))+(_vm._ssrAttr("value",_vm.value))+" class=\"w-full border-none outline-none\"> "+((_vm.icon)?("<div class=\"absolute w-6 h-6 right-3 top-4\"><img"+(_vm._ssrAttr("src",__webpack_require__(87)("./" + _vm.icon)))+" alt=\"Search\"></div>"):"<!---->"))])}
+var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"relative px-3 py-2",class:[_vm.border, _vm.customClass]},[_vm._ssrNode("<div class=\"mb-1 text-xs text-grayscale-400\">"+_vm._ssrEscape(_vm._s(_vm.label))+"</div> <input type=\"text\""+(_vm._ssrAttr("placeholder",_vm.placeholder))+(_vm._ssrAttr("readonly",_vm.readonly))+(_vm._ssrAttr("value",_vm.value))+" class=\"w-full border-none outline-none\"> "+((_vm.icon)?("<div class=\"absolute w-6 h-6 right-3 top-4\"><img"+(_vm._ssrAttr("src",__webpack_require__(88)("./" + _vm.icon)))+" alt=\"Search\"></div>"):"<!---->"))])}
 var staticRenderFns = []
 
 
@@ -368,182 +368,189 @@ module.exports = __webpack_require__.p + "img/membership-card-silver.0204b0c.png
 /* 63 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "img/membership-card.5b2410e.png";
+module.exports = __webpack_require__.p + "img/check.788163c.png";
 
 /***/ }),
 /* 64 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "img/membership-card.5b2410e.png";
+
+/***/ }),
+/* 65 */
 /***/ (function(module, exports) {
 
 module.exports = "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjUiIHZpZXdCb3g9IjAgMCAyNCAyNSIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPGNpcmNsZSBjeD0iMTIiIGN5PSI2LjcxODc1IiByPSIyIiBmaWxsPSIjNjQ3NDhCIi8+CjxjaXJjbGUgY3g9IjEyIiBjeT0iMTIuNzE4OCIgcj0iMiIgZmlsbD0iIzY0NzQ4QiIvPgo8Y2lyY2xlIGN4PSIxMiIgY3k9IjE4LjcxODgiIHI9IjIiIGZpbGw9IiM2NDc0OEIiLz4KPC9zdmc+Cg=="
 
 /***/ }),
-/* 65 */
+/* 66 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "img/current-tier.8ed4ecc.png";
 
 /***/ }),
-/* 66 */
+/* 67 */
 /***/ (function(module, exports) {
 
 module.exports = "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjUiIGhlaWdodD0iNjUiIHZpZXdCb3g9IjAgMCA2NSA2NSIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTQyLjQxOTkgMTguMTcxOEM0MS40NzU3IDE3LjA0MTYgMzkuNzk0IDE2Ljg5MDkgMzguNjYzNyAxNy44MzUyQzM3LjUzMzUgMTguNzc5NCAzNy4zODI4IDIwLjQ2MTEgMzguMzI3MSAyMS41OTEzTDQ1LjI1OTIgMjkuODg4NUwxNS4zNzU3IDI5Ljg4ODVDMTMuOTAyOSAyOS44ODg1IDEyLjcwOSAzMS4wODI0IDEyLjcwOSAzMi41NTUxQzEyLjcwOSAzNC4wMjc5IDEzLjkwMjkgMzUuMjIxOCAxNS4zNzU3IDM1LjIyMThMNDQuOTkxOCAzNS4yMjE4TDM4LjMzNDcgNDMuMTE4QzM3LjM4NTQgNDQuMjQ0IDM3LjUyODcgNDUuOTI2MyAzOC42NTQ3IDQ2Ljg3NTZDMzkuNzgwNiA0Ny44MjQ5IDQxLjQ2MyA0Ny42ODE3IDQyLjQxMjMgNDYuNTU1N0w1Mi44ODQzIDM0LjEzNDRDNTMuNzE4NiAzMy4xNDQ5IDUzLjcyMTggMzEuNjk5MSA1Mi44OTE5IDMwLjcwNThMNDIuNDE5OSAxOC4xNzE4WiIgZmlsbD0iIzMwN0JEMyIvPgo8L3N2Zz4K"
 
 /***/ }),
-/* 67 */
+/* 68 */
 /***/ (function(module, exports) {
 
 module.exports = "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjUiIGhlaWdodD0iNjUiIHZpZXdCb3g9IjAgMCA2NSA2NSIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTQ2Ljc5ODkgMjMuMDU2NkM0Ny45MjkxIDI0LjAwMDkgNDguMDc5OCAyNS42ODI2IDQ3LjEzNTUgMjYuODEyOEM0Ni4xOTEzIDI3Ljk0MyA0NC41MDk2IDI4LjA5MzggNDMuMzc5NCAyNy4xNDk1TDM1LjA4MjMgMjAuMjE3NEwzNS4wODIyIDUwLjEwMDlDMzUuMDgyMiA1MS41NzM3IDMzLjg4ODMgNTIuNzY3NiAzMi40MTU2IDUyLjc2NzZDMzAuOTQyOCA1Mi43Njc2IDI5Ljc0ODkgNTEuNTczNyAyOS43NDg5IDUwLjEwMDlMMjkuNzQ4OSAyMC40ODQ4TDIxLjg1MjcgMjcuMTQxOUMyMC43MjY3IDI4LjA5MTEgMTkuMDQ0NCAyNy45NDc5IDE4LjA5NTEgMjYuODIxOUMxNy4xNDU4IDI1LjY5NTkgMTcuMjg5IDI0LjAxMzYgMTguNDE1IDIzLjA2NDNMMzAuODM2MyAxMi41OTIzQzMxLjgyNTggMTEuNzU4IDMzLjI3MTYgMTEuNzU0OCAzNC4yNjQ5IDEyLjU4NDZMNDYuNzk4OSAyMy4wNTY2WiIgZmlsbD0iIzMwN0JEMyIvPgo8L3N2Zz4K"
 
 /***/ }),
-/* 68 */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "img/book-a-flight.531d0b4.png";
-
-/***/ }),
 /* 69 */
-/***/ (function(module, exports) {
-
-module.exports = "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjUiIGhlaWdodD0iMjUiIHZpZXdCb3g9IjAgMCAyNSAyNSIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTQuMzQzMjYgMTguMDA0NkM0LjM0MzI2IDE3LjQ1MjMgNC43OTA5OCAxNy4wMDQ2IDUuMzQzMjYgMTcuMDA0NkgxOS4zMTk1QzE5Ljg3MTcgMTcuMDA0NiAyMC4zMTk1IDE3LjQ1MjMgMjAuMzE5NSAxOC4wMDQ2QzIwLjMxOTUgMTguNTU2OSAxOS44NzE3IDE5LjAwNDYgMTkuMzE5NSAxOS4wMDQ2SDUuMzQzMjZDNC43OTA5OCAxOS4wMDQ2IDQuMzQzMjYgMTguNTU2OSA0LjM0MzI2IDE4LjAwNDZaIiBmaWxsPSIjMjI0Q0ExIi8+CjxwYXRoIGQ9Ik0xMS4zNjg0IDcuMDA0OTNMMTQuNTY4NyA5LjEyMjc3TDE2LjkyNDggNy42NzkxQzE3LjY5NTQgNy4yMDY5MSAxOC42OTggNy4zOTEyNSAxOS4yNTAyIDguMTA2NjdDMTkuNTgxNSA4LjUzNTgxIDE5LjQ1MjUgOS4xNTkyMyAxOC45NzgxIDkuNDIxNjNMOS4zNDA3OCAxNC43NTIyQzkuMTc5MTQgMTQuODQxNiA4Ljk5NTg5IDE0Ljg4NDUgOC44MTEzNiAxNC44NzYxTDcuMjM1MDIgMTQuODA0NUM3LjE0MTk4IDE0LjgwMDIgNy4wNTE5OCAxNC43NzAxIDYuOTc1MTUgMTQuNzE3NUw0Ljc4MjU5IDEzLjIxNTVMNS45MTcwMyAxMi41NjM1QzYuMTk4MSAxMi40MDIgNi41NDAwNCAxMi4zODY3IDYuODM0MzggMTIuNTIyNkw4LjAyMDM2IDEzLjA3TDExLjQ1ODIgMTAuOTk2M0w4LjYwMjQ0IDcuOTQwNDNMMTAuMzI1IDYuOTY4MDRDMTAuNjUyMSA2Ljc4MzM3IDExLjA1NTEgNi43OTc2MiAxMS4zNjg0IDcuMDA0OTNaIiBmaWxsPSIjMjI0Q0ExIi8+Cjwvc3ZnPgo="
-
-/***/ }),
-/* 70 */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "img/earn-point.dd9fafd.png";
-
-/***/ }),
-/* 71 */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "img/flight-info.15b54ac.svg";
-
-/***/ }),
-/* 72 */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "img/my-trip.4a965be.svg";
-
-/***/ }),
-/* 73 */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "img/pay-with-star-points.81b6c5e.png";
-
-/***/ }),
-/* 74 */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "img/redeem-2.30a008f.png";
-
-/***/ }),
-/* 75 */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "img/redeem-3.ca40aed.png";
-
-/***/ }),
-/* 76 */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "img/redeem-4.121d7b9.png";
-
-/***/ }),
-/* 77 */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "img/redem-1.eb94999.png";
-
-/***/ }),
-/* 78 */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "img/stay-at-hotel.588dd9d.png";
-
-/***/ }),
-/* 79 */
 /***/ (function(module, exports) {
 
 module.exports = "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjUiIHZpZXdCb3g9IjAgMCAyNCAyNSIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTE0LjEzMDUgMjAuNDMzN0MxNC40ODQ2IDIwLjg1NzUgMTUuMTE1MiAyMC45MTQxIDE1LjUzOSAyMC41NkMxNS45NjI5IDIwLjIwNTkgMTYuMDE5NCAxOS41NzUyIDE1LjY2NTMgMTkuMTUxNEwxNC4xMzA1IDIwLjQzMzdaTTkuMTAyMDkgMTIuODU1NUw4LjMzNzU1IDEyLjIxMUM4LjAyNDY5IDEyLjU4MjEgOC4wMjM0OSAxMy4xMjQyIDguMzM0NjkgMTMuNDk2N0w5LjEwMjA5IDEyLjg1NTVaTTE1LjY2MjQgNi42MjU1MkMxNi4wMTg0IDYuMjAzMjcgMTUuOTY0NyA1LjU3MjM5IDE1LjU0MjQgNS4yMTY0QzE1LjEyMDIgNC44NjA0MiAxNC40ODkzIDQuOTE0MTMgMTQuMTMzMyA1LjMzNjM4TDE1LjY2MjQgNi42MjU1MlpNMTUuNjY1MyAxOS4xNTE0TDkuODY5NSAxMi4yMTQ0TDguMzM0NjkgMTMuNDk2N0wxNC4xMzA1IDIwLjQzMzdMMTUuNjY1MyAxOS4xNTE0Wk05Ljg2NjY0IDEzLjUwMDFMMTUuNjYyNCA2LjYyNTUyTDE0LjEzMzMgNS4zMzYzOEw4LjMzNzU1IDEyLjIxMUw5Ljg2NjY0IDEzLjUwMDFaIiBmaWxsPSIjNjQ3NDhCIi8+Cjwvc3ZnPgo="
 
 /***/ }),
+/* 70 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "img/book-a-flight.531d0b4.png";
+
+/***/ }),
+/* 71 */
+/***/ (function(module, exports) {
+
+module.exports = "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjUiIGhlaWdodD0iMjUiIHZpZXdCb3g9IjAgMCAyNSAyNSIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTQuMzQzMjYgMTguMDA0NkM0LjM0MzI2IDE3LjQ1MjMgNC43OTA5OCAxNy4wMDQ2IDUuMzQzMjYgMTcuMDA0NkgxOS4zMTk1QzE5Ljg3MTcgMTcuMDA0NiAyMC4zMTk1IDE3LjQ1MjMgMjAuMzE5NSAxOC4wMDQ2QzIwLjMxOTUgMTguNTU2OSAxOS44NzE3IDE5LjAwNDYgMTkuMzE5NSAxOS4wMDQ2SDUuMzQzMjZDNC43OTA5OCAxOS4wMDQ2IDQuMzQzMjYgMTguNTU2OSA0LjM0MzI2IDE4LjAwNDZaIiBmaWxsPSIjMjI0Q0ExIi8+CjxwYXRoIGQ9Ik0xMS4zNjg0IDcuMDA0OTNMMTQuNTY4NyA5LjEyMjc3TDE2LjkyNDggNy42NzkxQzE3LjY5NTQgNy4yMDY5MSAxOC42OTggNy4zOTEyNSAxOS4yNTAyIDguMTA2NjdDMTkuNTgxNSA4LjUzNTgxIDE5LjQ1MjUgOS4xNTkyMyAxOC45NzgxIDkuNDIxNjNMOS4zNDA3OCAxNC43NTIyQzkuMTc5MTQgMTQuODQxNiA4Ljk5NTg5IDE0Ljg4NDUgOC44MTEzNiAxNC44NzYxTDcuMjM1MDIgMTQuODA0NUM3LjE0MTk4IDE0LjgwMDIgNy4wNTE5OCAxNC43NzAxIDYuOTc1MTUgMTQuNzE3NUw0Ljc4MjU5IDEzLjIxNTVMNS45MTcwMyAxMi41NjM1QzYuMTk4MSAxMi40MDIgNi41NDAwNCAxMi4zODY3IDYuODM0MzggMTIuNTIyNkw4LjAyMDM2IDEzLjA3TDExLjQ1ODIgMTAuOTk2M0w4LjYwMjQ0IDcuOTQwNDNMMTAuMzI1IDYuOTY4MDRDMTAuNjUyMSA2Ljc4MzM3IDExLjA1NTEgNi43OTc2MiAxMS4zNjg0IDcuMDA0OTNaIiBmaWxsPSIjMjI0Q0ExIi8+Cjwvc3ZnPgo="
+
+/***/ }),
+/* 72 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "img/earn-point.dd9fafd.png";
+
+/***/ }),
+/* 73 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "img/flight-info.15b54ac.svg";
+
+/***/ }),
+/* 74 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "img/my-trip.4a965be.svg";
+
+/***/ }),
+/* 75 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "img/pay-with-star-points.81b6c5e.png";
+
+/***/ }),
+/* 76 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "img/redeem-2.30a008f.png";
+
+/***/ }),
+/* 77 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "img/redeem-3.ca40aed.png";
+
+/***/ }),
+/* 78 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "img/redeem-4.121d7b9.png";
+
+/***/ }),
+/* 79 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "img/redem-1.eb94999.png";
+
+/***/ }),
 /* 80 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "img/banner-mobile.c1b20c7.jpg";
+module.exports = __webpack_require__.p + "img/stay-at-hotel.588dd9d.png";
 
 /***/ }),
 /* 81 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "img/banner.8ec9fec.jpg";
+module.exports = __webpack_require__.p + "img/banner-mobile.c1b20c7.jpg";
 
 /***/ }),
 /* 82 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "img/banner.8ec9fec.jpg";
+
+/***/ }),
+/* 83 */
 /***/ (function(module, exports) {
 
 module.exports = "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDkiIGhlaWdodD0iNDkiIHZpZXdCb3g9IjAgMCA0OSA0OSIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPGNpcmNsZSBjeD0iMjQuMTg1NSIgY3k9IjI0LjQxOCIgcj0iMjQiIGZpbGw9IiM0MjY3QjIiLz4KPHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0yNi4xMTQyIDM3LjYxMjhDMjUuNDg0NSAzNy43MDQxIDI0Ljg0MDQgMzcuNzUxMyAyNC4xODU0IDM3Ljc1MTNDMjMuOTQzNyAzNy43NTEzIDIzLjcwMzYgMzcuNzQ0OSAyMy40NjUxIDM3LjczMjJDMjMuNzAzNiAzNy43NDQ4IDIzLjk0MzcgMzcuNzUxMSAyNC4xODU0IDM3Ljc1MTFDMjQuODQwNSAzNy43NTExIDI1LjQ4NDUgMzcuNzAzIDI2LjExNDIgMzcuNjEyOFpNMjYuMjY4NiAzNy41ODk1VjI4LjI3MjhIMjkuMzc1NUwyOS45NjYxIDI0LjQxNzdIMjYuMjY4NlYyMS45MTY0QzI2LjI2ODYgMjAuODYyNyAyNi43ODQyIDE5LjgzMzMgMjguNDQxNyAxOS44MzMzSDMwLjEyMzZWMTYuNTUyQzMwLjEyMzYgMTYuNTUyIDI4LjU5NzQgMTYuMjkxNCAyNy4xMzg2IDE2LjI5MTRDMjQuMDkzNSAxNi4yOTE0IDIyLjEwMjMgMTguMTM2NCAyMi4xMDIzIDIxLjQ3OTZWMjQuNDE3N0gxOC43MTU5VjI4LjI3MjhIMjIuMTAyM1YzNy41ODk1QzE1LjcyNzkgMzYuNTg5NCAxMC44NTIxIDMxLjA3MzEgMTAuODUyMSAyNC40MThDMTAuODUyMSAxNy4wNTQyIDE2LjgyMTYgMTEuMDg0NyAyNC4xODU0IDExLjA4NDdDMzEuNTQ5MiAxMS4wODQ3IDM3LjUxODcgMTcuMDU0MiAzNy41MTg3IDI0LjQxOEMzNy41MTg3IDMxLjA3MzEgMzIuNjQyOSAzNi41ODk0IDI2LjI2ODYgMzcuNTg5NVoiIGZpbGw9IndoaXRlIi8+Cjwvc3ZnPgo="
 
 /***/ }),
-/* 83 */
+/* 84 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "img/google.27f3ea6.svg";
 
 /***/ }),
-/* 84 */
+/* 85 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "img/newsletter-mobile.3eb81db.png";
 
 /***/ }),
-/* 85 */
+/* 86 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "img/newsletter.eb73f33.png";
 
 /***/ }),
-/* 86 */
+/* 87 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "img/twitter.cca7832.svg";
 
 /***/ }),
-/* 87 */
+/* 88 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var map = {
 	"./alert-info.svg": 57,
 	"./arrow-bottom-gray.svg": 35,
 	"./arrow-bottom.svg": 45,
-	"./arrow-left.svg": 79,
+	"./arrow-left.svg": 69,
 	"./arrow-right.svg": 43,
 	"./arrow-up-gray.svg": 42,
-	"./banner-mobile.jpg": 80,
-	"./banner-mobile.png": 88,
-	"./banner.jpg": 81,
-	"./banner.png": 89,
+	"./banner-mobile.jpg": 81,
+	"./banner-mobile.png": 89,
+	"./banner.jpg": 82,
+	"./banner.png": 90,
 	"./bg-forgot-password.png": 17,
 	"./bg-login.png": 16,
-	"./book-a-flight.png": 68,
-	"./book.svg": 69,
+	"./book-a-flight.png": 70,
+	"./book.svg": 71,
+	"./check.png": 63,
 	"./close.svg": 47,
-	"./current-tier.png": 65,
-	"./earn-point-1.jpg": 90,
-	"./earn-point-2.jpg": 91,
-	"./earn-point-3.jpg": 92,
-	"./earn-point-4.jpg": 93,
-	"./earn-point-5.jpg": 94,
-	"./earn-point-6.jpg": 95,
-	"./earn-point-7.jpg": 96,
-	"./earn-point-8.jpg": 97,
-	"./earn-point-9.jpg": 98,
-	"./earn-point.png": 70,
+	"./current-tier.png": 66,
+	"./earn-point-1.jpg": 91,
+	"./earn-point-2.jpg": 92,
+	"./earn-point-3.jpg": 93,
+	"./earn-point-4.jpg": 94,
+	"./earn-point-5.jpg": 95,
+	"./earn-point-6.jpg": 96,
+	"./earn-point-7.jpg": 97,
+	"./earn-point-8.jpg": 98,
+	"./earn-point-9.jpg": 99,
+	"./earn-point.png": 72,
 	"./email-sent-success.svg": 58,
 	"./english.svg": 48,
 	"./eye.svg": 59,
-	"./facebook.svg": 82,
-	"./flight-info.svg": 71,
+	"./facebook.svg": 83,
+	"./flight-info.svg": 73,
 	"./flip-button-mobile.svg": 55,
 	"./flip-button.svg": 56,
 	"./footer-facebook.svg": 50,
@@ -552,31 +559,31 @@ var map = {
 	"./footer-twitter.svg": 53,
 	"./footer-whatsapp.svg": 54,
 	"./globe.svg": 44,
-	"./google.svg": 83,
+	"./google.svg": 84,
 	"./info.svg": 46,
 	"./logo-star-air.png": 60,
 	"./logo.png": 38,
-	"./logo.svg": 99,
+	"./logo.svg": 100,
 	"./membership-card-gold.png": 61,
 	"./membership-card-silver.png": 62,
-	"./membership-card.png": 63,
+	"./membership-card.png": 64,
 	"./mobile-menu.svg": 49,
-	"./my-trip.svg": 72,
-	"./newsletter-mobile.png": 84,
-	"./newsletter.png": 85,
-	"./pay-with-star-points.png": 73,
+	"./my-trip.svg": 74,
+	"./newsletter-mobile.png": 85,
+	"./newsletter.png": 86,
+	"./pay-with-star-points.png": 75,
 	"./profile-white.svg": 40,
-	"./redeem-2.png": 74,
-	"./redeem-3.png": 75,
-	"./redeem-4.png": 76,
-	"./redem-1.png": 77,
-	"./search.svg": 100,
+	"./redeem-2.png": 76,
+	"./redeem-3.png": 77,
+	"./redeem-4.png": 78,
+	"./redem-1.png": 79,
+	"./search.svg": 101,
 	"./shopping-bag.svg": 39,
-	"./stay-at-hotel.png": 78,
-	"./three-dots.svg": 64,
-	"./twitter.svg": 86,
-	"./upgrade-right.svg": 66,
-	"./upgrade-up.svg": 67,
+	"./stay-at-hotel.png": 80,
+	"./three-dots.svg": 65,
+	"./twitter.svg": 87,
+	"./upgrade-right.svg": 67,
+	"./upgrade-up.svg": 68,
 	"./user.png": 41
 };
 
@@ -598,102 +605,110 @@ webpackContext.keys = function webpackContextKeys() {
 };
 webpackContext.resolve = webpackContextResolve;
 module.exports = webpackContext;
-webpackContext.id = 87;
-
-/***/ }),
-/* 88 */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "img/banner-mobile.6c0987f.png";
+webpackContext.id = 88;
 
 /***/ }),
 /* 89 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "img/banner.7f09f8c.png";
+module.exports = __webpack_require__.p + "img/banner-mobile.6c0987f.png";
 
 /***/ }),
 /* 90 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "img/earn-point-1.f8daffa.jpg";
+module.exports = __webpack_require__.p + "img/banner.7f09f8c.png";
 
 /***/ }),
 /* 91 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "img/earn-point-2.b16c478.jpg";
+module.exports = __webpack_require__.p + "img/earn-point-1.f8daffa.jpg";
 
 /***/ }),
 /* 92 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "img/earn-point-3.35285cb.jpg";
+module.exports = __webpack_require__.p + "img/earn-point-2.b16c478.jpg";
 
 /***/ }),
 /* 93 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "img/earn-point-4.d15ffc0.jpg";
+module.exports = __webpack_require__.p + "img/earn-point-3.35285cb.jpg";
 
 /***/ }),
 /* 94 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "img/earn-point-5.38270c5.jpg";
+module.exports = __webpack_require__.p + "img/earn-point-4.d15ffc0.jpg";
 
 /***/ }),
 /* 95 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "img/earn-point-6.2c669bf.jpg";
+module.exports = __webpack_require__.p + "img/earn-point-5.38270c5.jpg";
 
 /***/ }),
 /* 96 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "img/earn-point-7.66b5a16.jpg";
+module.exports = __webpack_require__.p + "img/earn-point-6.2c669bf.jpg";
 
 /***/ }),
 /* 97 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "img/earn-point-8.69c3ff7.jpg";
+module.exports = __webpack_require__.p + "img/earn-point-7.66b5a16.jpg";
 
 /***/ }),
 /* 98 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "img/earn-point-9.6fd8643.jpg";
+module.exports = __webpack_require__.p + "img/earn-point-8.69c3ff7.jpg";
 
 /***/ }),
 /* 99 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "img/logo.f96665f.svg";
+module.exports = __webpack_require__.p + "img/earn-point-9.6fd8643.jpg";
 
 /***/ }),
 /* 100 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "img/logo.f96665f.svg";
+
+/***/ }),
+/* 101 */
 /***/ (function(module, exports) {
 
 module.exports = "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjUiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNSAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0xNS4wODA2IDE2LjIyOTdDMTQuMTAxNSAxNi44MzU5IDEyLjk0NyAxNy4xODU3IDExLjcxMDggMTcuMTg1N0M4LjE2OTk3IDE3LjE4NTcgNS4yOTk1NiAxNC4zMTUzIDUuMjk5NTYgMTAuNzc0NUM1LjI5OTU2IDcuMjMzNjkgOC4xNjk5NyA0LjM2MzI4IDExLjcxMDggNC4zNjMyOEMxNS4yNTE2IDQuMzYzMjggMTguMTIyIDcuMjMzNjkgMTguMTIyIDEwLjc3NDVDMTguMTIyIDEyLjM3MzQgMTcuNTM2OCAxMy44MzU1IDE2LjU2ODggMTQuOTU4NEwxOS4yMjY0IDE4LjAxNzhDMTkuNTgwOCAxOC40MjU5IDE5LjUzNzMgMTkuMDQ0IDE5LjEyOTMgMTkuMzk4NEMxOC43MjEzIDE5Ljc1MjggMTguMTAzMiAxOS43MDk0IDE3Ljc0ODcgMTkuMzAxM0wxNS4wODA2IDE2LjIyOTdaTTE2LjIzMzIgMTAuNzc0NUMxNi4yMzMyIDEzLjI3MjIgMTQuMjA4NSAxNS4yOTcgMTEuNzEwOCAxNS4yOTdDOS4yMTMxMSAxNS4yOTcgNy4xODgzNCAxMy4yNzIyIDcuMTg4MzQgMTAuNzc0NUM3LjE4ODM0IDguMjc2ODMgOS4yMTMxMSA2LjI1MjA2IDExLjcxMDggNi4yNTIwNkMxNC4yMDg1IDYuMjUyMDYgMTYuMjMzMiA4LjI3NjgzIDE2LjIzMzIgMTAuNzc0NVoiIGZpbGw9IiM2NDc0OEIiLz4KPC9zdmc+Cg=="
 
 /***/ }),
-/* 101 */
+/* 102 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 // ESM COMPAT FLAG
 __webpack_require__.r(__webpack_exports__);
 
-// CONCATENATED MODULE: ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/@nuxt/components/dist/loader.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./components/Select.vue?vue&type=template&id=bc660fb6&
-var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"h-full px-3 py-2",class:[_vm.border, _vm.customClass]},[_vm._ssrNode("<div class=\"mb-1 text-xs text-grayscale-400\">"+_vm._ssrEscape(_vm._s(_vm.label))+"</div> <select class=\"w-full border-none outline-none\"></select>")])}
+// CONCATENATED MODULE: ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/@nuxt/components/dist/loader.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./components/Select.vue?vue&type=template&id=09995e40&
+var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"h-full px-3 py-2",class:[_vm.border, _vm.customClass]},[_vm._ssrNode("<div class=\"mb-1 text-xs text-grayscale-400\">"+_vm._ssrEscape(_vm._s(_vm.label))+"</div> <select class=\"w-full border-none outline-none\">"+(_vm._ssrList((_vm.data),function(option,index){return ("<option"+(_vm._ssrAttr("value",option))+">"+_vm._ssrEscape("\n      "+_vm._s(option)+"\n    ")+"</option>")}))+"</select>")])}
 var staticRenderFns = []
 
 
-// CONCATENATED MODULE: ./components/Select.vue?vue&type=template&id=bc660fb6&
+// CONCATENATED MODULE: ./components/Select.vue?vue&type=template&id=09995e40&
 
 // CONCATENATED MODULE: ./node_modules/babel-loader/lib??ref--2-0!./node_modules/@nuxt/components/dist/loader.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./components/Select.vue?vue&type=script&lang=js&
+//
+//
+//
+//
+//
+//
+//
+//
 //
 //
 //
@@ -704,6 +719,15 @@ var staticRenderFns = []
 /* harmony default export */ var Selectvue_type_script_lang_js_ = ({
   name: "Select",
   props: {
+    data: {
+      type: Array,
+      required: false,
+      default: []
+    },
+    selectedData: {
+      type: String,
+      required: false
+    },
     label: {
       type: String,
       required: true
@@ -751,11 +775,11 @@ var component = Object(componentNormalizer["a" /* default */])(
 /* harmony default export */ var Select = __webpack_exports__["default"] = (component.exports);
 
 /* nuxt-component-imports */
-installComponents(component, {Select: __webpack_require__(101).default})
+installComponents(component, {Select: __webpack_require__(102).default})
 
 
 /***/ }),
-/* 102 */
+/* 103 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -858,7 +882,7 @@ var component = Object(componentNormalizer["a" /* default */])(
 /* harmony default export */ var Header = __webpack_exports__["default"] = (component.exports);
 
 /***/ }),
-/* 103 */
+/* 104 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1227,7 +1251,7 @@ installComponents(component, {Button: __webpack_require__(36).default})
 
 
 /***/ }),
-/* 104 */
+/* 105 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1393,21 +1417,22 @@ var component = Object(componentNormalizer["a" /* default */])(
 /* harmony default export */ var Footer = __webpack_exports__["default"] = (component.exports);
 
 /***/ }),
-/* 105 */
+/* 106 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 // ESM COMPAT FLAG
 __webpack_require__.r(__webpack_exports__);
 
-// CONCATENATED MODULE: ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/@nuxt/components/dist/loader.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./components/InputPassword.vue?vue&type=template&id=2c2f29ea&
+// CONCATENATED MODULE: ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/@nuxt/components/dist/loader.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./components/InputPassword.vue?vue&type=template&id=10664671&
 var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"relative p-3",class:[_vm.border, _vm.customClass]},[_vm._ssrNode("<div class=\"mb-1 text-xs text-grayscale-400\">"+_vm._ssrEscape(_vm._s(_vm.label))+"</div> <input"+(_vm._ssrAttr("type",_vm.type))+(_vm._ssrAttr("placeholder",_vm.placeholder))+(_vm._ssrAttr("value",_vm.value))+" class=\"w-full border-none outline-none\"> <div class=\"absolute top-0 right-0 w-6 h-6 mt-5 mr-2 cursor-pointer\"><img"+(_vm._ssrAttr("src",__webpack_require__(59)))+" alt=\"eye\""+(_vm._ssrClass("inline-block",(_vm.type=='text') ? 'opacity-50' : 'opacity-100'))+"></div>")])}
 var staticRenderFns = []
 
 
-// CONCATENATED MODULE: ./components/InputPassword.vue?vue&type=template&id=2c2f29ea&
+// CONCATENATED MODULE: ./components/InputPassword.vue?vue&type=template&id=10664671&
 
 // CONCATENATED MODULE: ./node_modules/babel-loader/lib??ref--2-0!./node_modules/@nuxt/components/dist/loader.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./components/InputPassword.vue?vue&type=script&lang=js&
+//
 //
 //
 //
@@ -1498,27 +1523,130 @@ installComponents(component, {Input: __webpack_require__(37).default})
 
 
 /***/ }),
-/* 106 */,
 /* 107 */,
-/* 108 */,
-/* 109 */,
-/* 110 */,
-/* 111 */,
-/* 112 */,
-/* 113 */,
-/* 114 */
+/* 108 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 // ESM COMPAT FLAG
 __webpack_require__.r(__webpack_exports__);
 
-// CONCATENATED MODULE: ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/@nuxt/components/dist/loader.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./components/account/Overview.vue?vue&type=template&id=65d5e8c0&
-var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',[_vm._ssrNode("<div class=\"w-full pb-0 mb-6 border rounded-xl text-grayscale-500\"><div class=\"p-6 border-b\"><div class=\"flex\"><div class=\"text-lg font-semibold font-noto-sans text-grayscale-900\">Overview</div></div></div> <div class=\"p-6 overflow-hidden\"><div class=\"flex mb-4\"><div class=\"flex-1 text-lg font-semibold font-noto-sans text-grayscale-900\">Points Latest Activities</div> <div class=\"flex-1 font-semibold text-right font-noto-sans text-secondary-900\">Read More &gt;</div></div> <div class=\"\n          mt-6\n          md:px-0 md:-mx-0\n          px-6\n          -mx-6\n          md:w-full\n          w-[100vw]\n          overflow-auto\n        \"><table class=\"table-auto md:w-full custom-table w-[1200px]\"><thead><tr><th>Date</th> <th>Type</th> <th>Star Points</th></tr></thead> <tbody>"+(_vm._ssrList((_vm.overviewData),function(data,index){return ("<tr><td>"+_vm._ssrEscape(_vm._s(data.entry_date))+"</td> <td>"+_vm._ssrEscape(_vm._s(data.action))+"</td> <td>"+_vm._ssrEscape(_vm._s(data.points))+"</td></tr>")}))+"</tbody> <tfoot><tr><th colspan=\"3\"> </th></tr></tfoot></table></div></div></div>")])}
+// CONCATENATED MODULE: ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/@nuxt/components/dist/loader.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./components/PopupSuccess.vue?vue&type=template&id=28bc315a&
+var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',[_vm._ssrNode("<div class=\"fixed inset-0 z-30 bg-black opacity-75\"></div> "),_vm._ssrNode("<div class=\"fixed inset-0 z-30 flex items-center\">","</div>",[_vm._ssrNode("<div class=\"mx-auto bg-white w-[600px] rounded-lg\">","</div>",[_vm._ssrNode("<div class=\"p-6 mx-auto text-center md:w-600\">","</div>",[_vm._ssrNode("<img"+(_vm._ssrAttr("src",__webpack_require__(63)))+" alt=\"success\" width=\"100\" class=\"inline-block mt-10\"> <div class=\"mt-8 text-lg font-semibold capitalize font-noto-sans\">"+_vm._ssrEscape("\n          "+_vm._s(_vm.title)+"\n        ")+"</div> <div class=\"mt-2 text-grayscale-500\">"+_vm._ssrEscape("\n          "+_vm._s(_vm.message)+"\n        ")+"</div> "),_vm._ssrNode("<div class=\"inline-block mt-6 w-[200px]\">","</div>",[_c('Button',{attrs:{"value":"Close","background":"bg-white","border":"border-2 border-secondary-900","color":"text-secondary-900"},on:{"action":function($event){return _vm.closePopup()}}})],1)],2)])])],2)}
 var staticRenderFns = []
 
 
-// CONCATENATED MODULE: ./components/account/Overview.vue?vue&type=template&id=65d5e8c0&
+// CONCATENATED MODULE: ./components/PopupSuccess.vue?vue&type=template&id=28bc315a&
+
+// CONCATENATED MODULE: ./node_modules/babel-loader/lib??ref--2-0!./node_modules/@nuxt/components/dist/loader.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./components/PopupSuccess.vue?vue&type=script&lang=js&
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+/* harmony default export */ var PopupSuccessvue_type_script_lang_js_ = ({
+  name: "PopupSuccess",
+  props: {
+    title: {
+      type: String,
+      required: false
+    },
+    message: {
+      type: String,
+      required: false
+    },
+    isPopupMessage: {
+      type: Boolean,
+      required: false,
+      default: false
+    }
+  },
+  methods: {
+    closePopup() {
+      this.$emit('close-popup');
+    }
+
+  }
+});
+// CONCATENATED MODULE: ./components/PopupSuccess.vue?vue&type=script&lang=js&
+ /* harmony default export */ var components_PopupSuccessvue_type_script_lang_js_ = (PopupSuccessvue_type_script_lang_js_); 
+// EXTERNAL MODULE: ./node_modules/vue-loader/lib/runtime/componentNormalizer.js
+var componentNormalizer = __webpack_require__(2);
+
+// CONCATENATED MODULE: ./components/PopupSuccess.vue
+
+
+
+
+
+/* normalize component */
+
+var component = Object(componentNormalizer["a" /* default */])(
+  components_PopupSuccessvue_type_script_lang_js_,
+  render,
+  staticRenderFns,
+  false,
+  null,
+  null,
+  "cceb7438"
+  
+)
+
+/* harmony default export */ var PopupSuccess = __webpack_exports__["default"] = (component.exports);
+
+/* nuxt-component-imports */
+installComponents(component, {Button: __webpack_require__(36).default})
+
+
+/***/ }),
+/* 109 */,
+/* 110 */,
+/* 111 */,
+/* 112 */,
+/* 113 */,
+/* 114 */,
+/* 115 */,
+/* 116 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+// ESM COMPAT FLAG
+__webpack_require__.r(__webpack_exports__);
+
+// CONCATENATED MODULE: ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/@nuxt/components/dist/loader.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./components/account/Overview.vue?vue&type=template&id=4c8ee8ca&
+var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',[_vm._ssrNode("<div class=\"w-full pb-0 mb-6 border rounded-xl text-grayscale-500\"><div class=\"p-6 border-b\"><div class=\"flex\"><div class=\"text-lg font-semibold font-noto-sans text-grayscale-900\">Overview</div></div></div> <div class=\"p-6 overflow-hidden\"><div class=\"flex mb-4\"><div class=\"flex-1 text-lg font-semibold font-noto-sans text-grayscale-900\">Points Latest Activities</div> "+((false)?(undefined):"<!---->")+"</div> <div class=\"\n          mt-6\n          md:px-0 md:-mx-0\n          px-6\n          -mx-6\n          md:w-full\n          w-[100vw]\n          overflow-auto\n        \"><table class=\"table-auto md:w-full custom-table w-[1200px]\"><thead><tr><th>Date</th> <th>Type</th> <th>Star Points</th></tr></thead> <tbody>"+(_vm._ssrList((_vm.overviewData),function(data,index){return ("<tr><td>"+_vm._ssrEscape(_vm._s(data.entry_date))+"</td> <td>"+_vm._ssrEscape(_vm._s(data.action))+"</td> <td>"+_vm._ssrEscape(_vm._s(data.points))+"</td></tr>")}))+"</tbody> <tfoot><tr><th colspan=\"3\"> </th></tr></tfoot></table></div></div></div>")])}
+var staticRenderFns = []
+
+
+// CONCATENATED MODULE: ./components/account/Overview.vue?vue&type=template&id=4c8ee8ca&
 
 // EXTERNAL MODULE: external "js-cookie"
 var external_js_cookie_ = __webpack_require__(34);
@@ -1639,19 +1767,19 @@ var component = Object(componentNormalizer["a" /* default */])(
 /* harmony default export */ var Overview = __webpack_exports__["default"] = (component.exports);
 
 /***/ }),
-/* 115 */
+/* 117 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 // ESM COMPAT FLAG
 __webpack_require__.r(__webpack_exports__);
 
-// CONCATENATED MODULE: ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/@nuxt/components/dist/loader.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./components/account/UserProfile.vue?vue&type=template&id=68bf236c&
-var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',[_vm._ssrNode("<div class=\"w-full pb-0 mb-6 border rounded-xl text-grayscale-500\"><div class=\"p-6 border-b\"><div class=\"flex\"><div class=\"text-lg font-semibold font-noto-sans text-grayscale-900\">User Profile</div></div></div> "+(_vm._ssrList((_vm.profileData),function(user,index){return ("<div"+(_vm._ssrAttr("index",index))+"><div class=\"flex items-center p-6 border-b cursor-pointer bg-grayscale-50\"><div class=\"flex-none\"><img"+(_vm._ssrAttr("src",__webpack_require__(41)))+" alt=\"User\" width=\"30\" class=\"inline-block mr-4\"></div> <div class=\"flex-grow\"><div class=\"mb-1 font-medium text-grayscale-900\">"+_vm._ssrEscape(_vm._s(user.name))+"</div> <div class=\"text-xs text-grayscale-500\">"+_vm._ssrEscape(_vm._s((index==0) ? 'You' : 'Family'))+"</div></div> <div class=\"relative flex-none\"><span>"+((index==_vm.activeUser)?("<img"+(_vm._ssrAttr("src",__webpack_require__(42)))+" alt=\"Arrow up\" width=\"24\" class=\"inline-block mr-4 cursor-pointer\">"):("<img"+(_vm._ssrAttr("src",__webpack_require__(35)))+" alt=\"Arrow bottom\" width=\"24\" class=\"inline-block mr-4 cursor-pointer\">"))+"</span> <img"+(_vm._ssrAttr("src",__webpack_require__(64)))+" alt=\"Config\" width=\"24\" class=\"inline-block cursor-pointer\"> "+((_vm.selectedConfig==index)?("<div class=\"absolute right-0 z-10 p-6 text-sm font-medium bg-white rounded-lg shadow-xl w-60 top-10\"><div class=\"pb-5\">Edit Profile</div> <div>Change Email &amp; Phone</div></div>"):"<!---->")+"</div></div> "+((index==_vm.activeUser)?("<div class=\"p-6\"><div class=\"pb-6 border-b\"><div class=\"font-semibold text-black font-noto-sans\">Contact Details</div> <div class=\"flex mt-6\"><div class=\"flex-1\"><div class=\"mb-1 text-xs text-grayscale-400\">Address</div> <div class=\"text-grayscale-900\">"+_vm._ssrEscape("\n                "+_vm._s(user.address)+"\n              ")+"</div></div> <div class=\"flex-1\"><div class=\"mb-1 text-xs text-grayscale-400\">Email</div> <div class=\"text-grayscale-900\">"+_vm._ssrEscape("\n                "+_vm._s(user.email)+"\n              ")+"</div> <div class=\"mt-8 mb-1 text-xs text-grayscale-400\">Phone</div> <div class=\"text-grayscale-900\">"+_vm._ssrEscape("\n                "+_vm._s(user.mobile)+"\n              ")+"</div></div></div></div> <div class=\"py-6 border-b\"><div class=\"font-semibold text-black font-noto-sans\">Member Info</div> <div class=\"flex mt-6\"><div class=\"flex-1\"><div class=\"mb-1 text-xs text-grayscale-400\">Member ID</div> <div class=\"text-grayscale-900\">"+_vm._ssrEscape("\n                "+_vm._s(user.member_id)+"\n              ")+"</div> <div class=\"mt-8 mb-1 text-xs text-grayscale-400\">Type of Member</div> <div class=\"text-grayscale-900\">"+_vm._ssrEscape("\n                "+_vm._s(user.member_level)+" Member\n              ")+"</div></div> <div class=\"flex-1\"><div class=\"mb-1 text-xs text-grayscale-400\">Star Points</div> <div class=\"text-grayscale-900\">"+_vm._ssrEscape("\n                "+_vm._s(user.avb_point)+" Points\n              ")+"</div> <div class=\"mt-8 mb-1 text-xs text-grayscale-400\">Credit Account</div> <div class=\"text-grayscale-900\">"+_vm._ssrEscape("\n                "+_vm._s(user.credit_account)+" INR\n              ")+"</div></div></div></div> <div class=\"pt-6\"><div class=\"font-semibold text-black font-noto-sans\">Travel Documents</div> <div class=\"flex mt-6\"><div class=\"flex-1\"><div class=\"mb-1 text-xs text-grayscale-400\">Nationality</div> <div class=\"text-grayscale-900\">"+_vm._ssrEscape("\n                "+_vm._s(user.nationality)+"\n              ")+"</div> <div class=\"mt-8 mb-1 text-xs text-grayscale-400\">Passport Number</div> <div class=\"text-grayscale-900\">"+_vm._ssrEscape("\n                "+_vm._s(user.passport_no)+"\n              ")+"</div></div> <div class=\"flex-1\"><div class=\"mb-1 text-xs text-grayscale-400\">Passport Expire Date</div> <div class=\"text-grayscale-900\">"+_vm._ssrEscape("\n                "+_vm._s(user.expire_date)+"\n              ")+"</div></div></div></div></div>"):"<!---->")+"</div>")}))+"</div>")])}
+// CONCATENATED MODULE: ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/@nuxt/components/dist/loader.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./components/account/UserProfile.vue?vue&type=template&id=27e23fb4&
+var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',[_vm._ssrNode("<div class=\"w-full pb-0 mb-6 border rounded-xl text-grayscale-500\"><div class=\"p-6 border-b\"><div class=\"flex\"><div class=\"text-lg font-semibold font-noto-sans text-grayscale-900\">User Profile</div></div></div> "+(_vm._ssrList((_vm.profileData),function(user,index){return ("<div"+(_vm._ssrAttr("index",index))+"><div class=\"flex items-center p-6 border-b cursor-pointer bg-grayscale-50\"><div class=\"flex-none\"><img"+(_vm._ssrAttr("src",__webpack_require__(41)))+" alt=\"User\" width=\"30\" class=\"inline-block mr-4\"></div> <div class=\"flex-grow\"><div class=\"mb-1 font-medium text-grayscale-900\">"+_vm._ssrEscape(_vm._s(user.name))+"</div> <div class=\"text-xs text-grayscale-500\">"+_vm._ssrEscape(_vm._s((index==0) ? 'You' : 'Family'))+"</div></div> <div class=\"relative flex-none\"><span>"+((index==_vm.activeUser)?("<img"+(_vm._ssrAttr("src",__webpack_require__(42)))+" alt=\"Arrow up\" width=\"24\" class=\"inline-block mr-4 cursor-pointer\">"):("<img"+(_vm._ssrAttr("src",__webpack_require__(35)))+" alt=\"Arrow bottom\" width=\"24\" class=\"inline-block mr-4 cursor-pointer\">"))+"</span> <img"+(_vm._ssrAttr("src",__webpack_require__(65)))+" alt=\"Config\" width=\"24\" class=\"inline-block cursor-pointer\"> "+((_vm.selectedConfig==index)?("<div class=\"absolute right-0 z-10 text-sm font-medium bg-white rounded-lg shadow-xl w-60 top-10\"><div class=\"p-5\">Edit Profile</div> "+((false)?(undefined):"<!---->")+"</div>"):"<!---->")+"</div></div> "+((index==_vm.activeUser)?("<div class=\"p-6\"><div class=\"pb-6 border-b\"><div class=\"font-semibold text-black font-noto-sans\">Contact Details</div> <div class=\"flex mt-6\"><div class=\"flex-1\"><div class=\"mb-1 text-xs text-grayscale-400\">Address</div> <div class=\"text-grayscale-900\">"+_vm._ssrEscape("\n                "+_vm._s(user.address)+"\n              ")+"</div></div> <div class=\"flex-1\"><div class=\"mb-1 text-xs text-grayscale-400\">Email</div> <div class=\"text-grayscale-900\">"+_vm._ssrEscape("\n                "+_vm._s(user.email)+"\n              ")+"</div> <div class=\"mt-8 mb-1 text-xs text-grayscale-400\">Phone</div> <div class=\"text-grayscale-900\">"+_vm._ssrEscape("\n                "+_vm._s(user.mobile)+"\n              ")+"</div></div></div></div> <div class=\"py-6 border-b\"><div class=\"font-semibold text-black font-noto-sans\">Member Info</div> <div class=\"flex mt-6\"><div class=\"flex-1\"><div class=\"mb-1 text-xs text-grayscale-400\">Member ID</div> <div class=\"text-grayscale-900\">"+_vm._ssrEscape("\n                "+_vm._s(user.member_id)+"\n              ")+"</div> <div class=\"mt-8 mb-1 text-xs text-grayscale-400\">Type of Member</div> <div class=\"text-grayscale-900\">"+_vm._ssrEscape("\n                "+_vm._s(user.member_level)+" Member\n              ")+"</div></div> <div class=\"flex-1\"><div class=\"mb-1 text-xs text-grayscale-400\">Star Points</div> <div class=\"text-grayscale-900\">"+_vm._ssrEscape("\n                "+_vm._s(user.avb_point)+" Points\n              ")+"</div> <div class=\"mt-8 mb-1 text-xs text-grayscale-400\">Credit Account</div> <div class=\"text-grayscale-900\">"+_vm._ssrEscape("\n                "+_vm._s(user.credit_account)+" INR\n              ")+"</div></div></div></div> <div class=\"pt-6\"><div class=\"font-semibold text-black font-noto-sans\">Travel Documents</div> <div class=\"flex mt-6\"><div class=\"flex-1\"><div class=\"mb-1 text-xs text-grayscale-400\">Nationality</div> <div class=\"text-grayscale-900\">"+_vm._ssrEscape("\n                "+_vm._s(user.nationality)+"\n              ")+"</div> <div class=\"mt-8 mb-1 text-xs text-grayscale-400\">Passport Number</div> <div class=\"text-grayscale-900\">"+_vm._ssrEscape("\n                "+_vm._s(user.passport_no)+"\n              ")+"</div></div> <div class=\"flex-1\"><div class=\"mb-1 text-xs text-grayscale-400\">Passport Expire Date</div> <div class=\"text-grayscale-900\">"+_vm._ssrEscape("\n                "+_vm._s(user.passport_expire_date)+"\n              ")+"</div></div></div></div></div>"):"<!---->")+"</div>")}))+"</div>")])}
 var staticRenderFns = []
 
 
-// CONCATENATED MODULE: ./components/account/UserProfile.vue?vue&type=template&id=68bf236c&
+// CONCATENATED MODULE: ./components/account/UserProfile.vue?vue&type=template&id=27e23fb4&
 
 // EXTERNAL MODULE: external "js-cookie"
 var external_js_cookie_ = __webpack_require__(34);
@@ -1921,7 +2049,7 @@ var component = Object(componentNormalizer["a" /* default */])(
 /* harmony default export */ var UserProfile = __webpack_exports__["default"] = (component.exports);
 
 /***/ }),
-/* 116 */
+/* 118 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -2088,11 +2216,11 @@ var component = Object(componentNormalizer["a" /* default */])(
 /* harmony default export */ var BookingHistory = __webpack_exports__["default"] = (component.exports);
 
 /* nuxt-component-imports */
-installComponents(component, {Input: __webpack_require__(37).default,Select: __webpack_require__(101).default,Button: __webpack_require__(36).default})
+installComponents(component, {Input: __webpack_require__(37).default,Select: __webpack_require__(102).default,Button: __webpack_require__(36).default})
 
 
 /***/ }),
-/* 117 */
+/* 119 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -2221,7 +2349,7 @@ var component = Object(componentNormalizer["a" /* default */])(
 /* harmony default export */ var StarPoints = __webpack_exports__["default"] = (component.exports);
 
 /***/ }),
-/* 118 */
+/* 120 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -2229,7 +2357,7 @@ var component = Object(componentNormalizer["a" /* default */])(
 __webpack_require__.r(__webpack_exports__);
 
 // CONCATENATED MODULE: ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/@nuxt/components/dist/loader.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./components/account/ExtendMembership.vue?vue&type=template&id=3dfc7ed2&
-var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',[_vm._ssrNode("<div class=\"w-full pb-0 mb-6 border rounded-xl text-grayscale-500\">","</div>",[_vm._ssrNode("<div class=\"p-6 border-b\"><div class=\"flex\"><div class=\"text-lg font-semibold font-noto-sans text-grayscale-900\">Extend Membership</div></div></div> "),_vm._l((3),function(data){return _vm._ssrNode("<div index=\"data\" class=\"border-t\">","</div>",[_vm._ssrNode("<div class=\"p-6 md:flex\">","</div>",[_vm._ssrNode("<div class=\"flex flex-wrap content-center flex-none\"><img"+(_vm._ssrAttr("src",__webpack_require__(63)))+" alt=\"Membership card\" width=\"200\" class=\"inline-block mb-6\"></div> "),_vm._ssrNode("<div class=\"relative flex-grow md:pl-16\">","</div>",[_vm._ssrNode("<div class=\"text-lg font-semibold font-noto-sans text-grayscale-900\">Star Club Silver</div> <div class=\"text-xs text-primary-600\">5000 Star Points required</div> <div class=\"mt-4 text-grayscale-500\"><ul class=\"pl-5 leading-loose list-disc\"><li>100% mileage on all flights for Star Points</li> <li>100% mileage on non-air partner</li> <li>Priority stand-by </li> <li>Flexi awards</li> <li>Shop &amp; pay with Star Points at Duty Free</li></ul></div> "),(data != 1)?_vm._ssrNode("<div class=\"inline-block mt-4\">","</div>",[_c('Button',{attrs:{"value":"Upgrade","border":"border-2 border-secondary-900","color":"text-secondary-900","background":"bg-white"}})],1):_vm._e(),_vm._ssrNode(" "+((data==1)?("<div class=\"absolute right-0 top-2\"><img"+(_vm._ssrAttr("src",__webpack_require__(65)))+" alt=\"Current tier\" width=\"100\" class=\"inline-block\"></div>"):"<!---->"))],2)],2)])})],2)])}
+var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',[_vm._ssrNode("<div class=\"w-full pb-0 mb-6 border rounded-xl text-grayscale-500\">","</div>",[_vm._ssrNode("<div class=\"p-6 border-b\"><div class=\"flex\"><div class=\"text-lg font-semibold font-noto-sans text-grayscale-900\">Extend Membership</div></div></div> "),_vm._l((3),function(data){return _vm._ssrNode("<div index=\"data\" class=\"border-t\">","</div>",[_vm._ssrNode("<div class=\"p-6 md:flex\">","</div>",[_vm._ssrNode("<div class=\"flex flex-wrap content-center flex-none\"><img"+(_vm._ssrAttr("src",__webpack_require__(64)))+" alt=\"Membership card\" width=\"200\" class=\"inline-block mb-6\"></div> "),_vm._ssrNode("<div class=\"relative flex-grow md:pl-16\">","</div>",[_vm._ssrNode("<div class=\"text-lg font-semibold font-noto-sans text-grayscale-900\">Star Club Silver</div> <div class=\"text-xs text-primary-600\">5000 Star Points required</div> <div class=\"mt-4 text-grayscale-500\"><ul class=\"pl-5 leading-loose list-disc\"><li>100% mileage on all flights for Star Points</li> <li>100% mileage on non-air partner</li> <li>Priority stand-by </li> <li>Flexi awards</li> <li>Shop &amp; pay with Star Points at Duty Free</li></ul></div> "),(data != 1)?_vm._ssrNode("<div class=\"inline-block mt-4\">","</div>",[_c('Button',{attrs:{"value":"Upgrade","border":"border-2 border-secondary-900","color":"text-secondary-900","background":"bg-white"}})],1):_vm._e(),_vm._ssrNode(" "+((data==1)?("<div class=\"absolute right-0 top-2\"><img"+(_vm._ssrAttr("src",__webpack_require__(66)))+" alt=\"Current tier\" width=\"100\" class=\"inline-block\"></div>"):"<!---->"))],2)],2)])})],2)])}
 var staticRenderFns = []
 
 
@@ -2323,7 +2451,7 @@ installComponents(component, {Button: __webpack_require__(36).default})
 
 
 /***/ }),
-/* 119 */
+/* 121 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -2416,28 +2544,53 @@ var component = Object(componentNormalizer["a" /* default */])(
 /* harmony default export */ var ChangePassword = __webpack_exports__["default"] = (component.exports);
 
 /* nuxt-component-imports */
-installComponents(component, {InputPassword: __webpack_require__(105).default,Button: __webpack_require__(36).default})
+installComponents(component, {InputPassword: __webpack_require__(106).default,Button: __webpack_require__(36).default})
 
 
 /***/ }),
-/* 120 */
+/* 122 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 // ESM COMPAT FLAG
 __webpack_require__.r(__webpack_exports__);
 
-// CONCATENATED MODULE: ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/@nuxt/components/dist/loader.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./components/account/EditProfile.vue?vue&type=template&id=3a580212&
-var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',[_vm._ssrNode("<div class=\"w-full pb-0 mb-6 overflow-hidden border rounded-xl text-grayscale-500\">","</div>",[_vm._ssrNode("<div class=\"p-6 border-b\"><div class=\"flex\"><div class=\"text-lg font-semibold font-noto-sans text-grayscale-900\"><span class=\"text-secondary-900\">User Profile</span> / Edit Profile</div></div></div> "),_vm._ssrNode("<div class=\"p-6 overflow-hidden\">","</div>",[_vm._ssrNode("<div class=\"md:flex\">","</div>",[_vm._ssrNode("<div class=\"md:w-1/6\">","</div>",[_c('Select',{attrs:{"label":"Title","border":"border rounded-l-lg rounded-r-lg md:rounded-r-none md:rounded-l-lg"}})],1),_vm._ssrNode(" "),_vm._ssrNode("<div class=\"md:w-5/6 md:flex\">","</div>",[_vm._ssrNode("<div class=\"flex-1 mt-6 md:mt-0\">","</div>",[_c('Input',{attrs:{"label":"First Name","border":"border rounded-lg md:rounded-none"}})],1),_vm._ssrNode(" "),_vm._ssrNode("<div class=\"flex-1 mt-6 md:mt-0\">","</div>",[_c('Input',{attrs:{"label":"Last Name","border":"border rounded-l-lg rounded-r-lg md:rounded-l-none md:rounded-r-lg"}})],1)],2)],2),_vm._ssrNode(" "),_vm._ssrNode("<div class=\"mt-6 md:flex gap-x-6\">","</div>",[_vm._ssrNode("<div class=\"flex-1\">","</div>",[_vm._ssrNode("<div class=\"h-full px-3 py-2 border rounded-lg\">","</div>",[_vm._ssrNode("<div class=\"mb-1 text-xs text-grayscale-400\">Passport Expiry Date</div> "),_c('client-only',[_c('v-date-picker',{attrs:{"popover":{ visibility: 'click' }},scopedSlots:_vm._u([{key:"default",fn:function(ref){
+// CONCATENATED MODULE: ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/@nuxt/components/dist/loader.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./components/account/EditProfile.vue?vue&type=template&id=48118423&
+var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',[_vm._ssrNode("<div class=\"w-full pb-0 mb-6 overflow-hidden border rounded-xl text-grayscale-500\">","</div>",[_vm._ssrNode("<div class=\"p-6 border-b\"><div class=\"flex\"><div class=\"text-lg font-semibold font-noto-sans text-grayscale-900\"><span class=\"text-secondary-900\">User Profile</span> / Edit Profile</div></div></div> "),_vm._ssrNode("<div class=\"p-6 overflow-hidden\">","</div>",[_vm._ssrNode("<div class=\"text-lg font-semibold font-noto-sans text-grayscale-900\">Contact Details</div> "),_vm._ssrNode("<div class=\"mt-6 md:flex gap-x-6\">","</div>",[_vm._ssrNode("<div class=\"flex-1\">","</div>",[_c('Input',{attrs:{"label":"Address"},model:{value:(_vm.address),callback:function ($$v) {_vm.address=$$v},expression:"address"}})],1),_vm._ssrNode(" "),_vm._ssrNode("<div class=\"flex-1 mt-6 md:mt-0\">","</div>",[_c('Input',{attrs:{"label":"Email","readonly":true},model:{value:(_vm.email),callback:function ($$v) {_vm.email=$$v},expression:"email"}})],1)],2),_vm._ssrNode(" "),_vm._ssrNode("<div class=\"mt-6 md:flex gap-x-6\">","</div>",[_vm._ssrNode("<div class=\"flex-1\">","</div>",[_c('Input',{attrs:{"label":"Phone"},model:{value:(_vm.phone),callback:function ($$v) {_vm.phone=$$v},expression:"phone"}})],1),_vm._ssrNode(" <div class=\"flex-1 mt-6 md:mt-0\"></div>")],2),_vm._ssrNode(" <div class=\"mt-10 text-lg font-semibold font-noto-sans text-grayscale-900\">Travel Documents</div> "),_vm._ssrNode("<div class=\"mt-6 md:flex gap-x-6\">","</div>",[_vm._ssrNode("<div class=\"flex-1\">","</div>",[_c('Select',{attrs:{"label":"Country/Region of Residence","data":_vm.countryData,"selected-data":_vm.country},model:{value:(_vm.country),callback:function ($$v) {_vm.country=$$v},expression:"country"}})],1),_vm._ssrNode(" "),_vm._ssrNode("<div class=\"flex-1 mt-6 md:mt-0\">","</div>",[_c('Input',{attrs:{"label":"Passport Number"},model:{value:(_vm.passportNumber),callback:function ($$v) {_vm.passportNumber=$$v},expression:"passportNumber"}})],1)],2),_vm._ssrNode(" "),_vm._ssrNode("<div class=\"mt-6 md:flex gap-x-6\">","</div>",[_vm._ssrNode("<div class=\"flex-1\">","</div>",[_vm._ssrNode("<div class=\"h-full px-3 py-2 border rounded-lg\">","</div>",[_vm._ssrNode("<div class=\"mb-1 text-xs text-grayscale-400\">Passport Expiry Date</div> "),_c('client-only',[_c('v-date-picker',{attrs:{"popover":{ visibility: 'click' }},scopedSlots:_vm._u([{key:"default",fn:function(ref){
 var inputValue = ref.inputValue;
 var inputEvents = ref.inputEvents;
-return [_c('input',_vm._g({staticClass:"w-full outline-none",attrs:{"placeholder":"dd/mm/yyyy","readonly":""},domProps:{"value":inputValue}},inputEvents))]}}]),model:{value:(_vm.passportExpiryDate),callback:function ($$v) {_vm.passportExpiryDate=$$v},expression:"passportExpiryDate"}})],1)],2)]),_vm._ssrNode(" "),_vm._ssrNode("<div class=\"flex-1 mt-6 md:mt-0\">","</div>",[_c('Select',{attrs:{"label":"Gender"}})],1)],2),_vm._ssrNode(" "),_vm._ssrNode("<div class=\"mt-10\">","</div>",[_vm._ssrNode("<div class=\"md:inline-block\">","</div>",[_c('Button',{attrs:{"value":"Submit Change"}})],1),_vm._ssrNode(" "),_vm._ssrNode("<div class=\"md:inline-block\">","</div>",[_vm._ssrNode("<div class=\"ml-5\">","</div>",[_c('Button',{attrs:{"value":"Cancel","border":"border-2 border-secondary-900","color":"text-secondary-900","background":"bg-white"}})],1)])],2)],2)],2)])}
+return [_c('input',_vm._g({staticClass:"w-full outline-none",attrs:{"placeholder":"mm/dd/yyyy","readonly":""},domProps:{"value":inputValue}},inputEvents))]}}]),model:{value:(_vm.passportExpiryDate),callback:function ($$v) {_vm.passportExpiryDate=$$v},expression:"passportExpiryDate"}})],1)],2)]),_vm._ssrNode(" <div class=\"flex-1 mt-6 md:mt-0\"></div>")],2),_vm._ssrNode(" "),_vm._ssrNode("<div class=\"mt-10\">","</div>",[_vm._ssrNode("<div class=\"md:inline-block\">","</div>",[_c('Button',{attrs:{"value":"Submit Change","enabled":_vm.isButtonEnabled},on:{"action":_vm.editProfile}})],1),_vm._ssrNode(" "),_vm._ssrNode("<div class=\"md:inline-block\">","</div>",[_vm._ssrNode("<div class=\"ml-5\">","</div>",[_c('Button',{attrs:{"value":"Cancel","border":"border-2 border-secondary-900","color":"text-secondary-900","background":"bg-white"}})],1)])],2)],2)],2),_vm._ssrNode(" "),(_vm.isPopupSuccess)?_c('PopupSuccess',{attrs:{"title":'success',"message":'Member`s data has been updated'},on:{"close-popup":_vm.closePopupSuccess}}):_vm._e()],2)}
 var staticRenderFns = []
 
 
-// CONCATENATED MODULE: ./components/account/EditProfile.vue?vue&type=template&id=3a580212&
+// CONCATENATED MODULE: ./components/account/EditProfile.vue?vue&type=template&id=48118423&
 
 // CONCATENATED MODULE: ./node_modules/babel-loader/lib??ref--2-0!./node_modules/@nuxt/components/dist/loader.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./components/account/EditProfile.vue?vue&type=script&lang=js&
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 //
 //
 //
@@ -2525,11 +2678,13 @@ var staticRenderFns = []
       address: null,
       phone: null,
       email: null,
-      country: null,
+      country: "india",
       passportNumber: null,
       errorMessage: null,
       passportExpiryDate: null,
-      countryData: []
+      countryData: ['India'],
+      isButtonEnabled: false,
+      isPopupSuccess: false
     };
   },
 
@@ -2540,22 +2695,47 @@ var staticRenderFns = []
     }
   },
   methods: {
-    editEmail() {
-      let formData = new FormData();
-      formData.append('token', this.$config.myToken);
-      formData.append('member_email', this.userData.email);
-      formData.append('mobile', this.phone);
-      formData.append('nationality', this.userData.nationality);
-      formData.append('address', this.userData.address);
-      this.$axios.$post('/member/update-member', formData).then(response => {
-        if (response.err_num == '0') {
-          this.$emit('back-button', 2);
-        } else {
-          this.errorMessage = 'Simpan error';
-        }
-      }).catch(function (error) {
-        console.log(error);
-      });
+    editProfile() {
+      if (this.isButtonEnabled) {
+        let formData = new FormData();
+        formData.append('token', this.$config.myToken);
+        formData.append('member_email', this.userData.email);
+        formData.append('mobile', this.phone);
+        formData.append('nationality', this.country);
+        formData.append('address', this.address);
+        formData.append('passport_no', this.passportNumber);
+        formData.append('passport_expire_date', this.formatDate(this.passportExpiryDate));
+        this.$axios.$post('/member/update-member', formData).then(response => {
+          if (response.err_num == '0') {
+            this.errorMessage = null;
+            this.isPopupSuccess = true;
+          } else {
+            this.errorMessage = response.err_str;
+          }
+        }).catch(function (error) {
+          console.log(error);
+        });
+      }
+    },
+
+    formatDate(value) {
+      value = new Date(value);
+      value.setDate(value.getDate() + 1);
+
+      if (value) {
+        value = value.toISOString().split('T')[0];
+        let today = value;
+        today = value.replaceAll('-', '');
+        return today;
+      }
+    },
+
+    formatDateLoad(value) {
+      if (value) {
+        let newDate = value.split('/');
+        let result = newDate[1] + '/' + newDate[0] + '/' + newDate[2];
+        return result;
+      }
     },
 
     loadUser() {
@@ -2567,18 +2747,53 @@ var staticRenderFns = []
           this.userData = response.result;
           this.phone = this.userData.mobile;
           this.email = this.userData.email;
+          this.address = this.userData.address;
+          this.passportNumber = this.userData.passport_no;
+          this.passportExpiryDate = this.formatDateLoad(this.userData.passport_expire_date); // this.country = this.userData.nationality;
         }
       }).catch(function (error) {
         console.log(error);
       });
+    },
+
+    formChanged() {
+      if (this.address && this.email && this.phone && this.country && this.passportNumber && this.passportExpiryDate) {
+        this.isButtonEnabled = true;
+      } else {
+        this.isButtonEnabled = false;
+      }
+    },
+
+    closePopupSuccess() {
+      this.isPopupSuccess = false;
     }
 
   },
 
   mounted() {
     this.loadUser();
-  }
+  },
 
+  watch: {
+    address: function (val) {
+      this.formChanged();
+    },
+    email: function (val) {
+      this.formChanged();
+    },
+    phone: function (val) {
+      this.formChanged();
+    },
+    country: function (val) {
+      this.formChanged();
+    },
+    passportNumber: function (val) {
+      this.formChanged();
+    },
+    passportExpiryDate: function (val) {
+      this.formChanged();
+    }
+  }
 });
 // CONCATENATED MODULE: ./components/account/EditProfile.vue?vue&type=script&lang=js&
  /* harmony default export */ var account_EditProfilevue_type_script_lang_js_ = (EditProfilevue_type_script_lang_js_); 
@@ -2607,11 +2822,11 @@ var component = Object(componentNormalizer["a" /* default */])(
 /* harmony default export */ var EditProfile = __webpack_exports__["default"] = (component.exports);
 
 /* nuxt-component-imports */
-installComponents(component, {Select: __webpack_require__(101).default,Input: __webpack_require__(37).default,Input: __webpack_require__(37).default,Button: __webpack_require__(36).default})
+installComponents(component, {Input: __webpack_require__(37).default,Select: __webpack_require__(102).default,Input: __webpack_require__(37).default,Button: __webpack_require__(36).default,PopupSuccess: __webpack_require__(108).default})
 
 
 /***/ }),
-/* 121 */
+/* 123 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -2766,11 +2981,11 @@ var component = Object(componentNormalizer["a" /* default */])(
 /* harmony default export */ var EditEmail = __webpack_exports__["default"] = (component.exports);
 
 /* nuxt-component-imports */
-installComponents(component, {Input: __webpack_require__(37).default,Select: __webpack_require__(101).default,Button: __webpack_require__(36).default})
+installComponents(component, {Input: __webpack_require__(37).default,Select: __webpack_require__(102).default,Button: __webpack_require__(36).default})
 
 
 /***/ }),
-/* 122 */
+/* 124 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -2840,11 +3055,11 @@ var component = Object(componentNormalizer["a" /* default */])(
 /* harmony default export */ var EditTravelDocument = __webpack_exports__["default"] = (component.exports);
 
 /* nuxt-component-imports */
-installComponents(component, {Input: __webpack_require__(37).default,Select: __webpack_require__(101).default,Button: __webpack_require__(36).default})
+installComponents(component, {Input: __webpack_require__(37).default,Select: __webpack_require__(102).default,Button: __webpack_require__(36).default})
 
 
 /***/ }),
-/* 123 */
+/* 125 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -2852,7 +3067,7 @@ installComponents(component, {Input: __webpack_require__(37).default,Select: __w
 __webpack_require__.r(__webpack_exports__);
 
 // CONCATENATED MODULE: ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/@nuxt/components/dist/loader.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./components/account/UpgradeMembership.vue?vue&type=template&id=73fc819a&
-var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',[_vm._ssrNode("<div class=\"w-full pb-0 mb-6 overflow-hidden border rounded-xl text-grayscale-500\">","</div>",[_vm._ssrNode("<div class=\"p-6 border-b\"><div class=\"flex\"><div class=\"text-lg font-semibold font-noto-sans text-grayscale-900\"><span class=\"text-secondary-900\">Extend Membership</span> / Upgrade</div></div></div> "),_vm._ssrNode("<div class=\"p-6 overflow-hidden\">","</div>",[_vm._ssrNode("<div class=\"items-center justify-center hidden gap-x-16 md:flex\"><div class=\"flex-none text-center\"><img"+(_vm._ssrAttr("src",__webpack_require__(62)))+" alt=\"Membership Card Silver\" width=\"240\" class=\"inline-block\"> <div class=\"text-lg font-semibold text-grayscale-900 font-noto-sans\">Star Club Silver</div> <div class=\"text-xs text-primary-600\">5000 Star Points required</div></div> <div class=\"flex-none\"><img"+(_vm._ssrAttr("src",__webpack_require__(66)))+" alt=\"Upgrade\" width=\"64\" class=\"mx-auto\"></div> <div class=\"flex-none text-center\"><img"+(_vm._ssrAttr("src",__webpack_require__(61)))+" alt=\"Membership Card Gold\" width=\"240\" class=\"inline-block\"> <div class=\"text-lg font-semibold text-grayscale-900 font-noto-sans\">Star Club Gold</div> <div class=\"text-xs text-primary-600\">10000 Star Points required</div></div></div> <div class=\"block md:hidden\"><div class=\"flex-none text-center\"><img"+(_vm._ssrAttr("src",__webpack_require__(61)))+" alt=\"Membership Card Gold\" width=\"240\" class=\"inline-block\"> <div class=\"text-lg font-semibold text-grayscale-900 font-noto-sans\">Star Club Gold</div> <div class=\"text-xs text-primary-600\">10000 Star Points required</div></div> <div class=\"flex-none mt-6 text-center\"><img"+(_vm._ssrAttr("src",__webpack_require__(67)))+" alt=\"Upgrade\" width=\"64\" class=\"mx-auto\"></div> <div class=\"flex-none text-center\"><img"+(_vm._ssrAttr("src",__webpack_require__(62)))+" alt=\"Membership Card Silver\" width=\"240\" class=\"inline-block\"> <div class=\"text-lg font-semibold text-grayscale-900 font-noto-sans\">Star Club Silver</div> <div class=\"text-xs text-primary-600\">5000 Star Points required</div></div></div> <div class=\"mt-6 text-center text-grayscale-900\">You are eligible to upgrade your membership from Star Club Silver to Star Club Gold. You will be able to enjoy all the benefits in Gold Club. Are you sure you want to upgrade your membership?</div> "),_vm._ssrNode("<div class=\"justify-center mt-10 mb-6 md:flex gap-x-6\">","</div>",[_c('Button',{attrs:{"value":"Later","border":"border-2 border-secondary-900","color":"text-secondary-900","background":"bg-white","custom-class":"md:w-40"}}),_vm._ssrNode(" "),_c('Button',{attrs:{"value":"Upgrade","custom-class":"mt-6 md:w-40 md:mt-0"}})],2)],2)],2)])}
+var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',[_vm._ssrNode("<div class=\"w-full pb-0 mb-6 overflow-hidden border rounded-xl text-grayscale-500\">","</div>",[_vm._ssrNode("<div class=\"p-6 border-b\"><div class=\"flex\"><div class=\"text-lg font-semibold font-noto-sans text-grayscale-900\"><span class=\"text-secondary-900\">Extend Membership</span> / Upgrade</div></div></div> "),_vm._ssrNode("<div class=\"p-6 overflow-hidden\">","</div>",[_vm._ssrNode("<div class=\"items-center justify-center hidden gap-x-16 md:flex\"><div class=\"flex-none text-center\"><img"+(_vm._ssrAttr("src",__webpack_require__(62)))+" alt=\"Membership Card Silver\" width=\"240\" class=\"inline-block\"> <div class=\"text-lg font-semibold text-grayscale-900 font-noto-sans\">Star Club Silver</div> <div class=\"text-xs text-primary-600\">5000 Star Points required</div></div> <div class=\"flex-none\"><img"+(_vm._ssrAttr("src",__webpack_require__(67)))+" alt=\"Upgrade\" width=\"64\" class=\"mx-auto\"></div> <div class=\"flex-none text-center\"><img"+(_vm._ssrAttr("src",__webpack_require__(61)))+" alt=\"Membership Card Gold\" width=\"240\" class=\"inline-block\"> <div class=\"text-lg font-semibold text-grayscale-900 font-noto-sans\">Star Club Gold</div> <div class=\"text-xs text-primary-600\">10000 Star Points required</div></div></div> <div class=\"block md:hidden\"><div class=\"flex-none text-center\"><img"+(_vm._ssrAttr("src",__webpack_require__(61)))+" alt=\"Membership Card Gold\" width=\"240\" class=\"inline-block\"> <div class=\"text-lg font-semibold text-grayscale-900 font-noto-sans\">Star Club Gold</div> <div class=\"text-xs text-primary-600\">10000 Star Points required</div></div> <div class=\"flex-none mt-6 text-center\"><img"+(_vm._ssrAttr("src",__webpack_require__(68)))+" alt=\"Upgrade\" width=\"64\" class=\"mx-auto\"></div> <div class=\"flex-none text-center\"><img"+(_vm._ssrAttr("src",__webpack_require__(62)))+" alt=\"Membership Card Silver\" width=\"240\" class=\"inline-block\"> <div class=\"text-lg font-semibold text-grayscale-900 font-noto-sans\">Star Club Silver</div> <div class=\"text-xs text-primary-600\">5000 Star Points required</div></div></div> <div class=\"mt-6 text-center text-grayscale-900\">You are eligible to upgrade your membership from Star Club Silver to Star Club Gold. You will be able to enjoy all the benefits in Gold Club. Are you sure you want to upgrade your membership?</div> "),_vm._ssrNode("<div class=\"justify-center mt-10 mb-6 md:flex gap-x-6\">","</div>",[_c('Button',{attrs:{"value":"Later","border":"border-2 border-secondary-900","color":"text-secondary-900","background":"bg-white","custom-class":"md:w-40"}}),_vm._ssrNode(" "),_c('Button',{attrs:{"value":"Upgrade","custom-class":"mt-6 md:w-40 md:mt-0"}})],2)],2)],2)])}
 var staticRenderFns = []
 
 
@@ -2949,7 +3164,7 @@ installComponents(component, {Button: __webpack_require__(36).default})
 
 
 /***/ }),
-/* 124 */
+/* 126 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -3165,8 +3380,6 @@ installComponents(component, {Button: __webpack_require__(36).default})
 
 
 /***/ }),
-/* 125 */,
-/* 126 */,
 /* 127 */,
 /* 128 */,
 /* 129 */,
@@ -3176,7 +3389,9 @@ installComponents(component, {Button: __webpack_require__(36).default})
 /* 133 */,
 /* 134 */,
 /* 135 */,
-/* 136 */
+/* 136 */,
+/* 137 */,
+/* 138 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -3281,7 +3496,7 @@ var component = Object(componentNormalizer["a" /* default */])(
 /* harmony default export */ var account = __webpack_exports__["default"] = (component.exports);
 
 /* nuxt-component-imports */
-installComponents(component, {Header: __webpack_require__(102).default,MainMenu: __webpack_require__(103).default,AccountOverview: __webpack_require__(114).default,AccountUserProfile: __webpack_require__(115).default,AccountBookingHistory: __webpack_require__(116).default,AccountStarPoints: __webpack_require__(117).default,AccountExtendMembership: __webpack_require__(118).default,AccountChangePassword: __webpack_require__(119).default,AccountEditProfile: __webpack_require__(120).default,AccountEditEmail: __webpack_require__(121).default,AccountEditTravelDocument: __webpack_require__(122).default,AccountUpgradeMembership: __webpack_require__(123).default,AccountBookingHistoryDetail: __webpack_require__(124).default,Footer: __webpack_require__(104).default})
+installComponents(component, {Header: __webpack_require__(103).default,MainMenu: __webpack_require__(104).default,AccountOverview: __webpack_require__(116).default,AccountUserProfile: __webpack_require__(117).default,AccountBookingHistory: __webpack_require__(118).default,AccountStarPoints: __webpack_require__(119).default,AccountExtendMembership: __webpack_require__(120).default,AccountChangePassword: __webpack_require__(121).default,AccountEditProfile: __webpack_require__(122).default,AccountEditEmail: __webpack_require__(123).default,AccountEditTravelDocument: __webpack_require__(124).default,AccountUpgradeMembership: __webpack_require__(125).default,AccountBookingHistoryDetail: __webpack_require__(126).default,Footer: __webpack_require__(105).default})
 
 
 /***/ })

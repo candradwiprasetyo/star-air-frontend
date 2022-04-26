@@ -44,9 +44,9 @@
               width="24"
               @click="goConfig(index)"
             />
-            <div class="absolute right-0 z-10 p-6 text-sm font-medium bg-white rounded-lg shadow-xl w-60 top-10" v-if="selectedConfig==index">
-              <div class="pb-5" @click="$emit('edit-profile', 7, user.member_id)">Edit Profile</div>
-              <div class="" @click="$emit('change-email', 8, user.member_id)">Change Email & Phone</div>
+            <div class="absolute right-0 z-10 text-sm font-medium bg-white rounded-lg shadow-xl w-60 top-10" v-if="selectedConfig==index">
+              <div class="p-5" @click="$emit('edit-profile', 7, user.member_id)" >Edit Profile</div>
+              <div class="p-5" @click="$emit('change-email', 8, user.member_id)" v-if="false">Change Email & Phone</div>
             </div>
           </div>
         </div>
@@ -113,7 +113,7 @@
               <div class="flex-1">
                 <div class="mb-1 text-xs text-grayscale-400">Passport Expire Date</div>
                 <div class="text-grayscale-900">
-                  {{ user.expire_date }}
+                  {{ user.passport_expire_date }}
                 </div>
               </div>
             </div>
