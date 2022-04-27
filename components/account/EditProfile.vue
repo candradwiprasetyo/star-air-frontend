@@ -174,6 +174,7 @@
         let formData = new FormData();
         formData.append('token', this.$config.myToken);
         formData.append('member_id', this.memberId);
+        // formData.append('member_email', 'test666@gmail.com');
 
         this.$axios.$post('/member/get-member-detail', formData)
           .then( (response) => {

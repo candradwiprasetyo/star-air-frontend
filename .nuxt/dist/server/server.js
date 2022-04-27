@@ -838,6 +838,13 @@ __webpack_require__.d(components_namespaceObject, "Pagination", function() { ret
 __webpack_require__.d(components_namespaceObject, "PopupRegisterSuccess", function() { return PopupRegisterSuccess; });
 __webpack_require__.d(components_namespaceObject, "PopupSuccess", function() { return PopupSuccess; });
 __webpack_require__.d(components_namespaceObject, "Select", function() { return Select; });
+__webpack_require__.d(components_namespaceObject, "HomepageAdvancedSearch", function() { return HomepageAdvancedSearch; });
+__webpack_require__.d(components_namespaceObject, "HomepageTabBook", function() { return HomepageTabBook; });
+__webpack_require__.d(components_namespaceObject, "HomepageTabFlightInfo", function() { return HomepageTabFlightInfo; });
+__webpack_require__.d(components_namespaceObject, "HomepageTabMyTrip", function() { return HomepageTabMyTrip; });
+__webpack_require__.d(components_namespaceObject, "RedemPointsBookFlight", function() { return RedemPointsBookFlight; });
+__webpack_require__.d(components_namespaceObject, "RedemPointsExtraBaggage", function() { return RedemPointsExtraBaggage; });
+__webpack_require__.d(components_namespaceObject, "RedemPointsPartnerPoints", function() { return RedemPointsPartnerPoints; });
 __webpack_require__.d(components_namespaceObject, "AccountBookingHistory", function() { return AccountBookingHistory; });
 __webpack_require__.d(components_namespaceObject, "AccountBookingHistoryDetail", function() { return AccountBookingHistoryDetail; });
 __webpack_require__.d(components_namespaceObject, "AccountChangePassword", function() { return AccountChangePassword; });
@@ -850,13 +857,6 @@ __webpack_require__.d(components_namespaceObject, "AccountStarPoints", function(
 __webpack_require__.d(components_namespaceObject, "AccountStarPointsBackup", function() { return AccountStarPointsBackup; });
 __webpack_require__.d(components_namespaceObject, "AccountUpgradeMembership", function() { return AccountUpgradeMembership; });
 __webpack_require__.d(components_namespaceObject, "AccountUserProfile", function() { return AccountUserProfile; });
-__webpack_require__.d(components_namespaceObject, "RedemPointsBookFlight", function() { return RedemPointsBookFlight; });
-__webpack_require__.d(components_namespaceObject, "RedemPointsExtraBaggage", function() { return RedemPointsExtraBaggage; });
-__webpack_require__.d(components_namespaceObject, "RedemPointsPartnerPoints", function() { return RedemPointsPartnerPoints; });
-__webpack_require__.d(components_namespaceObject, "HomepageAdvancedSearch", function() { return HomepageAdvancedSearch; });
-__webpack_require__.d(components_namespaceObject, "HomepageTabBook", function() { return HomepageTabBook; });
-__webpack_require__.d(components_namespaceObject, "HomepageTabFlightInfo", function() { return HomepageTabFlightInfo; });
-__webpack_require__.d(components_namespaceObject, "HomepageTabMyTrip", function() { return HomepageTabMyTrip; });
 
 // EXTERNAL MODULE: external "vue"
 var external_vue_ = __webpack_require__(0);
@@ -2535,6 +2535,13 @@ const Pagination = () => __webpack_require__.e(/* import() | components/paginati
 const PopupRegisterSuccess = () => __webpack_require__.e(/* import() | components/popup-register-success */ 25).then(__webpack_require__.bind(null, 109)).then(c => wrapFunctional(c.default || c));
 const PopupSuccess = () => __webpack_require__.e(/* import() | components/popup-success */ 26).then(__webpack_require__.bind(null, 108)).then(c => wrapFunctional(c.default || c));
 const Select = () => __webpack_require__.e(/* import() | components/select */ 30).then(__webpack_require__.bind(null, 102)).then(c => wrapFunctional(c.default || c));
+const HomepageAdvancedSearch = () => __webpack_require__.e(/* import() | components/homepage-advanced-search */ 17).then(__webpack_require__.bind(null, 133)).then(c => wrapFunctional(c.default || c));
+const HomepageTabBook = () => __webpack_require__.e(/* import() | components/homepage-tab-book */ 18).then(__webpack_require__.bind(null, 110)).then(c => wrapFunctional(c.default || c));
+const HomepageTabFlightInfo = () => __webpack_require__.e(/* import() | components/homepage-tab-flight-info */ 19).then(__webpack_require__.bind(null, 112)).then(c => wrapFunctional(c.default || c));
+const HomepageTabMyTrip = () => __webpack_require__.e(/* import() | components/homepage-tab-my-trip */ 20).then(__webpack_require__.bind(null, 111)).then(c => wrapFunctional(c.default || c));
+const RedemPointsBookFlight = () => __webpack_require__.e(/* import() | components/redem-points-book-flight */ 27).then(__webpack_require__.bind(null, 130)).then(c => wrapFunctional(c.default || c));
+const RedemPointsExtraBaggage = () => __webpack_require__.e(/* import() | components/redem-points-extra-baggage */ 28).then(__webpack_require__.bind(null, 131)).then(c => wrapFunctional(c.default || c));
+const RedemPointsPartnerPoints = () => __webpack_require__.e(/* import() | components/redem-points-partner-points */ 29).then(__webpack_require__.bind(null, 132)).then(c => wrapFunctional(c.default || c));
 const AccountBookingHistory = () => __webpack_require__.e(/* import() | components/account-booking-history */ 1).then(__webpack_require__.bind(null, 119)).then(c => wrapFunctional(c.default || c));
 const AccountBookingHistoryDetail = () => __webpack_require__.e(/* import() | components/account-booking-history-detail */ 2).then(__webpack_require__.bind(null, 127)).then(c => wrapFunctional(c.default || c));
 const AccountChangePassword = () => __webpack_require__.e(/* import() | components/account-change-password */ 3).then(__webpack_require__.bind(null, 122)).then(c => wrapFunctional(c.default || c));
@@ -2546,14 +2553,7 @@ const AccountOverview = () => __webpack_require__.e(/* import() | components/acc
 const AccountStarPoints = () => __webpack_require__.e(/* import() | components/account-star-points */ 9).then(__webpack_require__.bind(null, 120)).then(c => wrapFunctional(c.default || c));
 const AccountStarPointsBackup = () => __webpack_require__.e(/* import() | components/account-star-points-backup */ 10).then(__webpack_require__.bind(null, 153)).then(c => wrapFunctional(c.default || c));
 const AccountUpgradeMembership = () => __webpack_require__.e(/* import() | components/account-upgrade-membership */ 11).then(__webpack_require__.bind(null, 126)).then(c => wrapFunctional(c.default || c));
-const AccountUserProfile = () => __webpack_require__.e(/* import() | components/account-user-profile */ 12).then(__webpack_require__.bind(null, 118)).then(c => wrapFunctional(c.default || c));
-const RedemPointsBookFlight = () => __webpack_require__.e(/* import() | components/redem-points-book-flight */ 27).then(__webpack_require__.bind(null, 130)).then(c => wrapFunctional(c.default || c));
-const RedemPointsExtraBaggage = () => __webpack_require__.e(/* import() | components/redem-points-extra-baggage */ 28).then(__webpack_require__.bind(null, 131)).then(c => wrapFunctional(c.default || c));
-const RedemPointsPartnerPoints = () => __webpack_require__.e(/* import() | components/redem-points-partner-points */ 29).then(__webpack_require__.bind(null, 132)).then(c => wrapFunctional(c.default || c));
-const HomepageAdvancedSearch = () => __webpack_require__.e(/* import() | components/homepage-advanced-search */ 17).then(__webpack_require__.bind(null, 133)).then(c => wrapFunctional(c.default || c));
-const HomepageTabBook = () => __webpack_require__.e(/* import() | components/homepage-tab-book */ 18).then(__webpack_require__.bind(null, 110)).then(c => wrapFunctional(c.default || c));
-const HomepageTabFlightInfo = () => __webpack_require__.e(/* import() | components/homepage-tab-flight-info */ 19).then(__webpack_require__.bind(null, 112)).then(c => wrapFunctional(c.default || c));
-const HomepageTabMyTrip = () => __webpack_require__.e(/* import() | components/homepage-tab-my-trip */ 20).then(__webpack_require__.bind(null, 111)).then(c => wrapFunctional(c.default || c)); // nuxt/nuxt.js#8607
+const AccountUserProfile = () => __webpack_require__.e(/* import() | components/account-user-profile */ 12).then(__webpack_require__.bind(null, 118)).then(c => wrapFunctional(c.default || c)); // nuxt/nuxt.js#8607
 
 function wrapFunctional(options) {
   if (!options || !options.functional) {

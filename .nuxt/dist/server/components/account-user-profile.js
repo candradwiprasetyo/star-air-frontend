@@ -8,12 +8,12 @@ exports.modules = {
 // ESM COMPAT FLAG
 __webpack_require__.r(__webpack_exports__);
 
-// CONCATENATED MODULE: ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/@nuxt/components/dist/loader.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./components/account/UserProfile.vue?vue&type=template&id=27e23fb4&
+// CONCATENATED MODULE: ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/@nuxt/components/dist/loader.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./components/account/UserProfile.vue?vue&type=template&id=0555b2a2&
 var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',[_vm._ssrNode("<div class=\"w-full pb-0 mb-6 border rounded-xl text-grayscale-500\"><div class=\"p-6 border-b\"><div class=\"flex\"><div class=\"text-lg font-semibold font-noto-sans text-grayscale-900\">User Profile</div></div></div> "+(_vm._ssrList((_vm.profileData),function(user,index){return ("<div"+(_vm._ssrAttr("index",index))+"><div class=\"flex items-center p-6 border-b cursor-pointer bg-grayscale-50\"><div class=\"flex-none\"><img"+(_vm._ssrAttr("src",__webpack_require__(41)))+" alt=\"User\" width=\"30\" class=\"inline-block mr-4\"></div> <div class=\"flex-grow\"><div class=\"mb-1 font-medium text-grayscale-900\">"+_vm._ssrEscape(_vm._s(user.name))+"</div> <div class=\"text-xs text-grayscale-500\">"+_vm._ssrEscape(_vm._s((index==0) ? 'You' : 'Family'))+"</div></div> <div class=\"relative flex-none\"><span>"+((index==_vm.activeUser)?("<img"+(_vm._ssrAttr("src",__webpack_require__(42)))+" alt=\"Arrow up\" width=\"24\" class=\"inline-block mr-4 cursor-pointer\">"):("<img"+(_vm._ssrAttr("src",__webpack_require__(35)))+" alt=\"Arrow bottom\" width=\"24\" class=\"inline-block mr-4 cursor-pointer\">"))+"</span> <img"+(_vm._ssrAttr("src",__webpack_require__(65)))+" alt=\"Config\" width=\"24\" class=\"inline-block cursor-pointer\"> "+((_vm.selectedConfig==index)?("<div class=\"absolute right-0 z-10 text-sm font-medium bg-white rounded-lg shadow-xl w-60 top-10\"><div class=\"p-5\">Edit Profile</div> "+((false)?(undefined):"<!---->")+"</div>"):"<!---->")+"</div></div> "+((index==_vm.activeUser)?("<div class=\"p-6\"><div class=\"pb-6 border-b\"><div class=\"font-semibold text-black font-noto-sans\">Contact Details</div> <div class=\"flex mt-6\"><div class=\"flex-1\"><div class=\"mb-1 text-xs text-grayscale-400\">Address</div> <div class=\"text-grayscale-900\">"+_vm._ssrEscape("\n                "+_vm._s(user.address)+"\n              ")+"</div></div> <div class=\"flex-1\"><div class=\"mb-1 text-xs text-grayscale-400\">Email</div> <div class=\"text-grayscale-900\">"+_vm._ssrEscape("\n                "+_vm._s(user.email)+"\n              ")+"</div> <div class=\"mt-8 mb-1 text-xs text-grayscale-400\">Phone</div> <div class=\"text-grayscale-900\">"+_vm._ssrEscape("\n                "+_vm._s(user.mobile)+"\n              ")+"</div></div></div></div> <div class=\"py-6 border-b\"><div class=\"font-semibold text-black font-noto-sans\">Member Info</div> <div class=\"flex mt-6\"><div class=\"flex-1\"><div class=\"mb-1 text-xs text-grayscale-400\">Member ID</div> <div class=\"text-grayscale-900\">"+_vm._ssrEscape("\n                "+_vm._s(user.member_id)+"\n              ")+"</div> <div class=\"mt-8 mb-1 text-xs text-grayscale-400\">Type of Member</div> <div class=\"text-grayscale-900\">"+_vm._ssrEscape("\n                "+_vm._s(user.member_level)+" Member\n              ")+"</div></div> <div class=\"flex-1\"><div class=\"mb-1 text-xs text-grayscale-400\">Star Points</div> <div class=\"text-grayscale-900\">"+_vm._ssrEscape("\n                "+_vm._s(user.avb_point)+" Points\n              ")+"</div> <div class=\"mt-8 mb-1 text-xs text-grayscale-400\">Credit Account</div> <div class=\"text-grayscale-900\">"+_vm._ssrEscape("\n                "+_vm._s(user.credit_account)+" INR\n              ")+"</div></div></div></div> <div class=\"pt-6\"><div class=\"font-semibold text-black font-noto-sans\">Travel Documents</div> <div class=\"flex mt-6\"><div class=\"flex-1\"><div class=\"mb-1 text-xs text-grayscale-400\">Nationality</div> <div class=\"text-grayscale-900\">"+_vm._ssrEscape("\n                "+_vm._s(user.nationality)+"\n              ")+"</div> <div class=\"mt-8 mb-1 text-xs text-grayscale-400\">Passport Number</div> <div class=\"text-grayscale-900\">"+_vm._ssrEscape("\n                "+_vm._s(user.passport_no)+"\n              ")+"</div></div> <div class=\"flex-1\"><div class=\"mb-1 text-xs text-grayscale-400\">Passport Expire Date</div> <div class=\"text-grayscale-900\">"+_vm._ssrEscape("\n                "+_vm._s(user.passport_expire_date)+"\n              ")+"</div></div></div></div></div>"):"<!---->")+"</div>")}))+"</div>")])}
 var staticRenderFns = []
 
 
-// CONCATENATED MODULE: ./components/account/UserProfile.vue?vue&type=template&id=27e23fb4&
+// CONCATENATED MODULE: ./components/account/UserProfile.vue?vue&type=template&id=0555b2a2&
 
 // EXTERNAL MODULE: external "js-cookie"
 var external_js_cookie_ = __webpack_require__(34);
@@ -175,16 +175,24 @@ var external_js_cookie_default = /*#__PURE__*/__webpack_require__.n(external_js_
     },
 
     createUser() {
-      let newUser = {
-        "member_id": this.userData.member_id,
-        "fnf_id": "",
-        "name": this.userData.name,
-        "birthdate": "",
-        "email": this.userData.email
-      };
-      this.profileData.push(newUser);
-      this.createUserDetail(0, this.userData);
-      this.loadData();
+      // get user detail
+      let formDataDetail = new FormData();
+      formDataDetail.append('member_id', this.userData.member_id);
+      formDataDetail.append('token', this.$config.myToken);
+      this.$axios.$post('/member/get-member-detail', formDataDetail).then(responseDetail => {
+        let newUser = {
+          "member_id": this.userData.member_id,
+          "fnf_id": "",
+          "name": responseDetail.result.name,
+          "birthdate": "",
+          "email": this.userData.email
+        };
+        this.profileData.push(newUser);
+        this.createUserDetail(0, responseDetail.result);
+        this.loadData();
+      }).catch(function (error) {
+        console.log(error);
+      });
     },
 
     createUserDetail(index, data) {
@@ -209,6 +217,7 @@ var external_js_cookie_default = /*#__PURE__*/__webpack_require__.n(external_js_
     loadData() {
       let formDataDetail = new FormData();
       formDataDetail.append('member_email', this.userData.email); // formDataDetail.append('member_id', 'SQV091');
+      // formDataDetail.append('member_email', 'test666@gmail.com');
 
       formDataDetail.append('token', this.$config.myToken); // get data family and friend
 

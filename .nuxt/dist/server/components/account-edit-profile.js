@@ -908,7 +908,7 @@ installComponents(component, {Button: __webpack_require__(36).default})
 // ESM COMPAT FLAG
 __webpack_require__.r(__webpack_exports__);
 
-// CONCATENATED MODULE: ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/@nuxt/components/dist/loader.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./components/account/EditProfile.vue?vue&type=template&id=5447b0c8&
+// CONCATENATED MODULE: ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/@nuxt/components/dist/loader.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./components/account/EditProfile.vue?vue&type=template&id=7745826a&
 var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',[_vm._ssrNode("<div class=\"w-full pb-0 mb-6 overflow-hidden border rounded-xl text-grayscale-500\">","</div>",[_vm._ssrNode("<div class=\"p-6 border-b\"><div class=\"flex\"><div class=\"text-lg font-semibold font-noto-sans text-grayscale-900\"><span class=\"text-secondary-900\">User Profile</span> / Edit Profile</div></div></div> "),_vm._ssrNode("<div class=\"p-6 overflow-hidden\">","</div>",[_vm._ssrNode("<div class=\"text-lg font-semibold font-noto-sans text-grayscale-900\">Contact Details</div> "),_vm._ssrNode("<div class=\"mt-6 md:flex gap-x-6\">","</div>",[_vm._ssrNode("<div class=\"flex-1\">","</div>",[_c('Input',{attrs:{"label":"Address"},model:{value:(_vm.address),callback:function ($$v) {_vm.address=$$v},expression:"address"}})],1),_vm._ssrNode(" "),_vm._ssrNode("<div class=\"flex-1 mt-6 md:mt-0\">","</div>",[_c('Input',{attrs:{"label":"Email","readonly":true},model:{value:(_vm.email),callback:function ($$v) {_vm.email=$$v},expression:"email"}})],1)],2),_vm._ssrNode(" "),_vm._ssrNode("<div class=\"mt-6 md:flex gap-x-6\">","</div>",[_vm._ssrNode("<div class=\"flex-1\">","</div>",[_c('Input',{attrs:{"label":"Phone"},model:{value:(_vm.phone),callback:function ($$v) {_vm.phone=$$v},expression:"phone"}})],1),_vm._ssrNode(" <div class=\"flex-1 mt-6 md:mt-0\"></div>")],2),_vm._ssrNode(" <div class=\"mt-10 text-lg font-semibold font-noto-sans text-grayscale-900\">Travel Documents</div> "),_vm._ssrNode("<div class=\"mt-6 md:flex gap-x-6\">","</div>",[_vm._ssrNode("<div class=\"flex-1\">","</div>",[_c('Select',{attrs:{"label":"Country/Region of Residence","data":_vm.countryData,"selected-data":_vm.country},model:{value:(_vm.country),callback:function ($$v) {_vm.country=$$v},expression:"country"}})],1),_vm._ssrNode(" "),_vm._ssrNode("<div class=\"flex-1 mt-6 md:mt-0\">","</div>",[_c('Input',{attrs:{"label":"Passport Number"},model:{value:(_vm.passportNumber),callback:function ($$v) {_vm.passportNumber=$$v},expression:"passportNumber"}})],1)],2),_vm._ssrNode(" "),_vm._ssrNode("<div class=\"mt-6 md:flex gap-x-6\">","</div>",[_vm._ssrNode("<div class=\"flex-1\">","</div>",[_vm._ssrNode("<div class=\"h-full px-3 py-2 border rounded-lg\">","</div>",[_vm._ssrNode("<div class=\"mb-1 text-xs text-grayscale-400\">Passport Expiry Date</div> "),_c('client-only',[_c('v-date-picker',{attrs:{"popover":{ visibility: 'click' }},scopedSlots:_vm._u([{key:"default",fn:function(ref){
 var inputValue = ref.inputValue;
 var inputEvents = ref.inputEvents;
@@ -916,7 +916,7 @@ return [_c('input',_vm._g({staticClass:"w-full outline-none",attrs:{"placeholder
 var staticRenderFns = []
 
 
-// CONCATENATED MODULE: ./components/account/EditProfile.vue?vue&type=template&id=5447b0c8&
+// CONCATENATED MODULE: ./components/account/EditProfile.vue?vue&type=template&id=7745826a&
 
 // CONCATENATED MODULE: ./node_modules/babel-loader/lib??ref--2-0!./node_modules/@nuxt/components/dist/loader.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./components/account/EditProfile.vue?vue&type=script&lang=js&
 //
@@ -1094,7 +1094,8 @@ var staticRenderFns = []
     loadUser() {
       let formData = new FormData();
       formData.append('token', this.$config.myToken);
-      formData.append('member_id', this.memberId);
+      formData.append('member_id', this.memberId); // formData.append('member_email', 'test666@gmail.com');
+
       this.$axios.$post('/member/get-member-detail', formData).then(response => {
         if (response.err_num == '0') {
           this.userData = response.result;

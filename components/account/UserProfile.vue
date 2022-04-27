@@ -150,16 +150,28 @@ export default {
       }
     },
     createUser() {
-      let newUser = {
-        "member_id": this.userData.member_id,
-        "fnf_id": "",
-        "name": this.userData.name,
-        "birthdate": "",
-        "email": this.userData.email
-      }
-      this.profileData.push(newUser);
-      this.createUserDetail(0, this.userData);
-      this.loadData();
+      // get user detail
+      let formDataDetail = new FormData();
+      formDataDetail.append('member_id', this.userData.member_id);
+      formDataDetail.append('token', this.$config.myToken);
+
+      this.$axios.$post('/member/get-member-detail', formDataDetail)
+        .then( (responseDetail) => {
+          let newUser = {
+            "member_id": this.userData.member_id,
+            "fnf_id": "",
+            "name": responseDetail.result.name,
+            "birthdate": "",
+            "email": this.userData.email
+          }
+          this.profileData.push(newUser);
+          this.createUserDetail(0, responseDetail.result);
+          this.loadData();
+        })
+        .catch(function (error) {
+          console.log(error)
+        })
+      
     },
     createUserDetail(index, data) {
       this.profileData[index].member_level = data.member_level;
@@ -183,6 +195,7 @@ export default {
       let formDataDetail = new FormData();
       formDataDetail.append('member_email', this.userData.email);
       // formDataDetail.append('member_id', 'SQV091');
+      // formDataDetail.append('member_email', 'test666@gmail.com');
       
       formDataDetail.append('token', this.$config.myToken);
 
