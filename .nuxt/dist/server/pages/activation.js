@@ -318,21 +318,21 @@ module.exports = __webpack_require__.p + "img/footer-whatsapp.42f1d55.svg";
 
 /***/ }),
 /* 55 */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ (function(module, exports) {
 
-module.exports = __webpack_require__.p + "img/flip-button-mobile.01b06a6.svg";
+module.exports = "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjUiIGhlaWdodD0iMjUiIHZpZXdCb3g9IjAgMCAyNSAyNSIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0xMi4xNTE2IDIwLjgyNDJDMTYuNTg4NiAyMC44MjQyIDIwLjE4NTUgMTcuMjI3MyAyMC4xODU1IDEyLjc5MDNDMjAuMTg1NSA4LjM1MzMxIDE2LjU4ODYgNC43NTY0MSAxMi4xNTE2IDQuNzU2NDFDNy43MTQ1OCA0Ljc1NjQxIDQuMTE3NjggOC4zNTMzMSA0LjExNzY4IDEyLjc5MDNDNC4xMTc2OCAxNy4yMjczIDcuNzE0NTggMjAuODI0MiAxMi4xNTE2IDIwLjgyNDJaTTEyLjE1MTYgNy40NjA4MkMxMS4xNzQ0IDcuNDYwODIgMTAuNDE1OCA4LjMxMzAxIDEwLjUyOSA5LjI4MzYyTDExLjExOTcgMTQuMzQ4MkMxMS4xODA4IDE0Ljg3MTkgMTEuNjI0NCAxNS4yNjY3IDEyLjE1MTYgMTUuMjY2N0MxMi42Nzg4IDE1LjI2NjcgMTMuMTIyNCAxNC44NzE5IDEzLjE4MzUgMTQuMzQ4MkwxMy43NzQyIDkuMjgzNjJDMTMuODg3NCA4LjMxMzAxIDEzLjEyODggNy40NjA4MiAxMi4xNTE2IDcuNDYwODJaTTEyLjE1MTYgMTguMTE5OEMxMi43MTA4IDE4LjExOTggMTMuMTY0MSAxNy42NjY1IDEzLjE2NDEgMTcuMTA3M0MxMy4xNjQxIDE2LjU0OCAxMi43MTA4IDE2LjA5NDcgMTIuMTUxNiAxNi4wOTQ3QzExLjU5MjQgMTYuMDk0NyAxMS4xMzkgMTYuNTQ4IDExLjEzOSAxNy4xMDczQzExLjEzOSAxNy42NjY1IDExLjU5MjQgMTguMTE5OCAxMi4xNTE2IDE4LjExOThaIiBmaWxsPSIjQjkyNjIyIi8+Cjwvc3ZnPgo="
 
 /***/ }),
 /* 56 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "img/flip-button.42f5fc9.svg";
+module.exports = __webpack_require__.p + "img/flip-button-mobile.01b06a6.svg";
 
 /***/ }),
 /* 57 */
-/***/ (function(module, exports) {
+/***/ (function(module, exports, __webpack_require__) {
 
-module.exports = "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjUiIGhlaWdodD0iMjUiIHZpZXdCb3g9IjAgMCAyNSAyNSIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0xMi4xNTE2IDIwLjgyNDJDMTYuNTg4NiAyMC44MjQyIDIwLjE4NTUgMTcuMjI3MyAyMC4xODU1IDEyLjc5MDNDMjAuMTg1NSA4LjM1MzMxIDE2LjU4ODYgNC43NTY0MSAxMi4xNTE2IDQuNzU2NDFDNy43MTQ1OCA0Ljc1NjQxIDQuMTE3NjggOC4zNTMzMSA0LjExNzY4IDEyLjc5MDNDNC4xMTc2OCAxNy4yMjczIDcuNzE0NTggMjAuODI0MiAxMi4xNTE2IDIwLjgyNDJaTTEyLjE1MTYgNy40NjA4MkMxMS4xNzQ0IDcuNDYwODIgMTAuNDE1OCA4LjMxMzAxIDEwLjUyOSA5LjI4MzYyTDExLjExOTcgMTQuMzQ4MkMxMS4xODA4IDE0Ljg3MTkgMTEuNjI0NCAxNS4yNjY3IDEyLjE1MTYgMTUuMjY2N0MxMi42Nzg4IDE1LjI2NjcgMTMuMTIyNCAxNC44NzE5IDEzLjE4MzUgMTQuMzQ4MkwxMy43NzQyIDkuMjgzNjJDMTMuODg3NCA4LjMxMzAxIDEzLjEyODggNy40NjA4MiAxMi4xNTE2IDcuNDYwODJaTTEyLjE1MTYgMTguMTE5OEMxMi43MTA4IDE4LjExOTggMTMuMTY0MSAxNy42NjY1IDEzLjE2NDEgMTcuMTA3M0MxMy4xNjQxIDE2LjU0OCAxMi43MTA4IDE2LjA5NDcgMTIuMTUxNiAxNi4wOTQ3QzExLjU5MjQgMTYuMDk0NyAxMS4xMzkgMTYuNTQ4IDExLjEzOSAxNy4xMDczQzExLjEzOSAxNy42NjY1IDExLjU5MjQgMTguMTE5OCAxMi4xNTE2IDE4LjExOThaIiBmaWxsPSIjQjkyNjIyIi8+Cjwvc3ZnPgo="
+module.exports = __webpack_require__.p + "img/flip-button.42f5fc9.svg";
 
 /***/ }),
 /* 58 */
@@ -342,33 +342,33 @@ module.exports = __webpack_require__.p + "img/email-sent-success.d4c26fd.svg";
 
 /***/ }),
 /* 59 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "img/check.788163c.png";
+
+/***/ }),
+/* 60 */
 /***/ (function(module, exports) {
 
 module.exports = "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjUiIGhlaWdodD0iMjUiIHZpZXdCb3g9IjAgMCAyNSAyNSIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTEyLjE4NTUgMTQuNTUwM0MxMy41MTEgMTQuNTUwMyAxNC41ODU1IDEzLjU0MjkgMTQuNTg1NSAxMi4zMDAzQzE0LjU4NTUgMTEuMDU3NiAxMy41MTEgMTAuMDUwMyAxMi4xODU1IDEwLjA1MDNDMTAuODYwMSAxMC4wNTAzIDkuNzg1NTUgMTEuMDU3NiA5Ljc4NTU1IDEyLjMwMDNDOS43ODU1NSAxMy41NDI5IDEwLjg2MDEgMTQuNTUwMyAxMi4xODU1IDE0LjU1MDNaIiBmaWxsPSIjNjQ3NDhCIi8+CjxwYXRoIGZpbGwtcnVsZT0iZXZlbm9kZCIgY2xpcC1ydWxlPSJldmVub2RkIiBkPSJNMjAuMTg1NSAxMi4zMDAzQzIwLjE4NTUgMTUuNjE0IDE2LjYwMzggMTguMzAwMyAxMi4xODU1IDE4LjMwMDNDNy43NjcyNyAxOC4zMDAzIDQuMTg1NTUgMTUuNjE0IDQuMTg1NTUgMTIuMzAwM0M0LjE4NTU1IDguOTg2NTUgNy43NjcyNyA2LjMwMDI2IDEyLjE4NTUgNi4zMDAyNkMxNi42MDM4IDYuMzAwMjYgMjAuMTg1NSA4Ljk4NjU1IDIwLjE4NTUgMTIuMzAwM1pNMTYuOTg1NSAxMi4zMDAzQzE2Ljk4NTUgMTQuNzg1NSAxNC44MzY1IDE2LjgwMDMgMTIuMTg1NSAxNi44MDAzQzkuNTM0NTggMTYuODAwMyA3LjM4NTU1IDE0Ljc4NTUgNy4zODU1NSAxMi4zMDAzQzcuMzg1NTUgOS44MTQ5OCA5LjUzNDU4IDcuODAwMjYgMTIuMTg1NSA3LjgwMDI2QzE0LjgzNjUgNy44MDAyNiAxNi45ODU1IDkuODE0OTggMTYuOTg1NSAxMi4zMDAzWiIgZmlsbD0iIzY0NzQ4QiIvPgo8L3N2Zz4K"
 
 /***/ }),
-/* 60 */
+/* 61 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "img/logo-star-air.0033deb.png";
 
 /***/ }),
-/* 61 */
+/* 62 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "img/membership-card-gold.c1f433d.png";
 
 /***/ }),
-/* 62 */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "img/membership-card-silver.0204b0c.png";
-
-/***/ }),
 /* 63 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "img/check.788163c.png";
+module.exports = __webpack_require__.p + "img/membership-card-silver.0204b0c.png";
 
 /***/ }),
 /* 64 */
@@ -525,7 +525,7 @@ module.exports = __webpack_require__.p + "img/twitter.cca7832.svg";
 /***/ (function(module, exports, __webpack_require__) {
 
 var map = {
-	"./alert-info.svg": 57,
+	"./alert-info.svg": 55,
 	"./alert.png": 90,
 	"./arrow-bottom-gray.svg": 35,
 	"./arrow-bottom.svg": 45,
@@ -540,7 +540,7 @@ var map = {
 	"./bg-login.png": 16,
 	"./book-a-flight.png": 71,
 	"./book.svg": 72,
-	"./check.png": 63,
+	"./check.png": 59,
 	"./close.svg": 47,
 	"./coming-soon.jpg": 66,
 	"./current-tier.png": 67,
@@ -556,11 +556,11 @@ var map = {
 	"./earn-point.png": 73,
 	"./email-sent-success.svg": 58,
 	"./english.svg": 48,
-	"./eye.svg": 59,
+	"./eye.svg": 60,
 	"./facebook.svg": 84,
 	"./flight-info.svg": 74,
-	"./flip-button-mobile.svg": 55,
-	"./flip-button.svg": 56,
+	"./flip-button-mobile.svg": 56,
+	"./flip-button.svg": 57,
 	"./footer-facebook.svg": 50,
 	"./footer-instagram.svg": 51,
 	"./footer-linkedin.svg": 52,
@@ -569,11 +569,11 @@ var map = {
 	"./globe.svg": 44,
 	"./google.svg": 85,
 	"./info.svg": 46,
-	"./logo-star-air.png": 60,
+	"./logo-star-air.png": 61,
 	"./logo.png": 38,
 	"./logo.svg": 102,
-	"./membership-card-gold.png": 61,
-	"./membership-card-silver.png": 62,
+	"./membership-card-gold.png": 62,
+	"./membership-card-silver.png": 63,
 	"./membership-card.png": 64,
 	"./mobile-menu.svg": 49,
 	"./my-trip.svg": 75,
@@ -1347,7 +1347,7 @@ var component = Object(componentNormalizer["a" /* default */])(
 __webpack_require__.r(__webpack_exports__);
 
 // CONCATENATED MODULE: ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/@nuxt/components/dist/loader.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./components/InputPassword.vue?vue&type=template&id=10664671&
-var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"relative p-3",class:[_vm.border, _vm.customClass]},[_vm._ssrNode("<div class=\"mb-1 text-xs text-grayscale-400\">"+_vm._ssrEscape(_vm._s(_vm.label))+"</div> <input"+(_vm._ssrAttr("type",_vm.type))+(_vm._ssrAttr("placeholder",_vm.placeholder))+(_vm._ssrAttr("value",_vm.value))+" class=\"w-full border-none outline-none\"> <div class=\"absolute top-0 right-0 w-6 h-6 mt-5 mr-2 cursor-pointer\"><img"+(_vm._ssrAttr("src",__webpack_require__(59)))+" alt=\"eye\""+(_vm._ssrClass("inline-block",(_vm.type=='text') ? 'opacity-50' : 'opacity-100'))+"></div>")])}
+var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"relative p-3",class:[_vm.border, _vm.customClass]},[_vm._ssrNode("<div class=\"mb-1 text-xs text-grayscale-400\">"+_vm._ssrEscape(_vm._s(_vm.label))+"</div> <input"+(_vm._ssrAttr("type",_vm.type))+(_vm._ssrAttr("placeholder",_vm.placeholder))+(_vm._ssrAttr("value",_vm.value))+" class=\"w-full border-none outline-none\"> <div class=\"absolute top-0 right-0 w-6 h-6 mt-5 mr-2 cursor-pointer\"><img"+(_vm._ssrAttr("src",__webpack_require__(60)))+" alt=\"eye\""+(_vm._ssrClass("inline-block",(_vm.type=='text') ? 'opacity-50' : 'opacity-100'))+"></div>")])}
 var staticRenderFns = []
 
 
@@ -1485,12 +1485,28 @@ installComponents(component, {Input: __webpack_require__(37).default})
 // ESM COMPAT FLAG
 __webpack_require__.r(__webpack_exports__);
 
-// CONCATENATED MODULE: ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/@nuxt/components/dist/loader.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./pages/activation.vue?vue&type=template&id=162e4d17&
-var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',[_c('Header'),_vm._ssrNode(" "),_c('MainMenu'),_vm._ssrNode(" "),_vm._ssrNode("<div class=\"container px-6 py-6 mx-auto md:py-14 md:px-0\">","</div>",[_vm._ssrNode("<div class=\"text-3xl font-semibold text-grayscale-900 font-noto-sans\">\n      Account Activation\n    </div> <div class=\"mt-3 text-grayscale-500\">\n      Thank your for confirming your account. I more step before you can use\n      your account, please enter password that you are going to use to login\n      next time to your account. Nam pretium venenatis bibendum. Nam eget ante\n      eu metus consequat semper non ac nunc. Duis semper massa nec tellus\n      lacinia, id semper neque lobortis. Donec sit amet eros leo. Sed lacinia\n      vestibulum lorem, vel imperdiet ipsum.\n    </div> <div class=\"block p-6 mt-10 md:hidden bg-light-blue rounded-xl\"><div class=\"text-lg font-semibold text-grayscale-900\">\n        Password Must\n      </div> <div class=\"mt-4 text-grayscale-500\"><ul class=\"pl-5 leading-loose list-disc\"><li>Minimum 8 characters</li> <li>Have at least one number</li> <li>Have at least one uppercase letter</li> <li>Have at least one symbol</li></ul></div></div> "),_vm._ssrNode("<div class=\"items-start mt-6 md:mt-16 md:flex gap-x-8\">","</div>",[_vm._ssrNode("<div class=\"md:w-2/3\">","</div>",[_vm._ssrNode(((_vm.errorMessage)?("<div class=\"p-3 mb-6 rounded bg-alert text-alert-900\">"+_vm._ssrEscape(_vm._s(_vm.errorMessage))+"</div>"):"<!---->")+" "),_c('InputPassword',{attrs:{"label":"Password"},model:{value:(_vm.password),callback:function ($$v) {_vm.password=$$v},expression:"password"}}),_vm._ssrNode(" "),_c('InputPassword',{attrs:{"label":"Re-type Password","customClass":"mt-6"},model:{value:(_vm.retypePassword),callback:function ($$v) {_vm.retypePassword=$$v},expression:"retypePassword"}}),_vm._ssrNode(" "+((_vm.errorMessageNotSame && _vm.retypePassword)?("<span class=\"text-xs text-alert-900\">"+_vm._ssrEscape(_vm._s(_vm.errorMessageNotSame))+"</span>"):"<!---->")+" "),_vm._ssrNode("<div class=\"mt-10 mb-6 md:w-64 md:mb-0\">","</div>",[_c('Button',{attrs:{"value":"Create Password","enabled":_vm.isButtonEnabled},on:{"action":_vm.createPassword}})],1)],2),_vm._ssrNode(" <div class=\"hidden w-1/3 p-6 md:block bg-light-blue rounded-xl\"><div class=\"text-lg font-semibold text-grayscale-900\">\n          Password Must\n        </div> <div class=\"mt-4 text-grayscale-500\"><ul class=\"pl-5 leading-loose list-disc\"><li>Minimum 8 characters</li> <li>Have at least one number</li> <li>Have at least one uppercase letter</li> <li>Have at least one symbol</li></ul></div></div>")],2)],2),_vm._ssrNode(" "),_c('Footer')],2)}
+// CONCATENATED MODULE: ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/@nuxt/components/dist/loader.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./pages/activation.vue?vue&type=template&id=7c35612b&
+var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',[_c('Header'),_vm._ssrNode(" "),_c('MainMenu'),_vm._ssrNode(" "),_vm._ssrNode("<div class=\"container px-6 py-6 mx-auto md:py-14 md:px-0\">","</div>",[_vm._ssrNode("<div class=\"text-3xl font-semibold text-grayscale-900 font-noto-sans\">\n      Account Activation\n    </div> <div class=\"mt-3 text-grayscale-500\">\n      Thank your for confirming your account. I more step before you can use\n      your account, please enter password that you are going to use to login\n      next time to your account. Nam pretium venenatis bibendum. Nam eget ante\n      eu metus consequat semper non ac nunc. Duis semper massa nec tellus\n      lacinia, id semper neque lobortis. Donec sit amet eros leo. Sed lacinia\n      vestibulum lorem, vel imperdiet ipsum.\n    </div> <div class=\"block p-6 mt-10 md:hidden bg-light-blue rounded-xl\"><div class=\"text-lg font-semibold text-grayscale-900\">\n        Password Must\n      </div> <div class=\"mt-4 text-grayscale-500\"><ul class=\"pl-5 leading-loose list-disc\"><li"+(_vm._ssrClass(null,[
+            (_vm.clue1==1) ? 'text-green-500' : '',
+            (_vm.clue1==2) ? 'text-red-500' : '' ]))+">\n            Minimum 8 characters\n          </li> <li"+(_vm._ssrClass(null,[
+            (_vm.clue2==1) ? 'text-green-500' : '',
+            (_vm.clue2==2) ? 'text-red-500' : '' ]))+">Have at least one number</li> <li"+(_vm._ssrClass(null,[
+            (_vm.clue3==1) ? 'text-green-500' : '',
+            (_vm.clue3==2) ? 'text-red-500' : '' ]))+">Have at least one uppercase letter</li> <li"+(_vm._ssrClass(null,[
+            (_vm.clue4==1) ? 'text-green-500' : '',
+            (_vm.clue4==2) ? 'text-red-500' : '' ]))+">Have at least one symbol</li></ul></div></div> "),_vm._ssrNode("<div class=\"items-start mt-6 md:mt-16 md:flex gap-x-8\">","</div>",[_vm._ssrNode("<div class=\"md:w-2/3\">","</div>",[_vm._ssrNode(((_vm.errorMessage)?("<div class=\"p-3 mb-6 rounded bg-alert text-alert-900\">"+_vm._ssrEscape(_vm._s(_vm.errorMessage))+"</div>"):"<!---->")+" "),_c('InputPassword',{attrs:{"label":"Password"},model:{value:(_vm.password),callback:function ($$v) {_vm.password=$$v},expression:"password"}}),_vm._ssrNode(" "),_c('InputPassword',{attrs:{"label":"Re-type Password","customClass":"mt-6"},model:{value:(_vm.retypePassword),callback:function ($$v) {_vm.retypePassword=$$v},expression:"retypePassword"}}),_vm._ssrNode(" "+((_vm.errorMessageNotSame && _vm.retypePassword)?("<span class=\"text-xs text-alert-900\">"+_vm._ssrEscape(_vm._s(_vm.errorMessageNotSame))+"</span>"):"<!---->")+" "),_vm._ssrNode("<div class=\"mt-10 mb-6 md:w-64 md:mb-0\">","</div>",[_c('Button',{attrs:{"value":"Create Password","enabled":_vm.isButtonEnabled},on:{"action":_vm.createPassword}})],1)],2),_vm._ssrNode(" <div class=\"hidden w-1/3 p-6 md:block bg-light-blue rounded-xl\"><div class=\"text-lg font-semibold text-grayscale-900\">\n          Password Must\n        </div> <div class=\"mt-4 text-grayscale-500\"><ul class=\"pl-5 leading-loose list-disc\"><li"+(_vm._ssrClass(null,[
+              (_vm.clue1==1) ? 'text-green-500' : '',
+              (_vm.clue1==2) ? 'text-red-500' : '' ]))+">\n              Minimum 8 characters\n            </li> <li"+(_vm._ssrClass(null,[
+              (_vm.clue2==1) ? 'text-green-500' : '',
+              (_vm.clue2==2) ? 'text-red-500' : '' ]))+">Have at least one number</li> <li"+(_vm._ssrClass(null,[
+              (_vm.clue3==1) ? 'text-green-500' : '',
+              (_vm.clue3==2) ? 'text-red-500' : '' ]))+">Have at least one uppercase letter</li> <li"+(_vm._ssrClass(null,[
+              (_vm.clue4==1) ? 'text-green-500' : '',
+              (_vm.clue4==2) ? 'text-red-500' : '' ]))+">Have at least one symbol</li></ul></div></div>")],2)],2),_vm._ssrNode(" "),_c('Footer')],2)}
 var staticRenderFns = []
 
 
-// CONCATENATED MODULE: ./pages/activation.vue?vue&type=template&id=162e4d17&
+// CONCATENATED MODULE: ./pages/activation.vue?vue&type=template&id=7c35612b&
 
 // EXTERNAL MODULE: external "js-cookie"
 var external_js_cookie_ = __webpack_require__(34);
@@ -1527,27 +1543,51 @@ var external_js_cookie_default = /*#__PURE__*/__webpack_require__.n(external_js_
       ) {
         if (this.password == this.retypePassword) {
           this.errorMessageNotSame = null;
-          // this.isPasswordMatch = true;
-          this.isButtonEnabled = true;
+          this.isPasswordMatch = true;
         } else {
           this.errorMessageNotSame = 'Password missmatch';
-          // this.isPasswordMatch = false; 
-          this.isButtonEnabled = false;
+          this.isPasswordMatch = false; 
         }
 
-        // let countError = 0;
-        // if (this.password.length > 7) {
-        //   this.clue1 = 1;
-        // } else {
-        //   this.clue1 = 2;
-        //   countError++;
-        // }
+        let countError = 0;
 
-        // if (countError == 0 && this.isPasswordMatch) {
-        //   this.isButtonEnabled = false;
-        // } else {
-        //   this.isButtonEnabled = true;
-        // }
+        // Minimum 8 characters 
+        if (this.password.length > 7) {
+          this.clue1 = 1;
+        } else {
+          this.clue1 = 2;
+          countError++;
+        }
+
+        // Have at least one number
+        if((/\d/).test(this.password)) {
+          this.clue2 = 1;
+        } else {
+          this.clue2 = 2;
+          countError++;
+        }
+
+        // Have at least one uppercase letter
+        if((/^(?=.*[A-Z])/).test(this.password)) {
+          this.clue3 = 1;
+        } else {
+          this.clue3 = 2;
+          countError++;
+        }
+
+        // Have at least one symbol
+        if((/^(?=.*\W)/).test(this.password)) {
+          this.clue4 = 1;
+        } else {
+          this.clue4 = 2;
+          countError++;
+        }
+
+        if (countError == 0 && this.isPasswordMatch) {
+          this.isButtonEnabled =  true;
+        } else {
+          this.isButtonEnabled = false;
+        }
 
       } else {
         this.isButtonEnabled = false

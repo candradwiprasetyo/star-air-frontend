@@ -28,27 +28,51 @@
         ) {
           if (this.password == this.retypePassword) {
             this.errorMessageNotSame = null;
-            // this.isPasswordMatch = true;
-            this.isButtonEnabled = true;
+            this.isPasswordMatch = true;
           } else {
             this.errorMessageNotSame = 'Password missmatch';
-            // this.isPasswordMatch = false; 
-            this.isButtonEnabled = false;
+            this.isPasswordMatch = false; 
           }
 
-          // let countError = 0;
-          // if (this.password.length > 7) {
-          //   this.clue1 = 1;
-          // } else {
-          //   this.clue1 = 2;
-          //   countError++;
-          // }
+          let countError = 0;
 
-          // if (countError == 0 && this.isPasswordMatch) {
-          //   this.isButtonEnabled = false;
-          // } else {
-          //   this.isButtonEnabled = true;
-          // }
+          // Minimum 8 characters 
+          if (this.password.length > 7) {
+            this.clue1 = 1;
+          } else {
+            this.clue1 = 2;
+            countError++;
+          }
+
+          // Have at least one number
+          if((/\d/).test(this.password)) {
+            this.clue2 = 1;
+          } else {
+            this.clue2 = 2;
+            countError++;
+          }
+
+          // Have at least one uppercase letter
+          if((/^(?=.*[A-Z])/).test(this.password)) {
+            this.clue3 = 1;
+          } else {
+            this.clue3 = 2;
+            countError++;
+          }
+
+          // Have at least one symbol
+          if((/^(?=.*\W)/).test(this.password)) {
+            this.clue4 = 1;
+          } else {
+            this.clue4 = 2;
+            countError++;
+          }
+
+          if (countError == 0 && this.isPasswordMatch) {
+            this.isButtonEnabled =  true;
+          } else {
+            this.isButtonEnabled = false;
+          }
 
         } else {
           this.isButtonEnabled = false
@@ -147,10 +171,24 @@
         </div>
         <div class="mt-4 text-grayscale-500">
           <ul class="pl-5 leading-loose list-disc">
-            <li>Minimum 8 characters</li>
-            <li>Have at least one number</li>
-            <li>Have at least one uppercase letter</li>
-            <li>Have at least one symbol</li>
+            <li :class="[
+              (clue1==1) ? 'text-green-500' : '',
+              (clue1==2) ? 'text-red-500' : '',
+            ]">
+              Minimum 8 characters
+            </li>
+            <li :class="[
+              (clue2==1) ? 'text-green-500' : '',
+              (clue2==2) ? 'text-red-500' : '',
+            ]">Have at least one number</li>
+            <li :class="[
+              (clue3==1) ? 'text-green-500' : '',
+              (clue3==2) ? 'text-red-500' : '',
+            ]">Have at least one uppercase letter</li>
+            <li :class="[
+              (clue4==1) ? 'text-green-500' : '',
+              (clue4==2) ? 'text-red-500' : '',
+            ]">Have at least one symbol</li>
           </ul>
         </div>
       </div>
@@ -181,10 +219,24 @@
           </div>
           <div class="mt-4 text-grayscale-500">
             <ul class="pl-5 leading-loose list-disc">
-              <li>Minimum 8 characters</li>
-              <li>Have at least one number</li>
-              <li>Have at least one uppercase letter</li>
-              <li>Have at least one symbol</li>
+              <li :class="[
+                (clue1==1) ? 'text-green-500' : '',
+                (clue1==2) ? 'text-red-500' : '',
+              ]">
+                Minimum 8 characters
+              </li>
+              <li :class="[
+                (clue2==1) ? 'text-green-500' : '',
+                (clue2==2) ? 'text-red-500' : '',
+              ]">Have at least one number</li>
+              <li :class="[
+                (clue3==1) ? 'text-green-500' : '',
+                (clue3==2) ? 'text-red-500' : '',
+              ]">Have at least one uppercase letter</li>
+              <li :class="[
+                (clue4==1) ? 'text-green-500' : '',
+                (clue4==2) ? 'text-red-500' : '',
+              ]">Have at least one symbol</li>
             </ul>
           </div>
         </div>

@@ -318,21 +318,21 @@ module.exports = __webpack_require__.p + "img/footer-whatsapp.42f1d55.svg";
 
 /***/ }),
 /* 55 */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ (function(module, exports) {
 
-module.exports = __webpack_require__.p + "img/flip-button-mobile.01b06a6.svg";
+module.exports = "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjUiIGhlaWdodD0iMjUiIHZpZXdCb3g9IjAgMCAyNSAyNSIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0xMi4xNTE2IDIwLjgyNDJDMTYuNTg4NiAyMC44MjQyIDIwLjE4NTUgMTcuMjI3MyAyMC4xODU1IDEyLjc5MDNDMjAuMTg1NSA4LjM1MzMxIDE2LjU4ODYgNC43NTY0MSAxMi4xNTE2IDQuNzU2NDFDNy43MTQ1OCA0Ljc1NjQxIDQuMTE3NjggOC4zNTMzMSA0LjExNzY4IDEyLjc5MDNDNC4xMTc2OCAxNy4yMjczIDcuNzE0NTggMjAuODI0MiAxMi4xNTE2IDIwLjgyNDJaTTEyLjE1MTYgNy40NjA4MkMxMS4xNzQ0IDcuNDYwODIgMTAuNDE1OCA4LjMxMzAxIDEwLjUyOSA5LjI4MzYyTDExLjExOTcgMTQuMzQ4MkMxMS4xODA4IDE0Ljg3MTkgMTEuNjI0NCAxNS4yNjY3IDEyLjE1MTYgMTUuMjY2N0MxMi42Nzg4IDE1LjI2NjcgMTMuMTIyNCAxNC44NzE5IDEzLjE4MzUgMTQuMzQ4MkwxMy43NzQyIDkuMjgzNjJDMTMuODg3NCA4LjMxMzAxIDEzLjEyODggNy40NjA4MiAxMi4xNTE2IDcuNDYwODJaTTEyLjE1MTYgMTguMTE5OEMxMi43MTA4IDE4LjExOTggMTMuMTY0MSAxNy42NjY1IDEzLjE2NDEgMTcuMTA3M0MxMy4xNjQxIDE2LjU0OCAxMi43MTA4IDE2LjA5NDcgMTIuMTUxNiAxNi4wOTQ3QzExLjU5MjQgMTYuMDk0NyAxMS4xMzkgMTYuNTQ4IDExLjEzOSAxNy4xMDczQzExLjEzOSAxNy42NjY1IDExLjU5MjQgMTguMTE5OCAxMi4xNTE2IDE4LjExOThaIiBmaWxsPSIjQjkyNjIyIi8+Cjwvc3ZnPgo="
 
 /***/ }),
 /* 56 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "img/flip-button.42f5fc9.svg";
+module.exports = __webpack_require__.p + "img/flip-button-mobile.01b06a6.svg";
 
 /***/ }),
 /* 57 */
-/***/ (function(module, exports) {
+/***/ (function(module, exports, __webpack_require__) {
 
-module.exports = "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjUiIGhlaWdodD0iMjUiIHZpZXdCb3g9IjAgMCAyNSAyNSIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0xMi4xNTE2IDIwLjgyNDJDMTYuNTg4NiAyMC44MjQyIDIwLjE4NTUgMTcuMjI3MyAyMC4xODU1IDEyLjc5MDNDMjAuMTg1NSA4LjM1MzMxIDE2LjU4ODYgNC43NTY0MSAxMi4xNTE2IDQuNzU2NDFDNy43MTQ1OCA0Ljc1NjQxIDQuMTE3NjggOC4zNTMzMSA0LjExNzY4IDEyLjc5MDNDNC4xMTc2OCAxNy4yMjczIDcuNzE0NTggMjAuODI0MiAxMi4xNTE2IDIwLjgyNDJaTTEyLjE1MTYgNy40NjA4MkMxMS4xNzQ0IDcuNDYwODIgMTAuNDE1OCA4LjMxMzAxIDEwLjUyOSA5LjI4MzYyTDExLjExOTcgMTQuMzQ4MkMxMS4xODA4IDE0Ljg3MTkgMTEuNjI0NCAxNS4yNjY3IDEyLjE1MTYgMTUuMjY2N0MxMi42Nzg4IDE1LjI2NjcgMTMuMTIyNCAxNC44NzE5IDEzLjE4MzUgMTQuMzQ4MkwxMy43NzQyIDkuMjgzNjJDMTMuODg3NCA4LjMxMzAxIDEzLjEyODggNy40NjA4MiAxMi4xNTE2IDcuNDYwODJaTTEyLjE1MTYgMTguMTE5OEMxMi43MTA4IDE4LjExOTggMTMuMTY0MSAxNy42NjY1IDEzLjE2NDEgMTcuMTA3M0MxMy4xNjQxIDE2LjU0OCAxMi43MTA4IDE2LjA5NDcgMTIuMTUxNiAxNi4wOTQ3QzExLjU5MjQgMTYuMDk0NyAxMS4xMzkgMTYuNTQ4IDExLjEzOSAxNy4xMDczQzExLjEzOSAxNy42NjY1IDExLjU5MjQgMTguMTE5OCAxMi4xNTE2IDE4LjExOThaIiBmaWxsPSIjQjkyNjIyIi8+Cjwvc3ZnPgo="
+module.exports = __webpack_require__.p + "img/flip-button.42f5fc9.svg";
 
 /***/ }),
 /* 58 */
@@ -342,33 +342,33 @@ module.exports = __webpack_require__.p + "img/email-sent-success.d4c26fd.svg";
 
 /***/ }),
 /* 59 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "img/check.788163c.png";
+
+/***/ }),
+/* 60 */
 /***/ (function(module, exports) {
 
 module.exports = "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjUiIGhlaWdodD0iMjUiIHZpZXdCb3g9IjAgMCAyNSAyNSIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTEyLjE4NTUgMTQuNTUwM0MxMy41MTEgMTQuNTUwMyAxNC41ODU1IDEzLjU0MjkgMTQuNTg1NSAxMi4zMDAzQzE0LjU4NTUgMTEuMDU3NiAxMy41MTEgMTAuMDUwMyAxMi4xODU1IDEwLjA1MDNDMTAuODYwMSAxMC4wNTAzIDkuNzg1NTUgMTEuMDU3NiA5Ljc4NTU1IDEyLjMwMDNDOS43ODU1NSAxMy41NDI5IDEwLjg2MDEgMTQuNTUwMyAxMi4xODU1IDE0LjU1MDNaIiBmaWxsPSIjNjQ3NDhCIi8+CjxwYXRoIGZpbGwtcnVsZT0iZXZlbm9kZCIgY2xpcC1ydWxlPSJldmVub2RkIiBkPSJNMjAuMTg1NSAxMi4zMDAzQzIwLjE4NTUgMTUuNjE0IDE2LjYwMzggMTguMzAwMyAxMi4xODU1IDE4LjMwMDNDNy43NjcyNyAxOC4zMDAzIDQuMTg1NTUgMTUuNjE0IDQuMTg1NTUgMTIuMzAwM0M0LjE4NTU1IDguOTg2NTUgNy43NjcyNyA2LjMwMDI2IDEyLjE4NTUgNi4zMDAyNkMxNi42MDM4IDYuMzAwMjYgMjAuMTg1NSA4Ljk4NjU1IDIwLjE4NTUgMTIuMzAwM1pNMTYuOTg1NSAxMi4zMDAzQzE2Ljk4NTUgMTQuNzg1NSAxNC44MzY1IDE2LjgwMDMgMTIuMTg1NSAxNi44MDAzQzkuNTM0NTggMTYuODAwMyA3LjM4NTU1IDE0Ljc4NTUgNy4zODU1NSAxMi4zMDAzQzcuMzg1NTUgOS44MTQ5OCA5LjUzNDU4IDcuODAwMjYgMTIuMTg1NSA3LjgwMDI2QzE0LjgzNjUgNy44MDAyNiAxNi45ODU1IDkuODE0OTggMTYuOTg1NSAxMi4zMDAzWiIgZmlsbD0iIzY0NzQ4QiIvPgo8L3N2Zz4K"
 
 /***/ }),
-/* 60 */
+/* 61 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "img/logo-star-air.0033deb.png";
 
 /***/ }),
-/* 61 */
+/* 62 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "img/membership-card-gold.c1f433d.png";
 
 /***/ }),
-/* 62 */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "img/membership-card-silver.0204b0c.png";
-
-/***/ }),
 /* 63 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "img/check.788163c.png";
+module.exports = __webpack_require__.p + "img/membership-card-silver.0204b0c.png";
 
 /***/ }),
 /* 64 */
@@ -525,7 +525,7 @@ module.exports = __webpack_require__.p + "img/twitter.cca7832.svg";
 /***/ (function(module, exports, __webpack_require__) {
 
 var map = {
-	"./alert-info.svg": 57,
+	"./alert-info.svg": 55,
 	"./alert.png": 90,
 	"./arrow-bottom-gray.svg": 35,
 	"./arrow-bottom.svg": 45,
@@ -540,7 +540,7 @@ var map = {
 	"./bg-login.png": 16,
 	"./book-a-flight.png": 71,
 	"./book.svg": 72,
-	"./check.png": 63,
+	"./check.png": 59,
 	"./close.svg": 47,
 	"./coming-soon.jpg": 66,
 	"./current-tier.png": 67,
@@ -556,11 +556,11 @@ var map = {
 	"./earn-point.png": 73,
 	"./email-sent-success.svg": 58,
 	"./english.svg": 48,
-	"./eye.svg": 59,
+	"./eye.svg": 60,
 	"./facebook.svg": 84,
 	"./flight-info.svg": 74,
-	"./flip-button-mobile.svg": 55,
-	"./flip-button.svg": 56,
+	"./flip-button-mobile.svg": 56,
+	"./flip-button.svg": 57,
 	"./footer-facebook.svg": 50,
 	"./footer-instagram.svg": 51,
 	"./footer-linkedin.svg": 52,
@@ -569,11 +569,11 @@ var map = {
 	"./globe.svg": 44,
 	"./google.svg": 85,
 	"./info.svg": 46,
-	"./logo-star-air.png": 60,
+	"./logo-star-air.png": 61,
 	"./logo.png": 38,
 	"./logo.svg": 102,
-	"./membership-card-gold.png": 61,
-	"./membership-card-silver.png": 62,
+	"./membership-card-gold.png": 62,
+	"./membership-card-silver.png": 63,
 	"./membership-card.png": 64,
 	"./mobile-menu.svg": 49,
 	"./my-trip.svg": 75,
@@ -1340,7 +1340,8 @@ var component = Object(componentNormalizer["a" /* default */])(
 
 /***/ }),
 /* 108 */,
-/* 109 */
+/* 109 */,
+/* 110 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
@@ -1357,7 +1358,6 @@ module.exports.__inject__ = function (context) {
 };
 
 /***/ }),
-/* 110 */,
 /* 111 */,
 /* 112 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
@@ -1367,7 +1367,7 @@ module.exports.__inject__ = function (context) {
 __webpack_require__.r(__webpack_exports__);
 
 // CONCATENATED MODULE: ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/@nuxt/components/dist/loader.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./components/homepage/TabBook.vue?vue&type=template&id=1e3bbb44&
-var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',[_vm._ssrNode("<div class=\"md:mt-8 text-2xl text-grayscale-900 font-semibold font-noto-sans\">\n    Where do you want to travel?\n  </div> <div class=\"mt-2 text-grayscale-500\">\n    Redeem your Star Points with a flight ticket to your desired destination\n  </div> <div class=\"mt-6 md:flex\"><div class=\"w-full md:w-3/6 md:flex\"><div class=\"flex-1\"><div class=\"rounded-t-lg md:rounded-l-lg md:rounded-tr-none border p-3\"><div class=\"text-grayscale-400 text-2xs\">From</div> <input type=\"text\" value=\"Mumbai International Airport (MBR)\" class=\"w-full border-none outline-none\"></div></div> <div class=\"flex-1 relative\"><div class=\"h-10 w-10 absolute cursor-pointer hidden md:inline\"><img"+(_vm._ssrAttr("src",__webpack_require__(56)))+" alt=\"Flip Button\" class=\"inline-block -ml-5 mt-4\"></div> <div class=\"\n            h-10\n            w-10\n            absolute\n            cursor-pointer\n            inline\n            md:hidden\n            right-4\n            -mt-5\n          \"><img"+(_vm._ssrAttr("src",__webpack_require__(55)))+" alt=\"Flip Button\" class=\"inline-block\"></div> <div class=\"border p-3 md:pl-8 rounded-b-xl md:rounded-none\"><div class=\"text-grayscale-400 text-2xs\">To</div> <input type=\"text\" value=\"Dubai International Airport (DOH)\" class=\"w-full border-none outline-none\"></div></div></div> <div class=\"w-full md:w-2/6 mt-6 md:mt-0 flex\"><div class=\"w-1/3 md:w-1/2\"><div class=\"border p-3 rounded-l-lg md:rounded-l-none\"><div class=\"text-grayscale-400 text-2xs\">Trip</div> <input type=\"text\" value=\"Return\" class=\"w-full border-none outline-none\"></div></div> <div class=\"w-2/3 md:w-1/2\"><div class=\"border p-3 rounded-r-lg md:rounded-r-none\"><div class=\"flex\"><div class=\"flex-1\"><div class=\"text-grayscale-400 text-2xs\">Depart</div> <input type=\"text\" value=\"20 Nov 21\" class=\"w-full border-none outline-none\"></div> <div class=\"flex-1\"><div class=\"text-grayscale-400 text-2xs\">Return</div> <input type=\"text\" value=\"27 Nov 21\" class=\"w-full border-none outline-none\"></div></div></div></div></div> <div class=\"w-full md:w-1/6 mt-6 md:mt-0 flex\"><div class=\"w-full\"><div class=\"border md:rounded-r-lg p-3 rounded-lg md:rounded-none\"><div class=\"text-grayscale-400 text-2xs\">Passanger/Class</div> <input type=\"text\" value=\"1 Passanger, Economy\" class=\"w-full border-none outline-none\"></div></div></div></div> "),_vm._ssrNode("<div class=\"mt-8 md:inline-block md:float-right\">","</div>",[_c('Button',{attrs:{"value":"Search Flights","customClass":"px-6"}})],1)],2)}
+var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',[_vm._ssrNode("<div class=\"md:mt-8 text-2xl text-grayscale-900 font-semibold font-noto-sans\">\n    Where do you want to travel?\n  </div> <div class=\"mt-2 text-grayscale-500\">\n    Redeem your Star Points with a flight ticket to your desired destination\n  </div> <div class=\"mt-6 md:flex\"><div class=\"w-full md:w-3/6 md:flex\"><div class=\"flex-1\"><div class=\"rounded-t-lg md:rounded-l-lg md:rounded-tr-none border p-3\"><div class=\"text-grayscale-400 text-2xs\">From</div> <input type=\"text\" value=\"Mumbai International Airport (MBR)\" class=\"w-full border-none outline-none\"></div></div> <div class=\"flex-1 relative\"><div class=\"h-10 w-10 absolute cursor-pointer hidden md:inline\"><img"+(_vm._ssrAttr("src",__webpack_require__(57)))+" alt=\"Flip Button\" class=\"inline-block -ml-5 mt-4\"></div> <div class=\"\n            h-10\n            w-10\n            absolute\n            cursor-pointer\n            inline\n            md:hidden\n            right-4\n            -mt-5\n          \"><img"+(_vm._ssrAttr("src",__webpack_require__(56)))+" alt=\"Flip Button\" class=\"inline-block\"></div> <div class=\"border p-3 md:pl-8 rounded-b-xl md:rounded-none\"><div class=\"text-grayscale-400 text-2xs\">To</div> <input type=\"text\" value=\"Dubai International Airport (DOH)\" class=\"w-full border-none outline-none\"></div></div></div> <div class=\"w-full md:w-2/6 mt-6 md:mt-0 flex\"><div class=\"w-1/3 md:w-1/2\"><div class=\"border p-3 rounded-l-lg md:rounded-l-none\"><div class=\"text-grayscale-400 text-2xs\">Trip</div> <input type=\"text\" value=\"Return\" class=\"w-full border-none outline-none\"></div></div> <div class=\"w-2/3 md:w-1/2\"><div class=\"border p-3 rounded-r-lg md:rounded-r-none\"><div class=\"flex\"><div class=\"flex-1\"><div class=\"text-grayscale-400 text-2xs\">Depart</div> <input type=\"text\" value=\"20 Nov 21\" class=\"w-full border-none outline-none\"></div> <div class=\"flex-1\"><div class=\"text-grayscale-400 text-2xs\">Return</div> <input type=\"text\" value=\"27 Nov 21\" class=\"w-full border-none outline-none\"></div></div></div></div></div> <div class=\"w-full md:w-1/6 mt-6 md:mt-0 flex\"><div class=\"w-full\"><div class=\"border md:rounded-r-lg p-3 rounded-lg md:rounded-none\"><div class=\"text-grayscale-400 text-2xs\">Passanger/Class</div> <input type=\"text\" value=\"1 Passanger, Economy\" class=\"w-full border-none outline-none\"></div></div></div></div> "),_vm._ssrNode("<div class=\"mt-8 md:inline-block md:float-right\">","</div>",[_c('Button',{attrs:{"value":"Search Flights","customClass":"px-6"}})],1)],2)}
 var staticRenderFns = []
 
 
@@ -1602,7 +1602,7 @@ installComponents(component, {Input: __webpack_require__(37).default,Button: __w
 __webpack_require__.r(__webpack_exports__);
 
 // CONCATENATED MODULE: ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/@nuxt/components/dist/loader.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./components/homepage/TabFlightInfo.vue?vue&type=template&id=5ba47bc2&
-var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"p-6 md:p-0"},[_vm._ssrNode("<div class=\"text-2xl font-semibold md:mt-8 text-grayscale-900 font-noto-sans\">\n    Check flight schedule\n  </div> <div class=\"mt-2 text-grayscale-500\">Search for Star Air flight status</div> <div class=\"mt-6 md:flex\"><div class=\"w-full md:w-3/6 md:flex\"><div class=\"flex-1\"><div class=\"p-3 border rounded-t-lg md:rounded-l-lg md:rounded-tr-none\"><div class=\"text-grayscale-400 text-2xs\">From</div> <input type=\"text\" value=\"Mumbai International Airport (MBR)\" class=\"w-full border-none outline-none\"></div></div> <div class=\"relative flex-1\"><div class=\"absolute hidden w-10 h-10 cursor-pointer md:inline\"><img"+(_vm._ssrAttr("src",__webpack_require__(56)))+" alt=\"Flip Button\" class=\"inline-block mt-4 -ml-5\"></div> <div class=\"absolute inline w-10 h-10 -mt-5 cursor-pointer  md:hidden right-4\"><img"+(_vm._ssrAttr("src",__webpack_require__(55)))+" alt=\"Flip Button\" class=\"inline-block\"></div> <div class=\"p-3 border md:pl-8 rounded-b-xl md:rounded-none\"><div class=\"text-grayscale-400 text-2xs\">To</div> <input type=\"text\" value=\"Dubai International Airport (DOH)\" class=\"w-full border-none outline-none\"></div></div></div> <div class=\"flex w-full mt-6 md:w-2/6 md:mt-0\"><div class=\"w-full md:w-full\"><div class=\"border rounded-lg md:rounded-none\"><div class=\"flex\"><div class=\"flex-1 p-3\"><div class=\"text-grayscale-400 text-2xs\">Depart</div> <input type=\"text\" value=\"20 Nov 21\" class=\"w-full border-none outline-none\"></div> <div class=\"flex-1 p-3 pl-2 border-l\"><div class=\"text-grayscale-400 text-2xs\">Return</div> <input type=\"text\" value=\"27 Nov 21\" class=\"w-full border-none outline-none\"></div></div></div></div></div> <div class=\"flex w-full mt-6 md:w-1/6 md:mt-0\"><div class=\"w-full\"><div class=\"p-3 border rounded-lg md:rounded-r-lg md:rounded-none\"><div class=\"text-grayscale-400 text-2xs\">Trip</div> <input type=\"text\" value=\"Return\" class=\"w-full border-none outline-none\"></div></div></div></div> "),_vm._ssrNode("<div class=\"mt-8 md:inline-block md:float-right\">","</div>",[_c('NuxtLink',{attrs:{"to":"/flight-info"}},[_c('Button',{attrs:{"value":"Check Schedule","customClass":"px-6"}})],1)],1)],2)}
+var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"p-6 md:p-0"},[_vm._ssrNode("<div class=\"text-2xl font-semibold md:mt-8 text-grayscale-900 font-noto-sans\">\n    Check flight schedule\n  </div> <div class=\"mt-2 text-grayscale-500\">Search for Star Air flight status</div> <div class=\"mt-6 md:flex\"><div class=\"w-full md:w-3/6 md:flex\"><div class=\"flex-1\"><div class=\"p-3 border rounded-t-lg md:rounded-l-lg md:rounded-tr-none\"><div class=\"text-grayscale-400 text-2xs\">From</div> <input type=\"text\" value=\"Mumbai International Airport (MBR)\" class=\"w-full border-none outline-none\"></div></div> <div class=\"relative flex-1\"><div class=\"absolute hidden w-10 h-10 cursor-pointer md:inline\"><img"+(_vm._ssrAttr("src",__webpack_require__(57)))+" alt=\"Flip Button\" class=\"inline-block mt-4 -ml-5\"></div> <div class=\"absolute inline w-10 h-10 -mt-5 cursor-pointer  md:hidden right-4\"><img"+(_vm._ssrAttr("src",__webpack_require__(56)))+" alt=\"Flip Button\" class=\"inline-block\"></div> <div class=\"p-3 border md:pl-8 rounded-b-xl md:rounded-none\"><div class=\"text-grayscale-400 text-2xs\">To</div> <input type=\"text\" value=\"Dubai International Airport (DOH)\" class=\"w-full border-none outline-none\"></div></div></div> <div class=\"flex w-full mt-6 md:w-2/6 md:mt-0\"><div class=\"w-full md:w-full\"><div class=\"border rounded-lg md:rounded-none\"><div class=\"flex\"><div class=\"flex-1 p-3\"><div class=\"text-grayscale-400 text-2xs\">Depart</div> <input type=\"text\" value=\"20 Nov 21\" class=\"w-full border-none outline-none\"></div> <div class=\"flex-1 p-3 pl-2 border-l\"><div class=\"text-grayscale-400 text-2xs\">Return</div> <input type=\"text\" value=\"27 Nov 21\" class=\"w-full border-none outline-none\"></div></div></div></div></div> <div class=\"flex w-full mt-6 md:w-1/6 md:mt-0\"><div class=\"w-full\"><div class=\"p-3 border rounded-lg md:rounded-r-lg md:rounded-none\"><div class=\"text-grayscale-400 text-2xs\">Trip</div> <input type=\"text\" value=\"Return\" class=\"w-full border-none outline-none\"></div></div></div></div> "),_vm._ssrNode("<div class=\"mt-8 md:inline-block md:float-right\">","</div>",[_c('NuxtLink',{attrs:{"to":"/flight-info"}},[_c('Button',{attrs:{"value":"Check Schedule","customClass":"px-6"}})],1)],1)],2)}
 var staticRenderFns = []
 
 
@@ -1742,7 +1742,7 @@ installComponents(component, {Input: __webpack_require__(37).default,Button: __w
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _node_modules_vue_style_loader_index_js_ref_7_oneOf_1_0_node_modules_nuxt_postcss8_node_modules_css_loader_dist_cjs_js_ref_7_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_nuxt_postcss8_node_modules_postcss_loader_dist_cjs_js_ref_7_oneOf_1_2_node_modules_sass_loader_dist_cjs_js_ref_7_oneOf_1_3_node_modules_nuxt_components_dist_loader_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_AdvancedSearch_vue_vue_type_style_index_0_lang_scss___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(109);
+/* harmony import */ var _node_modules_vue_style_loader_index_js_ref_7_oneOf_1_0_node_modules_nuxt_postcss8_node_modules_css_loader_dist_cjs_js_ref_7_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_nuxt_postcss8_node_modules_postcss_loader_dist_cjs_js_ref_7_oneOf_1_2_node_modules_sass_loader_dist_cjs_js_ref_7_oneOf_1_3_node_modules_nuxt_components_dist_loader_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_AdvancedSearch_vue_vue_type_style_index_0_lang_scss___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(110);
 /* harmony import */ var _node_modules_vue_style_loader_index_js_ref_7_oneOf_1_0_node_modules_nuxt_postcss8_node_modules_css_loader_dist_cjs_js_ref_7_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_nuxt_postcss8_node_modules_postcss_loader_dist_cjs_js_ref_7_oneOf_1_2_node_modules_sass_loader_dist_cjs_js_ref_7_oneOf_1_3_node_modules_nuxt_components_dist_loader_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_AdvancedSearch_vue_vue_type_style_index_0_lang_scss___WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_vue_style_loader_index_js_ref_7_oneOf_1_0_node_modules_nuxt_postcss8_node_modules_css_loader_dist_cjs_js_ref_7_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_nuxt_postcss8_node_modules_postcss_loader_dist_cjs_js_ref_7_oneOf_1_2_node_modules_sass_loader_dist_cjs_js_ref_7_oneOf_1_3_node_modules_nuxt_components_dist_loader_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_AdvancedSearch_vue_vue_type_style_index_0_lang_scss___WEBPACK_IMPORTED_MODULE_0__);
 /* harmony reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in _node_modules_vue_style_loader_index_js_ref_7_oneOf_1_0_node_modules_nuxt_postcss8_node_modules_css_loader_dist_cjs_js_ref_7_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_nuxt_postcss8_node_modules_postcss_loader_dist_cjs_js_ref_7_oneOf_1_2_node_modules_sass_loader_dist_cjs_js_ref_7_oneOf_1_3_node_modules_nuxt_components_dist_loader_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_AdvancedSearch_vue_vue_type_style_index_0_lang_scss___WEBPACK_IMPORTED_MODULE_0__) if(["default"].indexOf(__WEBPACK_IMPORT_KEY__) < 0) (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return _node_modules_vue_style_loader_index_js_ref_7_oneOf_1_0_node_modules_nuxt_postcss8_node_modules_css_loader_dist_cjs_js_ref_7_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_nuxt_postcss8_node_modules_postcss_loader_dist_cjs_js_ref_7_oneOf_1_2_node_modules_sass_loader_dist_cjs_js_ref_7_oneOf_1_3_node_modules_nuxt_components_dist_loader_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_AdvancedSearch_vue_vue_type_style_index_0_lang_scss___WEBPACK_IMPORTED_MODULE_0__[key]; }) }(__WEBPACK_IMPORT_KEY__));
 

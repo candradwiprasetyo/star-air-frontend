@@ -318,21 +318,21 @@ module.exports = __webpack_require__.p + "img/footer-whatsapp.42f1d55.svg";
 
 /***/ }),
 /* 55 */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ (function(module, exports) {
 
-module.exports = __webpack_require__.p + "img/flip-button-mobile.01b06a6.svg";
+module.exports = "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjUiIGhlaWdodD0iMjUiIHZpZXdCb3g9IjAgMCAyNSAyNSIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0xMi4xNTE2IDIwLjgyNDJDMTYuNTg4NiAyMC44MjQyIDIwLjE4NTUgMTcuMjI3MyAyMC4xODU1IDEyLjc5MDNDMjAuMTg1NSA4LjM1MzMxIDE2LjU4ODYgNC43NTY0MSAxMi4xNTE2IDQuNzU2NDFDNy43MTQ1OCA0Ljc1NjQxIDQuMTE3NjggOC4zNTMzMSA0LjExNzY4IDEyLjc5MDNDNC4xMTc2OCAxNy4yMjczIDcuNzE0NTggMjAuODI0MiAxMi4xNTE2IDIwLjgyNDJaTTEyLjE1MTYgNy40NjA4MkMxMS4xNzQ0IDcuNDYwODIgMTAuNDE1OCA4LjMxMzAxIDEwLjUyOSA5LjI4MzYyTDExLjExOTcgMTQuMzQ4MkMxMS4xODA4IDE0Ljg3MTkgMTEuNjI0NCAxNS4yNjY3IDEyLjE1MTYgMTUuMjY2N0MxMi42Nzg4IDE1LjI2NjcgMTMuMTIyNCAxNC44NzE5IDEzLjE4MzUgMTQuMzQ4MkwxMy43NzQyIDkuMjgzNjJDMTMuODg3NCA4LjMxMzAxIDEzLjEyODggNy40NjA4MiAxMi4xNTE2IDcuNDYwODJaTTEyLjE1MTYgMTguMTE5OEMxMi43MTA4IDE4LjExOTggMTMuMTY0MSAxNy42NjY1IDEzLjE2NDEgMTcuMTA3M0MxMy4xNjQxIDE2LjU0OCAxMi43MTA4IDE2LjA5NDcgMTIuMTUxNiAxNi4wOTQ3QzExLjU5MjQgMTYuMDk0NyAxMS4xMzkgMTYuNTQ4IDExLjEzOSAxNy4xMDczQzExLjEzOSAxNy42NjY1IDExLjU5MjQgMTguMTE5OCAxMi4xNTE2IDE4LjExOThaIiBmaWxsPSIjQjkyNjIyIi8+Cjwvc3ZnPgo="
 
 /***/ }),
 /* 56 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "img/flip-button.42f5fc9.svg";
+module.exports = __webpack_require__.p + "img/flip-button-mobile.01b06a6.svg";
 
 /***/ }),
 /* 57 */
-/***/ (function(module, exports) {
+/***/ (function(module, exports, __webpack_require__) {
 
-module.exports = "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjUiIGhlaWdodD0iMjUiIHZpZXdCb3g9IjAgMCAyNSAyNSIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0xMi4xNTE2IDIwLjgyNDJDMTYuNTg4NiAyMC44MjQyIDIwLjE4NTUgMTcuMjI3MyAyMC4xODU1IDEyLjc5MDNDMjAuMTg1NSA4LjM1MzMxIDE2LjU4ODYgNC43NTY0MSAxMi4xNTE2IDQuNzU2NDFDNy43MTQ1OCA0Ljc1NjQxIDQuMTE3NjggOC4zNTMzMSA0LjExNzY4IDEyLjc5MDNDNC4xMTc2OCAxNy4yMjczIDcuNzE0NTggMjAuODI0MiAxMi4xNTE2IDIwLjgyNDJaTTEyLjE1MTYgNy40NjA4MkMxMS4xNzQ0IDcuNDYwODIgMTAuNDE1OCA4LjMxMzAxIDEwLjUyOSA5LjI4MzYyTDExLjExOTcgMTQuMzQ4MkMxMS4xODA4IDE0Ljg3MTkgMTEuNjI0NCAxNS4yNjY3IDEyLjE1MTYgMTUuMjY2N0MxMi42Nzg4IDE1LjI2NjcgMTMuMTIyNCAxNC44NzE5IDEzLjE4MzUgMTQuMzQ4MkwxMy43NzQyIDkuMjgzNjJDMTMuODg3NCA4LjMxMzAxIDEzLjEyODggNy40NjA4MiAxMi4xNTE2IDcuNDYwODJaTTEyLjE1MTYgMTguMTE5OEMxMi43MTA4IDE4LjExOTggMTMuMTY0MSAxNy42NjY1IDEzLjE2NDEgMTcuMTA3M0MxMy4xNjQxIDE2LjU0OCAxMi43MTA4IDE2LjA5NDcgMTIuMTUxNiAxNi4wOTQ3QzExLjU5MjQgMTYuMDk0NyAxMS4xMzkgMTYuNTQ4IDExLjEzOSAxNy4xMDczQzExLjEzOSAxNy42NjY1IDExLjU5MjQgMTguMTE5OCAxMi4xNTE2IDE4LjExOThaIiBmaWxsPSIjQjkyNjIyIi8+Cjwvc3ZnPgo="
+module.exports = __webpack_require__.p + "img/flip-button.42f5fc9.svg";
 
 /***/ }),
 /* 58 */
@@ -342,33 +342,33 @@ module.exports = __webpack_require__.p + "img/email-sent-success.d4c26fd.svg";
 
 /***/ }),
 /* 59 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "img/check.788163c.png";
+
+/***/ }),
+/* 60 */
 /***/ (function(module, exports) {
 
 module.exports = "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjUiIGhlaWdodD0iMjUiIHZpZXdCb3g9IjAgMCAyNSAyNSIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTEyLjE4NTUgMTQuNTUwM0MxMy41MTEgMTQuNTUwMyAxNC41ODU1IDEzLjU0MjkgMTQuNTg1NSAxMi4zMDAzQzE0LjU4NTUgMTEuMDU3NiAxMy41MTEgMTAuMDUwMyAxMi4xODU1IDEwLjA1MDNDMTAuODYwMSAxMC4wNTAzIDkuNzg1NTUgMTEuMDU3NiA5Ljc4NTU1IDEyLjMwMDNDOS43ODU1NSAxMy41NDI5IDEwLjg2MDEgMTQuNTUwMyAxMi4xODU1IDE0LjU1MDNaIiBmaWxsPSIjNjQ3NDhCIi8+CjxwYXRoIGZpbGwtcnVsZT0iZXZlbm9kZCIgY2xpcC1ydWxlPSJldmVub2RkIiBkPSJNMjAuMTg1NSAxMi4zMDAzQzIwLjE4NTUgMTUuNjE0IDE2LjYwMzggMTguMzAwMyAxMi4xODU1IDE4LjMwMDNDNy43NjcyNyAxOC4zMDAzIDQuMTg1NTUgMTUuNjE0IDQuMTg1NTUgMTIuMzAwM0M0LjE4NTU1IDguOTg2NTUgNy43NjcyNyA2LjMwMDI2IDEyLjE4NTUgNi4zMDAyNkMxNi42MDM4IDYuMzAwMjYgMjAuMTg1NSA4Ljk4NjU1IDIwLjE4NTUgMTIuMzAwM1pNMTYuOTg1NSAxMi4zMDAzQzE2Ljk4NTUgMTQuNzg1NSAxNC44MzY1IDE2LjgwMDMgMTIuMTg1NSAxNi44MDAzQzkuNTM0NTggMTYuODAwMyA3LjM4NTU1IDE0Ljc4NTUgNy4zODU1NSAxMi4zMDAzQzcuMzg1NTUgOS44MTQ5OCA5LjUzNDU4IDcuODAwMjYgMTIuMTg1NSA3LjgwMDI2QzE0LjgzNjUgNy44MDAyNiAxNi45ODU1IDkuODE0OTggMTYuOTg1NSAxMi4zMDAzWiIgZmlsbD0iIzY0NzQ4QiIvPgo8L3N2Zz4K"
 
 /***/ }),
-/* 60 */
+/* 61 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "img/logo-star-air.0033deb.png";
 
 /***/ }),
-/* 61 */
+/* 62 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "img/membership-card-gold.c1f433d.png";
 
 /***/ }),
-/* 62 */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "img/membership-card-silver.0204b0c.png";
-
-/***/ }),
 /* 63 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "img/check.788163c.png";
+module.exports = __webpack_require__.p + "img/membership-card-silver.0204b0c.png";
 
 /***/ }),
 /* 64 */
@@ -525,7 +525,7 @@ module.exports = __webpack_require__.p + "img/twitter.cca7832.svg";
 /***/ (function(module, exports, __webpack_require__) {
 
 var map = {
-	"./alert-info.svg": 57,
+	"./alert-info.svg": 55,
 	"./alert.png": 90,
 	"./arrow-bottom-gray.svg": 35,
 	"./arrow-bottom.svg": 45,
@@ -540,7 +540,7 @@ var map = {
 	"./bg-login.png": 16,
 	"./book-a-flight.png": 71,
 	"./book.svg": 72,
-	"./check.png": 63,
+	"./check.png": 59,
 	"./close.svg": 47,
 	"./coming-soon.jpg": 66,
 	"./current-tier.png": 67,
@@ -556,11 +556,11 @@ var map = {
 	"./earn-point.png": 73,
 	"./email-sent-success.svg": 58,
 	"./english.svg": 48,
-	"./eye.svg": 59,
+	"./eye.svg": 60,
 	"./facebook.svg": 84,
 	"./flight-info.svg": 74,
-	"./flip-button-mobile.svg": 55,
-	"./flip-button.svg": 56,
+	"./flip-button-mobile.svg": 56,
+	"./flip-button.svg": 57,
 	"./footer-facebook.svg": 50,
 	"./footer-instagram.svg": 51,
 	"./footer-linkedin.svg": 52,
@@ -569,11 +569,11 @@ var map = {
 	"./globe.svg": 44,
 	"./google.svg": 85,
 	"./info.svg": 46,
-	"./logo-star-air.png": 60,
+	"./logo-star-air.png": 61,
 	"./logo.png": 38,
 	"./logo.svg": 102,
-	"./membership-card-gold.png": 61,
-	"./membership-card-silver.png": 62,
+	"./membership-card-gold.png": 62,
+	"./membership-card-silver.png": 63,
 	"./membership-card.png": 64,
 	"./mobile-menu.svg": 49,
 	"./my-trip.svg": 75,
@@ -1439,7 +1439,7 @@ var component = Object(componentNormalizer["a" /* default */])(
 __webpack_require__.r(__webpack_exports__);
 
 // CONCATENATED MODULE: ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/@nuxt/components/dist/loader.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./components/InputPassword.vue?vue&type=template&id=10664671&
-var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"relative p-3",class:[_vm.border, _vm.customClass]},[_vm._ssrNode("<div class=\"mb-1 text-xs text-grayscale-400\">"+_vm._ssrEscape(_vm._s(_vm.label))+"</div> <input"+(_vm._ssrAttr("type",_vm.type))+(_vm._ssrAttr("placeholder",_vm.placeholder))+(_vm._ssrAttr("value",_vm.value))+" class=\"w-full border-none outline-none\"> <div class=\"absolute top-0 right-0 w-6 h-6 mt-5 mr-2 cursor-pointer\"><img"+(_vm._ssrAttr("src",__webpack_require__(59)))+" alt=\"eye\""+(_vm._ssrClass("inline-block",(_vm.type=='text') ? 'opacity-50' : 'opacity-100'))+"></div>")])}
+var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"relative p-3",class:[_vm.border, _vm.customClass]},[_vm._ssrNode("<div class=\"mb-1 text-xs text-grayscale-400\">"+_vm._ssrEscape(_vm._s(_vm.label))+"</div> <input"+(_vm._ssrAttr("type",_vm.type))+(_vm._ssrAttr("placeholder",_vm.placeholder))+(_vm._ssrAttr("value",_vm.value))+" class=\"w-full border-none outline-none\"> <div class=\"absolute top-0 right-0 w-6 h-6 mt-5 mr-2 cursor-pointer\"><img"+(_vm._ssrAttr("src",__webpack_require__(60)))+" alt=\"eye\""+(_vm._ssrClass("inline-block",(_vm.type=='text') ? 'opacity-50' : 'opacity-100'))+"></div>")])}
 var staticRenderFns = []
 
 
@@ -1537,8 +1537,7 @@ installComponents(component, {Input: __webpack_require__(37).default})
 
 
 /***/ }),
-/* 109 */,
-/* 110 */
+/* 109 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1546,7 +1545,7 @@ installComponents(component, {Input: __webpack_require__(37).default})
 __webpack_require__.r(__webpack_exports__);
 
 // CONCATENATED MODULE: ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/@nuxt/components/dist/loader.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./components/PopupSuccess.vue?vue&type=template&id=28bc315a&
-var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',[_vm._ssrNode("<div class=\"fixed inset-0 z-30 bg-black opacity-75\"></div> "),_vm._ssrNode("<div class=\"fixed inset-0 z-30 flex items-center\">","</div>",[_vm._ssrNode("<div class=\"mx-auto bg-white w-[600px] rounded-lg\">","</div>",[_vm._ssrNode("<div class=\"p-6 mx-auto text-center md:w-600\">","</div>",[_vm._ssrNode("<img"+(_vm._ssrAttr("src",__webpack_require__(63)))+" alt=\"success\" width=\"100\" class=\"inline-block mt-10\"> <div class=\"mt-8 text-lg font-semibold capitalize font-noto-sans\">"+_vm._ssrEscape("\n          "+_vm._s(_vm.title)+"\n        ")+"</div> <div class=\"mt-2 text-grayscale-500\">"+_vm._ssrEscape("\n          "+_vm._s(_vm.message)+"\n        ")+"</div> "),_vm._ssrNode("<div class=\"inline-block mt-6 w-[200px]\">","</div>",[_c('Button',{attrs:{"value":"Close","background":"bg-white","border":"border-2 border-secondary-900","color":"text-secondary-900"},on:{"action":function($event){return _vm.closePopup()}}})],1)],2)])])],2)}
+var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',[_vm._ssrNode("<div class=\"fixed inset-0 z-30 bg-black opacity-75\"></div> "),_vm._ssrNode("<div class=\"fixed inset-0 z-30 flex items-center\">","</div>",[_vm._ssrNode("<div class=\"mx-auto bg-white w-[600px] rounded-lg\">","</div>",[_vm._ssrNode("<div class=\"p-6 mx-auto text-center md:w-600\">","</div>",[_vm._ssrNode("<img"+(_vm._ssrAttr("src",__webpack_require__(59)))+" alt=\"success\" width=\"100\" class=\"inline-block mt-10\"> <div class=\"mt-8 text-lg font-semibold capitalize font-noto-sans\">"+_vm._ssrEscape("\n          "+_vm._s(_vm.title)+"\n        ")+"</div> <div class=\"mt-2 text-grayscale-500\">"+_vm._ssrEscape("\n          "+_vm._s(_vm.message)+"\n        ")+"</div> "),_vm._ssrNode("<div class=\"inline-block mt-6 w-[200px]\">","</div>",[_c('Button',{attrs:{"value":"Close","background":"bg-white","border":"border-2 border-secondary-900","color":"text-secondary-900"},on:{"action":function($event){return _vm.closePopup()}}})],1)],2)])])],2)}
 var staticRenderFns = []
 
 
@@ -1641,6 +1640,7 @@ installComponents(component, {Button: __webpack_require__(36).default})
 
 
 /***/ }),
+/* 110 */,
 /* 111 */,
 /* 112 */,
 /* 113 */,
@@ -2482,18 +2482,54 @@ installComponents(component, {Button: __webpack_require__(36).default})
 // ESM COMPAT FLAG
 __webpack_require__.r(__webpack_exports__);
 
-// CONCATENATED MODULE: ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/@nuxt/components/dist/loader.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./components/account/ChangePassword.vue?vue&type=template&id=01047c06&
-var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',[_vm._ssrNode("<div class=\"w-full pb-0 mb-6 border rounded-xl text-grayscale-500\">","</div>",[_vm._ssrNode("<div class=\"p-6 border-b\"><div class=\"flex\"><div class=\"text-lg font-semibold font-noto-sans text-grayscale-900\">Change Password</div></div></div> "),_vm._ssrNode("<div class=\"p-6 overflow-hidden\">","</div>",[_vm._ssrNode("<div class=\"mb-6\">","</div>",[_c('InputPassword',{attrs:{"label":"Old Password"},model:{value:(_vm.oldPassword),callback:function ($$v) {_vm.oldPassword=$$v},expression:"oldPassword"}})],1),_vm._ssrNode(" "),_vm._ssrNode("<div class=\"mb-6\">","</div>",[_c('InputPassword',{attrs:{"label":"New Password"},model:{value:(_vm.password),callback:function ($$v) {_vm.password=$$v},expression:"password"}})],1),_vm._ssrNode(" "),_vm._ssrNode("<div class=\"mb-6\">","</div>",[_c('InputPassword',{attrs:{"label":"Re-type New Password","customClass":"mt-6"},model:{value:(_vm.retypePassword),callback:function ($$v) {_vm.retypePassword=$$v},expression:"retypePassword"}})],1),_vm._ssrNode(" <div class=\"p-6 mb-6 bg-light-blue rounded-xl\"><div class=\"text-lg font-semibold text-grayscale-900\">\n          Password Must\n        </div> <div class=\"mt-4 text-grayscale-500\"><div class=\"md:flex\"><div class=\"flex-1\"><ul class=\"pl-5 leading-loose list-disc\"><li>Minimum 8 characters</li> <li>Have at least one number</li></ul></div> <div class=\"flex-1\"><ul class=\"pl-5 leading-loose list-disc\"><li>Have at least one uppercase letter</li> <li>Have at least one symbol</li></ul></div></div></div></div> "),_vm._ssrNode("<div class=\"md:inline-block\">","</div>",[_c('Button',{attrs:{"value":"Change Password","enabled":_vm.isButtonEnabled},on:{"action":_vm.createPassword}})],1)],2)],2)])}
+// CONCATENATED MODULE: ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/@nuxt/components/dist/loader.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./components/account/ChangePassword.vue?vue&type=template&id=41b24096&
+var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',[_vm._ssrNode("<div class=\"w-full pb-0 mb-6 border rounded-xl text-grayscale-500\">","</div>",[_vm._ssrNode("<div class=\"p-6 border-b\"><div class=\"flex\"><div class=\"text-lg font-semibold font-noto-sans text-grayscale-900\">Change Password</div></div></div> "),_vm._ssrNode("<div class=\"p-6 overflow-hidden\">","</div>",[_vm._ssrNode(((_vm.errorMessage)?("<div class=\"p-3 my-6 rounded bg-alert text-alert-900\"><img"+(_vm._ssrAttr("src",__webpack_require__(55)))+" alt=\"alert\" class=\"inline-block align-middle\"> <span class=\"inline-block align-middle\">"+_vm._ssrEscape(_vm._s(_vm.errorMessage))+"</span></div>"):"<!---->")+" "),_vm._ssrNode("<div class=\"mb-6\">","</div>",[_c('InputPassword',{attrs:{"label":"Old Password"},model:{value:(_vm.oldPassword),callback:function ($$v) {_vm.oldPassword=$$v},expression:"oldPassword"}})],1),_vm._ssrNode(" "),_vm._ssrNode("<div class=\"mb-6\">","</div>",[_c('InputPassword',{attrs:{"label":"New Password"},model:{value:(_vm.password),callback:function ($$v) {_vm.password=$$v},expression:"password"}})],1),_vm._ssrNode(" "),_vm._ssrNode("<div class=\"mb-6\">","</div>",[_c('InputPassword',{attrs:{"label":"Re-type New Password","customClass":"mt-6"},model:{value:(_vm.retypePassword),callback:function ($$v) {_vm.retypePassword=$$v},expression:"retypePassword"}})],1),_vm._ssrNode(" <div class=\"p-6 mb-6 bg-light-blue rounded-xl\"><div class=\"text-lg font-semibold text-grayscale-900\">\n          Password Must\n        </div> <div class=\"mt-4 text-grayscale-500\"><div class=\"md:flex\"><div class=\"flex-1\"><ul class=\"pl-5 leading-loose list-disc\"><li"+(_vm._ssrClass(null,[
+                  (_vm.clue1==1) ? 'text-green-500' : '',
+                  (_vm.clue1==2) ? 'text-red-500' : '' ]))+">\n                  Minimum 8 characters\n                </li> <li"+(_vm._ssrClass(null,[
+                  (_vm.clue2==1) ? 'text-green-500' : '',
+                  (_vm.clue2==2) ? 'text-red-500' : '' ]))+">Have at least one number</li></ul></div> <div class=\"flex-1\"><ul class=\"pl-5 leading-loose list-disc\"><li"+(_vm._ssrClass(null,[
+                  (_vm.clue3==1) ? 'text-green-500' : '',
+                  (_vm.clue3==2) ? 'text-red-500' : '' ]))+">Have at least one uppercase letter</li> <li"+(_vm._ssrClass(null,[
+                  (_vm.clue4==1) ? 'text-green-500' : '',
+                  (_vm.clue4==2) ? 'text-red-500' : '' ]))+">Have at least one symbol</li></ul></div></div></div></div> "),_vm._ssrNode("<div class=\"md:inline-block\">","</div>",[_c('Button',{attrs:{"value":"Change Password","enabled":_vm.isButtonEnabled},on:{"action":_vm.createPassword}})],1)],2)],2),_vm._ssrNode(" "),(_vm.isPopupSuccess)?_c('PopupSuccess',{attrs:{"title":'success',"message":'Members password has been changed'},on:{"close-popup":_vm.closePopupSuccess}}):_vm._e()],2)}
 var staticRenderFns = []
 
 
-// CONCATENATED MODULE: ./components/account/ChangePassword.vue?vue&type=template&id=01047c06&
+// CONCATENATED MODULE: ./components/account/ChangePassword.vue?vue&type=template&id=41b24096&
 
 // EXTERNAL MODULE: external "js-cookie"
 var external_js_cookie_ = __webpack_require__(34);
 var external_js_cookie_default = /*#__PURE__*/__webpack_require__.n(external_js_cookie_);
 
 // CONCATENATED MODULE: ./node_modules/@nuxt/components/dist/loader.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./components/account/ChangePassword.vue?vue&type=script&lang=ts&
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -2570,6 +2606,7 @@ var external_js_cookie_default = /*#__PURE__*/__webpack_require__.n(external_js_
       errorMessageNotSame: null,
       errorMessage: null,
       isPasswordMatch: false,
+      isPopupSuccess: false,
       clue1: null,
       clue2: null,
       clue3: null,
@@ -2585,27 +2622,51 @@ var external_js_cookie_default = /*#__PURE__*/__webpack_require__.n(external_js_
       ) {
         if (this.password == this.retypePassword) {
           this.errorMessageNotSame = null;
-          // this.isPasswordMatch = true;
-          this.isButtonEnabled = true;
+          this.isPasswordMatch = true;
         } else {
           this.errorMessageNotSame = 'Password missmatch';
-          // this.isPasswordMatch = false; 
-          this.isButtonEnabled = false;
+          this.isPasswordMatch = false; 
         }
 
-        // let countError = 0;
-        // if (this.password.length > 7) {
-        //   this.clue1 = 1;
-        // } else {
-        //   this.clue1 = 2;
-        //   countError++;
-        // }
+        let countError = 0;
 
-        // if (countError == 0 && this.isPasswordMatch) {
-        //   this.isButtonEnabled = false;
-        // } else {
-        //   this.isButtonEnabled = true;
-        // }
+        // Minimum 8 characters 
+        if (this.password.length > 7) {
+          this.clue1 = 1;
+        } else {
+          this.clue1 = 2;
+          countError++;
+        }
+
+        // Have at least one number
+        if((/\d/).test(this.password)) {
+          this.clue2 = 1;
+        } else {
+          this.clue2 = 2;
+          countError++;
+        }
+
+        // Have at least one uppercase letter
+        if((/^(?=.*[A-Z])/).test(this.password)) {
+          this.clue3 = 1;
+        } else {
+          this.clue3 = 2;
+          countError++;
+        }
+
+        // Have at least one symbol
+        if((/^(?=.*\W)/).test(this.password)) {
+          this.clue4 = 1;
+        } else {
+          this.clue4 = 2;
+          countError++;
+        }
+
+        if (countError == 0 && this.isPasswordMatch) {
+          this.isButtonEnabled =  true;
+        } else {
+          this.isButtonEnabled = false;
+        }
 
       } else {
         this.isButtonEnabled = false
@@ -2614,15 +2675,16 @@ var external_js_cookie_default = /*#__PURE__*/__webpack_require__.n(external_js_
     createPassword() {
       if (this.isButtonEnabled) {
         let formData = new FormData();
-        formData.append('member_email', this.email);
-        formData.append('password', this.password);
         formData.append('token', this.$config.myToken);
+        formData.append('member_email', this.userData.email);
+        formData.append('old_password', this.oldPassword);
+        formData.append('new_password', this.password);
 
-        this.$axios.$post('/member/activation-member', formData)
+        this.$axios.$post('/member/change-password', formData)
           .then( (response) => {
             if (response.err_num == '0') {
               this.errorMessage = null;
-              this.autoLogin();
+              this.isPopupSuccess = true;
             } else {
               this.errorMessage = response.err_str;
             }
@@ -2636,6 +2698,17 @@ var external_js_cookie_default = /*#__PURE__*/__webpack_require__.n(external_js_
       let userData = (external_js_cookie_default.a.get('star_air_login')) ? JSON.parse(external_js_cookie_default.a.get('star_air_login')) : '';
       this.userData = userData;
     },
+    closePopupSuccess() {
+      this.isPopupSuccess = false;
+      this.password = null;
+      this.oldPassword = null;
+      this.retypePassword = null;
+      this.clue1 = null;
+      this.clue2 = null;
+      this.clue3 = null;
+      this.clue4 = null;
+      this.isPasswordMatch = false;
+    }
   },
   mounted() {
     this.loadUser();
@@ -2674,7 +2747,7 @@ var component = Object(componentNormalizer["a" /* default */])(
 /* harmony default export */ var ChangePassword = __webpack_exports__["default"] = (component.exports);
 
 /* nuxt-component-imports */
-installComponents(component, {InputPassword: __webpack_require__(108).default,Button: __webpack_require__(36).default})
+installComponents(component, {InputPassword: __webpack_require__(108).default,Button: __webpack_require__(36).default,PopupSuccess: __webpack_require__(109).default})
 
 
 /***/ }),
@@ -2954,7 +3027,7 @@ var component = Object(componentNormalizer["a" /* default */])(
 /* harmony default export */ var EditProfile = __webpack_exports__["default"] = (component.exports);
 
 /* nuxt-component-imports */
-installComponents(component, {Input: __webpack_require__(37).default,Select: __webpack_require__(104).default,Input: __webpack_require__(37).default,Button: __webpack_require__(36).default,PopupSuccess: __webpack_require__(110).default})
+installComponents(component, {Input: __webpack_require__(37).default,Select: __webpack_require__(104).default,Input: __webpack_require__(37).default,Button: __webpack_require__(36).default,PopupSuccess: __webpack_require__(109).default})
 
 
 /***/ }),
@@ -2966,7 +3039,7 @@ installComponents(component, {Input: __webpack_require__(37).default,Select: __w
 __webpack_require__.r(__webpack_exports__);
 
 // CONCATENATED MODULE: ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/@nuxt/components/dist/loader.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./components/account/EditEmail.vue?vue&type=template&id=18003546&
-var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',[_vm._ssrNode("<div class=\"w-full pb-0 mb-6 overflow-hidden border rounded-xl text-grayscale-500\">","</div>",[_vm._ssrNode("<div class=\"p-6 border-b\"><div class=\"flex\"><div class=\"text-lg font-semibold font-noto-sans text-grayscale-900\"><span class=\"text-secondary-900\">User Profile</span> / Change Email &amp; Phone Number</div></div></div> "),_vm._ssrNode("<div class=\"p-6 overflow-hidden\">","</div>",[_vm._ssrNode(((_vm.errorMessage)?("<div class=\"p-3 my-6 rounded bg-alert text-alert-900\"><img"+(_vm._ssrAttr("src",__webpack_require__(57)))+" alt=\"alert\" class=\"inline-block align-middle\"> <span class=\"inline-block align-middle\">"+_vm._ssrEscape(_vm._s(_vm.errorMessage))+"</span></div>"):"<!---->")+" "),_c('Input',{attrs:{"label":"Email Address","readonly":true},model:{value:(_vm.email),callback:function ($$v) {_vm.email=$$v},expression:"email"}}),_vm._ssrNode(" "),_vm._ssrNode("<div class=\"flex mt-6\">","</div>",[(false)?undefined:_vm._e(),_vm._ssrNode(" "),_vm._ssrNode("<div class=\"flex-grow\">","</div>",[_c('Input',{attrs:{"label":"Phone","border":"border rounded-r-lg"},model:{value:(_vm.phone),callback:function ($$v) {_vm.phone=$$v},expression:"phone"}})],1)],2),_vm._ssrNode(" "),_vm._ssrNode("<div class=\"mt-10\">","</div>",[_vm._ssrNode("<div class=\"md:inline-block\">","</div>",[_c('Button',{attrs:{"value":"Submit Change"}})],1),_vm._ssrNode(" "),_vm._ssrNode("<div class=\"md:inline-block\">","</div>",[_vm._ssrNode("<div class=\"ml-5\">","</div>",[_c('Button',{attrs:{"value":"Cancel","border":"border-2 border-secondary-900","color":"text-secondary-900","background":"bg-white"}})],1)])],2)],2)],2)])}
+var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',[_vm._ssrNode("<div class=\"w-full pb-0 mb-6 overflow-hidden border rounded-xl text-grayscale-500\">","</div>",[_vm._ssrNode("<div class=\"p-6 border-b\"><div class=\"flex\"><div class=\"text-lg font-semibold font-noto-sans text-grayscale-900\"><span class=\"text-secondary-900\">User Profile</span> / Change Email &amp; Phone Number</div></div></div> "),_vm._ssrNode("<div class=\"p-6 overflow-hidden\">","</div>",[_vm._ssrNode(((_vm.errorMessage)?("<div class=\"p-3 my-6 rounded bg-alert text-alert-900\"><img"+(_vm._ssrAttr("src",__webpack_require__(55)))+" alt=\"alert\" class=\"inline-block align-middle\"> <span class=\"inline-block align-middle\">"+_vm._ssrEscape(_vm._s(_vm.errorMessage))+"</span></div>"):"<!---->")+" "),_c('Input',{attrs:{"label":"Email Address","readonly":true},model:{value:(_vm.email),callback:function ($$v) {_vm.email=$$v},expression:"email"}}),_vm._ssrNode(" "),_vm._ssrNode("<div class=\"flex mt-6\">","</div>",[(false)?undefined:_vm._e(),_vm._ssrNode(" "),_vm._ssrNode("<div class=\"flex-grow\">","</div>",[_c('Input',{attrs:{"label":"Phone","border":"border rounded-r-lg"},model:{value:(_vm.phone),callback:function ($$v) {_vm.phone=$$v},expression:"phone"}})],1)],2),_vm._ssrNode(" "),_vm._ssrNode("<div class=\"mt-10\">","</div>",[_vm._ssrNode("<div class=\"md:inline-block\">","</div>",[_c('Button',{attrs:{"value":"Submit Change"}})],1),_vm._ssrNode(" "),_vm._ssrNode("<div class=\"md:inline-block\">","</div>",[_vm._ssrNode("<div class=\"ml-5\">","</div>",[_c('Button',{attrs:{"value":"Cancel","border":"border-2 border-secondary-900","color":"text-secondary-900","background":"bg-white"}})],1)])],2)],2)],2)])}
 var staticRenderFns = []
 
 
@@ -3199,7 +3272,7 @@ installComponents(component, {Input: __webpack_require__(37).default,Select: __w
 __webpack_require__.r(__webpack_exports__);
 
 // CONCATENATED MODULE: ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/@nuxt/components/dist/loader.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./components/account/UpgradeMembership.vue?vue&type=template&id=73fc819a&
-var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',[_vm._ssrNode("<div class=\"w-full pb-0 mb-6 overflow-hidden border rounded-xl text-grayscale-500\">","</div>",[_vm._ssrNode("<div class=\"p-6 border-b\"><div class=\"flex\"><div class=\"text-lg font-semibold font-noto-sans text-grayscale-900\"><span class=\"text-secondary-900\">Extend Membership</span> / Upgrade</div></div></div> "),_vm._ssrNode("<div class=\"p-6 overflow-hidden\">","</div>",[_vm._ssrNode("<div class=\"items-center justify-center hidden gap-x-16 md:flex\"><div class=\"flex-none text-center\"><img"+(_vm._ssrAttr("src",__webpack_require__(62)))+" alt=\"Membership Card Silver\" width=\"240\" class=\"inline-block\"> <div class=\"text-lg font-semibold text-grayscale-900 font-noto-sans\">Star Club Silver</div> <div class=\"text-xs text-primary-600\">5000 Star Points required</div></div> <div class=\"flex-none\"><img"+(_vm._ssrAttr("src",__webpack_require__(68)))+" alt=\"Upgrade\" width=\"64\" class=\"mx-auto\"></div> <div class=\"flex-none text-center\"><img"+(_vm._ssrAttr("src",__webpack_require__(61)))+" alt=\"Membership Card Gold\" width=\"240\" class=\"inline-block\"> <div class=\"text-lg font-semibold text-grayscale-900 font-noto-sans\">Star Club Gold</div> <div class=\"text-xs text-primary-600\">10000 Star Points required</div></div></div> <div class=\"block md:hidden\"><div class=\"flex-none text-center\"><img"+(_vm._ssrAttr("src",__webpack_require__(61)))+" alt=\"Membership Card Gold\" width=\"240\" class=\"inline-block\"> <div class=\"text-lg font-semibold text-grayscale-900 font-noto-sans\">Star Club Gold</div> <div class=\"text-xs text-primary-600\">10000 Star Points required</div></div> <div class=\"flex-none mt-6 text-center\"><img"+(_vm._ssrAttr("src",__webpack_require__(69)))+" alt=\"Upgrade\" width=\"64\" class=\"mx-auto\"></div> <div class=\"flex-none text-center\"><img"+(_vm._ssrAttr("src",__webpack_require__(62)))+" alt=\"Membership Card Silver\" width=\"240\" class=\"inline-block\"> <div class=\"text-lg font-semibold text-grayscale-900 font-noto-sans\">Star Club Silver</div> <div class=\"text-xs text-primary-600\">5000 Star Points required</div></div></div> <div class=\"mt-6 text-center text-grayscale-900\">You are eligible to upgrade your membership from Star Club Silver to Star Club Gold. You will be able to enjoy all the benefits in Gold Club. Are you sure you want to upgrade your membership?</div> "),_vm._ssrNode("<div class=\"justify-center mt-10 mb-6 md:flex gap-x-6\">","</div>",[_c('Button',{attrs:{"value":"Later","border":"border-2 border-secondary-900","color":"text-secondary-900","background":"bg-white","custom-class":"md:w-40"}}),_vm._ssrNode(" "),_c('Button',{attrs:{"value":"Upgrade","custom-class":"mt-6 md:w-40 md:mt-0"}})],2)],2)],2)])}
+var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',[_vm._ssrNode("<div class=\"w-full pb-0 mb-6 overflow-hidden border rounded-xl text-grayscale-500\">","</div>",[_vm._ssrNode("<div class=\"p-6 border-b\"><div class=\"flex\"><div class=\"text-lg font-semibold font-noto-sans text-grayscale-900\"><span class=\"text-secondary-900\">Extend Membership</span> / Upgrade</div></div></div> "),_vm._ssrNode("<div class=\"p-6 overflow-hidden\">","</div>",[_vm._ssrNode("<div class=\"items-center justify-center hidden gap-x-16 md:flex\"><div class=\"flex-none text-center\"><img"+(_vm._ssrAttr("src",__webpack_require__(63)))+" alt=\"Membership Card Silver\" width=\"240\" class=\"inline-block\"> <div class=\"text-lg font-semibold text-grayscale-900 font-noto-sans\">Star Club Silver</div> <div class=\"text-xs text-primary-600\">5000 Star Points required</div></div> <div class=\"flex-none\"><img"+(_vm._ssrAttr("src",__webpack_require__(68)))+" alt=\"Upgrade\" width=\"64\" class=\"mx-auto\"></div> <div class=\"flex-none text-center\"><img"+(_vm._ssrAttr("src",__webpack_require__(62)))+" alt=\"Membership Card Gold\" width=\"240\" class=\"inline-block\"> <div class=\"text-lg font-semibold text-grayscale-900 font-noto-sans\">Star Club Gold</div> <div class=\"text-xs text-primary-600\">10000 Star Points required</div></div></div> <div class=\"block md:hidden\"><div class=\"flex-none text-center\"><img"+(_vm._ssrAttr("src",__webpack_require__(62)))+" alt=\"Membership Card Gold\" width=\"240\" class=\"inline-block\"> <div class=\"text-lg font-semibold text-grayscale-900 font-noto-sans\">Star Club Gold</div> <div class=\"text-xs text-primary-600\">10000 Star Points required</div></div> <div class=\"flex-none mt-6 text-center\"><img"+(_vm._ssrAttr("src",__webpack_require__(69)))+" alt=\"Upgrade\" width=\"64\" class=\"mx-auto\"></div> <div class=\"flex-none text-center\"><img"+(_vm._ssrAttr("src",__webpack_require__(63)))+" alt=\"Membership Card Silver\" width=\"240\" class=\"inline-block\"> <div class=\"text-lg font-semibold text-grayscale-900 font-noto-sans\">Star Club Silver</div> <div class=\"text-xs text-primary-600\">5000 Star Points required</div></div></div> <div class=\"mt-6 text-center text-grayscale-900\">You are eligible to upgrade your membership from Star Club Silver to Star Club Gold. You will be able to enjoy all the benefits in Gold Club. Are you sure you want to upgrade your membership?</div> "),_vm._ssrNode("<div class=\"justify-center mt-10 mb-6 md:flex gap-x-6\">","</div>",[_c('Button',{attrs:{"value":"Later","border":"border-2 border-secondary-900","color":"text-secondary-900","background":"bg-white","custom-class":"md:w-40"}}),_vm._ssrNode(" "),_c('Button',{attrs:{"value":"Upgrade","custom-class":"mt-6 md:w-40 md:mt-0"}})],2)],2)],2)])}
 var staticRenderFns = []
 
 
@@ -3304,7 +3377,7 @@ installComponents(component, {Button: __webpack_require__(36).default})
 __webpack_require__.r(__webpack_exports__);
 
 // CONCATENATED MODULE: ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/@nuxt/components/dist/loader.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./components/account/BookingHistoryDetail.vue?vue&type=template&id=93b47ce2&
-var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',[_vm._ssrNode("<div class=\"w-full pb-0 mb-6 border rounded-xl text-grayscale-500\">","</div>",[_vm._ssrNode("<div class=\"p-6 border-b\"><div class=\"flex\"><div class=\"text-lg font-semibold font-noto-sans text-grayscale-900\">Booking History / Detail</div></div></div> <div class=\"mx-6 mt-6\"><div class=\"text-lg font-semibold text-grayscale-900 font-noto-sans\">\n        Flight Info\n      </div> <div class=\"py-6 my-6 border-b md:flex\"><div class=\"md:w-1/2\"><img"+(_vm._ssrAttr("src",__webpack_require__(60)))+" alt=\"Logo star air\" width=\"132\" class=\"inline-block\"> <div class=\"flex\"><div class=\"flex-1\"><div class=\"mt-4 text-xs text-grayscale-400\">\n                Airlines\n              </div> <div class=\"text-sm text-grayscale-900\">Star Air</div> <div class=\"mt-4 text-xs text-grayscale-400\">\n                Flight Number\n              </div> <div class=\"text-sm text-grayscale-900\">QZ-1234</div></div> <div class=\"flex-1\"><div class=\"mt-4 text-xs text-grayscale-400\">\n                Flight Date\n              </div> <div class=\"text-sm text-grayscale-900\">Sat, 20 Nov 2021</div> <div class=\"mt-4 text-xs text-grayscale-400\">\n                Booking Reference (PNR)\n              </div> <div class=\"text-sm text-grayscale-900\">QWRT1W</div></div></div></div> <div class=\"flex mt-6 md:w-1/2 gap-x-8\"><div class=\"relative flex-none\"><div class=\"absolute w-4 h-32 border-r border-dashed -right-2 top-3\"></div> <div class=\"pt-1 mb-10\"><span class=\"pr-2 text-xs text-grayscale-500\">08:00 AM</span> <div class=\"absolute bullet-green top-3\"></div></div> <div class=\"absolute bottom-5\"><span class=\"pr-2 text-xs text-grayscale-500\">09:30 AM</span> <div class=\"absolute bullet-green bottom-1\"></div></div></div> <div class=\"flex-grow\"><div class=\"text-sm text-grayscale-900\">Qatar (DOH)</div> <div class=\"mt-1 text-xs text-grayscale-500\">\n              Doha International Airport (DOH) Terminal 2E\n            </div> <div class=\"mt-8 text-xs text-grayscale-500\">\n              1 hour and 30 minutes\n            </div> <div class=\"mt-8 text-sm text-grayscale-900\">\n              Mumbai (MBR)\n            </div> <div class=\"mt-1 text-xs text-grayscale-500\">\n              Mumbai International Airport (DOH) Terminal 2A\n            </div></div></div></div> <div class=\"\n          mt-6\n          md:px-0 md:-mx-0\n          -mx-6\n          md:w-full\n          w-[100vw]\n          overflow-auto\n        \"><div class=\"pt-4 text-lg font-semibold text-grayscale-900 font-noto-sans\">\n          Passanger Details\n        </div></div></div> "),_vm._ssrNode("<div class=\"p-6 overflow-hidden\">","</div>",[_vm._ssrNode("<div class=\"\n          md:px-0 md:-mx-0\n          -mx-6\n          md:w-full\n          w-[100vw]\n          overflow-auto\n        \"><table class=\"table-auto md:w-full custom-table w-[1200px]\"><thead><tr><th>No</th> <th>Passanger’s Name</th> <th>Ticket No.</th> <th>Route</th> <th>Baggage</th></tr></thead> <tbody>"+(_vm._ssrList((3),function(index){return ("<tr><td>"+_vm._ssrEscape(_vm._s(index))+"</td> <td>Mr. Chanda Gauri</td> <td>W12ERT</td> <td>DOH - MBR</td> <td>15kg</td></tr>")}))+"</tbody> <tfoot><tr><th colspan=\"5\"> </th></tr></tfoot></table></div> "),(false)?undefined:_vm._e(),_vm._ssrNode(" "),_vm._ssrNode("<div class=\"mt-6 text-right\">","</div>",[_vm._ssrNode("<div class=\"mb-4 md:mr-4 md:inline-block\">","</div>",[_c('Button',{attrs:{"value":"Back","border":"border-2 border-secondary-900","color":"text-secondary-900","background":"bg-white"}})],1)])],2)],2)])}
+var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',[_vm._ssrNode("<div class=\"w-full pb-0 mb-6 border rounded-xl text-grayscale-500\">","</div>",[_vm._ssrNode("<div class=\"p-6 border-b\"><div class=\"flex\"><div class=\"text-lg font-semibold font-noto-sans text-grayscale-900\">Booking History / Detail</div></div></div> <div class=\"mx-6 mt-6\"><div class=\"text-lg font-semibold text-grayscale-900 font-noto-sans\">\n        Flight Info\n      </div> <div class=\"py-6 my-6 border-b md:flex\"><div class=\"md:w-1/2\"><img"+(_vm._ssrAttr("src",__webpack_require__(61)))+" alt=\"Logo star air\" width=\"132\" class=\"inline-block\"> <div class=\"flex\"><div class=\"flex-1\"><div class=\"mt-4 text-xs text-grayscale-400\">\n                Airlines\n              </div> <div class=\"text-sm text-grayscale-900\">Star Air</div> <div class=\"mt-4 text-xs text-grayscale-400\">\n                Flight Number\n              </div> <div class=\"text-sm text-grayscale-900\">QZ-1234</div></div> <div class=\"flex-1\"><div class=\"mt-4 text-xs text-grayscale-400\">\n                Flight Date\n              </div> <div class=\"text-sm text-grayscale-900\">Sat, 20 Nov 2021</div> <div class=\"mt-4 text-xs text-grayscale-400\">\n                Booking Reference (PNR)\n              </div> <div class=\"text-sm text-grayscale-900\">QWRT1W</div></div></div></div> <div class=\"flex mt-6 md:w-1/2 gap-x-8\"><div class=\"relative flex-none\"><div class=\"absolute w-4 h-32 border-r border-dashed -right-2 top-3\"></div> <div class=\"pt-1 mb-10\"><span class=\"pr-2 text-xs text-grayscale-500\">08:00 AM</span> <div class=\"absolute bullet-green top-3\"></div></div> <div class=\"absolute bottom-5\"><span class=\"pr-2 text-xs text-grayscale-500\">09:30 AM</span> <div class=\"absolute bullet-green bottom-1\"></div></div></div> <div class=\"flex-grow\"><div class=\"text-sm text-grayscale-900\">Qatar (DOH)</div> <div class=\"mt-1 text-xs text-grayscale-500\">\n              Doha International Airport (DOH) Terminal 2E\n            </div> <div class=\"mt-8 text-xs text-grayscale-500\">\n              1 hour and 30 minutes\n            </div> <div class=\"mt-8 text-sm text-grayscale-900\">\n              Mumbai (MBR)\n            </div> <div class=\"mt-1 text-xs text-grayscale-500\">\n              Mumbai International Airport (DOH) Terminal 2A\n            </div></div></div></div> <div class=\"\n          mt-6\n          md:px-0 md:-mx-0\n          -mx-6\n          md:w-full\n          w-[100vw]\n          overflow-auto\n        \"><div class=\"pt-4 text-lg font-semibold text-grayscale-900 font-noto-sans\">\n          Passanger Details\n        </div></div></div> "),_vm._ssrNode("<div class=\"p-6 overflow-hidden\">","</div>",[_vm._ssrNode("<div class=\"\n          md:px-0 md:-mx-0\n          -mx-6\n          md:w-full\n          w-[100vw]\n          overflow-auto\n        \"><table class=\"table-auto md:w-full custom-table w-[1200px]\"><thead><tr><th>No</th> <th>Passanger’s Name</th> <th>Ticket No.</th> <th>Route</th> <th>Baggage</th></tr></thead> <tbody>"+(_vm._ssrList((3),function(index){return ("<tr><td>"+_vm._ssrEscape(_vm._s(index))+"</td> <td>Mr. Chanda Gauri</td> <td>W12ERT</td> <td>DOH - MBR</td> <td>15kg</td></tr>")}))+"</tbody> <tfoot><tr><th colspan=\"5\"> </th></tr></tfoot></table></div> "),(false)?undefined:_vm._e(),_vm._ssrNode(" "),_vm._ssrNode("<div class=\"mt-6 text-right\">","</div>",[_vm._ssrNode("<div class=\"mb-4 md:mr-4 md:inline-block\">","</div>",[_c('Button',{attrs:{"value":"Back","border":"border-2 border-secondary-900","color":"text-secondary-900","background":"bg-white"}})],1)])],2)],2)])}
 var staticRenderFns = []
 
 
