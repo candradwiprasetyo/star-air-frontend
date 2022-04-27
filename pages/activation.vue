@@ -100,7 +100,7 @@
           formData.append('password', this.password);
           formData.append('token', this.$config.myToken);
 
-          this.$axios.$post('/member/activation-member ', formData)
+          this.$axios.$post('/member/activation-member', formData)
             .then( (response) => {
               if (response.err_num == '0') {
                 this.errorMessage = null;

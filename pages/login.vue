@@ -8,6 +8,7 @@
         password: null,
         isButtonEnabled: false,
         errorMessage: null,
+        isPopupComingSoon: false,
       };
     },
     methods: {
@@ -61,6 +62,12 @@
           this.isButtonEnabled = false
         }
       },
+      openComingSoon() {
+        this.isPopupComingSoon = true;
+      },
+      closeComingSoon() {
+        this.isPopupComingSoon = false;
+      }
     },
     mounted() {
       if (cookie.get('star_air_login')) {
@@ -138,6 +145,7 @@
                     src="~/assets/images/facebook.svg"
                     class="inline-block cursor-pointer"
                     alt="facebook"
+                    @click="openComingSoon()"
                   />
                 </div>
               </div>
@@ -147,6 +155,7 @@
                     src="~/assets/images/twitter.svg"
                     class="inline-block cursor-pointer"
                     alt="facebook"
+                    @click="openComingSoon()"
                   />
                 </div>
               </div>
@@ -156,6 +165,7 @@
                     src="~/assets/images/google.svg"
                     class="inline-block cursor-pointer"
                     alt="facebook"
+                    @click="openComingSoon()"
                   />
                 </div>
               </div>
@@ -168,6 +178,11 @@
         </div>
       </div>
     </div>
+    <ComingSoon
+      :title="'Coming Soon'"
+      @close-popup="closeComingSoon"
+      v-if="isPopupComingSoon"
+    />
   </div>
 </template>
 

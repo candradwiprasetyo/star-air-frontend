@@ -1,7 +1,7 @@
-exports.ids = [39,14,15,16,23];
+exports.ids = [40,14,16,17,24];
 exports.modules = {
 
-/***/ 103:
+/***/ 105:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -105,7 +105,7 @@ var component = Object(componentNormalizer["a" /* default */])(
 
 /***/ }),
 
-/***/ 104:
+/***/ 106:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -475,7 +475,7 @@ installComponents(component, {Button: __webpack_require__(36).default})
 
 /***/ }),
 
-/***/ 105:
+/***/ 107:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -642,7 +642,7 @@ var component = Object(componentNormalizer["a" /* default */])(
 
 /***/ }),
 
-/***/ 145:
+/***/ 148:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -697,7 +697,7 @@ var component = Object(componentNormalizer["a" /* default */])(
 /* harmony default export */ var my_trip = __webpack_exports__["default"] = (component.exports);
 
 /* nuxt-component-imports */
-installComponents(component, {Header: __webpack_require__(103).default,MainMenu: __webpack_require__(104).default,Footer: __webpack_require__(105).default})
+installComponents(component, {Header: __webpack_require__(105).default,MainMenu: __webpack_require__(106).default,Footer: __webpack_require__(107).default})
 
 
 /***/ }),

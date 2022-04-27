@@ -98,8 +98,8 @@ export default {
     },
     loadData() {
       let formData = new FormData();
-      // formData.append('member_id', this.userData.member_id);
-      formData.append('member_id', 'SQV091');
+      formData.append('member_id', this.userData.member_id);
+      // formData.append('member_id', 'SQV091');
       formData.append('token', this.$config.myToken);
       formData.append('start_date', '01/04/2022');
       formData.append('end_date', '30/04/2022');
