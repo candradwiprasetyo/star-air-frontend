@@ -48,7 +48,7 @@ export default {
   //   credentials: false,
   // },
 
-  privateRuntimeConfig: {
+  publicRuntimeConfig: {
     axios: {
       baseURL: 'https://wstest-loyalty.sqiva.com'
     }
