@@ -42,17 +42,17 @@ export default {
     '@nuxtjs/axios'
   ],
 
-  // axios: {
-  //   baseURL: 'https://wstest-loyalty.sqiva.com',
-  //   proxyHeaders: true,
-  //   credentials: false,
-  // },
-
-  privateRuntimeConfig: {
-    axios: {
-      baseURL: 'https://wstest-loyalty.sqiva.com'
-    }
+  axios: {
+    baseURL: 'https://wstest-loyalty.sqiva.com',
+    proxyHeaders: true,
+    credentials: false,
   },
+
+  // privateRuntimeConfig: {
+  //   axios: {
+  //     baseURL: 'https://wstest-loyalty.sqiva.com'
+  //   }
+  // },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
