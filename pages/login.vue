@@ -19,7 +19,7 @@
           formData.append('token', this.$config.myToken);
           formData.append('password', this.password);
 
-          this.$axios.$post('/member/login ', formData)
+          this.$axios.$post('/api/member/login ', formData)
             .then( (response) => {
               if (response.err_num == '0') {
                 
@@ -27,7 +27,7 @@
                 formDataDetail.append('member_email', this.emailAddress);
                 formDataDetail.append('token', this.$config.myToken);
 
-                this.$axios.$post('/member/get-member-detail', formDataDetail)
+                this.$axios.$post('/api/member/get-member-detail', formDataDetail)
                   .then( (responseDetail) => {
                     if (responseDetail.err_num == '0') {
                       this.$store.commit('SET_LOGIN', JSON.stringify(responseDetail.result));
