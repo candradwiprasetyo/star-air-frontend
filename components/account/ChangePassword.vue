@@ -176,7 +176,7 @@
           formData.append('old_password', this.oldPassword);
           formData.append('new_password', this.password);
 
-          this.$axios.$post('/member/change-password', formData)
+          this.$axios.$post('/api/member/change-password', formData)
             .then( (response) => {
               if (response.err_num == '0') {
                 this.errorMessage = null;

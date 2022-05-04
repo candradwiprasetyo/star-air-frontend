@@ -54,7 +54,7 @@
           formData.append('mobile', this.phoneNumber);
           formData.append('email', this.emailAddress);
 
-          this.$axios.$post('/member/add-member ', formData)
+          this.$axios.$post('/api/member/add-member ', formData)
             .then( (response) => {
               if (response.err_num == '0') {
                 this.popupSuccessEmail = this.emailAddress;

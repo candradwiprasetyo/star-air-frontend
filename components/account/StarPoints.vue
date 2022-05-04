@@ -66,7 +66,7 @@ export default {
       formDataDetail.append('member_email', this.userData.email);
       formDataDetail.append('token', this.$config.myToken);
 
-      this.$axios.$post('/member/get-member-points', formDataDetail)
+      this.$axios.$post('/api/member/get-member-points', formDataDetail)
         .then( (response) => {
           this.overviewData = response.result;
         })

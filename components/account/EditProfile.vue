@@ -139,7 +139,7 @@
           formData.append('passport_no', this.passportNumber);
           formData.append('passport_expire_date', this.formatDate(this.passportExpiryDate));
 
-          this.$axios.$post('/member/update-member', formData)
+          this.$axios.$post('/api/member/update-member', formData)
             .then( (response) => {
               if (response.err_num == '0') {
                 this.errorMessage = null;
@@ -176,7 +176,7 @@
         formData.append('member_id', this.memberId);
         // formData.append('member_email', 'test666@gmail.com');
 
-        this.$axios.$post('/member/get-member-detail', formData)
+        this.$axios.$post('/api/member/get-member-detail', formData)
           .then( (response) => {
             if (response.err_num == '0') {
               this.userData = response.result;

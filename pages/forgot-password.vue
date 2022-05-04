@@ -18,7 +18,7 @@
           formData.append('member_email', this.emailAddress);
           formData.append('token', this.$config.myToken);
 
-          this.$axios.$post('/member/reset-password', formData)
+          this.$axios.$post('/api/member/reset-password', formData)
             .then( (response) => {
               if (response.err_num == '0') {
                 this.errorMessage = null;

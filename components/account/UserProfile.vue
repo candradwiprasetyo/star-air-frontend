@@ -155,7 +155,7 @@ export default {
       formDataDetail.append('member_id', this.userData.member_id);
       formDataDetail.append('token', this.$config.myToken);
 
-      this.$axios.$post('/member/get-member-detail', formDataDetail)
+      this.$axios.$post('/api/member/get-member-detail', formDataDetail)
         .then( (responseDetail) => {
           let newUser = {
             "member_id": this.userData.member_id,
@@ -200,7 +200,7 @@ export default {
       formDataDetail.append('token', this.$config.myToken);
 
       // get data family and friend
-      this.$axios.$post('/member/get-family-friend', formDataDetail)
+      this.$axios.$post('/api/member/get-family-friend', formDataDetail)
         .then( (response) => {
           if (response.result.length > 0) {
             let newUser = '';
@@ -221,7 +221,7 @@ export default {
               formDataDetail.append('token', this.$config.myToken);
               index++;
               
-              this.$axios.$post('/member/get-member-detail', formDataDetail)
+              this.$axios.$post('/api/member/get-member-detail', formDataDetail)
                 .then( (responseDetail) => {
                   this.createUserDetail(index, responseDetail.result);
                 })

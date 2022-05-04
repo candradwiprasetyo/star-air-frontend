@@ -104,7 +104,7 @@ export default {
       formData.append('start_date', '01/04/2022');
       formData.append('end_date', '30/04/2022');
 
-      this.$axios.$post('/information/get-booking-history', formData)
+      this.$axios.$post('/api/information/get-booking-history', formData)
         .then( (response) => {
           this.data = response.result;
         })
