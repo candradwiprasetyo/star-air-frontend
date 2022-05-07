@@ -6,17 +6,53 @@
           <div class="text-lg font-semibold font-noto-sans text-grayscale-900">Booking History</div>
         </div>
       </div>
-      <div class="mx-6 mt-6 space-y-4 md:space-y-0 md:space-x-4 md:flex" v-if="false">
+      <div class="mx-6 mt-6 space-y-4 md:space-y-0 md:space-x-4 md:flex">
         <div class="flex-grow">
           <div class="space-y-4 md:space-y-0 md:space-x-4 md:flex">
             <div class="flex-1">
-              <Input label="Keyword" />
+              <Input label="Keyword" v-model="keyword" />
             </div>
             <div class="flex-1">
-              <Select label="Start Date" />
+              <div class="h-full px-3 py-2 border rounded-lg">
+                <div class="mb-1 text-xs text-grayscale-400">Start Date</div>
+                <client-only>
+                  <v-date-picker 
+                    v-model="startDate"
+                    :popover="{ visibility: 'click' }"
+                  >
+                    <template v-slot="{ inputValue, inputEvents }">
+                      <input
+                        class="w-full outline-none"
+                        :value="inputValue"
+                        v-on="inputEvents"
+                        placeholder="mm/dd/yyyy"
+                        readonly
+                      />
+                    </template>
+                  </v-date-picker>
+                </client-only>
+              </div>
             </div>
             <div class="flex-1">
-              <Select label="End Date" />
+              <div class="h-full px-3 py-2 border rounded-lg">
+                <div class="mb-1 text-xs text-grayscale-400">End Date</div>
+                <client-only>
+                  <v-date-picker 
+                    v-model="endDate"
+                    :popover="{ visibility: 'click' }"
+                  >
+                    <template v-slot="{ inputValue, inputEvents }">
+                      <input
+                        class="w-full outline-none"
+                        :value="inputValue"
+                        v-on="inputEvents"
+                        placeholder="mm/dd/yyyy"
+                        readonly
+                      />
+                    </template>
+                  </v-date-picker>
+                </client-only>
+              </div>
             </div>
           </div>
         </div>
@@ -26,6 +62,7 @@
             border="border-2 border-secondary-900"
             color="text-secondary-900"
             background="bg-white"
+            @action="searchData" 
           />
         </div>
       </div>
@@ -88,6 +125,9 @@ export default {
     return {
       userData: [],
       data: [],
+      keyword: null,
+      startDate: null,
+      endDate: null,
     }
   },
   methods: {
@@ -99,10 +139,11 @@ export default {
     loadData() {
       let formData = new FormData();
       formData.append('member_id', this.userData.member_id);
-      // formData.append('member_id', 'SQV091');
+      // formData.append('member_id', 'SQV119');
       formData.append('token', this.$config.myToken);
-      formData.append('start_date', '01/04/2022');
-      formData.append('end_date', '30/04/2022');
+      formData.append('start_date', this.formatDate(this.startDate));
+      formData.append('end_date', this.formatDate(this.endDate));
+      if (this.keyword){ formData.append('search', this.keyword); }
 
       this.$axios.$post('/api/information/get-booking-history', formData)
         .then( (response) => {
@@ -111,6 +152,19 @@ export default {
         .catch(function (error) {
           console.log(error)
         })
+    },
+    searchData() {
+      this.loadData();
+    },
+    formatDate(value) {
+      value = new Date(value);
+      // value.setDate(value.getDate() + 1);
+      if (value) {
+        value = value.toISOString().split('T')[0];
+        value = value.split("-");
+        let today = value[2] + '/' + value[1] + '/' + value[0];
+        return today;
+      }
     },
   },
   mounted() {
