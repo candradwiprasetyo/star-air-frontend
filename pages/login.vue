@@ -17,6 +17,7 @@
           let formData = new FormData();
           formData.append('username', this.emailAddress);
           formData.append('token', this.$config.myToken);
+          formData.append('airline_code', this.$config.myAirlineCode);
           formData.append('password', this.password);
 
           this.$axios.$post('/api/member/login ', formData)
@@ -26,6 +27,7 @@
                 let formDataDetail = new FormData();
                 formDataDetail.append('member_email', this.emailAddress);
                 formDataDetail.append('token', this.$config.myToken);
+                formDataDetail.append('airline_code', this.$config.myAirlineCode);
 
                 this.$axios.$post('/api/member/get-member-detail', formDataDetail)
                   .then( (responseDetail) => {

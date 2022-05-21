@@ -141,6 +141,7 @@ export default {
       formData.append('member_id', this.userData.member_id);
       // formData.append('member_id', 'SQV119');
       formData.append('token', this.$config.myToken);
+      formData.append('airline_code', this.$config.myAirlineCode);
       formData.append('start_date', this.formatDate(this.startDate));
       formData.append('end_date', this.formatDate(this.endDate));
       if (this.keyword){ formData.append('search', this.keyword); }

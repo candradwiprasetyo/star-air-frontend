@@ -132,6 +132,7 @@
         if (this.isButtonEnabled) {
           let formData = new FormData();
           formData.append('token', this.$config.myToken);
+          formData.append('airline_code', this.$config.myAirlineCode);
           formData.append('member_email', this.userData.email);
           formData.append('mobile', this.phone);
           formData.append('nationality', this.country);
@@ -173,6 +174,7 @@
       loadUser() {
         let formData = new FormData();
         formData.append('token', this.$config.myToken);
+        formData.append('airline_code', this.$config.myAirlineCode);
         formData.append('member_id', this.memberId);
         // formData.append('member_email', 'test666@gmail.com');
 

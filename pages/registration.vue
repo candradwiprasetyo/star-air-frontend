@@ -50,6 +50,7 @@
           let formData = new FormData();
           formData.append('first_name', this.firstName);
           formData.append('token', this.$config.myToken);
+          formData.append('airline_code', this.$config.myAirlineCode);
           formData.append('last_name', this.lastName);
           formData.append('mobile', this.phoneNumber);
           formData.append('email', this.emailAddress);

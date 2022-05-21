@@ -82,6 +82,7 @@
         let formData = new FormData();
         formData.append('username', this.email);
         formData.append('token', this.$config.myToken);
+        formData.append('airline_code', this.$config.myAirlineCode);
         formData.append('password', this.password);
         
         this.$axios.$post('/api/member/login ', formData)
@@ -123,6 +124,7 @@
           formData.append('member_email', this.email);
           formData.append('password', this.password);
           formData.append('token', this.$config.myToken);
+          formData.append('airline_code', this.$config.myAirlineCode);
 
           this.$axios.$post('/api/member/activation-member', formData)
             .then( (response) => {

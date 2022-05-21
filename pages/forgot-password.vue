@@ -17,6 +17,7 @@
           let formData = new FormData();
           formData.append('member_email', this.emailAddress);
           formData.append('token', this.$config.myToken);
+          formData.append('airline_code', this.$config.myAirlineCode);
 
           this.$axios.$post('/api/member/reset-password', formData)
             .then( (response) => {

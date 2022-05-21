@@ -154,6 +154,7 @@ export default {
       let formDataDetail = new FormData();
       formDataDetail.append('member_id', this.userData.member_id);
       formDataDetail.append('token', this.$config.myToken);
+      formDataDetail.append('airline_code', this.$config.myAirlineCode);
 
       this.$axios.$post('/api/member/get-member-detail', formDataDetail)
         .then( (responseDetail) => {
@@ -198,6 +199,7 @@ export default {
       // formDataDetail.append('member_email', 'test666@gmail.com');
       
       formDataDetail.append('token', this.$config.myToken);
+      formDataDetail.append('airline_code', this.$config.myAirlineCode);
 
       // get data family and friend
       this.$axios.$post('/api/member/get-family-friend', formDataDetail)
@@ -219,6 +221,7 @@ export default {
               let formDataDetail = new FormData();
               formDataDetail.append('member_email', element.email);
               formDataDetail.append('token', this.$config.myToken);
+              formDataDetail.append('airline_code', this.$config.myAirlineCode);
               index++;
               
               this.$axios.$post('/api/member/get-member-detail', formDataDetail)

@@ -70,6 +70,7 @@ export default {
     editEmail() {
       let formData = new FormData();
       formData.append('token', this.$config.myToken);
+      formData.append('airline_code', this.$config.myAirlineCode);
       formData.append('member_email', this.userData.email);
       formData.append('mobile', this.phone);
       formData.append('nationality', this.userData.nationality);
@@ -90,6 +91,7 @@ export default {
     loadUser() {
       let formData = new FormData();
       formData.append('token', this.$config.myToken);
+      formData.append('airline_code', this.$config.myAirlineCode);
       formData.append('member_id', this.memberId);
 
       this.$axios.$post('/api/member/get-member-detail', formData)

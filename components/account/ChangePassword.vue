@@ -172,6 +172,7 @@
         if (this.isButtonEnabled) {
           let formData = new FormData();
           formData.append('token', this.$config.myToken);
+          formData.append('airline_code', this.$config.myAirlineCode);
           formData.append('member_email', this.userData.email);
           formData.append('old_password', this.oldPassword);
           formData.append('new_password', this.password);
