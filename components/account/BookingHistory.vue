@@ -80,20 +80,25 @@
           <table class="table-auto md:w-full custom-table w-[1200px]">
             <thead>
               <tr>
-                <th>Booking Date</th>
+                <th>Booking Date {{data.length}}</th>
                 <th>Origin - Destination</th>
                 <th>Flight Date</th>
                 <th>PNR</th>
                 <th>Action</th>
               </tr>
             </thead>
-            <tbody>
-              <tr v-for="(data, index) in data" :key="index">
+            <tbody v-if="data.length>0">
+              <tr v-for="(data, index) in data" :key="index" >
                 <td>{{ data.booking_date }}</td>
                 <td>{{ data.route }}</td>
                 <td>{{ data.flight_date }}</td>
                 <td>{{ data.pnr }}</td>
                 <td class="cursor-pointer text-secondary-900" @click="$emit('view-detail-history', 11)">Detail</td>
+              </tr>
+            </tbody>
+            <tbody v-else>
+              <tr>
+                <td colspan="5" align="center">Data history kosong</td>
               </tr>
             </tbody>
             <!-- <tfoot>

@@ -30,11 +30,16 @@
                 <th>Star Points</th>
               </tr>
             </thead>
-            <tbody>
+            <tbody v-if="overviewData.length>0">
               <tr v-for="(data, index) in overviewData" :key="index">
                 <td>{{ data.validity }}</td>
                 <td>{{ data.action }}</td>
                 <td>{{ data.points }}</td>
+              </tr>
+            </tbody>
+            <tbody v-else>
+              <tr>
+                <td colspan="3" align="center">Data kosong</td>
               </tr>
             </tbody>
             <tfoot>
