@@ -32,7 +32,7 @@
             </thead>
             <tbody>
               <tr v-for="(data, index) in overviewData" :key="index">
-                <td>{{ data.entry_date }}</td>
+                <td>{{ data.validity }}</td>
                 <td>{{ data.action }}</td>
                 <td>{{ data.points }}</td>
               </tr>
