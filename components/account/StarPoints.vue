@@ -21,13 +21,15 @@
           <table class="table-auto md:w-full custom-table w-[1200px]">
             <thead>
               <tr>
-                <th>Date</th>
+                <th>Entry Date</th>
+                <th>Validity</th>
                 <th>Type</th>
                 <th>Star Points</th>
               </tr>
             </thead>
             <tbody>
               <tr v-for="(data, index) in overviewData" :key="index">
+                <td>{{ data.entry_date }}</td>
                 <td>{{ data.validity }}</td>
                 <td>{{ data.action }}</td>
                 <td>{{ data.points }}</td>
@@ -35,7 +37,7 @@
             </tbody>
             <tfoot>
               <tr>
-                <th colspan="3">&nbsp;</th>
+                <th colspan="4">&nbsp;</th>
               </tr>
             </tfoot>
           </table>
