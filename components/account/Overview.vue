@@ -25,13 +25,15 @@
           <table class="table-auto md:w-full custom-table w-[1200px]">
             <thead>
               <tr>
-                <th>Date</th>
+                <th>Entry Date</th>
+                <th>Validity</th>
                 <th>Type</th>
                 <th>Star Points</th>
               </tr>
             </thead>
             <tbody v-if="overviewData.length>0">
               <tr v-for="(data, index) in overviewData" :key="index">
+                <td>{{ data.entry_date }}</td>
                 <td>{{ data.validity }}</td>
                 <td>{{ data.action }}</td>
                 <td>{{ data.points }}</td>
@@ -39,12 +41,12 @@
             </tbody>
             <tbody v-else>
               <tr>
-                <td colspan="3" align="center">Data kosong</td>
+                <td colspan="4" align="center">Data kosong</td>
               </tr>
             </tbody>
             <tfoot>
               <tr>
-                <th colspan="3">&nbsp;</th>
+                <th colspan="4">&nbsp;</th>
               </tr>
             </tfoot>
           </table>
