@@ -1,7 +1,7 @@
 <template>
   <div class="h-full px-3 py-2" :class="[border, customClass]">
     <div class="mb-1 text-xs text-grayscale-400">{{ label }}</div>
-    <select class="w-full border-none outline-none">
+    <select class="w-full border-none outline-none text-grayscale-900">
       <option 
         v-for="(option, index) in data" 
         :key="index" 

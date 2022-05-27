@@ -24,7 +24,7 @@
               if (response.err_num == '0') {
                 this.errorMessage = null;
                 this.successMessage = response.result[0];
-                this.emailAddress = null;
+                // this.emailAddress = null;
                 this.isPopupSuccess = true;
               } else {
                 this.successMessage = null;
@@ -55,6 +55,7 @@
       },
       closePopupSuccess() {
         this.isPopupSuccess = false;
+        this.emailAddress = null;
       }
     },
     mounted() {

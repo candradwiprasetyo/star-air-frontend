@@ -4,7 +4,7 @@
     <input
       type="text"
       :placeholder="placeholder"
-      class="w-full border-none outline-none"
+      class="w-full border-none outline-none text-grayscale-900"
       :value="value"
       v-on:input="updateValue($event.target.value)"
       :readonly="readonly"

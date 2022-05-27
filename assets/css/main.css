@@ -60,6 +60,10 @@ body {
     background: #F1F5F9;
   }
 
+  .bg-grayscale-200 {
+    color: #E2E8F0;
+  }
+
   .bg-primary-600 {
     background: #DA3934;
   }
@@ -101,6 +105,10 @@ body {
 
   .text-grayscale-100 {
     color: #F1F5F9;
+  }
+
+  .text-grayscale-200 {
+    color: #E2E8F0;
   }
 
   .text-grayscale-400 {
