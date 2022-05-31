@@ -292,8 +292,30 @@ export default {
     },
     loadUser() {
       let userData = (cookie.get('star_air_login')) ? JSON.parse(cookie.get('star_air_login')) : '';
-      this.userData = userData;
-      this.isLoading = false;
+      let newData = null;
+
+      if (userData) {
+        let formDataDetail = new FormData();
+        formDataDetail.append('member_email', userData.email);
+        formDataDetail.append('token', this.$config.myToken);
+        formDataDetail.append('airline_code', this.$config.myAirlineCode);
+
+        this.$axios.$post('/api/member/get-member-detail', formDataDetail)
+          .then( (responseDetail) => {
+            if (responseDetail.err_num == '0') {
+              this.userData = responseDetail.result;
+              newData = responseDetail.result;
+              this.$store.commit('SET_LOGIN', JSON.stringify(newData));
+              cookie.set('star_air_login', JSON.stringify(newData));
+            }
+            this.isLoading = false;
+          })
+          .catch(function (error) {
+            console.log(error)
+          })
+      } else {
+        this.isLoading = false;
+      }
     },
     goLogout() {
       cookie.remove('star_air_login')

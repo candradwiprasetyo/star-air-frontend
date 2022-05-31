@@ -151,27 +151,42 @@ export default {
     },
     createUser() {
       // get user detail
-      let formDataDetail = new FormData();
-      formDataDetail.append('member_id', this.userData.member_id);
-      formDataDetail.append('token', this.$config.myToken);
-      formDataDetail.append('airline_code', this.$config.myAirlineCode);
+      let userData = (cookie.get('star_air_login')) ? JSON.parse(cookie.get('star_air_login')) : '';
+      this.userData = userData;
 
-      this.$axios.$post('/api/member/get-member-detail', formDataDetail)
-        .then( (responseDetail) => {
-          let newUser = {
-            "member_id": this.userData.member_id,
-            "fnf_id": "",
-            "name": responseDetail.result.name,
-            "birthdate": "",
-            "email": this.userData.email
-          }
-          this.profileData.push(newUser);
-          this.createUserDetail(0, responseDetail.result);
-          this.loadData();
-        })
-        .catch(function (error) {
-          console.log(error)
-        })
+      let newUser = {
+        "member_id": this.userData.member_id,
+        "fnf_id": "",
+        "name": this.userData.name,
+        "birthdate": "",
+        "email": this.userData.email
+      }
+  
+      this.profileData.push(newUser);
+      this.createUserDetail(0, userData);
+      this.loadData();
+
+      // let formDataDetail = new FormData();
+      // formDataDetail.append('member_id', this.userData.member_id);
+      // formDataDetail.append('token', this.$config.myToken);
+      // formDataDetail.append('airline_code', this.$config.myAirlineCode);
+
+      // this.$axios.$post('/api/member/get-member-detail', formDataDetail)
+      //   .then( (responseDetail) => {
+      //     let newUser = {
+      //       "member_id": this.userData.member_id,
+      //       "fnf_id": "",
+      //       "name": responseDetail.result.name,
+      //       "birthdate": "",
+      //       "email": this.userData.email
+      //     }
+      //     this.profileData.push(newUser);
+      //     this.createUserDetail(0, responseDetail.result);
+      //     this.loadData();
+      //   })
+      //   .catch(function (error) {
+      //     console.log(error)
+      //   })
       
     },
     createUserDetail(index, data) {

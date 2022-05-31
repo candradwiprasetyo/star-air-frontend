@@ -21,6 +21,7 @@ export default {
   methods: {
     changeMenu(id) {
       this.activeMenu = id;
+      this.loadUser()
     },
     goLogout() {
       cookie.remove('star_air_login')
@@ -29,7 +30,8 @@ export default {
     },
     loadUser() {
       let userData = (cookie.get('star_air_login')) ? JSON.parse(cookie.get('star_air_login')) : '';
-      // this.userData = userData;
+      this.userData = userData;
+      
       let newData = null;
 
       let formDataDetail = new FormData();
@@ -70,9 +72,9 @@ export default {
   mounted() {
     this.loadUser();
     this.getPage();
-    window.setInterval(() => {
-      this.loadUser()
-    }, 60000)
+    // window.setInterval(() => {
+    //   this.loadUser()
+    // }, 60000)
   },
 };
 </script>
