@@ -17,7 +17,7 @@
               label="Email" 
               v-model="email" 
               :readonly="true" 
-              :customClass="'bg-grayscale-200'"
+              customClass="bg-gray-100"
             />
           </div>
         </div>
