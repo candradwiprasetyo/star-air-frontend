@@ -261,6 +261,7 @@
         </div>
       </div>
       <div class="mt-8 md:inline-block md:float-right">
+        <input type="hidden" name="loyalty_id" :value="(userData) ? userData.member_id : ''">
         <button v-if="isButtonEnabled" type="submit" class="px-6 py-4 font-medium text-center text-white border-2 rounded-lg cursor-pointer border-primary-600 bg-primary-600">Search Flights</button>
         <div v-if="!isButtonEnabled" class="px-6 py-4 font-medium text-center text-white bg-gray-200 border-2 border-transparent rounded-lg cursor-pointer">Search Flights</div>
       </div>
@@ -269,6 +270,7 @@
 </template>
 
 <script>
+import cookie from 'js-cookie'
 import { mixin as clickaway } from 'vue-clickaway';
 
 export default {
@@ -293,6 +295,7 @@ export default {
       departDate: null,
       returnDate: null,
       isButtonEnabled: false,
+      userData: null,
     };
   },
   computed: {
@@ -470,8 +473,14 @@ export default {
         }
       }
     },
+    loadUser() {
+      let userData = (cookie.get('star_air_login')) ? JSON.parse(cookie.get('star_air_login')) : '';
+      this.userData = userData;
+      console.log(userData)
+    },
   },
   mounted() {
+    this.loadUser()
     this.loadOrigin();
     this.loadAllDestination();
   },
