@@ -92,6 +92,7 @@
               let formDataDetail = new FormData();
               formDataDetail.append('member_email', this.email);
               formDataDetail.append('token', this.$config.myToken);
+              formDataDetail.append('airline_code', this.$config.myAirlineCode);
 
               this.$axios.$post('/api/member/get-member-detail', formDataDetail)
                 .then( (responseDetail) => {
