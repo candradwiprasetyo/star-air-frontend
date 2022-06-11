@@ -263,7 +263,10 @@
         </div>
         <div class="mt-8 md:inline-block md:float-right">
           <input type="hidden" name="loyalty_id" :value="(userData) ? userData.member_id : ''">
-          <button v-if="isButtonEnabled" type="submit" class="px-6 py-4 font-medium text-center text-white border-2 rounded-lg cursor-pointer border-primary-600 bg-primary-600">Search Flights</button>
+          <span>
+            <button v-if="isButtonEnabled" type="submit" class="px-6 py-4 font-medium text-center text-white border-2 rounded-lg cursor-pointer border-primary-600 bg-primary-600">Search Flights</button>
+          </span>
+          <div v-if="isSearching" class="px-6 py-4 font-medium text-center text-white border-2 rounded-lg cursor-pointer border-primary-600 bg-primary-600">Searching...</div>
           <div v-if="!isButtonEnabled" class="px-6 py-4 font-medium text-center text-white bg-gray-200 border-2 border-transparent rounded-lg cursor-pointer">Search Flights</div>
         </div>
       </div>
@@ -296,11 +299,12 @@ export default {
       passangerChild: 0,
       passangerInfant: 0,
       passangerTotal: 1,
-      routeType: 3,
+      routeType: 1,
       departDate: null,
       returnDate: null,
       isButtonEnabled: false,
       userData: null,
+      isSearching: false,
     };
   },
   computed: {
@@ -480,6 +484,9 @@ export default {
     loadUser() {
       let userData = (cookie.get('star_air_login')) ? JSON.parse(cookie.get('star_air_login')) : '';
       this.userData = userData;
+    },
+    goSearching() {
+      this.isSearching = true;
     },
   },
   mounted() {
