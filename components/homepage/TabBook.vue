@@ -44,226 +44,231 @@
       </div>
     </div>
     <form target="_top" id="formSearchSchedule" class="" method=POST action="https://test-starair.paxlinks.com/search-schedule">
-      <div class="mt-6 md:flex">
-        <div class="w-full md:w-4/6 md:flex">
-          <div class="relative flex-1">
-            <div
-              class="p-3 border rounded-t-lg cursor-pointer md:rounded-l-lg md:rounded-tr-none"
-              @click="openOrigin"
-              v-on-clickaway="closeOrigin"
-            >
-              <div class="text-grayscale-400 text-2xs">From</div>
+      <div v-if="routeType!=3">
+        <div class="mt-6 md:flex">
+          <div class="w-full md:w-4/6 md:flex">
+            <div class="relative flex-1">
               <div
-                class="w-full border-none outline-none"
+                class="p-3 border rounded-t-lg cursor-pointer md:rounded-l-lg md:rounded-tr-none"
+                @click="openOrigin"
+                v-on-clickaway="closeOrigin"
               >
-                <input type="hidden" name="org" :value="(selectedOrigin) ? selectedOrigin[0] : ''">
-                {{ (selectedOrigin[0]) ? selectedOrigin[1] : 'Choose origin here' }}
-                <div v-if="isOriginOpen" class="absolute w-full bg-white border left-0 top-[67px] overflow-y-auto h-[360px] shadow-custom">
-                  <div class="flex items-center px-6 py-4 border-b" v-for="(data, index) in originOptions" :key="index" @click="pickOrigin(data)">
-                    <div class="flex-grow">
-                      <div class="font-medium text-grayscale-900">{{ data[0] }}</div>
-                      <div class="text-xs text-grayscale-500">{{ data[1] }}</div>
+                <div class="text-grayscale-400 text-2xs">From</div>
+                <div
+                  class="w-full border-none outline-none"
+                >
+                  <input type="hidden" name="org" :value="(selectedOrigin) ? selectedOrigin[0] : ''">
+                  {{ (selectedOrigin[0]) ? selectedOrigin[1] : 'Choose origin here' }}
+                  <div v-if="isOriginOpen" class="absolute w-full bg-white border left-0 top-[67px] overflow-y-auto h-[360px] shadow-custom">
+                    <div class="flex items-center px-6 py-4 border-b" v-for="(data, index) in originOptions" :key="index" @click="pickOrigin(data)">
+                      <div class="flex-grow">
+                        <div class="font-medium text-grayscale-900">{{ data[0] }}</div>
+                        <div class="text-xs text-grayscale-500">{{ data[1] }}</div>
+                      </div>
+                      <!-- <div class="flex-none text-sm font-medium text-grayscale-500">India</div> -->
                     </div>
-                    <!-- <div class="flex-none text-sm font-medium text-grayscale-500">India</div> -->
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="relative flex-1">
+              <div class="absolute hidden w-10 h-10 cursor-pointer md:inline" @click="switchRoute()">
+                <img
+                  src="~/assets/images/flip-button.svg"
+                  class="inline-block mt-4 -ml-5"
+                  alt="Flip Button"
+                />
+              </div>
+              <div
+                class="absolute inline w-10 h-10 -mt-5 cursor-pointer md:hidden right-4"
+                @click="switchRoute()"
+              >
+                <img
+                  src="~/assets/images/flip-button-mobile.svg"
+                  class="inline-block"
+                  alt="Flip Button"
+                />
+              </div>
+              <div
+                class="p-3 pl-6 border rounded-t-lg cursor-pointer md:rounded-l-lg md:rounded-tr-none"
+                @click="openDestination"
+                v-on-clickaway="closeDestination"
+              >
+                <div class="text-grayscale-400 text-2xs">To</div>
+                <div
+                  class="w-full border-none outline-none"
+                >
+                  <input type="hidden" name="des" :value="(selectedDestination) ? selectedDestination[0] : ''">
+                  {{ (selectedDestination[0]) ? selectedDestination[1] : (selectedOrigin[0]) ? 'Choose destination here' : 'Please choose origin first' }}
+                  <div v-if="isDestinationOpen" class="absolute w-full bg-white border left-0 top-[67px] overflow-y-auto max-h-[360px] shadow-custom">
+                    <div class="flex items-center px-6 py-4 border-b" v-for="(data, index) in destinationOptions" :key="index" @click="pickDestination(data)" v-if="destinationOptions.length>0">
+                      <div class="flex-grow">
+                        <div class="font-medium text-grayscale-900">{{ data[0] }}</div>
+                        <div class="text-xs text-grayscale-500">{{ data[1] }}</div>
+                      </div>
+                      <!-- <div class="flex-none text-sm font-medium text-grayscale-500">India</div> -->
+                    </div>
+                    <div v-if="destinationOptions.length==0" class="px-6 py-4">
+                      Data not found
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-          <div class="relative flex-1">
-            <div class="absolute hidden w-10 h-10 cursor-pointer md:inline" @click="switchRoute()">
-              <img
-                src="~/assets/images/flip-button.svg"
-                class="inline-block mt-4 -ml-5"
-                alt="Flip Button"
-              />
-            </div>
-            <div
-              class="absolute inline w-10 h-10 -mt-5 cursor-pointer md:hidden right-4"
-              @click="switchRoute()"
-            >
-              <img
-                src="~/assets/images/flip-button-mobile.svg"
-                class="inline-block"
-                alt="Flip Button"
-              />
-            </div>
-            <div
-              class="p-3 pl-6 border rounded-t-lg cursor-pointer md:rounded-l-lg md:rounded-tr-none"
-              @click="openDestination"
-              v-on-clickaway="closeDestination"
-            >
-              <div class="text-grayscale-400 text-2xs">To</div>
-              <div
-                class="w-full border-none outline-none"
-              >
-                <input type="hidden" name="des" :value="(selectedDestination) ? selectedDestination[0] : ''">
-                {{ (selectedDestination[0]) ? selectedDestination[1] : (selectedOrigin[0]) ? 'Choose destination here' : 'Please choose origin first' }}
-                <div v-if="isDestinationOpen" class="absolute w-full bg-white border left-0 top-[67px] overflow-y-auto max-h-[360px] shadow-custom">
-                  <div class="flex items-center px-6 py-4 border-b" v-for="(data, index) in destinationOptions" :key="index" @click="pickDestination(data)" v-if="destinationOptions.length>0">
-                    <div class="flex-grow">
-                      <div class="font-medium text-grayscale-900">{{ data[0] }}</div>
-                      <div class="text-xs text-grayscale-500">{{ data[1] }}</div>
-                    </div>
-                    <!-- <div class="flex-none text-sm font-medium text-grayscale-500">India</div> -->
+          <div class="flex w-full mt-6 md:w-1/6 md:mt-0">
+            <div class="w-2/3 md:w-full">
+              <div class="p-3 border rounded-r-lg md:rounded-r-none">
+                <div class="flex">
+                  <div class="flex-1">
+                    <div class="text-grayscale-400 text-2xs">Depart</div>
+                    <client-only>
+                      <v-date-picker 
+                        v-model="departDate"
+                        :popover="{ visibility: 'click' }"
+                        class="cursor-pointer"
+                        :min-date='new Date()'
+                      >
+                        <template v-slot="{ inputValue, inputEvents }">
+                          <input
+                            class="w-full outline-none"
+                            :value="formatDepartDate"
+                            v-on="inputEvents"
+                            placeholder="dd/mm/yyyy"
+                            readonly
+                            name="dep_date"
+                          />
+                        </template>
+                      </v-date-picker>
+                    </client-only>
                   </div>
-                  <div v-if="destinationOptions.length==0" class="px-6 py-4">
-                    Data not found
+                  <div class="flex-1" v-if="routeType==1">
+                    <div class="text-grayscale-400 text-2xs">Return</div>
+                    <client-only>
+                      <v-date-picker 
+                        v-model="returnDate"
+                        :popover="{ visibility: 'click' }"
+                        class="cursor-pointer"
+                        :min-date='new Date()'
+                      >
+                        <template v-slot="{ inputValue, inputEvents }">
+                          <input
+                            class="w-full outline-none"
+                            :value="formatReturnDate"
+                            v-on="inputEvents"
+                            placeholder="dd/mm/yyyy"
+                            readonly
+                            name="ret_date"
+                          />
+                        </template>
+                      </v-date-picker>
+                    </client-only>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="flex w-full mt-6 md:w-1/6 md:mt-0">
+            <div class="w-full">
+              <div 
+                class="relative p-3 border rounded-lg cursor-pointer md:rounded-r-lg md:rounded-none"
+                @click="openPassanger"
+                v-on-clickaway="closePassanger"
+              >
+                <div class="text-grayscale-400 text-2xs">Passanger/Class</div>
+                {{ (passangerTotal) + ' Pax' }}
+                <div v-if="isPassangerOpen" class="absolute w-80 bg-white border right-0 top-[67px] max-h-[360px] shadow-custom">
+                  <div class="flex items-center p-4 border-b">
+                    <div class="flex-1 text-grayscale-900">Adult (12+)</div>
+                    <div class="flex items-center flex-1 gap-2">
+                      <div class="flex-none">
+                        <img
+                          src="~/assets/images/add.png"
+                          class="inline-block"
+                          alt="Add Button"
+                          width="32"
+                          @click="addPassanger(1)"
+                        />
+                      </div>
+                      <div class="flex-none">
+                        <input name="adult" type="text" class="p-3 text-center border rounded-lg" size="2" :value="passangerAdult" />
+                      </div>
+                      <div class="flex-none">
+                        <img
+                          src="~/assets/images/subtract.png"
+                          class="inline-block"
+                          alt="Subtract Button"
+                          width="32"
+                          @click="subtractPassanger(1)"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="flex items-center p-4 border-b">
+                    <div class="flex-1 text-grayscale-900">Child (2-12)</div>
+                    <div class="flex items-center flex-1 gap-2">
+                      <div class="flex-none">
+                        <img
+                          src="~/assets/images/add.png"
+                          class="inline-block"
+                          alt="Add Button"
+                          width="32"
+                          @click="addPassanger(2)"
+                        />
+                      </div>
+                      <div class="flex-none">
+                        <input name="child" type="text" class="p-3 text-center border rounded-lg" size="2" v-model="passangerChild" />
+                      </div>
+                      <div class="flex-none">
+                        <img
+                          src="~/assets/images/subtract.png"
+                          class="inline-block"
+                          alt="Subtract Button"
+                          width="32"
+                          @click="subtractPassanger(2)"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="flex items-center p-4 border-b">
+                    <div class="flex-1 text-grayscale-900">Infant (0-2)</div>
+                    <div class="flex items-center flex-1 gap-2">
+                      <div class="flex-none">
+                        <img
+                          src="~/assets/images/add.png"
+                          class="inline-block"
+                          alt="Add Button"
+                          width="32"
+                          @click="addPassanger(3)"
+                        />
+                      </div>
+                      <div class="flex-none">
+                        <input name="infant" type="text" class="p-3 text-center border rounded-lg" size="2" v-model="passangerInfant" />
+                      </div>
+                      <div class="flex-none">
+                        <img
+                          src="~/assets/images/subtract.png"
+                          class="inline-block"
+                          alt="Subtract Button"
+                          width="32"
+                          @click="subtractPassanger(3)"
+                        />
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <div class="flex w-full mt-6 md:w-1/6 md:mt-0">
-          <div class="w-2/3 md:w-full">
-            <div class="p-3 border rounded-r-lg md:rounded-r-none">
-              <div class="flex">
-                <div class="flex-1">
-                  <div class="text-grayscale-400 text-2xs">Depart</div>
-                  <client-only>
-                    <v-date-picker 
-                      v-model="departDate"
-                      :popover="{ visibility: 'click' }"
-                      class="cursor-pointer"
-                      :min-date='new Date()'
-                    >
-                      <template v-slot="{ inputValue, inputEvents }">
-                        <input
-                          class="w-full outline-none"
-                          :value="formatDepartDate"
-                          v-on="inputEvents"
-                          placeholder="dd/mm/yyyy"
-                          readonly
-                          name="dep_date"
-                        />
-                      </template>
-                    </v-date-picker>
-                  </client-only>
-                </div>
-                <div class="flex-1" v-if="routeType==1">
-                  <div class="text-grayscale-400 text-2xs">Return</div>
-                  <client-only>
-                    <v-date-picker 
-                      v-model="returnDate"
-                      :popover="{ visibility: 'click' }"
-                      class="cursor-pointer"
-                      :min-date='new Date()'
-                    >
-                      <template v-slot="{ inputValue, inputEvents }">
-                        <input
-                          class="w-full outline-none"
-                          :value="formatReturnDate"
-                          v-on="inputEvents"
-                          placeholder="dd/mm/yyyy"
-                          readonly
-                          name="ret_date"
-                        />
-                      </template>
-                    </v-date-picker>
-                  </client-only>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="flex w-full mt-6 md:w-1/6 md:mt-0">
-          <div class="w-full">
-            <div 
-              class="relative p-3 border rounded-lg cursor-pointer md:rounded-r-lg md:rounded-none"
-              @click="openPassanger"
-              v-on-clickaway="closePassanger"
-            >
-              <div class="text-grayscale-400 text-2xs">Passanger/Class</div>
-              {{ (passangerTotal) + ' Pax' }}
-              <div v-if="isPassangerOpen" class="absolute w-80 bg-white border right-0 top-[67px] max-h-[360px] shadow-custom">
-                <div class="flex items-center p-4 border-b">
-                  <div class="flex-1 text-grayscale-900">Adult (12+)</div>
-                  <div class="flex items-center flex-1 gap-2">
-                    <div class="flex-none">
-                      <img
-                        src="~/assets/images/add.png"
-                        class="inline-block"
-                        alt="Add Button"
-                        width="32"
-                        @click="addPassanger(1)"
-                      />
-                    </div>
-                    <div class="flex-none">
-                      <input name="adult" type="text" class="p-3 text-center border rounded-lg" size="2" :value="passangerAdult" />
-                    </div>
-                    <div class="flex-none">
-                      <img
-                        src="~/assets/images/subtract.png"
-                        class="inline-block"
-                        alt="Subtract Button"
-                        width="32"
-                        @click="subtractPassanger(1)"
-                      />
-                    </div>
-                  </div>
-                </div>
-                <div class="flex items-center p-4 border-b">
-                  <div class="flex-1 text-grayscale-900">Child (2-12)</div>
-                  <div class="flex items-center flex-1 gap-2">
-                    <div class="flex-none">
-                      <img
-                        src="~/assets/images/add.png"
-                        class="inline-block"
-                        alt="Add Button"
-                        width="32"
-                        @click="addPassanger(2)"
-                      />
-                    </div>
-                    <div class="flex-none">
-                      <input name="child" type="text" class="p-3 text-center border rounded-lg" size="2" v-model="passangerChild" />
-                    </div>
-                    <div class="flex-none">
-                      <img
-                        src="~/assets/images/subtract.png"
-                        class="inline-block"
-                        alt="Subtract Button"
-                        width="32"
-                        @click="subtractPassanger(2)"
-                      />
-                    </div>
-                  </div>
-                </div>
-                <div class="flex items-center p-4 border-b">
-                  <div class="flex-1 text-grayscale-900">Infant (0-2)</div>
-                  <div class="flex items-center flex-1 gap-2">
-                    <div class="flex-none">
-                      <img
-                        src="~/assets/images/add.png"
-                        class="inline-block"
-                        alt="Add Button"
-                        width="32"
-                        @click="addPassanger(3)"
-                      />
-                    </div>
-                    <div class="flex-none">
-                      <input name="infant" type="text" class="p-3 text-center border rounded-lg" size="2" v-model="passangerInfant" />
-                    </div>
-                    <div class="flex-none">
-                      <img
-                        src="~/assets/images/subtract.png"
-                        class="inline-block"
-                        alt="Subtract Button"
-                        width="32"
-                        @click="subtractPassanger(3)"
-                      />
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+        <div class="mt-8 md:inline-block md:float-right">
+          <input type="hidden" name="loyalty_id" :value="(userData) ? userData.member_id : ''">
+          <button v-if="isButtonEnabled" type="submit" class="px-6 py-4 font-medium text-center text-white border-2 rounded-lg cursor-pointer border-primary-600 bg-primary-600">Search Flights</button>
+          <div v-if="!isButtonEnabled" class="px-6 py-4 font-medium text-center text-white bg-gray-200 border-2 border-transparent rounded-lg cursor-pointer">Search Flights</div>
         </div>
       </div>
-      <div class="mt-8 md:inline-block md:float-right">
-        <input type="hidden" name="loyalty_id" :value="(userData) ? userData.member_id : ''">
-        <button v-if="isButtonEnabled" type="submit" class="px-6 py-4 font-medium text-center text-white border-2 rounded-lg cursor-pointer border-primary-600 bg-primary-600">Search Flights</button>
-        <div v-if="!isButtonEnabled" class="px-6 py-4 font-medium text-center text-white bg-gray-200 border-2 border-transparent rounded-lg cursor-pointer">Search Flights</div>
+      <div v-else>
+        <HomepageTabBookMulticity />
       </div>
     </form>
   </div>
@@ -291,7 +296,7 @@ export default {
       passangerChild: 0,
       passangerInfant: 0,
       passangerTotal: 1,
-      routeType: 1,
+      routeType: 3,
       departDate: null,
       returnDate: null,
       isButtonEnabled: false,
@@ -449,7 +454,6 @@ export default {
       this.passangerTotal = this.passangerAdult + this.passangerChild + this.passangerInfant;
     },
     formChanged() {
-      console.log('oke');
       if (this.routeType == 1) {
         if (
           this.selectedOrigin[0] &&
@@ -476,7 +480,6 @@ export default {
     loadUser() {
       let userData = (cookie.get('star_air_login')) ? JSON.parse(cookie.get('star_air_login')) : '';
       this.userData = userData;
-      console.log(userData)
     },
   },
   mounted() {
