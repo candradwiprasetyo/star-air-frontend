@@ -80,7 +80,7 @@
           <table class="table-auto md:w-full custom-table w-[1200px]">
             <thead>
               <tr>
-                <th>Booking Date {{data.length}}</th>
+                <th>Booking Date</th>
                 <th>Origin - Destination</th>
                 <th>Flight Date</th>
                 <th>PNR</th>
@@ -93,7 +93,7 @@
                 <td>{{ data.route }}</td>
                 <td>{{ data.flight_date }}</td>
                 <td>{{ data.pnr }}</td>
-                <td class="cursor-pointer text-secondary-900" @click="$emit('view-detail-history', 11)">Detail</td>
+                <td class="cursor-pointer text-secondary-900" @click="$emit('view-detail-history', data.pnr)">Detail</td>
               </tr>
             </tbody>
             <tbody v-else>
@@ -143,8 +143,8 @@ export default {
     },
     loadData() {
       let formData = new FormData();
-      formData.append('member_id', this.userData.member_id);
-      // formData.append('member_id', 'SQV119');
+      // formData.append('member_id', this.userData.member_id);
+      formData.append('member_id', 'SQV003');
       formData.append('token', this.$config.myToken);
       formData.append('airline_code', this.$config.myAirlineCode);
       formData.append('start_date', this.formatDate(this.startDate));

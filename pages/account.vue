@@ -5,6 +5,7 @@ export default {
   data() {
     return {
       activeMenu: 1,
+      dataId: null,
       dataMenu: [
         { id: 1, name: 'Overview' },
         { id: 2, name: 'User Profile' },
@@ -67,6 +68,11 @@ export default {
         case 'extend-membership': this.activeMenu = 5; break;
         case 'change-password': this.activeMenu = 6; break;
       }
+    },
+    goToBookingHistoryDetail(dataId) {
+      this.activeMenu = 11;
+      this.dataId = dataId;
+      this.loadUser();
     }
   },
   mounted() {
@@ -125,7 +131,7 @@ export default {
           </div>
           <div v-if="activeMenu==3">
             <AccountBookingHistory 
-              @view-detail-history="changeMenu('11')"
+              @view-detail-history="goToBookingHistoryDetail"
             />
           </div>
           <div v-if="activeMenu==4">
@@ -159,6 +165,7 @@ export default {
           <div v-if="activeMenu==11">
             <AccountBookingHistoryDetail 
               @back-to-history="changeMenu('3')"
+              :dataId="dataId"
             />
           </div>
         </div>

@@ -69,6 +69,7 @@ export default {
   publicRuntimeConfig: {
     myToken: process.env.TOKEN,
     myAirlineCode: process.env.AIRLINE_CODE,
+    myTempApi: process.env.TEMP_API,
   },
 
 };
