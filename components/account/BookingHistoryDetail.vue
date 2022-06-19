@@ -34,6 +34,7 @@
                 alt="Logo star air"
                 width="132"
               />
+              
               <div class="flex">
                 <div class="flex-1">
                   <div class="mt-4 text-xs text-grayscale-400">
