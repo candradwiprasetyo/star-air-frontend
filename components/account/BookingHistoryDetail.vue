@@ -127,7 +127,7 @@
                 <tr>
                   <th>No</th>
                   <th>Passanger’s Name</th>
-                  <th>Ticket No.</th>
+                  <th>PNR Code</th>
                   <th>Route</th>
                   <th>Baggage</th>
                 </tr>
@@ -135,7 +135,7 @@
               <tbody>
                 <tr v-for="(detail, index) in data.pax_list" :key="index">
                   <td>{{ index+1 }}</td>
-                  <td>{{ data.pax_list[0][10] + ' ' + data.pax_list[0][0] + ' ' + data.pax_list[0][1] }}</td>
+                  <td>{{ data.pax_list[index][10] + ' ' + data.pax_list[index][0] + ' ' + data.pax_list[index][1] }}</td>
                   <td>{{ data.book_code }}</td>
                   <td>{{ data.route_info[0][0] }} - {{ data.route_info[0][1] }}</td>
                   <td>{{ data.route_detail[0][22] }}kg</td>
