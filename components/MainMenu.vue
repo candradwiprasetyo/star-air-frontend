@@ -307,6 +307,9 @@ export default {
               newData = responseDetail.result;
               this.$store.commit('SET_LOGIN', JSON.stringify(newData));
               cookie.set('star_air_login', JSON.stringify(newData));
+            } else {
+              cookie.remove('star_air_login');
+              this.$store.commit('SET_LOGIN', false);
             }
             this.isLoading = false;
           })

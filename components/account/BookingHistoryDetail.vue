@@ -17,7 +17,12 @@
       <div v-else>
         <div class="p-6 border-b">
           <div class="flex">
-            <div class="text-lg font-semibold font-noto-sans text-grayscale-900">Booking History / Detail</div>
+            <div class="text-lg font-semibold font-noto-sans text-grayscale-900">
+              <nuxt-link to="/account?page=booking-history">
+                <span class="text-secondary-900">Booking History </span>
+              </nuxt-link>
+              <span>/ Detail</span>
+            </div>
           </div>
         </div>
         <div class="mx-6 mt-6">
@@ -32,7 +37,7 @@
                 src="~/assets/images/logo-star-air.png"
                 class="inline-block"
                 alt="Logo star air"
-                width="132"
+                width="100"
               />
               
               <div class="flex">
@@ -54,7 +59,7 @@
                   <div class="mt-4 text-xs text-grayscale-400">
                     Booking Reference (PNR)
                   </div>
-                  <div class="text-sm text-grayscale-900">{{ data.book_code }}</div>
+                  <div class="text-sm text-secondary-900">{{ data.book_code }}</div>
                 </div>
               </div>
             </div>

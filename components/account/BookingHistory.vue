@@ -93,7 +93,7 @@
                 <td>{{ data.route }}</td>
                 <td>{{ data.flight_date }}</td>
                 <td>{{ data.pnr }}</td>
-                <td class="cursor-pointer text-secondary-900" @click="$emit('view-detail-history', data.pnr)">Detail</td>
+                <td class="cursor-pointer text-secondary-900" @click="$emit('view-detail-history', data.pnr)" style="color: #224CA1">Detail</td>
               </tr>
             </tbody>
             <tbody v-else>

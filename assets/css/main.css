@@ -164,7 +164,8 @@ body {
   }
 
   .custom-table thead tr th {
-    @apply p-2 text-left;
+    @apply p-2 font-normal text-left;
+    color: #0F172A;
   }
 
   .custom-table tbody tr td {
