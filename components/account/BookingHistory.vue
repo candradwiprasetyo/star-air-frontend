@@ -93,7 +93,7 @@
                 <td>{{ data.route }}</td>
                 <td>{{ data.flight_date }}</td>
                 <td>{{ data.pnr }}</td>
-                <td class="cursor-pointer text-secondary-900" @click="$emit('view-detail-history', data.pnr)" style="color: #224CA1">Detail</td>
+                <td class="cursor-pointer text-secondary-900" @click="$emit('view-detail-history', data.pnr, startDate, endDate)" style="color: #224CA1">Detail</td>
               </tr>
             </tbody>
             <tbody v-else>
@@ -135,6 +135,18 @@ export default {
       endDate: null,
     }
   },
+  props: {
+    startDateDefault: {
+      type: Date,
+      required: false,
+      default: null,
+    },
+    endDateDefault: {
+      type: Date,
+      required: false,
+      default: null,
+    },
+  },
   methods: {
     loadUser() {
       let userData = (cookie.get('star_air_login')) ? JSON.parse(cookie.get('star_air_login')) : '';
@@ -172,9 +184,15 @@ export default {
         return today;
       }
     },
+    loadDate() {
+      this.startDate = (this.startDateDefault) ? this.startDateDefault : null;
+      this.endDate = (this.endDateDefault) ? this.endDateDefault : null;
+      this.loadData();
+    }
   },
   mounted() {
     this.loadUser();
+    this.loadDate();
   },
 };
 </script>

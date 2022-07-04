@@ -4,7 +4,7 @@
       <div class="p-6" v-if="errorMessage">
         {{ errorMessage }}
         <div class="mt-10">
-          <div class="inline-block" @click="$emit('back-to-history', 3)">
+          <div class="inline-block" @click="$emit('back-to-history', 3, startDate, endDate)">
             <Button
               value="Back"
               border="border-2 border-secondary-900"
@@ -18,9 +18,7 @@
         <div class="p-6 border-b">
           <div class="flex">
             <div class="text-lg font-semibold font-noto-sans text-grayscale-900">
-              <nuxt-link to="/account?page=booking-history">
-                <span class="text-secondary-900">Booking History </span>
-              </nuxt-link>
+              <span class="cursor-pointer text-secondary-900" @click="$emit('back-to-history', 3, startDate, endDate)">Booking History </span>
               <span>/ Detail</span>
             </div>
           </div>
@@ -31,13 +29,13 @@
           >
             Flight Info
           </div>
-          <div class="py-6 my-6 border-b md:flex">
+          <div class="py-6 border-b md:flex" v-for="(route, index) in data.route_info" :key="index">
             <div class="md:w-1/2">
               <img
-                src="~/assets/images/logo-star-air.png"
+                src="~/assets/images/booking-logo.png"
                 class="inline-block"
                 alt="Logo star air"
-                width="100"
+                width="150"
               />
               
               <div class="flex">
@@ -49,13 +47,13 @@
                   <div class="mt-4 text-xs text-grayscale-400">
                     Flight Number
                   </div>
-                  <div class="text-sm text-grayscale-900">{{ (data.route_info[0]) ? data.route_info[0][7] : ''  }}</div>
+                  <div class="text-sm text-grayscale-900">{{ (route) ? route[7] : ''  }}</div>
                 </div>
                 <div class="flex-1">
                   <div class="mt-4 text-xs text-grayscale-400">
                     Flight Date
                   </div>
-                  <div class="text-sm text-grayscale-900">{{ (data.route_info[0]) ? data.route_info[0][2] : '' }}</div>
+                  <div class="text-sm text-grayscale-900">{{ (route) ? route[2] : '' }}</div>
                   <div class="mt-4 text-xs text-grayscale-400">
                     Booking Reference (PNR)
                   </div>
@@ -66,31 +64,31 @@
             <div class="flex mt-6 md:w-1/2 gap-x-8">
               <div class="relative flex-none">
                 <div
-                  class="absolute w-4 h-32 border-r border-dashed -right-2 top-3"
+                  class="absolute w-4 border-r border-dashed h-route-line -right-2 top-3"
                 ></div>
                 <div class="pt-1 mb-10">
                   <span class="pr-2 text-xs text-grayscale-500"
-                    >{{ (data.route_info[0]) ? formatHour(data.route_info[0][4]) : ''  }}</span
+                    >{{ (route) ? formatHour(route[4]) : ''  }}</span
                   >
                   <div class="absolute bullet-green top-3"></div>
                 </div>
-                <div class="absolute bottom-5">
+                <div class="absolute bottom-2">
                   <span class="pr-2 text-xs text-grayscale-500"
-                    >{{ (data.route_info[0]) ? formatHour(data.route_info[0][5]) : ''  }}</span
+                    >{{ (route) ? formatHour(route[5]) : ''  }}</span
                   >
                   <div class="absolute bullet-green bottom-1"></div>
                 </div>
               </div>
               <div class="flex-grow">
-                <div class="text-sm text-grayscale-900">{{ (data.route_info[0]) ? data.route_info[0][0] : ''  }}</div>
-                <div class="mt-1 text-xs text-grayscale-500"></div>
-                <div class="mt-8 text-xs text-grayscale-500">
-                  1 hour 
+                <div class="text-sm text-grayscale-900">{{ (route) ? route[0] : ''  }}</div>
+                <div class="mt-1 text-xs text-grayscale-500">{{ originName  }}</div>
+                <div class="mt-10 text-xs text-grayscale-500">
+                  {{ getDuration(route[4], route[5]) }}
                 </div>
-                <div class="mt-8 text-sm text-grayscale-900">
-                  {{ (data.route_info[0]) ? data.route_info[0][1] : '' }}
+                <div class="mt-10 text-sm text-grayscale-900">
+                  {{ (route) ? route[1] : '' }}
                 </div>
-                <div class="mt-1 text-xs text-grayscale-500"></div>
+                <div class="mt-1 text-xs text-grayscale-500">{{ destinationName  }}</div>
               </div>
             </div>
           </div>
@@ -167,7 +165,7 @@
             </div>
           </div>
           <div class="mt-6 text-right" >
-            <div class="mb-4 md:mr-4 md:inline-block" @click="$emit('back-to-history', 3)">
+            <div class="mb-4 md:mr-4 md:inline-block" @click="$emit('back-to-history', 3, startDate, endDate)">
               <Button
                 value="Back"
                 border="border-2 border-secondary-900"
@@ -192,6 +190,8 @@ export default {
       },
       isLoading: true,
       errorMessage: null,
+      originName: null,
+      destinationName: null,
     }
   },
   props: {
@@ -199,17 +199,28 @@ export default {
       type: String,
       required: false,
     },
+    startDate: {
+      type: Date,
+      required: false,
+    },
+    endDate: {
+      type: Date,
+      required: false,
+    },
   },
   methods: {
     loadHistoryDetail() {
       this.$axios.$get(this.$config.myTempApi + '&app=information_airline_temp&action=get_all_book_info_2&book_code=' + this.dataId)
         .then( (response) => {
+          response = JSON.parse(JSON.stringify(response));
           if (response.err_code==0) {
-            this.data = JSON.parse(JSON.stringify(response));
+            this.data = response;
+            this.getAirportName();
           } else {
             this.errorMessage = response.err_msg;
           }
           this.isLoading = false;
+          
         })
         .catch(function (error) {
           console.log(error)
@@ -220,7 +231,28 @@ export default {
       let minute = value.substring(value.length - 2);
       let result = hour + ':' + minute;
       return result;
-    }
+    },
+    getDuration(start, end) {
+      let duration = (end - start) / 100;
+      let result = (duration > 1) ? duration + ' hours' : duration + ' hour';
+      return result;
+    },
+    getAirportName() {
+      this.$axios.$get(this.$config.myTempApi + '&app=data&action=get_org')
+        .then( (response) => {
+          response.origin.forEach(element => {
+            if (this.data.route_info[0][0] == element[0]) {
+              this.originName = element[1];
+            }
+            if (this.data.route_info[0][1] == element[0]) {
+              this.destinationName = element[1];
+            }
+          });
+        })
+        .catch(function (error) {
+          console.log(error)
+        })
+    },
   },
   mounted() {
     this.loadHistoryDetail();

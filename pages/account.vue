@@ -17,6 +17,8 @@ export default {
       userData: [],
       isLoading: true,
       selectedMemberId: null,
+      startDate: null,
+      endDate: null,
     };
   },
   methods: {
@@ -69,10 +71,17 @@ export default {
         case 'change-password': this.activeMenu = 6; break;
       }
     },
-    goToBookingHistoryDetail(dataId) {
+    goToBookingHistoryDetail(dataId, startDate, endDate) {
       this.activeMenu = 11;
       this.dataId = dataId;
+      this.startDate = startDate;
+      this.endDate = endDate;
       this.loadUser();
+    },
+    backToHistory(menuId, startDate, endDate) {
+      this.activeMenu = menuId;
+      this.startDate = startDate;
+      this.endDate = endDate;
     }
   },
   mounted() {
@@ -89,7 +98,7 @@ export default {
   <div>
     <Header />
     <MainMenu />
-    <div class="container px-6 py-6 mx-auto md:py-14 md:px-0">
+    <div class="container px-6 py-6 mx-auto md:py-14 md:px-0 ">
       <div class="text-3xl font-semibold text-grayscale-900 font-noto-sans">
         Welcome, {{ userData.name }}
       </div>
@@ -97,8 +106,8 @@ export default {
         Thank you for joining our loyalty program, Star Club. In this page you can manage your Star Club account such as viewing booking history, redeem, claim & transfer Star Points and edit your account.
       </div>
       <div class="mt-16 md:flex gap-x-8">
-        <div class="pb-0 mb-6 border md:w-1/3 rounded-xl text-grayscale-500">
-          <div class="p-6 border-b">
+        <div class="flex-none h-auto pb-0 mb-6 text-grayscale-500 md:min-w-[300px]">
+          <div class="p-6 border border-b-0 rounded-t-xl">
             <div class="flex">
               <div class="text-lg font-semibold font-noto-sans text-secondary-900">{{ userData.name }}</div>
               <div class="px-3 py-1 ml-2 text-xs bg-gray-100 border rounded-full border-grays-300">{{ userData.member_level }}</div>
@@ -110,7 +119,7 @@ export default {
               <span class="pl-1 text-sm text-grayscale-900">{{ userData.member_id }}</span>
             </div>
           </div>
-          <div class="p-6">
+          <div class="p-6 border rounded-b-xl">
             <div class="px-4 py-3 mb-4 rounded-full cursor-pointer" :class="menu.id == activeMenu ? 'bg-light-blue text-secondary-900 font-bold' : ''" v-for="menu in dataMenu" :key="menu.id" @click="changeMenu(menu.id)">
               {{ menu.name }}
             </div>
@@ -119,7 +128,7 @@ export default {
             </div>
           </div>
         </div>
-        <div class="md:w-2/3">
+        <div class="flex-grow">
           <div v-if="activeMenu==1">
             <AccountOverview />
           </div>
@@ -132,6 +141,8 @@ export default {
           <div v-if="activeMenu==3">
             <AccountBookingHistory 
               @view-detail-history="goToBookingHistoryDetail"
+              :startDateDefault="startDate"
+              :endDateDefault="endDate"
             />
           </div>
           <div v-if="activeMenu==4">
@@ -164,8 +175,10 @@ export default {
           </div>
           <div v-if="activeMenu==11">
             <AccountBookingHistoryDetail 
-              @back-to-history="changeMenu('3')"
+              @back-to-history="backToHistory"
               :dataId="dataId"
+              :startDate="startDate"
+              :endDate="endDate"
             />
           </div>
         </div>
