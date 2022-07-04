@@ -18,7 +18,7 @@
             >Book</span
           >
         </div>
-        <div
+        <!-- <div
           class="menu"
           :class="
             activeTab == 2 ? 'border-secondary-900 border-b-6 pb-3 md:pb-6' : ''
@@ -33,7 +33,7 @@
           <span class="pl-1" :class="activeTab == 2 ? 'text-secondary-900' : ''"
             >My Trip</span
           >
-        </div>
+        </div> -->
         <div
           class="menu"
           :class="
