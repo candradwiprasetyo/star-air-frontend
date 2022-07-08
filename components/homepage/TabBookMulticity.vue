@@ -15,7 +15,7 @@
           :isDeleteButton="(selectedAction)==countData && countData > 2"
         />
       </div>
-      <div class="mt-8 md:inline-block md:float-right">
+      <div class="flex flex-row-reverse mt-8">
         <input type="hidden" name="loyalty_id" :value="(userData) ? userData.member_id : ''">
         <input type="hidden" name="multi_route" :value="multiRoute">
         <input type="hidden" name="multi_date" :value="multiDate">

@@ -1,7 +1,7 @@
 <template>
   <div>
     <div
-      class="container left-0 right-0 block mx-auto bg-white shadow-custom rounded-xl md:p-6 md:absolute md:-mt-20"
+      class="container left-0 right-0 block mx-auto bg-white shadow-custom rounded-xl md:p-6 md:-mt-20"
     >
       <div
         class="flex pt-4 font-semibold border-b border-gray-300 text-grayscale-400 md:pt-2"
@@ -61,7 +61,7 @@
         <HomepageTabFlightInfo />
       </div>
     </div>
-    <div class="hidden md:block h-80"></div>
+    <!-- <div class="hidden md:block h-80"></div> -->
   </div>
 </template>
 

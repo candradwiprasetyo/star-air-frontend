@@ -90,7 +90,7 @@
                 />
               </div>
               <div
-                class="p-3 pl-6 border rounded-t-lg cursor-pointer md:rounded-l-lg md:rounded-tr-none"
+                class="p-3 pl-6 border cursor-pointer md:rounded-tr-none"
                 @click="openDestination"
                 v-on-clickaway="closeDestination"
               >
@@ -261,7 +261,7 @@
             </div>
           </div>
         </div>
-        <div class="mt-8 md:inline-block md:float-right">
+        <div class="flex flex-row-reverse mt-8 ">
           <input type="hidden" name="loyalty_id" :value="(userData) ? userData.member_id : ''">
           <span>
             <button v-if="isButtonEnabled" type="submit" class="px-6 py-4 font-medium text-center text-white border-2 rounded-lg cursor-pointer border-primary-600 bg-primary-600">Search Flights</button>

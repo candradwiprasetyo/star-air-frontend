@@ -126,7 +126,6 @@
                   <th>No</th>
                   <th>Passanger’s Name</th>
                   <th>PNR Code</th>
-                  <th>Route</th>
                   <th>Baggage</th>
                 </tr>
               </thead>
@@ -135,7 +134,6 @@
                   <td>{{ index+1 }}</td>
                   <td>{{ data.pax_list[index][10] + ' ' + data.pax_list[index][0] + ' ' + data.pax_list[index][1] }}</td>
                   <td>{{ data.book_code }}</td>
-                  <td>{{ data.route_info[0][0] }} - {{ data.route_info[0][1] }}</td>
                   <td>{{ data.route_detail[0][22] }}kg</td>
                 </tr>
               </tbody>
