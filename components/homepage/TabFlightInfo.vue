@@ -34,145 +34,146 @@
         </div>
       </div>
     </div>
-    <form target="_top" id="formSearchSchedule" class="" method=POST action="https://test-starair.paxlinks.com/search-schedule">
-      <div v-if="routeType!=3">
-        <div class="mt-6 md:flex">
-          <div class="w-full md:w-4/6 md:flex">
-            <div class="relative flex-1">
+    <div v-if="routeType!=3">
+      <div class="mt-6 md:flex">
+        <div class="w-full md:w-4/6 md:flex">
+          <div class="relative flex-1">
+            <div
+              class="p-3 border rounded-t-lg cursor-pointer md:rounded-l-lg md:rounded-tr-none"
+              @click="openOrigin"
+              v-on-clickaway="closeOrigin"
+            >
+              <div class="text-grayscale-400 text-2xs">From</div>
               <div
-                class="p-3 border rounded-t-lg cursor-pointer md:rounded-l-lg md:rounded-tr-none"
-                @click="openOrigin"
-                v-on-clickaway="closeOrigin"
+                class="w-full border-none outline-none"
               >
-                <div class="text-grayscale-400 text-2xs">From</div>
-                <div
-                  class="w-full border-none outline-none"
-                >
-                  <input type="hidden" name="org" :value="(selectedOrigin) ? selectedOrigin[0] : ''">
-                  {{ (selectedOrigin[0]) ? selectedOrigin[1] : 'Choose origin here' }}
-                  <div v-if="isOriginOpen" class="absolute w-full bg-white border left-0 top-[67px] overflow-y-auto h-[360px] shadow-custom">
-                    <div class="flex items-center px-6 py-4 border-b" v-for="(data, index) in originOptions" :key="index" @click="pickOrigin(data)">
-                      <div class="flex-grow">
-                        <div class="font-medium text-grayscale-900">{{ data[0] }}</div>
-                        <div class="text-xs text-grayscale-500">{{ data[1] }}</div>
-                      </div>
-                      <!-- <div class="flex-none text-sm font-medium text-grayscale-500">India</div> -->
+                <input type="hidden" name="org" :value="(selectedOrigin) ? selectedOrigin[0] : ''">
+                {{ (selectedOrigin[0]) ? selectedOrigin[1] : 'Choose origin here' }}
+                <div v-if="isOriginOpen" class="absolute w-full bg-white border left-0 top-[67px] overflow-y-auto h-[360px] shadow-custom">
+                  <div class="flex items-center px-6 py-4 border-b" v-for="(data, index) in originOptions" :key="index" @click="pickOrigin(data)">
+                    <div class="flex-grow">
+                      <div class="font-medium text-grayscale-900">{{ data[0] }}</div>
+                      <div class="text-xs text-grayscale-500">{{ data[1] }}</div>
                     </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="relative flex-1">
-              <div class="absolute hidden w-10 h-10 cursor-pointer md:inline" @click="switchRoute()">
-                <img
-                  src="~/assets/images/flip-button.svg"
-                  class="inline-block mt-4 -ml-5"
-                  alt="Flip Button"
-                />
-              </div>
-              <div
-                class="absolute inline w-10 h-10 -mt-5 cursor-pointer md:hidden right-4"
-                @click="switchRoute()"
-              >
-                <img
-                  src="~/assets/images/flip-button-mobile.svg"
-                  class="inline-block"
-                  alt="Flip Button"
-                />
-              </div>
-              <div
-                class="p-3 pl-6 border cursor-pointer md:rounded-tr-none"
-                @click="openDestination"
-                v-on-clickaway="closeDestination"
-              >
-                <div class="text-grayscale-400 text-2xs">To</div>
-                <div
-                  class="w-full border-none outline-none"
-                >
-                  <input type="hidden" name="des" :value="(selectedDestination) ? selectedDestination[0] : ''">
-                  {{ (selectedDestination[0]) ? selectedDestination[1] : (selectedOrigin[0]) ? 'Choose destination here' : 'Please choose origin first' }}
-                  <div v-if="isDestinationOpen" class="absolute w-full bg-white border left-0 top-[67px] overflow-y-auto max-h-[360px] shadow-custom">
-                    <div class="flex items-center px-6 py-4 border-b" v-for="(data, index) in destinationOptions" :key="index" @click="pickDestination(data)" v-if="destinationOptions.length>0">
-                      <div class="flex-grow">
-                        <div class="font-medium text-grayscale-900">{{ data[0] }}</div>
-                        <div class="text-xs text-grayscale-500">{{ data[1] }}</div>
-                      </div>
-                      <!-- <div class="flex-none text-sm font-medium text-grayscale-500">India</div> -->
-                    </div>
-                    <div v-if="destinationOptions.length==0" class="px-6 py-4">
-                      Data not found
-                    </div>
+                    <!-- <div class="flex-none text-sm font-medium text-grayscale-500">India</div> -->
                   </div>
                 </div>
               </div>
             </div>
           </div>
-          <div class="flex w-full mt-6 md:w-2/6 md:mt-0">
-            <div class="w-2/3 md:w-full">
-              <div class="p-3 border rounded-r-lg ">
-                <div class="flex">
-                  <div class="flex-1">
-                    <div class="text-grayscale-400 text-2xs">Depart</div>
-                    <client-only>
-                      <v-date-picker 
-                        v-model="departDate"
-                        :popover="{ visibility: 'click' }"
-                        class="cursor-pointer"
-                        :min-date='new Date()'
-                      >
-                        <template v-slot="{ inputValue, inputEvents }">
-                          <input
-                            class="w-full outline-none"
-                            :value="formatDepartDate"
-                            v-on="inputEvents"
-                            placeholder="dd/mm/yyyy"
-                            readonly
-                            name="dep_date"
-                          />
-                        </template>
-                      </v-date-picker>
-                    </client-only>
+          <div class="relative flex-1">
+            <div class="absolute hidden w-10 h-10 cursor-pointer md:inline" @click="switchRoute()">
+              <img
+                src="~/assets/images/flip-button.svg"
+                class="inline-block mt-4 -ml-5"
+                alt="Flip Button"
+              />
+            </div>
+            <div
+              class="absolute inline w-10 h-10 -mt-5 cursor-pointer md:hidden right-4"
+              @click="switchRoute()"
+            >
+              <img
+                src="~/assets/images/flip-button-mobile.svg"
+                class="inline-block"
+                alt="Flip Button"
+              />
+            </div>
+            <div
+              class="p-3 pl-6 border cursor-pointer md:rounded-tr-none"
+              @click="openDestination"
+              v-on-clickaway="closeDestination"
+            >
+              <div class="text-grayscale-400 text-2xs">To</div>
+              <div
+                class="w-full border-none outline-none"
+              >
+                <input type="hidden" name="des" :value="(selectedDestination) ? selectedDestination[0] : ''">
+                {{ (selectedDestination[0]) ? selectedDestination[1] : (selectedOrigin[0]) ? 'Choose destination here' : 'Please choose origin first' }}
+                <div v-if="isDestinationOpen" class="absolute w-full bg-white border left-0 top-[67px] overflow-y-auto max-h-[360px] shadow-custom">
+                  <div class="flex items-center px-6 py-4 border-b" v-for="(data, index) in destinationOptions" :key="index" @click="pickDestination(data)" v-if="destinationOptions.length>0">
+                    <div class="flex-grow">
+                      <div class="font-medium text-grayscale-900">{{ data[0] }}</div>
+                      <div class="text-xs text-grayscale-500">{{ data[1] }}</div>
+                    </div>
+                    <!-- <div class="flex-none text-sm font-medium text-grayscale-500">India</div> -->
                   </div>
-                  <div class="flex-1" v-if="routeType==1">
-                    <div class="text-grayscale-400 text-2xs">Return</div>
-                    <client-only>
-                      <v-date-picker 
-                        v-model="returnDate"
-                        :popover="{ visibility: 'click' }"
-                        class="cursor-pointer"
-                        :min-date='new Date()'
-                      >
-                        <template v-slot="{ inputValue, inputEvents }">
-                          <input
-                            class="w-full outline-none"
-                            :value="formatReturnDate"
-                            v-on="inputEvents"
-                            placeholder="dd/mm/yyyy"
-                            readonly
-                            name="ret_date"
-                          />
-                        </template>
-                      </v-date-picker>
-                    </client-only>
+                  <div v-if="destinationOptions.length==0" class="px-6 py-4">
+                    Data not found
                   </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <div class="flex flex-row-reverse mt-8">
-          <input type="hidden" name="loyalty_id" :value="(userData) ? userData.member_id : ''">
-          <span>
-            <button v-if="isButtonEnabled" type="submit" class="px-6 py-4 font-medium text-center text-white border-2 rounded-lg cursor-pointer border-primary-600 bg-primary-600">Check Schedule</button>
-          </span>
-          <div v-if="isSearching" class="px-6 py-4 font-medium text-center text-white border-2 rounded-lg cursor-pointer border-primary-600 bg-primary-600">Checking...</div>
-          <div v-if="!isButtonEnabled" class="px-6 py-4 font-medium text-center text-white bg-gray-200 border-2 border-transparent rounded-lg cursor-pointer">Check Schedule</div>
+        <div class="flex w-full mt-6 md:w-2/6 md:mt-0">
+          <div class="w-2/3 md:w-full">
+            <div class="p-3 border rounded-r-lg ">
+              <div class="flex">
+                <div class="flex-1">
+                  <div class="text-grayscale-400 text-2xs">Depart</div>
+                  <client-only>
+                    <v-date-picker 
+                      v-model="departDate"
+                      :popover="{ visibility: 'click' }"
+                      class="cursor-pointer"
+                      :min-date='new Date()'
+                    >
+                      <template v-slot="{ inputValue, inputEvents }">
+                        <input
+                          class="w-full outline-none"
+                          :value="formatDepartDate"
+                          v-on="inputEvents"
+                          placeholder="dd/mm/yyyy"
+                          readonly
+                          name="dep_date"
+                        />
+                      </template>
+                    </v-date-picker>
+                  </client-only>
+                </div>
+                <div class="flex-1" v-if="routeType==1">
+                  <div class="text-grayscale-400 text-2xs">Return</div>
+                  <client-only>
+                    <v-date-picker 
+                      v-model="returnDate"
+                      :popover="{ visibility: 'click' }"
+                      class="cursor-pointer"
+                      :min-date='new Date()'
+                    >
+                      <template v-slot="{ inputValue, inputEvents }">
+                        <input
+                          class="w-full outline-none"
+                          :value="formatReturnDate"
+                          v-on="inputEvents"
+                          placeholder="dd/mm/yyyy"
+                          readonly
+                          name="ret_date"
+                        />
+                      </template>
+                    </v-date-picker>
+                  </client-only>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-      <div v-else>
-        <HomepageTabBookMulticity />
+      <div class="flex flex-row-reverse mt-8">
+        <input type="hidden" name="loyalty_id" :value="(userData) ? userData.member_id : ''">
+        <div v-if="isSearching" class="px-6 py-4 font-medium text-center text-white border-2 rounded-lg cursor-pointer border-primary-600 bg-primary-600">Checking...</div>
+        <div 
+          class="px-6 py-4 font-medium text-center text-white border-2 border-transparent rounded-lg cursor-pointer"
+          :class="(isButtonEnabled) ? 'bg-primary-600' : 'bg-gray-200'"
+          @click="goCheckSchedule"
+        >
+          Check Schedule
+        </div>
       </div>
-    </form>
+    </div>
+    <div v-else>
+      <HomepageTabBookMulticity />
+    </div>
   </div>
 </template>
 
@@ -181,7 +182,7 @@ import cookie from 'js-cookie'
 import { mixin as clickaway } from 'vue-clickaway';
 
 export default {
-  name: "HomepageTabBook",
+  name: "HomepageFlightInfo",
   mixins: [ clickaway ],
   data() {
     return {
@@ -209,7 +210,7 @@ export default {
   computed: {
     formatDepartDate() {
       let value = new Date(this.departDate);
-      // value.setDate(value.getDate() + 1);
+      value.setDate(value.getDate() + 1);
       if (this.departDate) {
         value = value.toISOString().split('T')[0];
         let today = value;
@@ -220,7 +221,7 @@ export default {
     },
     formatReturnDate() {
       let value = new Date(this.returnDate);
-      // value.setDate(value.getDate() + 1);
+      value.setDate(value.getDate() + 1);
       if (this.returnDate) {
         value = value.toISOString().split('T')[0];
         let today = value;
@@ -386,6 +387,26 @@ export default {
     },
     goSearching() {
       this.isSearching = true;
+    },
+    formatDateSchedule(value) {
+      value = new Date(value);
+      if (value) {
+        value = value.toISOString().split('T')[0];
+        let today = value;
+        today = today.replace(/-/g, "");
+        return today;
+      }
+    },
+    goCheckSchedule() {
+      if (this.isButtonEnabled) {
+        let departDate = this.formatDateSchedule(this.departDate);
+        let returnDate = this.formatDateSchedule(this.returnDate);
+        if (this.routeType == 1) {
+          window.location.href = '/flight-info?org=' + this.selectedOrigin[0] + '&des=' + this.selectedDestination[0] + '&flight_date=' + departDate + '&ret_flight_date=' + returnDate + '&return_flight=1';
+        } else {
+          window.location.href = '/flight-info?org=' + this.selectedOrigin[0] + '&des=' + this.selectedDestination[0] + '&flight_date=' + departDate;
+        }
+      }
     },
   },
   mounted() {

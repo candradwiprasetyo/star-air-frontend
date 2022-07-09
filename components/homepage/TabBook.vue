@@ -261,7 +261,7 @@
             </div>
           </div>
         </div>
-        <div class="flex flex-row-reverse mt-8 ">
+        <div class="flex flex-row-reverse mt-8">
           <input type="hidden" name="loyalty_id" :value="(userData) ? userData.member_id : ''">
           <span>
             <button v-if="isButtonEnabled" type="submit" class="px-6 py-4 font-medium text-center text-white border-2 rounded-lg cursor-pointer border-primary-600 bg-primary-600">Search Flights</button>
