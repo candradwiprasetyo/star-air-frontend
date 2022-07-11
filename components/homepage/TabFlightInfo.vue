@@ -210,7 +210,7 @@ export default {
   computed: {
     formatDepartDate() {
       let value = new Date(this.departDate);
-      value.setDate(value.getDate() + 1);
+      // value.setDate(value.getDate() + 1);
       if (this.departDate) {
         value = value.toISOString().split('T')[0];
         let today = value;
@@ -221,7 +221,7 @@ export default {
     },
     formatReturnDate() {
       let value = new Date(this.returnDate);
-      value.setDate(value.getDate() + 1);
+      // value.setDate(value.getDate() + 1);
       if (this.returnDate) {
         value = value.toISOString().split('T')[0];
         let today = value;

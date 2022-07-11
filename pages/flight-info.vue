@@ -16,6 +16,7 @@ export default {
       returnFlight: null,
       dataAirport: [],
       isLoading: true,
+      activeTab: 1,
     };
   },
   methods: {
@@ -34,14 +35,6 @@ export default {
     loadOrigin() {
       this.$axios.$get(this.$config.myTempApi + '&app=data&action=get_org')
         .then( (response) => {
-          // response.origin.forEach(element => {
-          //   if (this.origin == element[0]) {
-          //     this.originName = element[1];
-          //   }
-          //   if (this.destination == element[0]) {
-          //     this.destinationName = element[1];
-          //   }
-          // });
           this.dataAirport = response.origin;
         })
         .catch(function (error) {
@@ -86,6 +79,17 @@ export default {
         return result;
       }
     },
+    formatDateBook(value) {
+      if (value) {
+        value = value.toString();
+        let year = value.substring(0,4);
+        let month = value.substring(4,6);
+        let date = value.slice(-2);
+
+        let result = date + '/' + month + '/' + year;
+        return result;
+      }
+    },
     getSchedule() {
       let returnFlight = '';
       if (this.returnFlight) { 
@@ -100,7 +104,7 @@ export default {
           });
           response.ret_schedule.forEach(element => {
             if (element[0]) {
-              this.dataSchedule.push(element[0])
+              this.dataReturnSchedule.push(element[0])
             }
           });
           this.isLoading = false;
@@ -114,6 +118,9 @@ export default {
       let minute = value.substring(value.length - 2);
       let result = hour + ':' + minute;
       return result;
+    },
+    changeTab(index) {
+      this.activeTab = index;
     },
   },
   mounted() {
@@ -166,6 +173,10 @@ export default {
             </div>
           </div>
         </div>
+        <div class="flex mt-10 mb-6 border-b">
+          <div class="pb-4 border-b-[6px] px-6 font-medium cursor-pointer" :class="(activeTab == 1) ? 'border-secondary-900 text-secondary-900' : 'border-transparent text-grayscale-400'" @click="changeTab(1)">Indira Gandhi Int. Airport To Chhatrapati Shivaji Int. Airport </div>
+          <div v-if="returnFlight" class="pb-4 border-b-[6px] px-6 font-medium cursor-pointer" :class="(activeTab == 2) ? 'border-secondary-900 text-secondary-900' : 'border-transparent text-grayscale-400'" @click="changeTab(2)">Chhatrapati Shivaji Int. Airport To Indira Gandhi Int. Airport  </div>
+        </div>
         <div
           class="
             mt-6
@@ -179,7 +190,7 @@ export default {
         >
           <table class="table-auto md:w-full custom-table w-[1200px]">
             <thead>
-              <tr>
+              <tr class="font-medium">
                 <th>No</th>
                 <th>Departure</th>
                 <th>Departure Time</th>
@@ -191,7 +202,17 @@ export default {
               </tr>
             </thead>
             <tbody>
-              <tr v-for="(data, index) in dataSchedule" :key="index">
+              <tr v-for="(data, index) in dataSchedule" :key="index" v-if="activeTab==1">
+                <td>{{ index+1 }}</td>
+                <td>{{ getAirportName(data[1]) }}</td>
+                <td>{{ formatDate(data[3]) }} {{ formatHour(data[5]) }}</td>
+                <td>{{ getAirportName(data[2]) }}</td>
+                <td>{{ formatDate(data[4]) }} {{ formatHour(data[6]) }}</td>
+                <td>{{ data[0] }}</td>
+                <td>{{ data[8] }}</td>
+                <td>{{ data[9] }}</td>
+              </tr>
+              <tr v-for="(data, index) in dataReturnSchedule" :key="index" v-if="activeTab==2">
                 <td>{{ index+1 }}</td>
                 <td>{{ getAirportName(data[1]) }}</td>
                 <td>{{ formatDate(data[3]) }} {{ formatHour(data[5]) }}</td>
@@ -208,8 +229,8 @@ export default {
           <div class="flex flex-row-reverse mt-8">
             <input type="hidden" name="org" :value="(origin) ? origin : ''">
             <input type="hidden" name="des" :value="(destination) ? destination : ''">
-            <input type="hidden" name="dep_date" :value="(departDate) ? departDate : ''">
-            <input type="hidden" name="ret_date" :value="(returnDate) ? returnDate : ''">
+            <input type="hidden" name="dep_date" :value="(departDate) ? formatDateBook(departDate) : ''">
+            <input type="hidden" name="ret_date" :value="(returnDate) ? formatDateBook(returnDate) : ''" v-if="returnDate">
             <input type="hidden" name="adult" value="1">
             <input type="hidden" name="child" value="0">
             <input type="hidden" name="infant" value="0">
