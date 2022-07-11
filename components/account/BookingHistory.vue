@@ -66,7 +66,19 @@
           />
         </div>
       </div>
-      <div class="p-6 overflow-hidden">
+      <div v-if="isLoading" class="flex items-center justify-center py-10 gap-x-6">
+        <img
+          src="~/assets/images/loading.gif"
+          class="inline-block"
+          alt="Loading"
+          width="64"
+        />
+        <div>
+          <div class="text-lg font-semibold text-grayscale-900">Loading</div>
+          <div class="mt-2 text-grayscale-500">Processing data, please wait...</div>
+        </div>
+      </div>
+      <div class="p-6 overflow-hidden" v-if="!isLoading">
         <div
           class="
             md:px-0 md:-mx-0
@@ -101,20 +113,6 @@
                 <td colspan="5" align="center">Data history kosong</td>
               </tr>
             </tbody>
-            <!-- <tfoot>
-              <tr>
-                <th colspan="2">Show 1 to 5 of 56 entries:</th>
-                <th colspan="3" class="text-right">
-                  <div class="flex justify-end gap-x-10">
-                    <div class="flex-none">1</div>
-                    <div class="flex-none">2</div>
-                    <div class="flex-none">3</div>
-                    <div class="flex-none">4</div>
-                    <div class="flex-none">Next</div>
-                  </div>
-                </th>
-              </tr>
-            </tfoot> -->
           </table>
         </div>
       </div>
@@ -133,6 +131,7 @@ export default {
       keyword: null,
       startDate: null,
       endDate: null,
+      isLoading: false,
     }
   },
   props: {
@@ -154,9 +153,10 @@ export default {
       this.loadData();
     },
     loadData() {
+      this.isLoading = true;
       let formData = new FormData();
-      // formData.append('member_id', this.userData.member_id);
-      formData.append('member_id', 'SQV003');
+      formData.append('member_id', this.userData.member_id);
+      // formData.append('member_id', 'SQV003');
       formData.append('token', this.$config.myToken);
       formData.append('airline_code', this.$config.myAirlineCode);
       formData.append('start_date', this.formatDate(this.startDate));
@@ -166,6 +166,7 @@ export default {
       this.$axios.$post('/api/information/get-booking-history', formData)
         .then( (response) => {
           this.data = response.result;
+          this.isLoading = false;
         })
         .catch(function (error) {
           console.log(error)

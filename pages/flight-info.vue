@@ -148,6 +148,18 @@ export default {
         occaecat cupidatat non proident, sunt in culpa qui officia deserunt
         mollit anim id est laborum.
       </div>
+      <div v-if="isLoading" class="flex items-center justify-center py-10 gap-x-6">
+        <img
+          src="~/assets/images/loading.gif"
+          class="inline-block"
+          alt="Loading"
+          width="64"
+        />
+        <div>
+          <div class="text-lg font-semibold text-grayscale-900">Loading</div>
+          <div class="mt-2 text-grayscale-500">Processing data, please wait...</div>
+        </div>
+      </div>
       <div v-if="!isLoading">
         <div class="block p-6 mt-10 bg-light-blue rounded-xl">
           <div class="md:flex gap-x-6">
