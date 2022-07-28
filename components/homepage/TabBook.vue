@@ -177,7 +177,7 @@
               >
                 <div class="text-grayscale-400 text-2xs">Passanger/Class</div>
                 {{ (passangerTotal) + ' Pax' }}
-                <div v-if="isPassangerOpen" class="absolute w-80 bg-white border right-0 top-[67px] max-h-[360px] shadow-custom">
+                <div class="absolute w-80 bg-white border right-0 top-[67px] max-h-[360px] shadow-custom" :class="(isPassangerOpen) ? 'block' : 'hidden'">
                   <div class="flex items-center p-4 border-b">
                     <div class="flex-1 text-grayscale-900">Adult (12+)</div>
                     <div class="flex items-center flex-1 gap-2">
@@ -217,7 +217,7 @@
                         />
                       </div>
                       <div class="flex-none">
-                        <input name="child" type="text" class="p-3 text-center border rounded-lg" size="2" v-model="passangerChild" />
+                        <input name="child" type="text" class="p-3 text-center border rounded-lg" size="2" :value="passangerChild" />
                       </div>
                       <div class="flex-none">
                         <img
@@ -243,7 +243,7 @@
                         />
                       </div>
                       <div class="flex-none">
-                        <input name="infant" type="text" class="p-3 text-center border rounded-lg" size="2" v-model="passangerInfant" />
+                        <input name="infant" type="text" class="p-3 text-center border rounded-lg" size="2" :value="passangerInfant" />
                       </div>
                       <div class="flex-none">
                         <img
