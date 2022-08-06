@@ -183,11 +183,11 @@
                     <div class="flex items-center flex-1 gap-2">
                       <div class="flex-none">
                         <img
-                          src="~/assets/images/add.png"
+                          src="~/assets/images/subtract.png"
                           class="inline-block"
-                          alt="Add Button"
+                          alt="Subtract Button"
                           width="32"
-                          @click="addPassanger(1)"
+                          @click="subtractPassanger(1)"
                         />
                       </div>
                       <div class="flex-none">
@@ -195,11 +195,11 @@
                       </div>
                       <div class="flex-none">
                         <img
-                          src="~/assets/images/subtract.png"
+                          src="~/assets/images/add.png"
                           class="inline-block"
-                          alt="Subtract Button"
+                          alt="Add Button"
                           width="32"
-                          @click="subtractPassanger(1)"
+                          @click="addPassanger(1)"
                         />
                       </div>
                     </div>
@@ -209,11 +209,11 @@
                     <div class="flex items-center flex-1 gap-2">
                       <div class="flex-none">
                         <img
-                          src="~/assets/images/add.png"
+                          src="~/assets/images/subtract.png"
                           class="inline-block"
-                          alt="Add Button"
+                          alt="Subtract Button"
                           width="32"
-                          @click="addPassanger(2)"
+                          @click="subtractPassanger(2)"
                         />
                       </div>
                       <div class="flex-none">
@@ -221,11 +221,11 @@
                       </div>
                       <div class="flex-none">
                         <img
-                          src="~/assets/images/subtract.png"
+                          src="~/assets/images/add.png"
                           class="inline-block"
-                          alt="Subtract Button"
+                          alt="Add Button"
                           width="32"
-                          @click="subtractPassanger(2)"
+                          @click="addPassanger(2)"
                         />
                       </div>
                     </div>
@@ -235,11 +235,11 @@
                     <div class="flex items-center flex-1 gap-2">
                       <div class="flex-none">
                         <img
-                          src="~/assets/images/add.png"
+                          src="~/assets/images/subtract.png"
                           class="inline-block"
-                          alt="Add Button"
+                          alt="Subtract Button"
                           width="32"
-                          @click="addPassanger(3)"
+                          @click="subtractPassanger(3)"
                         />
                       </div>
                       <div class="flex-none">
@@ -247,11 +247,11 @@
                       </div>
                       <div class="flex-none">
                         <img
-                          src="~/assets/images/subtract.png"
+                          src="~/assets/images/add.png"
                           class="inline-block"
-                          alt="Subtract Button"
+                          alt="Add Button"
                           width="32"
-                          @click="subtractPassanger(3)"
+                          @click="addPassanger(3)"
                         />
                       </div>
                     </div>
