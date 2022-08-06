@@ -310,7 +310,7 @@ export default {
       this.isPassangerOpen = false
     },
     loadOrigin() {
-      this.$axios.$get('http://ws.demo.awan.sqiva.com/?rqid=H5KM9F6D-7ZG9-LBVE-S6ZE-7Y6XPDGBBLMG&airline_code=RS5&app=data&action=get_org')
+      this.$axios.$get(this.$config.myTempApi + '&app=data&action=get_org')
         .then( (response) => {
           this.originOptions = response.origin;
         })
@@ -319,7 +319,7 @@ export default {
         })
     },
     loadDestination() {
-      this.$axios.$get('http://ws.demo.awan.sqiva.com/?rqid=H5KM9F6D-7ZG9-LBVE-S6ZE-7Y6XPDGBBLMG&airline_code=RS5&app=data&action=get_org_des')
+      this.$axios.$get(this.$config.myTempApi + '&app=data&action=get_org_des')
         .then( (response) => {
           // this.destinationOptions = response.destination;
           this.destinationOptions = []
@@ -344,7 +344,7 @@ export default {
         })
     },
     loadAllDestination() {
-      this.$axios.$get('http://ws.demo.awan.sqiva.com/?rqid=H5KM9F6D-7ZG9-LBVE-S6ZE-7Y6XPDGBBLMG&airline_code=RS5&app=data&action=get_des')
+      this.$axios.$get(this.$config.myTempApi + '&app=data&action=get_des')
         .then( (response) => {
           this.allDestinationOptions = response.destination;
         })
