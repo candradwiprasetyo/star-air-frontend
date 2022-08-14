@@ -102,7 +102,7 @@
     <div class="flex w-full mt-6 md:w-1/6 md:mt-0">
       <div class="w-full" v-if="countIndex == 0">
         <div 
-          class="relative p-3 border rounded-lg cursor-pointer md:rounded-r-lg md:rounded-none"
+          class="relative p-3 border cursor-pointer md:rounded-none"
           @click="openPassanger"
           v-on-clickaway="closePassanger"
         >
@@ -218,6 +218,21 @@
         </div>
       </div>
     </div>
+    <div class="relative flex w-full mt-6 md:w-1/12 md:mt-0" v-if="countIndex==0">
+      <div class="w-full">
+        <div 
+          class="relative p-3 border rounded-lg cursor-pointer md:rounded-r-lg md:rounded-none"
+        >
+          <div class="text-grayscale-400 text-2xs">Promo</div>
+          <input type="text" name="promo_code" class="w-full outline-none" />
+          <div class="absolute flex items-center justify-center w-5 h-5 bg-gray-200 rounded-full top-6 right-3" @mouseover="toggleTooltip" @mouseleave="toggleTooltip" >i</div>
+        </div>
+      </div>
+      <div class="absolute right-0 p-4 text-sm text-white rounded bg-primary-600 w-60 top-16" v-if="tooltip">
+        <div class="font-bold">Promo</div>
+        <div class="">A Promotion code is alpha-numeric code, which relates to a special offer. This code is provided as part of a special promotion and will be valid for that particular offer and period only..</div>
+      </div>
+    </div>
   </div>
 </template>
 
@@ -248,6 +263,7 @@ export default {
       returnDate: null,
       isButtonEnabled: false,
       userData: null,
+      tooltip: false,
     };
   },
   props: {
@@ -458,6 +474,9 @@ export default {
     },
     onDateChange() {
       this.$emit('onDepartChange', this.departDate, this.countIndex);
+    },
+    toggleTooltip() {
+      this.tooltip = !this.tooltip;
     }
   },
   mounted() {

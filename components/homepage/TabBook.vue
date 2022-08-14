@@ -46,7 +46,7 @@
     <form target="_top" id="formSearchSchedule" class="" method=POST action="https://test-starair.paxlinks.com/search-schedule">
       <div v-if="routeType!=3">
         <div class="mt-6 md:flex">
-          <div class="w-full md:w-4/6 md:flex">
+          <div class="w-full md:w-7/12 md:flex">
             <div class="relative flex-1">
               <div
                 class="p-3 border rounded-t-lg cursor-pointer md:rounded-l-lg md:rounded-tr-none"
@@ -116,7 +116,7 @@
               </div>
             </div>
           </div>
-          <div class="flex w-full mt-6 md:w-1/6 md:mt-0">
+          <div class="flex w-full mt-6 md:w-3/12 md:mt-0">
             <div class="w-2/3 md:w-full">
               <div class="p-3 border rounded-r-lg md:rounded-r-none">
                 <div class="flex">
@@ -168,10 +168,10 @@
               </div>
             </div>
           </div>
-          <div class="flex w-full mt-6 md:w-1/6 md:mt-0">
+          <div class="flex w-full mt-6 md:w-1/12 md:mt-0">
             <div class="w-full">
               <div 
-                class="relative p-3 border rounded-lg cursor-pointer md:rounded-r-lg md:rounded-none"
+                class="relative p-3 border cursor-pointer md:rounded-none"
                 @click="openPassanger"
                 v-on-clickaway="closePassanger"
               >
@@ -260,6 +260,21 @@
               </div>
             </div>
           </div>
+          <div class="relative flex w-full mt-6 md:w-1/12 md:mt-0">
+            <div class="w-full">
+              <div 
+                class="relative p-3 border rounded-lg cursor-pointer md:rounded-r-lg md:rounded-none"
+              >
+                <div class="text-grayscale-400 text-2xs">Promo</div>
+                <input type="text" name="promo_code" class="w-full outline-none" />
+                <div class="absolute flex items-center justify-center w-5 h-5 bg-gray-200 rounded-full top-6 right-3" @mouseover="toggleTooltip" @mouseleave="toggleTooltip" >i</div>
+              </div>
+            </div>
+            <div class="absolute right-0 p-4 text-sm text-white rounded bg-primary-600 w-60 top-16" v-if="tooltip">
+              <div class="font-bold">Promo</div>
+              <div class="">A Promotion code is alpha-numeric code, which relates to a special offer. This code is provided as part of a special promotion and will be valid for that particular offer and period only..</div>
+            </div>
+          </div>
         </div>
         <div class="flex flex-row-reverse mt-8">
           <input type="hidden" name="loyalty_id" :value="(userData) ? userData.member_id : ''">
@@ -305,6 +320,7 @@ export default {
       isButtonEnabled: false,
       userData: null,
       isSearching: false,
+      tooltip: false,
     };
   },
   computed: {
@@ -488,6 +504,9 @@ export default {
     goSearching() {
       this.isSearching = true;
     },
+    toggleTooltip() {
+      this.tooltip = !this.tooltip;
+    }
   },
   mounted() {
     this.loadUser()
