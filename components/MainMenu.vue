@@ -24,13 +24,23 @@
                 alt="arrow bottom"
               />
             </div>
-            <div class="flex-none">
+            <div 
+              class="relative flex-none cursor-pointer"
+              @click="openRedeemMenu"
+              v-on-clickaway="closeRedeemMenu"
+            >
               Redeem
               <img
                 src="~/assets/images/arrow-bottom-gray.svg"
                 class="inline-block"
                 alt="arrow bottom"
               />
+              <div class="absolute text-sm font-medium bg-white rounded-b-lg shadow-xl w-52 top-14" v-if="isRedemMenuOpen">
+                <div class="px-5 py-3 cursor-pointer" @click="goToUrl('/redem-points-detail?data=1')">Book a flight</div>
+                <div class="px-5 py-3 cursor-pointer" @click="goToUrl('/redem-points-detail?data=2')">Extra baggage</div>
+                <div class="px-5 py-3 cursor-pointer" @click="goToUrl('/redem-points-detail?data=3')">Convert to Partner Points</div>
+                <div class="px-5 py-3 cursor-pointer" @click="goToUrl('/redem-points-detail?data=4')">Shop & Pay</div>
+              </div>
             </div>
             <div class="flex-none">Shop</div>
             <div class="flex-none">
@@ -89,11 +99,11 @@
                   </div>
                 </div>
                 <div class="absolute w-48 text-sm font-medium bg-white rounded-lg shadow-xl top-20" v-if="isMenuOpen">
-                  <div class="px-5 py-3 cursor-pointer" @click="goToUrl('overview')">Overview</div>
-                  <div class="px-5 py-3 cursor-pointer" @click="goToUrl('user-profile')">User Profile</div>
-                  <div class="px-5 py-3 cursor-pointer" @click="goToUrl('booking-history')">Booking History</div>
-                  <div class="px-5 py-3 cursor-pointer" @click="goToUrl('star-points')">Star Points</div>
-                  <div class="px-5 py-3 cursor-pointer" @click="goToUrl('extend-membership')">Extend Membership</div>
+                  <div class="px-5 py-3 cursor-pointer" @click="goToUrl('/account?page=overview')">Overview</div>
+                  <div class="px-5 py-3 cursor-pointer" @click="goToUrl('/account?page=user-profile')">User Profile</div>
+                  <div class="px-5 py-3 cursor-pointer" @click="goToUrl('/account?page=booking-history')">Booking History</div>
+                  <div class="px-5 py-3 cursor-pointer" @click="goToUrl('/account?page=star-points')">Star Points</div>
+                  <div class="px-5 py-3 cursor-pointer" @click="goToUrl('/account?page=extend-membership')">Extend Membership</div>
                   <div @click="goLogout()" class="px-5 pt-3 pb-5 cursor-pointer">Logout</div>
                 </div>
               </div>
@@ -266,8 +276,11 @@
 
 <script>
 import cookie from 'js-cookie'
+import { mixin as clickaway } from 'vue-clickaway';
+
 export default {
   name: "MainMenu",
+  mixins: [ clickaway ],
   data() {
     return {
       dataLogged: null,
@@ -275,6 +288,7 @@ export default {
       isMenuOpen: false,
       userData: [],
       isLoading: true,
+      isRedemMenuOpen: false,
     }
   },
   mounted() {
@@ -329,7 +343,13 @@ export default {
       this.isMenuOpen = !this.isMenuOpen;
     },
     goToUrl(url) {
-      window.location.href = '/account?page=' + url;
+      window.location.href = url;
+    },
+    openRedeemMenu() {
+      this.isRedemMenuOpen = true;
+    },
+    closeRedeemMenu() {
+      this.isRedemMenuOpen = false;
     },
   },
   

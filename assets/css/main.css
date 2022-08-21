@@ -76,6 +76,10 @@ body {
     background: rgba(82, 170, 246, 0.15);
   }
 
+  .bg-light-blue-2 {
+    background: #DCEEFD;
+  }
+
   .bg-login {
     background-image: url('~assets/images/bg-login.png');
     background-repeat: no-repeat;
@@ -146,6 +150,14 @@ body {
 
   .border-primary-600 {
     border-color: #DA3934;
+  }
+  
+  .border-grayscale-200 {
+    border-color: #E2E8F0;
+  }
+
+  .border-grayscale-300 {
+    border-color: #CBD5E1;
   }
 
   .border-b-6 {

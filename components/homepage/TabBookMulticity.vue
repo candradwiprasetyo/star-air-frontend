@@ -12,15 +12,15 @@
           @subtractPassanger="subtractPassanger"
           @onDepartChange="onDepartChange"
           :isAddButton="(selectedAction)==countData && countData <= 3"
-          :isDeleteButton="(selectedAction)==countData && countData > 2"
+          :isDeleteButton="countData > 1"
         />
       </div>
-      <div class="flex flex-row-reverse mt-8">
+      <div class="flex flex-row-reverse -mt-[68px]">
         <input type="hidden" name="loyalty_id" :value="(userData) ? userData.member_id : ''">
         <input type="hidden" name="multi_route" :value="multiRoute">
         <input type="hidden" name="multi_date" :value="multiDate">
-        <button v-if="isButtonEnabled" type="submit" class="px-6 py-4 font-medium text-center text-white border-2 rounded-lg cursor-pointer border-primary-600 bg-primary-600">Search Flights</button>
-        <div v-if="!isButtonEnabled" class="px-6 py-4 font-medium text-center text-white bg-gray-200 border-2 border-transparent rounded-lg cursor-pointer">Search Flights</div>
+        <button v-if="isButtonEnabled" type="submit" class="px-6 py-5 font-medium text-center text-white border-2 rounded-lg cursor-pointer border-primary-600 bg-primary-600">Search Flights</button>
+        <div v-if="!isButtonEnabled" class="px-6 py-5 font-medium text-center text-white bg-gray-200 border-2 border-transparent rounded-lg cursor-pointer">Search Flights</div>
       </div>
     </div>
   </div>
@@ -279,7 +279,7 @@ export default {
       this.selectedAction++;
       this.formChanged()
     },
-    deleteCountData() {
+    deleteCountData(countIndex) {
       this.countData--;
       this.selectedAction--;
       this.formChanged()

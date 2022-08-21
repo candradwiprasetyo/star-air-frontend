@@ -267,12 +267,18 @@
               >
                 <div class="text-grayscale-400 text-2xs">Promo</div>
                 <input type="text" name="promo_code" class="w-full outline-none" />
-                <div class="absolute flex items-center justify-center w-5 h-5 bg-gray-200 rounded-full top-6 right-3" @mouseover="toggleTooltip" @mouseleave="toggleTooltip" >i</div>
+                <div class="absolute flex items-center justify-center w-5 h-5 top-6 right-3" @mouseover="toggleTooltip" @mouseleave="toggleTooltip" >
+                  <img
+                    src="~/assets/images/info.png"
+                    class="inline-block"
+                    alt="promo"
+                  />
+                </div>  
               </div>
             </div>
-            <div class="absolute right-0 p-4 text-sm text-white rounded bg-primary-600 w-60 top-16" v-if="tooltip">
-              <div class="font-bold">Promo</div>
-              <div class="">A Promotion code is alpha-numeric code, which relates to a special offer. This code is provided as part of a special promotion and will be valid for that particular offer and period only..</div>
+            <div class="absolute right-0 border rounded-lg bg-light-blue-2 w-60 top-16 border-grayscale-300" v-if="tooltip">
+              <div class="p-4 text-lg font-bold border-b border-grayscale-300 text-secondary-900">Promo Code</div>
+              <div class="p-4 text-grayscale-500">A Promotion code is alpha-numeric code, which relates to a special offer. This code is provided as part of a special promotion and will be valid for that particular offer and period only..</div>
             </div>
           </div>
         </div>
@@ -314,7 +320,7 @@ export default {
       passangerChild: 0,
       passangerInfant: 0,
       passangerTotal: 1,
-      routeType: 1,
+      routeType: 3,
       departDate: null,
       returnDate: null,
       isButtonEnabled: false,
