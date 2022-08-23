@@ -32,7 +32,7 @@
               </tr>
             </thead>
             <tbody v-if="overviewData.length>0">
-              <tr v-for="(data, index) in overviewData" :key="index">
+              <tr v-for="(data, index) in overviewData" :key="index" v-if="index<10">
                 <td>{{ data.entry_date }}</td>
                 <td>{{ data.validity }}</td>
                 <td>{{ data.action }}</td>
