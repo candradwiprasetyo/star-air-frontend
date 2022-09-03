@@ -320,7 +320,7 @@ export default {
       passangerChild: 0,
       passangerInfant: 0,
       passangerTotal: 1,
-      routeType: 3,
+      routeType: 1,
       departDate: null,
       returnDate: null,
       isButtonEnabled: false,
