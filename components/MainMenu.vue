@@ -16,13 +16,23 @@
         <div class="flex-grow">
           <div class="flex items-center justify-end gap-x-12">
             <div class="flex-none cursor-pointer" @click="goToHome()">Home</div>
-            <div class="flex-none">
+            <div 
+              class="relative flex-none cursor-pointer"
+              @click="openEarnMenu"
+              v-on-clickaway="closeEarnMenu"
+            >
               Earn
               <img
                 src="~/assets/images/arrow-bottom-gray.svg"
                 class="inline-block"
                 alt="arrow bottom"
               />
+              <div class="absolute text-sm font-medium bg-white rounded-b-lg shadow-xl w-52 top-14" v-if="isEarnMenuOpen">
+                <div class="px-5 py-3 cursor-pointer" @click="goToUrl('/earn-points')">How to Earn Points</div>
+                <div class="px-5 py-3 cursor-pointer" @click="goToUrl('/earn-points')">Claim Missing Points</div>
+                <div class="px-5 py-3 cursor-pointer" @click="goToUrl('/earn-points')">Buy Points</div>
+                <div class="px-5 py-3 cursor-pointer" @click="goToUrl('/earn-points')">Transfer Points</div>
+              </div>
             </div>
             <div 
               class="relative flex-none cursor-pointer"
@@ -289,6 +299,7 @@ export default {
       userData: [],
       isLoading: true,
       isRedemMenuOpen: false,
+      isEarnMenuOpen: false,
     }
   },
   mounted() {
@@ -350,6 +361,12 @@ export default {
     },
     closeRedeemMenu() {
       this.isRedemMenuOpen = false;
+    },
+    openEarnMenu() {
+      this.isEarnMenuOpen = true;
+    },
+    closeEarnMenu() {
+      this.isEarnMenuOpen = false;
     },
   },
   
