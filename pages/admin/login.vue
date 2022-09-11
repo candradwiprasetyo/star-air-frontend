@@ -74,18 +74,10 @@
 <template>
   <div>
     <div class="flex w-full h-auto h-screen">
-      <div class="flex-wrap content-center justify-center flex-1 hidden bg-cover md:flex">
-        <img
-          src="~/assets/images/logo.png"
-          class="inline-block cursor-pointer"
-          alt="Logo"
-          width="200"
-          @click="goToHome()"
-        />
-      </div>
-      <div class="flex flex-wrap content-center justify-center flex-1 bg-gray-100">
+      <div class="flex-1 hidden bg-cover md:inline bg-login"></div>
+      <div class="flex flex-wrap content-center justify-center flex-1 bg-white">
         <div class="w-full mx-6 md:w-1/2 md:mx-auto">
-          <NuxtLink to="/">
+          <a href="/">
             <div class="flex items-center mb-6 cursor-pointer text-grayscale-900">
               <img
                 src="~/assets/images/arrow-left.svg"
@@ -94,7 +86,7 @@
               />
               Back to Home
             </div>
-          </NuxtLink>
+          </a>
           <div class="text-3xl font-semibold">Login to Admin Page</div>
           <Input
             placeholder="Fill your username here"
