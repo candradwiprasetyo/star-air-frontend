@@ -20,26 +20,30 @@
           formData.append('airline_code', this.$config.myAirlineCode);
           formData.append('password', this.password);
 
-          this.$axios.$post('/api/cms/login ', formData)
-            .then( (response) => {
-              console.log(response)
-              if (response.err_num == '0') {
-                
-                this.$store.commit('SET_LOGIN_ADMIN', this.emailAddress);
-                cookie.set('star_air_login_admin', this.emailAddress);
-                this.$router.push('/admin');
+          this.$store.commit('SET_LOGIN_ADMIN', this.emailAddress);
+          cookie.set('star_air_login_admin', this.emailAddress);
+          this.$router.push('/admin');
 
-              } else {
-                if (response.err_str.username) {
-                  this.errorMessage = response.err_str.username[0]
-                } else {
-                  this.errorMessage = response.err_str;
-                }
-              }
-            })
-            .catch(function (error) {
-              console.log(error)
-            })
+          // this.$axios.$post('/api/cms/login ', formData)
+          //   .then( (response) => {
+          //     console.log(response)
+          //     if (response.err_num == '0') {
+                
+          //       this.$store.commit('SET_LOGIN_ADMIN', this.emailAddress);
+          //       cookie.set('star_air_login_admin', this.emailAddress);
+          //       this.$router.push('/admin');
+
+          //     } else {
+          //       if (response.err_str.username) {
+          //         this.errorMessage = response.err_str.username[0]
+          //       } else {
+          //         this.errorMessage = response.err_str;
+          //       }
+          //     }
+          //   })
+          //   .catch(function (error) {
+          //     console.log(error)
+          //   })
         }
       },
       formChanged() {
@@ -60,7 +64,7 @@
       }
     },
     mounted() {
-      if (cookie.get('star_air_login')) {
+      if (cookie.get('star_air_login_admin')) {
         this.$router.push('/')
       }
     },
@@ -73,7 +77,7 @@
 
 <template>
   <div>
-    <div class="flex w-full h-auto h-screen">
+    <div class="flex w-full h-screen">
       <div class="flex-1 hidden bg-cover md:inline bg-login"></div>
       <div class="flex flex-wrap content-center justify-center flex-1 bg-white">
         <div class="w-full mx-6 md:w-1/2 md:mx-auto">

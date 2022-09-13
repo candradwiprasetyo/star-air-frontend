@@ -8,10 +8,12 @@
   },
   "dependencies": {
     "@nuxtjs/axios": "^5.13.6",
+    "cookie-universal-nuxt": "^2.2.2",
     "js-cookie": "^3.0.1",
     "nuxt": "^2.15.8",
     "v-calendar": "^2.4.1",
     "vue-clickaway": "^2.2.2",
+    "vue-good-table": "^2.21.11",
     "vue-multiselect": "^2.1.6"
   },
   "devDependencies": {

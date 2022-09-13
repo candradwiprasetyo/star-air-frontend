@@ -2,11 +2,15 @@ import cookie from "cookie";
 
 export const state = () => ({
   isLogin: false,
+  isLoginAdmin: false
 });
 
 export const mutations = {
   SET_LOGIN(state, data) {
     state.isLogin = data;
+  },
+  SET_LOGIN_ADMIN(state, data) {
+    state.isLoginAdmin = data;
   },
 };
 
