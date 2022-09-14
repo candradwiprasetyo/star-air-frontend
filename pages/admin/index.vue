@@ -41,7 +41,7 @@ export default {
         '?token=' + this.$config.myToken +
         '&airline_code=' + this.$config.myAirlineCode +
         '&username=' + this.username +
-        'airline=sqiva';
+        '&airline=sqiva';
     
       this.$axios.$get('/api/cms/get-cms-list' + param)
         .then( (response) => {

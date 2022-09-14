@@ -22,7 +22,9 @@ export default {
         { id: 7, cover: 'earn-point-7.jpg',title: 'Book a Ticket at Trip.com', description: 'Book your flight at trip.com and get Star Points as your rewards.' },
         { id: 8, cover: 'earn-point-8.jpg',title: 'Grab Rewards Points', description: 'Get Star Points rewards when ever you take a trip with GrabCar or GrabBike.' },
         { id: 9, cover: 'earn-point-9.jpg',title: 'Convert Taxi Points', description: 'Get Star Points rewards everytime you drive with Taxi in New Delhi.' },
-      ]
+      ],
+      dataContent: [],
+      isLoaded: false,
     };
   },
   methods: {
@@ -31,9 +33,35 @@ export default {
     },
     getPic(img) {
       return '~/assets/images/' + img;
-    }
+    },
+    loadData() {
+      let param = 
+        '?token=' + this.$config.myToken +
+        '&airline_code=' + this.$config.myAirlineCode +
+        '&airline=sqiva';
+    
+      this.$axios.$get('/api/cms/get-cms-list' + param)
+        .then( (response) => {
+          this.dataContent = response.result.data;
+          this.isLoaded = true
+        })
+        .catch(function (error) {
+          console.log(error)
+        })
+    },
+    getDataContent(content_id) {
+      let result = null;
+      this.dataContent.forEach(element => {
+        if (element.CONTENT_ID == content_id) {
+          result = element.CONTENT
+        }
+      });
+      return result;
+    },
   },
-  mounted() {},
+  mounted() {
+    this.loadData()
+  },
 };
 </script>
 
@@ -43,10 +71,10 @@ export default {
     <MainMenu />
     <div class="container px-6 py-6 mx-auto md:py-14 md:px-0">
       <div class="text-3xl font-semibold text-grayscale-900 font-noto-sans">
-        How to Earn Points
+        {{(getDataContent('title_how_to_earn_detail')) ? getDataContent('title_how_to_earn_detail') : 'How to Earn Points'}}
       </div>
       <div class="mt-3 text-sm text-grayscale-500 md:text-base">
-        Star Points are the reward points you earn when you travel with Star Air or our airline partners. You can also earn Star Points by using any of our more than 1.200 global partners. Star Points are taking you further than ever before. Every time you spend or earn your Star Points balance will be valid for a further 36 months. Keeping your balance active has never been easier, with all the ways you can earn and redeem Qpoints in the air, and on the ground. Check out your Star Points balance now and see how long you have to keep them active.
+        {{(getDataContent('desc_how_to_earn_detail')) ? getDataContent('desc_how_to_earn_detail') : ''}}
       </div>
       <div class="hidden mt-10 md:block">
         <div

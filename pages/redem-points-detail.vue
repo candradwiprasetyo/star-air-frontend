@@ -10,15 +10,42 @@ export default {
         { id: 3, name: 'Convert Points to Partner Points' },
         { id: 4, name: 'Shop & Pay' },
       ],
+      dataContent: [],
+      isLoaded: false,
     };
   },
   methods: {
     changeMenu(id) {
       this.activeMenu = id;
-    }
+    },
+    loadData() {
+      let param = 
+        '?token=' + this.$config.myToken +
+        '&airline_code=' + this.$config.myAirlineCode +
+        '&airline=sqiva';
+    
+      this.$axios.$get('/api/cms/get-cms-list' + param)
+        .then( (response) => {
+          this.dataContent = response.result.data;
+          this.isLoaded = true
+        })
+        .catch(function (error) {
+          console.log(error)
+        })
+    },
+    getDataContent(content_id) {
+      let result = null;
+      this.dataContent.forEach(element => {
+        if (element.CONTENT_ID == content_id) {
+          result = element.CONTENT
+        }
+      });
+      return result;
+    },
   },
   mounted() {
     this.activeMenu = (this.$route.query.data) ? this.$route.query.data : this.activeMenu;
+    this.loadData()
   },
 };
 </script>
@@ -29,18 +56,10 @@ export default {
     <MainMenu />
     <div class="container px-6 py-6 mx-auto md:py-14 md:px-0">
       <div class="text-3xl font-semibold text-grayscale-900 font-noto-sans">
-        Redeem Points
+        {{(getDataContent('title_reedem_point')) ? getDataContent('title_reedem_point') : 'How to Earn Points'}}
       </div>
       <div class="mt-3 text-sm text-grayscale-500 md:text-base">
-        You can redeem your Star Points for a wide range of rewards, such as
-        complimentary flights, cabin upgrades and excess baggage allowances with
-        Star Air. In addition, you can use Star Points to redeem hotel stays,
-        award flights with our partner airlines, or make purchases at Star Air
-        Free. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac
-        mauris vitae sem posuere blandit. Nam pretium venenatis bibendum. Nam
-        eget ante eu metus consequat semper non ac nunc. Duis semper massa nec
-        tellus lacinia, id semper neque lobortis. Donec sit amet eros leo. Sed
-        lacinia vestibulum lorem, vel imperdiet ipsum.
+        {{(getDataContent('desc_reedem_point')) ? getDataContent('desc_reedem_point') : ''}}
       </div>
       <div class="mt-16 md:flex gap-x-8">
         <div class="p-6 pb-0 mb-6 border md:w-1/3 rounded-xl text-grayscale-500">

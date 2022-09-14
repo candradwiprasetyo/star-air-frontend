@@ -1,17 +1,46 @@
 <script lang="ts">
+import cookie from 'js-cookie'
 export default {
   name: "Homepage",
   data() {
     return {
       activeMember: 1,
+      username: null,
+      dataContent: [],
+      isLoaded: false,
     };
   },
   methods: {
     changeActiveMember(id) {
       this.activeMember = id;
     },
+    loadData() {
+      let param = 
+        '?token=' + this.$config.myToken +
+        '&airline_code=' + this.$config.myAirlineCode +
+        '&airline=sqiva';
+    
+      this.$axios.$get('/api/cms/get-cms-list' + param)
+        .then( (response) => {
+          this.dataContent = response.result.data;
+          this.isLoaded = true
+        })
+        .catch(function (error) {
+          console.log(error)
+        })
+    },
+    getDataContent(content_id) {
+      let result = null;
+      this.dataContent.forEach(element => {
+        if (element.CONTENT_ID == content_id) {
+          result = element.CONTENT
+        }
+      });
+      return result;
+    },
   },
   mounted() {
+    this.loadData()
   },
 };
 </script>
@@ -35,24 +64,14 @@ export default {
       </NuxtLink>
     </div>
     <HomepageAdvancedSearch />
-    <div class="container px-6 py-6 mx-auto md:py-14 md:px-0">
-      <div class="text-3xl font-semibold text-grayscale-900 font-noto-sans">
-        About Star Club
+    <div class="container px-6 py-6 mx-auto md:py-14 md:px-0" v-if="isLoaded">
+      <div class="text-3xl font-semibold text-grayscale-900 font-noto-sans">  
+        {{(getDataContent('title_about_star_club')) ? getDataContent('title_about_star_club') : 'About Star Club'}}
       </div>
       <div
         class="mt-3 text-sm leading-relaxed text-grayscale-500 md:text-base md:leading-relaxed"
       >
-        Star Club is a Loyalty Program from Star Air which is presented as a
-        tribute to you, our loyal customer. It is our way of saying "Thank You"
-        for choosing to fly with Star Airways. Earn points every time you fly
-        with Star Air. Your accumulated points can be redeemed for Award Tickets
-        to your favourites, or Upgrade Awards from economy to business class on
-        the flight of your choice. Both of these Awards can be presented to your
-        family, friends or colleagues who are closest to your heart. With Star
-        Club, your every trip becomes a rewarding experience. As a Star Points
-        Member, you may also enjoy a wide variety of special benefits and
-        exclusive privileges suc as upgrade class, extra baggage, shopping and
-        stay at hotels with points.
+        {{(getDataContent('desc_about_star_club')) ? getDataContent('desc_about_star_club') : ''}}
       </div>
       <div class="mt-16 text-center">
         <div class="text-3xl font-semibold text-grayscale-900 font-noto-sans">
@@ -133,27 +152,12 @@ export default {
               <div
                 class="text-3xl font-semibold text-grayscale-900 font-noto-sans"
               >
-                How to Earn Points
+                {{(getDataContent('title_how_to_earn')) ? getDataContent('title_how_to_earn') : 'How to Earn Points'}}
               </div>
               <div
                 class="mt-3 text-sm leading-relaxed text-grayscale-500 md:text-base md:leading-relaxed"
               >
-                <p>
-                  StarPoints are the reward points you earn when you or your
-                  nominated family members travel with Star Air, or our airline
-                  partners. You can also earn StarPoints by using any of our
-                  more than 1.200 global partners. StarPoints are taking you
-                  further than ever before. Every time you spend or earn your
-                  StarPoints balance will be valid for a further 36 months. When
-                  you find missing points of your previous flight, you can
-                  always claim them
-                </p>
-                <br />
-                <p>
-                  You can earn points from converting partner points, booking
-                  hotels, or buy points. Find out the details of how to earn
-                  points by clicking the button belows.
-                </p>
+                {{(getDataContent('desc_how_to_earn')) ? getDataContent('desc_how_to_earn') : ''}}
               </div>
               <div class="mt-8 md:inline-block">
                 <NuxtLink to="/earn-points">
@@ -242,12 +246,12 @@ export default {
               <div
                 class="text-3xl font-semibold text-grayscale-900 font-noto-sans"
               >
-                Redeem Your Star Points in Many Ways
+                {{(getDataContent('title_redeem')) ? getDataContent('title_redeem') : 'Redeem Your Star Points in Many Ways'}}
               </div>
               <div
                 class="mt-3 text-sm text-grayscale-500 md:text-base md:leading-relaxed"
               >
-                <p>Browse over 1.200 global partners around the world.</p>
+                {{(getDataContent('desc_redeem')) ? getDataContent('desc_redeem') : ''}}
               </div>
               <div class="w-full mt-8 md:w-60">
                 <NuxtLink to="/redem-points">
