@@ -20,30 +20,30 @@
           formData.append('airline_code', this.$config.myAirlineCode);
           formData.append('password', this.password);
 
-          this.$store.commit('SET_LOGIN_ADMIN', this.emailAddress);
-          cookie.set('star_air_login_admin', this.emailAddress);
-          this.$router.push('/admin');
+          // this.$store.commit('SET_LOGIN_ADMIN', this.emailAddress);
+          // cookie.set('star_air_login_admin', this.emailAddress);
+          // this.$router.push('/admin');
 
-          // this.$axios.$post('/api/cms/login ', formData)
-          //   .then( (response) => {
-          //     console.log(response)
-          //     if (response.err_num == '0') {
+          this.$axios.$post('/api/cms/login ', formData)
+            .then( (response) => {
+              console.log(response)
+              if (response.err_num == '0') {
                 
-          //       this.$store.commit('SET_LOGIN_ADMIN', this.emailAddress);
-          //       cookie.set('star_air_login_admin', this.emailAddress);
-          //       this.$router.push('/admin');
+                this.$store.commit('SET_LOGIN_ADMIN', this.emailAddress);
+                cookie.set('star_air_login_admin', this.emailAddress);
+                this.$router.push('/admin');
 
-          //     } else {
-          //       if (response.err_str.username) {
-          //         this.errorMessage = response.err_str.username[0]
-          //       } else {
-          //         this.errorMessage = response.err_str;
-          //       }
-          //     }
-          //   })
-          //   .catch(function (error) {
-          //     console.log(error)
-          //   })
+              } else {
+                if (response.err_str.username) {
+                  this.errorMessage = response.err_str.username[0]
+                } else {
+                  this.errorMessage = response.err_str;
+                }
+              }
+            })
+            .catch(function (error) {
+              console.log(error)
+            })
         }
       },
       formChanged() {
