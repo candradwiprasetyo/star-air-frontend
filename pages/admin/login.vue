@@ -24,7 +24,7 @@
           // cookie.set('star_air_login_admin', this.emailAddress);
           // this.$router.push('/admin');
 
-          this.$axios.$post('/api/cms/login ', formData)
+          this.$axios.$post('/api/cms/login', formData)
             .then( (response) => {
               console.log(response)
               if (response.err_num == '0') {

@@ -1,6 +1,6 @@
 <template>
   <div
-    class="font-medium text-center rounded-lg "
+    class="text-sm font-medium text-center rounded-lg"
     :class="[
       color, 
       enabled ? border : 'border-2 border-transparent', 
@@ -46,7 +46,7 @@ export default {
     padding: {
       type: String,
       required: false,
-      default: "px-6 py-4",
+      default: "px-4 py-3",
     },
     enabled: {
       type: Boolean,
