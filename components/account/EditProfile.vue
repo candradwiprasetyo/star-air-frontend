@@ -200,9 +200,7 @@
           this.address &&
           this.email &&
           this.phone &&
-          this.country &&
-          this.passportNumber &&
-          this.passportExpiryDate
+          this.country
         ) {
           this.isButtonEnabled = true
         } else {
@@ -222,8 +220,6 @@
       email: function(val) { this.formChanged() },
       phone: function(val) { this.formChanged() },
       country: function(val) { this.formChanged() },
-      passportNumber: function(val) { this.formChanged() },
-      passportExpiryDate: function(val) { this.formChanged() },
     }
   };
 </script>
