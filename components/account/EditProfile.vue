@@ -155,22 +155,25 @@
             })
         }
       },
-      formatDate(value) {
-        value = new Date(value);
+      formatDate(dateValue) {
+        let result = ''
+        let value = new Date(dateValue);
         value.setDate(value.getDate() + 1);
-        if (value) {
+        if (dateValue) {
           value = value.toISOString().split('T')[0];
           let today = value;
           today = value.replaceAll('-', '');
-          return today;
-        }
+          result = today;
+        } 
+        return result;
       },
       formatDateLoad(value) {
+        let result = '';
         if (value) {
           let newDate = value.split('/');
-          let result = newDate[1] + '/' + newDate[0] + '/' + newDate[2];
-          return result;
-        }
+          result = newDate[1] + '/' + newDate[0] + '/' + newDate[2];
+        } 
+        return result;
       },
       loadUser() {
         let formData = new FormData();

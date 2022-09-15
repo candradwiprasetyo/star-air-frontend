@@ -22,8 +22,10 @@ export default {
     
       this.$axios.$get('/api/cms/get-cms-list' + param)
         .then( (response) => {
-          this.dataContent = response.result.data;
-          this.isLoaded = true
+          if (response.err_num == 0) {
+            this.dataContent = response.result.data;
+            this.isLoaded = true
+          }
         })
         .catch(function (error) {
           console.log(error)
