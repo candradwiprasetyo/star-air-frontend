@@ -135,7 +135,7 @@ export default {
             >
               <template slot="table-row" slot-scope="props">
                 <span v-if="props.column.field == 'action'">
-                  <Button value="Update" @action="editData(props.row.CONTENT_ID, props.row.CONTENT)" />
+                  <Button value="Edit" @action="editData(props.row.CONTENT_ID, props.row.CONTENT)" />
                 </span>
                 <span v-else>
                   {{props.formattedRow[props.column.field]}}
