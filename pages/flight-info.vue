@@ -247,7 +247,7 @@ export default {
             <input type="hidden" name="child" value="0">
             <input type="hidden" name="infant" value="0">
             <input type="hidden" name="loyalty_id" :value="(userData) ? userData.member_id : ''">
-            <span>
+            <span v-if="(activeTab==1 && dataSchedule.length > 0) || (activeTab==2 && dataReturnSchedule.length > 0) ">
               <button type="submit" class="px-6 py-4 font-medium text-center text-white border-2 rounded-lg cursor-pointer border-primary-600 bg-primary-600">Book Now</button>
             </span>
           </div>

@@ -15,6 +15,8 @@
         clue2: null,
         clue3: null,
         clue4: null,
+        dataContent: [],
+        isLoaded: false,
       };
     },
     methods: {
@@ -140,10 +142,35 @@
               console.log(error)
             })
         }
-      }
+      },
+      loadData() {
+        let param = 
+          '?token=' + this.$config.myToken +
+          '&airline_code=' + this.$config.myAirlineCode +
+          '&airline=sqiva';
+      
+        this.$axios.$get('/api/cms/get-cms-list' + param)
+          .then( (response) => {
+            this.dataContent = response.result.data;
+            this.isLoaded = true
+          })
+          .catch(function (error) {
+            console.log(error)
+          })
+      },
+      getDataContent(content_id) {
+        let result = null;
+        this.dataContent.forEach(element => {
+          if (element.CONTENT_ID == content_id) {
+            result = element.CONTENT
+          }
+        });
+        return result;
+      },
     },
     mounted() {
       this.getEmail();
+      this.loadData();
     },
     watch: {
       password: function(val) { this.formChanged() },
@@ -158,15 +185,10 @@
     <MainMenu />
     <div class="container px-6 py-6 mx-auto md:py-14 md:px-0">
       <div class="text-3xl font-semibold text-grayscale-900 font-noto-sans">
-        Account Activation
+        {{(getDataContent('title_account_activation')) ? getDataContent('title_account_activation') : 'Account Activation'}}
       </div>
       <div class="mt-3 text-grayscale-500">
-        Thank your for confirming your account. I more step before you can use
-        your account, please enter password that you are going to use to login
-        next time to your account. Nam pretium venenatis bibendum. Nam eget ante
-        eu metus consequat semper non ac nunc. Duis semper massa nec tellus
-        lacinia, id semper neque lobortis. Donec sit amet eros leo. Sed lacinia
-        vestibulum lorem, vel imperdiet ipsum.
+        {{(getDataContent('desc_account_activation')) ? getDataContent('desc_account_activation') : ''}}
       </div>
       <div class="block p-6 mt-10 md:hidden bg-light-blue rounded-xl">
         <div class="text-lg font-semibold text-grayscale-900">
