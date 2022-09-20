@@ -42,6 +42,8 @@
             <Input 
               label="Passport Number" 
               v-model="passportNumber"
+              @change-action="changePassportNumber()"
+              
             />
           </div>
         </div>
@@ -94,8 +96,9 @@
       </div>
     </div>
     <PopupSuccess 
-      :title="'success'"
-      :message="'Member`s data has been updated'"
+      :title="'Update Profile Success'"
+      :message="'You have been successfully update your profile'"
+      :img="'update-profile-success.png'"
       @close-popup="closePopupSuccess"
       v-if="isPopupSuccess"
     />
@@ -213,7 +216,13 @@
       closePopupSuccess() {
         // this.isPopupSuccess = false;
         this.$emit('back-button', 2);
-      }
+      },
+      changePassportNumber() {
+        console.log('change')
+        if (this.passportNumber=='') {
+          this.passportExpiryDate = null;
+        }
+      },
     },
     mounted() {
       this.loadUser();

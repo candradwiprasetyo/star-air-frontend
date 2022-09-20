@@ -80,8 +80,9 @@
       </div>
     </div>
     <PopupSuccess 
-      :title="'success'"
-      :message="'Members password has been changed'"
+      :title="'Change Password Success'"
+      :message="'You have been successfully update your password'"
+      :img="'change-password-success.png'"
       @close-popup="closePopupSuccess"
       v-if="isPopupSuccess"
     />

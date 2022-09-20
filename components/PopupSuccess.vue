@@ -9,7 +9,9 @@
             class="inline-block mt-10"
             alt="success"
             width="100"
+            v-if="!img"
           />
+          <img :src="require('@/assets/images/' + img)" width="100" class="inline-block mt-10" :alt="title" v-if="img" />
           <div class="mt-8 text-lg font-semibold capitalize font-noto-sans">
             {{ title }}
           </div>
@@ -47,6 +49,10 @@ export default {
       type: Boolean,
       required: false,
       default: false,
+    },
+    img: {
+      type: String,
+      required: false,
     }
   },
   methods: {
