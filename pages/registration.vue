@@ -8,16 +8,22 @@
         firstName: null,
         lastName: null,
         emailAddress: null,
-        phoneNumber: null,
+        address: null,
         flagNumber: null,
         isAgreeOffer: false,
         isAgreeTnc: false,
         errorMessage: {
           email: null,
-          mobile: null,
+          address: null,
         },
         isPopupSuccess: false,
         popupSuccessEmail: null,
+        genderData: [
+          'Male',
+          'Female'
+        ],
+        birthDate: null,
+        gender: 'Male',
       };
     },
     methods: {
@@ -26,9 +32,11 @@
           this.firstName &&
           this.lastName &&
           this.emailAddress &&
-          this.phoneNumber &&
+          this.address &&
           this.isAgreeOffer &&
-          this.isAgreeTnc
+          this.isAgreeTnc &&
+          this.gender && 
+          this.birthDate
         ) {
           this.isButtonEnabled = true
         } else {
@@ -38,10 +46,10 @@
       clear() {
         this.firstName = null;
         this.lastName = null;
-        this.phoneNumber = null;
+        this.address = null;
         this.emailAddress = null;
         this.errorMessage.email = null;
-        this.errorMessage.mobile = null;
+        this.errorMessage.address = null;
         this.isAgreeOffer = false;
         this.isAgreeTnc = false;
       },
@@ -52,8 +60,10 @@
           formData.append('token', this.$config.myToken);
           formData.append('airline_code', this.$config.myAirlineCode);
           formData.append('last_name', this.lastName);
-          formData.append('mobile', this.phoneNumber);
+          formData.append('address', this.address);
           formData.append('email', this.emailAddress);
+          formData.append('gender', this.gender);
+          formData.append('birthdate', this.formatDate(this.birthDate));
 
           this.$axios.$post('/api/member/add-member ', formData)
             .then( (response) => {
@@ -71,10 +81,10 @@
                 } else {
                   this.errorMessage.email = null;
                 }
-                if (response.err_str.mobile) {
-                  this.errorMessage.mobile = response.err_str.mobile[0];
+                if (response.err_str.address) {
+                  this.errorMessage.address = response.err_str.address[0];
                 } else {
-                  this.errorMessage.mobile = null;
+                  this.errorMessage.address = null;
                 }
               }
             })
@@ -82,6 +92,18 @@
               console.log(error)
             })
         }
+      },
+      formatDate(dateValue) {
+        let result = ''
+        if (dateValue) {
+          let value = new Date(dateValue);
+          value.setDate(value.getDate() + 1);
+          value = value.toISOString().split('T')[0];
+          let today = value;
+          today = value.replaceAll('-', '');
+          result = today;
+        } 
+        return result;
       },
       closePopupSuccess() {
         this.isPopupSuccess = false;
@@ -96,9 +118,11 @@
       firstName: function(val) { this.formChanged() },
       lastName: function(val) { this.formChanged() },
       emailAddress: function(val) { this.formChanged() },
-      phoneNumber: function(val) { this.formChanged() },
+      address: function(val) { this.formChanged() },
       isAgreeOffer: function(val) { this.formChanged() },
       isAgreeTnc: function(val) { this.formChanged() },
+      birthDate: function(val) { this.formChanged() },
+      gender: function(val) { this.formChanged() },
     }
   };
 </script>
@@ -152,17 +176,45 @@
               />
             </div>
           </div>
+          <div class="flex gap-5 mt-6">
+            <div class="flex-1 mt-6 md:mt-0">
+              <div class="h-full px-3 py-2 border rounded-lg">
+                <div class="mb-1 text-xs text-grayscale-400">Birth Date</div>
+                <client-only>
+                  <v-date-picker 
+                    v-model="birthDate"
+                    :popover="{ visibility: 'click' }"
+                  >
+                    <template v-slot="{ inputValue, inputEvents }">
+                      <input
+                        class="w-full outline-none"
+                        :value="inputValue"
+                        v-on="inputEvents"
+                        placeholder="mm/dd/yyyy"
+                        readonly
+                      />
+                    </template>
+                  </v-date-picker>
+                </client-only>
+              </div>
+            </div>
+            <div class="flex-1 mt-6 md:mt-0">
+              <Select 
+                label="Gender" 
+                v-model="gender"
+                :data="genderData"
+                :selected-data="gender"
+              />
+            </div>
+          </div>
           <Input label="Email Address" customClass="mt-6" v-model="emailAddress" />
           <span v-if="errorMessage.email" class="text-xs text-alert-900">{{ errorMessage.email }}</span>
           <div class="flex mt-6">
-            <div class="flex-none w-16" v-if="false">
-              <Select label="" border="border rounded-l-lg" v-model="flagNumber" />
-            </div>
             <div class="flex-grow">
-              <Input label="Phone" border="border rounded-r-lg" v-model="phoneNumber" />
+              <Input label="Address" border="border rounded-lg" v-model="address" />
             </div>
           </div>
-          <span v-if="errorMessage.mobile" class="text-xs text-alert-900">{{ errorMessage.mobile }}</span>
+          <span v-if="errorMessage.address" class="text-xs text-alert-900">{{ errorMessage.address }}</span>
           <div class="flex mt-10 gap-x-4">
             <div class="flex-none">
               <input
