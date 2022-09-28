@@ -84,6 +84,10 @@
                 <div class="text-grayscale-900">
                   {{ user.member_level }} Member
                 </div>
+                <div class="mt-8 mb-1 text-xs text-grayscale-400">Birth Date</div>
+                <div class="text-grayscale-900">
+                  {{ user.birthdate }}
+                </div>
               </div>
               <div class="flex-1">
                 <div class="mb-1 text-xs text-grayscale-400">Star Points</div>
@@ -93,6 +97,10 @@
                 <div class="mt-8 mb-1 text-xs text-grayscale-400">Credit Account</div>
                 <div class="text-grayscale-900">
                   {{ user.credit_account }} INR
+                </div>
+                <div class="mt-8 mb-1 text-xs text-grayscale-400">Gender</div>
+                <div class="text-grayscale-900">
+                  {{ user.gender }}
                 </div>
               </div>
             </div>

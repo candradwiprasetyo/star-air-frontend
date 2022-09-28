@@ -22,6 +22,37 @@
           </div>
         </div>
         <div class="mt-6 md:flex gap-x-6">
+          <div class="flex-1 mt-6 md:mt-0">
+            <div class="h-full px-3 py-2 border rounded-lg">
+              <div class="mb-1 text-xs text-grayscale-400">Birth Date</div>
+              <client-only>
+                <v-date-picker 
+                  v-model="birthDate"
+                  :popover="{ visibility: 'click' }"
+                >
+                  <template v-slot="{ inputValue, inputEvents }">
+                    <input
+                      class="w-full outline-none"
+                      :value="inputValue"
+                      v-on="inputEvents"
+                      placeholder="mm/dd/yyyy"
+                      readonly
+                    />
+                  </template>
+                </v-date-picker>
+              </client-only>
+            </div>
+          </div>
+          <div class="flex-1 mt-6 md:mt-0">
+            <Select 
+              label="Gender" 
+              v-model="gender"
+              :data="genderData"
+              :selected-data="gender"
+            />
+          </div>
+        </div>
+        <div class="mt-6 md:flex gap-x-6">
           <div class="flex-1">
             <Input label="Phone" v-model="phone" />
           </div>
@@ -123,6 +154,12 @@
         ],
         isButtonEnabled: false,
         isPopupSuccess: false,
+        genderData: [
+          'Male',
+          'Female'
+        ],
+        birthDate: null,
+        gender: null,
       };
     },
     props: {
@@ -143,6 +180,8 @@
           formData.append('address', this.address);
           formData.append('passport_no', this.passportNumber);
           formData.append('passport_expire_date', this.formatDate(this.passportExpiryDate));
+          formData.append('birthdate', this.formatDate(this.birthdate));
+          formData.append('gender', this.gender);
 
           this.$axios.$post('/api/member/update-member', formData)
             .then( (response) => {
@@ -194,6 +233,8 @@
               this.address = this.userData.address;
               this.passportNumber = this.userData.passport_no;
               this.passportExpiryDate = this.formatDateLoad(this.userData.passport_expire_date);
+              this.birthDate = this.formatDateLoad(this.userData.birthdate);
+              this.gender = this.userData.gender;
               // this.country = this.userData.nationality;
             }
           })
@@ -206,7 +247,9 @@
           this.address &&
           this.email &&
           this.phone &&
-          this.country
+          this.country &&
+          this.gender &&
+          this.birthDate 
         ) {
           this.isButtonEnabled = true
         } else {
@@ -232,6 +275,8 @@
       email: function(val) { this.formChanged() },
       phone: function(val) { this.formChanged() },
       country: function(val) { this.formChanged() },
+      gender: function(val) { this.formChanged() },
+      birthDate: function(val) { this.formChanged() },
     }
   };
 </script>
