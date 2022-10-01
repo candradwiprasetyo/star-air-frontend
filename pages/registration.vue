@@ -9,12 +9,14 @@
         lastName: null,
         emailAddress: null,
         address: null,
+        mobile: null,
         flagNumber: null,
         isAgreeOffer: false,
         isAgreeTnc: false,
         errorMessage: {
           email: null,
           address: null,
+          mobile: null,
         },
         isPopupSuccess: false,
         popupSuccessEmail: null,
@@ -33,6 +35,7 @@
           this.lastName &&
           this.emailAddress &&
           this.address &&
+          this.mobile &&
           this.isAgreeOffer &&
           this.isAgreeTnc &&
           this.gender && 
@@ -64,6 +67,7 @@
           formData.append('email', this.emailAddress);
           formData.append('gender', this.gender);
           formData.append('birthdate', this.formatDate(this.birthDate));
+          formData.append('mobile', this.mobile);
 
           this.$axios.$post('/api/member/add-member ', formData)
             .then( (response) => {
@@ -119,6 +123,7 @@
       lastName: function(val) { this.formChanged() },
       emailAddress: function(val) { this.formChanged() },
       address: function(val) { this.formChanged() },
+      mobile: function(val) { this.formChanged() },
       isAgreeOffer: function(val) { this.formChanged() },
       isAgreeTnc: function(val) { this.formChanged() },
       birthDate: function(val) { this.formChanged() },
@@ -209,6 +214,8 @@
           </div>
           <Input label="Email Address" customClass="mt-6" v-model="emailAddress" />
           <span v-if="errorMessage.email" class="text-xs text-alert-900">{{ errorMessage.email }}</span>
+          <Input label="Phone" customClass="mt-6" v-model="mobile" />
+          <span v-if="errorMessage.mobile" class="text-xs text-alert-900">{{ errorMessage.mobile }}</span>
           <div class="flex mt-6">
             <div class="flex-grow">
               <Input label="Address" border="border rounded-lg" v-model="address" />

@@ -109,7 +109,7 @@
           <div class="md:inline-block">
             <Button 
               value="Submit Change" 
-              @action="editProfile" 
+              @action="sentOtp" 
               :enabled="isButtonEnabled"  
             />
           </div>
@@ -133,6 +133,27 @@
       @close-popup="closePopupSuccess"
       v-if="isPopupSuccess"
     />
+    <Modal 
+      v-if="modalOtp"
+      @close="toggleModalOtp"
+    >
+      <div class="p-5">
+        <div class="pb-3 mb-6 font-bold border-b">Verify Changes</div>
+        <div class="flex items-center justify-center gap-x-4">
+          <input class="w-20 h-12 text-center border rounded" v-model="otp">
+        </div>
+        <div class="mt-6 text-base text-center text-grayscale-500">We have sent a 6 digit code to your email for profile changes verification. Didn’t receive code? <span class="font-bold text-secondary-900" @click="sentOtp">Resend Again</span></div>
+        <div class="flex items-center justify-center mt-6">
+          <div class="inline-block">
+            <Button 
+              value="Verify" 
+              @action="editProfile"
+              customClass="px-10"
+            />
+          </div>
+        </div>
+      </div>
+    </Modal>
   </div>
 </template>
 
@@ -159,7 +180,9 @@
           'Female'
         ],
         birthDate: null,
-        gender: null,
+        gender: 'Male',
+        modalOtp: false,
+        otp: null,
       };
     },
     props: {
@@ -180,14 +203,16 @@
           formData.append('address', this.address);
           formData.append('passport_no', this.passportNumber);
           formData.append('passport_expire_date', this.formatDate(this.passportExpiryDate));
-          formData.append('birthdate', this.formatDate(this.birthdate));
+          formData.append('birthdate', this.formatDate(this.birthDate));
           formData.append('gender', this.gender);
+          formData.append('otp', this.otp);
 
           this.$axios.$post('/api/member/update-member', formData)
             .then( (response) => {
               if (response.err_num == '0') {
                 this.errorMessage = null;
                 this.isPopupSuccess = true;
+                this.modalOtp = false;
               } else {
                 this.errorMessage = response.err_str;
               }
@@ -234,7 +259,9 @@
               this.passportNumber = this.userData.passport_no;
               this.passportExpiryDate = this.formatDateLoad(this.userData.passport_expire_date);
               this.birthDate = this.formatDateLoad(this.userData.birthdate);
-              this.gender = this.userData.gender;
+              // this.gender = this.userData.gender;
+              this.gender = "Female";
+
               // this.country = this.userData.nationality;
             }
           })
@@ -255,6 +282,8 @@
         } else {
           this.isButtonEnabled = false
         }
+        // this.isButtonEnabled = true
+        // console.log(this.address, this.email, this.phone, this.country, this.gender)
       },
       closePopupSuccess() {
         // this.isPopupSuccess = false;
@@ -265,6 +294,25 @@
         if (this.passportNumber=='') {
           this.passportExpiryDate = null;
         }
+      },
+      toggleModalOtp() {
+        this.modalOtp = !this.modalOtp;
+      },
+      sentOtp() {
+        let formData = new FormData();
+        formData.append('token', this.$config.myToken);
+        formData.append('airline_code', this.$config.myAirlineCode);
+        formData.append('member_id', this.memberId);
+
+        this.$axios.$post('/api/member/request-otp', formData)
+          .then( (response) => {
+            if (response.err_num == '0') {
+              this.modalOtp = true;
+            }
+          })
+          .catch(function (error) {
+            console.log(error)
+          })
       },
     },
     mounted() {
