@@ -140,7 +140,7 @@
       <div class="p-5">
         <div class="pb-3 mb-6 font-bold border-b">Verify Changes</div>
         <div class="flex items-center justify-center gap-x-4">
-          <input class="w-20 h-12 text-center border rounded" v-model="otp">
+          <input class="w-40 h-12 text-center border rounded" v-model="otp">
         </div>
         <div class="mt-6 text-base text-center text-grayscale-500">We have sent a 6 digit code to your email for profile changes verification. Didn’t receive code? <span class="font-bold text-secondary-900" @click="sentOtp">Resend Again</span></div>
         <div class="flex items-center justify-center mt-6">
