@@ -34,7 +34,6 @@
           this.firstName &&
           this.lastName &&
           this.emailAddress &&
-          this.address &&
           this.mobile &&
           this.isAgreeOffer &&
           this.isAgreeTnc &&

@@ -3,7 +3,9 @@
     <div class="w-full pb-0 mb-6 overflow-hidden border rounded-xl text-grayscale-500">
       <div class="p-6 border-b">
         <div class="flex">
-          <div class="text-lg font-semibold font-noto-sans text-grayscale-900"><span class="text-secondary-900">User Profile</span> / Edit Profile</div>
+          <div class="text-lg font-semibold font-noto-sans text-grayscale-900">
+            <span class="cursor-pointer text-secondary-900" @click="$emit('back-button', 2)">User Profile</span> / Edit Profile
+          </div>
         </div>
       </div>
       <div class="p-6 overflow-hidden">
@@ -32,10 +34,10 @@
                 >
                   <template v-slot="{ inputValue, inputEvents }">
                     <input
-                      class="w-full outline-none"
-                      :value="inputValue"
+                      class="w-full text-black outline-none"
+                      :value="formatBirthDate"
                       v-on="inputEvents"
-                      placeholder="mm/dd/yyyy"
+                      placeholder="dd/mm/yyyy"
                       readonly
                     />
                   </template>
@@ -139,10 +141,21 @@
     >
       <div class="p-5">
         <div class="pb-3 mb-6 font-bold border-b">Verify Changes</div>
+        <div class="mb-4 text-center text-primary-600">{{ errorMessage }}</div>
         <div class="flex items-center justify-center gap-x-4">
-          <input class="w-40 h-12 text-center border rounded" v-model="otp">
+          <div class="h-12 mx-auto overflow-hidden w-[340px]">
+            <input class="absolute w-full h-12 font-bold tracking-[50px] pl-5 outline-none caret-transparent mx-auto" maxlength="6" v-model="otp">
+            <div class="absolute flex h-12 pointer-events-none w-[340px] gap-x-3">
+              <div class="w-12 h-12 border rounded"></div>
+              <div class="w-12 h-12 border rounded"></div>
+              <div class="w-12 h-12 border rounded"></div>
+              <div class="w-12 h-12 border rounded"></div>
+              <div class="w-12 h-12 border rounded"></div>
+              <div class="w-12 h-12 border rounded"></div>
+            </div>
+          </div>
         </div>
-        <div class="mt-6 text-base text-center text-grayscale-500">We have sent a 6 digit code to your email for profile changes verification. Didn’t receive code? <span class="font-bold text-secondary-900" @click="sentOtp">Resend Again</span></div>
+        <div class="mt-6 text-base text-center text-grayscale-500">We have sent a 6 digit code to your email for profile changes verification. Didn’t receive code? <span class="font-bold cursor-pointer text-secondary-900" @click="sentOtp(true)">Resend Again</span></div>
         <div class="flex items-center justify-center mt-6">
           <div class="inline-block">
             <Button 
@@ -193,7 +206,7 @@
     },
     methods: {
       editProfile() {
-        if (this.isButtonEnabled) {
+        if (this.otp) {
           let formData = new FormData();
           formData.append('token', this.$config.myToken);
           formData.append('airline_code', this.$config.myAirlineCode);
@@ -206,7 +219,7 @@
           formData.append('birthdate', this.formatDate(this.birthDate));
           formData.append('gender', this.gender);
           formData.append('otp', this.otp);
-
+  
           this.$axios.$post('/api/member/update-member', formData)
             .then( (response) => {
               if (response.err_num == '0') {
@@ -220,6 +233,8 @@
             .catch(function (error) {
               console.log(error)
             })
+        } else {
+          this.errorMessage = 'Otp cannot be blank.'; 
         }
       },
       formatDate(dateValue) {
@@ -298,7 +313,7 @@
       toggleModalOtp() {
         this.modalOtp = !this.modalOtp;
       },
-      sentOtp() {
+      sentOtp(resent = false) {
         let formData = new FormData();
         formData.append('token', this.$config.myToken);
         formData.append('airline_code', this.$config.myAirlineCode);
@@ -306,13 +321,33 @@
 
         this.$axios.$post('/api/member/request-otp', formData)
           .then( (response) => {
-            if (response.err_num == '0') {
+            if (response.err_num == '0' || response.err_num == '001001') {
               this.modalOtp = true;
+              if (resent) {
+                if (response.err_num == '0') {
+                  this.errorMessage = 'OTP has been sent to your email.';
+                } else {
+                  this.errorMessage = response.err_str;
+                }
+              }
             }
           })
           .catch(function (error) {
             console.log(error)
           })
+      },
+    },
+    computed: {
+      formatBirthDate() {
+        let value = new Date(this.birthDate);
+        value.setDate(value.getDate() + 1);
+        if (this.birthDate) {
+          value = value.toISOString().split('T')[0];
+          let today = value;
+          today = today.split('-');
+          today = today[2] + '/' + today[1] + '/' + today[0];
+          return today;
+        }
       },
     },
     mounted() {
