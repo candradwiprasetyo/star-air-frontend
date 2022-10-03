@@ -33,7 +33,7 @@ export default {
         </div>
         <div class="mt-4 text-grayscale-500">
           <ul class="pl-5 leading-loose list-disc">
-            <li>5000 Star Points</li>
+            <li>100 Star Points</li>
             <li>Free extra baggage 15kg</li>
             <li>Special gift</li>
             <li>Flight discount voucher</li>
@@ -131,7 +131,7 @@ export default {
           </div>
           <div class="mt-4 text-grayscale-500">
             <ul class="pl-5 leading-loose list-disc">
-              <li>5000 Star Points</li>
+              <li>100 Star Points</li>
               <li>Free extra baggage 15kg</li>
               <li>Special gift</li>
               <li>Flight discount voucher</li>
