@@ -91,8 +91,8 @@
                 >
                   <template v-slot="{ inputValue, inputEvents }">
                     <input
-                      class="w-full outline-none"
-                      :value="inputValue"
+                      class="w-full text-black outline-none"
+                      :value="formatPassportExpireDate"
                       v-on="inputEvents"
                       placeholder="mm/dd/yyyy"
                       readonly
@@ -241,7 +241,7 @@
         let result = ''
         if (dateValue) {
           let value = new Date(dateValue);
-          value.setDate(value.getDate() + 1);
+          // value.setDate(value.getDate() + 1);
           value = value.toISOString().split('T')[0];
           let today = value;
           today = value.replaceAll('-', '');
@@ -302,7 +302,8 @@
       },
       closePopupSuccess() {
         // this.isPopupSuccess = false;
-        this.$emit('back-button', 2);
+        // this.$emit('back-button', 2);
+        window.location.href = '/account?page=user-profile';
       },
       changePassportNumber() {
         console.log('change')
@@ -340,8 +341,19 @@
     computed: {
       formatBirthDate() {
         let value = new Date(this.birthDate);
-        value.setDate(value.getDate() + 1);
+        // value.setDate(value.getDate() + 1);
         if (this.birthDate) {
+          value = value.toISOString().split('T')[0];
+          let today = value;
+          today = today.split('-');
+          today = today[2] + '/' + today[1] + '/' + today[0];
+          return today;
+        }
+      },
+      formatPassportExpireDate() {
+        let value = new Date(this.passportExpiryDate);
+        // value.setDate(value.getDate() + 1);
+        if (this.passportExpiryDate) {
           value = value.toISOString().split('T')[0];
           let today = value;
           today = today.split('-');
