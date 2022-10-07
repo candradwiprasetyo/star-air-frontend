@@ -224,3 +224,8 @@ body {
 .h-route-line {
   height: calc( 100% - 25px );
 }
+
+ol, ul, menu {
+  list-style: unset;
+  padding: 0 30px;
+}

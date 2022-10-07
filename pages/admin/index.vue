@@ -3,8 +3,15 @@ import cookie from 'js-cookie'
 export default {
   name: "Admin",
   middleware: "auth-user-admin",
+  components: {
+    'ckeditor-nuxt': () => { if (process.client) { return import('@blowstack/ckeditor-nuxt') } },
+  },
   data() {
     return {
+      editorConfig: {
+        removePlugins: ['Title', 'MediaEmbedToolbar', 'Heading', 'ImageInsert', 'ImageUpload', 'FontSize', 'Link', 'LinkImage', 'Highlight', 'Code', 'CodeBlock', 'FontBackgroundColor', 'Superscript', 'Subscript', 'MathType'],
+        placeholder: 'Content'
+      },
       columns: [
         {
           label: 'No',
@@ -105,7 +112,12 @@ export default {
         <div class="p-5">
           <div class="mb-3 font-bold">Add Data</div>
           <Input label="Content ID" v-model="content_id" />
-          <Textarea label="Content" customClass="mt-4" v-model="content" />
+          <!-- <Textarea label="Content" customClass="mt-4" v-model="content" /> -->
+          <div class="mt-3">
+            <client-only placeholder="loading...">
+              <ckeditor-nuxt v-model="content" :config="editorConfig"  />
+            </client-only>
+          </div>
           <div class="flex flex-row-reverse mt-6 gap-x-3">
             <div class="inline-block"><Button value="Save" padding="px-16 py-3" @action="saveData" /></div>
             <div class="inline-block"><Button value="Cancel" background="bg-gray-100" color="text-black" padding="px-16 py-3" @action="toogleModalAddData" /></div>
@@ -137,6 +149,9 @@ export default {
                 <span v-if="props.column.field == 'action'">
                   <Button value="Edit" @action="editData(props.row.CONTENT_ID, props.row.CONTENT)" />
                 </span>
+                <span v-else-if="props.column.field == 'CONTENT'">
+                  <div v-html="props.row.CONTENT"></div>
+                </span>
                 <span v-else>
                   {{props.formattedRow[props.column.field]}}
                 </span>
@@ -148,3 +163,10 @@ export default {
     </AdminLayout>
   </div>
 </template>
+
+<style>
+  ol, ul, menu {
+    list-style: unset;  
+    padding: 0 30px;
+  }
+</style>

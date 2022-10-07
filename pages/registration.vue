@@ -26,6 +26,7 @@
         ],
         birthDate: null,
         gender: 'Male',
+        dataContent: [],
       };
     },
     methods: {
@@ -110,11 +111,36 @@
       },
       closePopupSuccess() {
         this.isPopupSuccess = false;
-      }
+      },
+      loadData() {
+        let param = 
+          '?token=' + this.$config.myToken +
+          '&airline_code=' + this.$config.myAirlineCode +
+          '&airline=sqiva';
+      
+        this.$axios.$get('/api/cms/get-cms-list' + param)
+          .then( (response) => {
+            this.dataContent = response.result.data;
+          })
+          .catch(function (error) {
+            console.log(error)
+          })
+      },
+      getDataContent(content_id) {
+        let result = null;
+        this.dataContent.forEach(element => {
+          if (element.CONTENT_ID == content_id) {
+            result = element.CONTENT
+          }
+        });
+        return result;
+      },
     },
     mounted() {
       if (cookie.get('star_air_login')) {
         this.$router.push('/')
+      } else {
+        this.loadData()
       }
     },
     watch: {
@@ -264,17 +290,8 @@
           </div>
         </div>
         <div class="hidden w-1/3 p-6 md:block bg-light-blue rounded-xl">
-          <div class="text-lg font-semibold text-grayscale-900">
-            New Member Benefits
-          </div>
-          <div class="mt-4 text-grayscale-500">
-            <ul class="pl-5 leading-loose list-disc">
-              <li>100 Star Points</li>
-              <li>Free extra baggage 15kg</li>
-              <li>Special gift</li>
-              <li>Flight discount voucher</li>
-            </ul>
-          </div>
+          <div class="text-lg font-semibold text-grayscale-900" v-html="(getDataContent('title_member_benefits')) ? getDataContent('title_member_benefits') : 'New Member Benefits'"></div>
+          <div class="mt-4 text-grayscale-500" v-html="(getDataContent('desc_member_benefits')) ? getDataContent('desc_member_benefits') : ''"></div>
         </div>
       </div>
     </div>
