@@ -237,7 +237,7 @@ export default {
             </tbody>
           </table>
         </div>
-        <form target="_top" id="formSearchSchedule" class="" method=POST action="https://test-starair.paxlinks.com/search-schedule">
+        <form target="_blank" id="formSearchSchedule" class="" method=POST action="https://test-starair.paxlinks.com/search-schedule">
           <div class="flex flex-row-reverse mt-8">
             <input type="hidden" name="org" :value="(origin) ? origin : ''">
             <input type="hidden" name="des" :value="(destination) ? destination : ''">
