@@ -128,11 +128,13 @@
       },
       getDataContent(content_id) {
         let result = null;
-        this.dataContent.forEach(element => {
-          if (element.CONTENT_ID == content_id) {
-            result = element.CONTENT
-          }
-        });
+        if (this.dataContent) {
+          this.dataContent.forEach(element => {
+            if (element.CONTENT_ID == content_id) {
+              result = element.CONTENT
+            }
+          });
+        }
         return result;
       },
     },

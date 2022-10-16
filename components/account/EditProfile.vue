@@ -301,7 +301,7 @@
         // console.log(this.address, this.email, this.phone, this.country, this.gender)
       },
       closePopupSuccess() {
-        // this.isPopupSuccess = false;
+        this.isPopupSuccess = false;
         // this.$emit('back-button', 2);
         window.location.href = '/account?page=user-profile';
       },
