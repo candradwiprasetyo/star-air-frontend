@@ -76,7 +76,6 @@
               label="Passport Number" 
               v-model="passportNumber"
               @change-action="changePassportNumber()"
-              
             />
           </div>
         </div>
@@ -88,6 +87,7 @@
                 <v-date-picker 
                   v-model="passportExpiryDate"
                   :popover="{ visibility: 'click' }"
+                  @input="changePassportExpiryDate()"
                 >
                   <template v-slot="{ inputValue, inputEvents }">
                     <input
@@ -205,6 +205,13 @@
       },
     },
     methods: {
+      changePassportExpiryDate() {
+        if (this.passportNumber) {
+          this.isButtonEnabled = true;
+        } else {
+          this.isButtonEnabled = false;
+        }
+      },
       editProfile() {
         if (this.otp) {
           let formData = new FormData();
@@ -293,7 +300,12 @@
           this.gender &&
           this.birthDate 
         ) {
-          this.isButtonEnabled = true
+          // this.isButtonEnabled = true
+          if (this.passportNumber && !this.passportExpiryDate) {
+            this.isButtonEnabled = false;
+          } else {
+            this.isButtonEnabled = true;
+          }
         } else {
           this.isButtonEnabled = false
         }
@@ -306,7 +318,6 @@
         window.location.href = '/account?page=user-profile';
       },
       changePassportNumber() {
-        console.log('change')
         if (this.passportNumber=='') {
           this.passportExpiryDate = null;
         }
@@ -372,6 +383,7 @@
       country: function(val) { this.formChanged() },
       gender: function(val) { this.formChanged() },
       birthDate: function(val) { this.formChanged() },
+      passportNumber: function(val) { this.formChanged() },
     }
   };
 </script>
