@@ -67,13 +67,12 @@ export default {
     </div>
     <HomepageAdvancedSearch />
     <div class="container px-6 py-6 mx-auto md:py-14 md:px-0" v-if="isLoaded">
-      <div class="text-3xl font-semibold text-grayscale-900 font-noto-sans">  
-        {{(getDataContent('title_about_star_club')) ? getDataContent('title_about_star_club') : 'About Star Club'}}
+      <div class="text-3xl font-semibold text-grayscale-900 font-noto-sans" v-html="(getDataContent('title_about_star_club')) ? getDataContent('title_about_star_club') : 'About Star Club'">  
       </div>
       <div
         class="mt-3 text-sm leading-relaxed text-grayscale-500 md:text-base md:leading-relaxed"
+        v-html="(getDataContent('desc_about_star_club')) ? getDataContent('desc_about_star_club') : ''"
       >
-        {{(getDataContent('desc_about_star_club')) ? getDataContent('desc_about_star_club') : ''}}
       </div>
       <div class="mt-16 text-center">
         <div class="text-3xl font-semibold text-grayscale-900 font-noto-sans">
@@ -153,13 +152,13 @@ export default {
             <div class="mt-6 md:pr-16 md:0">
               <div
                 class="text-3xl font-semibold text-grayscale-900 font-noto-sans"
+                v-html="(getDataContent('title_how_to_earn')) ? getDataContent('title_how_to_earn') : 'How to Earn Points'"
               >
-                {{(getDataContent('title_how_to_earn')) ? getDataContent('title_how_to_earn') : 'How to Earn Points'}}
               </div>
               <div
                 class="mt-3 text-sm leading-relaxed text-grayscale-500 md:text-base md:leading-relaxed"
+                v-html="(getDataContent('desc_how_to_earn')) ? getDataContent('desc_how_to_earn') : ''"
               >
-                {{(getDataContent('desc_how_to_earn')) ? getDataContent('desc_how_to_earn') : ''}}
               </div>
               <div class="mt-8 md:inline-block">
                 <NuxtLink to="/earn-points">
@@ -247,13 +246,13 @@ export default {
             <div class="md:pr-16">
               <div
                 class="text-3xl font-semibold text-grayscale-900 font-noto-sans"
+                v-html="(getDataContent('title_redeem')) ? getDataContent('title_redeem') : 'Redeem Your Star Points in Many Ways'"
               >
-                {{(getDataContent('title_redeem')) ? getDataContent('title_redeem') : 'Redeem Your Star Points in Many Ways'}}
               </div>
               <div
                 class="mt-3 text-sm text-grayscale-500 md:text-base md:leading-relaxed"
+                v-html="(getDataContent('desc_redeem')) ? getDataContent('desc_redeem') : ''"
               >
-                {{(getDataContent('desc_redeem')) ? getDataContent('desc_redeem') : ''}}
               </div>
               <div class="w-full mt-8 md:w-60">
                 <NuxtLink to="/redem-points">

@@ -70,12 +70,8 @@ export default {
     <Header />
     <MainMenu />
     <div class="container px-6 py-6 mx-auto md:py-14 md:px-0">
-      <div class="text-3xl font-semibold text-grayscale-900 font-noto-sans">
-        {{(getDataContent('title_how_to_earn_detail')) ? getDataContent('title_how_to_earn_detail') : 'How to Earn Points'}}
-      </div>
-      <div class="mt-3 text-sm text-grayscale-500 md:text-base">
-        {{(getDataContent('desc_how_to_earn_detail')) ? getDataContent('desc_how_to_earn_detail') : ''}}
-      </div>
+      <div class="text-3xl font-semibold text-grayscale-900 font-noto-sans" v-html="(getDataContent('title_how_to_earn_detail')) ? getDataContent('title_how_to_earn_detail') : 'How to Earn Points'"></div>
+      <div class="mt-3 text-sm text-grayscale-500 md:text-base" v-html="(getDataContent('desc_how_to_earn_detail')) ? getDataContent('desc_how_to_earn_detail') : ''"></div>
       <div class="hidden mt-10 md:block">
         <div
           class="flex hidden pt-4 font-medium border-b border-gray-300 text-grayscale-400 md:pt-2"

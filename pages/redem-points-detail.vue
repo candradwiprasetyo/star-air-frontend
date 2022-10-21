@@ -55,11 +55,9 @@ export default {
     <Header />
     <MainMenu />
     <div class="container px-6 py-6 mx-auto md:py-14 md:px-0">
-      <div class="text-3xl font-semibold text-grayscale-900 font-noto-sans">
-        {{(getDataContent('title_reedem_point')) ? getDataContent('title_reedem_point') : 'How to Earn Points'}}
+      <div class="text-3xl font-semibold text-grayscale-900 font-noto-sans" v-html="(getDataContent('title_reedem_point')) ? getDataContent('title_reedem_point') : 'How to Earn Points'">
       </div>
-      <div class="mt-3 text-sm text-grayscale-500 md:text-base">
-        {{(getDataContent('desc_reedem_point')) ? getDataContent('desc_reedem_point') : ''}}
+      <div class="mt-3 text-sm text-grayscale-500 md:text-base" v-html="(getDataContent('desc_reedem_point')) ? getDataContent('desc_reedem_point') : ''">
       </div>
       <div class="mt-16 md:flex gap-x-8">
         <div class="p-6 pb-0 mb-6 border md:w-1/3 rounded-xl text-grayscale-500">

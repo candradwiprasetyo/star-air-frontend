@@ -184,12 +184,8 @@
     <Header />
     <MainMenu />
     <div class="container px-6 py-6 mx-auto md:py-14 md:px-0">
-      <div class="text-3xl font-semibold text-grayscale-900 font-noto-sans">
-        {{(getDataContent('title_account_activation')) ? getDataContent('title_account_activation') : 'Account Activation'}}
-      </div>
-      <div class="mt-3 text-grayscale-500">
-        {{(getDataContent('desc_account_activation')) ? getDataContent('desc_account_activation') : ''}}
-      </div>
+      <div class="text-3xl font-semibold text-grayscale-900 font-noto-sans" v-html="(getDataContent('title_account_activation')) ? getDataContent('title_account_activation') : 'Account Activation'"></div>
+      <div class="mt-3 text-grayscale-500" v-html="(getDataContent('desc_account_activation')) ? getDataContent('desc_account_activation') : ''"></div>
       <div class="block p-6 mt-10 md:hidden bg-light-blue rounded-xl">
         <div class="text-lg font-semibold text-grayscale-900">
           Password Must
