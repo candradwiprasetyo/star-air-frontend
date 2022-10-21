@@ -260,10 +260,7 @@
             </div>
             <div class="flex-grow">
               <label for="checkbox1">
-                I agree to receiving offers, news, marketing communications and
-                market research from time to time by electronic media and SMS
-                from Star Club. Electronic media refers to email and Social
-                Media.</label
+                I agree to the Conditions of Carriage of Star Air, the Terms, and Conditions of the Star Rewards program.</label
               >
             </div>
           </div>
@@ -278,8 +275,22 @@
             </div>
             <div class="flex-grow">
               <label for="checkbox2">
-                I agree to the Terms and Conditions of the Star Club programme
-                and accept the Star Air Privacy Policy.</label
+                I agree to accept all rules and updates regarding loyalty.</label
+              >
+            </div>
+          </div>
+          <div class="flex mt-6 gap-x-4">
+            <div class="flex-none">
+              <input
+                type="checkbox"
+                id="checkbox1"
+                name="checkbox1"
+                value="checkbox1"
+              />
+            </div>
+            <div class="flex-grow">
+              <label for="checkbox1">
+                I agree to receive offers, news, marketing communications, and market research from time to time by electronic media and SMS from Star Rewards. Electronic media refers to email and Social Media.</label
               >
             </div>
           </div>
