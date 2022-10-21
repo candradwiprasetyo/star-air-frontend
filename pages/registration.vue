@@ -165,17 +165,10 @@
     <MainMenu />
     <div class="container px-6 py-6 mx-auto md:py-14 md:px-0">
       <div class="text-3xl font-semibold text-grayscale-900 font-noto-sans">
-        Create New Account
+        {{(getDataContent('title_create_new_account')) ? getDataContent('title_create_new_account') : ''}}
       </div>
       <div class="mt-3 text-sm text-grayscale-500 md:text-base">
-        Enjoy hundreds of benefits when you joining Star Air loyalty program.
-        earn points when you flight, stay at hotel, and buy goods at Star Air
-        duty free and redeem it for your next travel. Lorem ipsum dolor sit
-        amet, consectetur adipiscing elit. Sed ac mauris vitae sem posuere
-        blandit. Nam pretium venenatis bibendum. Nam eget ante eu metus
-        consequat semper non ac nunc. Duis semper massa nec tellus lacinia, id
-        semper neque lobortis. Donec sit amet eros leo. Sed lacinia vestibulum
-        lorem, vel imperdiet ipsum.
+        {{(getDataContent('desc_create_new_account')) ? getDataContent('desc_create_new_account') : ''}}
       </div>
       <div class="block p-6 my-10 md:hidden bg-light-blue rounded-xl">
         <div class="text-lg font-semibold text-grayscale-900">
@@ -260,10 +253,7 @@
             </div>
             <div class="flex-grow">
               <label for="checkbox1">
-                I agree to receiving offers, news, marketing communications and
-                market research from time to time by electronic media and SMS
-                from Star Club. Electronic media refers to email and Social
-                Media.</label
+                I agree to the Conditions of Carriage of Star Air, the Terms, and Conditions of the Star Rewards program.</label
               >
             </div>
           </div>
@@ -278,8 +268,22 @@
             </div>
             <div class="flex-grow">
               <label for="checkbox2">
-                I agree to the Terms and Conditions of the Star Club programme
-                and accept the Star Air Privacy Policy.</label
+                I agree to accept all rules and updates regarding loyalty.</label
+              >
+            </div>
+          </div>
+          <div class="flex mt-6 gap-x-4">
+            <div class="flex-none">
+              <input
+                type="checkbox"
+                id="checkbox1"
+                name="checkbox1"
+                value="checkbox1"
+              />
+            </div>
+            <div class="flex-grow">
+              <label for="checkbox1">
+                I agree to receive offers, news, marketing communications, and market research from time to time by electronic media and SMS from Star Rewards. Electronic media refers to email and Social Media.</label
               >
             </div>
           </div>
