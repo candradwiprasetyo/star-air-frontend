@@ -13,6 +13,7 @@
         flagNumber: null,
         isAgreeOffer: false,
         isAgreeTnc: false,
+        isAgreeNews: false,
         errorMessage: {
           email: null,
           address: null,
@@ -68,6 +69,7 @@
           formData.append('gender', this.gender);
           formData.append('birthdate', this.formatDate(this.birthDate));
           formData.append('mobile', this.mobile);
+          formData.append('Offers', this.isAgreeNews ? 'Y' : 'N');
 
           this.$axios.$post('/api/member/add-member ', formData)
             .then( (response) => {
@@ -276,7 +278,7 @@
                 type="checkbox"
                 id="checkbox1"
                 name="checkbox1"
-                value="checkbox1"
+                v-model="isAgreeNews"
               />
             </div>
             <div class="flex-grow">
