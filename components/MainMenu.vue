@@ -47,9 +47,9 @@
               />
               <div class="absolute text-sm font-medium bg-white rounded-b-lg shadow-xl w-52 top-14" v-if="isRedemMenuOpen">
                 <div class="px-5 py-3 cursor-pointer" @click="goToUrl('/redem-points-detail?data=1')">Book a flight</div>
-                <div class="px-5 py-3 cursor-pointer" @click="goToUrl('/redem-points-detail?data=2')">Extra baggage</div>
+                <!-- <div class="px-5 py-3 cursor-pointer" @click="goToUrl('/redem-points-detail?data=2')">Extra baggage</div>
                 <div class="px-5 py-3 cursor-pointer" @click="goToUrl('/redem-points-detail?data=3')">Convert to Partner Points</div>
-                <div class="px-5 py-3 cursor-pointer" @click="goToUrl('/redem-points-detail?data=4')">Shop & Pay</div>
+                <div class="px-5 py-3 cursor-pointer" @click="goToUrl('/redem-points-detail?data=4')">Shop & Pay</div> -->
               </div>
             </div>
             <div class="flex-none">Shop</div>
