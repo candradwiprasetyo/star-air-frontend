@@ -145,6 +145,34 @@ export default {
     }
   },
   methods: {
+    refreshUser(memberId) {
+      let formData = new FormData();
+      formData.append('token', this.$config.myToken);
+      formData.append('airline_code', this.$config.myAirlineCode);
+      formData.append('member_id', memberId);
+
+      this.$axios.$post('/api/member/get-member-detail', formData)
+        .then( (response) => {
+          if (response.err_num == '0') {
+            this.userData = response.result;
+
+            let newUser = {
+              "member_id": this.userData.member_id,
+              "fnf_id": "",
+              "name": this.userData.name,
+              "birthdate": "",
+              "email": this.userData.email
+            }
+        
+            this.profileData.push(newUser);
+            this.createUserDetail(0, this.userData);
+            this.loadData();
+          }
+        })
+        .catch(function (error) {
+          console.log(error)
+        })
+    },
     loadUser() {
       let userData = (cookie.get('star_air_login')) ? JSON.parse(cookie.get('star_air_login')) : '';
       this.userData = userData;
@@ -160,42 +188,7 @@ export default {
     createUser() {
       // get user detail
       let userData = (cookie.get('star_air_login')) ? JSON.parse(cookie.get('star_air_login')) : '';
-      this.userData = userData;
-
-      let newUser = {
-        "member_id": this.userData.member_id,
-        "fnf_id": "",
-        "name": this.userData.name,
-        "birthdate": "",
-        "email": this.userData.email
-      }
-  
-      this.profileData.push(newUser);
-      this.createUserDetail(0, userData);
-      this.loadData();
-
-      // let formDataDetail = new FormData();
-      // formDataDetail.append('member_id', this.userData.member_id);
-      // formDataDetail.append('token', this.$config.myToken);
-      // formDataDetail.append('airline_code', this.$config.myAirlineCode);
-
-      // this.$axios.$post('/api/member/get-member-detail', formDataDetail)
-      //   .then( (responseDetail) => {
-      //     let newUser = {
-      //       "member_id": this.userData.member_id,
-      //       "fnf_id": "",
-      //       "name": responseDetail.result.name,
-      //       "birthdate": "",
-      //       "email": this.userData.email
-      //     }
-      //     this.profileData.push(newUser);
-      //     this.createUserDetail(0, responseDetail.result);
-      //     this.loadData();
-      //   })
-      //   .catch(function (error) {
-      //     console.log(error)
-      //   })
-      
+      this.refreshUser(userData.member_id)
     },
     createUserDetail(index, data) {
       this.profileData[index].member_level = data.member_level;

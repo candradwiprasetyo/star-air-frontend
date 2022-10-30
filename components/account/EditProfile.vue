@@ -320,7 +320,7 @@
       closePopupSuccess() {
         this.isPopupSuccess = false;
         // this.$emit('back-button', 2);
-        window.location.href = '/account?page=user-profile';
+        window.location.href = '/account?page=user-profile&did=1';
       },
       changePassportNumber() {
         if (this.passportNumber=='') {

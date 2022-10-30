@@ -6,9 +6,9 @@ export default {
       activeMenu: 1,
       dataMenu: [
         { id: 1, name: 'Book a flight' },
-        { id: 2, name: 'Extra Baggage' },
-        { id: 3, name: 'Convert Points to Partner Points' },
-        { id: 4, name: 'Shop & Pay' },
+        // { id: 2, name: 'Extra Baggage', seen: false },
+        // { id: 3, name: 'Convert Points to Partner Pointssss', seen: true },
+        // { id: 4, name: 'Shop & Pay' },
       ],
       dataContent: [],
       isLoaded: false,
