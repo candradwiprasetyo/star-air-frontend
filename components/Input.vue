@@ -8,7 +8,7 @@
       :value="value"
       v-on:input="updateValue($event.target.value)"
       :readonly="readonly"
-      v-on:change="$emit('change-action')"
+      v-on:keyup="$emit('change-action')"
     />
     <div class="absolute w-6 h-6 right-3 top-4" v-if="icon">
       <img :src="require('@/assets/images/' + icon)" alt="Search" />

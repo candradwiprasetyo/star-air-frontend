@@ -8,7 +8,10 @@
           </div>
         </div>
       </div>
-      <div class="p-6 overflow-hidden">
+      <div class="p-6 overflow-hidden" v-if="isLoaded==false">
+        Loading...
+      </div>
+      <div class="p-6 overflow-hidden" v-if="isLoaded==true">
         <div class="text-lg font-semibold font-noto-sans text-grayscale-900">Contact Details</div>
         <div class="mt-6 md:flex gap-x-6">
           <div class="flex-1">
@@ -196,6 +199,7 @@
         gender: 'Male',
         modalOtp: false,
         otp: null,
+        isLoaded: false,
       };
     },
     props: {
@@ -285,6 +289,7 @@
               this.gender = "Female";
 
               // this.country = this.userData.nationality;
+              this.isLoaded = true;
             }
           })
           .catch(function (error) {

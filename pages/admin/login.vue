@@ -65,7 +65,7 @@
     },
     mounted() {
       if (cookie.get('star_air_login_admin')) {
-        this.$router.push('/')
+        this.$router.push('/admin/')
       }
     },
     watch: {
