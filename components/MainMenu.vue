@@ -21,7 +21,7 @@
               @click="openEarnMenu"
               v-on-clickaway="closeEarnMenu"
             >
-              Earn
+              <!-- Earn
               <img
                 src="~/assets/images/arrow-bottom-gray.svg"
                 class="inline-block"
@@ -38,7 +38,7 @@
               class="relative flex-none cursor-pointer"
               @click="openRedeemMenu"
               v-on-clickaway="closeRedeemMenu"
-            >
+            > -->
               Redeem
               <img
                 src="~/assets/images/arrow-bottom-gray.svg"
