@@ -52,7 +52,7 @@
                 <div class="px-5 py-3 cursor-pointer" @click="goToUrl('/redem-points-detail?data=4')">Shop & Pay</div> -->
               </div>
             </div>
-            <div class="flex-none">Shop</div>
+            <!-- <div class="flex-none">Shop</div> -->
             <div class="flex-none">
               Help
               <img
