@@ -97,7 +97,7 @@
                       class="w-full text-black outline-none"
                       :value="formatPassportExpireDate"
                       v-on="inputEvents"
-                      placeholder="mm/dd/yyyy"
+                      placeholder="dd/mm/yyyy"
                       readonly
                     />
                   </template>
