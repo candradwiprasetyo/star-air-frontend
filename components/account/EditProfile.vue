@@ -40,7 +40,7 @@
                       class="w-full text-black outline-none"
                       :value="inputValue"
                       v-on="inputEvents"
-                      placeholder="dd/mm/yyyy"
+                      placeholder="mm/dd/yyyy"
                       readonly
                     />
                   </template>
@@ -97,7 +97,7 @@
                       class="w-full text-black outline-none"
                       :value="inputValue"
                       v-on="inputEvents"
-                      placeholder="dd/mm/yyyy"
+                      placeholder="mm/dd/yyyy"
                       readonly
                     />
                   </template>
