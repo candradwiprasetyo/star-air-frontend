@@ -55,7 +55,7 @@ export default {
   },
 
   proxy: {
-    '/api/': { target: 'http://wstest-loyalty.sqiva.com', pathRewrite: {'^/api/': ''} }
+    '/api/': { target: 'https://wstest-loyalty.sqiva.com', pathRewrite: {'^/api/': ''} }
   },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build

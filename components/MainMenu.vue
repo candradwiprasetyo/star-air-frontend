@@ -21,7 +21,7 @@
               @click="openEarnMenu"
               v-on-clickaway="closeEarnMenu"
             >
-              Earn
+              <!-- Earn
               <img
                 src="~/assets/images/arrow-bottom-gray.svg"
                 class="inline-block"
@@ -38,7 +38,7 @@
               class="relative flex-none cursor-pointer"
               @click="openRedeemMenu"
               v-on-clickaway="closeRedeemMenu"
-            >
+            > -->
               Redeem
               <img
                 src="~/assets/images/arrow-bottom-gray.svg"
@@ -113,7 +113,6 @@
                   <div class="px-5 py-3 cursor-pointer" @click="goToUrl('/account?page=user-profile')">User Profile</div>
                   <div class="px-5 py-3 cursor-pointer" @click="goToUrl('/account?page=booking-history')">Booking History</div>
                   <div class="px-5 py-3 cursor-pointer" @click="goToUrl('/account?page=star-points')">Star Points</div>
-                  <div class="px-5 py-3 cursor-pointer" @click="goToUrl('/account?page=extend-membership')">Extend Membership</div>
                   <div @click="goLogout()" class="px-5 pt-3 pb-5 cursor-pointer">Logout</div>
                 </div>
               </div>

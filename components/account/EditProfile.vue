@@ -38,7 +38,7 @@
                   <template v-slot="{ inputValue, inputEvents }">
                     <input
                       class="w-full text-black outline-none"
-                      :value="formatBirthDate"
+                      :value="inputValue"
                       v-on="inputEvents"
                       placeholder="dd/mm/yyyy"
                       readonly
@@ -95,7 +95,7 @@
                   <template v-slot="{ inputValue, inputEvents }">
                     <input
                       class="w-full text-black outline-none"
-                      :value="formatPassportExpireDate"
+                      :value="inputValue"
                       v-on="inputEvents"
                       placeholder="dd/mm/yyyy"
                       readonly
