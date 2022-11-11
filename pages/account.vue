@@ -11,7 +11,7 @@ export default {
         { id: 2, name: 'User Profile' },
         { id: 3, name: 'Booking History' },
         { id: 4, name: 'Star Points' },
-        { id: 5, name: 'Extend Membership' },
+        //{ id: 5, name: 'Extend Membership' },
         { id: 6, name: 'Change Password' },
       ],
       userData: [],

@@ -113,7 +113,6 @@
                   <div class="px-5 py-3 cursor-pointer" @click="goToUrl('/account?page=user-profile')">User Profile</div>
                   <div class="px-5 py-3 cursor-pointer" @click="goToUrl('/account?page=booking-history')">Booking History</div>
                   <div class="px-5 py-3 cursor-pointer" @click="goToUrl('/account?page=star-points')">Star Points</div>
-                  <div class="px-5 py-3 cursor-pointer" @click="goToUrl('/account?page=extend-membership')">Extend Membership</div>
                   <div @click="goLogout()" class="px-5 pt-3 pb-5 cursor-pointer">Logout</div>
                 </div>
               </div>
