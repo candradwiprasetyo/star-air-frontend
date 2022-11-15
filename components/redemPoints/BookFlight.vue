@@ -21,7 +21,7 @@
         One-way
       </div>
     </div>
-    <form target="_blank" id="formSearchSchedule" class="" method=POST action="https://test-starair.paxlinks.com/search-schedule">
+    <form target="_blank" id="formSearchSchedule" class="" method=POST action="https://loyalty.starair.co.in/search-schedule">
       <div class="w-full mt-6 md:flex">
         <div class="relative flex-1">
           <div

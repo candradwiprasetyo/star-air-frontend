@@ -45,7 +45,7 @@ export default {
   ],
 
   // axios: {
-  //   baseURL: 'https://wstest-loyalty.sqiva.com',
+  //   baseURL: 'https://wstest-loyalty.sqiva.com' (live), https://wsloyalty.paxlinks.com/(demo)
   //   proxyHeaders: true,
   //   credentials: false,
   // },
@@ -55,7 +55,7 @@ export default {
   },
 
   proxy: {
-    '/api/': { target: 'https://wstest-loyalty.sqiva.com', pathRewrite: {'^/api/': ''} }
+    '/api/': { target: 'https://wsloyalty.paxlinks.com', pathRewrite: {'^/api/': ''} }
   },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
