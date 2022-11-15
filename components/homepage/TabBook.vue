@@ -43,7 +43,7 @@
         </div>
       </div>
     </div>
-    <form target="_blank" id="formSearchSchedule" class="" method=POST action="https://loyalty.starair.co.in/search-schedule" >
+    <form target="_blank" id="formSearchSchedule" class="" method=POST action="https://test-starair.paxlinks.com/search-schedule" >
       <div v-if="routeType!=3">
         <div class="mt-6 md:flex">
           <div class="w-full md:w-7/12 md:flex">
