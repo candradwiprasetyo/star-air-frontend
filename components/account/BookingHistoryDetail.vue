@@ -236,7 +236,7 @@ export default {
       return result;
     },
     getAirportName() {
-      this.$axios.$get(this.$config.myTempApi + '&app=data&action=get_org')
+      this.$axios.$get(this.$config.myTempApi + '&app=data_airline&action=get_org')
         .then( (response) => {
           response.origin.forEach(element => {
             if (this.data.route_info[0][0] == element[0]) {
