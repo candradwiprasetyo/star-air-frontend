@@ -33,7 +33,7 @@ export default {
       this.getSchedule();
     },
     loadOrigin() {
-      this.$axios.$get(this.$config.myTempApi + '&app=data&action=get_org')
+      this.$axios.$get(this.$config.myTempApi + '&app=data_airline&action=get_org')
         .then( (response) => {
           this.dataAirport = response.origin;
         })

@@ -313,7 +313,7 @@ export default {
       this.isPassangerOpen = false
     },
     loadOrigin() {
-      this.$axios.$get(this.$config.myTempApi + '&app=data&action=get_org')
+      this.$axios.$get(this.$config.myTempApi + '&app=data_airline&action=get_org')
         .then( (response) => {
           this.originOptions = response.origin;
         })
@@ -322,7 +322,7 @@ export default {
         })
     },
     loadDestination() {
-      this.$axios.$get(this.$config.myTempApi + '&app=data&action=get_org_des')
+      this.$axios.$get(this.$config.myTempApi + '&app=data_airline&action=get_org_des')
         .then( (response) => {
           // this.destinationOptions = response.destination;
           this.destinationOptions = []
@@ -347,7 +347,7 @@ export default {
         })
     },
     loadAllDestination() {
-      this.$axios.$get(this.$config.myTempApi + '&app=data&action=get_des')
+      this.$axios.$get(this.$config.myTempApi + '&app=data_airline&action=get_des')
         .then( (response) => {
           this.allDestinationOptions = response.destination;
         })
