@@ -395,7 +395,7 @@ export default {
               let newDestination = [];
               this.destinationOptions.forEach((destination, index) => {
                 this.allDestinationOptions.forEach(allDestination => {
-                  if (allDestination[0] == destination) {
+                  if (allDestination[0] == destination[0]) {
                     newDestination.push([allDestination[0], allDestination[1]])
                   }
                 });
