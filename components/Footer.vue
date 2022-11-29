@@ -111,7 +111,7 @@
             <div class="flex-none inline-block">Site Map</div>
           </div>
           <div class="flex-none mt-6 md:0">
-            © Star Air 2021. All Rights Reserved.
+            © Alliance Air 2021. All Rights Reserved.
           </div>
         </div>
       </div>

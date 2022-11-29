@@ -132,7 +132,7 @@ export default {
                   <li>Flexi awards</li>
                   <li>Upgrade class and extra baggage</li>
                   <li>Stay at hotel with points</li>
-                  <li>Shop & pay with StarPoints at Star Air Duty Free</li>
+                  <li>Shop & pay with StarPoints at Alliance Air Duty Free</li>
                 </ul>
               </div>
             </div>
@@ -200,7 +200,7 @@ export default {
                   </div>
                   <div class="mt-1 text-grayscale-500">
                     Pamper yourself by spending your Star Points for booking a
-                    flight with Star Air.
+                    flight with Alliance Air.
                   </div>
                 </div>
                 <div class="w-40">
@@ -234,7 +234,7 @@ export default {
                   </div>
                   <div class="mt-1 text-grayscale-500">
                     You can get 20% off shopping when paying with Star Points at
-                    Star Air Duty Free.
+                    Alliance Air Duty Free.
                   </div>
                 </div>
               </div>
@@ -280,7 +280,7 @@ export default {
               </div>
               <div class="mt-1 text-grayscale-500">
                 Pamper yourself by spending your Star Points for booking a
-                flight with Star Air.
+                flight with Alliance Air.
               </div>
             </div>
             <div class="flex-1">
@@ -312,7 +312,7 @@ export default {
               </div>
               <div class="mt-1 text-grayscale-500">
                 You can get 20% off shopping when paying with Star Points at
-                Star Air Duty Free.
+                Alliance Air Duty Free.
               </div>
             </div>
           </div>

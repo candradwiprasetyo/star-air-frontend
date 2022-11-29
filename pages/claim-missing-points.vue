@@ -18,7 +18,7 @@ export default {
         Claim Missing Points
       </div>
       <div class="mt-3 text-sm text-grayscale-500 md:text-base">
-        Buy more Star Points to get the flight reward you really want. If you do not have enough Star Points for an award ticket, award upgrade on Star Air or extra baggage, you can buy additional Star Points to top up your existing balance online.
+        Buy more Star Points to get the flight reward you really want. If you do not have enough Star Points for an award ticket, award upgrade on Alliance Air or extra baggage, you can buy additional Star Points to top up your existing balance online.
       </div>
       <div class="block p-6 mt-10 md:hidden bg-light-blue rounded-xl">
         <div class="text-lg font-semibold text-grayscale-900">

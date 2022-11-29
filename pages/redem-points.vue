@@ -20,8 +20,8 @@ export default {
       <div class="mt-3 text-sm text-grayscale-500 md:text-base">
         You can redeem your Star Points for a wide range of rewards, such as
         complimentary flights, cabin upgrades and excess baggage allowances with
-        Star Air. In addition, you can use Star Points to redeem hotel stays,
-        award flights with our partner airlines, or make purchases at Star Air
+        Alliance Air. In addition, you can use Star Points to redeem hotel stays,
+        award flights with our partner airlines, or make purchases at Alliance Air
         Free. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac
         mauris vitae sem posuere blandit. Nam pretium venenatis bibendum. Nam
         eget ante eu metus consequat semper non ac nunc. Duis semper massa nec
@@ -47,17 +47,17 @@ export default {
               </div>
               <div class="mt-2 text-sm leading-loose text-grayscale-500">
                 <div class="inline md:hidden">
-                  Redeem your points for booking a flight with Star Air. Flight
+                  Redeem your points for booking a flight with Alliance Air. Flight
                   whenever and wherever you are with your friend and family. Use
                   your points for flight now.
                 </div>
                 <div class="hidden md:inline">
-                  Redeem your points for booking a flight with Star Air. Flight
+                  Redeem your points for booking a flight with Alliance Air. Flight
                   whenever and wherever you are with your friend and family. To
                   make your member experience even more rewarding, we have
                   implemented a number of new changes to your redemption
                   activities. You can also redeem points for upgrading class to
-                  business class and shopping at our Star Air duty free. Use your
+                  business class and shopping at our Alliance Air duty free. Use your
                   points for flight now.
                 </div>
               </div>
@@ -93,12 +93,12 @@ export default {
               </div>
               <div class="mt-2 text-sm leading-loose text-grayscale-500">
                 <div class="inline md:hidden">
-                  Convert your Star Points for extra baggage on Star Air flights
+                  Convert your Star Points for extra baggage on Alliance Air flights
                   for yourselft or anyone else. Get extra space to store your
                   merchandise you purchase for your friend and family.
                 </div>
                 <div class="hidden md:inline">
-                  Convert your Star Points for extra baggage award on Star Air
+                  Convert your Star Points for extra baggage award on Alliance Air
                   flights for yourselft or anyone else. Get extra space to store
                   your merchandise you purchase for your friend and family. Extra
                   baggage award can be redeem at airport or via online. Curabitur
@@ -183,12 +183,12 @@ export default {
             </div>
             <div class="mt-2 text-sm leading-loose text-grayscale-500">
               <div class="inline md:hidden">
-                Convert your Star Points for extra baggage on Star Air flights
+                Convert your Star Points for extra baggage on Alliance Air flights
                 for yourselft or anyone else. Get extra space to store your
                 merchandise you purchase for your friend and family.
               </div>
               <div class="hidden md:inline">
-                Redeem your Points for purchases made at Star Air Duty Free and
+                Redeem your Points for purchases made at Alliance Air Duty Free and
                 our partners at some international airport. Vestibulum laoreet
                 nulla id ligula porta, eu molestie justo dapibus. Donec a
                 iaculis erat, varius congue sem. Ut et augue bibendum, lobortis

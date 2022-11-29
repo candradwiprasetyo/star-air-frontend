@@ -13,7 +13,7 @@ export default {
         { id: 6, name: 'Others' },
       ],
       dataPoint: [
-        { id: 1, cover: 'earn-point-1.jpg', title: 'Flight with Star Air', description: 'Earn Star Points when you fly with Star Air to your desired destinations.' },
+        { id: 1, cover: 'earn-point-1.jpg', title: 'Flight with Alliance Air', description: 'Earn Star Points when you fly with Alliance Air to your desired destinations.' },
         { id: 2, cover: 'earn-point-2.jpg',title: 'Stay at Aston Hotel', description: 'Staycation at Aston hotel available ini 54 countries and you can also earn Star Points.' },
         { id: 3, cover: 'earn-point-3.jpg',title: 'Convert UOB Points', description: 'If you have UOB bank account, you can convert your UOB Points to Star Points.' },
         { id: 4, cover: 'earn-point-4.jpg',title: 'Shop at Walmart', description: 'Shop at Walmart and get Star Points for every $100 of purchases.' },

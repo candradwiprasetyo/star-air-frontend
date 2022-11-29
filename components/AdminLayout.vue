@@ -9,7 +9,7 @@
             alt="Logo"
             width="150"
           />
-          <div class="mt-4 text-base font-bold uppercase">Admin Star Air</div>
+          <div class="mt-4 text-base font-bold uppercase">Admin Alliance Air</div>
         </div>
         <div class="relative grid gap-10 text-lg font-bold text-gray-500 cursor-pointer">
           <NuxtLink to="/admin">

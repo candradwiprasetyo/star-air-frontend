@@ -89,7 +89,7 @@ export default {
             </div>
             <div class="flex-grow">
               <label for="checkbox1">
-                I agree to the Conditions of Carriage of Star Air, the Terms, and Conditions of the Star Rewards program.</label
+                I agree to the Conditions of Carriage of Alliance Air, the Terms, and Conditions of the Star Rewards program.</label
               >
             </div>
           </div>

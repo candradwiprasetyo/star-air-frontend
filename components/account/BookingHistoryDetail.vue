@@ -34,7 +34,7 @@
               <img
                 src="~/assets/images/booking-logo.png"
                 class="inline-block"
-                alt="Logo star air"
+                alt="Logo Alliance Air"
                 width="150"
               />
               
@@ -43,7 +43,7 @@
                   <div class="mt-4 text-xs text-grayscale-400">
                     Airlines
                   </div>
-                  <div class="text-sm text-grayscale-900">Star Air</div>
+                  <div class="text-sm text-grayscale-900">Alliance Air</div>
                   <div class="mt-4 text-xs text-grayscale-400">
                     Flight Number
                   </div>

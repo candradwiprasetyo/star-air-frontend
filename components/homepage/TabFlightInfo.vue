@@ -8,7 +8,7 @@
           Check flight schedule
         </div>
         <div class="mt-2 text-grayscale-500">
-          Search for Star Air flight status
+          Search for Alliance Air flight status
         </div>
       </div>
       <div class="flex-1 flex-none">
