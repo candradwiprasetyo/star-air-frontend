@@ -126,13 +126,13 @@ export default {
               </div>
               <div class="mt-4 text-grayscale-500">
                 <ul class="pl-5 leading-loose list-disc">
-                  <li>100% mileage on all flights for earning StarPoints</li>
+                  <li>100% mileage on all flights for earning AlliancePoints</li>
                   <li>100% mileage on non-air partner transactions</li>
                   <li>Priority stand-by</li>
                   <li>Flexi awards</li>
                   <li>Upgrade class and extra baggage</li>
                   <li>Stay at hotel with points</li>
-                  <li>Shop & pay with StarPoints at Alliance Air Duty Free</li>
+                  <li>Shop & pay with AlliancePoints at Alliance Air Duty Free</li>
                 </ul>
               </div>
             </div>

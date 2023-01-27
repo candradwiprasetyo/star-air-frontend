@@ -29,7 +29,7 @@ export default {
             <li>You may claim points that have not yet been credited to your account.</li>
             <li>Claims must only be submitted for flights taken within the past 6 months.</li>
             <li>Please allow time for the missing mileage to be reflected on your account.</li>
-            <li>You should receive your updated mileage balance on your next StarPoints Statement.</li>
+            <li>You should receive your updated mileage balance on your next AlliancePoints Statement.</li>
           </ul>
         </div>
       </div>
@@ -113,7 +113,7 @@ export default {
               <li>You may claim points that have not yet been credited to your account.</li>
               <li>Claims must only be submitted for flights taken within the past 6 months.</li>
               <li>Please allow time for the missing mileage to be reflected on your account.</li>
-              <li>You should receive your updated mileage balance on your next StarPoints Statement.</li>
+              <li>You should receive your updated mileage balance on your next AlliancePoints Statement.</li>
             </ul>
           </div>
         </div>
