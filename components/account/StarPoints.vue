@@ -3,7 +3,7 @@
     <div class="w-full pb-0 mb-6 border rounded-xl text-grayscale-500">
       <div class="p-6 border-b">
         <div class="flex">
-          <div class="text-lg font-semibold font-noto-sans text-grayscale-900">Star Points Activity</div>
+          <div class="text-lg font-semibold font-noto-sans text-grayscale-900">Alliance Points Activity</div>
         </div>
       </div>
       <div class="p-6 overflow-hidden">
@@ -24,7 +24,7 @@
                 <th>Entry Date</th>
                 <th>Validity</th>
                 <th>Type</th>
-                <th>Star Points</th>
+                <th>Alliance Points</th>
               </tr>
             </thead>
             <tbody>

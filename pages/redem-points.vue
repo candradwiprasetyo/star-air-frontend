@@ -18,9 +18,9 @@ export default {
         Redeem Points
       </div>
       <div class="mt-3 text-sm text-grayscale-500 md:text-base">
-        You can redeem your Star Points for a wide range of rewards, such as
+        You can redeem your Alliance Points for a wide range of rewards, such as
         complimentary flights, cabin upgrades and excess baggage allowances with
-        Alliance Air. In addition, you can use Star Points to redeem hotel stays,
+        Alliance Air. In addition, you can use Alliance Points to redeem hotel stays,
         award flights with our partner airlines, or make purchases at Alliance Air
         Free. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac
         mauris vitae sem posuere blandit. Nam pretium venenatis bibendum. Nam
@@ -93,12 +93,12 @@ export default {
               </div>
               <div class="mt-2 text-sm leading-loose text-grayscale-500">
                 <div class="inline md:hidden">
-                  Convert your Star Points for extra baggage on Alliance Air flights
+                  Convert your Alliance Points for extra baggage on Alliance Air flights
                   for yourselft or anyone else. Get extra space to store your
                   merchandise you purchase for your friend and family.
                 </div>
                 <div class="hidden md:inline">
-                  Convert your Star Points for extra baggage award on Alliance Air
+                  Convert your Alliance Points for extra baggage award on Alliance Air
                   flights for yourselft or anyone else. Get extra space to store
                   your merchandise you purchase for your friend and family. Extra
                   baggage award can be redeem at airport or via online. Curabitur
@@ -139,11 +139,11 @@ export default {
               </div>
               <div class="mt-2 text-sm leading-loose text-grayscale-500">
                 <div class="inline md:hidden">
-                  Redeem your Star Points for staying at our hotel partners or car
+                  Redeem your Alliance Points for staying at our hotel partners or car
                   rental partners. from 4 to 5 stars hotel around the world.
                 </div>
                 <div class="hidden md:inline">
-                  Redeem your Star Points for staying at our hotel partners or car
+                  Redeem your Alliance Points for staying at our hotel partners or car
                   rental partners. From 4 to 5 stars hotel around the world.
                   Curabitur non varius odio, quis vestibulum sem. Vestibulum
                   laoreet nulla id ligula porta, eu molestie justo dapibus. Donec
@@ -183,7 +183,7 @@ export default {
             </div>
             <div class="mt-2 text-sm leading-loose text-grayscale-500">
               <div class="inline md:hidden">
-                Convert your Star Points for extra baggage on Alliance Air flights
+                Convert your StaAlliancer Points for extra baggage on Alliance Air flights
                 for yourselft or anyone else. Get extra space to store your
                 merchandise you purchase for your friend and family.
               </div>

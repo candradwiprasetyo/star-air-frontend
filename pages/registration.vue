@@ -176,7 +176,7 @@
         </div>
         <div class="mt-4 text-grayscale-500">
           <ul class="pl-5 leading-loose list-disc">
-            <li>100 Star Points</li>
+            <li>100 Alliance Points</li>
             <li>Free extra baggage 15kg</li>
             <li>Special gift</li>
             <li>Flight discount voucher</li>
@@ -253,7 +253,7 @@
             </div>
             <div class="flex-grow">
               <label for="checkbox1">
-                I agree to the Conditions of Carriage of Alliance Air, the Terms, and Conditions of the Star Rewards program.</label
+                I agree to the Conditions of Carriage of Alliance Air, the Terms, and Conditions of the Alliance Rewards program.</label
               >
             </div>
           </div>
@@ -283,7 +283,7 @@
             </div>
             <div class="flex-grow">
               <label for="checkbox1">
-                I agree to receive offers, news, marketing communications, and market research from time to time by electronic media and SMS from Star Rewards. Electronic media refers to email and Social Media.</label
+                I agree to receive offers, news, marketing communications, and market research from time to time by electronic media and SMS from Alliance Rewards. Electronic media refers to email and Social Media.</label
               >
             </div>
           </div>

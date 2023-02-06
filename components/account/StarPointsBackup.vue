@@ -3,7 +3,7 @@
     <div class="w-full pb-0 mb-6 border rounded-xl text-grayscale-500">
       <div class="p-6 border-b">
         <div class="flex">
-          <div class="text-lg font-semibold font-noto-sans text-grayscale-900">Star Points Activity</div>
+          <div class="text-lg font-semibold font-noto-sans text-grayscale-900">Alliance Points Activity</div>
         </div>
       </div>
       <div class="mx-6 mt-6 space-y-4 md:space-y-0 md:space-x-4 md:flex">
@@ -45,7 +45,7 @@
               <tr>
                 <th>Date</th>
                 <th>Type</th>
-                <th>Star Points</th>
+                <th>Alliance Points</th>
                 <th>Action</th>
               </tr>
             </thead>

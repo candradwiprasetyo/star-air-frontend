@@ -10,7 +10,7 @@ export default {
         { id: 1, name: 'Overview' },
         { id: 2, name: 'User Profile' },
         { id: 3, name: 'Booking History' },
-        { id: 4, name: 'Star Points' },
+        { id: 4, name: 'Alliance Points' },
         //{ id: 5, name: 'Extend Membership' },
         { id: 6, name: 'Change Password' },
       ],
@@ -103,7 +103,7 @@ export default {
         Welcome, {{ userData.name }}
       </div>
       <div class="mt-3 text-sm text-grayscale-500 md:text-base">
-        Thank you for joining our loyalty program, Star Club. In this page you can manage your Star Club account such as viewing booking history, redeem, claim & transfer Star Points and edit your account.
+        Thank you for joining our loyalty program, Alliance Club. In this page you can manage your Alliance Club account such as viewing booking history, redeem, claim & transfer Alliance Points and edit your account.
       </div>
       <div class="mt-16 md:flex gap-x-8">
         <div class="flex-none h-auto pb-0 mb-6 text-grayscale-500 md:min-w-[300px]">

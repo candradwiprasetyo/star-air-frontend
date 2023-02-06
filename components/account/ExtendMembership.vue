@@ -17,15 +17,15 @@
             />
           </div>
           <div class="relative flex-grow md:pl-16">
-            <div class="text-lg font-semibold font-noto-sans text-grayscale-900">Star Club Silver</div>
-            <div class="text-xs text-primary-600">5000 Star Points required</div>
+            <div class="text-lg font-semibold font-noto-sans text-grayscale-900">Alliance Club Silver</div>
+            <div class="text-xs text-primary-600">5000 Alliance Points required</div>
             <div class="mt-4 text-grayscale-500">
               <ul class="pl-5 leading-loose list-disc">
-                <li>100% mileage on all flights for Star Points</li>
+                <li>100% mileage on all flights for Alliance Points</li>
                 <li>100% mileage on non-air partner</li>
                 <li>Priority stand-by </li>
                 <li>Flexi awards</li>
-                <li>Shop & pay with Star Points at Duty Free</li>
+                <li>Shop & pay with Alliance Points at Duty Free</li>
               </ul>
             </div>
             <div class="inline-block mt-4" v-if="data != 1">

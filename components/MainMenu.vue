@@ -98,7 +98,7 @@
                   </div>
                   <div class="flex-grow">
                     <div class="font-medium text-grayscale-900">{{ userData.name }}</div>
-                    <div class="text-xs text-primary-600">{{ userData.avb_point }} Star Points</div>
+                    <div class="text-xs text-primary-600">{{ userData.avb_point }} Alliance Points</div>
                   </div>
                   <div class="flex-none">
                     <img
@@ -112,7 +112,7 @@
                   <div class="px-5 py-3 cursor-pointer" @click="goToUrl('/account?page=overview')">Overview</div>
                   <div class="px-5 py-3 cursor-pointer" @click="goToUrl('/account?page=user-profile')">User Profile</div>
                   <div class="px-5 py-3 cursor-pointer" @click="goToUrl('/account?page=booking-history')">Booking History</div>
-                  <div class="px-5 py-3 cursor-pointer" @click="goToUrl('/account?page=star-points')">Star Points</div>
+                  <div class="px-5 py-3 cursor-pointer" @click="goToUrl('/account?page=star-points')">Alliance Points</div>
                   <div @click="goLogout()" class="px-5 pt-3 pb-5 cursor-pointer">Logout</div>
                 </div>
               </div>
@@ -183,7 +183,7 @@
               </div>
               <div class="flex-grow">
                 <div class="font-semibold font-noto-sans">Account</div>
-                <div class="text-xs text-grayscale-200">0 Star Points</div>
+                <div class="text-xs text-grayscale-200">0 Alliance Points</div>
               </div>
             </div>
           </NuxtLink>
@@ -217,7 +217,7 @@
             </div>
             <div class="flex-grow">
               <div class="font-semibold font-noto-sans">{{ userData.name }}</div>
-              <div class="text-xs text-grayscale-200">{{ userData.avb_point }} Star Points</div>
+              <div class="text-xs text-grayscale-200">{{ userData.avb_point }} Alliance Points</div>
             </div>
           </div>
           <div class="flex justify-end flex-1 gap-x-4">

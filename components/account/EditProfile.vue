@@ -188,6 +188,8 @@
         passportExpiryDate: null,
         countryData: [ 
           'India',
+          'japan',
+          'malaysia'
         ],
         isButtonEnabled: false,
         isPopupSuccess: false,

@@ -28,7 +28,7 @@
                 <th>Entry Date</th>
                 <th>Validity</th>
                 <th>Type</th>
-                <th>Star Points</th>
+                <th>Alliance Points</th>
               </tr>
             </thead>
             <tbody v-if="overviewData.length>0">

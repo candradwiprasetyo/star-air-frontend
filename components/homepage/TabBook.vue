@@ -8,7 +8,7 @@
           Where do you want to travel?
         </div>
         <div class="mt-2 text-grayscale-500">
-          Redeem your Star Points with a flight ticket to your desired destination
+          Redeem your Alliance Points with a flight ticket to your desired destination
         </div>
       </div>
       <div class="flex-1 flex-none">

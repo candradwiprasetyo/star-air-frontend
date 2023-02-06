@@ -90,7 +90,7 @@
                 </div>
               </div>
               <div class="flex-1">
-                <div class="mb-1 text-xs text-grayscale-400">Star Points</div>
+                <div class="mb-1 text-xs text-grayscale-400">Alliance Points</div>
                 <div class="text-grayscale-900">
                   {{ user.avb_point }} Points
                 </div>

@@ -67,7 +67,7 @@ export default {
     </div>
     <HomepageAdvancedSearch />
     <div class="container px-6 py-6 mx-auto md:py-14 md:px-0" v-if="isLoaded">
-      <div class="text-3xl font-semibold text-grayscale-900 font-noto-sans" v-html="(getDataContent('title_about_star_club')) ? getDataContent('title_about_star_club') : 'About Star Club'">  
+      <div class="text-3xl font-semibold text-grayscale-900 font-noto-sans" v-html="(getDataContent('title_about_star_club')) ? getDataContent('title_about_star_club') : 'About Alliance Club'">  
       </div>
       <div
         class="mt-3 text-sm leading-relaxed text-grayscale-500 md:text-base md:leading-relaxed"
@@ -79,7 +79,7 @@ export default {
           Member Tiers & Benefits
         </div>
         <div class="mt-3 text-sm text-grayscale-500 md:text-base">
-          Star Club offers three membership tiers Silver, Gold, and Platinum –
+          Alliance Club offers three membership tiers Silver, Gold, and Platinum –
           each with their own exclusive benefits.
         </div>
         <div class="flex justify-center mt-6 cursor-pointer">
@@ -199,7 +199,7 @@ export default {
                     Book a Flight
                   </div>
                   <div class="mt-1 text-grayscale-500">
-                    Pamper yourself by spending your Star Points for booking a
+                    Pamper yourself by spending your Alliance Points for booking a
                     flight with Alliance Air.
                   </div>
                 </div>
@@ -230,10 +230,10 @@ export default {
                   <div
                     class="mt-4 text-lg font-semibold text-grayscale-900 font-noto-sans"
                   >
-                    Pay with star points
+                    Pay with Alliance points
                   </div>
                   <div class="mt-1 text-grayscale-500">
-                    You can get 20% off shopping when paying with Star Points at
+                    You can get 20% off shopping when paying with Alliance Points at
                     Alliance Air Duty Free.
                   </div>
                 </div>
@@ -246,7 +246,7 @@ export default {
             <div class="md:pr-16">
               <div
                 class="text-3xl font-semibold text-grayscale-900 font-noto-sans"
-                v-html="(getDataContent('title_redeem')) ? getDataContent('title_redeem') : 'Redeem Your Star Points in Many Ways'"
+                v-html="(getDataContent('title_redeem')) ? getDataContent('title_redeem') : 'Redeem Your Alliance Points in Many Ways'"
               >
               </div>
               <div
@@ -279,7 +279,7 @@ export default {
                 Book a Flight
               </div>
               <div class="mt-1 text-grayscale-500">
-                Pamper yourself by spending your Star Points for booking a
+                Pamper yourself by spending your Alliance Points for booking a
                 flight with Alliance Air.
               </div>
             </div>
@@ -308,10 +308,10 @@ export default {
               <div
                 class="mt-4 text-lg font-semibold text-grayscale-900 font-noto-sans"
               >
-                Pay with star points
+                Pay with Alliance points
               </div>
               <div class="mt-1 text-grayscale-500">
-                You can get 20% off shopping when paying with Star Points at
+                You can get 20% off shopping when paying with Alliance Points at
                 Alliance Air Duty Free.
               </div>
             </div>

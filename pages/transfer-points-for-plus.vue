@@ -18,7 +18,7 @@ export default {
         Transfer Points for Plus
       </div>
       <div class="mt-3 text-sm text-grayscale-500 md:text-base">
-        Share your Star Points with another Star Club member such as friend and family. So that they can also enjoy travelling with you. Transfer Points for Plus to other Star Club member can be done with minimum 1000 points.
+        Share your Alliance Points with another Alliance Club member such as friend and family. So that they can also enjoy travelling with you. Transfer Points for Plus to other Alliance Club member can be done with minimum 1000 points.
       </div>
       <div class="block p-6 mt-10 md:hidden bg-light-blue rounded-xl">
         <div class="text-lg font-semibold text-grayscale-900">
@@ -26,9 +26,9 @@ export default {
         </div>
         <div class="mt-4 text-grayscale-500">
           <ul class="pl-5 leading-loose list-disc">
-            <li>Star Points can be transferred in blocks of 1,000 Points</li>
-            <li>You can transfer up to 250,000 Star Points per calendar year.</li>
-            <li>The transfer of Star Points is non-refundable.</li>
+            <li>Alliance Points can be transferred in blocks of 1,000 Points</li>
+            <li>You can transfer up to 250,000 Alliance Points per calendar year.</li>
+            <li>The transfer of Alliance Points is non-refundable.</li>
           </ul>
         </div>
       </div>
@@ -47,7 +47,7 @@ export default {
             </div>
           </div>
           <Input label="Recepient Name" customClass="mt-6" />
-          <Input label="Star Club Number" customClass="mt-6" />
+          <Input label="Alliance Club Number" customClass="mt-6" />
           <div class="mt-10 md:w-64">
             <NuxtLink to=""> 
               <Button value="Continue" />
@@ -60,9 +60,9 @@ export default {
           </div>
           <div class="mt-4 text-grayscale-500">
             <ul class="pl-5 leading-loose list-disc">
-              <li>Star Points can be transferred in blocks of 1,000 Points</li>
-              <li>You can transfer up to 250,000 Star Points per calendar year.</li>
-              <li>The transfer of Star Points is non-refundable.</li>
+              <li>Alliance Points can be transferred in blocks of 1,000 Points</li>
+              <li>You can transfer up to 250,000 Alliance Points per calendar year.</li>
+              <li>The transfer of Alliance Points is non-refundable.</li>
             </ul>
           </div>
         </div>
