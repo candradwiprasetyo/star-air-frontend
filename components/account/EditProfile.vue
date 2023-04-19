@@ -182,13 +182,11 @@
         address: null,
         phone: null,
         email: null,
-        country: "india",
+        country: "INDIA",
         passportNumber: null,
         errorMessage: null,
         passportExpiryDate: null,
-        countryData: [ 
-          'India',
-        ],
+        countryData: [],
         isButtonEnabled: false,
         isPopupSuccess: false,
         genderData: [
@@ -296,6 +294,19 @@
             console.log(error)
           })
       },
+      loadCountry() {
+        this.$axios.$get(this.$config.myTempApi + '&app=data_airline&action=get_nationality')
+          .then( (response) => {
+            let newCountry = []
+            response.nationality.forEach(element => {
+              newCountry.push(element[1])
+            });
+            this.countryData = newCountry
+          })
+          .catch(function (error) {
+            console.log(error)
+          })
+      },
       formChanged() {
         if (
           this.address &&
@@ -380,6 +391,7 @@
     },
     mounted() {
       this.loadUser();
+      this.loadCountry();
     },
     watch: {
       address: function(val) { this.formChanged() },
