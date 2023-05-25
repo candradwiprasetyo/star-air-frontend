@@ -41,9 +41,24 @@
             Multicity
           </div>
         </div>
+        <div class="flex justify-center mt-2 text-center cursor-pointer" v-if="routeType!=3">
+          <div
+            class="flex items-center justify-center w-40 gap-3 border rounded-l-lg md:p-2 border-secondary-900" :class="(typeFare==1) ? 'bg-secondary-900 text-white' : 'text-secondary-900'"
+            @click="changeTypeFare(1)"
+          >
+            Economy
+          </div>
+          <div
+            class="flex items-center justify-center w-40 gap-3 border rounded-r-lg md:p-2 border-secondary-900" :class="(typeFare==2) ? 'bg-secondary-900 text-white' : 'text-secondary-900'"
+            @click="changeTypeFare(2)"
+          >
+            Business
+          </div>
+        </div>
       </div>
     </div>
     <form target="_blank" id="formSearchSchedule" class="" method=POST action="https://test-starair.paxlinks.com/search-schedule" >
+      <input type="hidden" name="typeFare" :value="typeFare" />
       <div v-if="routeType!=3">
         <div class="mt-6 md:flex">
           <div class="w-full md:w-7/12 md:flex">
@@ -327,6 +342,7 @@ export default {
       userData: null,
       isSearching: false,
       tooltip: false,
+      typeFare: 1,
     };
   },
   computed: {
@@ -436,6 +452,11 @@ export default {
     },
     changeRouteType(type) {
       this.routeType = type;
+      if (type == 3) {
+        this.typeFare = '';
+      } else {
+        this.typeFare = 1;
+      }
     },
     searchFlight() {
       if (
@@ -512,7 +533,10 @@ export default {
     },
     toggleTooltip() {
       this.tooltip = !this.tooltip;
-    }
+    },
+    changeTypeFare(value) {
+      this.typeFare = value;
+    },
   },
   mounted() {
     this.loadUser()
