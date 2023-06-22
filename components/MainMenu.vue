@@ -16,6 +16,8 @@
         <div class="flex-grow">
           <div class="flex items-center justify-end gap-x-12">
             <div class="flex-none cursor-pointer" @click="goToHome()">Home</div>
+            <div class="flex-none cursor-pointer" @click="goToUrl('https://ibook.starair.in/manage-booking')">Manage Booking</div>
+            <div class="flex-none cursor-pointer" @click="goToUrl('https://ibook.starair.in/web-checkin')">Web Checkin</div>
             <!-- <div 
               class="relative flex-none cursor-pointer"
               @click="openEarnMenu"
