@@ -316,9 +316,13 @@
 <script>
 import cookie from 'js-cookie'
 import { mixin as clickaway } from 'vue-clickaway';
+import HomepageTabBookMulticity from './TabBookMulticity.vue'
 
 export default {
   name: "HomepageTabBook",
+  components: { 
+    HomepageTabBookMulticity,
+  },
   mixins: [ clickaway ],
   data() {
     return {
