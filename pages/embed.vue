@@ -38,10 +38,10 @@
         <div v-if="activeTab == 1" class="p-6 md:p-0">
           <HomepageTabBook />
         </div>
-        <div v-else-if="activeTab == 2">
+        <div v-else-if="activeTab == 2" class="p-6 md:p-0">
           <HomepageTabMyTrip />
         </div>
-        <div v-else-if="activeTab == 3">
+        <div v-else-if="activeTab == 3" class="p-6 md:p-0">
           <HomepageTabFlightInfo />
         </div>
       </div>
