@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="flex">
+    <div class="md:flex">
       <div class="flex-1">
         <div
           class="text-2xl font-semibold md:mt-8 text-grayscale-900 font-noto-sans"
@@ -115,7 +115,7 @@
                 >
                   <input type="hidden" name="des" :value="(selectedDestination) ? selectedDestination[0] : ''">
                   {{ (selectedDestination[0]) ? selectedDestination[1] : (selectedOrigin[0]) ? 'Choose destination here' : 'Please choose origin first' }}
-                  <div v-if="isDestinationOpen" class="absolute w-full bg-white border left-0 top-[67px] overflow-y-auto max-h-[360px] shadow-custom">
+                  <div v-if="isDestinationOpen" class="z-50 absolute w-full bg-white border left-0 top-[67px] overflow-y-auto max-h-[360px] shadow-custom">
                     <div class="flex items-center px-6 py-4 border-b" v-for="(data, index) in destinationOptions" :key="index" @click="pickDestination(data)" v-if="destinationOptions.length>0">
                       <div class="flex-grow">
                         <div class="font-medium text-grayscale-900">{{ data[0] }}</div>
@@ -132,7 +132,7 @@
             </div>
           </div>
           <div class="flex w-full mt-6 md:w-3/12 md:mt-0">
-            <div class="w-2/3 md:w-full">
+            <div class="w-full">
               <div class="p-3 border rounded-r-lg md:rounded-r-none">
                 <div class="flex">
                   <div class="flex-1">
@@ -192,7 +192,7 @@
               >
                 <div class="text-grayscale-400 text-2xs">Passanger/Class</div>
                 {{ (passangerTotal) + ' Pax' }}
-                <div class="absolute w-80 bg-white border right-0 top-[67px] max-h-[360px] shadow-custom" :class="(isPassangerOpen) ? 'block' : 'hidden'">
+                <div class="z-50 absolute w-80 bg-white border right-0 top-[67px] max-h-[360px] shadow-custom" :class="(isPassangerOpen) ? 'block' : 'hidden'">
                   <div class="flex items-center p-4 border-b">
                     <div class="flex-1 text-grayscale-900">Adult (12+)</div>
                     <div class="flex items-center flex-1 gap-2">
