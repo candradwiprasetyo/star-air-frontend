@@ -74,7 +74,7 @@
                 >
                   <input type="hidden" name="org" :value="(selectedOrigin) ? selectedOrigin[0] : ''">
                   {{ (selectedOrigin[0]) ? selectedOrigin[1] : 'Choose origin here' }}
-                  <div v-if="isOriginOpen" class="absolute w-full bg-white border left-0 top-[67px] overflow-y-auto h-[360px] shadow-custom">
+                  <div v-if="isOriginOpen" class="z-50 absolute w-full bg-white border left-0 top-[67px] overflow-y-auto h-[360px] shadow-custom">
                     <div class="flex items-center px-6 py-4 border-b" v-for="(data, index) in originOptions" :key="index" @click="pickOrigin(data)">
                       <div class="flex-grow">
                         <div class="font-medium text-grayscale-900">{{ data[0] }}</div>
@@ -140,7 +140,6 @@
                     <client-only>
                       <v-date-picker 
                         v-model="departDate"
-                        :popover="{ visibility: 'click' }"
                         class="cursor-pointer"
                         :min-date='new Date()'
                       >
@@ -162,7 +161,6 @@
                     <client-only>
                       <v-date-picker 
                         v-model="returnDate"
-                        :popover="{ visibility: 'click' }"
                         class="cursor-pointer"
                         :min-date='new Date()'
                       >

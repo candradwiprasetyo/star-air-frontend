@@ -78,7 +78,6 @@
                 <client-only>
                   <v-date-picker 
                     v-model="departDate"
-                    :popover="{ visibility: 'click' }"
                     class="cursor-pointer"
                     :min-date='new Date()'
                     @input="onDateChange"
