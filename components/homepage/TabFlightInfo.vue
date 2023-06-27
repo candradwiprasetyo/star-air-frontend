@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="flex">
+    <div class="md:flex">
       <div class="flex-1">
         <div
           class="text-2xl font-semibold md:mt-8 text-grayscale-900 font-noto-sans"
@@ -49,7 +49,7 @@
               >
                 <input type="hidden" name="org" :value="(selectedOrigin) ? selectedOrigin[0] : ''">
                 {{ (selectedOrigin[0]) ? selectedOrigin[1] : 'Choose origin here' }}
-                <div v-if="isOriginOpen" class="absolute w-full bg-white border left-0 top-[67px] overflow-y-auto h-[360px] shadow-custom">
+                <div v-if="isOriginOpen" class="z-50 absolute w-full bg-white border left-0 top-[67px] overflow-y-auto h-[360px] shadow-custom">
                   <div class="flex items-center px-6 py-4 border-b" v-for="(data, index) in originOptions" :key="index" @click="pickOrigin(data)">
                     <div class="flex-grow">
                       <div class="font-medium text-grayscale-900">{{ data[0] }}</div>
@@ -107,7 +107,7 @@
           </div>
         </div>
         <div class="flex w-full mt-6 md:w-2/6 md:mt-0">
-          <div class="w-2/3 md:w-full">
+          <div class="w-full">
             <div class="p-3 border rounded-r-lg ">
               <div class="flex">
                 <div class="flex-1">
