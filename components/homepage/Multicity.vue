@@ -1,6 +1,6 @@
 <template>
   <div class="w-full">
-    <div class="flex w-full">
+    <div class="md:flex w-full">
       <div class="w-full md:w-4/6 md:flex">
         <div class="relative flex-1">
           <div
@@ -44,7 +44,7 @@
             />
           </div>
           <div
-            class="p-3 pl-6 border rounded-t-lg cursor-pointer md:rounded-l-lg md:rounded-tr-none"
+            class="p-3 pl-6 border cursor-pointer"
             @click="openDestination"
             v-on-clickaway="closeDestination"
           >
@@ -69,9 +69,9 @@
           </div>
         </div>
       </div>
-      <div class="flex w-full mt-6 md:w-2/6 md:mt-0">
-        <div class="w-grow md:w-full">
-          <div class="p-3 border rounded-r-lg md:rounded-r-none">
+      <div class="md:flex w-full md:w-2/6">
+        <div class="w-grow w-full">
+          <div class="p-3 border rounded-b-lg md:rounded-none md:rounded-r-lg">
             <div class="flex">
               <div class="flex-1">
                 <div class="text-grayscale-400 text-2xs">Depart</div>
@@ -98,10 +98,10 @@
             </div>
           </div>
         </div>
-        <div class="flex flex-none gap-4 pl-4 text-secondary-900">
+        <div class="flex flex-none gap-4 md:pl-4 text-secondary-900 mt-0">
           <div class="flex-none">
             <div 
-              class="flex items-center w-full gap-3 p-6 font-medium text-center border-2 rounded-lg cursor-pointer border-secondary-900"
+              class="flex items-center w-full gap-3 p-6 font-medium text-center border-2 rounded-lg cursor-pointer border-secondary-900 mt-4 md:mt-0"
               @click="deleteCountData()"
               v-if="isDeleteButton"
             >
@@ -116,7 +116,7 @@
         </div>
       </div>
     </div>
-    <div class="flex mt-5 pr-44" v-if="isAddButton">
+    <div class="md:flex mt-5 md:pr-44" v-if="isAddButton">
       <div class="flex-none">
         <div 
           class="flex items-center justify-center gap-3 p-5 font-medium text-center border-2 rounded-lg cursor-pointer text-secondary-900 border-secondary-900"
@@ -128,7 +128,7 @@
           <span>ADD CITY</span>
         </div>
       </div>
-      <div class="flex flex-row-reverse flex-grow">
+      <div class="md:flex md:flex-row-reverse flex-grow mt-6 md:mt-0">
         <div class="relative flex mt-6 md:w-52 md:mt-0">
           <div class="w-full">
             <div 
@@ -151,13 +151,13 @@
           </div>
         </div>
         <div 
-          class="relative p-3 border cursor-pointer md:rounded-none w-52"
+          class="relative p-3 border cursor-pointer md:rounded-none md:w-52"
           @click="openPassanger"
           v-on-clickaway="closePassanger"
         >
           <div class="text-grayscale-400 text-2xs">Passanger/Class</div>
           {{ (passangerTotal) + ' Pax' }}
-          <div class="absolute w-80 bg-white border right-0 top-[67px] max-h-[360px] shadow-custom" :class="(isPassangerOpen) ? 'block' : 'hidden'">
+          <div class="absolute w-full md:w-80 bg-white border right-0 top-[67px] max-h-[360px] shadow-custom" :class="(isPassangerOpen) ? 'block' : 'hidden'">
             <div class="flex items-center p-4 border-b">
               <div class="flex-1 text-grayscale-900">Adult (12+)</div>
               <div class="flex items-center flex-1 gap-2">
