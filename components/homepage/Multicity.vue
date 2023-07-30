@@ -271,6 +271,7 @@ export default {
       isButtonEnabled: false,
       userData: null,
       tooltip: false,
+      isLiveUrl: '',
     };
   },
   props: {
@@ -285,6 +286,10 @@ export default {
     isDeleteButton: {
       type: Boolean,
       required: true,
+    },
+    isLive: {
+      type: String,
+      required: false,
     },
   },
   computed: {
@@ -333,7 +338,7 @@ export default {
       this.isPassangerOpen = false
     },
     loadOrigin() {
-      this.$axios.$get(this.$config.myTempApi + '&app=data&action=get_org')
+      this.$axios.$get(this.$config.myTempApi + '&app=data&action=get_org' + this.isLiveUrl)
         .then( (response) => {
           this.originOptions = response.origin;
         })
@@ -342,7 +347,8 @@ export default {
         })
     },
     loadDestination() {
-      this.$axios.$get(this.$config.myTempApi + '&app=data&action=get_org_des')
+      let urlDestination = (this.isLive) ? 'https://ws-demo.sqiva.com/?rqid=BOAK4I3M-E4PO-RBLG-STLL-SF4X3YFWR9S3&airline_code=OG&app=data&action=get_org_des&isLive=true' : this.$config.myTempApi + '&app=data&action=get_org_des'
+      this.$axios.$get(urlDestination)
         .then( (response) => {
           // this.destinationOptions = response.destination;
           this.destinationOptions = []
@@ -367,7 +373,7 @@ export default {
         })
     },
     loadAllDestination() {
-      this.$axios.$get(this.$config.myTempApi + '&app=data&action=get_des')
+      this.$axios.$get(this.$config.myTempApi + '&app=data&action=get_des' + this.isLiveUrl)
         .then( (response) => {
           this.allDestinationOptions = response.destination;
         })
@@ -484,10 +490,14 @@ export default {
     },
     toggleTooltip() {
       this.tooltip = !this.tooltip;
+    },
+    checkIsLive() {
+      this.isLiveUrl = (this.isLive) ? '&isLive=true' : '';
     }
   },
   mounted() {
-    this.loadUser()
+    this.checkIsLive();
+    this.loadUser();
     this.loadOrigin();
     this.loadAllDestination();
   },
