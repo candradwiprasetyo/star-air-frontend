@@ -341,7 +341,9 @@ export default {
     let urlOrg = (this.isLive) ? 'https://api-portal.sqiva.com/v1/awan/relay-path/?airline_code=OG' : this.$config.myTempApi
     this.$axios.$get(urlOrg + '&app=data_airline&action=get_org' + this.isLiveUrl)
         .then( (response) => {
-          this.originOptions = response.origin;
+        const uniqueOrigin = [...new Map(response.origin.map((m) => [m[0], m])).values()];
+        this.originOptions = uniqueOrigin
+
         })
         .catch(function (error) {
           console.log(error)
