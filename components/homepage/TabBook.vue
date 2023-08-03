@@ -403,7 +403,8 @@ export default {
       this.isPassangerOpen = false
     },
     loadOrigin() {
-      this.$axios.$get(this.$config.myTempApi + '&app=data&action=get_org' + this.isLiveUrl)
+      let urlOrg = (this.isLive) ? 'https://ws-in.sqiva.com/?rqid=BOAK4I3M-E4PO-RBLG-STLL-SF4X3YFWR9S3&airline_code=OG' : this.$config.myTempApi
+      this.$axios.$get(urlOrg + '&app=data&action=get_org' + this.isLiveUrl)
         .then( (response) => {
           const uniqueOrigin = [...new Map(response.origin.map((m) => [m[0], m])).values()];
           this.originOptions = uniqueOrigin
@@ -413,7 +414,7 @@ export default {
         })
     },
     loadDestination() {
-      let urlDestination = (this.isLive) ? 'https://ws-demo.sqiva.com/?rqid=BOAK4I3M-E4PO-RBLG-STLL-SF4X3YFWR9S3&airline_code=OG&app=data&action=get_org_des&isLive=true' : this.$config.myTempApi + '&app=data&action=get_org_des'
+      let urlDestination = (this.isLive) ? 'https://ws-in.sqiva.com/?rqid=BOAK4I3M-E4PO-RBLG-STLL-SF4X3YFWR9S3&airline_code=OG&app=data&action=get_org_des&isLive=true' : this.$config.myTempApi + '&app=data&action=get_org_des'
       this.$axios.$get(urlDestination)
         .then( (response) => {
           // this.destinationOptions = response.destination;
@@ -439,7 +440,8 @@ export default {
         })
     },
     loadAllDestination() {
-      this.$axios.$get(this.$config.myTempApi + '&app=data&action=get_des' + this.isLiveUrl)
+      let urlDes = (this.isLive) ? 'https://ws-in.sqiva.com/?rqid=BOAK4I3M-E4PO-RBLG-STLL-SF4X3YFWR9S3&airline_code=OG' : this.$config.myTempApi
+      this.$axios.$get(urlDes + '&app=data&action=get_des' + this.isLiveUrl)
         .then( (response) => {
           this.allDestinationOptions = response.destination;
         })
