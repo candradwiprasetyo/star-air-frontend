@@ -431,7 +431,8 @@ export default {
                   }
                 });
               });
-              this.destinationOptions = newDestination;
+              const uniqueDest = [...new Map(newDestination.map((m) => [m[0], m])).values()];
+              this.destinationOptions = uniqueDest
             }
           });
         })
