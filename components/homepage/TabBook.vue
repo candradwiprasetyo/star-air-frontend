@@ -3,11 +3,11 @@
     <div class="md:flex">
       <div class="flex-1">
         <div
-          class="text-2xl font-semibold md:mt-8 text-grayscale-900 font-noto-sans"
+          class="text-2xl font-semibold md:mt-8 text-grayscale-900 font-noto-sans" v-if="!isLive"
         >
           Where do you want to travel?
         </div>
-        <div class="mt-2 text-grayscale-500">
+        <div class="mt-2 text-grayscale-500" v-if="!isLive">
           Redeem your Star Points with a flight ticket to your desired destination
         </div>
       </div>
@@ -57,7 +57,7 @@
         </div>
       </div>
     </div>
-    <form target="_blank" id="formSearchSchedule" class="" method=POST :action="formUrl" >
+    <form :target="(this.isLive) ? false : '_blank'" id="formSearchSchedule" class="" method=POST :action="formUrl" >
       <input type="hidden" name="typeFare" :value="typeFare" />
       <div v-if="routeType!=3">
         <div class="mt-6 md:flex">
