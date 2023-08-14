@@ -57,7 +57,7 @@
         </div>
       </div>
     </div>
-    <form :target="(this.isLive) ? '_blank' : false" id="formSearchSchedule" class="" method=POST :action="formUrl" >
+    <form :target="(this.isLive) ? '_parent' : false" id="formSearchSchedule" class="" method=POST :action="formUrl" >
       <input type="hidden" name="typeFare" :value="typeFare" />
       <div v-if="routeType!=3">
         <div class="mt-6 md:flex">
