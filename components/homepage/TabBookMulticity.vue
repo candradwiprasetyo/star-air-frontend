@@ -13,6 +13,7 @@
           @onDepartChange="onDepartChange"
           :isAddButton="(selectedAction)==countData && countData <= 3"
           :isDeleteButton="countData > 1"
+          :isLive="isLive"
         />
       </div>
       <div class="flex flex-row-reverse -mt-[68px]">
@@ -36,6 +37,12 @@ export default {
     HomepageMulticity,
   },
   mixins: [ clickaway ],
+  props: {
+    isLive: {
+      type: String,
+      required: false,
+    },
+  },
   data() {
     return {
       value: 1,
@@ -304,8 +311,8 @@ export default {
   },
   mounted() {
     this.loadUser()
-    this.loadOrigin();
-    this.loadAllDestination();
+    // this.loadOrigin();
+    // this.loadAllDestination();
   },
   watch: {
     // selectedData: function(val) { this.formChanged() },
