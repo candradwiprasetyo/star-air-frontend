@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="flex">
+    <div class="md:flex">
       <div class="flex-1">
         <div
           class="text-2xl font-semibold md:mt-8 text-grayscale-900 font-noto-sans"
@@ -41,9 +41,24 @@
             Multicity
           </div>
         </div>
+        <div class="flex justify-center mt-2 text-center cursor-pointer" v-if="routeType!=3">
+          <div
+            class="flex items-center justify-center w-40 gap-3 border rounded-l-lg md:p-2 border-secondary-900" :class="(typeFare==1) ? 'bg-secondary-900 text-white' : 'text-secondary-900'"
+            @click="changeTypeFare(1)"
+          >
+            Economy
+          </div>
+          <div
+            class="flex items-center justify-center w-40 gap-3 border rounded-r-lg md:p-2 border-secondary-900" :class="(typeFare==2) ? 'bg-secondary-900 text-white' : 'text-secondary-900'"
+            @click="changeTypeFare(2)"
+          >
+            Business
+          </div>
+        </div>
       </div>
     </div>
     <form target="_blank" id="formSearchSchedule" class="" method=POST action="https://test-starair.paxlinks.com/search-schedule" >
+      <input type="hidden" name="typeFare" :value="typeFare" />
       <div v-if="routeType!=3">
         <div class="mt-6 md:flex">
           <div class="w-full md:w-7/12 md:flex">
@@ -59,7 +74,7 @@
                 >
                   <input type="hidden" name="org" :value="(selectedOrigin) ? selectedOrigin[0] : ''">
                   {{ (selectedOrigin[0]) ? selectedOrigin[1] : 'Choose origin here' }}
-                  <div v-if="isOriginOpen" class="absolute w-full bg-white border left-0 top-[67px] overflow-y-auto h-[360px] shadow-custom">
+                  <div v-if="isOriginOpen" class="z-50 absolute w-full bg-white border left-0 top-[67px] overflow-y-auto h-[360px] shadow-custom">
                     <div class="flex items-center px-6 py-4 border-b" v-for="(data, index) in originOptions" :key="index" @click="pickOrigin(data)">
                       <div class="flex-grow">
                         <div class="font-medium text-grayscale-900">{{ data[0] }}</div>
@@ -100,7 +115,7 @@
                 >
                   <input type="hidden" name="des" :value="(selectedDestination) ? selectedDestination[0] : ''">
                   {{ (selectedDestination[0]) ? selectedDestination[1] : (selectedOrigin[0]) ? 'Choose destination here' : 'Please choose origin first' }}
-                  <div v-if="isDestinationOpen" class="absolute w-full bg-white border left-0 top-[67px] overflow-y-auto max-h-[360px] shadow-custom">
+                  <div v-if="isDestinationOpen" class="z-50 absolute w-full bg-white border left-0 top-[67px] overflow-y-auto max-h-[360px] shadow-custom">
                     <div class="flex items-center px-6 py-4 border-b" v-for="(data, index) in destinationOptions" :key="index" @click="pickDestination(data)" v-if="destinationOptions.length>0">
                       <div class="flex-grow">
                         <div class="font-medium text-grayscale-900">{{ data[0] }}</div>
@@ -117,7 +132,7 @@
             </div>
           </div>
           <div class="flex w-full mt-6 md:w-3/12 md:mt-0">
-            <div class="w-2/3 md:w-full">
+            <div class="w-full">
               <div class="p-3 border rounded-r-lg md:rounded-r-none">
                 <div class="flex">
                   <div class="flex-1">
@@ -125,7 +140,6 @@
                     <client-only>
                       <v-date-picker 
                         v-model="departDate"
-                        :popover="{ visibility: 'click' }"
                         class="cursor-pointer"
                         :min-date='new Date()'
                       >
@@ -147,7 +161,6 @@
                     <client-only>
                       <v-date-picker 
                         v-model="returnDate"
-                        :popover="{ visibility: 'click' }"
                         class="cursor-pointer"
                         :min-date='new Date()'
                       >
@@ -177,7 +190,7 @@
               >
                 <div class="text-grayscale-400 text-2xs">Passanger/Class</div>
                 {{ (passangerTotal) + ' Pax' }}
-                <div class="absolute w-80 bg-white border right-0 top-[67px] max-h-[360px] shadow-custom" :class="(isPassangerOpen) ? 'block' : 'hidden'">
+                <div class="z-50 absolute w-80 bg-white border right-0 top-[67px] max-h-[360px] shadow-custom" :class="(isPassangerOpen) ? 'block' : 'hidden'">
                   <div class="flex items-center p-4 border-b">
                     <div class="flex-1 text-grayscale-900">Adult (12+)</div>
                     <div class="flex items-center flex-1 gap-2">
@@ -301,9 +314,13 @@
 <script>
 import cookie from 'js-cookie'
 import { mixin as clickaway } from 'vue-clickaway';
+import HomepageTabBookMulticity from './TabBookMulticity.vue'
 
 export default {
   name: "HomepageTabBook",
+  components: { 
+    HomepageTabBookMulticity,
+  },
   mixins: [ clickaway ],
   data() {
     return {
@@ -327,6 +344,7 @@ export default {
       userData: null,
       isSearching: false,
       tooltip: false,
+      typeFare: 1,
     };
   },
   computed: {
@@ -436,6 +454,11 @@ export default {
     },
     changeRouteType(type) {
       this.routeType = type;
+      if (type == 3) {
+        this.typeFare = '';
+      } else {
+        this.typeFare = 1;
+      }
     },
     searchFlight() {
       if (
@@ -512,7 +535,10 @@ export default {
     },
     toggleTooltip() {
       this.tooltip = !this.tooltip;
-    }
+    },
+    changeTypeFare(value) {
+      this.typeFare = value;
+    },
   },
   mounted() {
     this.loadUser()
