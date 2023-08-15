@@ -405,7 +405,7 @@ export default {
       this.isPassangerOpen = false
     },
     loadOrigin() {
-      this.$axios.$get(this.$config.myTempApi + '&app=data&action=get_org' + this.isLiveUrl)
+      this.$axios.$get(this.$config.myTempApi + '&app=data_airline&action=get_org' + this.isLiveUrl)
         .then( (response) => {
           const uniqueOrigin = [...new Map(response.origin.map((m) => [m[0], m])).values()];
           this.originOptions = uniqueOrigin
@@ -442,7 +442,7 @@ export default {
         })
     },
     loadAllDestination() {
-      this.$axios.$get(this.$config.myTempApi + '&app=data&action=get_des' + this.isLiveUrl)
+      this.$axios.$get(this.$config.myTempApi + '&app=data_airline&action=get_des' + this.isLiveUrl)
         .then( (response) => {
           this.allDestinationOptions = response.destination;
         })
