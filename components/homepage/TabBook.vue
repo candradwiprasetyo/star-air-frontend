@@ -57,7 +57,7 @@
         </div>
       </div>
     </div>
-    <form target="_blank" id="formSearchSchedule" class="" method=POST action="https://test-starair.paxlinks.com/search-schedule" >
+    <form target="_blank" id="formSearchSchedule" class="" method=POST :action="formUrl" >
       <input type="hidden" name="typeFare" :value="typeFare" />
       <div v-if="routeType!=3">
         <div class="mt-6 md:flex">
@@ -305,7 +305,9 @@
         </div>
       </div>
       <div v-else>
-        <HomepageTabBookMulticity />
+        <HomepageTabBookMulticity
+          :isLive="isLive"
+        />
       </div>
     </form>
   </div>
@@ -318,6 +320,12 @@ import HomepageTabBookMulticity from './TabBookMulticity.vue'
 
 export default {
   name: "HomepageTabBook",
+  props: {
+    isLive: {
+      type: String,
+      required: false,
+    },
+  },
   components: { 
     HomepageTabBookMulticity,
   },
@@ -345,6 +353,8 @@ export default {
       isSearching: false,
       tooltip: false,
       typeFare: 1,
+      isLiveUrl: '',
+      formUrl: '',
     };
   },
   computed: {
@@ -393,16 +403,18 @@ export default {
       this.isPassangerOpen = false
     },
     loadOrigin() {
-      this.$axios.$get(this.$config.myTempApi + '&app=data&action=get_org')
+      this.$axios.$get(this.$config.myTempApi + '&app=data&action=get_org' + this.isLiveUrl)
         .then( (response) => {
-          this.originOptions = response.origin;
+          const uniqueOrigin = [...new Map(response.origin.map((m) => [m[0], m])).values()];
+          this.originOptions = uniqueOrigin
         })
         .catch(function (error) {
           console.log(error)
         })
     },
     loadDestination() {
-      this.$axios.$get(this.$config.myTempApi + '&app=data&action=get_org_des')
+      let urlDestination = (this.isLive) ? 'https://ws-demo.sqiva.com/?rqid=BOAK4I3M-E4PO-RBLG-STLL-SF4X3YFWR9S3&airline_code=OG&app=data&action=get_org_des&isLive=true' : this.$config.myTempApi + '&app=data&action=get_org_des'
+      this.$axios.$get(urlDestination)
         .then( (response) => {
           // this.destinationOptions = response.destination;
           this.destinationOptions = []
@@ -427,7 +439,7 @@ export default {
         })
     },
     loadAllDestination() {
-      this.$axios.$get(this.$config.myTempApi + '&app=data&action=get_des')
+      this.$axios.$get(this.$config.myTempApi + '&app=data&action=get_des' + this.isLiveUrl)
         .then( (response) => {
           this.allDestinationOptions = response.destination;
         })
@@ -539,9 +551,14 @@ export default {
     changeTypeFare(value) {
       this.typeFare = value;
     },
+    checkIsLive() {
+      this.isLiveUrl = (this.isLive) ? '&isLive=true' : '';
+      this.formUrl = (this.isLive) ? 'https://ibook.starair.in/search-schedule' : 'https://test-starair.paxlinks.com/search-schedule';
+    }
   },
   mounted() {
-    this.loadUser()
+    this.checkIsLive();
+    this.loadUser();
     this.loadOrigin();
     this.loadAllDestination();
   },
