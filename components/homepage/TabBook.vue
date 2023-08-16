@@ -141,7 +141,7 @@
                       <v-date-picker 
                         v-model="departDate"
                         class="cursor-pointer"
-                        :min-date='new Date()'
+                        :available-dates="avbDates"
                       >
                         <template v-slot="{ inputValue, inputEvents }">
                           <input
@@ -162,7 +162,7 @@
                       <v-date-picker 
                         v-model="returnDate"
                         class="cursor-pointer"
-                        :min-date='new Date()'
+                        :available-dates="avbDates"
                       >
                         <template v-slot="{ inputValue, inputEvents }">
                           <input
@@ -336,6 +336,8 @@ export default {
       originOptions: [],
       destinationOptions: [],
       allDestinationOptions: [],
+      dayOfServices: [],
+      avbDates: [],
       selectedOrigin: [],
       selectedDestination: [],
       isOriginOpen: false,
@@ -354,7 +356,7 @@ export default {
       tooltip: false,
       typeFare: 1,
       isLiveUrl: '',
-      formUrl: '',
+      formUrl: ''
     };
   },
   computed: {
@@ -450,12 +452,23 @@ export default {
           console.log(error)
         })
     },
+    loadDayOfServices() {
+      let urlDos = this.$config.myTempApi
+      this.$axios.$get(urlDos + '&app=information_airline_temp&action=get_dos_2' + this.isLiveUrl)
+        .then( (response) => {
+          this.dayOfServices = response.data;
+        })
+        .catch(function (error) {
+          console.log(error)
+        })
+    },
     pickOrigin(data) {
       this.selectedOrigin = data;
       this.loadDestination()
     },
     pickDestination(data) {
       this.selectedDestination = data;
+      this.changeAllowedDates();
     },
     pickPassanger(data) {
       this.selectedPassanger = data;
@@ -554,6 +567,24 @@ export default {
     changeTypeFare(value) {
       this.typeFare = value;
     },
+    changeAllowedDates() {
+      this.dayOfServices.forEach(element => {
+        if (element['org'] === this.selectedOrigin[0] && element['des'] === this.selectedDestination[0]) 
+        {
+          let startDate = element['dos_list'][0].start_date.toString().replace(/(\d{4})(\d{2})(\d{2})/g, '$1-$2-$3');
+          let endDate = element['dos_list'][0].end_date.toString().replace(/(\d{4})(\d{2})(\d{2})/g, '$1-$2-$3');
+          let startDateFormatted = new Date(startDate);
+          let endDateFormatted = new Date(endDate);
+          
+          /* Set Format of Available Dates */
+          this.avbDates = {
+            start: new Date(),
+            end: endDateFormatted,
+            weekdays: element['dos_list'][0].dos
+          };
+        }
+      });
+    },
     checkIsLive() {
       this.isLiveUrl = (this.isLive) ? '&isLive=true' : '';
       this.formUrl = (this.isLive) ? 'https://ibook.starair.in/search-schedule' : 'https://test-starair.paxlinks.com/search-schedule';
@@ -562,6 +593,7 @@ export default {
   mounted() {
     this.checkIsLive();
     this.loadUser();
+    this.loadDayOfServices();
     this.loadOrigin();
     this.loadAllDestination();
   },
