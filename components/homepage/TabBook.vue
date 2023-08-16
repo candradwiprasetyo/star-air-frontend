@@ -57,7 +57,7 @@
         </div>
       </div>
     </div>
-    <form :target="(this.isLive) ? false : '_blank'" id="formSearchSchedule" class="" method=POST :action="formUrl" >
+    <form :target="(this.isLive) ? '_parent' : false" id="formSearchSchedule" class="" method=POST :action="formUrl" >
       <input type="hidden" name="typeFare" :value="typeFare" />
       <div v-if="routeType!=3">
         <div class="mt-6 md:flex">
@@ -141,7 +141,7 @@
                       <v-date-picker 
                         v-model="departDate"
                         class="cursor-pointer"
-                        :available-dates="avbDates"
+                        :min-date='new Date()'
                       >
                         <template v-slot="{ inputValue, inputEvents }">
                           <input
@@ -162,7 +162,7 @@
                       <v-date-picker 
                         v-model="returnDate"
                         class="cursor-pointer"
-                        :available-dates="avbDates"
+                        :min-date='new Date()'
                       >
                         <template v-slot="{ inputValue, inputEvents }">
                           <input
@@ -336,8 +336,6 @@ export default {
       originOptions: [],
       destinationOptions: [],
       allDestinationOptions: [],
-      dayOfServices: [],
-      avbDates: [],
       selectedOrigin: [],
       selectedDestination: [],
       isOriginOpen: false,
@@ -356,7 +354,7 @@ export default {
       tooltip: false,
       typeFare: 1,
       isLiveUrl: '',
-      formUrl: ''
+      formUrl: '',
     };
   },
   computed: {
@@ -405,7 +403,8 @@ export default {
       this.isPassangerOpen = false
     },
     loadOrigin() {
-      this.$axios.$get(this.$config.myTempApi + '&app=data_airline&action=get_org' + this.isLiveUrl)
+      let urlOrg = (this.isLive) ? 'https://api-portal.sqiva.com/v1/awan/relay-path/?airline_code=OG' : this.$config.myTempApi
+      this.$axios.$get(urlOrg + '&app=data_airline&action=get_org' + this.isLiveUrl)
         .then( (response) => {
           const uniqueOrigin = [...new Map(response.origin.map((m) => [m[0], m])).values()];
           this.originOptions = uniqueOrigin
@@ -415,7 +414,8 @@ export default {
         })
     },
     loadDestination() {
-      this.$axios.$get(this.$config.myTempApi + '&app=data_airline&action=get_org_des' + this.isLiveUrl)
+      let urlDestination = (this.isLive) ? 'https://api-portal.sqiva.com/v1/awan/relay-path/?airline_code=OG&app=data_airline&action=get_org_des&isLive=true' : this.$config.myTempApi + '&app=data_airline&action=get_org_des'
+      this.$axios.$get(urlDestination)
         .then( (response) => {
           // this.destinationOptions = response.destination;
           this.destinationOptions = []
@@ -431,9 +431,8 @@ export default {
                   }
                 });
               });
-
               const uniqueDest = [...new Map(newDestination.map((m) => [m[0], m])).values()];
-              this.destinationOptions = newDestination;
+              this.destinationOptions = uniqueDest
             }
           });
         })
@@ -442,19 +441,10 @@ export default {
         })
     },
     loadAllDestination() {
-      this.$axios.$get(this.$config.myTempApi + '&app=data_airline&action=get_des' + this.isLiveUrl)
+      let urlDes = (this.isLive) ? 'https://api-portal.sqiva.com/v1/awan/relay-path/?airline_code=OG' : this.$config.myTempApi
+      this.$axios.$get(urlDes + '&app=data_airline&action=get_des' + this.isLiveUrl)
         .then( (response) => {
           this.allDestinationOptions = response.destination;
-        })
-        .catch(function (error) {
-          console.log(error)
-        })
-    },
-    loadDayOfServices() {
-      let urlDos = this.$config.myTempApi
-      this.$axios.$get(urlDos + '&app=information_airline_temp&action=get_dos_2' + this.isLiveUrl)
-        .then( (response) => {
-          this.dayOfServices = response.data;
         })
         .catch(function (error) {
           console.log(error)
@@ -466,7 +456,6 @@ export default {
     },
     pickDestination(data) {
       this.selectedDestination = data;
-      this.changeAllowedDates();
     },
     pickPassanger(data) {
       this.selectedPassanger = data;
@@ -565,24 +554,6 @@ export default {
     changeTypeFare(value) {
       this.typeFare = value;
     },
-    changeAllowedDates() {
-      this.dayOfServices.forEach(element => {
-        if (element['org'] === this.selectedOrigin[0] && element['des'] === this.selectedDestination[0]) 
-        {
-          let startDate = element['dos_list'][0].start_date.toString().replace(/(\d{4})(\d{2})(\d{2})/g, '$1-$2-$3');
-          let endDate = element['dos_list'][0].end_date.toString().replace(/(\d{4})(\d{2})(\d{2})/g, '$1-$2-$3');
-          let startDateFormatted = new Date(startDate);
-          let endDateFormatted = new Date(endDate);
-          
-          /* Set Format of Available Dates */
-          this.avbDates = {
-            start: new Date(),
-            end: endDateFormatted,
-            weekdays: element['dos_list'][0].dos
-          };
-        }
-      });
-    },
     checkIsLive() {
       this.isLiveUrl = (this.isLive) ? '&isLive=true' : '';
       this.formUrl = (this.isLive) ? 'https://ibook.starair.in/search-schedule' : 'https://test-starair.paxlinks.com/search-schedule';
@@ -591,7 +562,6 @@ export default {
   mounted() {
     this.checkIsLive();
     this.loadUser();
-    this.loadDayOfServices();
     this.loadOrigin();
     this.loadAllDestination();
   },
