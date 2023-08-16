@@ -3,11 +3,11 @@
     <div class="md:flex">
       <div class="flex-1">
         <div
-          class="text-2xl font-semibold md:mt-8 text-grayscale-900 font-noto-sans"
+          class="text-2xl font-semibold md:mt-8 text-grayscale-900 font-noto-sans" v-if="!isLive"
         >
           Where do you want to travel?
         </div>
-        <div class="mt-2 text-grayscale-500">
+        <div class="mt-2 text-grayscale-500" v-if="!isLive">
           Redeem your Star Points with a flight ticket to your desired destination
         </div>
       </div>
@@ -57,7 +57,7 @@
         </div>
       </div>
     </div>
-    <form target="_blank" id="formSearchSchedule" class="" method=POST :action="formUrl" >
+    <form :target="(this.isLive) ? '_parent' : false" id="formSearchSchedule" class="" method=POST :action="formUrl" >
       <input type="hidden" name="typeFare" :value="typeFare" />
       <div v-if="routeType!=3">
         <div class="mt-6 md:flex">
@@ -403,7 +403,8 @@ export default {
       this.isPassangerOpen = false
     },
     loadOrigin() {
-      this.$axios.$get(this.$config.myTempApi + '&app=data&action=get_org' + this.isLiveUrl)
+      let urlOrg = (this.isLive) ? 'https://api-portal.sqiva.com/v1/awan/relay-path/?airline_code=OG' : this.$config.myTempApi
+      this.$axios.$get(urlOrg + '&app=data_airline&action=get_org' + this.isLiveUrl)
         .then( (response) => {
           const uniqueOrigin = [...new Map(response.origin.map((m) => [m[0], m])).values()];
           this.originOptions = uniqueOrigin
@@ -413,7 +414,7 @@ export default {
         })
     },
     loadDestination() {
-      let urlDestination = (this.isLive) ? 'https://ws-demo.sqiva.com/?rqid=BOAK4I3M-E4PO-RBLG-STLL-SF4X3YFWR9S3&airline_code=OG&app=data&action=get_org_des&isLive=true' : this.$config.myTempApi + '&app=data&action=get_org_des'
+      let urlDestination = (this.isLive) ? 'https://api-portal.sqiva.com/v1/awan/relay-path/?airline_code=OG&app=data_airline&action=get_org_des&isLive=true' : this.$config.myTempApi + '&app=data_airline&action=get_org_des'
       this.$axios.$get(urlDestination)
         .then( (response) => {
           // this.destinationOptions = response.destination;
@@ -430,7 +431,8 @@ export default {
                   }
                 });
               });
-              this.destinationOptions = newDestination;
+              const uniqueDest = [...new Map(newDestination.map((m) => [m[0], m])).values()];
+              this.destinationOptions = uniqueDest
             }
           });
         })
@@ -439,7 +441,8 @@ export default {
         })
     },
     loadAllDestination() {
-      this.$axios.$get(this.$config.myTempApi + '&app=data&action=get_des' + this.isLiveUrl)
+      let urlDes = (this.isLive) ? 'https://api-portal.sqiva.com/v1/awan/relay-path/?airline_code=OG' : this.$config.myTempApi
+      this.$axios.$get(urlDes + '&app=data_airline&action=get_des' + this.isLiveUrl)
         .then( (response) => {
           this.allDestinationOptions = response.destination;
         })
