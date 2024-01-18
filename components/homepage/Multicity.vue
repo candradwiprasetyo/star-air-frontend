@@ -336,7 +336,9 @@ export default {
     loadOrigin() {
       this.$axios.$get(this.$config.myTempApi + '&app=data_airline&action=get_org')
         .then( (response) => {
-          this.originOptions = response.origin;
+          //this.originOptions = response.origin;
+          const uniqueOrigin = [...new Map(response.origin.map((m) => [m[0], m])).values()];
+        this.originOptions = uniqueOrigin
         })
         .catch(function (error) {
           console.log(error)
@@ -359,7 +361,10 @@ export default {
                   }
                 });
               });
-              this.destinationOptions = newDestination;
+              //this.destinationOptions = newDestination;
+              const uniqueDest = [...new Map(newDestination.map((m) => [m[0], m])).values()];
+              this.destinationOptions = uniqueDest
+
             }
           });
         })
